@@ -1,0 +1,71 @@
+/* CouponDetail.css */
+:root{
+	--page:0;
+}
+.CouponWrap .CouponSlide .CouponItemWrap {padding:26px 0; text-align:center;}
+.CouponWrap .CouponSlide .CouponItemWrap .CouponItem {text-align:center; padding:40px 0; margin:-40px 0;}
+.CouponWrap .CouponSlide .CouponItemWrap .CouponItem .csFocus .registText {display:inline-block; padding-top:83px; position:absolute; top:63px; left:50%; transform:translate(-50%,0); z-index:10; background:url('/assets/images/tmp/mybtv/ic_item_regist_off.png') no-repeat top center; text-align:center; font-size:31px; color:rgba(0,0,0,0.8);}
+.CouponWrap .CouponSlide .CouponItemWrap .CouponItem .csFocus.focusOn .registText,
+.CouponWrap .CouponSlide .CouponItemWrap .CouponItem .csFocus.loadFocus .registText {transform:translate(-50%,0);font-weight:700; line-height:1.09; color:#f5513f; background-image:url('/assets/images/myBtv/coupon-plus-active.png'); background-size:65px;}
+
+.CouponWrap .btnCouponRegist {position:absolute; top:88px; right:115px;}
+
+.CouponWrap .CouponSlide {padding-top:90px}
+.CouponWrap .CouponSlide .slideCon {overflow:hidden; padding:30px 30px; margin:-30px -40px;}
+.CouponWrap .CouponSlide .slideWrap {position:relative; z-index:1;}
+.CouponWrap .CouponSlide .slideWrapper{transform:translate3d(calc(var(--page) * -436px),0,0);}
+.CouponWrap .CouponSlide .slideWrapper {display:flex; justify-content:space-between;}
+
+.CouponWrap .CouponSlide .leftArrow,
+.CouponWrap .CouponSlide .rightArrow{position:absolute;top:50%;left:-64px;z-index:10;transform:translate(0,-50%);width:24px;height:58px;background:url("/assets/images/common/icon/arrow-left.png") no-repeat 0 0;opacity:0;}
+.CouponWrap .CouponSlide .rightArrow{left:auto;right:-64px;background:url("/assets/images/common/icon/arrow-right.png") no-repeat 0 0;}
+.CouponWrap .CouponSlide .activeSlide.leftActive .leftArrow,
+.CouponWrap .CouponSlide .activeSlide.rightActive .rightArrow{opacity:1;}
+
+
+.CouponWrap .CouponItemWrap .CouponItem {position:relative; z-index:1;}
+.CouponWrap .CouponItemWrap .CouponItem .wrapImg {display:block; position:absolute; top:0; left:0; z-index:-1;}
+.CouponWrap .CouponItemWrap .CouponItem .inner {padding:90px 50px 40px; text-align:center;}
+.CouponWrap .CouponItemWrap .CouponItem .dDay {position:absolute; top:57px; left:19px; z-index:10; transform:rotate(315deg); -webkit-transform:rotate(315deg);}
+.CouponWrap .CouponItemWrap .CouponItem .dDay span {display:inline-block; line-height:30px; width:74px; font-size:24px; letter-spacing:-1px; color:#fff; text-align:center;}
+.CouponWrap .CouponItemWrap .CouponItem .inner .title {overflow:hidden; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; text-overflow:ellipsis; height:78px; margin-bottom:26px; font-weight:700; font-size:30px; color:#d4d4d4; line-height:1.33; letter-spacing:normal;}
+.CouponWrap .CouponItemWrap .CouponItem .inner .valid {display:inline-block; padding:4px 21px; min-width:141px; height:40px; border-radius:100px; background:rgba(34, 89, 125, 0.45);}
+.CouponWrap .CouponItemWrap .CouponItem .inner .valid span {font-size:26px; line-height:1.15; text-align:center; color:#d4d4d4;}
+.CouponItemWrap .CouponItem .csFocus {display:inline-block; position:relative; width:424px; height:310px; background-image:url('/assets/images/myBtv/coupon.png'); background-repeat:no-repeat; background-position:center center; background-size:100%; text-align:center;}
+.CouponItemWrap .CouponItem .csFocus.focusOn {transform:scale(1.18); -webkit-transform:scale(1.18); background-image:url('/assets/images/myBtv/coupon-focus.png');}
+.CouponItemWrap .CouponItem .csFocus.focusOn .title {color:#f4f4f4;}
+.CouponItemWrap .CouponItem.disable .csFocus {background-image:url('/assets/images/myBtv/coupon-disable.png');}
+.CouponItemWrap .CouponItem.disable .csFocus.focusOn {background-image:url('/assets/images/myBtv/coupon-disable-focus.png');}
+.CouponItemWrap .CouponItem.dDayNone .csFocus {background-image:url('/assets/images/myBtv/coupon-dday-none.png');}
+.CouponItemWrap .CouponItem.dDayNone .csFocus.focusOn {background-image:url('/assets/images/myBtv/coupon-dday-none-focus.png');}
+.CouponItemWrap .CouponItem.disable .csFocus .inner .valid {background:rgb(137, 140, 154);}
+.CouponItemWrap .CouponItem .csFocus.sel {background-image:url('/assets/images/myBtv/coupon-focus.png');}
+.CouponItemWrap .CouponItem.dDayNone .csFocus.sel {background-image:url('/assets/images/myBtv/coupon-dday-none-focus.png');}
+
+
+.CouponWrap .bottomWrap {position:absolute; bottom:0; left:0; z-index:100; width:100%; height:396px; background-color:rgba(237, 239, 243, 0.5);}
+.CouponWrap .bottomWrap .defaultWrap {display:none; padding:115px 199px 116px 201px; text-align:center;}
+.CouponWrap .bottomWrap .defaultWrap .eventDesc,
+.CouponWrap .bottomWrap .defaultWrap .eventDescSub {font-size:32px; line-height:1.5; letter-spacing:normal; color:#6a6a6a;}
+.CouponWrap .bottomWrap.default .defaultWrap {display:block;}
+
+.CouponWrap .bottomWrap .couponCaution {padding-left:589px; font-size:24px; line-height:1.5; color:#888;}
+
+.CouponWrap .bottomWrap.default .innerDataWrap {display:none;}
+.CouponWrap .bottomWrap .innerDataWrap {display:block; padding:52px 115px 60px;}
+.CouponWrap .bottomWrap .innerDataWrap .bottomLeft {float:left; width:543px; vertical-align:top;}
+.CouponWrap .bottomWrap .innerDataWrap .bottomLeft:after {display:block; clear:both; content:"";}
+.CouponWrap .bottomWrap .innerDataWrap .bottomLeft .titleFull {padding-bottom:26px; font-weight:700; font-size:36px; line-height:1.44; color:#4a4a4a;}
+.CouponWrap .bottomWrap .innerDataWrap .bottomLeft .btnStyle.type02 {padding:0 68px;}
+.CouponWrap .bottomWrap .innerDataWrap .bottomRight {padding:0 0 74px 42px; margin-left:543px; vertical-align:top; font-size:0;}
+.CouponWrap .bottomWrap .innerDataWrap .bottomRight .inner {display:inline-block; position:relative; z-index:1; width:552px; height:181px; padding-left:22px; vertical-align:top;}
+.CouponWrap .bottomWrap .innerDataWrap .bottomRight .inner:before {content:""; display:block; position:absolute; top:50%; left:0; z-index:1; transform:translate(0,-50%); width:1px; height:calc(100% - 14px); background:#aaa;}
+.CouponWrap .bottomWrap .innerDataWrap .bottomRight .inner .tblTitle:first-child,
+.CouponWrap .bottomWrap .innerDataWrap .bottomRight .inner .tblTitle:first-child + .tblData {margin-top:0;}
+.CouponWrap .bottomWrap .innerDataWrap .bottomRight .inner .tblTitle {display:block; float:left; margin-top:6px; width:105px; font-size:28px; line-height:1.43; color:#4a4a4a; vertical-align:top;}
+.CouponWrap .bottomWrap .innerDataWrap .bottomRight .inner .tblData {display:block; margin:6px 0 0 105px; padding-left:43px; vertical-align:top; font-size:28px; font-weight:700; line-height:1.43; color:#4a4a4a; text-align:left;}
+.CouponWrap .bottomWrap .innerDataWrap .bottomRight .inner .tblData .detail {display:inline-block; margin-left:5px; font-weight:normal; font-size:24px; line-height:1.92; letter-spacing:-0.6px; color:rgba(106,106,106,1); vertical-align:top;}
+.CouponWrap .bottomWrap .innerDataWrap .bottomRight .inner .tblData .exceptList li {font-weight:normal; font-size:24px; line-height:1.92; color:#6a6a6a;}
+.CouponWrap .bottomWrap .innerDataWrap .bottomRight .inner .tblData .exceptList li:before {display:inline; content:"- "}
+
+.contentGroup.activeSlide .CouponSlide .CouponItemWrap .CouponItem .csFocus .title {transform:translate(0);}

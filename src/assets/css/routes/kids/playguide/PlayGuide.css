@@ -1,0 +1,32 @@
+/* PlayGuide.css */
+.playGuideWrap{position:relative;z-index:1;width:1920px;height:1080px;}
+.playGuideWrap .playGuide{position:fixed;top:0;left:0;right:0;bottom:0;z-index:5;width:1920px;height:1080px;background-color:rgba(0,0,0,0.7);}
+
+/* PlayGuideEnd */
+.playGuideEndWrap{display:block;position:relative;z-index:1;height:100%;}
+.playGuideEndWrap .imageWrap{display:flex;position:absolute;bottom:0;left:400px;width:750px;height:850px;text-align:center;align-items:flex-end;}
+.playGuideEndWrap .imageWrap img{display:block;margin:0 auto;}
+.playGuideEndWrap .playGuideBubbleArea{position:absolute;top:150px;right:410px;width:522px;height:393px;}
+.playGuideEndWrap .playGuideBubbleArea .bubbleWrap{position:relative;z-index:1;width:100%;height:100%;}
+.playGuideEndWrap .playGuideBubbleArea .bubbleWrap img{position:absolute;top:0;left:0;z-index:1;}
+.playGuideEndWrap .playGuideBubbleArea .bubbleWrap .textArea{display:table;position:absolute;top:0;left:0;z-index:5;width:100%;height:325px;text-align:center;}
+.playGuideEndWrap .playGuideBubbleArea .bubbleWrap .textArea span{display:table-cell;font-size:45px;color:rgba(244,244,244,1);line-height:70px;vertical-align:middle;font-weight:700;}
+
+/* PlayGuideWatchLimit */
+.playGuideWatchLimitWrap{display:block;position:relative;z-index:1;height:100%;}
+.playGuideWatchLimitWrap .imageWrap{display:flex;position:absolute;bottom:0;left:0;width:750px;height:850px;text-align:center;align-items:flex-end;}
+.playGuideWatchLimitWrap .imageWrap img{display:block;margin:0 auto;}
+.playGuideWatchLimitWrap .playGuideBubbleArea{position:absolute;top:193px;left:253px;width:600px;height:393px;}
+.playGuideWatchLimitWrap .playGuideBubbleArea .bubbleWrap{position:relative;z-index:1;width:100%;height:100%;}
+.playGuideWatchLimitWrap .playGuideBubbleArea .bubbleWrap img{position:absolute;top:0;left:0;z-index:1;}
+.playGuideWatchLimitWrap .playGuideBubbleArea .bubbleWrap .textArea{display:table;position:absolute;top:0;left:0;z-index:5;width:100%;height:335px;text-align:center;}
+.playGuideWatchLimitWrap .playGuideBubbleArea .bubbleWrap .textArea .textWrap{display:table-cell;vertical-align:middle;}
+.playGuideWatchLimitWrap .playGuideBubbleArea .bubbleWrap .textArea .textWrap span{display:inline-block;font-size:45px;color:rgba(244,244,244,1);line-height:70px;}
+.playGuideWatchLimitWrap .watchInfoPop{display:block;position:absolute;top:62px;right:72px;width:488px;height:110px;padding-left:106px;border-radius:4px;background:rgba(237, 239, 243, 0.95) url('/assets/images/kids/playguide/icon-play.png') center left 32px no-repeat;}
+.playGuideWatchLimitWrap .watchInfoPop .playTitle{padding-top:28px;}
+.playGuideWatchLimitWrap .watchInfoPop .playTitle span{font-size:32px;color:rgba(0,0,0,1);line-height:36px;font-weight:700;vertical-align:middle;}
+.playGuideWatchLimitWrap .watchInfoPop .playTitle span:first-child{display:inline-block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:278px;}
+.playGuideWatchLimitWrap .watchInfoPop .playTitle span + span{margin-left:14px;}
+.playGuideWatchLimitWrap .watchInfoPop .playState{margin-top:2px;font-size:23px;color:rgba(0,0,0,0.6);line-height:26px;}
+
+/* PlayGuideWatchDistance */

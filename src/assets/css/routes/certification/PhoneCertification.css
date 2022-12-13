@@ -1,0 +1,37 @@
+/* PhoneCertification.css */
+/* NoticeList */
+.phoneCertificationWrap {position:relative; z-index:1; height:1080px;}
+
+.phoneCertificationWrap .contsArea{overflow:hidden;height:100%;}
+.phoneCertificationWrap .contsArea > div{height:100%;}
+.phoneCertificationWrap .contsArea .titleArea{float:left;width:750px;padding:91px 159px 0 117px;}
+.phoneCertificationWrap .contsArea .inputArea{position:relative;float:right;width:1170px;padding:90px 82px 0 104px;background-color:rgba(237, 239, 243, 0.5);box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1);}
+
+.phoneCertificationWrap .contsArea .titleArea .title{font-size:56px;color:rgba(0,0,0,1);line-height:66px;font-weight:700;}
+.phoneCertificationWrap .contsArea .titleArea .subTitle{margin-top:17px;font-size:30px;color:rgba(0,0,0,0.6);line-height:44px;}
+
+.phoneCertificationWrap .contsArea .inputArea .nameWrap{display:block;padding-bottom:67px;}
+.phoneCertificationWrap .contsArea .inputArea .nameWrap .userName{font-size:46px;color:rgba(0,0,0,1);line-height:48px;font-weight:700;}
+.phoneCertificationWrap .contsArea .inputArea .nameWrap .title{padding-bottom:17px;font-size:28px;color:rgba(0,0,0,0.7);line-height:40px;font-weight:700;}
+
+.phoneCertificationWrap .inputCon {}
+.phoneCertificationWrap .inputCon .gridWrap {width:790px;align-items: flex-end;}
+.phoneCertificationWrap .inputCon .gridWrap + .gridWrap {margin-top:34px;}
+.phoneCertificationWrap .inputCon .gridWrap + .valid {margin-top:48px;}
+.phoneCertificationWrap .inputCon .gridWrap .btnRequire {vertical-align:bottom; padding:0 30px;}
+.phoneCertificationWrap .gridStyle input {color:rgba(0,0,0,0.8);}
+
+.phoneCertificationWrap .gender {width:401px; font-size:0;}
+.phoneCertificationWrap .birth {width:363px;}
+.phoneCertificationWrap .agency {width:240px;}
+.phoneCertificationWrap .tel {width:378px;}
+.phoneCertificationWrap .valid {width:400px;}
+
+.phoneCertificationWrap .gender .radioStyle {display:inline-block; min-width:200px; text-align:left;border-radius:4px 0 0 4px;}
+.phoneCertificationWrap .gender .radioStyle + .radioStyle{border-radius:0 4px 4px 0;}
+
+.phoneCertificationWrap .optionWrap {margin-top: 0;}
+.phoneCertificationWrap .btnWrap{margin-top:76px;padding-top:48px;border-top:2px solid rgba(0,0,0,0.2);}
+/*.phoneCertificationWrap .inputTitle {padding-bottom:16px; font-size:28px; font-weight:700; line-height:1.43; letter-spacing:normal; color:rgba(0, 0, 0, 0.7); text-align:left;}*/
+.phoneCertificationWrap .disable .inputTitle{color:rgba(0,0,0,0.2);}
+

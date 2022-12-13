@@ -1,0 +1,60 @@
+{
+	"pageType": "btvProductInfo",
+	"productTitle": "B tv 선택",
+	"usedProduct" : true,
+	"productInfo": "선택 54채널 + 영화/시리즈팩 + 스포츠/레저팩 + 외국어/ 교양팩",
+	"detailCaution" : ["상기 요금은 3년 약정 기준 셋톱박스 임대료 및 부가세가 포함된 기본 이용료이며, <br/>고객별 약정 및 할인적용 금액에 따라 표시된 금액과 청구금액이 다를 수 있습니다.","기타 상품관련 문의사항은 국번없이 106 또는<br/>B tv 홈페이지(www.skbtv.co.kr)를 통해 확인해주세요."],
+	"priceDetail" : {
+	 	"price" : "26,400" ,
+	 	"value" : "원/월" ,
+		"Count" : "172" ,
+		 "info" : "부가세 포함 / 3년약정 기준"
+	},
+	"logoItem" :[
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		}
+	]
+}

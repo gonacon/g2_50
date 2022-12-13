@@ -1,0 +1,34 @@
+/* SlideTypeD.css */
+:root{
+	--page:0;
+}
+.slideTypeD .slideWrapper{transform:translate3d(calc(var(--page) * -349px),0,0);}
+.slideTypeD{padding-top:80px;}
+.slideTypeD .slideWrap{position:relative;z-index:1;transform:translate(0,0);}
+.slideTypeD .title{transform:translate(0,-4px);font-size:36px;line-height:52px;font-weight:400;color:#303030;}
+.slideTypeD .slideWrap .slideCon{margin:-44px -54px -60px;padding:38px 25px 60px;overflow:hidden;}
+.slideTypeD .slideWrapper{display:flex;justify-content:space-between;}
+.slideTypeD .slideWrapper .slide{margin:0 31px;text-align:center;}
+.slideTypeD .slideWrapper .csFocus{position:relative;z-index:1;display:block;width:287px;height:287px;border-radius:4px;background:url('/assets/images/common/default/tvapp_default.png') no-repeat 0 0;background-size:100% 100%;box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.15);}
+.slideTypeD .slideWrapper .csFocus img{display:block;width:100%;border-radius:4px;}
+.slideTypeD .slideWrapper .csFocus .slideTitle{opacity:0;line-height:30px;font-size:26px;color:#000;font-weight:700;letter-spacing:-1px;}
+.slideTypeD .slideWrapper .csFocus{transform:scale(1,1);}
+.slideTypeD .slideWrapper .csFocus.focusOn{transform:scale(1.16,1.16);box-shadow: 0 14px 14px 0 rgba(0, 0, 0, 0.35);}
+.slideTypeD .slideWrapper .csFocus.focusOn .slideTitle{opacity:1;}
+.slideTypeD .leftArrow,
+.slideTypeD .rightArrow{position:absolute;top:50%;left:-64px;z-index:10;transform:translate(0,-70%);width:24px;height:58px;background:url("/assets/images/common/icon/arrow-left.png") no-repeat 0 0;opacity:0;}
+.slideTypeD .rightArrow{left:auto;right:-64px;background:url("/assets/images/common/icon/arrow-right.png") no-repeat 0 0;}
+.slideTypeD .activeSlide.leftActive .leftArrow,
+.slideTypeD .activeSlide.rightActive .rightArrow{opacity:1;}
+
+.contentGroup.activeSlide .slideTypeD .title{transform:translate(0,-31px);}
+.slideTypeD .activeSlide.leftActive.lastActive .slideCount{transform:translate(0,-31px);}
+
+.slideTypeD .activeSlide .slideCount{opacity:1;}
+.slideTypeD .slideCount{opacity:0;position:absolute;top:9px;right:0;z-index:10;font-size:23px;line-height:1;letter-spacing:normal;color:#6a6a6a;transform:translate(0,0);}
+.slideTypeD .slideCount .current{font-weight:700;}
+
+.dark .slideTypeD .slideCount{color:#d4d4d4;}
+
+.slideTypeD .slideWrapper .csFocus:before{position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;content:"";display:block;border-radius:4px;overflow:hidden;box-shadow:0 0 0 5px #f4f4f4;opacity:0;}
+.slideTypeD .slideWrapper .csFocus.focusOn:before{box-shadow:0 0 0 5px #f4f4f4;opacity:1;}

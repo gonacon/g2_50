@@ -1,0 +1,28 @@
+/* tvAppHome.css */
+.tvAppHome{padding:154px 30px 0;}
+.tvAppHome .tvAppItem{display:inline-block;margin:40px 86px;width:200px;height:280px;}
+.tvAppHome .tvAppItem .imgCon{position:relative;z-index:1;border-radius:14px;width:200px;height:200px;box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.15);}
+.tvAppHome .tvAppItem .imgCon img{border-radius:14px;overflow:hidden;}
+.tvAppHome .tvAppItem img,
+.tvAppHome .tvAppItem span{display:block;text-align:center;}
+.tvAppHome .tvAppItem .textWrap{margin:0 -30px;}
+.tvAppHome .tvAppItem .title{margin:22px -30px 0;padding:0 10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:28px;color:#4a4a4a;line-height:40px;}
+.tvAppHome .tvAppItem .title .channel{display:inline-block;font-size:36px;color:rgba(74,74,74,1);font-weight:500;line-height:40px;vertical-align:middle;}
+.tvAppHome .tvAppItem .title .channel:after{content:'';display:inline-block;width:1px;height:30px;margin:4px 12px 0;background-color:rgba(106,106,106,0.5);vertical-align:top;}
+.tvAppHome .tvAppItem .text{opacity:0;margin:8px -30px 0;height:44px;font-size:20px;color:#4a4a4a;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;word-wrap:break-word;line-height:22px;}
+.tvAppHome .tvAppItem.focusOn{transform:scale(1.2);}
+.tvAppHome .tvAppItem.focusOn .text{opacity:1;}
+.tvAppHome .tvAppItem.focusOn .title,
+.tvAppHome .tvAppItem.focusOn .title .channel{font-weight:700;}
+.tvAppHome .tvAppItem.focusOn .title,
+.tvAppHome .tvAppItem.focusOn .title .channel,
+.tvAppHome .tvAppItem.focusOn .text{color:#1a1a1a;}
+.tvAppHome .tvAppItem.focusOn .imgCon{box-shadow:0 14px 14px 0 rgba(0, 0, 0, 0.35);}
+.tvAppHome .btnTopWrap {padding: 119px 0 169px;}
+
+.tvAppHome .tvAppItem .imgCon:before,
+.tvAppHome .tvAppItem .imgCon:after{position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;content:"";display:block;border-radius:14px;overflow:hidden;box-shadow:0 0 0 5px #f4f4f4;background:#f4f4f4;opacity:0;}
+.tvAppHome .tvAppItem.focusOn .imgCon:before{box-shadow:0 0 0 5px #f4f4f4;opacity:1;}
+.tvAppHome .tvAppItem .imgCon:after{z-index:-1;box-shadow:none;background:url('/assets/images/common/default/tvapp_default.png') no-repeat 0 0;background-size:100% 100%;opacity:1}
+
+

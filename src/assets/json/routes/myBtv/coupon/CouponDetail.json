@@ -1,0 +1,139 @@
+{
+	"pageType": "couponDetail",
+	"pageTitle": "쿠폰함",
+	"couponEnable": "2",
+	"slideItem" :[
+		{
+			"dDay" : "D-1",
+			"couponTitle" : "프리미어월정액<br/>1개월 무료이용권프리미어 월정액1개월 무료이용권",
+
+			"couponTitleFull" : "B tv 가입감사 프리미어 월정액<br/> 1개월 무료이용권",
+			"couponType" : "월정액 무료 쿠폰",
+			"discount" : {
+				"ratio" : "100"
+			},
+			"registDate" : "2017.05.03",
+			"restrictPeriod" : "만료 3일전",
+			"restrictDate" : "2017.08.15 까지",
+			"useRange" : "월정액 1개 상품",
+			"useRangeCaution" : ["프리미어 애니 월정액 제외22", "성인물 월정액 상품은 제외"]
+		},
+		{
+			"dDay" : "D-15",
+			"couponTitle" : "한국영화 할인<br/>이용권 10매",
+
+			"couponTitleFull" : "B tv 가입감사 프리미어 월정액<br/> 2개월 무료이용권",
+			"couponType" : "1,500원 할인 쿠폰",
+			"discount" : {
+				"amount" : "1500"
+			},
+			"registDate" : "2017.05.03",
+			"restrictPeriod" : "사용가능",
+			"restrictDate" : "2017.08.15 까지",
+			"useRange" : "월정액 1개 상품",
+			"useRangeCaution" : ["프리미어 애니 월정액 제외", "성인물 월정액 상품은 제외"]
+		},
+		{
+			"couponTitle" : "CJ E&M 월정액 1개월<br/>할인 이용권",
+
+			"couponTitleFull" : "B tv 가입감사 프리미어 월정액<br/> 3개월 무료이용권",
+			"couponType" : "2,000원 할인 쿠폰",
+			"discount" : {
+				"ratio" : "50"
+			},
+			"registDate" : "2017.05.03",
+			"restrictPeriod" : "기간만료",
+			"restrictDate" : "2017.08.15 까지",
+			"useRange" : "월정액 1개 상품",
+			"useRangeCaution" : ["프리미어 애니 월정액 제외", "성인물 월정액 상품은 제외"]
+		},
+		{
+			"couponTitle" : "CJ E&M 월정액 3개월<br/>할인 이용권",
+
+			"couponTitleFull" : "B tv 가입감사 프리미어 월정액<br/> 4개월 무료이용권",
+			"couponType" : "월정액 무료 쿠폰",
+			"discount" : {
+				"ratio" : "100"
+			},
+			"registDate" : "2017.05.03",
+			"restrictPeriod" : "사용완료",
+			"restrictDate" : "2017.08.15 까지",
+			"useRange" : "월정액 1개 상품",
+			"useRangeCaution" : ["프리미어 애니 월정액 제외", "성인물 월정액 상품은 제외"]
+		},
+		{
+			"couponTitle" : "CJ E&M 월정액 3개월<br/>할인 이용권",
+
+			"couponTitleFull" : "B tv 가입감사 프리미어 월정액<br/> 1개월 무료이용권",
+			"couponType" : "월정액 무료 쿠폰",
+			"discount" : {
+				"amount" : "1500"
+			},
+			"registDate" : "2017.05.03",
+			"restrictPeriod" : "사용완료",
+			"restrictDate" : "2017.08.15 까지",
+			"useRange" : "월정액 1개 상품",
+			"useRangeCaution" : ["프리미어 애니 월정액 제외", "성인물 월정액 상품은 제외"]
+		},
+		{
+			"couponTitle" : "CJ E&M 월정액 3개월<br/>할인 이용권",
+
+			"couponTitleFull" : "B tv 가입감사 프리미어 월정액<br/> 4개월 무료이용권",
+			"couponType" : "월정액 무료 쿠폰",
+			"discount" : {
+				"amount" : "1500"
+			},
+			"registDate" : "2017.05.03",
+			"restrictPeriod" : "사용완료",
+			"restrictDate" : "2017.08.15 까지",
+			"useRange" : "월정액 1개 상품",
+			"useRangeCaution" : ["프리미어 애니 월정액 제외", "성인물 월정액 상품은 제외"]
+		},
+		{
+			"couponTitle" : "CJ E&M 월정액 3개월<br/>할인 이용권",
+			"couponValid" : "기간만료",
+
+			"couponTitleFull" : "B tv 가입감사 프리미어 월정액<br/> 1개월 무료이용권",
+			"couponType" : "월정액 무료 쿠폰",
+			"discount" : {
+				"amount" : "1500"
+			},
+			"registDate" : "2017.05.03",
+			"restrictPeriod" : "기간만료",
+			"restrictDate" : "2017.08.15 까지",
+			"useRange" : "월정액 1개 상품",
+			"useRangeCaution" : ["프리미어 애니 월정액 제외", "성인물 월정액 상품은 제외"]
+		},
+		{
+			"couponTitle" : "CJ E&M 월정액 3개월<br/>할인 이용권",
+
+			"couponTitleFull" : "B tv 가입감사 프리미어 월정액<br/> 4개월 무료이용권",
+			"couponType" : "월정액 무료 쿠폰",
+			"discount" : {
+				"amount" : "1500"
+			},
+			"registDate" : "2017.05.03",
+			"restrictPeriod" : "사용완료",
+			"restrictDate" : "2017.08.15 까지",
+			"useRange" : "월정액 1개 상품",
+			"useRangeCaution" : ["프리미어 애니 월정액 제외", "성인물 월정액 상품은 제외"]
+		},
+		{
+			"couponTitle" : "CJ E&M 월정액 3개월<br/>할인 이용권",
+
+			"couponTitleFull" : "B tv 가입감사 프리미어 월정액<br/> 1개월 무료이용권",
+			"couponType" : "월정액 무료 쿠폰",
+			"discount" : {
+				"amount" : "1500"
+			},
+			"registDate" : "2017.05.03",
+			"restrictPeriod" : "기간만료",
+			"restrictDate" : "2017.08.15 까지",
+			"useRange" : "월정액 1개 상품",
+			"useRangeCaution" : ["프리미어 애니 월정액 제외", "성인물 월정액 상품은 제외"]
+		}
+	],
+	"caution": "쿠폰은 B tv에서 진행되고 있는 이벤트에 참여하면 받을 수 있습니다.<br/>‘쿠폰 등록’ 버튼을 눌러 받은 쿠폰번호를 입력하면 유료 콘텐츠 구매 시 사용할 수 있습니다.",
+	"cautionDetail" : "단, 쿠폰은 한 번에 1장씩 사용할 수 있으며, 사용한 쿠폰은 즉시 소멸됩니다."
+
+}

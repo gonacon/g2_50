@@ -1,0 +1,21 @@
+/* FirstSetChild.css */
+.childListWrap{height:637px;padding-top:86px;}
+.childListWrap .profileList {display:flex; justify-content:center; padding-top:0;}
+.childListWrap .profileList li {text-align:center;}
+.childListWrap .profileList li .item {display:block;}
+.childListWrap .profileList li .item.focusOn{transform:scale(1.19)}
+.childListWrap .profileList li .item .inner {display:block; padding:33px; width:376px; height:376px; background:url("/assets/images/kids/setting/img-alarm-nor.png") no-repeat center center; text-align:center;}
+.childListWrap .profileList li .item .text {display:block; padding-top:199px; background:url("/assets/images/kids/setting/img-girl.png") no-repeat center 33px; background-size:150px; font-size:32px; font-weight:700; line-height:normal; letter-spacing:normal; text-align:center; color:rgb(0, 0, 0);}
+.childListWrap .profileList li .item.focusOn .text{color:rgba(245,81,63,1);}
+.childListWrap .profileList li.boy .item .text {background-image:url("/assets/images/kids/setting/img-boy.png");}
+.childListWrap .profileList li.nonData .item .inner{background:url("/assets/images/kids/setting/img-alarm-add-nor.png") no-repeat center center;}
+.childListWrap .profileList li.nonData .item .text{padding-top:183px;background:url("/assets/images/kids/setting/ic-timeslot-add-nor.png") no-repeat center top 92px;background-size:65px;font-weight:500;}
+.childListWrap .profileList li.nonData .item.focusOn .inner{background:url("/assets/images/kids/setting/img-alarm-foc.png") no-repeat center center;}
+.childListWrap .profileList li.nonData .item.focusOn .text{padding-top:183px;background:url("/assets/images/kids/setting/ic-timeslot-add-foc.png") no-repeat center top 92px;background-size:65px;font-weight:700;}
+
+.childListWrap .detailAlarm {display:block; padding-top:16px;}
+.childListWrap .detailAlarm span {font-size:23px; font-weight:700; line-height:normal; letter-spacing:normal; color:rgba(0, 0, 0, 0.6);}
+.childListWrap .detailAlarm .age:before {display:inline-block; margin:3px 10px; width:2px; height:19px; background-color:rgba(0, 0, 0, 0.3); vertical-align:top; content:"";}
+
+.childListWrap li .item + .childDel {display:none;margin-top:36px;}
+.childListWrap li.focus .childDel {display:inline-block;}

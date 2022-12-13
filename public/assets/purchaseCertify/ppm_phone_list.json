@@ -1,0 +1,21 @@
+{
+	"terms": [
+		{
+			"title" : "통신과금 이용약관",
+            "detail" : "assets/purchaseCertify/phone_1.txt"
+        },
+        {
+			"title" : "개인정보의 수집 및 이용안내",
+            "detail" : "assets/purchaseCertify/phone_2.txt"
+        },
+        {
+			"title" : "개인정보 제공 및 위탁 안내",
+            "detail" : "assets/purchaseCertify/phone_3.txt"
+        },
+        {
+			"title" : "월정액 이용약관",
+            "detail" : "assets/purchaseCertify/ppm_1.txt"
+        }
+        
+    ]
+}

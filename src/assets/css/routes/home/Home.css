@@ -1,0 +1,29 @@
+/* Home.css */
+.home {padding:0 115px 0;}
+.home .myPoint {padding:15px 0 0; text-align:right;}
+.home .myPoint dl {font-size:0;}
+.home .myPoint dl dt,
+.home .myPoint dl dd {display:inline-block; font-size:28px; line-height:normal; letter-spacing:normal; color:#606066;}
+.home .myPoint dl dd {margin-left:12px; font-weight:700; color:#4a4a4a;}
+.home .myPoint dl dd + dt:before {display:inline-block; margin:0 20px; width:2px; height:28px; background:rgba(0,0,0,0.07); vertical-align:middle; content:"";}
+.home .myPoint dl dt .new,
+.home .myPoint dl dd .new{display:inline-block; margin-left:4px;width:27px; height:27px; background:url("/assets/images/common/icon/ic-new.png") no-repeat center center; vertical-align:middle;}
+
+.home:not(.monthly) .slideTypeA {padding-top:120px;}
+/*.home .contentGroup:first-child + .contentGroup + .contentGroup .slideTypeA {padding-top:54px;}*/
+.home:not(.monthly) .slideTypeB {padding-top:95px;}
+.home:not(.monthly) .slideTypeC {padding-top:100px;}
+.home .genreHeader {padding-top:141px;}
+.home .genreHeader.paddingTop {padding-top:100px;}
+.home .genreHeader .homeTitle {font-size:24px; line-height:1.25; letter-spacing:normal; color:rgba(26, 26, 26, 0.6);}
+.home .genreHeader .homeTitle:after {display:inline; margin-left:6px; font-size:24px; line-height:1.25; letter-spacing:normal; color:rgba(26, 26, 26, 0.6); content:">";}
+.home .genreHeader .subTitle {margin-top:8px; font-size:42px; font-weight:700; line-height:1.29; letter-spacing:normal; color:rgba(26, 26, 26, 0.9);}
+
+.home .btnTopWrap {padding:150px 0 60px;transform:translate(0,0);}
+
+.home:not(.monthly) #blocks_0.contentGroup .slideTypeA{padding-top:87px;}
+.home:not(.monthly) #banner.contentGroup + .contentGroup + #blocks_0.contentGroup .slideTypeA{padding-top:40px;}
+
+.bigBannerNone .home > #blocks_0.contentGroup:first-child > div{padding-top:130px;}
+.contentGroup[id*="blocks_"]{display:inline !important;}
+.home:not(.tvAppHome) > .contentGroup:first-child:not(#banner){padding-top:130px;}

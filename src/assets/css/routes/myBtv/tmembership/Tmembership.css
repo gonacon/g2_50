@@ -1,0 +1,36 @@
+/* Tmembership.css */
+.Tmembership .cardWrap {text-align:center;}
+.Tmembership .cardWrap .card {display:inline-block; margin-top:118px; width:540px; height:336px; position:relative; text-align:center;}
+.Tmembership .cardWrap .card .cardBg{position:absolute; top:0; left:0; bottom:0; right:0; z-index:-1;}
+.Tmembership .cardWrap .card .imgCard {position:absolute; top:0; left:0; z-index:-1;}
+.Tmembership .cardWrap .card .logoWrap{margin-top:79px;}
+/*.Tmembership .cardWrap .card .pointWrap {position:relative; z-index:1; padding-top:110px;}*/
+/*.Tmembership .cardWrap .card .pointWrap .pointTitle {display:block; padding-bottom:10px; font-size:30px; font-weight:700; line-height:1; letter-spacing:-1px; color:#e6e6e6;}*/
+/*.Tmembership .cardWrap .card .pointWrap .point {font-size:48px; color:#f4f4f4;}*/
+/*.Tmembership .cardWrap .card .pointWrap .point strong {margin-right:6px; font-size:64px; font-weight:700; color:#f4f4f4;}*/
+.Tmembership .cardWrap .card .cardInfo {padding:10px 0 0; font-size:40px; line-height:1.41; color:#e6e6e6;}
+.Tmembership .cardWrap .card .cardInfo:after {display:block; clear:both; content:"";}
+.Tmembership .cardWrap .card .cardInfo .cardNumber {display:inline-block;}
+.Tmembership .cardWrap .card .cardInfo .cardNumber .numberBlock {margin-left:17px;}
+.Tmembership .cardWrap .card .cardInfo .name {float:right; display:inline-block;}
+.Tmembership .buttonWrap {margin-top:48px; text-align:center;}
+
+.Tmembership .cardWrap.cardRegistBtn .card {}
+.Tmembership .cardWrap.cardRegistBtn .card {margin-top:172px; width:567px; height:353px; border-radius:12px; background:#f4f4f4; box-shadow:0 24px 16px 0 rgba(0, 0, 0, 0.35);}
+.Tmembership .cardWrap.cardRegistBtn .card .registText {padding-top:100px; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); -webkit-transform:translate(-50%, -50%); z-index:10; background:url(/assets/images/myBtv/card-regist-active.png) no-repeat center top; background-size:78px; font-size:38px; font-weight:700; line-height:1.09; text-align:center; color:#f5513f;}
+
+/* scale */
+/*.Tmembership .cardWrap.cardRegistBtn .card {margin-top:172px; width:450px; height:280px; border-radius:12px; background:rgba(145, 147, 157, 0.2);}*/
+/*.Tmembership .cardWrap.cardRegistBtn .card .registText {padding-top:83px; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); -webkit-transform:translate(-50%, -50%); z-index:10; background:url(/assets/images/myBtv/coupon-plus.png) no-repeat center top; background-size:65px; font-size:32px; line-height:1.09; letter-spacing:normal; text-align:center; color:rgba(0, 0, 0, 0.8);}*/
+/*.Tmembership .cardWrap.cardRegistBtn .card.focusOn {transform:scale(1.26); -webkit-transform:scale(1.26); background:#f4f4f4; box-shadow:0 24px 16px 0 rgba(0, 0, 0, 0.35);}*/
+/*.Tmembership .cardWrap.cardRegistBtn .card.focusOn .registText {padding-top:98px; background:url(/assets/images/myBtv/coupon-plus-active.png) no-repeat center top; background-size:78px; font-size:36px; font-weight:700; line-height:1.11; letter-spacing:-1px; text-align:center; color:#f5513f;}*/
+
+.Tmembership .bottomWrap {position:absolute; bottom:0; left:0; z-index:100; width:100%; height:220px; background-color:rgba(237, 239, 243, 0.5);box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1);}
+.Tmembership .bottomWrap .defaultWrap {display:block; padding:64px 116px; text-align:center;}
+.Tmembership .bottomWrap .defaultWrap .infoText{font-size:32px; line-height:1.44; letter-spacing:normal; color:#6a6a6a;}
+
+
+
+
+
+

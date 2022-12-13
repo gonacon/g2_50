@@ -1,0 +1,79 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        "moduleResolution": "node",
+        "jsx": "react",
+        "baseUrl": ".",
+        "paths": {
+            "Navigation": [
+                "src/supporters/navigation"
+            ],
+            "Navigation/*": [
+                "src/supporters/navigation/*"
+            ],
+            "Module": [
+                "src/components/modules"
+            ],
+            "Module/*": [
+                "src/components/modules/*"
+            ],
+            "ComponentCss": [
+                "src/assets/css/components"
+            ],
+            "ComponentCss/*": [
+                "src/assets/css/components/*"
+            ],
+            "Css": [
+                "src/assets/css/routes"
+            ],
+            "Css/*": [
+                "src/assets/css/routes/*"
+            ],
+            "Routes": [
+                "src/components/routes"
+            ],
+            "Routes/*": [
+                "src/components/routes/*"
+            ],
+            "Network": [
+                "src/supporters/network"
+            ],
+            "Network/*": [
+                "src/supporters/network/*"
+            ],
+            "Util": [
+                "src/utils"
+            ],
+            "Util/*": [
+                "src/utils/*"
+            ],
+            "Config": [
+                "src/config"
+            ],
+            "Config/*": [
+                "src/config/*"
+            ],
+            "Component": [
+                "src/components"
+            ],
+            "Component/*": [
+                "src/components/*"
+            ],
+            "Supporters": [
+                "src/supporters"
+            ],
+            "Supporters/*": [
+                "src/supporters/*"
+            ],
+            "Popup": [
+                "src/popup"
+            ],
+            "Popup/*": [
+                "src/popup/*"
+            ]
+        },
+        "allowSyntheticDefaultImports": true,
+        
+    }
+}

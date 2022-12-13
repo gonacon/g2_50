@@ -1,0 +1,11 @@
+/* BpointRegist.css */
+.registWrap.bPoint .contentBox {padding:0 35px;}
+.registWrap.bPoint .contentBox.radioWrap {padding:0; margin-top:148px;}
+.registWrap.bPoint .contentBox.radioWrap .radioStyle {width:100%; letter-spacing:-1.2px; background:rgba(0,0,0,0.15);}
+.registWrap.bPoint .radioContentWrapper {margin-top:40px;}
+.registWrap.bPoint .radioContentWrapper .contentBox {display:none;}
+.registWrap.bPoint .radioContentWrapper .contentBox.select {display:block;}
+.registWrap.bPoint .contentBox.gift {padding:0 140px;}
+
+
+

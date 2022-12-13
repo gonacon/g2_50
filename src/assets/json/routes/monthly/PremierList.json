@@ -1,0 +1,140 @@
+{
+	"slideType": "SlideTypeA",
+	"slideTitle": "프리미어 주간 TOP3",
+	"slideItem": [
+		{
+			"title": "노무현입니다노무현입니다",
+			"image": "/assets/images/tmp/monthly/M02_C_01.png",
+			"flagUp": true,
+			"flagNew": true,
+			"flagFree": true,
+			"flagSale": true,
+			"flagMonopoly": true,
+			"flagCancel": true,
+			"flagEvent": true,
+			"flagHdr": true,
+			"flagUhd": true,
+			"flagImg": "/assets/images/tmp/flag-event-1-foc.png"
+		},
+		{
+			"title": "미이라",
+			"image": "/assets/images/tmp/monthly/M02_C_02.png",
+			"flagUp": true,
+			"flagNew": true,
+			"flagFree": false,
+			"flagSale": true,
+			"flagMonopoly": true,
+			"flagCancel": true,
+			"flagEvent": true,
+			"flagHdr": true,
+			"flagUhd": true,
+			"flagImg": "/assets/images/tmp/flag-event-1-foc.png"
+		},
+		{
+			"title": "리얼",
+			"image": "/assets/images/tmp/monthly/M02_C_03.png",
+			"flagUp": true,
+			"flagNew": true,
+			"flagFree": false,
+			"flagSale": false,
+			"flagMonopoly": true,
+			"flagCancel": true,
+			"flagEvent": true,
+			"flagHdr": true,
+			"flagUhd": true,
+			"flagImg": "/assets/images/tmp/flag-event-1-foc.png"
+		},
+		{
+			"title": "보스베이비",
+			"image": "/assets/images/tmp/monthly/M02_C_04.png",
+			"flagUp": true,
+			"flagNew": true,
+			"flagFree": false,
+			"flagSale": false,
+			"flagMonopoly": true,
+			"flagCancel": true,
+			"flagEvent": false,
+			"flagHdr": true,
+			"flagUhd": true,
+			"flagImg": "/assets/images/tmp/flag-event-1-foc.png"
+		},
+		{
+			"title": "원더우먼",
+			"image": "/assets/images/tmp/monthly/M02_C_05.png",
+			"flagUp": true,
+			"flagNew": false,
+			"flagFree": false,
+			"flagSale": false,
+			"flagMonopoly": true,
+			"flagCancel": true,
+			"flagEvent": false,
+			"flagHdr": true,
+			"flagUhd": true,
+			"flagImg": "/assets/images/tmp/flag-event-1-foc.png"
+		},
+		{
+			"title": "악녀",
+			"image": "/assets/images/tmp/monthly/M02_C_06.png",
+			"flagUp": false,
+			"flagNew": false,
+			"flagFree": false,
+			"flagSale": false,
+			"flagMonopoly": true,
+			"flagCancel": true,
+			"flagEvent": false,
+			"flagHdr": true,
+			"flagUhd": true,
+			"flagImg": "/assets/images/tmp/flag-event-1-foc.png"
+		},
+		{
+			"title": "하루",
+			"image": "/assets/images/tmp/monthly/M02_C_01.png",
+			"flagUp": false,
+			"flagNew": false,
+			"flagFree": false,
+			"flagSale": false,
+			"flagMonopoly": true,
+			"flagCancel": false,
+			"flagEvent": false,
+			"flagHdr": true,
+			"flagUhd": true,
+			"flagImg": "/assets/images/tmp/flag-event-1-foc.png"
+		},
+		{
+			"title": "대립군",
+			"image": "/assets/images/tmp/monthly/M02_C_02.png",
+			"flagUp": false,
+			"flagNew": false,
+			"flagFree": false,
+			"flagSale": false,
+			"flagMonopoly": false,
+			"flagCancel": false,
+			"flagEvent": false,
+			"flagHdr": true,
+			"flagUhd": true,
+			"flagImg": "/assets/images/tmp/flag-event-1-foc.png"
+		},
+		{
+			"title": "에일리언",
+			"image": "/assets/images/tmp/monthly/M02_C_03.png",
+			"flagUp": false,
+			"flagNew": false,
+			"flagFree": false,
+			"flagSale": false,
+			"flagMonopoly": false,
+			"flagCancel": false,
+			"flagEvent": false,
+			"flagHdr": false,
+			"flagUhd": true,
+			"flagImg": "/assets/images/tmp/flag-event-1-foc.png"
+		},
+		{
+			"title": "스파이더맨",
+			"image": "/assets/images/tmp/monthly/M02_C_04.png"
+		},
+		{
+			"title": "Get Out!!Get Out!!Get Out!!Get Out!!Get Out!!Get Out!!",
+			"image": "/assets/images/tmp/monthly/M02_C_05.png"
+		}
+	]
+}

@@ -1,0 +1,46 @@
+{	"slideType" : "steelCut",
+	"slideTitle" : "예고편/스틸컷",
+	"slideSubTitle" : "",
+	"specialMovie": [
+		{
+			"title": "스페셜영상01",
+			"image": "/assets/images/tmp/synopsis/img-shortmovie-special-01.png"
+		},
+		{
+			"title": "스페셜영상02",
+			"image": "/assets/images/tmp/synopsis/img-shortmovie-special-02.png"
+		},
+		{
+			"title": "",
+			"image": "/assets/images/tmp/synopsis/img-shortmovie-special-03.png"
+		},
+		{
+			"title": "",
+			"image": "/assets/images/tmp/synopsis/img-shortmovie-special-04.png"
+		},
+		{
+			"title": "",
+			"image": "/assets/images/tmp/synopsis/img-shortmovie-special-05.png"
+		},
+		{
+			"title": "",
+			"image": "/assets/images/tmp/synopsis/img-shortmovie-special-01.png"
+		},
+		{
+			"title": "",
+			"image": "/assets/images/tmp/synopsis/img-shortmovie-special-02.png"
+		},
+		{
+			"title": "",
+			"image": "/assets/images/tmp/synopsis/img-shortmovie-special-03.png"
+		},
+		{
+			"title": "",
+			"image": "/assets/images/tmp/synopsis/img-shortmovie-special-04.png"
+		},
+		{
+			"title": "",
+			"image": "/assets/images/tmp/synopsis/img-shortmovie-special-05.png"
+		}
+	]
+}

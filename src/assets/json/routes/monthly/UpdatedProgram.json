@@ -1,0 +1,57 @@
+{
+	"slideType": "SlideTypeB",
+	"slideTitle": "최신 시청한 월정액 VOD",
+	"slideItem": [
+		{
+			"title": "쌈,마이웨이쌈,마이웨이쌈,마이웨이쌈,마이웨이 5회",
+			"image": "/assets/images/tmp/monthly/M02_B_01.png",
+			"currentState": "7"
+		},
+		{
+			"title": "신서유기 3회",
+			"image": "/assets/images/tmp/monthly/M02_B_02.png",
+			"currentState": "17"
+		},
+		{
+			"title": "엽기적인 그녀 19회",
+			"image": "/assets/images/tmp/monthly/M02_B_03.png",
+			"currentState": "27"
+		},
+		{
+			"title": "비정상회담 155회",
+			"image": "/assets/images/tmp/monthly/M02_B_04.png",
+			"currentState": "37"
+		},
+		{
+			"title": "프로듀스 101...11회",
+			"image": "/assets/images/tmp/monthly/M02_B_05.png",
+			"currentState": "47"
+		},
+		{
+			"title": "쌈,마이웨이 55회",
+			"image": "/assets/images/tmp/monthly/M02_B_01.png",
+			"currentState": "57"
+		},
+		{
+			"title": "신서유기 333회",
+			"image": "/assets/images/tmp/monthly/M02_B_02.png",
+			"currentState": "67"
+		},
+		{
+			"title": "엽기적인 그녀 1919회",
+			"image": "/assets/images/tmp/monthly/M02_B_03.png",
+			"currentState": "77"
+		},
+		{
+			"title": "비정상회담 155155회",
+			"image": "/assets/images/tmp/monthly/M02_B_04.png",
+			"currentState": "87"
+		},
+		{
+			"title": "프로듀스 프로듀스 프로듀스 101...11회",
+			"image": "/assets/images/tmp/monthly/M02_B_05.png",
+			"currentState": "97"
+		}
+
+	]
+}

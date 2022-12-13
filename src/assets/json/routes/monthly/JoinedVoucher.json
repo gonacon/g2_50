@@ -1,0 +1,46 @@
+{
+	"slideType": "SlideTypeJoined",
+	"slideTitle": "고객님의 가입 월정액",
+	"slideItem": [
+		{
+			"thumbImage": "/assets/images/tmp/monthly/monthly_product_catchon_paid_nor.png",
+			"imageS": "/assets/images/tmp/monthly/monthly_product_catchon_paid_foc.png"
+		},
+		{
+			"thumbImage": "/assets/images/tmp/monthly/monthly_product_channelA_paid_nor.png",
+			"imageS": "/assets/images/tmp/monthly/monthly_product_channelA_paid_foc.png"
+		},
+		{
+			"thumbImage": "/assets/images/tmp/monthly/monthly_product_cj_e&m_paid_nor.png",
+			"imageS": "/assets/images/tmp/monthly/monthly_product_cj_e&m_paid_foc.png"
+		},
+		{
+			"thumbImage": "/assets/images/tmp/monthly/monthly_product_comedytv_paid_nor.png",
+			"imageS": "/assets/images/tmp/monthly/monthly_product_comedytv_paid_foc.png"
+		},
+		{
+			"thumbImage": "/assets/images/tmp/monthly/monthly_product_ebs_kids_paid_nor.png",
+			"imageS": "/assets/images/tmp/monthly/monthly_product_ebs_kids_paid_foc.png"
+		},
+		{
+			"thumbImage": "/assets/images/tmp/monthly/monthly_product_eduwill_account_paid_nor.png",
+			"imageS": "/assets/images/tmp/monthly/monthly_product_eduwill_account_paid_foc.png"
+		},
+		{
+			"thumbImage": "/assets/images/tmp/monthly/monthly_product_englishgem_paid_nor.png",
+			"imageS": "/assets/images/tmp/monthly/monthly_product_englishgem_paid_foc.png"
+		},
+		{
+			"thumbImage": "/assets/images/tmp/monthly/monthly_product_ground_paid_nor.png",
+			"imageS": "/assets/images/tmp/monthly/monthly_product_ground_paid_foc.png"
+		},
+		{
+			"thumbImage": "/assets/images/tmp/monthly/monthly_product_jei_englishtv_paid_nor.png",
+			"imageS": "/assets/images/tmp/monthly/monthly_product_jei_englishtv_paid_foc.png"
+		},
+		{
+			"thumbImage": "/assets/images/tmp/monthly/monthly_product_jtbc_paid_nor.png",
+			"imageS": "/assets/images/tmp/monthly/monthly_product_jtbc_paid_foc.png"
+		}
+	]
+}

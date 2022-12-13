@@ -1,0 +1,1398 @@
+// common
+import React from 'react';
+import moment from 'moment';
+import constants, { STB_PROP } from '../../config/constants';
+import { fm } from 'Supporters/navigator';
+import Core from 'Supporters/core';
+import FM from 'Supporters/navi';
+import keyCode from 'Supporters/keyCodes';
+import { CTSInfo } from 'Supporters/CTSInfo';
+import StbInterface from 'Supporters/stbInterface';
+
+// util
+import _ from 'lodash';
+import Utils, { scroll } from '../../utils/utils';
+import synopAPI from './api/synopAPI';
+import appConfig from 'Config/app-config';
+
+// components
+import PageView from '../../supporters/PageView.js';
+import SynopShort from './SynopShort.js';
+import SynopSeries from './SynopSeries.js';
+import SynopDescriptionPop from './popup/SynopDescriptionPop';
+import AdultCertification from '../../popup/AdultCertification';
+import SynopCornerPop from './popup/SynopCornerPop';
+import SynopShortSteel from './popup/SynopShortSteel';
+
+
+const { Keymap: { ENTER, UP, DOWN, LEFT, RIGHT, BACK_SPACE, PC_BACK_SPACE, BLUE, BLUE_KEY, FAV_KEY } } = keyCode;
+class SynopsisView extends PageView {
+    constructor(props) {
+        super(props);
+
+        this.shortFm = [
+            { key: 'banner', fm: null },
+            { key: 'description', fm: null },
+            { key: 'purcharseButtons', fm: null },
+            { key: 'review', fm: null },
+            { key: 'slides', fm: [] },
+            { key: 'top', fm: null }
+        ]
+        this.seriseFm = [
+            { key: 'description', fm: null },
+            { key: 'purcharseButtons', fm: null },
+            { key: 'series', fm: null },
+            { key: 'seriesDescription', fm: null },
+            { key: 'slides', fm: [] },
+            { key: 'top', fm: null }
+        ]
+
+        this.state = _.isEmpty(this.historyData) ? {
+            synopInfo: {
+                param: null,
+                metvDirectview: null,
+                synopsis: {
+                    contents: null,
+                    purchares: []
+                },
+                cwRelation: null,
+            },
+            focusIdx: {
+                key: 'purcharseButtons',
+                v: 0,
+                h: 1    // 일반버튼
+            },
+            isBookmark: false,      // 찜
+            buttonObj: undefined,    // 버튼변경
+            defaultSynopsis: null,
+            yn_season_watch_all: 'N' // 시즌 전편구매 여부
+        } : this.historyData
+
+        !_.isEmpty(this.historyData) ?
+            this.historyData.synopInfo.synopsis.contents.sris_typ_cd === '01' ?
+            this.focusList = this.seriseFm
+            :
+            this.focusList = this.shortFm
+        : this.focusList = [];
+
+        this.synopType = null;
+        this.yn_purchare = {
+            button: 'N',    // 버튼 구매여부
+            series: 'N',    // 시리즈 구매여부
+            free: 'N',      // 무료 여부
+            possn: 'N',     // 소장 여부
+            change: false   // 추가 구매버튼
+        };
+        this.defaultPlayInfo = {
+            synopsis_type: '01',    //진입한 시놉시스 유형(01 : 단편 시놉, 02 : 시즌 시놉, 03 : 게이트웨이 시놉, 04 : 커머스 시놉)
+            playType: CTSInfo.PLAYTYPE.VOD_PLAY,    //VOD_PLAY : 일반, VOD_CORNER : 코너별 보기, VOD_ALL_CORNER : 코너별 모아보기
+            ynTeaser: 'N',          //예고편 재생 여부 (Y/N)
+            ynSpecial: 'N',         //스페셜영상 재생 여부 (Y/N)
+            playOption: 'normal',   //normal : 일반 시놉에서 재생할 경우, next : 재생 종료 후 다음 회차 재생
+                                    //other : 재생 중 playbar를 통한 다른 회차 재생, smartRcu : SmartRCU를 통한 이어보기
+            kids_yn: 'N',           //키즈 시놉 여부(Y/N)
+            ynSerise: 'N',          //시리즈 여부(Y/N)
+            isCatchUp: 'N',         //시리즈 인 경우, MeTV의 isCatchUp 전달
+            isAll: 'N',             //전편 구매 여부(Y/N)    
+            epsd_id: '',            //에피소드ID
+            epsd_rslu_id: '',        //에피소드 해상도ID
+            adult_flag: !_.isEmpty(this.paramData.adult_flag) ? this.paramData.adult_flag : '0'
+        };
+        this.adultState = false;    // 현재 인증상태
+        this.seriesDelay = true;    // 시즌 엔터값 딜레이
+        this.yn_history = false;    // 히스토리인지 아닌지
+        this.isChange = 0;
+        this.btnPurchase = {
+            purchaes: [],
+            unPurchase: [],
+            free: []
+        }
+        this.seriesPurchase = {
+            purchaes: [],
+            unPurchase: [],
+            free: []
+        }
+    }
+
+    componentWillMount() {
+        const { showMenu } = this.props;
+        if (showMenu && typeof showMenu === 'function') {
+            showMenu(false);
+        }
+
+        let paramData = this.paramData;
+        if (_.isEmpty(paramData)) {
+            if (_.isEmpty(this.historyData)) {
+                Core.inst().showToast('파라미터 없음');
+                this.moveBack();
+            }
+        } else {
+            let watchall = 'Y'; // yn_seacon_watchall 최초진입은 Y 값
+            let search_type = '1'; // 1:epsd_id기준, 2:epsd_rslu_id기준
+            let synopsis_type = null; // 1:단편진입, 2:시즌회차이동, 3:시즌최초진입or시즌변경
+            if (_.isEmpty(paramData.epsd_id)) {
+                search_type = '2';
+            }
+            paramData.search_type = search_type;
+            
+            if (!paramData.yn_recent) {
+                paramData.yn_recent = 'Y' // 최초진입 최신회차로 보여주기
+            }
+            const settingKey = 'default'; // 최초진입시 포커스 셋팅을 할지 말지
+            this.setAPIcall(paramData, watchall, synopsis_type, settingKey);
+        }
+    }
+
+    componentDidMount() {
+        // 키즈존 위젯
+        StbInterface.getProperty(STB_PROP.KIDS_MODE_ENTRY) === '1' && Core.inst().showKidsWidget();
+
+        let synopEnterCount =  StbInterface.getProperty(constants.STB_PROP.SOUND_TOOLTIPGUIDE_COUNT_SYNOPSIS);
+        
+        if(Number(synopEnterCount) <= 3 || synopEnterCount === undefined){
+            if(synopEnterCount === undefined) {
+                synopEnterCount = 0;
+            }
+            StbInterface.setProperty(constants.STB_PROP.SOUND_TOOLTIPGUIDE_COUNT_SYNOPSIS, Number(synopEnterCount) + 1);
+        };
+        //StbInterface.setProperty(constants.STB_PROP.SOUND_TOOLTIPGUIDE_COUNT_SYNOPSIS, 1);
+
+
+        // history
+        if (!_.isEmpty(this.historyData)) {
+            const historyData = this.historyData.synopInfo;
+            const { focusIdx } = this.historyData;
+            this.synopType = historyData.synopsis.contents.sris_typ_cd;
+            this.yn_purchare = historyData.synopsis.contents.yn_purchare;
+            historyData.synopsis.contents.yn_history = true;
+            this.declareFocusList(this.focusList);
+            this.setDefaultFm(historyData.synopsis, 'history');
+            this.setFocus({id: focusIdx.key, idx: focusIdx.v, childIdx: focusIdx.h});
+        }
+    }
+
+    shouldComponentUpdate(nextProps, nextState) {
+        return (JSON.stringify(nextState.synopInfo) !== JSON.stringify(this.state.synopInfo)
+        || nextState.isBookmark !== this.state.isBookmark
+        || JSON.stringify(nextState.buttonObj) !== JSON.stringify(this.state.buttonObj));
+    }
+
+
+    componentWillUnmount() {
+        super.componentWillUnmount();
+        StbInterface.getProperty(STB_PROP.KIDS_MODE_ENTRY) !== '1' && Core.inst().hideKidsWidget();
+    }
+
+    setAPIcall = (paramData, watchall, synopsis_type, settingKey) => {
+        synopAPI.xpgMetv(paramData, watchall, synopsis_type, settingKey, this.state.yn_season_watch_all).then(result => {
+            if (result === 'error' || _.isEmpty(result) || (result.synopsis.contents.sris_typ_cd === '01' && _.isEmpty(result.synopsis.contents.products))) {
+                Core.inst().showToast('현재 서비스를 이용하실 수 없습니다. 다시 이용해 주세요.');
+                return this.moveBack();
+            } else {
+                let cloneResult = _.cloneDeep(result);
+
+                this.synopType = result.synopsis.contents.sris_typ_cd;
+                settingKey === 'default' && this.setFocusList(this.synopType);
+                if (this.state.yn_season_watch_all === 'N') {
+                    if (!_.isEmpty(result.metvDirectview)) {
+                        if (!_.isEmpty(result.metvDirectview.yn_season_watch_all)) {
+                            this.state.yn_season_watch_all = result.metvDirectview.yn_season_watch_all;
+                        }
+                    }
+                }
+
+                // 구매버튼 가공
+                if (!_.isEmpty(result.synopsis.purchares)) {
+                    const purchares = this.getPurchares(result, settingKey);
+                    result.synopsis.purchares = purchares;
+                }
+                
+                result.synopsis.contents['yn_purchare'] = this.yn_purchare; // 구매여부 object 생성
+                result.synopsis.contents['yn_history'] = false;
+
+                // 찜확인
+                let isBookmark = this.state.isBookmark;
+                if (!_.isEmpty(result.bookmark)) {
+                    const bookmark = result.bookmark === 'Y' ? true : false;
+                    isBookmark = bookmark;
+                }
+                // 버튼 부가세 설명
+                let buttonObj = undefined;
+                if (this.yn_purchare.button !== 'Y' && this.yn_purchare.free !== 'Y' && this.synopType !== '01')  {
+                    buttonObj = result.synopsis.purchares[0];
+                }
+
+                this.setDefaultFm(result.synopsis);
+                this.setState({
+                    defaultSynopsis: cloneResult.synopsis, // 가공안한 쌩짜베기 시놉 데이터
+                    isBookmark: isBookmark,
+                    synopInfo: result,
+                    buttonObj: buttonObj
+                },() => {
+                    setTimeout(() => {
+                        const { focusIdx } = this.state;
+                        let setting = false;
+                        switch(settingKey) {
+                            case 'default': case 'season': case 'cw':
+                                setting = true;
+                            break;
+                            default:break;
+                        }
+                        if (this.synopType === '01') {
+                            focusIdx.key = 'series';
+                            focusIdx.v = 0;
+                            focusIdx.h = 0;
+                            for (const [idx, item] of result.synopsis.contents.series_info.entries()) {
+                                if (result.synopsis.contents.epsd_id === item.epsd_id) {
+                                    focusIdx.h = idx;
+                                    break;
+                                }
+                            }
+                            // focusIdx.h = result.synopsis.contents.series_info.length-1;
+                            let findSlides = _.find(this.focusList, ['key', 'slides']);
+                            if (findSlides.fm.length === 0) {
+                                this.setFm('top', null);
+                            }
+                            if (!this.state.buttonObj) {
+                                this.state.buttonObj = result.synopsis.purchares[0];
+                            }
+                        } else {
+                            if (_.isEmpty(result.synopsis.contents.preview) && this.yn_purchare.free === 'N' && this.yn_purchare.button === 'N') {
+                                focusIdx.h = 0;
+                            }
+                        }
+                        if (paramData.focus) {
+                            const { focus } = paramData;
+                            focusIdx.key = focus.key;
+                            focusIdx.v = focus.v;
+                            focusIdx.h = focus.h
+                            if (focus.ref) { // 시즌변경인경우
+                                let findFm = _.find(this.focusList, ['key', 'purcharseButtons']);
+                                const { lastIdx } = findFm.fm.listInfo;
+                                focusIdx.key = 'purcharseButtons';
+                                focusIdx.h = lastIdx;
+                                if (focus.ref === 'prev') {
+                                    focusIdx.h = lastIdx - 1;
+                                }
+                            }
+                        }
+                        if (settingKey === 'series') {
+                            this.seriesDelay = true;
+                        }
+                        setting && this.setFocus({id: focusIdx.key, idx: focusIdx.v, childIdx: focusIdx.h});
+                    },1);
+                });
+            }
+        });
+    }
+
+    setFocusList = (synopType) => {
+        if (synopType === '01') {
+            this.focusList = this.seriseFm;
+        } else {
+            this.focusList = this.shortFm;
+        }
+        this.declareFocusList(this.focusList);
+    }
+
+    scrollTo = (anchor, marginTop) => {
+        let top = 0;
+        let offset = 0;
+        if (anchor) {
+            top = anchor.offsetTop;
+        }
+        const margin = marginTop ? marginTop : 0;
+        let bShowMenu = true;
+        if (top > 500) {
+            offset = -(top - 60) + margin;
+            bShowMenu = false;
+        } else {
+            offset = 0;
+        }
+
+        if (this.synopType === '01') {
+            const slideLeft = document.querySelector('.innerMove')
+            let slideTop = (offset + 1046) > 0 ? 0 : offset + 1046;
+            slideLeft.style.transform = `translate(0px, ${-slideTop}px)`;
+        } else {
+            offset !== 0 ? offset += 46 : 0;
+        }
+
+        if (offset < 0) {
+            this.setMainBgNone('add');
+        }
+
+        if (!_.isEmpty(this.state.synopInfo.synopsis.contents.bg_img_path)) {
+            if (offset < 0) {
+                this.setBgHero('blur');
+            }
+        }
+        if (offset !== 0) {
+            document.getElementById('pageArr').classList.add('on');
+        }
+        scroll(offset);
+    }
+
+    setDefaultFm = (data, route) => {
+        let previewBtn = _.isEmpty(data.contents.preview) ? -1 : 0;
+        let buttonLen = _.isEmpty(data.purchares) ? 0 : data.purchares.length;
+        if ((data.contents.yn_purchare.button === 'Y' || data.contents.yn_purchare.free === 'Y') && !data.contents.yn_purchare.change) { // 구매한경우 무조건 버튼FM1개 표시
+            buttonLen = 1;
+            previewBtn = 0;
+            if (this.synopType !== '01' && route !== 'history') {
+                this.state.focusIdx.h = 0; // 구매한경우 바로보기에 포커스 셋팅! 이런거좀 시키지마!
+            }
+        }
+        if (data.contents.yn_purchare.change) {
+            previewBtn = 0;
+        }
+        let typeLength = this.synopType === '01' ? 3 : (2 + previewBtn);
+        if (this.synopType === '01' && _.isEmpty(data.contents.sson_choic_nm)) {
+            typeLength -= 2; // 시즌일때 prev, next없을때 시즌 왓다갓다 버튼지움
+        }
+        for (let item of this.focusList) {
+            let containerSelector = '';
+            let row = 1;
+            let col = 1;
+            let focusIdx = 0;
+            let startIdx = 0;
+            let lastIdx = 0;
+            let dataLen = 0;
+            let onFocusKeyDown = function () { };
+            let onFocusContainer = function () { };
+            switch (item.key) {
+                case 'banner':
+                    onFocusKeyDown = this.onFocusKeyDownBanner;
+                    break;
+                case 'description':
+                    containerSelector = '.contentTextBox'
+                    onFocusKeyDown = this.onFocusKeyDownDescription;
+                    break;
+                case 'purcharseButtons':
+                    containerSelector = 'ul';
+                    dataLen = buttonLen + typeLength;
+                    col = dataLen;
+                    lastIdx = dataLen - 1;
+                    onFocusKeyDown = this.onFocusKeyDownPurcahrse;
+                    onFocusContainer = this.onFocusButtonList;
+                    break;
+                default:
+                    return;
+                    break;
+            }
+            let option = {
+                id: item.key,
+                containerSelector,
+                moveSelector: '',
+                focusSelector: '.csFocus',
+                row: row,
+                col: col,
+                focusIdx: focusIdx,
+                startIdx: startIdx,
+                lastIdx: lastIdx,
+                bRowRolling: true,
+                onFocusKeyDown: onFocusKeyDown,
+                onFocusContainer
+            }
+            const fm = new FM(option);
+
+            if (item.key === 'banner' && _.isEmpty(data.contents.sris_evt_comt_exps_mthd_cd)) { // 배너 없을때 포커스 없앰
+                this.setFm('banner', null);
+            } else {
+                this.setFm(item.key, fm);
+            }
+        }
+    }
+
+    onKeyDown(e) {
+        if (!this.seriesDelay && (e.keyCode === UP || e.keyCode === DOWN)) {
+            return;
+        }
+        this.handleKeyEvent(e);
+        if (e.keyCode === BLUE || e.keyCode === BLUE_KEY && this.synopType === '01') {
+            const { synopInfo } = this.state;
+            synopAPI.metv023({sris_id: synopInfo.synopsis.contents.sris_id}).then((result) => {
+                if (result.result === '0000') {
+                    for (const [idx, item] of synopInfo.synopsis.contents.series_info.entries()) {
+                        if (item.epsd_id === result.epsd_id) {
+                            this.setFocus({id: 'series', childIdx: idx});
+                            break;
+                        }
+                    }
+                } else {
+                    Core.inst().showToast('최근 시청 이력이 없습니다.');
+                }
+            })
+        } else if (e.keyCode === FAV_KEY) {
+            this.setJJim(this.state.synopInfo.synopsis);
+        }
+    }
+
+    // banner event
+    onFocusKeyDownBanner = (e) => {
+        if (e.keyCode === ENTER) {
+            const { synopInfo } = this.state;
+            const bannerTyep = synopInfo.synopsis.contents.sris_evt_comt_call_typ_cd
+            const bannerUrl = synopInfo.synopsis.contents.sris_evt_comt_call_url;
+            console.log('배너 클릭', bannerTyep, bannerUrl);
+            let obj = {};
+            switch(bannerTyep) {
+                case '2':
+                   StbInterface.openPopup('url', bannerUrl);
+                break;
+                case '501':
+                break;
+                case '502':
+                break;
+                case '503': // 시놉이동
+                    let paramData = bannerUrl.split('/');
+                    obj.sris_id = !_.isEmpty(paramData[2]) ? paramData[2]:undefined;
+                    obj.epsd_id = !_.isEmpty(paramData[3]) ? paramData[3]:undefined;
+                    this.movePage(constants.SYNOPSIS, obj);
+                break;
+                case '504':
+                break;
+                case '505':
+                break;
+                case '506':
+                break;
+                default:break;
+            }
+        }
+    }
+
+    // 줄거리 event
+    onFocusKeyDownDescription = (e) => {
+        if (e.keyCode === ENTER) {
+            const contents = this.state.synopInfo.synopsis.contents;
+            const obj = {
+                title_img_path: contents.title_img_path,
+                title: contents.title,
+                content: contents.sris_snss_cts,
+                bg_img_path: contents.bg_img_path,
+                dark_img_yn: contents.dark_img_yn
+            }
+            Core.inst().showPopup(<SynopDescriptionPop />, obj, null);
+        }
+    }
+
+    // 버튼event
+    onFocusKeyDownPurcahrse = (e, currentIdx) => {
+        const { synopsis, metvDirectview } = this.state.synopInfo;
+        const contents = synopsis.contents;
+        const purchares = synopsis.purchares;
+        let purcharesLen = _.isEmpty(purchares) ? 0 : purchares.length;
+        if (e.keyCode === ENTER) {
+            // console.log('onFocusKeyDownPurcahrse currentIdx=' + currentIdx + ' this=', this, this.focusList);
+            let playInfo = _.clone(this.defaultPlayInfo);
+
+            if (this.synopType === '01') {
+                playInfo.synopsis_type = '02';
+                // 시즌버튼
+                if ((this.yn_purchare.button === 'Y' || this.yn_purchare.free === 'Y') && !this.yn_purchare.change) {
+                    // 구매
+                    switch(currentIdx) {
+                        case 0 :
+                            console.log('추가상품구매');
+                            this.purcharesChange(this.state.synopInfo);
+                            break;
+                        case 1 :
+                            console.log('찜');
+                            this.setJJim(synopsis);
+                            break;
+                        case 2 :
+                            console.log('이전시즌');
+                            this.onSeasonChange(synopsis, 'prev');
+                            break;
+                        case 3 :
+                            console.log('다음시즌');
+                            this.onSeasonChange(synopsis, 'next');
+                            break;
+                        default:break;
+                    }
+                } else {
+                    // 미구매
+                    let fmLastIdx = this.focusList[1].fm.listInfo.lastIdx;
+                    let obj = {};
+                    if (currentIdx < purcharesLen) {
+                        console.log('시즌 버튼 타입', purchares[currentIdx].prd_typ_cd);
+                        playInfo.prd_prc_id = purchares[currentIdx].prd_prc_id;
+                        this.adultCheck('PUR', synopsis, playInfo);
+                        // this.setPurchaseContent(synopsis, playInfo);
+                    } else {
+                        switch(fmLastIdx - currentIdx) {
+                            case 0:
+                                if (_.isEmpty(contents.sson_choic_nm)) {
+                                    this.setJJim(synopsis);
+                                    break;
+                                }
+                                console.log('다음시즌');
+                                this.onSeasonChange(synopsis, 'next');
+                                break;
+                            case 1:
+                                console.log('이전시즌');
+                                this.onSeasonChange(synopsis, 'prev');
+                                break;
+                            case 2:
+                                console.log('찜');
+                                this.setJJim(synopsis);
+                                break;
+                            default:break;
+                        }
+                    }
+                }
+            } else {
+                playInfo.synopsis_type = '01';
+                // 단편버튼
+                if ((this.yn_purchare.button === 'Y' || this.yn_purchare.free === 'Y') && !this.yn_purchare.change) {
+                    // 구매
+                    switch(currentIdx) {
+                        case 0 :
+                            console.log('바로보기 & 무료보기');
+                            const { defaultSynopsis } = this.state;
+                            let purchare = this.getYnDirectview(metvDirectview, defaultSynopsis.purchares); // 바로보기
+                            if (this.yn_purchare.free === 'Y') {
+                                purchare = this.getYnFree(purchares); // 무료보기
+                            }
+                            playInfo.prd_prc_id = purchare.prd_prc_id;
+                            this.adultCheck('VOD', defaultSynopsis, playInfo);
+                            break;
+                        case 1 :
+                            console.log('추가상품구매');
+                            this.purcharesChange(this.state.synopInfo);
+                            break;
+                        case 2 :
+                            console.log('찜');
+                            this.setJJim(synopsis);
+                            break;
+                        default:break;
+                    }
+                } else {
+                    // 미구매
+                    let previewIdx = 0;
+                    if (!_.isEmpty(contents.preview) || this.yn_purchare.free === 'Y' || this.yn_purchare.button === 'Y') {
+                        previewIdx = 1;
+                    }
+                    const btnIdx = currentIdx-previewIdx;
+                    if (btnIdx < purcharesLen) {
+                        if (btnIdx < 0) {
+                            if (this.yn_purchare.free === 'Y' || this.yn_purchare.button === 'Y') {
+                                console.log('바로보기 & 무료보기');
+                                const { defaultSynopsis : {purchares} } = this.state;
+                                let purchare = this.getYnDirectview(metvDirectview, purchares); // 바로보기
+                                if (this.yn_purchare.free === 'Y') {
+                                    purchare = this.getYnFree(purchares); // 무료보기
+                                }
+                                playInfo.prd_prc_id = purchare.prd_prc_id;
+                                this.adultCheck('VOD', synopsis, playInfo);
+                            } else {
+                                console.log('예고편');
+                                playInfo.ynTeaser = 'Y';
+                                playInfo.seeingPath = '47';   //예고편을 통한 VOD 시청(시놉-예고편)
+                                playInfo.preview_start_index = '0';
+                                playInfo.prd_prc_id = synopsis.contents.preview[0].prd_prc_id;
+                                this.adultCheck('VOD', synopsis, playInfo);
+                            }
+                        } else {
+                            console.log('단편 버튼 타입', purchares[btnIdx].prd_typ_cd);
+                            switch(purchares[btnIdx].prd_typ_cd) {
+                                case '10': case '20': case '30':
+                                    playInfo.prd_prc_id = purchares[btnIdx].prd_prc_id;
+                                    this.adultCheck('PUR', synopsis, playInfo);
+                                    // this.setPurchaseContent(synopsis, playInfo);
+                                    break;
+                                case '41':
+                                    const paramObj = {
+                                        menu_id: _.isEmpty(this.paramData.menu_id) ? '': this.paramData.menu_id,
+                                        sris_id: purchares[btnIdx].sris_id
+                                    }
+                                    this.movePage(constants.SYNOPSIS_GATEWAY, paramObj);
+                                    break;
+                                default: break;
+                            }
+                        }
+                    } else {
+                        console.log('찜');
+                        this.setJJim(synopsis);
+                    }
+                }
+            }
+        } else if (e.keyCode === LEFT || e.keyCode === RIGHT) {
+            if (purcharesLen !== 0 && (this.yn_purchare.button === 'N' && this.yn_purchare.free === 'N') || this.yn_purchare.change) {
+                let buttonObj = null;
+                if ((this.yn_purchare.button === 'N' && this.yn_purchare.free === 'N') || this.yn_purchare.change) {
+                    if (e.keyCode === LEFT) currentIdx --;
+                    else if (e.keyCode === RIGHT) currentIdx ++;
+                    let findFm = _.find(this.focusList, ['key', 'purcharseButtons']);
+                    const { lastIdx } = findFm.fm.listInfo;
+                    if (currentIdx > lastIdx) currentIdx = 0;
+                    let previewIdx = 0;
+                    if (this.synopType !== '01' && (!_.isEmpty(contents.preview) || this.yn_purchare.free === 'Y' || this.yn_purchare.button === 'Y')) {
+                        previewIdx = -1;
+                    }
+                    
+                    let btnIdx = currentIdx+previewIdx;
+                    if (btnIdx < purcharesLen) {
+                        const { synopsis } = this.state.synopInfo;
+                        buttonObj = synopsis.purchares[btnIdx];
+                    }
+                }
+                this.setState({
+                    buttonObj: buttonObj
+                })
+            }
+        }
+    }
+
+    // 성인인증
+    adultCheck = async (route, synopsis, playInfo) => {
+        const { contents } = synopsis;
+        console.log('셋톱 시청연령 셋팅', StbInterface.getProperty(STB_PROP.CHILDREN_SEE_LIMIT));
+        const setAge = StbInterface.getProperty(STB_PROP.CHILDREN_SEE_LIMIT); // 셋톱나이 설정
+        let pinkMove = !_.isEmpty(contents.adlt_lvl_cd); // 핑크뮤비
+        let data;
+        if (route === 'PUR') { // 일단 구매할때만 성인인증체크
+            let ageFlag = false;
+            if (!_.isEmpty(setAge) && (Number(contents.wat_lvl_cd)) >= Number(setAge)) {
+                ageFlag = true;
+            }
+            data = await new Promise((res, rej) => {
+                if ((pinkMove || ageFlag) && !this.adultState && setAge !== '0') {
+                    let obj = {
+                        certification_type: '',
+                        age_type: ''
+                    };
+                    if (!_.isEmpty(contents.adlt_lvl_cd)) {
+                        obj.certification_type = constants.CERT_TYPE.ADULT_PLAYPURCHASE;
+                    } else {
+                        obj.certification_type = constants.CERT_TYPE.AGE_LIMIT;
+                        obj.age_type = contents.wat_lvl_cd;
+                    }
+                    Core.inst().showPopup(<AdultCertification />, obj, (result) => {
+                        res(result);
+                    });
+                } else {
+                    res({result: '0000'});
+                }
+            });
+        }
+
+        switch(route) {
+            case 'PUR':
+                if (data && data.result === '0000') {
+                    this.adultState = true;
+                    this.setPurchaseContent(synopsis, playInfo);
+                }
+            break;
+            case 'VOD':
+                // if (data && data.result === '0000') {
+                    this.adultState = true;
+                    this.setVodPlay(synopsis, playInfo);
+                // }
+            break;
+            default:break;
+        }
+    }
+
+    // VOD재생
+    setVodPlay = (synopsis, playInfo) => {
+        var obj = {
+            nxpg010: synopsis,
+            playInfo: playInfo
+        }
+        // console.log('setVodPlay', obj);
+        CTSInfo.requestWatchVOD(obj, this.vodCallback);
+    }
+
+    // 구매로직
+    setPurchaseContent = (synopsis, playInfo) => {
+        var obj = {
+            nxpg010: this.state.defaultSynopsis,
+            playInfo: playInfo
+        }
+        // console.log('setPurchaseContent', obj);
+        CTSInfo.purchaseContent(obj, this.purchaseCallback);
+    }
+
+    // 재생 유형선택 팝업
+
+    // 찜 확인
+    getJJim = (synopsis) => {
+        const { contents } = synopsis;
+        // 찜확인
+        const obj = {
+            type: 'select',
+            seriesId: contents.sris_id
+        }
+        const bookmark = StbInterface.requestFavoriteVodInfo(obj);
+        // const bookmark = appConfig.STBInfo.favVodListMap;
+        // console.log('bookmark!!!!!!!!!!', bookmark);
+        return bookmark;
+    }
+
+    // 찜등록
+    setJJim = (synopsis) => {
+        // this.isBookmark = true;
+        let isBookmark = this.state.isBookmark;
+        if (isBookmark) {
+            const param = {
+                group: 'VOD',
+                yn_kzone: 'N',  //  StbInterface.getProperty(STB_PROP.IS_KIDS_ZONE),
+                isAll_type: '0',
+                // deleteList: [synopsis.purchares[0].epsd_rslu_id],
+                deleteList: [synopsis.contents.sris_id],
+                sris_id: synopsis.contents.sris_id,
+                // epsd_rslu_id: synopsis.purchares[0].epsd_rslu_id
+            };
+            Utils.bookmarkDelete(param, 'D').then((result) => {
+                console.log('찜해제 로직 진행', result);
+                if (result.result === "0000") {
+                    console.log('찜 해제 성공');
+                    isBookmark = false;
+                    this.setState({
+                        isBookmark: !this.state.isBookmark
+                    })
+                }
+            });
+        } else {
+            const param = {
+                group: 'VOD',
+                yn_kzone: 'N',  //  StbInterface.getProperty(STB_PROP.IS_KIDS_ZONE),
+                sris_id: synopsis.contents.sris_id,
+                epsd_id: synopsis.contents.epsd_id,
+                epsd_rslu_id: synopsis.contents.epsd_rslu_info[0].epsd_rslu_id
+            };
+            Utils.bookmarkCreate(param).then((result) => {
+                console.log('찜등록 로직 진행', result);
+                if (result.result === "0000") {
+                    console.log('찜 등록 성공');
+                    isBookmark = true;
+                    this.setState({
+                        isBookmark: !this.state.isBookmark
+                    })
+                }
+            });
+        }
+    }
+
+    // 버튼포커스 on
+    onFocusButtonList = () => {
+        if (this.synopType !== '01') {
+            this.setMainBgNone('remove');
+            !_.isEmpty(this.state.synopInfo.synopsis.contents.bg_img_path) && this.setBgHero('hero');
+            scroll(0);
+        }
+        document.getElementById('pageArr').classList.remove('on');
+        if ((this.yn_purchare.free !== 'Y' && this.yn_purchare.button !== 'Y') || this.yn_purchare.change) {
+            let buttonObj = _.cloneDeep(this.state.buttonObj);
+            if (buttonObj) {
+                buttonObj.isChange = this.isChange++;
+            }
+            this.setState({
+                buttonObj: buttonObj
+            });
+        }
+    }
+
+    // top버튼
+    onSelectTopButton = (e) => {
+        if (e.keyCode === keyCode.Keymap.ENTER) {
+            const { focusIdx } = this.state;
+            if (this.synopType === '01') {
+                this.setFocus({id: 'series', childIdx: focusIdx.h});
+            } else {
+                this.setFocus({id: 'purcharseButtons', childIdx: focusIdx.h});
+            }
+            this.setMainBgNone('remove');
+            !_.isEmpty(this.state.synopInfo.synopsis.contents.bg_img_path) && this.setBgHero('hero');
+            scroll(0);
+        }
+    }
+
+    // 상세 페이지로 이동
+    onSelect = (slideKey, slideIdx, chlidIdx) => {
+        // console.log('synopsisView onSelect',slideKey, slideIdx, chlidIdx);
+        const { synopsis, metvDirectview } = this.state.synopInfo;
+        let obj = {};
+        let playInfo = _.clone(this.defaultPlayInfo);
+        if (synopsis.contents.sris_typ_cd === '01') {
+            playInfo.synopsis_type = '02';
+        } else {
+            playInfo.synopsis_type = '01';
+        }
+
+        if (slideKey !== 'cwSlide') {
+            this.state.focusIdx = {
+                key: 'slides',
+                v: slideIdx,
+                h: chlidIdx
+            }
+        }
+
+        switch (slideKey) {
+            case 'preStill': // 예고편재생 & 스틸컷상세
+                const preStill = _.union(synopsis.contents.preview, synopsis.contents.stillCut);
+                if (preStill[chlidIdx].title) {
+                    playInfo.ynTeaser = 'Y';
+                    playInfo.seeingPath = '47';   //예고편을 통한 VOD 시청(시놉-예고편)
+                    playInfo.preview_start_index = chlidIdx;
+                    this.adultCheck('VOD', synopsis, playInfo);
+                } else {
+                    obj.stillCut = synopsis.contents.stillCut;
+                    obj.choice = preStill[chlidIdx];
+                    Core.inst().showPopup(<SynopShortSteel />, obj, this.stillcutCallback);
+                }
+                break;
+            case 'preview': // 예고편 재생
+                playInfo.ynTeaser = 'Y';
+                playInfo.seeingPath = '47';   //예고편을 통한 VOD 시청(시놉-예고편)
+                playInfo.preview_start_index = chlidIdx;
+                playInfo.prd_prc_id = synopsis.contents.preview[chlidIdx].prd_prc_id;
+                this.adultCheck('VOD', synopsis, playInfo);
+                break;
+            case 'stillCut': // 스틸컷 상세
+                obj.stillCut = synopsis.contents.stillCut;
+                obj.choice = synopsis.contents.stillCut[chlidIdx];
+                Core.inst().showPopup(<SynopShortSteel />, obj, this.stillcutCallback);
+                break;
+            case 'special': // 스페셜영상
+                if (this.yn_purchare.possn === 'N') {
+                    return Core.inst().showToast('시청하시려면 소장용 구매가 필요합니다.');
+                } else {
+                    playInfo.ynSpecial = 'Y';
+                    playInfo.seeingPath = '47';   //예고편을 통한 VOD 시청(시놉-예고편)
+                    playInfo.special_start_index = chlidIdx;
+                    playInfo.prd_prc_id = synopsis.contents.special[chlidIdx].prd_prc_id;
+                    this.adultCheck('VOD', synopsis, playInfo);
+                }
+                break;
+            case 'corners': // 코너영상
+                // obj = synopsis.contents.corners[chlidIdx];
+                // obj.main_title = synopsis.contents.title;
+                // obj.title = synopsis.contents.corners[chlidIdx].cnr_nm;
+                // obj.brcast_tseq_nm = synopsis.contents.brcast_tseq_nm; // 회차
+
+                if (_.isEmpty(synopsis.contents.corners[chlidIdx].cnr_grp_id)) {
+                    obj = {
+                        nxpg010: synopsis,
+                        playInfo: playInfo
+                    }
+                    obj.playInfo.type = 'synopsis';
+                    CTSInfo.requestWatchCorenr(obj, this.vodCallback);
+                } else {
+                    obj = synopsis;
+                    obj.index = chlidIdx;
+                    obj.type = 'synopsis';
+                    Core.inst().showPopup(<SynopCornerPop />, obj, null);
+                }
+                break;
+            case 'peoples': // 인물정보
+                obj.menu_id = this.paramData.menu_id;
+                obj.prs_id = synopsis.contents.peoples[chlidIdx].prs_id;
+                obj.bg_img_path = synopsis.contents.bg_img_path;
+                obj.dark_img_yn = synopsis.contents.dark_img_yn;
+                if (_.isEmpty(obj.prs_id)) {
+                    return Core.inst().showToast('필요한 데이터가 없습니다.');
+                }
+                this.movePage(constants.SYNOPSIS_PERSONAL, obj);
+                break;
+            case 'series': // 시즌시리즈정보
+                if (this.seriesDelay) {
+                    playInfo.ynSerise = 'Y';
+                    playInfo.epsd_id = synopsis.contents.series_info[chlidIdx].epsd_id;
+                    playInfo.serIdx = chlidIdx;
+                    playInfo.brcast_tseq_nm = synopsis.contents.series_info[chlidIdx].brcast_tseq_nm;
+
+                    let purchaseList = [];
+                    let purchaseData = null;
+                    if (!_.isEmpty(metvDirectview)) {
+                        purchaseList = this.getPurchaseList(metvDirectview, synopsis.contents.products); // 구매한 리스트
+                        purchaseData = _.sortBy(purchaseList, 'rslu_typ_cd').reverse()[0]; // 최상위 화질
+                    }
+                    if (purchaseList.length !== 0) {
+                        playInfo.prd_prc_id = purchaseData.prd_prc_id;
+                    } else {
+                        breakOut:
+                        for (const item of this.state.defaultSynopsis.purchares) {
+                            for (const item2 of synopsis.contents.products) {
+                                if (item.prd_prc_id === item2.prd_prc_id) {
+                                    playInfo.prd_prc_id = item2.prd_prc_id;
+                                    break breakOut;
+                                }
+                            }
+                        }
+                    }
+                    
+                    this.state.focusIdx.key = 'series';
+                    if (synopsis.contents.gstn_yn) {    // 맛보기인 경우
+                        playInfo.seeingPath = '48';   //맛보기를 통한 VOD 시청
+                    }
+                    if (this.yn_purchare.series === 'Y' || synopsis.contents.gstn_yn === 'Y' || Number(synopsis.contents.products[0].sale_prc_vat) === 0) {
+                        this.adultCheck('VOD', synopsis, playInfo);
+                    } else {
+                        this.adultCheck('PUR', synopsis, playInfo);
+                        // this.setPurchaseContent(synopsis, playInfo);
+                    }
+                }
+                break;
+            case 'cwSlide':
+                // 연관콘텐츠는 chlidIdx 가 선택한 object를 주게 만듬
+                let paramData = {};
+                const synopsis_type = chlidIdx.synon_typ_cd === '01' ? '1' : '3';
+                let watchall = 'Y'; // yn_seacon_watchall 최초진입은 Y 값
+                let search_type = '1'; // 1:epsd_id기준, 2:epsd_rslu_id기준
+                paramData.sris_id = chlidIdx.sris_id;
+                paramData.epsd_id = chlidIdx.epsd_id;
+                paramData.search_type = search_type;
+                //this.movePage(constants.SYNOPSIS, paramData);
+                Utils.movePageAfterCheckLevel(constants.SYNOPSIS, paramData, chlidIdx.wat_lvl_cd)
+                break;
+            default: break;
+        }
+    }
+
+    // 시즌변경
+    onSeasonChange = (synopsis, direction) => {
+        let paramData = {};
+        let search_type = '1'; // 1:epsd_id기준, 2:epsd_rslu_id기준
+        // let synopsis_type = '3'; // 1:단편진입, 2:시즌회차이동, 3:시즌최초진입or시즌변경
+        // paramData.synopsis_type = synopsis_type;
+        paramData.search_type = search_type;
+
+        let epsd_id = null;
+        let sris_id = null;
+        if (direction === 'prev') {
+            epsd_id = synopsis.contents.prev_epsd_id;
+            sris_id = synopsis.contents.prev_sris_id;
+        } else {
+            epsd_id = synopsis.contents.next_epsd_id;
+            sris_id = synopsis.contents.next_sris_id;
+        }
+
+        if (_.isEmpty(epsd_id) || _.isEmpty(sris_id)) {
+            return Core.inst().showToast('필요한 데이터가 없습니다.');
+        }
+
+        paramData.epsd_id = epsd_id;
+        paramData.sris_id = sris_id;
+        paramData.focus = {
+            key: 'purcharseButtons',
+            h: null,
+            v: null,
+            ref: direction
+        }
+
+        // this.resetFmList('slides');
+        // const fm = this.getFm('purcharseButtons');
+        // fm.removeFocus();
+        
+        // this.setAPIcall(paramData, watchall, synopsis_type, 'season');
+        this.movePage(constants.SYNOPSIS, paramData);
+    }
+
+    // 시리즈 변경
+    onSeriesChanged = (idx) => {
+        this.seriesDelay = false;
+        if (this.timer) {
+            clearTimeout(this.timer);
+        }
+        this.timer = setTimeout(() => {
+            const { synopsis } = this.state.synopInfo;
+            const seriesInfo = synopsis.contents.series_info[idx];
+            let paramData = _.isEmpty(this.historyData) ? this.paramData : this.historyData.synopInfo.param;
+            let watchall = 'N'; // yn_seacon_watchall 최초진입은 Y 값
+            let search_type = '1'; // 1:epsd_id기준, 2:epsd_rslu_id기준
+            let synopsis_type = '2'; // 1:단편진입, 2:시즌회차이동, 3:시즌최초진입or시즌변경
+            if (_.isEmpty(paramData.epsd_id) && _.isEmpty(seriesInfo.epsd_id)) {
+                search_type = '2';
+            }
+            paramData.search_type = search_type;
+            paramData.epsd_id = seriesInfo.epsd_id;
+            paramData.yn_recent = 'N';
+            this.resetFmList('slides');
+            this.setAPIcall(paramData, watchall, synopsis_type, 'series');
+        }, 300);
+    }
+
+    // 버튼데이터 가공
+    getPurchares = (synopInfo, settingKey) => {
+        const { synopsis: {contents, purchares}, metvDirectview } = synopInfo;
+        let purchaseList = [];
+        // 비교 대상
+        // 단편 ppv_products
+        // 시즌최초진입 및 시즌변경 pps_products(구매버튼), ppv_products(시리즈)
+        // 시즌진입후 시리즈변경 ppv_products(시리즈)
+
+        // 상품종료일된건 제거
+        const now = new Date().getTime();
+        for (const [idx, item] of purchares.entries()) {
+            if (!_.isEmpty(item.prd_prc_to_dt)) {
+                const prd_prc_to_dt = moment(item.prd_prc_to_dt, 'YYYYMMDDhhmmss').format('YYYY/MM/DD/hh:mm:ss');
+                if (now < new Date(prd_prc_to_dt).getTime()) {
+                    purchaseList.push(item);
+                }
+            }
+        }
+
+        if (settingKey === 'series') {
+            for (const item of contents.products) {
+                if (item.sale_prc_vat === 0) {
+                    this.seriesPurchase.free.push(item);
+                }
+                for (const item2 of metvDirectview) {
+                    if (item.prd_prc_id === item2.prd_prc_id) {
+                        if (item2.yn_directview === 'Y'|| this.state.yn_season_watch_all === 'Y') {
+                            this.seriesPurchase.purchase.push(item);
+                        } else {
+                            this.seriesPurchase.unPurchase.push(item);
+                        }
+                    }
+                }
+            }
+        }
+
+        for (const item of purchaseList) {
+            if (metvDirectview.result === '0000') {
+                let metvData = null;
+                if (this.synopType === '01') {
+                    metvData = metvDirectview.pps_products;
+                } else {
+                    metvData = metvDirectview.ppv_products;
+                }
+
+                if (item.sale_prc_vat === 0) {
+                    this.btnPurchase.free.push(item);
+                }
+
+                for (const item2 of metvData) {
+                    if (item.prd_prc_id === item2.prd_prc_id) {
+                        let isYn = item2.yn_directview;
+                        if (item.prd_typ_cd === '41') {
+                            isYn = item2.yn_purchase;
+                        }
+                        if (isYn === 'Y') {
+                            this.btnPurchase.purchase.push(item);
+                        } else {
+                            this.btnPurchase.unPurchase.push(item);
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+
+
+
+
+
+
+        
+        if (settingKey === 'series') {
+            if (contents.products[0].sale_prc_vat === 0) {
+                this.yn_purchare.free = 'Y';
+            } else {
+                this.yn_purchare.free = 'N';
+            }
+        } else {
+            breakOut:
+            for (let item of purcharesList) {
+                if (item.sale_prc_vat === 0) {
+                    this.yn_purchare.free = 'Y';
+                    break breakOut;
+                }
+            }
+        }
+        
+        if (this.yn_purchare.free === 'N') {
+            let setting = false;
+            switch(settingKey) {
+                case 'default': case 'season':
+                    setting = true;
+                break;
+                default: setting = false; break;
+            }
+            // 구매여부 판단
+            if (setting) {
+                if (this.synopType === '01') {
+                    // 시즌 & 시즌변경
+                    this.yn_purchare.button = this.getYnSeason(metvDirectview, purcharesList);
+                    this.yn_purchare.series = this.getYnSeries(metvDirectview, contents);
+                } else {
+                    // 단편
+                    this.yn_purchare.button = this.getYnButton(metvDirectview, purcharesList);
+                }
+            } else {
+                // 시즌이고 최초진입이 아닐때 즉 (시리즈 변경일때)
+                this.yn_purchare.series = this.getYnSeries(metvDirectview, contents);
+            }
+        }
+
+        // 소장여부 판단
+        this.yn_purchare.possn = 'N';
+        if (this.synopType !== '01') {
+            breakOut:
+            for (let item of purcharesList) {
+                for (let item2 of metvDirectview.ppv_products) {
+                    if (item.prd_typ_cd === '10' && item.possn_yn === 'Y') {
+                        if (item.prd_prc_id === item2.prd_prc_id && item2.yn_directview === 'Y') {
+                            this.yn_purchare.possn = 'Y';
+                            break breakOut;
+                        }
+                    }
+                }
+            }
+        }
+
+        let minPurchares = _.map(_.groupBy(purcharesList, (doc) => {
+            // 같은 유형의타입끼리 묶기
+            let groupBy = `${doc.asis_prd_typ_cd}'#'${doc.possn_yn}`;
+            if (this.synopType === '01' || doc.asis_prd_typ_cd === '30' || doc.asis_prd_typ_cd === '41') {
+                groupBy = doc.asis_prd_typ_cd; // 시즌일때는 소장도 일반구매버튼이랑 그룹핑
+            }
+            return groupBy;
+        }), (grouped) => {
+            // 버튼가격 비교
+            if (grouped.length === 1) {
+                grouped.isPrc = false;
+            } else {
+                grouped = grouped.reduce((prv, crr, idx, arr) => {
+                    let isPrc = false
+                    if (prv.sale_prc_vat !== crr.sale_prc_vat) {
+                        isPrc = true;
+                    }
+                    arr.isPrc = isPrc;
+                    return arr;
+                });
+            }
+            
+            // 가장 가격이 싼 데이터로 sort
+            let buttonData = _.uniq(_.sortBy(grouped, 'sale_prc_vat'), true, a => a.sale_prc_vat)[0];
+            buttonData.isPrc = grouped.isPrc;
+            return buttonData;
+        });
+
+        minPurchares = _.sortBy((minPurchares), a=>a.prd_typ_cd === '30'); // 월정액 버튼은 맨뒤로
+        return minPurchares;
+    }
+
+    // 버튼 구매여부
+    getYnButton = (metvDirectview, purchares) => {
+        let button = 'N';
+        if (metvDirectview.result === '0000') {
+            breakOut :
+            for (let item of metvDirectview.ppv_products) {
+                for (let item2 of purchares) {
+                    if (item.prd_prc_id === item2.prd_prc_id) {
+                        if (item2.prd_typ_cd === '41') { // 패키지 타입은 purchase로 구분
+                            if (item.yn_purchase === 'Y') {
+                                button = item.yn_purchase;
+                                break breakOut; // 어떤 버튼이라도 하나라도 구매하면 구매한 유저
+                            }
+                        } else {
+                            if (item.yn_directview === 'Y') {
+                                button = item.yn_directview;
+                                break breakOut; // 어떤 버튼이라도 하나라도 구매하면 구매한 유저
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return button;
+    }
+    // 시즌 구매여부
+    getYnSeason = (metvDirectview, purchares) => {
+        let series = 'N';
+        if (metvDirectview.result === '0000') {
+            breakOut :
+            for (let item of metvDirectview.pps_products) {
+                for (let item2 of purchares) {
+                    if (item.prd_prc_id === item2.prd_prc_id) {
+                        if (item2.prd_typ_cd === '41') {
+                            if (item.yn_purchase === 'Y') {
+                                series = item.yn_purchase;
+                                break breakOut;
+                            }
+                        } else {
+                            if (item.yn_directview === 'Y') {
+                                series = item.yn_directview;
+                                break breakOut;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        if (this.state.yn_season_watch_all === 'Y') {
+            series = 'Y';
+        }
+        return series;
+    }
+    // 시리즈 구매여부
+    getYnSeries = (metvDirectview, contents) => {
+        let series = 'N';
+        if (metvDirectview.result === '0000') {
+            breakOut:
+            for (const item of metvDirectview.ppv_products) {
+                for (const item2 of contents.products) {
+                    if (item.prd_prc_id === item2.prd_prc_id) {
+                        if (item.yn_directview === 'Y') {
+                            series = item.yn_directview;
+                            break breakOut;
+                        }
+                    }
+                }
+            }
+        }
+        if (this.state.yn_season_watch_all === 'Y') {
+            series = 'Y';
+        }
+        return series;
+    }
+
+    // 구매한 리스트
+    getPurchaseList = (metv, list) => {
+        // list => (단편은 purchares, 시리즈는 products)
+        let result = [];
+        for (const item of metv.ppv_products) {
+            for (const item2 of list) {
+                // pID가 같고 구매했거나 무료일때
+                if ((item.prd_prc_id === item2.prd_prc_id) && (item.yn_directview === 'Y' || Number(item2.sale_prc_vat) === 0)) {
+                    result.push(item2);
+                }
+            }
+        }
+        return result;
+    }
+
+    // 무료보기 가능한 버튼
+    getYnFree = (purchares) => {
+        let purcharesObj = null;
+        let tempArr = [];
+        for (let item of purchares) {
+            if (item.sale_prc_vat === 0) {
+                tempArr.push(item);
+            }
+        }
+        purcharesObj = _.sortBy(tempArr, 'rslu_typ_cd').reverse(); // 해상도 코드 가장 큰숫자
+        return purcharesObj[0];
+    }
+
+    // 바로보기 가능한 버튼
+    getYnDirectview = (metvDirectview, purchares) => {
+        let purcharesObj = null;
+        breakOut:
+        for (let item of metvDirectview.ppv_products) {
+            for (let item2 of purchares) {
+                if (item.prd_prc_id === item2.prd_prc_id) {
+                    if (item.yn_directview === 'Y') {
+                        purcharesObj = item2;
+                        break breakOut;
+                    }
+                }
+            }
+        }
+        return purcharesObj;
+    }
+
+    // 추가상품구매
+    purcharesChange = () => {
+        let synopInfo = _.cloneDeep(this.state.synopInfo);
+        synopInfo.synopsis.contents.yn_purchare.change = true;
+        const fm = this.getFm('purcharseButtons');
+        fm.removeFocus();
+        if (this.synopType === '01') {
+            this.resetFmList('slides');
+        }
+        this.setDefaultFm(synopInfo.synopsis, 'history');
+        this.setState({
+            synopInfo,
+            buttonObj: this.state.buttonObj
+        },() => {
+            this.yn_purchare.change = true;
+            this.setFocus({id: 'purcharseButtons', childIdx: 0});
+        });
+    }
+
+    // VOD callback
+    vodCallback = (data) => {
+        console.log('VOD콜백!!! 파라미터', this.paramData);
+        console.log('VOD콜백!!! 포커스', this.state.focusIdx);
+        console.log('VOD콜백!!!', data);
+    }
+
+    // 구매 callback
+    purchaseCallback = (data) => {
+        if (data.result === '0000') {
+            this.movePage(constants.SYNOPSIS, this.paramData);
+        }
+    }
+
+    // 스틸컷팝업 callback
+    stillcutCallback = (idx) => {
+        const { contents } = this.state.defaultSynopsis;
+        let stillIdx = idx;
+        if (!_.isEmpty(contents.preview)) {
+            stillIdx += contents.preview.length;
+        }
+        this.setFocus({id: 'slides', idx:0, childIdx: stillIdx});
+    }
+
+    // background이미지 class변경
+    setMainBgNone = (type) => {
+        let mainBg = document.getElementById('synopsisMainBg');
+        if (type === 'add') {
+            mainBg.classList.add('full');
+        } else {
+            mainBg.classList.remove('full');
+        }
+    }
+
+    // bg이미지 blur처리
+    setBgHero = (type) => {
+        if (type === 'hero') {
+            document.getElementById('bgHero').style.display = 'block';
+            document.getElementById('bgBlur').style.display = 'none';
+        } else {
+            document.getElementById('bgHero').style.display = 'none';
+            document.getElementById('bgBlur').style.display = 'block';
+        }
+    }
+
+    render() {
+        const { synopInfo, isBookmark, buttonObj } = this.state;
+        let Component = null;
+        if (!_.isEmpty(synopInfo.synopsis.contents)) {
+            Component = synopInfo.synopsis.contents.sris_typ_cd === '01' ? SynopSeries : SynopShort;
+        }
+
+        // console.log('### synopView ###', synopInfo);
+        console.log('focusList', this.focusList);
+
+        return (
+            !_.isNull(Component) ?
+            <Component
+                param={this.paramData}
+                data={synopInfo}
+                setFm={this.setFm}
+                setFocus={this.setFocus}
+                scrollTo={this.scrollTo}
+                onSelect={this.onSelect}
+                onSelectTop={this.onSelectTopButton}
+                onSeriesChanged={this.onSeriesChanged}
+                resetFm={this.resetFmList}
+                isBookmark={isBookmark}
+                buttonObj={buttonObj}
+            />
+            :
+            <div className={`wrap default dark`} style={{overflow: "hidden"}}>
+                <div className="mainBg">
+                </div>
+            </div>
+        );
+    }
+}
+
+export default SynopsisView;

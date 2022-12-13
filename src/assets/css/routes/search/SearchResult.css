@@ -1,0 +1,12 @@
+/* SearchResult.css */
+.searchResultWrap{width:1920px;padding:98px 115px 160px;}
+
+.resultTitleArea{position:relative;padding-bottom:20px;}
+.resultTitleArea .resultTitle{padding-right:200px;font-size:40px;color:#aaa;font-weight:700;line-height:64px;}
+.resultTitleArea .resultTitle strong{font-size:40px;color:#fff;font-weight:700;line-height:64px;vertical-align:baseline;}
+.resultTitleArea .btnStyle{position:absolute;top:0;right:0;}
+
+.searchResultWrap .contentGroup + .contentGroup{margin-top:40px;}
+.searchResultWrap .contentGroup .title{color:#d4d4d4;}
+.searchResultWrap .btnTopWrap{padding-top:129px;}
+

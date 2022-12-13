@@ -1,0 +1,18 @@
+.GenreListItemType {margin:0 -23px; padding:70px 23px 0;}
+.GenreListItemType .GenreListWrapper {margin-left:-42px;}
+.GenreListItemType .GenreListWrapper .contentGroup:after {display:block; clear:both; content:"";}
+.GenreListItemType .GenreListWrapper .contentGroup + .contentGroup {padding-top:90px;}
+.GenreListItemType .item {float:left; margin-left:42px; text-align:center;}
+
+.GenreListItemType .itemTitle {transform:translate(0,0);font-size:36px;line-height:40px;letter-spacing:-1px;font-weight:400;color:#1a1a1a;}
+/*.wishListWrap .wishListItem {margin:-44px -30px -40px;padding:60px 10px 40px;overflow:hidden}*/
+/*.wishListWrap .wishListItem{display:flex;justify-content:space-between;}*/
+/*.wishListWrap .wishListItem .item {padding:0 21px;text-align:center;}*/
+.GenreListItemType .csFocus {display:block; width:246px;}
+.GenreListItemType .csFocus img {display:block; width:100%; border-radius:4px; box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.2);}
+.GenreListItemType .csFocus.focusOn img {box-shadow:0 10px 10px 0 rgba(0, 0, 0, 0.3), 0 0 10px 0 rgba(0, 0, 0, 0.1);}
+.GenreListItemType .csFocus .itemTitle {display:block; margin-top:16px; opacity:0; line-height:30px; font-size:26px; color:#000; font-weight:700; letter-spacing:-1px;}
+.GenreListItemType .csFocus {transform:scale(1,1);}
+.GenreListItemType .csFocus.focusOn {transform:scale(1.2,1.2);}
+.GenreListItemType .csFocus.focusOn .itemTitle {opacity:1;}
+

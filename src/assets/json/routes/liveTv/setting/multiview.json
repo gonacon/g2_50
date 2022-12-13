@@ -1,0 +1,59 @@
+{
+	"multiView" : [{
+		"chnNum": "001",
+		"chnName": "BTV",
+		"chnProgram" : "영화당 72회",
+        "chnLogo" : {
+          "nor": "/assets/images/tmp/livetv/chnselect-logo-01.png",
+          "sel": "/assets/images/tmp/livetv/chnselect-logo-on-01.png"
+        }
+	},{
+		"chnNum": "002",
+		"chnName": "SBS PLUS",
+		"chnProgram" : "미운 우리 새끼 53회 (재)",
+        "chnLogo" : {
+          "nor": "/assets/images/tmp/livetv/chnselect-logo-01.png",
+          "sel": "/assets/images/tmp/livetv/chnselect-logo-on-01.png"
+        }
+	},{
+		"chnNum": "003",
+		"chnName": "IM shopping",
+		"chnProgram" : "신선농산",
+        "chnLogo" : {
+          "nor": "/assets/images/tmp/livetv/chnselect-logo-01.png",
+          "sel": "/assets/images/tmp/livetv/chnselect-logo-on-01.png"
+        }
+	},{
+		"chnNum": "004",
+		"chnName": "NS 홈쇼핑",
+		"chnProgram" : "까사마루 행거",
+        "chnLogo" : {
+          "nor": "/assets/images/tmp/livetv/chnselect-logo-01.png",
+          "sel": "/assets/images/tmp/livetv/chnselect-logo-on-01.png"
+        }
+	},{
+		"chnNum": "005",
+		"chnName": "SBS",
+		"chnProgram" : "생활의 달인 (재)",
+        "chnLogo" : {
+          "nor": "/assets/images/tmp/livetv/chnselect-logo-01.png",
+          "sel": "/assets/images/tmp/livetv/chnselect-logo-on-01.png"
+        }
+	},{
+		"chnNum": "006",
+		"chnName": "CJ 오쇼핑",
+		"chnProgram" : "식품 1 부",
+        "chnLogo" : {
+          "nor": "/assets/images/tmp/livetv/chnselect-logo-01.png",
+          "sel": "/assets/images/tmp/livetv/chnselect-logo-on-01.png"
+        }
+	},{
+		"chnNum": "007",
+		"chnName": "KBS2",
+		"chnProgram" : "여유만만 (재)",
+        "chnLogo" : {
+          "nor": "/assets/images/tmp/livetv/chnselect-logo-01.png",
+          "sel": "/assets/images/tmp/livetv/chnselect-logo-on-01.png"
+        }
+	}]
+}

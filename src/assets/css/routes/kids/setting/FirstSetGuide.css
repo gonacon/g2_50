@@ -1,0 +1,13 @@
+/* FirstSetGuide.css */
+/* FirstSetGuide */
+
+.firstSetGuideWrap{}
+.firstSetGuideWrap .SetGuideWrap{position:relative;margin-left:219px;width:900px;height:1000px;}
+.firstSetGuideWrap .SetGuideWrap img{display:block;width:100%;height:100%;}
+.firstSetGuideWrap .SetGuideWrap .speechBubbleArea{position:absolute;top:154px;left:648px;width:818px;height:343px;background:url('/assets/images/kids/setting/img-firstsetguide-speech-bubble.png') no-repeat;}
+.firstSetGuideWrap .SetGuideWrap .speechBubbleArea .textArea{display:table;width:100%;height:100%;text-align:center;}
+.firstSetGuideWrap .SetGuideWrap .speechBubbleArea .textArea span{display:table-cell;font-size:37px;color:rgba(0,0,0,0.9);line-height:56px;vertical-align:middle;}
+.firstSetGuideWrap .SetGuideWrap .speechBubbleArea .textArea span strong{color:#ff3737;font-weight:700;}
+
+
+

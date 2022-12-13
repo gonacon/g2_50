@@ -1,0 +1,40 @@
+/* Popup.css */
+/* ok캐시백 */
+.popupWrap .popupCon .okCashBagWrap .passwordWrap{margin-top:70px;}
+.popupWrap .popupCon .okCashBagWrap p{margin-top:30px;font-size:26px;line-height:38px;color:#6a6a6a;}
+
+/* 구매완료 */
+.popupWrap .popupCon .priceEndWrap .priceInfo{margin-top:60px;padding:40px 50px;text-align:left;border-radius:4px;background:rgba(0, 0, 0, 0.05);}
+.popupWrap .popupCon .priceEndWrap .priceInfo ul li{margin-top:25px;}
+.popupWrap .popupCon .priceEndWrap .priceInfo ul li:first-child{margin-top:0;}
+.popupWrap .popupCon .priceEndWrap .priceInfo ul li span:first-child,
+.popupWrap .popupCon .priceEndWrap .priceInfo .price span:first-child,
+.popupWrap .popupCon .priceEndWrap .priceInfo .priceCon span:first-child{font-size:28px;letter-spacing:-0.5px;color:rgba(0,0,0,0.7);}
+.popupWrap .popupCon .priceEndWrap .priceInfo ul li .optionList{margin-left:40px;font-size:28px;font-weight:700;letter-spacing:0;color:rgba(0,0,0,0.9);}
+.popupWrap .popupCon .priceEndWrap .priceInfo ul li time{letter-spacing:0;}
+.popupWrap .popupCon .priceEndWrap .priceInfo .price{margin-top:30px;padding-top:30px;border-top:1px solid rgba(0, 0, 0, 0.2);}
+.popupWrap .popupCon .priceEndWrap .priceInfo .priceCon{margin-top:25px;}
+.popupWrap .popupCon .priceEndWrap .priceInfo .priceCon em{margin-left:10px;font-size:24px;color:rgba(0,0,0,0.4);}
+.popupWrap .popupCon .priceEndWrap .priceInfo .price .priceValue,
+.popupWrap .popupCon .priceEndWrap .priceInfo .priceCon .priceResult{float:right;font-size:28px;font-weight:700;color:#3a4373;line-height:42px;}
+.popupWrap .popupCon .priceEndWrap .priceInfo .priceCon .priceResult em{margin:0;font-size:28px;font-weight:700;color:#3a4373;}
+.popupWrap .popupCon .priceEndWrap .textCon{margin-top:42px;font-size:26px;line-height:40px;color:rgba(0,0,0,0.7);letter-spacing:0;}
+
+/* 순서바꾸기 */
+.popupCon.changeOrder {padding-left:158px; padding-right:158px;}
+.changeOrderWrap {position:relative; z-index:1;}
+.changeOrderWrap .optionWrap {padding:70px 0 20px; width:532px;}
+.changeOrderWrap .optionWrap .radioStyle1 {min-width:246px;text-align:left;}
+.changeOrderWrap .optionWrap .radioStyle1 + .radioStyle1 {margin-left:26px;}
+
+
+
+
+
+
+
+
+
+
+
+

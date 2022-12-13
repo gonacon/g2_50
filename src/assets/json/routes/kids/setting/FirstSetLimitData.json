@@ -1,0 +1,6 @@
+{
+	"mainBg" : "/assets/images/kids/setting/bg-firstsetlimit-01.png",
+	"timeLimit" : "6시간",
+	"pieceLimit" : "20편",
+	"timeslotLimit" : "오후 02:30 ~ 오후 07:00"
+}

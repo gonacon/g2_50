@@ -1,0 +1,11 @@
+/* CharacterList.css */
+.characterList {position:relative; z-index:1; padding:80px 115px 0;}
+.characterList .pageTitle {padding-bottom:12px; font-size:46px; font-style:normal; font-stretch:normal; line-height:1; color:#303030;}
+.characterList .subInfo {font-size:34px; font-style:normal; font-stretch:normal; line-height:1.41; color:#6a6a6a;}
+.characterList .btnWrap {position:absolute; top:80px; right:115px; z-index:10;}
+.characterList .btnWrap .btnSort{min-width:155px;padding:0 26px;}
+.characterList .btnWrap .btnStyle.type03.btnSort:before{min-width:155px;}
+.characterList .btnWrap .btnSort .wrapBtnText {padding-right:31px; background:url('/assets/images/kids/character/icon-arrow.png') no-repeat right center; background-size:22px 14px;}
+.characterList .btnWrap .btnSort.focusOn .wrapBtnText {background-image:url('/assets/images/kids/character/ic-arrow-down-copy.png');background-size:22px 22px;}
+
+.characterList .btnTopWrap {padding:128px 0 222px;}

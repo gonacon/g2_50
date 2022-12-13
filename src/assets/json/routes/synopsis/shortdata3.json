@@ -1,0 +1,250 @@
+{	"slideType" : "review",
+	"review3": {
+		"reviewAssessmentContent" : {
+			"title" : "미녀와 야수",
+			"popBg" : "/assets/images/tmp/synopsis/bg-synopshort-pop.png"
+		},
+		"reviewContent" : [
+			{
+				"detailContent" : "award",
+				"myAward" : "수상내역",
+				"myAwardInfo" : "오슬로 필름즈 프롬 더 사우스 영화제",
+				"myAwardNum" : "외 11개 수상",
+				"awardList" : [
+					{
+						"awardTitle" : "오슬로 필름즈 프롬 더 사우스 영화제 (2018)",
+						"awardInfo" : "최고의 배우상 - 영화 (엠마 왓슨)<br/>최고의 영화상 (빌 콘돈)"
+					},
+					{
+						"awardTitle" : "크리틱스 초이스 시상식 (2018)",
+						"awardInfo" : ""
+					},
+					{
+						"awardTitle" : "미국 아카데미 시상식 (2017)",
+						"awardInfo" : "의상상 (재클린 듀런)<br/>프로덕션디자인상 (사라 그린우드 외 1명)<br/>여우주연상 (엠마 왓슨)"
+					},
+					{
+						"awardTitle" : "새턴 어워즈 (2014)",
+						"awardInfo" : "최우수 각본상 (스파이크 존즈)<br/>최우수 여우조연상 (엠마 톰슨)<br/>최우수 판타지영화상 (스파이크 존즈)<br/>각본상 (스파이크 존즈)"
+					}
+				]
+			},
+			{
+				"detailContent" : "appraisal",
+				"myAppraisal" : "나의 평가",
+				"myAssessment" : ""
+			},
+			{
+				"detailContent" : "feeling",
+				"detailTitle" : "고객 호감도",
+				"detailTitleImg" : "/assets/images/synopsis/feeling-btv-logo.png",
+				"logo" :
+				{
+					"on" : "/assets/images/synopsis/ic-btv-logo-on.png",
+					"off" : "/assets/images/synopsis/ic-btv-logo.png",
+					"alt" : "B tv"
+				},
+				"gradeLike":  "78",
+				"gradeDislike":  "22",
+				"percent" : "%",
+				"participant": "391",
+				"participantLike": "305",
+				"participantDislike": "86"
+			},
+			{
+				"detailContent" : "grade",
+				"detailTitle" : "",
+				"detailTitleImg" : "/assets/images/synopsis/detail-grade-logo-01.png",
+				"logo" :
+				{
+					"on" : "/assets/images/synopsis/ic-sn21-logo-on.png",
+					"off" : "/assets/images/synopsis/ic-sn21-logo.png",
+					"alt" : "씨네21"
+				},
+				"gradeLike":  "8.5",
+				"percent" : "",
+				"participant": "15,783"
+			},
+			{
+				"detailContent" : "grade",
+				"detailTitle" : "",
+				"detailTitleImg" : "/assets/images/synopsis/ic-watcha-logo.png",
+				"logo" :
+				{
+					"on" : "/assets/images/synopsis/ic-watcha-logo-on.png",
+					"off" : "/assets/images/synopsis/ic-watcha-logo.png",
+					"alt" : "WATCHA"
+				},
+				"gradeLike":  "7.2",
+				"percent" : "",
+				"participant": "5,478"
+			},
+			{
+				"detailContent" : "sn21Review",
+				"sn21" : [
+					{
+						"who" : "김수빈 기자",
+						"review" : "2D의 감성까지 옮길 수 없단걸 감안하면 최선의 리메이크!",
+						"logo" :
+						{
+							"on" : "/assets/images/synopsis/ic-sn21-logo-mini-on.png",
+							"off" : "/assets/images/synopsis/ic-sn21-logo-mini.png",
+							"alt" : "씨네21",
+							"detailImg" : "/assets/images/synopsis/detail-review-logo-01.png",
+							"reviewDetailImg" : "/assets/images/synopsis/ic-sn21-logo-review.png"
+						},
+						"gradeLike":  "8.0"
+					},
+					{
+						"who" : "김현수 기자",
+						"review" : "최고의 실사화 상 수상작",
+						"logo" :
+						{
+							"on" : "/assets/images/synopsis/ic-sn21-logo-mini-on.png",
+							"off" : "/assets/images/synopsis/ic-sn21-logo-mini.png",
+							"alt" : "씨네21",
+							"detailImg" : "/assets/images/synopsis/detail-review-logo-01.png",
+							"reviewDetailImg" : "/assets/images/synopsis/ic-sn21-logo-review.png"
+						},
+						"gradeLike":  "9.4"
+					},
+					{
+						"who" : "이용철 기자",
+						"review" : "매혹적인 마법, 그러나 진취적 여성상 조상 운운은 과장된 표현",
+						"logo" :
+						{
+							"on" : "/assets/images/synopsis/ic-sn21-logo-mini-on.png",
+							"off" : "/assets/images/synopsis/ic-sn21-logo-mini.png",
+							"alt" : "씨네21",
+							"detailImg" : "/assets/images/synopsis/detail-review-logo-01.png",
+							"reviewDetailImg" : "/assets/images/synopsis/ic-sn21-logo-review.png"
+						},
+						"gradeLike":  "8.0"
+					},
+					{
+						"who" : "김수빈 기자",
+						"review" : "2D의 감성까지 옮길 수 없단걸 감안하면 최선의 리메이크!",
+						"logo" :
+						{
+							"on" : "/assets/images/synopsis/ic-sn21-logo-mini-on.png",
+							"off" : "/assets/images/synopsis/ic-sn21-logo-mini.png",
+							"alt" : "씨네21",
+							"detailImg" : "/assets/images/synopsis/detail-review-logo-01.png",
+							"reviewDetailImg" : "/assets/images/synopsis/ic-sn21-logo-review.png"
+						},
+						"gradeLike":  "8.0"
+					},
+					{
+						"who" : "김현수 기자",
+						"review" : "최고의 실사화 상 수상작",
+						"logo" :
+						{
+							"on" : "/assets/images/synopsis/ic-sn21-logo-mini-on.png",
+							"off" : "/assets/images/synopsis/ic-sn21-logo-mini.png",
+							"alt" : "씨네21",
+							"detailImg" : "/assets/images/synopsis/detail-review-logo-01.png",
+							"reviewDetailImg" : "/assets/images/synopsis/ic-sn21-logo-review.png"
+						},
+						"gradeLike":  "9.4"
+					},
+					{
+						"who" : "이용철 기자",
+						"review" : "매혹적인 마법, 그러나 진취적 여성상 조상 운운은 과장된 표현",
+						"logo" :
+						{
+							"on" : "/assets/images/synopsis/ic-sn21-logo-mini-on.png",
+							"off" : "/assets/images/synopsis/ic-sn21-logo-mini.png",
+							"alt" : "씨네21",
+							"detailImg" : "/assets/images/synopsis/detail-review-logo-01.png",
+							"reviewDetailImg" : "/assets/images/synopsis/ic-sn21-logo-review.png"
+						},
+						"gradeLike":  "8.0"
+					}
+				]
+			},
+			{
+				"detailContent" : "watchaReview",
+				"watcha" : [
+					{
+						"who" : "김수빈 기자",
+						"review" : "2D의 감성까지 옮길 수 없단걸 감안하면 최선의 리메이크!",
+						"logo" :
+						{
+							"on" : "/assets/images/synopsis/ic-sn21-logo-mini-on.png",
+							"off" : "/assets/images/synopsis/ic-sn21-logo-mini.png",
+							"alt" : "WATCHA",
+							"detailImg" : "/assets/images/synopsis/detail-review-logo-01.png",
+							"reviewDetailImg" : "/assets/images/synopsis/ic-sn21-logo-review.png"
+						},
+						"gradeLike":  "8.0"
+					},
+					{
+						"who" : "김현수 기자",
+						"review" : "최고의 실사화 상 수상작",
+						"logo" :
+						{
+							"on" : "/assets/images/synopsis/ic-sn21-logo-mini-on.png",
+							"off" : "/assets/images/synopsis/ic-sn21-logo-mini.png",
+							"alt" : "WATCHA",
+							"detailImg" : "/assets/images/synopsis/detail-review-logo-01.png",
+							"reviewDetailImg" : "/assets/images/synopsis/ic-sn21-logo-review.png"
+						},
+						"gradeLike":  "9.4"
+					},
+					{
+						"who" : "이용철 기자",
+						"review" : "매혹적인 마법, 그러나 진취적 여성상 조상 운운은 과장된 표현",
+						"logo" :
+						{
+							"on" : "/assets/images/synopsis/ic-sn21-logo-mini-on.png",
+							"off" : "/assets/images/synopsis/ic-sn21-logo-mini.png",
+							"alt" : "WATCHA",
+							"detailImg" : "/assets/images/synopsis/detail-review-logo-01.png",
+							"reviewDetailImg" : "/assets/images/synopsis/ic-sn21-logo-review.png"
+						},
+						"gradeLike":  "8.0"
+					},
+					{
+						"who" : "김수빈 기자",
+						"review" : "2D의 감성까지 옮길 수 없단걸 감안하면 최선의 리메이크!",
+						"logo" :
+						{
+							"on" : "/assets/images/synopsis/ic-sn21-logo-mini-on.png",
+							"off" : "/assets/images/synopsis/ic-sn21-logo-mini.png",
+							"alt" : "WATCHA",
+							"detailImg" : "/assets/images/synopsis/detail-review-logo-01.png",
+							"reviewDetailImg" : "/assets/images/synopsis/ic-sn21-logo-review.png"
+						},
+						"gradeLike":  "8.0"
+					},
+					{
+						"who" : "김현수 기자",
+						"review" : "최고의 실사화 상 수상작",
+						"logo" :
+						{
+							"on" : "/assets/images/synopsis/ic-sn21-logo-mini-on.png",
+							"off" : "/assets/images/synopsis/ic-sn21-logo-mini.png",
+							"alt" : "WATCHA",
+							"detailImg" : "/assets/images/synopsis/detail-review-logo-01.png",
+							"reviewDetailImg" : "/assets/images/synopsis/ic-sn21-logo-review.png"
+						},
+						"gradeLike":  "9.4"
+					},
+					{
+						"who" : "이용철 기자",
+						"review" : "매혹적인 마법, 그러나 진취적 여성상 조상 운운은 과장된 표현",
+						"logo" :
+						{
+							"on" : "/assets/images/synopsis/ic-sn21-logo-mini-on.png",
+							"off" : "/assets/images/synopsis/ic-sn21-logo-mini.png",
+							"alt" : "WATCHA",
+							"detailImg" : "/assets/images/synopsis/detail-review-logo-01.png",
+							"reviewDetailImg" : "/assets/images/synopsis/ic-sn21-logo-review.png"
+						},
+						"gradeLike":  "8.0"
+					}
+				]
+			}
+		]
+	}
+}

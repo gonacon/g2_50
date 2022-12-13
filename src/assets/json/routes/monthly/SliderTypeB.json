@@ -1,0 +1,63 @@
+{
+	"slideType": "SlideTypeB",
+	"slideTitle": "최신 업데이트 프로그램",
+	"slideItem": [
+		{
+			"title": "000000000000000000000000000000000000",
+			"image": "/assets/images/tmp/s07/s07_A_02.png",
+			"link": "#",
+			"loadFocus": true
+		},
+		{
+			"title": "111",
+			"image": "/assets/images/tmp/s07/s07_A_02.png",
+			"link": "#"
+		},
+		{
+			"title": "222",
+			"image": "/assets/images/tmp/s07/s07_A_01.png",
+			"link": "#"
+		},
+		{
+			"title": "333",
+			"image": "/assets/images/tmp/s07/s07_A_03.png",
+			"link": "#"
+		},
+		{
+			"title": "444",
+			"image": "/assets/images/tmp/s07/s07_A_01.png",
+			"link": "#"
+		},
+		{
+			"title": "555",
+			"image": "/assets/images/tmp/s07/s07_A_02.png",
+			"link": "#"
+		},
+		{
+			"title": "666",
+			"image": "/assets/images/tmp/s07/s07_A_03.png",
+			"link": "#"
+		},
+		{
+			"title": "777",
+			"image": "/assets/images/tmp/s07/s07_A_01.png",
+			"link": "#"
+		},
+		{
+			"title": "888",
+			"image": "/assets/images/tmp/s07/s07_A_02.png",
+			"link": "#"
+		},
+		{
+			"title": "999",
+			"image": "/assets/images/tmp/s07/s07_A_03.png",
+			"link": "#"
+		},
+		{
+			"title": "101010101010101010101010101010101010101010",
+			"image": "/assets/images/tmp/s07/s07_A_01.png",
+			"link": "#"
+		}
+
+	]
+}

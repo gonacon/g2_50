@@ -1,0 +1,44 @@
+/* KidsEndCertification.css */
+/* Common */
+.kidsEndCertificationWrap{display:block;position:relative;z-index:1;width:1920px;height:1080px;padding-left:1035px;}
+.kidsEndCertificationWrap .characterWrap{display:block;position:absolute;bottom:0;left:80px;height:100%;}
+.kidsEndCertificationWrap .characterWrap .imageWrap{display:flex;position:absolute;bottom:0;left:0;width:750px;height:850px;text-align:center;align-items:flex-end;}
+.kidsEndCertificationWrap .characterWrap .imageWrap img{display:block;margin:0 auto;}
+.kidsEndCertificationWrap .characterWrap .bubbleArea{position:absolute;top:115px;left:448px;width:520px;height:363px;}
+.kidsEndCertificationWrap .characterWrap .bubbleArea .bubbleWrap{position:relative;z-index:1;width:100%;height:100%;}
+.kidsEndCertificationWrap .characterWrap .bubbleArea .bubbleWrap img{position:absolute;top:0;left:0;z-index:1;}
+.kidsEndCertificationWrap .characterWrap .bubbleArea .bubbleWrap .textArea{display:table;position:absolute;top:0;left:0;z-index:5;width:100%;height:274px;text-align:center;}
+.kidsEndCertificationWrap .characterWrap .bubbleArea .bubbleWrap .textArea span{display:table-cell;font-size:40px;color:rgba(244,244,244,1);line-height:60px;vertical-align:middle;}
+
+.kidsEndCertificationWrap .titleWrap{display:block;}
+.kidsEndCertificationWrap .titleWrap p{text-align:left;}
+.kidsEndCertificationWrap .titleWrap .title{display:block;padding-top:200px;font-size:46px;color:rgba(26,26,26,1);line-height:60px;}
+.kidsEndCertificationWrap .titleWrap .mesSetting{display:block;margin-top:14px;font-size:30px;color:rgba(106,106,106,1);line-height:42px;}
+
+.kidsEndCertificationWrap .btnSettingCertificationWrap{display:block;padding-top:183px;text-align:left;}
+.kidsEndCertificationWrap .btnSettingCertificationWrap .noticeText{display:block;padding-bottom:26px;font-size:28px;color:rgba(136,136,136,1);line-height:44px;text-align:left;}
+
+.kidsEndCertificationWrap .certificationContentWrap{position:relative;z-index:1;margin-top:46px;}
+.kidsEndCertificationWrap .certificationContentWrap .mesInput{display:block;position:absolute;bottom:-100px;left:0;padding-top:24px;font-size:26px;color:rgba(106,106,106,1);line-height:38px;text-align:left;}
+.kidsEndCertificationWrap .certificationContentWrap .mesInput.error{color:rgba(195,62,50,0.9);}
+.kidsEndCertificationWrap .certificationContentWrap .mesInput strong{font-weight:700;}
+.kidsEndCertificationWrap .certificationContentWrap .inputArea{position:relative;}
+
+.kidsEndCertificationWrap .certificationContentWrap .gridWrap {display:flex;position:relative;display: -ms-flexbox;-ms-flex-pack: justify;justify-content: space-between;width:674px;margin:0;}
+.kidsEndCertificationWrap .certificationContentWrap .gridWrap .gridStyle.certification {width: 140px;height:140px;}
+.kidsEndCertificationWrap .certificationContentWrap .gridWrap .gridStyle input{height:140px;font-size: 86px;line-height:140px;text-align:center;}
+.kidsEndCertificationWrap .certificationContentWrap .gridWrap .gridStyle input + label {height:140px;}
+.kidsEndCertificationWrap .certificationContentWrap .gridWrap .gridStyle input.focusOn {font-size: 114px;}
+.kidsEndCertificationWrap .certificationContentWrap .gridWrap .gridStyle input.focusOn + label {height: 160px;padding: 20px 8px;}
+
+
+/*.certificationContentWrap.error .gridWrap:after{content:'';position:absolute;top:50%;right:-65px;width:40px;height:35px;background:url('/assets/images/certification/ic-error-certification.png') no-repeat;transform:translateY(-50%);-webkit-transform:translateY(-50%);}*/
+.certificationContentWrap.error .gridStyle input[disabled]{color:rgba(136,136,136,1);}
+.certificationContentWrap.error .gridStyle input[disabled] + label {background: rgba(127,128,133,0.4);}
+.certificationContentWrap.error .gridStyle input + label{box-shadow:none;}
+.certificationContentWrap.error .gridStyle input.focusOn + label{border: solid 4px rgb(232, 70, 37);}
+
+
+
+
+

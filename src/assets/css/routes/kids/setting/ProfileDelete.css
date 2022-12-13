@@ -1,0 +1,12 @@
+/* ProfileDelete.css */
+.settingRegistWrap.profileDelete {padding-left:187px; padding-right:187px;}
+
+.profileDelete .profileList {display:flex; justify-content:center; padding-top:103px;}
+.profileDelete .profileList li .item {display:block;}
+.profileDelete .profileList li .item .inner {display:block; padding:33px; width:376px; height:376px; background:url("/assets/images/kids/setting/img-alarm-nor.png") no-repeat center center; text-align:center;}
+.profileDelete .profileList li .item .text {display:block; padding-top:199px; background:url("/assets/images/kids/setting/img-girl.png") no-repeat center 33px; background-size:150px; font-size:32px; font-weight:700; line-height:normal; letter-spacing:normal; text-align:center; color:rgb(0, 0, 0);}
+.profileDelete .profileList li.boy .item .text {background-image:url("/assets/images/kids/setting/img-boy.png");}
+
+.profileDelete .detailAlarm {display:block; padding-top:16px;}
+.profileDelete .detailAlarm span {font-size:23px; font-weight:700; line-height:normal; letter-spacing:normal; color:rgba(0, 0, 0, 0.6);}
+.profileDelete .detailAlarm .age:before {display:inline-block; margin:3px 10px; width:2px; height:19px; background-color:rgba(0, 0, 0, 0.3); vertical-align:top; content:"";}

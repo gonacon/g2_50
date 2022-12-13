@@ -1,0 +1,85 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0b1 | 201101 
+   NOTE: WORK IN PROGRESS
+   USE WITH CAUTION AND TEST WITH ABANDON */
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+body{line-height:1;color:#000;}
+ol,ul{list-style:none;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+
+/* remember to define visible focus styles!
+:focus{outline:?????;}
+*/
+
+/* remember to highlight inserts somehow! */
+ins{text-decoration:none;}
+del{text-decoration:line-through;}
+
+table{border-collapse:collapse;border-spacing:0;table-layout:fixed;width:100%;}
+
+h1,h2,h3,h4,h5,h6,strong{font-weight:normal;}
+*{box-sizing:border-box;font-family: 'SK Btv', 'Sans-serif';}
+a{display:inline-block;text-decoration:none;color:#000;}
+a img{display:block;}
+caption,
+legend{display:none;}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none; 
+  	margin: 0; 
+}
+
+button{margin:0;padding:0;border:0;background:none;box-sizing:inherit;-webkit-box-sizing:inherit;}
+em{font-style:normal;}
+
+html::-webkit-scrollbar,body::-webkit-scrollbar{display:none;}
+
+/* SK Btv 로컬 설치 폰트 적용시 */
+@font-face {
+	font-family: 'SK Btv';
+	font-weight: 700;
+	src: local('SK Btv Bold'),
+	local('SK_Btv_Bold'),
+	local('SK Btv'),
+	local('SK Btv Bold'),
+	local('SKBtvBold'),
+	local('SK Btv_AH'),
+	local('SK Btv_AH Bold'),
+	local('SKBtv_AHBold');
+}
+
+@font-face {
+	font-family: 'SK Btv';
+	font-weight: 400;
+	src: local('SK Btv Medium'),
+	local('SK_Btv_Medium'),
+	local('SK Btv'),
+	local('SK Btv Medium'),
+	local('SKBtvMedium'),
+	local('SK Btv_AH'),
+	local('SK Btv_AH Medium'),
+	local('SKBtv_AHMedium');
+}
+
+@font-face {
+	font-family: 'SK Btv';
+	font-weight: 300;
+	src: local('SK Btv Light'),
+	local('SK_Btv_Light'),
+	local('SK Btv'),
+	local('SK Btv Light'),
+	local('SKBtvLight'),
+	local('SK Btv_AH'),
+	local('SK Btv_AH Light'),
+	local('SKBtv_AHLight');
+}
+
+/* FONT SMOOTHING */
+body {
+	/* -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale; */
+}

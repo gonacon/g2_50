@@ -1,0 +1,19 @@
+{
+	"type" : "DetailTop",
+	"bg" : "/assets/images/tmp/kids/bg-kids-montly-superkids.png",
+	"detailContent": {
+		"title" : "슈퍼 키즈 클럽",
+		"InfoText": "키즈클럽 월정액 콘텐츠는 물론, 우리아이가 좋아하는 최고 인기 캐릭터인<br/> 뽀로로MCN, 핑크퐁, 캐리와 친구들, 옥토넛 등을 무제한 시청할 수 있는<br/> 서비스입니다.",
+		"priceInfo" : "부가세 포함 / 3년약정 기준"
+	},
+	"listBtnItem" : [
+		{
+			"price" : "4,400",
+			"type" : "월정액 가입",
+			"link" : ""
+
+		}
+	]
+
+
+}

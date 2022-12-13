@@ -1,0 +1,11 @@
+{
+	"pageType": "TmembershipManagement",
+	"pageTitle": "T 멤버십 카드관리",
+	"cardDetail" :[
+		{
+			"cardType" : "/assets/images/myBtv/card-tmem.png",
+			"point" : "70,000",
+			"cardNumber" : "244488391234****"
+		}
+	]
+}

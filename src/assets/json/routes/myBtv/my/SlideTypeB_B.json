@@ -1,0 +1,72 @@
+{
+	"slideType": "SlideTypeB",
+	"slideTitle": "최근 시청 VOD",
+	"slideItem": [
+		{
+			"title": "겟아웃",
+			"image": "/assets/images/tmp/home_B_01.png",
+			"currentState": "99",
+			"link": ""
+		},
+		{
+			"title": "스파이더맨",
+			"image": "/assets/images/tmp/home_B_01.png",
+			"currentState": "88",
+			"link": ""
+		},
+		{
+			"title": "에일리언",
+			"image": "/assets/images/tmp/home_B_01.png",
+			"currentState": "77",
+			"link": ""
+		},
+		{
+			"title": "대립군",
+			"image": "/assets/images/tmp/home_B_01.png",
+			"currentState": "66",
+			"link": ""
+		},
+		{
+			"title": "하루",
+			"image": "/assets/images/tmp/home_B_01.png",
+			"currentState": "55",
+			"link": ""
+		},
+		{
+			"title": "악녀",
+			"image": "/assets/images/tmp/home_B_01.png",
+			"currentState": "44",
+			"link": ""
+		},
+		{
+			"title": "원더우먼",
+			"image": "/assets/images/tmp/home_B_01.png",
+			"currentState": "33",
+			"link": ""
+		},
+		{
+			"title": "보스베이비",
+			"image": "/assets/images/tmp/home_B_01.png",
+			"currentState": "22",
+			"link": ""
+		},
+		{
+			"title": "리얼",
+			"image": "/assets/images/tmp/home_B_01.png",
+			"currentState": "11",
+			"link": ""
+		},
+		{
+			"title": "미이라",
+			"image": "/assets/images/tmp/home_B_01.png",
+			"currentState": "0",
+			"link": ""
+		},
+		{
+			"title": "노무현입니다",
+			"image": "/assets/images/tmp/home_B_01.png",
+			"currentState": "100",
+			"link": ""
+		}
+	]
+}

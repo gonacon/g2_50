@@ -1,0 +1,80 @@
+/* JuvenileProtection.css */
+/* Common */
+.titleWrap{display:block;text-align:center;}
+.titleWrap .title{display:block;padding-top:250px;font-size:52px;color:rgba(26,26,26,1);line-height:60px;}
+.titleWrap .title.juvenile{background:url('/assets/images/certification/ic-safety-settings.png') no-repeat center 0;}
+.titleWrap .title.age19{background:url('/assets/images/certification/ic-19.png') no-repeat center 0;}
+.titleWrap .title.age15{background:url('/assets/images/certification/ic-15.png') no-repeat center 0;}
+.titleWrap .title.age12{background:url('/assets/images/certification/ic-12.png') no-repeat center 0;}
+.titleWrap .title.age7{background:url('/assets/images/certification/ic-7.png') no-repeat center 0;}
+.titleWrap .title.child{background:url('/assets/images/certification/ic-childsafe.png') no-repeat center 0;}
+.titleWrap .title2{display:block;font-size:52px;color:rgba(26,26,26,1);line-height:60px;}
+.titleWrap .mesSetting{display:block;margin-top:14px;font-size:30px;color:rgba(106,106,106,1);line-height:42px;text-align:center;}
+
+.btnSettingCertificationWrap{display:block;text-align:center;}
+.btnSettingCertificationWrap .noticeText{display:block;padding-bottom:20px;font-size:28px;color:rgba(136,136,136,1);line-height:44px;}
+
+.certificationContentWrap{margin-top:56px;}
+.btnSettingCertificationWrap .noticeText{display:block;padding-bottom:10px;font-size:28px;color:rgba(74,74,74,0.63);line-height:44px;}
+.btnSettingCertificationWrapProTection{display:block;text-align:center;}
+.btnSettingCertificationWrapProTection .noticeText{display:block;padding-top: 50px; padding-bottom:70px;font-size:28px;color:rgba(74,74,74,0.63);line-height:44px;}
+.certificationContentWrap{margin-top:46px;}
+.certificationContentWrap .mesInput{display:block;padding-top:24px;font-size:26px;color:rgba(0,0,0,0.4);line-height:38px;text-align:center;}
+
+.certificationContentWrap .mesInput{display:block;padding-top:24px;font-size:26px;color:rgba(106,106,106,1);line-height:38px;text-align:center;}
+.certificationContentWrap .mesInput.error{color:rgba(195,62,50,0.9);}
+.certificationContentWrap .mesInput strong{font-weight:700;}
+.certificationContentWrap .inputArea{position:relative;}
+
+.certificationContentWrap .gridWrap {display:flex;position:relative;display: -ms-flexbox;-ms-flex-pack: justify;justify-content: space-between;width:674px;margin: 0 auto;}
+.certificationContentWrap .gridWrap .gridStyle.certification {width: 140px;height:140px;}
+.certificationContentWrap .gridWrap .gridStyle input{height:140px;font-size: 86px;line-height:140px;text-align:center;}
+.certificationContentWrap .gridWrap .gridStyle input + label {height:140px;}
+.certificationContentWrap .gridWrap .gridStyle input.focusOn {font-size: 114px;}
+.certificationContentWrap .gridWrap .gridStyle input.focusOn + label {height: 160px;padding: 20px 8px;}
+.certificationContentWrap .gridWrap .gridStyle input[disabled]{color:#888;}
+.certificationContentWrap .gridWrap .gridStyle input[disabled] + label{background:rgba(127, 128, 133, 0.4);}
+
+/*.certificationContentWrap.error .gridWrap:after{content:'';position:absolute;top:50%;right:-65px;width:40px;height:35px;background:url('/assets/images/certification/ic-error-certification.png') no-repeat;transform:translateY(-50%);-webkit-transform:translateY(-50%);}*/
+.certificationContentWrap.error .gridStyle input[disabled] + label {background: rgba(127,128,133,0.4);}
+.certificationContentWrap.error .gridStyle input + label{box-shadow:none;}
+.certificationContentWrap.error .gridStyle input.focusOn + label{border: solid 4px rgb(232, 70, 37);}
+
+.juvenileProtectionWrap .btnSettingCertificationWrap,
+.childSafetyWrap .btnSettingCertificationWrap,
+.numberSettingWrap .btnSettingCertificationWrap,
+.adultCertificationWrap .btnSettingCertificationWrap{position:absolute;bottom:98px;left:0;right:0;}
+.purchaseCertificationWrap .btnSettingCertificationWrap{position:absolute;bottom:136px;left:0;right:0;}
+
+/* JuvenileProtection */
+.juvenileProtectionWrap{position:relative;height:1080px;}
+.juvenileProtectionWrap .titleWrap{padding-top:264px;}
+
+/* AdultCertificationChildSafety */
+.childSafetyWrap{position:relative;height:1080px;}
+.childSafetyWrap .titleWrap{padding-top:60px;}
+
+/* AdultCertificationnNumberSetting */
+.numberSettingWrap{position:relative;height:1080px;}
+.numberSettingWrap .titleWrap{padding-top:60px;}
+
+/* AdultCertification */
+.adultCertificationWrap{position:relative;height:1080px;}
+.adultCertificationWrap .titleWrap{padding-top:60px;}
+
+/* PurchaseCertification */
+.purchaseCertificationWrap{position:relative;height:1080px;}
+.purchaseCertificationWrap .titleWrap{padding-top:220px;}
+.purchaseCertificationWrap .certificationContentWrap{margin-top:133px;}
+
+/* InitializationCompletionAdultCertification */
+.initializationInfo{display:block;text-align:center;}
+.initializationInfo .infoText{font-size:40px;color:rgba(38,38,38,0.9);line-height:60px;}
+.initializationInfo .certificationNumberBox{display:inline-block;width:540px;margin-top:24px;border-radius:10px;background-color:rgba(0,0,0,0.05);text-align:center;}
+.initializationInfo .certificationNumberBox > span + span{margin-left:34px;}
+.initializationInfo .certificationNumberBox .numText{display:inline-block;font-size:28px;color:rgba(0,0,0,1);line-height:100px;vertical-align:middle;}
+.initializationInfo .certificationNumberBox .num{display:inline-block;font-size:32px;color:rgba(0,0,0,1);line-height:100px;font-weight:700;vertical-align:middle;}
+.initializationInfo .mesInfo{margin-top:17px;font-size:26px;color:rgba(0,0,0,0.4);line-height:30px;}
+
+
+

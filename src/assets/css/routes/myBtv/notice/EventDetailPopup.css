@@ -1,0 +1,7 @@
+/* EventDetailPopup.css */
+.popupWrap .popupCon.eventDetail{padding:40px 40px 88px;}
+
+.popupEventDetail .eventImgWrap{width:1148px;}
+.popupEventDetail .eventImgWrap img{display:block;width:100%;height:auto;}
+
+.popupWrap .popupCon .popupEventDetail .btnWrap{margin-top:50px;}

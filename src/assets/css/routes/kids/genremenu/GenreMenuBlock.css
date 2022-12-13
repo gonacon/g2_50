@@ -1,0 +1,8 @@
+/* GenreMenuBlock.css */
+:root{
+	--page:0;
+}
+.genreMenuBlock {position:relative; z-index:1; padding:0 115px;}
+.genreMenuBlock .menuBlockTitle + .contentGroup .SlideTypeBC{padding-top:63px;}
+.genreMenuBlock .btnTopWrap {padding:119px 0 169px;transform:translate(0,0);}
+.genreMenuBlock .contentGroup + .contentGroup{margin-top:10px;}

@@ -1,0 +1,51 @@
+/* KidsSeriesAppearance.css */
+:root{
+	--page:0;
+}
+
+.slideAppearance{position:relative;z-index:1;padding-top:21px;}
+.slideAppearance .slideWrap{position:relative;z-index:1;transform:translate(0,0);}
+.slideAppearance .title{transform:translate(0,0);font-size:36px;line-height:40px;letter-spacing:-1px;font-weight:400;color:rgba(48,48,48,1);}
+.slideAppearance .slideWrap .slideCon{margin:-44px -30px 0;padding:48px 10px 60px;overflow:hidden;transform:translate(0,0);}
+.slideAppearance .slideWrapper{display:flex;justify-content:space-between;transform:translate3d(calc(var(--page) * -288px),0,0);}
+.slideAppearance .slideWrapper .slide{margin:0 20px;text-align:center;}
+.slideAppearance .slideWrapper .csFocus{display:block;width:248px;height:178px;padding:14px 0;border-radius:4px;background-color:rgba(255,255,255,0.17);box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.2);transform:scale(1,1);}
+.slideAppearance .slideWrapper .csFocus.focusOn{background-color:rgba(244,244,244,1);box-shadow:0 10px 10px 0 rgba(0, 0, 0, 0.3), 0 0 10px 0 rgba(0, 0, 0, 0.1);transform:scale(1.19,1.19);}
+
+.slideAppearance .slideWrapper .csFocus .personInfo{display:table;width:100%;}
+.slideAppearance .slideWrapper .csFocus .personInfo .infoArea{display:table-cell;height:122px;padding:0 10px;vertical-align:middle;}
+/*.slideAppearance .slideWrapper .csFocus .personInfo .infoArea .infoName,*/
+/*.slideAppearance .slideWrapper .csFocus .personInfo .infoArea .infoCast{display:block;}*/
+.slideAppearance .slideWrapper .csFocus .personInfo .infoArea .infoName{font-size:28px;color:rgba(26,26,26,1);line-height:30px;font-weight:700;word-break:keep-all;word-wrap: break-word;display: -webkit-box;overflow: hidden;text-overflow: ellipsis;white-space: normal;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+.slideAppearance .slideWrapper .csFocus .personInfo .infoArea .infoCast{display:block;margin-top:10px;font-size:22px;color:rgba(26,26,26,0.8);line-height:24px;word-break:keep-all;}
+.slideAppearance .slideWrapper .csFocus .personInfo .infoArea .infoCast span{display:inline-block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;   max-width:200px;vertical-align:middle;}
+.slideAppearance .slideWrapper .csFocus .partArea{display:block;font-size:24px;color:rgba(26,26,26,0.8);line-height:28px;text-align:center;}
+.slideAppearance .slideWrapper .csFocus.focusOn .personInfo .infoArea .infoName{color:rgba(245, 81, 63,1);}
+.slideAppearance .slideWrapper .csFocus.focusOn .personInfo .infoArea .infoCast{color:rgba(245, 81, 63,0.8);}
+
+.contentGroup.activeSlide .slideAppearance .title{transform:translate(0,-17px);}
+
+.slideAppearance .slideLeft,
+.slideAppearance .slideRight{position:absolute;top:50%;left:-70px;z-index:10;transform:translate(0,-50%);width:23px;height:58px;background:url("/assets/images/common/icon/arrow-left.png") no-repeat 0 0;opacity:0;}
+.slideAppearance .slideRight{left:auto;right:-70px;background:url("/assets/images/common/icon/arrow-right.png") no-repeat 0 0;}
+.slideAppearance .activeSlide.leftActive .slideLeft,
+.slideAppearance .activeSlide.rightActive .slideRight{opacity:1;}
+
+.slideAppearance .slideCount {position: absolute;top: 9px;right: 0;z-index: 10;font-size: 23px;color: #666;line-height: 1.83;letter-spacing: normal;opacity: 0;}
+.slideAppearance .activeSlide .slideCount {opacity:1;}
+.slideAppearance .activeSlide.lastActive .slideCount{transform:translate(0,-17px);}
+
+/*.dark .slideAppearance .title{color:rgba(244,244,244,1);}*/
+/*.dark .slideAppearance .slideWrapper .csFocus .personInfo .infoArea .infoName{color:rgba(244,244,244,1);}*/
+/*.dark .slideAppearance .slideWrapper .csFocus .personInfo .infoArea .infoCast{color:rgba(244,244,244,0.8);}*/
+/*.dark .slideAppearance .slideWrapper .csFocus .partArea{color:rgba(244,244,244,0.8);}*/
+/*.dark .slideAppearance .slideWrapper .csFocus.focusOn .personInfo .infoArea .infoName{color:rgba(245, 81, 63,1);}*/
+/*.dark .slideAppearance .slideWrapper .csFocus.focusOn .personInfo .infoArea .infoCast{color:rgba(245, 81, 63,0.8);}*/
+/*.dark .slideAppearance .slideWrapper .csFocus.focusOn .partArea{color:rgba(26,26,26,0.8);}*/
+/*.dark .slideAppearance .slideLeft,*/
+/*.dark .slideAppearance .slideRight{position:absolute;top:50%;left:-70px;z-index:10;transform:translate(0,-50%);width:23px;height:58px;background:url("/assets/images/common/icon/arrow-left-w.png") no-repeat 0 0;opacity:0;}*/
+/*.dark .slideAppearance .slideRight{left:auto;right:-70px;background:url("/assets/images/common/icon/arrow-right-w.png") no-repeat 0 0;}*/
+/*.dark .slideAppearance .activeSlide .slideLeft,*/
+/*.dark .slideAppearance .activeSlide .slideRight{opacity:1;}*/
+
+/*.dark .slideAppearance .slideCount {color: rgba(244,244,244,0.9);}*/

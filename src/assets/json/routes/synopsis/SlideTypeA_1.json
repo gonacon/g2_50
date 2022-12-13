@@ -1,0 +1,61 @@
+{
+	"slideType": "SlideTypeA_1",
+	"slideTitle": "B tv 인기영화",
+	"slideItem": [
+		{
+			"title": "노무현입니다",
+			"image": "/assets/images/tmp/synopsis/img-ep-movie-01.png",
+			"link": "/home/genre/Type1"
+		},
+		{
+			"title": "미이라",
+			"image": "/assets/images/tmp/synopsis/img-ep-movie-01.png",
+			"link": "/home/genre/Type2"
+		},
+		{
+			"title": "리얼",
+			"image": "/assets/images/tmp/synopsis/img-ep-movie-01.png",
+			"link": "/home/genre/Type3"
+		},
+		{
+			"title": "보스베이비",
+			"image": "/assets/images/tmp/synopsis/img-ep-movie-01.png",
+			"link": "/home/genre/Type4"
+		},
+		{
+			"title": "원더우먼",
+			"image": "/assets/images/tmp/synopsis/img-ep-movie-01.png",
+			"link": "/home/genre/Type5"
+		},
+		{
+			"title": "악녀",
+			"image": "/assets/images/tmp/synopsis/img-ep-movie-01.png",
+			"link": "/home/genre/Type6"
+		},
+		{
+			"title": "하루",
+			"image": "/assets/images/tmp/synopsis/img-ep-movie-01.png",
+			"link": "/home/genre/Type7"
+		},
+		{
+			"title": "대립군",
+			"image": "/assets/images/tmp/synopsis/img-ep-movie-01.png",
+			"link": "/home/genre/Type8"
+		},
+		{
+			"title": "에일리언",
+			"image": "/assets/images/tmp/synopsis/img-ep-movie-01.png",
+			"link": "/home/genre/Type9"
+		},
+		{
+			"title": "스파이더맨",
+			"image": "/assets/images/tmp/synopsis/img-ep-movie-01.png",
+			"link": "/home/genre/Type10"
+		},
+		{
+			"title": "겟아웃",
+			"image": "/assets/images/tmp/synopsis/img-ep-movie-01.png",
+			"link": "/home/genre/Type11"
+		}
+	]
+}

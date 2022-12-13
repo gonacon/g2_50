@@ -1,0 +1,47 @@
+{
+	"slideType": "SlideTypeB",
+	"slideTitle": "인기 예능 프로그램",
+	"slideItem": [
+		{
+			"image": "/assets/images/tmp/monthly/M02_B_01.png",
+			"link": "#"
+		},
+		{
+			"image": "/assets/images/tmp/monthly/M02_B_02.png",
+			"link": "#"
+		},
+		{
+			"image": "/assets/images/tmp/monthly/M02_B_03.png",
+			"link": "#"
+		},
+		{
+			"image": "/assets/images/tmp/monthly/M02_B_04.png",
+			"link": "#"
+		},
+		{
+			"image": "/assets/images/tmp/monthly/M02_B_05.png",
+			"link": "#"
+		},
+		{
+			"image": "/assets/images/tmp/monthly/M02_B_01.png",
+			"link": "#"
+		},
+		{
+			"image": "/assets/images/tmp/monthly/M02_B_02.png",
+			"link": "#"
+		},
+		{
+			"image": "/assets/images/tmp/monthly/M02_B_03.png",
+			"link": "#"
+		},
+		{
+			"image": "/assets/images/tmp/monthly/M02_B_04.png",
+			"link": "#"
+		},
+		{
+			"image": "/assets/images/tmp/monthly/M02_B_05.png",
+			"link": "#"
+		}
+
+	]
+}

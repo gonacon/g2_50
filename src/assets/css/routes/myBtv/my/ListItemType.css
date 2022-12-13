@@ -1,0 +1,36 @@
+/* ListItemType.css */
+.listItemType {margin:0 -23px; padding:92px 23px 0;}
+.listItemType .listWrapper {margin-left:-42px;}
+.listItemType .listWrapper .contentGroup:after {display:block; clear:both; content:"";}
+.listItemType .listWrapper .contentGroup{padding:25px 0 112px;}
+.listItemType .listWrapper .contentGroup:first-child {padding-top:0;}
+.listItemType .item,
+.listItemType .slide {float:left; margin-left:42px; text-align:center;}
+
+.listItemType .itemTitle {position:absolute;bottom:-42px;left:50%;z-index:10;transform:translate(-50%,0);opacity:0;line-height:40px;font-size:36px;color:#1a1a1a;font-weight:400;letter-spacing:-1px;white-space:nowrap;}
+/*.listItemType .itemTitle {transform:translate(0,0);font-size:36px;line-height:40px;letter-spacing:-1px;font-weight:400;color:#1a1a1a;}*/
+/*.wishListWrap .wishListItem {margin:-44px -30px -40px;padding:60px 10px 40px;overflow:hidden}*/
+/*.wishListWrap .wishListItem{display:flex;justify-content:space-between;}*/
+/*.wishListWrap .wishListItem .item {padding:0 21px;text-align:center;}*/
+.listItemType .csFocus {display:block; width:246px;}
+.listItemType .csFocus img {display:block; width:100%;border-radius:4px;}
+/*.listItemType .csFocus.focusOn img {box-shadow:0 10px 10px 0 rgba(0, 0, 0, 0.3), 0 0 10px 0 rgba(0, 0, 0, 0.1);}*/
+.listItemType .csFocus .itemTitle {display:block; opacity:0; line-height:30px; font-size:26px; color:#000; font-weight:700; letter-spacing:-1px;}
+.listItemType .csFocus {transform:scale(1,1);}
+.listItemType .csFocus.focusOn {transform:scale(1.2,1.2);}
+.listItemType .csFocus.focusOn .itemTitle {opacity:1;}
+
+.listItemType .listWrapper .csFocus .imgWrap{position:relative;z-index:1;display:block;width:246px;height:354px;border-radius:4px;background:url('/assets/images/common/default/thumbnail_default_port.png') no-repeat 0 0;background-size:100% 100%;box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.2);}
+.listItemType .listWrapper .csFocus.focusOn .imgWrap{box-shadow:0 14px 14px 0 rgba(0, 0, 0, 0.35);}
+.listItemType .listWrapper .csFocus .imgWrap .flagWrap{position:absolute;right:0;bottom:0;z-index:10;}
+.listItemType .listWrapper .csFocus .imgWrap .flagWrap img{opacity:1;position:absolute;right:-10px;bottom:0;z-index:10;display:inline-block;width:auto;border-radius:0;box-shadow:none;}
+.listItemType .listWrapper .csFocus .imgWrap .flagWrap img.flagImg{right:0;}
+.listItemType .listWrapper .csFocus .imgWrap .flagWrap img:not(.flagImg){z-index:15;}
+.listItemType .listWrapper .csFocus.focusOn .imgWrap .flagWrap img.flagImg,
+.listItemType .listWrapper .csFocus.focusOn .imgWrap .flagWrap img:only-child{opacity:1;}
+.listItemType .listWrapper .slide:first-child.csFocus.textOver .itemTitle{left:0;transform:translate(0);}
+.listItemType .listWrapper .slide:last-child.csFocus.textOver .itemTitle{right:0;left:auto;transform:translate(0);}
+.listItemType .listWrapper .slide:only-child.csFocus.textOver .itemTitle{left:0;right:auto;transform:translate(0);}
+
+.listItemType .listWrapper .csFocus .imgWrap:before{position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;content:"";display:block;border-radius:2px;overflow:hidden;box-shadow:0 0 0 5px #f4f4f4;opacity:0;}
+.listItemType .listWrapper .csFocus.focusOn .imgWrap:before{box-shadow:0 0 0 5px #f4f4f4;opacity:1;}

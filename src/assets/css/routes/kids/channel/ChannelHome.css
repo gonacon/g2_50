@@ -1,0 +1,70 @@
+/* ChannelHome.css */
+:root{
+	--page:0;
+}
+.channelHome {position:relative; z-index:1; width:1920px; height:1080px;}
+.channelHome .bgWrap {position:fixed; z-index:-1;}
+.channelHome .bgWrap.cover:before{content:'';display:block;position:absolute;top:0;left:0;z-index:1;width:1920px;height:800px;background:url('/assets/images/kids/channel/bg-mask.png') no-repeat 0 0;}
+
+.channelSlideWrap {padding:32px 138px 0;}
+.channelSlideWrap .slideCon{overflow:hidden;margin:-20px -80px 0;padding:20px 0 0;}
+.channelSlideWrap .slideWrapper{display:flex; justify-content:space-between; align-items:center; height:701px;}
+.channelSlideWrap .slideWrapper {transform:translate(calc(var(--page) * -360px),0); padding-left:720px;}
+.channelSlideWrap .slideWrapper .slide {padding:0 14px;}
+.channelSlideWrap .slideWrapper .slide .csFocusCenter {position:relative; z-index:1;}
+.channelSlideWrap .slideWrapper .slide .csFocusCenter .nor {padding:29px 30px 0; position:relative; z-index:1;}
+.channelSlideWrap .slideWrapper .slide .csFocusCenter .nor:before {content:""; display:block; width:332px; height:340px; position:absolute; top:0; left:0; z-index:-1; background:url("/assets/images/kids/channel/img-vod-bg.png") no-repeat center center;}
+.channelSlideWrap .slideWrapper .slide .csFocusCenter .wrapImg {display:block; position:relative; z-index:1; padding:2px; width:272px; height:156px; text-align:center;}
+.channelSlideWrap .slideWrapper .slide .csFocusCenter .wrapImg img {width:100%;}
+.channelSlideWrap .slideWrapper .slide .csFocusCenter .wrapImg:after {content:""; position:absolute; top:0; left:0; right:0; bottom:0; z-index:10; background:url("/assets/images/kids/channel/img-vod-cover.png") no-repeat center center;}
+.channelSlideWrap .slideWrapper .slide .csFocusCenter .vodTitle {padding-top:17px; text-align:center; font-size:0;}
+.channelSlideWrap .slideWrapper .slide .csFocusCenter .vodTitle .title {display:none;}
+.channelSlideWrap .slideWrapper .slide .csFocusCenter .vodTitle .num {margin-right:10px; font-size:38px; font-weight:700; line-height:normal; letter-spacing:normal; text-align:center; color:#fff;}
+.channelSlideWrap .slideWrapper .slide .csFocusCenter .channelInfo {text-align:center; padding-top:10px; font-size:24px; line-height:normal; letter-spacing:normal; color:#fff;margin:0 auto;width:230px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.channelSlideWrap .slideWrapper .slide .csFocusCenter .foc .channelInfo {width:630px;}
+.channelSlideWrap .slideWrapper .slide .csFocusCenter .channelInfo .state {display:inline-block; padding:6px 9px; margin-right:8px; border-radius:10px; background-color:rgba(0, 0, 0, 0.3);  font-size:18px; font-weight:700; line-height:normal; letter-spacing:normal; text-align:center; color:#fff;}
+
+.channelSlideWrap .slideWrapper .slide .csFocusCenter .foc {opacity:0; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); z-index:10;}
+.channelSlideWrap .slideWrapper .slide .csFocusCenter.focusOn .nor,
+.channelSlideWrap .slideWrapper .slide .csFocusCenter.defaultFocus .nor,
+.channelSlideWrap .slideWrapper .slide.active .csFocusCenter .nor {opacity:0;}
+.channelSlideWrap .slideWrapper .slide.active .csFocusCenter .foc,
+.channelSlideWrap .slideWrapper .slide .csFocusCenter.defaultFocus .foc {opacity:1;}
+/*.channelSlideWrap .slideWrapper .slide .csFocusCenter .foc {padding:52px 79px 0; width:902px; height:701px;}*/
+/*.channelSlideWrap .slideWrapper .slide .csFocusCenter .foc:before {content:""; display:block; width:902px; height:701px; position:absolute; top:0; left:0; z-index:-1; background:url("/assets/images/kids/channel/img-tv-nor.png") no-repeat center center; background-size:865px 676px;}*/
+.channelSlideWrap .slideWrapper .slide .csFocusCenter .foc {padding:47px 67px 0; width:874px; height:673px;}
+.channelSlideWrap .slideWrapper .slide .csFocusCenter .foc:before {content:""; display:block; width:874px; height:673px; position:absolute; top:0; left:0; z-index:-1; background:url("/assets/images/kids/channel/img-tv-nor.png") no-repeat center center; background-size:839px 646px;}
+.channelSlideWrap .slideWrapper .slide .csFocusCenter .foc .wrapImg {padding:2px; width:742px; height:427px;}
+.channelSlideWrap .slideWrapper .slide .csFocusCenter .foc .wrapImg:after {content:""; background:url("/assets/images/kids/channel/img-tv-cover-nor.png") no-repeat center center;}
+.channelSlideWrap .slideWrapper .slide .csFocusCenter .foc .vodTitle .title {display:inline-block; font-size:38px; font-weight:700; line-height:1.42; color:#fff;max-width:560px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:middle;}
+.channelSlideWrap .slideWrapper .slide .csFocusCenter .foc .vodTitle .num {font-size:40px; font-weight:700; line-height:1.17; letter-spacing:normal; color:#f4f4f4;vertical-align:middle;}
+
+/*.channelSlideWrap .slideWrapper .slide .csFocusCenter.focusOn .foc {padding:38px 61px 0;}*/
+/*.channelSlideWrap .slideWrapper .slide .csFocusCenter.focusOn .foc:before {background-image:url("/assets/images/kids/channel/img-tv-foc.png"); background-size:902px 701px;}*/
+.channelSlideWrap .slideWrapper .slide .csFocusCenter.focusOn .foc {padding:34px 50px 0;}
+.channelSlideWrap .slideWrapper .slide .csFocusCenter.focusOn .foc:before {background-image:url("/assets/images/kids/channel/img-tv-foc.png"); background-size:874px 673px;}
+.channelSlideWrap .slideWrapper .slide .csFocusCenter.focusOn .foc .wrapImg {padding:2px; width:774px; height:446px;}
+.channelSlideWrap .slideWrapper .slide .csFocusCenter.focusOn .foc .wrapImg:after {content:""; background-image:url("/assets/images/kids/channel/img-tv-cover-foc.png"); background-size:100%;}
+.channelSlideWrap .slideWrapper .slide .csFocusCenter.focusOn .foc .vodTitle .title {font-size:40px; line-height:1.25; color:#fff;}
+.channelSlideWrap .slideWrapper .slide .csFocusCenter.focusOn .foc .vodTitle .num {font-size:43px; line-height:1.16;}
+
+.channelSlideWrap .slideWrapper .slide .csFocusCenter.focusOn .foc .progessBar{display:block;overflow:hidden;width:320px;height:14px;position:absolute;left:0;right:0;bottom:195px;z-index:15;margin:0 auto;padding:3px;background:rgba(0,0,0,0.3);border-radius:10px;opacity:1;}
+.channelSlideWrap .slideWrapper .slide .csFocusCenter.focusOn .foc .progessBar .proceed{display:block;width:100%;height:8px;border-radius:10px;background:rgba(255,168,61,1);}
+
+.channelSlideWrap .icRocket {display:block; position:absolute; top:30px; left:409px; z-index:100; width:293px; height:157px; background:url("/assets/images/kids/channel/img-rocket-nor.png") no-repeat center center;}
+.channelSlideWrap.focus .icRocket {top:10px; left:357px; width:352px; height:188px; background:url("/assets/images/kids/channel/img-rocket-foc.png") no-repeat center center;}
+.channelSlideWrap .slideWrapper .slide.left .csFocusCenter,
+.channelSlideWrap.focus .slideWrapper .slide.left + .slide.left .csFocusCenter{transform:translateX(-105%);}
+.channelSlideWrap .slideWrapper .slide.left + .slide.left .csFocusCenter{transform:translateX(-90%);}
+.channelSlideWrap .slideWrapper .slide.right .csFocusCenter{transform:translateX(90%);}
+.channelSlideWrap .slideWrapper .slide.right ~ .slide.right .csFocusCenter,
+.channelSlideWrap.focus .slideWrapper .slide.right .csFocusCenter{transform:translateX(105%);}
+
+.channelSlideWrap .leftArrow,
+.channelSlideWrap .rightArrow{position:absolute; top:50%; left:22%; z-index:110; transform:translate(0,-30%); width:72px; height:100px; background:url("/assets/images/kids/button/arrow-left.png") no-repeat 0 0; opacity:0;}
+.channelSlideWrap .rightArrow{left:auto; right:22%; background:url("/assets/images/kids/button/arrow-right.png") no-repeat 0 0; transform:translate(0,-30%);}
+.channelSlideWrap.focus .leftArrow,
+.channelSlideWrap.focus .rightArrow{opacity:1;}
+
+
+.channelHome .channelCaution {position:absolute; left:0; right:0; bottom:38px; z-index:10; font-size:24px; font-weight:700; line-height:normal; letter-spacing:normal; text-align:center; color:#888;}

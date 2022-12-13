@@ -1,0 +1,104 @@
+{
+	"pageType": "btvProductDetail",
+	"productTitle": "B tv 프라임캐치온 지상파",
+	"productInfo": "B tv 전채널, 캐치온디맨드, 지상파 다시보기를<br/>할인된 가격으로 볼 수 있는 결합상품!",
+	"detailList" : ["214채널 + 캐치온월정액 + 지상파월정액","기본료 : 22,000원","셋톱박스 임대료 : 4,400원","채널 수 : 214채널"],
+	"priceDetail" : {
+		 "price" : "26,400" ,
+		 "value" : "원 / 월" ,
+		 "info" : "부가세 포함 / 3년약정 기준"
+	},
+	"detailCaution" : ["고객별 할인적용 금액에 따라 표시된 금액과 청구금액이 다를 수 있습니다.","셋톱박스 할인, 복지감면, 공동청약 할인 및 기타 할인 대상 고객님은<br/>변경 시 기존 할인이 변동될 수 있습니다.","기타 상품관련 문의사항은 국번없이 106 또는<br/>B tv 홈페이지(www.skbtv.co.kr)를 통해 확인해주세요."],
+	"logoItem" :[
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		},
+		{
+			"imgSrc" : "/assets/images/tmp/mybtv/logo-tvn.png"
+		}
+	]
+}

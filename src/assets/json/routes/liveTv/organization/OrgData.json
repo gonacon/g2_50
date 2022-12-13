@@ -1,0 +1,254 @@
+[
+	{
+		"channel": "13",
+		"logoImage": "/assets/images/tmp/realtime/logo-kbs2.png",
+		"favorite": "true",
+		"programs": [
+			{
+				"title": "학교 2017(15회)",
+				"startTime": "1509507000",
+				"endTime": "1509507890",
+				"thumbImage": "/assets/images/tmp/realtime/thumb1.png",
+				"rating": "12",
+				"isAlarm": "false",
+				"isDolby": "true",
+				"isVoiceMulti": "true",
+				"isCaption": "true",
+				"isExplan": "true"
+			},
+			{
+				"title": "대국민 토크쇼 안녕하세요(346회)",
+				"startTime": "1509507890",
+				"endTime": "1509508220",
+				"thumbImage": "/assets/images/tmp/realtime/thumb1.png",
+				"rating": "12",
+				"isAlarm": "true",
+				"isDolby": "true"
+			},
+			{
+				"title": "걸어서 세계 속으로",
+				"startTime": "1509508220",
+				"endTime": "1509509820",
+				"thumbImage": "/assets/images/tmp/realtime/thumb1.png",
+				"rating": "12",
+				"isAlarm": "true",
+				"isDolby": "true"
+			},
+			{
+				"title": "걸어서 세계 속으로",
+				"startTime": "1509509820",
+				"endTime": "1509512811",
+				"thumbImage": "/assets/images/tmp/realtime/thumb1.png",
+				"rating": "12",
+				"isAlarm": "true",
+				"isDolby": "true"
+			},
+			{
+				"title": "호에에엥",
+				"startTime": "1509512811",
+				"endTime": "1509513901",
+				"thumbImage": "/assets/images/tmp/realtime/thumb1.png",
+				"rating": "12",
+				"isAlarm": "true",
+				"isDolby": "true"
+			}
+		]
+	},
+	{
+		"channel": "14",
+		"logoImage": "/assets/images/tmp/realtime/logo-nsshop.png",
+		"favorite": "false",
+		"programs": [
+			{
+				"title": "가전",
+				"startTime": "1509500000",
+				"endTime": "1509509170",
+				"thumbImage": "",
+				"rating": "12",
+				"isAlarm": "false",
+				"isDolby": "false"
+			},
+			{
+				"title": "시즌침구",
+				"startTime": "1509509170",
+				"endTime": "1509509680",
+				"thumbImage": "",
+				"rating": "12",
+				"isAlarm": "true",
+				"isDolby": "false"
+			},
+			{
+				"title": "보험",
+				"startTime": "1509509680",
+				"endTime": "1509512900",
+				"thumbImage": "",
+				"rating": "12",
+				"isAlarm": "true",
+				"isDolby": "false"
+			},
+			{
+				"title": "가족",
+				"startTime": "1509512900",
+				"endTime": "1509513800",
+				"thumbImage": "/assets/images/tmp/realtime/thumb6.png",
+				"rating": "12",
+				"isAlarm": "true",
+				"isDolby": "false"
+			}
+		]
+	},
+	{
+		"channel": "15",
+		"logoImage": "/assets/images/tmp/realtime/logo-jtbc.png",
+		"favorite": "false",
+		"programs": [
+			{
+				"title": "섬총사(23회)",
+				"startTime": "1509504000",
+				"endTime": "1509509600",
+				"thumbImage": "/assets/images/tmp/realtime/thumb2.png",
+				"rating": "12",
+				"isAlarm": "true",
+				"isDolby": "true"
+			},
+			{
+				"title": "생활의 발견",
+				"startTime": "1509509600",
+				"endTime": "1509511600",
+				"thumbImage": "/assets/images/tmp/realtime/thumb1.png",
+				"rating": "12",
+				"isAlarm": "true",
+				"isDolby": "true"
+			},
+			{
+				"title": "무한도전",
+				"startTime": "1509511600",
+				"endTime": "1509512010",
+				"thumbImage": "/assets/images/tmp/realtime/thumb4.png",
+				"rating": "12",
+				"isAlarm": "true",
+				"isDolby": "true"
+			},
+			{
+				"title": "섬총사(23회)",
+				"startTime": "1509512010",
+				"endTime": "1509517020",
+				"thumbImage": "/assets/images/tmp/realtime/thumb1.png",
+				"rating": "12",
+				"isAlarm": "true",
+				"isDolby": "true"
+			},
+			{
+				"title": "생활의 발견",
+				"startTime": "1509517020",
+				"endTime": "1509518420",
+				"thumbImage": "/assets/images/tmp/realtime/thumb1.png",
+				"rating": "12",
+				"isAlarm": "true",
+				"isDolby": "true"
+			}
+		]
+	},
+	{
+		"channel": "16",
+		"logoImage": "/assets/images/tmp/realtime/logo-kbs2.png",
+		"favorite": "true",
+		"programs": [
+			{
+				"title": "학교 2017(15회)",
+				"startTime": "1509506200",
+				"endTime": "1509507680",
+				"thumbImage": "/assets/images/tmp/realtime/thumb1.png",
+				"rating": "12",
+				"isAlarm": "false",
+				"isDolby": "true"
+			},
+			{
+				"title": "대국민 토크쇼 안녕하세요(346회)",
+				"startTime": "1509507680",
+				"endTime": "1509511200",
+				"thumbImage": "/assets/images/tmp/realtime/thumb3.png",
+				"rating": "12",
+				"isAlarm": "true",
+				"isDolby": "true"
+			},
+			{
+				"title": "걸어서 세계 속으로",
+				"startTime": "1509511200",
+				"endTime": "1509513070",
+				"thumbImage": "/assets/images/tmp/realtime/thumb6.png",
+				"rating": "12",
+				"isAlarm": "true",
+				"isDolby": "true"
+			},
+			{
+				"title": "대국민 토크쇼 안녕하세요(346회)",
+				"startTime": "1509513070",
+				"endTime": "1509515870",
+				"thumbImage": "/assets/images/tmp/realtime/thumb3.png",
+				"rating": "12",
+				"isAlarm": "true",
+				"isDolby": "true"
+			}
+		]
+	},
+	{
+		"channel": "18",
+		"logoImage": "/assets/images/tmp/realtime/logo-nsshop.png",
+		"favorite": "false",
+		"programs": [
+			{
+				"title": "가전",
+				"startTime": "1509507000",
+				"endTime": "1509508600",
+				"thumbImage": "",
+				"rating": "12",
+				"isAlarm": "false",
+				"isDolby": "false"
+			},
+			{
+				"title": "시즌침구",
+				"startTime": "1509508600",
+				"endTime": "1509509600",
+				"thumbImage": "",
+				"rating": "12",
+				"isAlarm": "true",
+				"isDolby": "false"
+			},
+			{
+				"title": "보험",
+				"startTime": "1509509600",
+				"endTime": "1509518900",
+				"thumbImage": "",
+				"rating": "12",
+				"isAlarm": "true",
+				"isDolby": "false"
+			}
+		]
+	},
+	{
+		"channel": "22",
+		"logoImage": "/assets/images/tmp/realtime/logo-jtbc.png",
+		"favorite": "false",
+		"programs": [
+			{
+				"title": "섬총사(23회)",
+				"startTime": "1509506000",
+				"endTime": "1509509600",
+				"thumbImage": "/assets/images/tmp/realtime/thumb1.png",
+				"rating": "12",
+				"isAlarm": "true",
+				"isDolby": "true"
+			},
+			{
+				"title": "생활의 발견",
+				"startTime": "1509509600",
+				"endTime": "1509511600",
+				"thumbImage": "/assets/images/tmp/realtime/thumb1.png",
+				"rating": "12",
+				"isAlarm": "true",
+				"isDolby": "true"
+			}
+		]
+	}
+]

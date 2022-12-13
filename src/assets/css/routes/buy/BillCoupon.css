@@ -1,0 +1,25 @@
+/* BillCoupon.css */
+:root{
+	--page:0;
+}
+.popWrap.coupon {text-align: center; padding:103px 115px;}
+.buyWrap .popTop .pageTitle {padding-bottom:13px; font-size:52px; line-height:1.15; letter-spacing:-1px;}
+.buyWrap .popTop .subInfo {font-size:30px; line-height:1.33; letter-spacing:-0.5px; opacity:0.8;}
+.popWrap .buyBill {padding-top:196px;}
+.popWrap .CouponSlide .slideCon {overflow:hidden; padding:35px 22px; margin:-35px -41px;}
+.popWrap .CouponSlide .slideWrap {position:relative; z-index:1;}
+.popWrap .CouponSlide .slideWrapper {display:flex; justify-content:space-between; transform:translate3d(calc(var(--page) * -432px),0,0);margin:0 auto;}
+.popWrap .CouponSlide .CouponItemWrap .CouponItem {position:relative; z-index:1; padding:0 8px;}
+.popWrap .CouponSlide .CouponItemWrap .CouponItem .wrapImg {display:block; position:absolute; top:0; left:0; z-index:-1;}
+.popWrap .CouponSlide .CouponItemWrap .CouponItem .inner {padding:48px 0 43px; text-align:center;}
+.popWrap .CouponSlide .CouponItemWrap .CouponItem .dDay {position:absolute; top:24px; left:13px; z-index:10; transform:rotate(315deg); -webkit-transform:rotate(315deg);}
+.popWrap .CouponSlide .CouponItemWrap .CouponItem .dDay span {display:inline-block; line-height:30px; width:74px; font-size:24px; letter-spacing:-1px; color:#fff; text-align:center;}
+.popWrap .CouponSlide .CouponItemWrap .CouponItem .inner .title {overflow:hidden; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; box-orient:vertical; text-overflow:ellipsis; padding:0 30px;height:78px;text-align:center;margin-bottom:35px; font-weight:700; font-size:30px; letter-spacing:normal; line-height:1.33;  color: rgba(239, 242, 247,0.8);}
+.popWrap .CouponSlide .CouponItemWrap .CouponItem .inner .title div {line-height:1.33;}
+.popWrap .CouponItemWrap .CouponItem .inner .valid {display:inline-block; padding:4px 21px; border-radius:100px;}
+.popWrap .CouponItemWrap .CouponItem .inner .valid span {font-size:26px; line-height:1.15; letter-spacing:-1px; text-align:center; color:#fff; opacity:0.9;}
+.popWrap .CouponItemWrap .CouponItem .csFocus {display:inline-block; position:relative; width:416px; height:279px; background-image:url('/assets/images/buy/normal-bg.png'); background-repeat:no-repeat; background-position:center center; background-size:100%; text-align:center;}
+.popWrap .CouponItemWrap .CouponItem .csFocus.focusOn {transform:scale(1.18); -webkit-transform:scale(1.18); background-image:url('/assets/images/buy/focus-bg.png');}
+.popWrap .CouponItemWrap .CouponItem .csFocus.focusOn .title {color:rgba(239, 242, 247, 1);}
+.popWrap .currentState {display:inline-block; margin-top:28px; padding-left:41px; background:url("/assets/images/buy/arrow-current.png") no-repeat left center; font-size: 30px; letter-spacing: -1px; text-align: center;}
+.popWrap .CouponSlide .rightArrow {right:-75px;}

@@ -1,0 +1,61 @@
+{
+	"favorView": "false",
+	"totalFav" : "1251523416",
+	"favorChn" : [{
+		"chnNum": "001",
+		"chnName": "BTV1",
+		"favor": "false"
+	},{
+		"chnNum": "002",
+		"chnName": "BTV2",
+		"favor": "true"
+	},{
+		"chnNum": "003",
+		"chnName": "BTV3",
+		"favor": "false"
+	},{
+		"chnNum": "004",
+		"chnName": "BTV4",
+		"favor": "false"
+	},{
+		"chnNum": "005",
+		"chnName": "BTV5",
+		"favor": "false"
+	},{
+		"chnNum": "006",
+		"chnName": "BTV6",
+		"favor": "false"
+	},{
+		"chnNum": "007",
+		"chnName": "BTV7",
+		"favor": "true"
+	},{
+		"chnNum": "008",
+		"chnName": "BTV8",
+		"favor": "false"
+	},{
+		"chnNum": "009",
+		"chnName": "BTV9",
+		"favor": "false"
+	},{
+		"chnNum": "010",
+		"chnName": "BTV10",
+		"favor": "false"
+	},{
+		"chnNum": "011",
+		"chnName": "BTV11",
+		"favor": "true"
+	},{
+		"chnNum": "012",
+		"chnName": "BTV12",
+		"favor": "false"
+	},{
+		"chnNum": "013",
+		"chnName": "BTV13",
+		"favor": "false"
+	},{
+		"chnNum": "014",
+		"chnName": "BTV14",
+		"favor": "false"
+	}]
+}

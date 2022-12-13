@@ -1,0 +1,85 @@
+/* SearchContent.css */
+.searchMainWrap{width:1920px;height:1080px;padding:0 200px;background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), linear-gradient(241deg, rgb(46, 50, 78), rgb(61, 62, 90) 16%, rgb(69, 64, 83) 37%, rgb(78, 66, 80) 61%, rgb(38, 37, 47));}
+
+.searchMainWrap .searchRecommendContent p{padding:44px 0 27px;font-size:32px;color:#d4d4d4;text-align:center;}
+.searchMainWrap .searchArea{padding:0 191px;transform:translate(0,0);}
+.searchMainWrap .searchArea .listAndKey{margin-top:40px;}
+.searchMainWrap .searchArea .listAndKey:after{content:'';display:block;clear:both;}
+.searchMainWrap .searchArea .listAndKey > div{float:left;}
+.searchMainWrap .searchArea .listAndKey .listRecommend{width:286px;}
+.searchMainWrap .searchArea .listAndKey > .buttonKey{width:512px;}
+.searchMainWrap .searchArea .listAndKey .listRecommend ~ div {margin-left:24px;}
+.searchMainWrap .searchArea .listAndKey > div .listTitle {position:relative;z-index:1;margin-right:26px;padding:0 0px 20px 7px;font-size:24px;color:#d4d4d4;font-weight:700;text-align:left;opacity:1;}
+.searchMainWrap .searchArea .listAndKey > div .listTitle:before {position:absolute;bottom:-2px;left:0;z-index:10;content: '';display: block;height: 2px;width: 100%;background-color: rgba(155,155,155,0.7);}
+.searchMainWrap .searchArea .listAndKey > div:not(.single) .listTitle + .searchList{width:286px;}
+.searchMainWrap .searchArea .listAndKey > div .searchList{overflow-y:auto;max-height:380px;padding-right:26px;transform:translate(0,0);}
+.searchMainWrap .searchArea .listAndKey > div .searchList.active{padding-right:16px;}
+.searchMainWrap .searchArea .listAndKey > div .searchList:after {content: '';display: block;height: 1px;width: 100%;background-color: rgba(155,155,155,0.2);}
+.searchMainWrap .searchArea .listAndKey > div .listTitle + .searchList{max-height:314px;}
+.searchMainWrap .searchArea .listAndKey > div .searchList li{border-top:1px solid rgba(155,155,155,0.2);text-align:left;}
+.searchMainWrap .searchArea .listAndKey > div .searchList li:first-child{border:none;}
+.searchMainWrap .searchArea .listAndKey > div .searchList li .searchListItem{position:relative;z-index:1;display:block;padding:0 7px;font-size:28px;color:#888;line-height:77px;border-radius:4px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.searchMainWrap .searchArea .listAndKey > div .searchList:only-child{max-height:360px;}
+.searchMainWrap .searchArea .listAndKey > div .searchList:only-child li .searchListItem{line-height:71px;}
+.searchMainWrap .searchArea .listAndKey > div .searchList li .searchListItem.searchDel{font-size:28px;color:#f4f4f4;border-radius:4px;background:rgba(255, 255, 255, 0.17);text-align:center;}
+.searchMainWrap .searchArea .listAndKey > div .searchList li .searchListItem.searchDel span,
+.searchMainWrap .searchArea .listAndKey > div .searchList li .searchListItem.searchDel.close .delBtnText{display:none;}
+.searchMainWrap .searchArea .listAndKey > div .searchList li .searchListItem.searchDel .delBtnText,
+.searchMainWrap .searchArea .listAndKey > div .searchList li .searchListItem.searchDel.close .closeBtnText{display:block;}
+.searchMainWrap .searchArea .listAndKey > div .searchList li .searchListItem.focusOn{padding-left:20px;font-size:32px;font-weight:700;border-radius:4px;background:#fff;color:#f5513f;}
+.searchMainWrap .searchArea .listAndKey > div .searchList li .searchListItem.active{padding:0 35px 0 7px;}
+.searchMainWrap .searchArea .listAndKey > div .searchList li .searchListItem.active.focusOn{padding:0 60px 0 20px;}
+.searchMainWrap .searchArea .listAndKey > div .searchList li .searchListItem.active:not(.searchDel):after{position:absolute;top:50%;right:0;z-index:10;transform:translate(0,-50%);display:block;width:50px;height:50px;content:"";background:url("/assets/images/search/ic-search-del-nor.png") no-repeat 0 0;}
+.searchMainWrap .searchArea .listAndKey > div .searchList li .searchListItem.active:not(.searchDel).focusOn:after{width:57px;height:57px;background-image:url("/assets/images/search/ic-search-del-foc.png");}
+.searchMainWrap .searchArea .listAndKey > div .searchList li .searchListItem.searchDel.focusOn{padding-left:7px;}
+.searchMainWrap .searchArea .mesSearch{padding:27px 0 0;font-size:28px;color:#888;}
+.searchMainWrap .searchArea .mesSearch .iconSpeak{display:inline-block;width:68px;height:38px;background:url('/assets/images/search/ic-voice.png') no-repeat;vertical-align:middle;}
+
+.inputSearchStyle {display:block; height:94px; position:relative; z-index:1; box-sizing:content-box; text-align:left;}
+.inputSearchStyle input {padding:27px 115px; width:100%; height:94px; border:none; border-radius:4px; background:transparent; line-height:94px; font-size:38px; color:rgba(255,255,255,0.8); outline:none; letter-spacing:normal;}
+.inputSearchStyle.keypad input {border: solid 6px rgb(97, 97, 108);}
+.inputSearchStyle input + label {display:block; position:absolute; top:0; left:0; right:0; z-index:-1; padding:27px 30px; height:94px; border-radius:4px; background:rgba(0, 0, 0, 0.3); box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.15);}
+.inputSearchStyle input.active + label{border:6px solid rgb(97, 97, 108);background:rgba(0, 0, 0, 0.3);}
+.inputSearchStyle input.active + label .textLang{top:19px;left:19px;color:#888;border-color:#888;}
+.inputSearchStyle input.focusOn {padding:8px 125px; background:transparent; box-shadow:none; color:#ff6c00; -webkit-text-fill-color:#000; font-size:42px; font-weight:700;}
+.inputSearchStyle.keypad input.focusOn {border:none;}
+.inputSearchStyle input.focusOn + label {position:absolute; top:-8px; left:-10px; right:-10px; z-index:-1; border-radius:4px; border:0; height:110px; padding:20px 8px; background:#f4f4f4; box-shadow:0 24px 16px 0 rgba(0, 0, 0, 0.35);}
+.inputSearchStyle input::-webkit-input-placeholder {color:#000; -webkit-text-fill-color:rgba(255,255,255,0.2);}
+.inputSearchStyle input.focusOn::-webkit-input-placeholder {color:#aaa; -webkit-text-fill-color:#aaa}
+.inputSearchStyle .textLang{display:none;}
+.inputSearchStyle .btnKeyOK{display:none;}
+.inputSearchStyle input+ label .textLang{display:block;position:absolute;top:25px;left:25px;padding:0 14px;border-radius:100px;border:2px solid #4a4a4a;font-size:22px;color:#4a4a4a;line-height:40px;font-weight:700;}
+.inputSearchStyle input.focusOn + label .textLang{display:block;top:33px;left:35px;border-color:#f5513f;color:#f5513f;}
+.inputSearchStyle input + label .icOk{display:none;position:absolute;top:35px;right:26px;width:75px;height:42px;font-size:0;color:transparent;background:url("/assets/images/search/ic-key-ok.png") no-repeat 0 0;}
+.inputSearchStyle input.focusOn + label .icOk{display:block;}
+.inputSearchStyle input.focusOn::placeholder{font-weight:normal;}
+
+.inputSearchStyle .expansion{position:absolute;width:152px;height:152px;z-index:10;}
+.inputSearchStyle .expansion .expansionInput{position:absolute;z-index:10;padding:32px 34px;width:152px;height:152px;font-size:90px;color:rgba(0,0,0,1);line-height:92px;font-weight:700;text-align:center;caret-color:rgba(252,100,56,1);}
+.inputSearchStyle.keypad .expansion .expansionInput{border:none;color:rgba(244,244,244,1);}
+.inputSearchStyle .expansion .expansionInput + .expansionLabel{position:absolute;top:0;left:0;right:0;bottom:0;height:152px;border-radius: 4px;background-color:rgba(244,244,244,0.85);box-shadow:0 10px 20px 0 rgba(0,0,0,0.35);}
+.inputSearchStyle.keypad .expansion .expansionInput + .expansionLabel{background-color:rgba(51,50,57,1);}
+
+.searchContent .searchMainWrap {background:transparent; height:auto; margin:16px -115px; padding:0 392px 41px;}
+.searchContent .searchMainWrap.active {margin-top:0;background:linear-gradient(199deg, #2e324e, #3d3e5a 16%, #454053 37%, #4e4250 61%, #26252f), linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));;}
+.searchContent .searchMainWrap.active .searchArea {display:block;}
+.searchContent .searchMainWrap.active .searchCharacter {display:none;}
+.searchContent .searchMainWrap .searchArea {display:none; padding:64px 0 0;}
+.searchArea .listAndKey .listRecommend.single {width:596px; text-align:left;}
+.searchContent .searchMainWrap .searchArea .buttonKey {margin-left:52px;}
+/*.searchContent .searchMainWrap .inputSearchStyle input.focusOn {font-size:42px;}*/
+.searchContent .searchMainWrap .inputSearchStyle input::-webkit-input-placeholder {-webkit-text-fill-color:rgba(82, 84, 89,0.5);}
+
+.searchContent .searchMainWrap {text-align:center;transform:translate(0,0);}
+.searchContent .searchMainWrap .searchCharacter {display:block; padding-left:167px; position:relative; z-index:1; min-width:1136px; height:94px; font-size:32px; color:#1a1a1a; line-height:94px; vertical-align:middle; text-align:left;border-radius:4px; background-color:rgba(38, 38, 38, 0.1); box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.15);}
+.searchContent .searchMainWrap .searchCharacter:before {content:""; position:absolute; top:26px; left:36px; z-index:-1; width:44px; height:47px; background:url('/assets/images/common/icon/ic-search.png') no-repeat 0 0;}
+.searchContent .searchMainWrap .searchCharacter .wrapBtnText {display:block; color:#1a1a1a;}
+.searchContent .searchMainWrap .searchCharacter .icVoice {display:inline-block; margin:0 7px 0 16px; width:68px; height:38px; background:url("/assets/images/common/icon/ic-voice-b.png") no-repeat center center; vertical-align:middle;}
+
+.searchMainWrap .searchArea .listAndKey > div .searchList::-webkit-scrollbar-track {border-radius:16px;background-color:transparent;}
+.searchMainWrap .searchArea .listAndKey > div .searchList::-webkit-scrollbar-thumb {border-radius:16px;width:32px;height:200px;background-color:rgba(106,106,106,1);}
+.searchMainWrap .searchArea .listAndKey > div .searchList::-webkit-scrollbar {width:0;}
+.searchMainWrap .searchArea .listAndKey > div .searchList.active::-webkit-scrollbar {width:10px;}
+
+/*.searchMainWrap .searchArea .listAndKey > div .searchList{background:red}*/
+/*.searchMainWrap .searchArea .listAndKey > div .listTitle ~ .searchList{background:transparent}*/

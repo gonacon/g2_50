@@ -1,0 +1,46 @@
+{
+	"slideType": "SlideVoucher",
+	"slideTitle" : "월정액 BEST",
+	"slideItem": [
+		{
+			"thumbImage": "/assets/images/tmp/monthly/monthly_product_catchon_nor.png",
+			"voucherImage": "/assets/images/tmp/monthly/monthly_product_catchon_foc .png"
+		},
+		{
+			"thumbImage": "/assets/images/tmp/monthly/monthly_product_channelA_nor.png",
+			"voucherImage": "/assets/images/tmp/monthly/monthly_product_channelA_foc.png"
+		},
+		{
+			"thumbImage": "/assets/images/tmp/monthly/monthly_product_cj_e&m_nor.png",
+			"voucherImage": "/assets/images/tmp/monthly/monthly_product_cj_e&m_foc.png"
+		},
+		{
+			"thumbImage": "/assets/images/tmp/monthly/monthly_product_comedytv_nor.png",
+			"voucherImage": "/assets/images/tmp/monthly/monthly_product_comedytv_foc.png"
+		},
+		{
+			"thumbImage": "/assets/images/tmp/monthly/monthly_product_ebs_kids_nor.png",
+			"voucherImage": "/assets/images/tmp/monthly/monthly_product_ebs_kids_foc.png"
+		},
+		{
+			"thumbImage": "/assets/images/tmp/monthly/monthly_product_eduhansol_nor.png",
+			"voucherImage": "/assets/images/tmp/monthly/monthly_product_eduhansol_foc.png"
+		},
+		{
+			"thumbImage": "/assets/images/tmp/monthly/monthly_product_eduwill_account_nor.png",
+			"voucherImage": "/assets/images/tmp/monthly/monthly_product_eduwill_account_foc.png"
+		},
+		{
+			"thumbImage": "/assets/images/tmp/monthly/monthly_product_englishgem_nor.png",
+			"voucherImage": "/assets/images/tmp/monthly/monthly_product_englishgem_foc.png"
+		},
+		{
+			"thumbImage": "/assets/images/tmp/monthly/monthly_product_ground_nor.png",
+			"voucherImage": "/assets/images/tmp/monthly/monthly_product_ground_foc.png"
+		},
+		{
+			"thumbImage": "/assets/images/tmp/monthly/monthly_product_jtbc_nor.png",
+			"voucherImage": "/assets/images/tmp/monthly/monthly_product_jtbc_foc.png"
+		}
+	]
+}

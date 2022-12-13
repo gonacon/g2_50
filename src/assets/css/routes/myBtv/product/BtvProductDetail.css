@@ -1,0 +1,39 @@
+/* BtvProductDetail.css */
+:root{
+	--page:0;
+}
+.myBtvProduct {position:relative; z-index:1; height:1080px; padding:88px 115px 84px;}
+
+.btvProductDetail {position:relative; z-index:1;}
+.btvProductDetail .productTitle {font-size:58px; font-weight:700; line-height:normal; letter-spacing:-0.5px; color:#1a1a1a;}
+.btvProductDetail .productInfo {padding-top:14px; font-size:28px; line-height:1.36; letter-spacing:normal; color:#1a1a1a; opacity:0.7;}
+.btvProductDetail .conLeft {padding-top:40px;}
+.btvProductDetail .conRight {position:absolute; top:0; right:0; padding-left:928px;}
+	.btvProductDetail .conRight {z-index:-1;}
+.btvProductDetail .detailList {padding-left:16px;}
+.btvProductDetail .detailList li {text-indent:-16px; font-size:32px; font-weight:700; line-height:1.69; letter-spacing:normal; color:#1a1a1a;}
+.btvProductDetail .detailList li:before {display:inline-block; margin:24px 10px 0 0; width:6px; height:6px; border-radius:6px; background-color:#1a1a1a; opacity:0.8; vertical-align:top; content:"";}
+.btvProductDetail .btnListWrap {margin-top:50px;}
+.btvProductDetail .btnListWrap .csFocus {display:block; padding:20px 24px; min-width:128px; width:251px; height:120px; font-size:24px; letter-spacing:-0.7px; color:rgba(255,255,255,0.8);}
+.btvProductDetail .btnListWrap .csFocus:before {content:""; position:absolute; top:0; left:0; right:0; z-index:-1; padding:0 24px; bottom:0; border-radius:4px; background-color:rgba(15, 23, 72, 0.35); box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.15);}
+.btvProductDetail .btnListWrap .csFocus.focusOn:before,
+.btvProductDetail .btnListWrap .csFocus.loadFocus:before {content:""; position:absolute; top:-8px; left:-12px; right:-12px; bottom:-8px; z-index:-1; border-radius:4px; background:rgba(255, 255, 255, 1); box-shadow:0 24px 16px 0 rgba(0, 0, 0, 0.35);}
+.btvProductDetail .btnListWrap .csFocus.focusOn,
+.btvProductDetail .btnListWrap .csFocus.loadFocus {color:#f5513f; padding:16px 12px;}
+.btvProductDetail .btnListWrap .csFocus.loadFocus .price {display:block; font-size:42px; line-height:1.19; letter-spacing:normal;}
+.btvProductDetail .btnListWrap .csFocus.loadFocus .price .value {font-size:28px; line-height:1.29; letter-spacing:normal; color:#f5513f;}
+.btvProductDetail .btnListWrap .csFocus.loadFocus .text {padding-bottom:5px; font-size:30px; font-weight:700; line-height:1.2; letter-spacing:normal; color:#f5513f;}
+.btvProductDetail .btnListWrap .voucherInfo {display:inline-block; margin-top:36px; font-size:26px; line-height:1.69; letter-spacing:-1px; color:#1a1a1a; opacity:0.8;}
+
+/*.btvProductDetail .productLogoList {display:flex; justify-content:space-between; flex-wrap:wrap;}*/
+/*.btvProductDetail .productLogoList li {margin-bottom:24px; width:130px; height:130px;}*/
+.btvProductDetail .productLogoList:after {display:block; clear:both; content:"";}
+.btvProductDetail .productLogoList {display:block; margin-left:-28px;}
+.btvProductDetail .productLogoList li {float:left; margin:0 0 24px 28px; width:130px; height:130px;}
+.btvProductDetail .productLogoList li .imgLogo {display:block; border-radius:130px; min-height:130px; background-color:rgba(237, 239, 243, 0.5);}
+.btvProductDetail .detailCaution {margin-top:42px; position:relative; z-index:1;}
+.btvProductDetail .detailCaution li {position:relative; z-index:1; padding-left:12px; font-size:24px; line-height:1.58; letter-spacing:-0.5px; color:rgba(26,26,26,0.6);}
+.btvProductDetail .detailCaution li:before {display:inline-block; margin:16px 8px 0 0; width:4px; height:4px; position:absolute; top:0; left:0; z-index:1; border-radius:4px; opacity:0.4; background-color:#1a1a1a; vertical-align:top; content:"";}
+
+
+

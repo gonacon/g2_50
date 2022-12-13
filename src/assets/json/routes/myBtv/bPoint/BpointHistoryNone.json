@@ -1,0 +1,12 @@
+{
+	"pageType": "BpointHistoryNone",
+	"pageTitle": "B포인트 이용내역",
+	"remains": "30200",
+	"slideItem" :[
+		{
+			"text" : "B포인트 이용내역이 없습니다."
+		}
+	],
+	"caution": ""
+
+}

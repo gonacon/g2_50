@@ -1,0 +1,42 @@
+/* KidsWidget.css */
+.subCharacter ~ .kidsWidget,
+.kidsWidget.subCharacter{top:-110px;}
+.kidsWidget{position:absolute;top:0;right:0;z-index:100;}
+.kidsWidget.scroll{transform:translate(0,-100%);}
+.kidsWidget > img{position:relative;z-index:20;}
+.kidsWidget .widgetMotion{position:absolute;top:250px;left:50%;z-index:10;}
+.kidsWidget .widgetMotion{position:absolute;top:50%;left:50%;z-index:10;transform:translate(-50%,-30%) scale(0.5);}
+.kidsWidget .widgetMotion .balloon{display:none;position:absolute;top:50%;left:50%;z-index:-1;transform:translate(-116%,-51%) scale(0);}
+.kidsWidget.fullMotion .widgetMotion .balloon,
+.kidsWidget.balloonMotion .widgetMotion .balloon{display:block;}
+.kidsWidget .widgetMotion .balloon .balloonText{position:absolute;top:50%;left:20px;right:42px;z-index:10;transform:translate(0,-90%);font-size:28px;text-align:center;line-height:36px;color:#fff;}
+.kidsWidget .widgetText{position:absolute;top:255px;left:50%;z-index:20;transform:translate(-50%,-50%);font-size:26px;font-weight:700;color:#2d3071;text-align:center;line-height:35px;}
+.kidsWidget .widgetText.fontType2{font-size:22px;line-height:25px;letter-spacing:-1px;}
+.kidsWidget .widgetText.time{top:245px;}
+.kidsWidget .widgetText.episode{top:250px;}
+.kidsWidget .widgetText.time .textCon,
+.kidsWidget .widgetText.episode .textCon{font-size:43px;color:#2d3071;}
+.kidsWidget .widgetText.time .textCon.red time{color:#ea2623;}
+.kidsWidget .widgetText.time span,
+.kidsWidget .widgetText.episode span{display:block;margin-bottom:15px;font-size:18px;color:#3b3e7f;line-height:normal;}
+
+.kidsWidget.characterMotion,
+.kidsWidget.balloonMotion{transform:translate(0,0);}
+.kidsWidget.characterMotion,
+.kidsWidget.balloonMotion,
+.kidsWidget.fullMotion{top:0;}
+
+.kidsWidget.aniNone{transition:none;}
+.kidsWidget.aniNone.characterMotion .widgetMotion,
+.kidsWidget.aniNone.balloonMotion .widgetMotion,
+.kidsWidget.aniNone.balloonMotion .widgetMotion .balloon,
+.kidsWidget.aniNone.fullMotion,
+.kidsWidget.aniNone.fullMotion .widgetMotion,
+.kidsWidget.aniNone.fullMotion .widgetMotion .balloon{-webkit-animation:none;}
+
+.kidsWidget.aniNone.characterMotion .widgetMotion{transform:translate(-70%,-65%) scale(1);}
+.kidsWidget.aniNone.balloonMotion .widgetMotion{transform:translate(-70%,-65%) scale(1);}
+.kidsWidget.aniNone.balloonMotion .widgetMotion .balloon{transform:translate(-116%,-51%) scale(1);}
+.kidsWidget.aniNone.fullMotion{transform:translate(0,0);top:0;}
+.kidsWidget.aniNone.fullMotion .widgetMotion{transform:translate(-70%,-65%) scale(1);}
+.kidsWidget.aniNone.fullMotion .widgetMotion .balloon{transform:translate(-116%,-51%) scale(1);}

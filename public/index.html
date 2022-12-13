@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="theme-color" content="#000000">
+	<link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+	<title>SKB '18년향 B TV UI 5.0</title>
+
+	<style>
+		#spot {
+			position: absolute;
+			left: 1830px;
+			top: 1000px;
+			width: 60px;
+			height: 60px;
+			display: none;
+			background-color: #F00;
+		}
+
+		.js #root {
+			display: none
+		}
+
+		.vercls {
+			color: red;
+			position: absolute;
+			z-index: 20000;
+			font-size: 23px;
+			top: 7px;
+			font-weight: bold;
+			right: 7px;
+		}
+	</style>
+	<script>(function (H) { H.className = H.className.replace(/bno-jsb/, 'js') })(document.documentElement)</script>
+</head>
+
+<body>
+	
+	<span class="vercls">
+		<span id="fps"></span><span id='localver'></span>
+	</span>
+	<div id="root"></div>
+	<div id="imgPreLoad"></div>
+	<div id="spot"></div>
+	<script>
+		// document.addEventListener('keydown', function(event) {
+		// 	document.getElementById('spot').style.display = 'block';
+		// 	setTimeout( function() {
+		// 		document.getElementById('spot').style.display = 'none';
+		// 	}, 200);
+		// });
+
+		document.getElementById("root").style.display = "block";
+		var ver = '2.5.x';
+		var localUrl = document.location.href.split(":")[1];
+		document.getElementById('localver').innerHTML = localUrl + ' : ' + ver;
+	</script>
+</body>
+
+</html>

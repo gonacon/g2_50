@@ -1,0 +1,36 @@
+/* BuyDefault.css */
+.buyTop{position:relative;z-index:1;padding:50px 0 45px;width:1920px;height:200px;text-align:center;background:url("/assets/images/buy/bg-purchase-top.png") no-repeat 0 0;}
+.buyTop span{font-size:30px;font-weight:400;color:#5a5c5f;}
+.buyTop div{margin-top:18px;font-size:56px;font-weight:700;color:#000;}
+.buyTop .progress{position:absolute;top:116px;right:140px;z-index:10;margin-top:0;font-size:26px;}
+.buyTop .progress span{display:inline-block;padding:0 2px 0 0;width:38px;height:38px;border-radius:38px;line-height:38px;border:2px solid #9e9da0;font-size:26px;vertical-align:middle;color:#88878a;}
+.buyTop .progress span.on{padding:2px 2px 0 0;border:0;color:#d7d8dd;background:#656984;}
+.buyTop .progress img{margin:0 10px;vertical-align:middle;}
+.buyContent{padding:140px 140px 0 160px;width:1920px;height:880px;background:url("/assets/images/buy/bg-purchase-bottom.png") no-repeat 0 0;}
+.buyContent:after,
+.optionWrap:after{display:block;content:"";clear:both;}
+.buyContent .left{float:left;}
+.buyContent .right{float:right;}
+.optionWrap{margin-top:35px;}
+.optionWrap:first-child{margin-top:0;}
+.optionWrap .title{font-size:30px;color:rgba(74,74,74,1);}
+.optionWrap .radioWrap{float:left;}
+.buyContent .optionView{padding:42px 50px;width:710px;border-radius:4px;background:#d5d7d9;}
+.buyContent .optionView ul li{margin-top:10px;}
+.buyContent .optionView ul li:first-child{margin-top:0;}
+.buyContent .optionView ul li span:first-child{display:inline-block;width:112px;line-height:42px;font-size:30px;}
+.buyContent .optionView ul li .optionList{margin-left:20px;line-height:42px;font-size:30px;font-weight:700;}
+.buyContent .optionView ul li time{letter-spacing:0;}
+.buyContent .btnWrap{margin-top:28px;}
+.buyContent .btnWrap .nextBtn{width:488px;}
+
+/* 팝업 */
+.popWrap {position:relative; z-index:1; padding:103px 0; height:1080px; text-align: center; }
+.popWrap .popTop .pageTitle { font-size:52px; color:#1a1a1a; line-height:1.15; letter-spacing:-1px;}
+.popWrap .popTop .subInfo {padding-top:13px; font-size:30px; line-height:1.33; letter-spacing:-0.5px; opacity:0.8; color:#595869;}
+.popWrap .billCon {padding:0 560px 103px 569px;}
+/*.popWrap .billCon .inputTitle {padding-bottom:16px; font-size:28px; font-weight:700; line-height:1.43; letter-spacing:normal; color:rgba(0, 0, 0, 0.7); text-align:left;}*/
+.popWrap .btnWrap {position:absolute; bottom:128px; left:50%; z-index:10; transform:translate(-50%, 0); -webkit-transform:translate(-50%, 0);}
+
+
+

@@ -1,0 +1,224 @@
+{
+	"slideType": "SlideTypeA",
+	"slideItem": [
+		[
+			{
+				"title": "노무현입니다노무현입니다노무현입니다노무현입니다",
+				"image": "/assets/images/tmp/home_A_01.png",
+				"flagUp": true,
+				"flagNew": true,
+				"flagFree": true,
+				"flagSale": true,
+				"flagMonopoly": true,
+				"flagCancel": true,
+				"flagEvent": true,
+				"flagImg": "/assets/images/tmp/flag-event-1-foc.png"
+			},
+			{
+				"title": "미이라미이라미이라미이라미이라미이라미이라미이라미이라",
+				"image": "/assets/images/tmp/home_A_01.png",
+				"flagUp": true,
+				"flagNew": true,
+				"flagFree": false,
+				"flagSale": true,
+				"flagMonopoly": true,
+				"flagCancel": true,
+				"flagEvent": true,
+				"flagImg": "/assets/images/tmp/flag-event-1-foc.png"
+			},
+			{
+				"title": "리얼리얼리얼리얼리얼리얼리얼리얼리얼리얼",
+				"image": "/assets/images/tmp/home_A_01.png",
+				"flagUp": true,
+				"flagNew": true,
+				"flagFree": false,
+				"flagSale": false,
+				"flagMonopoly": true,
+				"flagCancel": true,
+				"flagEvent": true,
+				"flagImg": "/assets/images/tmp/flag-event-1-foc.png"
+			},
+			{
+				"title": "보스베이비보스베이비보스베이비보스베이비보스베이비",
+				"image": "/assets/images/tmp/home_A_01.png",
+				"flagUp": true,
+				"flagNew": true,
+				"flagFree": false,
+				"flagSale": false,
+				"flagMonopoly": true,
+				"flagCancel": true,
+				"flagEvent": false,
+				"flagImg": "/assets/images/tmp/flag-event-1-foc.png"
+			},
+			{
+				"title": "원더우먼원더우먼원더우먼원더우먼",
+				"image": "/assets/images/tmp/home_A_01.png",
+				"flagUp": true,
+				"flagNew": false,
+				"flagFree": false,
+				"flagSale": false,
+				"flagMonopoly": true,
+				"flagCancel": true,
+				"flagEvent": false,
+				"flagImg": "/assets/images/tmp/flag-event-1-foc.png"
+			},
+			{
+				"title": "악녀악녀악녀악녀악녀악녀악녀악녀악녀악녀악녀악녀악녀악녀악녀",
+				"image": "/assets/images/tmp/home_A_01.png",
+				"flagUp": false,
+				"flagNew": false,
+				"flagFree": false,
+				"flagSale": false,
+				"flagMonopoly": true,
+				"flagCancel": true,
+				"flagEvent": false,
+				"flagImg": "/assets/images/tmp/flag-event-1-foc.png"
+			}
+		],
+		[
+			{
+				"title": "노무현입니다노무현입니다",
+				"image": "/assets/images/tmp/home_A_01.png",
+				"flagUp": true,
+				"flagNew": true,
+				"flagFree": true,
+				"flagSale": true,
+				"flagMonopoly": true,
+				"flagCancel": true,
+				"flagEvent": true,
+				"flagImg": "/assets/images/tmp/flag-event-1-foc.png"
+			},
+			{
+				"title": "미이라",
+				"image": "/assets/images/tmp/home_A_01.png",
+				"flagUp": true,
+				"flagNew": true,
+				"flagFree": false,
+				"flagSale": true,
+				"flagMonopoly": true,
+				"flagCancel": true,
+				"flagEvent": true,
+				"flagImg": "/assets/images/tmp/flag-event-1-foc.png"
+			},
+			{
+				"title": "리얼",
+				"image": "/assets/images/tmp/home_A_01.png",
+				"flagUp": true,
+				"flagNew": true,
+				"flagFree": false,
+				"flagSale": false,
+				"flagMonopoly": true,
+				"flagCancel": true,
+				"flagEvent": true,
+				"flagImg": "/assets/images/tmp/flag-event-1-foc.png"
+			},
+			{
+				"title": "보스베이비",
+				"image": "/assets/images/tmp/home_A_01.png",
+				"flagUp": true,
+				"flagNew": true,
+				"flagFree": false,
+				"flagSale": false,
+				"flagMonopoly": true,
+				"flagCancel": true,
+				"flagEvent": false,
+				"flagImg": "/assets/images/tmp/flag-event-1-foc.png"
+			},
+			{
+				"title": "원더우먼",
+				"image": "/assets/images/tmp/home_A_01.png",
+				"flagUp": true,
+				"flagNew": false,
+				"flagFree": false,
+				"flagSale": false,
+				"flagMonopoly": true,
+				"flagCancel": true,
+				"flagEvent": false,
+				"flagImg": "/assets/images/tmp/flag-event-1-foc.png"
+			},
+			{
+				"title": "악녀악녀악녀악녀악녀악녀악녀악녀",
+				"image": "/assets/images/tmp/home_A_01.png",
+				"flagUp": false,
+				"flagNew": false,
+				"flagFree": false,
+				"flagSale": false,
+				"flagMonopoly": true,
+				"flagCancel": true,
+				"flagEvent": false,
+				"flagImg": "/assets/images/tmp/flag-event-1-foc.png"
+			}
+		],
+		[
+			{
+				"title": "하루",
+				"image": "/assets/images/tmp/home_A_01.png"
+			},
+			{
+				"title": "대립군",
+				"image": "/assets/images/tmp/home_A_01.png"
+			},
+			{
+				"title": "에일리언",
+				"image": "/assets/images/tmp/home_A_01.png"
+			},
+			{
+				"title": "스파이더맨",
+				"image": "/assets/images/tmp/home_A_01.png"
+			},
+			{
+				"title": "겟아웃",
+				"image": "/assets/images/tmp/home_A_01.png"
+			},
+			{
+				"title": "노무현입니다",
+				"image": "/assets/images/tmp/home_A_01.png"
+			}
+		],
+		[
+			{
+				"title": "미이라",
+				"image": "/assets/images/tmp/home_A_01.png"
+			},
+			{
+				"title": "리얼",
+				"image": "/assets/images/tmp/home_A_01.png"
+			},
+			{
+				"title": "보스베이비",
+				"image": "/assets/images/tmp/home_A_01.png"
+			},
+			{
+				"title": "원더우먼",
+				"image": "/assets/images/tmp/home_A_01.png"
+			},
+			{
+				"title": "악녀",
+				"image": "/assets/images/tmp/home_A_01.png"
+			},
+			{
+				"title": "하루",
+				"image": "/assets/images/tmp/home_A_01.png"
+			}
+		],
+		[
+			{
+				"title": "대립군",
+				"image": "/assets/images/tmp/home_A_01.png"
+			},
+			{
+				"title": "에일리언",
+				"image": "/assets/images/tmp/home_A_01.png"
+			},
+			{
+				"title": "스파이더맨",
+				"image": "/assets/images/tmp/home_A_01.png"
+			},
+			{
+				"title": "겟아웃",
+				"image": "/assets/images/tmp/home_A_01.png"
+			}
+		]
+
+	]
+}

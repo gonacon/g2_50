@@ -1,0 +1,8 @@
+---
+applications:
+- buildpack: staticfile_buildpack
+  path: ./build
+  host: test-webui-stg
+  name: test-webui
+  memory: 1024M
+  instances: 1

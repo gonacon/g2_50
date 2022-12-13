@@ -1,0 +1,38 @@
+/* BpointDetail.css */
+.myBtvLayout .BpointDetail .pageTitle {padding-bottom:20px; font-size:52px; line-height:1; letter-spacing:normal; text-align:center;}
+.myBtvLayout .BpointDetail .subInfo {font-size:30px; line-height:1.4; letter-spacing:normal; text-align:center;}
+.myBtvLayout .BpointDetail .cardDetail {bottom:90px;}
+
+.bPointList {padding-top:150px;}
+.bPointList .listWrapper {display:flex; justify-content:start;}
+.bPointList .listWrapper li {width:292px; height:300px; margin:0 28px;}
+.bPointList .listWrapper li .csFocus {padding:115px 0 30px; width:292px; height:300px; border-radius:20px; background-position:center center; background-repeat:no-repeat; background-size:292px 300px; text-align:center; box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);}
+.bPointList .listWrapper li .csFocus .point {display:block; font-size:46px; line-height:normal; letter-spacing:normal; color:rgba(230,230,230,1);}
+.bPointList .listWrapper li .csFocus .point span{font-weight:700;}
+.bPointList .listWrapper li .csFocus .text {display:block; font-size:26px; line-height:1.35; letter-spacing:normal; color:rgba(230,230,230,1);}
+.bPointList .listWrapper li .csFocus .price {display:block; padding-top:29px; line-height:72px;}
+.bPointList .listWrapper li .csFocus .price span {vertical-align:middle;}
+.bPointList .listWrapper li .csFocus .price .number { font-size:32px; line-height:1.13; letter-spacing:-1px; color:rgba(26,26,26,1); vertical-align:middle;}
+.bPointList .listWrapper li .csFocus .price .value {font-size:24px; line-height:normal; letter-spacing:normal; color:rgba(26,26,26,1); vertical-align:middle;}
+
+.bPointList .listWrapper li .csFocus.focusOn {box-shadow:0 14px 14px 0 rgba(0, 0, 0, 0.35); transform:scale(1.2); -webkit-transform:scale(1.2);}
+.bPointList .listWrapper li .csFocus.focusOn .point {color:rgba(244, 244, 244, 1);}
+.bPointList .listWrapper li .csFocus.focusOn .text {color:rgba(230,230,230,1);}
+
+.bPointList .listWrapper li.type01 .csFocus {background-image:url('/assets/images/myBtv/bPoint-list-01.png');}
+.bPointList .listWrapper li.type02 .csFocus {background-image:url('/assets/images/myBtv/bPoint-list-02.png');}
+.bPointList .listWrapper li.type03 .csFocus {background-image:url('/assets/images/myBtv/bPoint-list-03.png');}
+.bPointList .listWrapper li.type04 .csFocus {background-image:url('/assets/images/myBtv/bPoint-list-04.png');}
+.bPointList .listWrapper li.type05 .csFocus {background-image:url('/assets/images/myBtv/bPoint-list-05.png');}
+.bPointList .listWrapper li.type01 .csFocus.focusOn {background-image:url('/assets/images/myBtv/bPoint-list-01-f.png');}
+.bPointList .listWrapper li.type02 .csFocus.focusOn {background-image:url('/assets/images/myBtv/bPoint-list-02-f.png');}
+.bPointList .listWrapper li.type03 .csFocus.focusOn {background-image:url('/assets/images/myBtv/bPoint-list-03-f.png');}
+.bPointList .listWrapper li.type04 .csFocus.focusOn {background-image:url('/assets/images/myBtv/bPoint-list-04-f.png');}
+.bPointList .listWrapper li.type05 .csFocus.focusOn {background-image:url('/assets/images/myBtv/bPoint-list-05-f.png');}
+
+.BpointDetail .bottomWrap {position:absolute; bottom:0; left:0; z-index:100; width:100%; height:220px; background-color:rgba(237, 239, 243, 0.5);box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1);}
+.BpointDetail .bottomWrap .defaultWrap {display:block; padding:62px 116px; text-align:center;}
+.BpointDetail .bottomWrap .defaultWrap .infoText{font-size:32px; line-height:1.44; letter-spacing:normal; color:#6a6a6a;}
+
+.bPointList .listWrapper li .csFocus:before{position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;content:"";display:block;border-radius:20px;overflow:hidden;box-shadow:0 0 0 5px #f4f4f4;opacity:0;}
+.bPointList .listWrapper li .csFocus.focusOn:before{box-shadow:0 0 0 5px #f4f4f4;opacity:1;}

@@ -1,0 +1,20 @@
+/* RegistLayout.css */
+.settingRegistWrap {position:relative; z-index:1; padding:102px 295px 0 326px; width:1920px; height:1080px; background:linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), linear-gradient(241deg, rgb(46, 50, 78), rgb(61, 62, 90) 16%, rgb(69, 64, 83) 37%, rgb(78, 66, 80) 61%, rgb(38, 37, 47));; text-align:center;}
+.settingRegistWrap .pageTitle {padding-bottom:14px; font-size:52px; line-height:1.15; letter-spacing:normal; color:#f4f4f4;}
+.settingRegistWrap .subInfo {font-size:30px; line-height:1.33; letter-spacing:normal; text-align:center; color:rgba(244, 244, 244, 0.5);}
+
+.settingRegistWrap .innerWrap  {float:left;}
+/*.settingRegistWrap .registerForm .gridWrap .inputTitle {font-size:28px; font-weight:700; line-height:1.43; letter-spacing:normal; text-align:left; color:rgba(255, 255, 255, 0.8); }*/
+.settingRegistWrap .registerForm .optionWrap {margin-top:0;}
+.settingRegistWrap .registerForm .timeSet {width:565px; box-sizing:content-box;}
+.settingRegistWrap .registerForm .timeSet .selectWrap {width:200px;}
+.settingRegistWrap .registerForm .gridWrap .time .gridStyle {width:100px}
+.settingRegistWrap .registerForm .gridWrap .time .gridStyle.year {width:160px;}
+.settingRegistWrap .registerForm .gridWrap .time .gridStyle input {width:100%;}
+.settingRegistWrap .registerForm .gridWrap .time .text {display:inline-block; padding:0 20px 0 10px; font-size:36px; line-height:1.11; letter-spacing:normal; color:rgba(244, 244, 244, 0.6);}
+.settingRegistWrap .registerForm .alarmDesc {position:relative; z-index:1; padding:20px 0 0 12px; font-size:24px; line-height:1.58; letter-spacing:-0.5px;  color:rgba(244, 244, 244, 0.6); text-align:left;}
+.settingRegistWrap .registerForm .alarmDesc:before {content:""; display:block; position:absolute; top:50%; left:0; z-index:10; margin-top:-2px; width:4px; height:4px; border-radius:4px; background:rgba(244, 244, 244, 0.4);}
+
+.settingRegistWrap .buttonWrap {position:absolute; bottom:128px; left:50%; z-index:100; transform:translate(-50%, 0); -webkit-transform:translate(-50%, 0);}
+.settingRegistWrap .buttonWrap .csFocus + .csFocus {margin-left:24px;}
+

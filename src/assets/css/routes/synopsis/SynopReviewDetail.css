@@ -1,0 +1,126 @@
+:root{
+    --page:0;
+}
+
+/* SynopContentDetail */
+.contentDetail{display:block;overflow:hidden;position:fixed;top:1000px;left:0;right:0;bottom:0;z-index:10000;height:1080px;font-size:36px;color:#fff;line-height:48px;background:#000;}
+.contentDetail .slideWrap{transform:translate3d(calc(var(--page) * -1920px),0,0);}
+.contentDetail .innerContents{display:block;float:left;position:relative;width:1920px;height:1080px;margin:0;padding:156px 360px 0;}
+.innerContents .detailTitleArea{display:block;text-align:center;}
+.innerContents .detailTitle{font-size:56px;color:rgba(26,26,26,1);line-height:64px;font-weight:700;}
+.innerContents .detailTitle img{display:inline-block;margin-right:7px;vertical-align:middle;}
+.innerContents .detailTitle img.dark{display:none;opacity:0;}
+.innerContents .detailTitle img.light{opacity:1;}
+
+.contentDetail .keyWrap{left:1743px;right:auto;}
+
+/* left right arrow*/
+.leftContent{position:absolute;top:50%;left:48px;font-size:30px;color:rgba(136,136,136,1);line-height:58px;transform:translate(0,-50%);-webkit-transform:translate(0,-50%);}
+.rightContent{position:absolute;top:50%;right:48px;font-size:30px;color:rgba(136,136,136,1);line-height:58px;transform:translate(0,-50%);-webkit-transform:translate(0,-50%);}
+.leftContent:before{content:'';display:inline-block;width:23px;height:58px;margin-right:29px;background:url('/assets/images/synopsis/icon-detail-arrow-l.png') no-repeat;vertical-align:middle;opacity:0.75;}
+.rightContent:after{content:'';display:inline-block;width:23px;height:58px;margin-left:29px;background:url('/assets/images/synopsis/icon-detail-arrow-r.png') no-repeat;vertical-align:middle;opacity:0.75;}
+
+/* feeling */
+.innerContents .allParticipant{display:inline-block;margin-top:40px;padding:0 17px;border-radius:24px;border:1px solid rgba(0,0,0,0.3);font-size:26px;color:rgba(106,106,106,1);line-height:48px;}
+
+.innerContents .goodFeelingBox{overflow:hidden;margin-top:52px;}
+.innerContents .goodFeelingBox li{float:left;position:relative;width:50%;}
+.innerContents .goodFeelingBox li:first-child:after{content:'';display:block;position:absolute;top:50%;right:0;width:1px;height:450px;background-color:rgba(255,255,255,0.07);transform: translate(0,-50%);-webkit-transform: translate(0,-50%);}
+.innerContents .goodFeelingBox li .appraisal{display:block;height:542px;text-align:center;}
+.innerContents .goodFeelingBox li .appraisal .imgBox{display:block;position:relative;height:325px;}
+.innerContents .goodFeelingBox li .appraisal .imgBox span{position:absolute;}
+.innerContents .goodFeelingBox li .appraisal .imgBox .like{top:0;left:180px;width:311px;height:286px;background:url('/assets/images/synopsis/detail-feeling-like.png') no-repeat;}
+.innerContents .goodFeelingBox li .appraisal .imgBox .dislike{top:91px;left:160px;width:254px;height:234px;background:url('/assets/images/synopsis/detail-feeling-dislike.png') no-repeat;}
+.innerContents .goodFeelingBox li .appraisal .likeState{margin-top:31px;font-size:28px;color:rgba(74,74,74,1);line-height:32px;font-weight:700;}
+.innerContents .goodFeelingBox li .appraisal .percent{margin-top:23px;font-size:60px;color:rgba(26,26,26,1);font-weight:500;}
+.innerContents .goodFeelingBox li .appraisal .percent .num{font-size:60px;color:rgba(26,26,26,1);font-weight:500;vertical-align:baseline;}
+.innerContents .goodFeelingBox li .appraisal .user{display:inline-block;margin-top:26px;padding:0 17px;border-radius:18px;border:1px solid rgba(0,0,0,0.3);font-size:26px;color:rgba(106,106,106,1);line-height:36px;}
+.innerContents .goodFeelingBox li .appraisal .user .num{font-size:26px;color:rgba(106,106,106,1);vertical-align:baseline;}
+
+/* grade */
+.detailTitleArea .gradeGrade{margin-top:40px;}
+.detailTitleArea .gradeGrade .gradeText{display:block;margin-top:120px;font-size:80px;color:rgba(74,74,74,1);}
+.detailTitleArea .gradeGrade .gradeText .num{font-size:116px;color:rgba(48,48,48,1);line-height:120px;vertical-align:baseline;}
+.detailTitleArea .gradeGrade .starGradeWrap{display:block;margin-top:5px;}
+.detailTitleArea .gradeGrade .starGrade{display:inline-block;width:300px;height:42px;background:url('/assets/images/synopsis/img-grade-grade-bg.png') no-repeat;text-align:left;vertical-align:top;}
+.detailTitleArea .gradeGrade .starGrade .starImg{display:inline-block;height:100%;background:url('/assets/images/synopsis/img-grade-grade.png') no-repeat;}
+.detailTitleArea .gradeGrade .participantText{display:inline-block;margin-top:36px;padding:0 17px;border-radius:24px;border:1px solid rgba(0,0,0,0.3);font-size:26px;color:rgba(106,106,106,1);line-height:48px;}
+
+.detailGradeGraph{margin:0 -360px;}
+.detailGradeGraph .gradeGraphWrap{display:block;position:relative;margin-top:-25px;height:280px;background-image:linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)),url('/assets/images/synopsis/grade-line-bg-light.png');}
+.detailGradeGraph .gradeGraphWrap ul{display:table;position:absolute;bottom:0;left:50%;transform:translate(-50%,0);-webkit-transform:translate(-50%,0);width:996px;height:192px;text-align:center;line-height:0;overflow:hidden;vertical-align:bottom;}
+.detailGradeGraph .gradeGraphWrap ul li{display:table-cell;position:relative;/*width:96px;*/padding-left:3px;vertical-align:bottom;}
+/*.detailGradeGraph .gradeGraphWrap ul li + li{margin-left:4px;}*/
+.detailGradeGraph .gradeGraphWrap ul li:first-child{margin-left:0;}
+.detailGradeGraph .gradeGraphWrap ul .gradeGraph{display:block;background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));opacity:0.15;border-radius:2px 2px 0 0;}
+.detailGradeGraph .gradeGraphWrap ul li .perNum{display:block;position:absolute;top:10px;left:0;right:0;font-size:40px;color:rgba(48,48,48,1);line-height:48px;vertical-align:baseline;}
+.detailGradeGraph .gradeGraphWrap ul li .perNum .num{font-size:40px;color:rgba(48,48,48,1);line-height:48px;font-weight:700;vertical-align:baseline;}
+.detailGradeGraph .gradeNumWrap{display:block;text-align:center;}
+.detailGradeGraph .gradeNumWrap ul{display:inline-block;overflow:hidden;}
+.detailGradeGraph .gradeNumWrap ul li{float:left;width:96px;}
+.detailGradeGraph .gradeNumWrap ul li + li{margin-left:4px;}
+.detailGradeGraph .gradeNumWrap ul li:first-child{margin-left:0;}
+.detailGradeGraph .gradeNumWrap ul li .num{display:block;margin-top:10px;font-size:22px;color:rgba(48,48,48,1);line-height:26px;}
+
+/* review */
+.reviewTitle{display:block;font-size:52px;color:rgba(26,26,26,1);font-weight:700;line-height:52px;text-align:center;}
+.reviewTitle img{margin-right:15px;vertical-align:bottom;}
+.reviewTitle img.dark{display:none;opacity:0;}
+.reviewTitle img.light{opacity:1;}
+.reviewSubTitle{display:block;margin-top:15px;font-size:30px;color:rgba(74,74,74,1);line-height:42px;text-align:center;}
+.reviewWrap{margin-top:73px;}
+.reviewWrap .contentText + .contentText{margin-top:88px;}
+.reviewWrap .textIndex{display:inline-block;font-size:34px;color:rgba(74,74,74,1);line-height:48px;font-weight:700;}
+.reviewWrap .bar{height:30px;margin:0 18px 0 20px;}
+.reviewWrap .reviewGrade{font-size:30px;color:rgba(106,106,106,1);}
+.reviewWrap .reviewGrade .starGrade{display:inline-block;width:216px;height:34px;margin-top:3px;margin-right:13px;background:url('/assets/images/synopsis/img-review-grade-bg.png') no-repeat;text-align:left;vertical-align:top;}
+.reviewWrap .reviewGrade .starGrade .starImg{display:inline-block;height:100%;background:url('/assets/images/synopsis/img-review-grade.png') no-repeat;}
+.reviewWrap .reviewGrade .num{font-size:36px;color:rgba(48,48,48,1);font-weight:700;}
+.reviewWrap .reviewGrade .logoImg{margin-top:6px;margin-left:20px;vertical-align:top;}
+.reviewWrap .text{margin-top:13px;font-size:40px;color:rgba(26,26,26,1);line-height:60px;}
+
+/* scroll */
+.reviewCon{padding:0 !important;}
+.popConWrap{position:relative;margin:156px 410px 0;}
+
+.popConWrap .scrollBarBox{display:block;position:absolute;top:0;bottom:0;right:-74px;z-index:1005;width:32px;height:100%;}
+.popConWrap .innerScrollBarBox{display:block;position:absolute;top:0;bottom:0;left:0;right:0;width:32px;height:auto;margin:0;padding:0;}
+.popConWrap .innerScrollBarBox .scrollBar{display:block;position:absolute;top:0;left:0;right:0;border-radius:16px;width:32px;height:200px;background:#f4f4f4;box-shadow:0 24px 16px 0 rgba(0, 0, 0, 0.35);}
+.popConWrap .innerScrollBarBox .scrollBar:before,
+.popConWrap .innerScrollBarBox .scrollBar:after{position:absolute;top:0;left:0;z-index:10;display:block;width:32px;height:30px;content:"";background:url('/assets/images/common/icon/img-scroll-pop-up-foc.png') 0 0 no-repeat;}
+.popConWrap .innerScrollBarBox .scrollBar:after{top:auto;bottom:0;background-image:url('/assets/images/common/icon/img-scroll-pop-down-foc.png');}
+.popConWrap .innerScrollBarBox .scrollBarBG{display:block;width:16px;height:100%;margin:0 auto;border-radius:16px;background:rgba(0,0,0,0.3);}
+.reviewContentsWrap{display:block;position:relative;height:740px;overflow:auto;overflow-y:scroll;}
+.popConWrap .reviewContentsWrap::-webkit-scrollbar {width:0;}
+
+/* theme */
+.dark .innerContents .detailTitle{color:rgba(255,255,255,1);}
+.dark .innerContents .detailTitle img.dark{display:inline-block;opacity:1;}
+.dark .innerContents .detailTitle img.light{display:none;opacity:0;}
+.dark .innerContents .allParticipant{border:1px solid rgba(255,255,255,0.3);color:rgba(255,255,255,0.8);}
+.dark .innerContents .goodFeelingBox li .appraisal .likeState{color:rgba(244,244,244,0.7);}
+.dark .innerContents .goodFeelingBox li .appraisal .percent{color:rgba(244,244,244,1);}
+.dark .innerContents .goodFeelingBox li .appraisal .percent .num{color:rgba(244,244,244,1);}
+.dark .innerContents .goodFeelingBox li .appraisal .user{border:1px solid rgba(255,255,255,0.3);color:rgba(244,244,244,0.8);}
+.dark .innerContents .goodFeelingBox li .appraisal .user .num{color:rgba(244,244,244,0.8);}
+
+.dark .detailTitleArea .gradeGrade .gradeText{color:rgba(255,255,255,0.7);}
+.dark .detailTitleArea .gradeGrade .gradeText .num{color:rgba(255,255,255,1);}
+.dark .detailTitleArea .gradeGrade .participantText{border:1px solid rgba(244,244,244,0.3);color:rgba(244,244,244,0.8);}
+
+.dark .detailGradeGraph .gradeGraphWrap{background-image:linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)),url('/assets/images/synopsis/grade-line-bg.png');}
+.dark .detailGradeGraph .gradeGraphWrap ul .gradeGraph{background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));opacity:0.15;}
+.dark .detailGradeGraph .gradeGraphWrap ul li .perNum{color:rgba(244,244,244,1);}
+.dark .detailGradeGraph .gradeGraphWrap ul li .perNum .num{color:rgba(255,255,255,1);}
+.dark .detailGradeGraph .gradeNumWrap ul li .num{color:rgba(106,106,106,1);}
+
+.dark .reviewTitle{color:rgba(244,244,244,1);}
+.dark .reviewTitle img.dark{display:inline-block;opacity:1;}
+.dark .reviewTitle img.light{display:none;opacity:0;}
+.dark .reviewSubTitle{color:rgba(170,170,170,1);}
+.dark .reviewWrap .textIndex{color:rgba(244,244,244,0.9);}
+.dark .reviewWrap .text{color:rgba(244,244,244,0.9);}
+.dark .reviewWrap .reviewGrade{color:rgba(170,170,170,1);}
+.dark .reviewWrap .reviewGrade .num{color:rgba(212,212,212,1);}
+
+

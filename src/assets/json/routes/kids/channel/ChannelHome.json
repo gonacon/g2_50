@@ -1,0 +1,53 @@
+{
+	"mainBg" : "/assets/images/kids/channel/bg.png",
+	"slideItem" : [
+		{
+			"imageN" : "/assets/images/tmp/kids/img-vod-02.jpg",
+			"imageF" : "/assets/images/tmp/kids/img-vod-01.jpg",
+			"channel" : "111",
+			"vodTitle" : "깨미탐험대",
+			"state" : "LIVE",
+			"channelTitle" : "키즈톡톡플러스"
+		},
+		{
+			"imageN" : "/assets/images/tmp/kids/img-vod-02.jpg",
+			"imageF" : "/assets/images/tmp/kids/img-vod-01.jpg",
+			"channel" : "222",
+			"vodTitle" : "깨미탐험대",
+			"state" : "APP",
+			"channelTitle" : "키즈톡톡플러스"
+		},
+		{
+			"imageN" : "/assets/images/tmp/kids/img-vod-02.jpg",
+			"imageF" : "/assets/images/tmp/kids/img-vod-01.jpg",
+			"channel" : "333",
+			"vodTitle" : "깨미탐험대",
+			"state" : "VOD",
+			"channelTitle" : "키즈톡톡플러스"
+		},
+		{
+			"imageN" : "/assets/images/tmp/kids/img-vod-02.jpg",
+			"imageF" : "/assets/images/tmp/kids/img-vod-01.jpg",
+			"channel" : "444",
+			"vodTitle" : "깨미탐험대",
+			"state" : "LIVE",
+			"channelTitle" : "키즈톡톡플러스"
+		},
+		{
+			"imageN" : "/assets/images/tmp/kids/img-vod-02.jpg",
+			"imageF" : "/assets/images/tmp/kids/img-vod-01.jpg",
+			"channel" : "444",
+			"vodTitle" : "깨미탐험대",
+			"state" : "LIVE",
+			"channelTitle" : "키즈톡톡플러스"
+		},
+		{
+			"imageN" : "/assets/images/tmp/kids/img-vod-02.jpg",
+			"imageF" : "/assets/images/tmp/kids/img-vod-01.jpg",
+			"channel" : "444",
+			"vodTitle" : "깨미탐험대",
+			"state" : "LIVE",
+			"channelTitle" : "키즈톡톡플러스"
+		}
+	]
+}

@@ -1,0 +1,14 @@
+/* TmembershipRegist.css */
+/* MembershipRegist */
+.tmembership.registWrap {padding-top:106px;}
+.tmembership.registWrap .registerForm {padding:102px 35px 0;}
+.tmembership.registWrap .registerForm .contentBox.addition {margin-top:78px; display:flex; justify-content:space-between;}
+.tmembership.registWrap .registerForm .contentBox.addition .gridWrap .gridStyle.birth {width:300px;}
+
+.tmembership.registWrap .registerForm .gridWrap .gender{width:400px;}
+.tmembership.registWrap .registerForm .gridWrap .gender .radioStyle {display:inline-block; min-width:200px;}
+.tmembership.registWrap .registerForm .gridWrap .gender .inputTitle {color:#fff;}
+.tmembership.registWrap .registerForm .gridWrap .gender .optionWrap {margin-top:0;}
+
+
+

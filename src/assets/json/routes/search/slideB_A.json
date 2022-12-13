@@ -1,0 +1,103 @@
+{
+	"slideType": "corner",
+	"slideTitle": "TV 프로그램 VOD",
+	"slideItem": [
+		{
+			"title": "겟아웃",
+			"image": "/assets/images/tmp/home_B_01.png",
+			"onAir" : true,
+			"grade19" : "",
+			"timer" : false,
+			"favorCh" : false,
+			"link": ""
+		},
+		{
+			"title": "스파이더맨",
+			"image": "/assets/images/tmp/home_B_01.png",
+			"onAir" : false,
+			"grade19" : "19",
+			"timer" : false,
+			"favorCh" : false,
+			"link": ""
+		},
+		{
+			"title": "에일리언",
+			"image": "/assets/images/tmp/home_B_01.png",
+			"onAir" : false,
+			"grade19" : "",
+			"timer" : true,
+			"favorCh" : false,
+			"link": ""
+		},
+		{
+			"title": "대립군",
+			"image": "/assets/images/tmp/home_B_01.png",
+			"onAir" : false,
+			"grade19" : "",
+			"timer" : false,
+			"favorCh" : true,
+			"link": ""
+		},
+		{
+			"title": "하루",
+			"image": "/assets/images/tmp/home_B_01.png",
+			"onAir" : false,
+			"grade19" : "",
+			"timer" : false,
+			"favorCh" : false,
+			"link": ""
+		},
+		{
+			"title": "악녀",
+			"image": "/assets/images/tmp/home_B_01.png",
+			"grade19" : "",
+			"timer" : false,
+			"favorCh" : false,
+			"link": ""
+		},
+		{
+			"title": "원더우먼",
+			"image": "/assets/images/tmp/home_B_01.png",
+			"grade19" : "",
+			"timer" : false,
+			"favorCh" : false,
+			"link": ""
+		},
+		{
+			"title": "보스베이비",
+			"image": "/assets/images/tmp/home_B_01.png",
+			"onAir" : false,
+			"grade19" : "",
+			"timer" : false,
+			"favorCh" : false,
+			"link": ""
+		},
+		{
+			"title": "리얼",
+			"image": "/assets/images/tmp/home_B_01.png",
+			"onAir" : false,
+			"grade19" : "",
+			"timer" : false,
+			"favorCh" : false,
+			"link": ""
+		},
+		{
+			"title": "미이라",
+			"image": "/assets/images/tmp/home_B_01.png",
+			"onAir" : false,
+			"grade19" : "",
+			"timer" : false,
+			"favorCh" : false,
+			"link": ""
+		},
+		{
+			"title": "노무현입니다",
+			"image": "/assets/images/tmp/home_B_01.png",
+			"onAir" : false,
+			"grade19" : "",
+			"timer" : false,
+			"favorCh" : false,
+			"link": ""
+		}
+	]
+}

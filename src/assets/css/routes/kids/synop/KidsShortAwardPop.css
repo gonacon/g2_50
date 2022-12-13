@@ -1,0 +1,31 @@
+/* KidsShortAwardPop.css */
+/* contentPop */
+.contentPop.kidsAward{display:block;position:fixed;top:1000px;left:0;right:0;bottom:0;z-index:10000;width:1920px;height:1080px;font-size:36px;color:#fff;line-height:48px;background:#000;}
+.contentPop.kidsAward .mainBg{top:1000px;}
+.contentPop.kidsAward .innerContentPop{display:block;position:relative;height:740px;margin:180px 274px 0;}
+/*.innerContentPop .contentInfo::-webkit-scrollbar-track {border-radius:16px;background-color:rgba(0,0,0,0.3);}*/
+/*.innerContentPop .contentInfo::-webkit-scrollbar-thumb {border-radius:16px;width:32px;height:200px;background:#000 url('/assets/images/tmp/scroll_pop.png') no-repeat;}*/
+.contentPop.kidsAward .innerContentPop .innerContentInfo{display:block;overflow-y:auto;height:100%;margin:0 auto;scroll-behavior:smooth;}
+.contentPop.kidsAward .innerContentPop .innerContentInfo::-webkit-scrollbar {width:0;}
+.contentPop.kidsAward .innerContentPop .contentInfo{display:block;width:1100px;margin:0 auto;}
+.contentPop.kidsAward .innerContentPop .title{display:block;padding-bottom:0;font-size:56px;text-align:center;line-height:76px;}
+.contentPop.kidsAward .innerContentPop .contentText{display:block;font-size:34px;text-align:left;}
+.contentPop.kidsAward .innerContentPop .contentText .awardList{margin-top:91px;}
+.contentPop.kidsAward .innerContentPop .contentText .awardList + .awardList{margin-top:93px;}
+.contentPop.kidsAward .innerContentPop .contentText .awardList .awardTitle{display:block;font-size:34px;color:rgba(244,244,244,0.9);line-height:48px;font-weight:700;text-align:center;}
+.contentPop.kidsAward .innerContentPop .contentText .awardList .awardInfo{display:block;margin-top:7px;font-size:30px;color:rgba(244,244,244,0.8);line-height:52px;text-align:center;}
+
+
+/*pop scroll*/
+.contentPop.kidsAward .innerContentPop .scrollBarBox{display:block;position:absolute;top:0;bottom:0;right:14px;z-index:1005;width:32px;height:100%;}
+.contentPop.kidsAward .innerContentPop .innerScrollBarBox{display:block;position:absolute;top:0;bottom:0;right:14px;z-index:1005;width:32px;height:100%;}
+.contentPop.kidsAward .innerContentPop .innerScrollBarBox .scrollBar{display:block;position:absolute;top:0;left:0;right:0;border-radius:16px;width:32px;height:200px;background:#f4f4f4;box-shadow:0 24px 16px 0 rgba(0, 0, 0, 0.35);}
+.contentPop.kidsAward .innerContentPop .innerScrollBarBox .scrollBar:before,
+.contentPop.kidsAward .innerContentPop .innerScrollBarBox .scrollBar:after{position:absolute;top:0;left:0;z-index:10;display:block;width:32px;height:30px;content:"";background:url('/assets/images/common/icon/img-scroll-pop-up-foc.png') 0 0 no-repeat;}
+.contentPop.kidsAward .innerContentPop .innerScrollBarBox .scrollBar:after{top:auto;bottom:0;background-image:url('/assets/images/common/icon/img-scroll-pop-down-foc.png');}
+.contentPop.kidsAward .innerContentPop .innerScrollBarBox .scrollBarBG{display:block;width:16px;height:100%;margin:0 auto;border-radius:16px;background:rgba(0,0,0,0.3);}
+
+/* theme */
+.dark .contentPop.award .innerContentPop .title{color:rgba(255,255,255,1);}
+.dark .contentPop.award .innerContentPop .contentText .awardList .awardTitle{color:rgba(244,244,244,0.9);}
+.dark .contentPop.award .innerContentPop .contentText .awardList .awardInfo{color:rgba(244,244,244,0.8);}

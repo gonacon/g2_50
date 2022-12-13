@@ -1,0 +1,17 @@
+{
+	"type": "일반구매",
+	"product": "미녀와 야수",
+	"videoOption": "지상파 월정액",
+	"videoTerm": "해지 전까지 무제한",
+	"allPrice": "40000",
+	"options": [],
+	"paymentType": [
+		{
+			"payClass" : "bill",
+			"payType" : "청구서"
+		},{
+			"payClass" : "credit",
+			"payType" : "신용카드"
+		}
+	]
+}

@@ -1,0 +1,7 @@
+{
+	"mainBg" : {
+		"mainBg" : "/assets/images/tmp/synopsis/bg-synopseries.png",
+		"blurBg" : "/assets/images/tmp/bg_ep_blur.png"
+	},
+	"post" : "/assets/images/tmp/synopsis/img-post.png"
+}

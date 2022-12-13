@@ -1,0 +1,5 @@
+
+Staticfile 은 nginx  PaaS를 생성하는 파일이며
+nginx.conf파일은 nginx 설정 파일입니다. 
+
+감사합니다. 

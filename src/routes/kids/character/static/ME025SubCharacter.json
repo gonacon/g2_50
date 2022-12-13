@@ -1,0 +1,21 @@
+{
+	"watchList": [
+        {
+            "kids_char_id": "M1234",
+            "sris_id": "s00012345",
+            "epsd_id": "e00012345",
+            "epsd_rslu_id": "{A3FB0B9B-999F-4006-A17D-565532DA4968}",
+            "series_no": "52",
+            "title": "[HD]뽀로로2",
+            "epsd_title": "나는 뽀로로다",
+            "level": "0",
+            "thumbnail": "/assets/images/tmp/kids/img-sub-character01.png",
+            "quality": "3",
+            "trans_type": "1",
+            "watch_rt": "70",
+            "watch_time": "1854",
+            "reg_date": "13.12.21",
+            "material_cd": "65"
+        }
+    ]
+}

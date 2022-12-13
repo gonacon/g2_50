@@ -1,0 +1,9 @@
+{
+	"pageType" : "profileDelete",
+	"profileItem" : [{
+		"type" : "girl",
+		"name" : "이미소",
+		"birth" : "2017.8",
+		"age" : "만 2세"
+	}]
+}

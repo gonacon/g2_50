@@ -1,0 +1,7 @@
+{
+	"pageType": "PurchaseVodNone",
+	"pageTitle": "구매내역 - 일반",
+	"noneText" : "소장용 VOD 구매내역이 없습니다.",
+	"defaultInfo" : "소장용 VOD 구매내역은 B tv 서비스 해지 전까지 제공해 드립니다.",
+	"defaultSub": "소장용 VOD 구매내역에 365일 시청 VOD도 포함되어 있습니다."
+}

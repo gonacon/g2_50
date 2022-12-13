@@ -1,0 +1,41 @@
+/* BtvProductChangeApplication.css */
+/* NoticeList */
+.btvApplicationWrap {position:relative; z-index:1; height:1080px;}
+
+.btvApplicationWrap .contsArea{overflow:hidden;height:100%;}
+.btvApplicationWrap .contsArea > div{height:100%;}
+.btvApplicationWrap .contsArea .titleArea{float:left;position:relative;width:750px;padding:91px 115px 0 115px;}
+.btvApplicationWrap .contsArea .inputArea{position:relative;float:right;width:1170px;padding:90px 82px 0 104px;background-color:rgba(237, 239, 243, 0.5);box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1);}
+
+.btvApplicationWrap .contsArea .titleArea .title{font-size:56px;color:rgba(0,0,0,1);line-height:66px;font-weight:700;}
+.btvApplicationWrap .contsArea .titleArea .subTitle{margin-top:17px;font-size:30px;color:rgba(0,0,0,0.6);line-height:44px;}
+.btvApplicationWrap .contsArea .titleArea .textInfoList{position:absolute;bottom:94px;margin-left:10px;}
+.btvApplicationWrap .contsArea .titleArea .textInfoList li{font-size:24px;color:rgba(26,26,26,0.6);line-height:38px;text-indent:-7px;}
+.btvApplicationWrap .contsArea .titleArea .textInfoList li:before{content:'·';display:inline-block;margin-right:4px;font-size:24px;color:rgba(26,26,26,0.6);line-height:38px;}
+.btvApplicationWrap .contsArea .titleArea .textInfoList li + li{}
+
+.btvApplicationWrap .contsArea .inputArea .nameWrap{display:block;padding-bottom:67px;}
+.btvApplicationWrap .contsArea .inputArea .nameWrap .userName{font-size:46px;color:rgba(0,0,0,1);line-height:48px;font-weight:700;}
+.btvApplicationWrap .contsArea .inputArea .nameWrap .title{padding-bottom:17px;font-size:28px;color:rgba(0,0,0,0.7);line-height:40px;font-weight:700;}
+
+.btvApplicationWrap .inputCon {}
+.btvApplicationWrap .inputCon .gridWrap {width:790px;align-items: flex-end;}
+.btvApplicationWrap .inputCon .gridWrap + .gridWrap {margin-top:34px;}
+.btvApplicationWrap .inputCon .gridWrap + .valid {margin-top:48px;}
+.btvApplicationWrap .inputCon .gridWrap .btnRequire {vertical-align:bottom; padding:0 30px;}
+.btvApplicationWrap .gridStyle input {color:rgba(0,0,0,0.8);}
+
+.btvApplicationWrap .gender {width:401px; font-size:0;}
+.btvApplicationWrap .birth {width:363px;}
+.btvApplicationWrap .agency {width:240px;}
+.btvApplicationWrap .tel {width:378px;}
+.btvApplicationWrap .valid {width:400px;}
+
+.btvApplicationWrap .gender .radioStyle {display:inline-block; min-width:200px; text-align:left;border-radius:4px 0 0 4px;}
+.btvApplicationWrap .gender .radioStyle + .radioStyle{border-radius:0 4px 4px 0;}
+
+.btvApplicationWrap .optionWrap {margin-top: 0;}
+.btvApplicationWrap .btnWrap{margin-top:76px;padding-top:48px;border-top:2px solid rgba(0,0,0,0.2);}
+/*.btvApplicationWrap .inputTitle {padding-bottom:16px; font-size:28px; font-weight:700; line-height:1.43; letter-spacing:normal; color:rgba(0, 0, 0, 0.7); text-align:left;}*/
+/*.btvApplicationWrap .disable .inputTitle{color:rgba(0,0,0,0.2);}*/
+

@@ -1,0 +1,46 @@
+/* KidsSeriesSpecialMovie.css */
+:root{
+	--page:0;
+}
+
+.kidsSynopSeriesContent .slideSpecialMovie{padding-top:26px;}
+.slideSpecialMovie .slideWrap{position:relative;z-index:1;transform:translate(0,0);}
+.slideSpecialMovie .title{transform:translate(0,0);font-size:36px;line-height:40px;letter-spacing:-1px;font-weight:400;color:rgba(48,48,48,1);}
+.slideSpecialMovie .slideWrap .slideCon{margin:-50px -30px 0;padding:50px 10px 60px;overflow:hidden;transform:translate(0,0);}
+.slideSpecialMovie .slideWrapper{display:flex;justify-content:space-between;transform:translate3d(calc(var(--page) * -288px),0,0);}
+.slideSpecialMovie .slideWrapper .slide{margin:0 20px;text-align:center;}
+.slideSpecialMovie .slideWrapper .csFocus{display:block;position:relative;z-index:10;width:248px;height:140px;border-radius:4px;background:url('/assets/images/common/default/stillcut_default.png') no-repeat 0 0;background-size:100% 100%;box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.2);transform:scale(1,1);}
+.slideSpecialMovie .slideWrapper .csFocus.focusOn{background-color:rgba(244,244,244,1);box-shadow:0 10px 10px 0 rgba(0, 0, 0, 0.3), 0 0 10px 0 rgba(0, 0, 0, 0.1);transform:scale(1.19,1.19);}
+.slideSpecialMovie .slideWrapper .csFocus img{display:block;border-radius:4px;}
+
+.slideSpecialMovie .slideWrapper .csFocus .videoText {overflow:hidden;text-overflow: ellipsis;white-space: nowrap;position: absolute;bottom: 0;left: 0;z-index: 10;width:100%;padding:0 8px;border-radius:0 0 4px 4px;font-size: 28px;height:48px;line-height:48px;color: #fff;text-align:center;}
+.slideSpecialMovie .slideWrapper .csFocus .videoText:before,
+.slideSpecialMovie .slideWrapper .csFocus .videoText .blurImg{position:absolute;top:-2px;left:-2px;right:-2px;bottom:-2px;z-index:-2;filter:blur(2px);background-position:left bottom;}
+.slideSpecialMovie .slideWrapper .csFocus .videoText .blurImg{background-size:100%;}
+.slideSpecialMovie .slideWrapper .csFocus .videoText:before{content:"";display:block;z-index:-1;background:rgba(8, 12, 35, 0.5);}
+.slideSpecialMovie .csFocus.focusOn .videoText{overflow:visible; text-overflow:unset;bottom:-50px;left:50%; transform:translate(-50%,0); padding:0; width:auto;color:rgba(26,26,26,1);font-weight:700;white-space:nowrap;}
+.slideSpecialMovie .csFocus.focusOn .videoText:before,
+.slideSpecialMovie .csFocus.focusOn .videoText .blurImg{display:none;}
+
+.slideSpecialMovie .slideLeft,
+.slideSpecialMovie .slideRight{position:absolute;top:50%;left:-70px;z-index:10;transform:translate(0,-50%);width:23px;height:58px;background:url("/assets/images/common/icon/arrow-left.png") no-repeat 0 0;opacity:0;}
+.slideSpecialMovie .slideRight{left:auto;right:-70px;background:url("/assets/images/common/icon/arrow-right.png") no-repeat 0 0;}
+.slideSpecialMovie .activeSlide.leftActive .slideLeft,
+.slideSpecialMovie .activeSlide.rightActive .slideRight{opacity:1;}
+
+.slideSpecialMovie .slideCount {position: absolute;top: 11px;right: 0;z-index: 10;font-size: 23px;color: #666;line-height: 1.83;letter-spacing: normal;opacity: 0;}
+.slideSpecialMovie .activeSlide .slideCount {opacity:1;}
+.slideSpecialMovie .activeSlide.lastActive .slideCount{transform:translate(0,-14px);}
+
+/*.dark .slideSpecialMovie .slideWrapper .csFocus.focusOn .videoText{color:rgba(244,244,244,1);}*/
+/*.dark .slideSpecialMovie .slideLeft,*/
+/*.dark .slideSpecialMovie .slideRight{position:absolute;top:50%;left:-70px;z-index:10;transform:translate(0,-50%);width:23px;height:58px;background:url("/assets/images/common/icon/arrow-left-w.png") no-repeat 0 0;opacity:0;}*/
+/*.dark .slideSpecialMovie .slideRight{left:auto;right:-70px;background:url("/assets/images/common/icon/arrow-right-w.png") no-repeat 0 0;}*/
+/*.dark .slideSpecialMovie .activeSlide .slideLeft,*/
+/*.dark .slideSpecialMovie .activeSlide .slideRight{opacity:1;}*/
+
+/*.dark .slideSpecialMovie .slideCount {color: rgba(244,244,244,0.9);}*/
+
+.slideSpecialMovie .slideWrapper .slide:first-child.csFocus.textOver .videoText{left:0;transform:translate(0);}
+.slideSpecialMovie .slideWrapper .slide:last-child.csFocus.textOver .videoText{right:0;left:auto;transform:translate(0);}
+.slideSpecialMovie .slideWrapper .slide:only-child.csFocus.textOver .videoText{left:0;right:auto;transform:translate(0);}

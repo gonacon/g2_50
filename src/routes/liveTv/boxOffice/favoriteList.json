@@ -1,0 +1,44 @@
+{
+    "IF": "IF-ME-011",
+    "ver": "5.0",
+    "svc_name": "METV-BOOKMARK",
+    "result": "0000",
+    "reason": "Success",
+    "stb_id": "{A5E1E25F-E1E6-11E5-A490-FDCFBFF8EC17}",
+    "page_tot": "1",
+    "page_no": "1",
+    "bookmark_tot": "4",
+    "bookmark_no": "4",
+    "group": "IPTV",
+    "ch_type": "1",
+    "bookmarkList": [
+        {
+            "svc_id": "242",
+            "ch_no": "18",
+            "title": "채널A",
+            "yn_kzone": "N",
+            "reg_date": "18.04.17 18:22:57"
+        },
+        {
+            "svc_id": "70",
+            "ch_no": "20",
+            "title": "OBS",
+            "yn_kzone": "N",
+            "reg_date": "18.04.17 18:50:02"
+        },
+        {
+            "svc_id": "69",
+            "ch_no": "73",
+            "title": "UMAX",
+            "yn_kzone": "N",
+            "reg_date": "18.04.17 18:50:02"
+        },
+        {
+            "svc_id": "71",
+            "ch_no": "602",
+            "title": "가요명곡퍼레이드",
+            "yn_kzone": "N",
+            "reg_date": "18.04.17 18:25:37"
+        }
+    ]
+}

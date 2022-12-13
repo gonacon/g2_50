@@ -1,0 +1,17 @@
+{
+	"slideType" : "MainSlide",
+	"slideItem": [
+		{
+			"imageS": "/assets/images/tmp/img_banner_02.png"
+		},
+		{
+			"imageS": "/assets/images/tmp/img_banner_03.png"
+		},
+		{
+			"imageS": "/assets/images/tmp/img_banner_02.png"
+		},
+		{
+			"imageS": "/assets/images/tmp/img_banner_01.png"
+		}
+	]
+}

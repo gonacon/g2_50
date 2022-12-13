@@ -1,0 +1,35 @@
+/* BillDeliveryPhone.css */
+.popWrap.deliveryPhone {padding:103px 0;}
+.popWrap.deliveryPhone .subInfo {padding:20px 0 0;font-size:30px; line-height:1.33; letter-spacing:normal; color:#6a6a6a;opacity: 1;}
+.popWrap.deliveryPhone .billCon {padding:106px 243px 0; text-align:center;}
+.popWrap.deliveryPhone .billCon:after{content:'';display:block;clear:both;}
+.popWrap.deliveryPhone .billCon .left{float:left;width:790px;text-align:left;}
+.popWrap.deliveryPhone .billCon .right{float:right;width:524px;}
+
+.popWrap.deliveryPhone .billCon .left .certifyTitle{font-size:28px;color:rgba(74,74,74,1);line-height:40px;font-weight:700;}
+.popWrap.deliveryPhone .billCon .left .certifySub{margin-top:16px;font-size:28px;color:rgba(74,74,74,0.9);line-height:44px;font-weight:500;}
+.popWrap.deliveryPhone .billCon .left .checkStyle{padding:31px 13px 31px 80px;border-radius:4px;width:100%;text-align:left;}
+.popWrap.deliveryPhone .billCon .left .allWrap{margin-top:20px;}
+.popWrap.deliveryPhone .billCon .left [class*="checkStyle"]:after{left:26px;}
+.popWrap.deliveryPhone .billCon .left [class*="checkStyle"] .title{width:100%;}
+
+.popWrap.deliveryPhone .billCon .inner {text-align:left;}
+.popWrap.deliveryPhone .billCon .inner + .inner {margin-top:78px;}
+.popWrap.deliveryPhone .billCon .btnRequire.focusOn:before {min-width:140px;}
+/*.popWrap.deliveryPhone .billCon .inner.disabled .inputTitle {opacity:0.2;}*/
+.popWrap.deliveryPhone .billCon .gridStyle.tel {width:608px;}
+
+.popWrap.deliveryPhone .billCon .gridWrap {align-items:flex-end;}
+.popWrap.deliveryPhone .agency {width:240px;}
+.popWrap.deliveryPhone .tel {width:378px;}
+/*.popWrap.deliveryPhone .tel2 {width:500px;margin:130px auto 0;}*/
+.popWrap.deliveryPhone .valid{position:relative;z-index:1;}
+.popWrap.deliveryPhone .gridStyle.valid{position:relative;z-index:1;width:400px;}
+
+.popWrap.deliveryPhone .btnRequire{padding:0 32px;}
+
+.popWrap.deliveryPhone .valid.disable .validTime {opacity:0;}
+.popWrap.deliveryPhone .valid .validTime {opacity:1; position:absolute; top:80px; right:20px; z-index:10; font-size:26px; line-height:1.46; color:#c33e32;}
+.popWrap.deliveryPhone .valid .validTime.disable {color:#aaa;}
+.popWrap.deliveryPhone .valid .disableText{margin-top:32px;font-size:26px;line-height:38px;color:#c33e32;}
+

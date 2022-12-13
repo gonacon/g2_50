@@ -1,0 +1,61 @@
+{
+	"slideType": "SlideTypeA",
+	"slideTitle": "B tv 인기영화",
+	"slideItem": [
+		{
+			"title": "노무현입니다",
+			"image": "/assets/images/tmp/home_A_01.png",
+			"link": "/home/genre/Type1"
+		},
+		{
+			"title": "미이라",
+			"image": "/assets/images/tmp/home_A_02.png",
+			"link": "/home/genre/Type1"
+		},
+		{
+			"title": "리얼",
+			"image": "/assets/images/tmp/home_A_03.png",
+			"link": ""
+		},
+		{
+			"title": "보스베이비",
+			"image": "/assets/images/tmp/home_A_04.png",
+			"link": ""
+		},
+		{
+			"title": "원더우먼",
+			"image": "/assets/images/tmp/home_A_05.png",
+			"link": ""
+		},
+		{
+			"title": "악녀",
+			"image": "/assets/images/tmp/home_A_06.png",
+			"link": ""
+		},
+		{
+			"title": "하루",
+			"image": "/assets/images/tmp/home_A_07.png",
+			"link": ""
+		},
+		{
+			"title": "대립군",
+			"image": "/assets/images/tmp/home_A_08.png",
+			"link": ""
+		},
+		{
+			"title": "에일리언",
+			"image": "/assets/images/tmp/home_A_09.png",
+			"link": ""
+		},
+		{
+			"title": "스파이더맨",
+			"image": "/assets/images/tmp/home_A_10.png",
+			"link": ""
+		},
+		{
+			"title": "겟아웃",
+			"image": "/assets/images/tmp/home_A_11.png",
+			"link": ""
+		}
+	]
+}

@@ -1,0 +1,72 @@
+{
+    "result": "OK",
+    "reason": "",
+    "contents": [{
+            "poster_filename_v": "",
+            "poster_filename_h": "/assets/images/tmp/kids/img-kids-kongsun-nor.png",
+            "title": "뽀로로",
+            "sris_id": "{223FC5DA-109B-11E8-B7BD-2BAC564E33F7}",
+            "epsd_id": "{133B3294-1098-11E8-9252-FFA90356A7A9}",
+            "kids_yn": "Y"
+        },
+        {
+            "poster_filename_v": "",
+            "poster_filename_h": "/assets/images/tmp/kids/img-kids-kongsun-nor.png",
+            "title": "소피아",
+            "sris_id": "{223FC5DA-109B-11E8-B7BD-2BAC564E33F7}",
+            "epsd_id": "{133B3294-1098-11E8-9252-FFA90356A7A9}",
+            "kids_yn": "Y"
+        },
+        {
+            "poster_filename_v": "",
+            "poster_filename_h": "/assets/images/tmp/kids/img-kids-kongsun-nor.png",
+            "title": "콩순이",
+            "sris_id": "{223FC5DA-109B-11E8-B7BD-2BAC564E33F7}",
+            "epsd_id": "{133B3294-1098-11E8-9252-FFA90356A7A9}",
+            "kids_yn": "Y"
+        },
+        {
+            "poster_filename_v": "",
+            "poster_filename_h": "/assets/images/tmp/kids/img-kids-kongsun-nor.png",
+            "title": "키즈몽",
+            "sris_id": "{223FC5DA-109B-11E8-B7BD-2BAC564E33F7}",
+            "epsd_id": "{133B3294-1098-11E8-9252-FFA90356A7A9}",
+            "kids_yn": "Y"
+        },
+        {
+            "poster_filename_v": "",
+            "poster_filename_h": "/assets/images/tmp/kids/img-kids-kongsun-nor.png",
+            "title": "캐리",
+            "sris_id": "{223FC5DA-109B-11E8-B7BD-2BAC564E33F7}",
+            "epsd_id": "{133B3294-1098-11E8-9252-FFA90356A7A9}",
+            "kids_yn": "Y"
+        },
+        {
+            "poster_filename_v": "",
+            "poster_filename_h": "/assets/images/tmp/kids/img-kids-kongsun-nor.png",
+            "title": "핑크퐁",
+            "sris_id": "{223FC5DA-109B-11E8-B7BD-2BAC564E33F7}",
+            "epsd_id": "{133B3294-1098-11E8-9252-FFA90356A7A9}",
+            "kids_yn": "Y"
+        },
+        {
+            "poster_filename_v": "",
+            "poster_filename_h": "/assets/images/tmp/kids/img-kids-kongsun-nor.png",
+            "title": "코봇",
+            "sris_id": "{223FC5DA-109B-11E8-B7BD-2BAC564E33F7}",
+            "epsd_id": "{133B3294-1098-11E8-9252-FFA90356A7A9}",
+            "kids_yn": "Y"
+        },
+        {
+            "poster_filename_v": "",
+            "poster_filename_h": "/assets/images/tmp/kids/img-kids-kongsun-nor.png",
+            "title": "뿡뿡이",
+            "sris_id": "{223FC5DA-109B-11E8-B7BD-2BAC564E33F7}",
+            "epsd_id": "{133B3294-1098-11E8-9252-FFA90356A7A9}",
+            "kids_yn": "Y"
+        }
+    ],
+    "total_count": "8",
+    "IF": "IF-NXPG-006",
+    "menu_stb_svc_id": "BSUHD"
+}

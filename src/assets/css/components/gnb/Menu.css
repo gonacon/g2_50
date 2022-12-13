@@ -1,0 +1,57 @@
+/* Menu.css */
+:root{
+	--page:0;
+}
+
+/* topMenu */
+.topMenu{position:absolute;left:0;right:0;z-index:30;width:1920px;height:122px;transform:translateY(-20%);background-image:linear-gradient(to bottom, rgba(24, 24, 26, 0.8), rgba(24, 24, 26, 0.65));}
+.topMenu .menuWrap{margin:0 83px;padding:0 20px;height:122px;overflow:hidden;}
+.topMenu.hide,
+.topMenu.scroll{transform:translateY(-100%);}
+.topMenu.active{background-image:linear-gradient(to top, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55));box-shadow:0 6px 16px 0 rgba(0, 0, 0, 0.4);transform:translateY(0%);}
+.topMenu ul{position:relative;z-index:1;display:block;white-space:nowrap;/*padding:21px 0 14px;*/transform:translate3d(calc(var(--page) * -1px),0,0) translateY(64%);}
+.topMenu.active ul{/*padding:34px 0 27px;*/transform:translate3d(calc(var(--page) * -1px),0,0) translateY(50%);}
+.topMenu ul li{display:inline-block;padding:0 24px;}
+.topMenu ul li:first-child{padding-left:0;}
+/*.topMenu ul li:last-child{padding-right:0;}*/
+.topMenu ul li.searchMenu{padding:0 20px 0 36px;}
+.topMenu ul li.allMenu{padding:0 20px 0 0;}
+.topMenu .csFocus{position:relative;z-index:1;display:inline-block;padding:16px 20px 15px;min-width:35px;font-size:30px;line-height:36px;color:#e3e3e3;vertical-align:middle;}
+.topMenu .csFocus.active{font-weight:700;border-radius:4px;background-image:linear-gradient(to bottom, rgba(26, 26, 26, 0.45), rgba(26, 26, 26, 0.25));box-shadow:inset 0 0 40px 0 rgba(0, 0, 0, 0.05);}
+.topMenu .csFocus.focusOn{font-weight:700;transform:scale(1.1,1.1);color:#ec5638;background:none;}
+.topMenu .csFocus:before{position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;content:"";border-radius:5px;background:#f4f4f4;box-shadow:0 24px 16px 0 rgba(0, 0, 0, 0.35);opacity:0;}
+.topMenu .csFocus.focusOn:before{opacity:1;}
+.topMenu .csFocus img{position:absolute;top:50%;left:50%;z-index:1;transform:translate(-50%,-50%);}
+.topMenu .csFocus img:first-child{position:static;display:block;transform:translate(0);}
+.topMenu .csFocus .select,
+.topMenu .csFocus .focus,
+.topMenu .csFocus.active .focus,
+.topMenu .csFocus.active .normal,
+.topMenu .csFocus.focusOn .normal,
+.topMenu .csFocus.focusOn .select{opacity:0;}
+.topMenu .csFocus .normal,
+.topMenu .csFocus.active .select,
+.topMenu .csFocus.focusOn .focus{opacity:1;}
+
+.topMenu .menuArrow .left,
+.topMenu .menuArrow .right{position:absolute;top:0;left:0;z-index:10;width:160px;height:122px;opacity:0;}
+.topMenu .menuArrow .right{left:auto;right:0;}
+/*.topMenu .menuArrow .left img,*/
+/*.topMenu .menuArrow .right img{position:absolute;top:0;left:0;z-index:10;}*/
+/*.topMenu .menuArrow .right img{left:auto;right:0;}*/
+/*.topMenu .menuArrow .left,*/
+/*.topMenu .menuArrow .right,*/
+/*.topMenu .menuArrow img,*/
+/*.topMenu .menuArrow img,*/
+/*.topMenu.active .menuArrow img:first-child,*/
+/*.topMenu.active .menuArrow img:first-child{opacity:0;}*/
+.topMenu .menuArrow img{position:absolute;top:0;left:0;z-index:10;transform:translateY(220%);}
+.topMenu.active .menuArrow img{transform:translateY(180%);}
+.topMenu.active .menuArrow .left,
+.topMenu.active .menuArrow .right{opacity:0;}
+.topMenu .menuArrow .left img{left:68px;}
+.topMenu .menuArrow .right img{left:auto;right:68px;}
+.topMenu.active .menuArrow.leftActive .left,
+.topMenu.active .menuArrow.rightActive .right{opacity:1;}
+
+

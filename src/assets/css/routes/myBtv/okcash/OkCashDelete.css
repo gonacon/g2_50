@@ -1,0 +1,11 @@
+/* OkCashDelete.css */
+.registWrap.okCashDelete {padding-top:106px;}
+.registWrap.okCashDelete .cardWrap {margin-top:137px;}
+.registWrap.okCashDelete .cardWrap .card {position:relative; display:inline-block; padding-top:79px; width:540px; height:336px; border-radius:12px; text-align:center; background:linear-gradient(140deg, rgb(244, 244, 244), rgb(168, 171, 176));}
+.registWrap.okCashDelete .cardWrap .card .cardLogo {display:block;}
+.registWrap.okCashDelete .cardWrap .card .cardInfo {padding-top:11px; font-size:0;}
+.registWrap.okCashDelete .cardWrap .card .cardInfo .cardNumber {display:inline-block; font-size:40px; line-height:1.4; color:#1a1a1a;}
+.registWrap.okCashDelete .cardWrap .card .cardInfo .cardNumber .numberBlock {margin-left:16px; font-size:40px; line-height:1.4;}
+.registWrap.okCashDelete .cardWrap .card .cardInfo .cardNumber .numberBlock:first-child {margin-left:0;}
+
+

@@ -1,0 +1,30 @@
+{
+	"slideType": "listClientService",
+	"slideTitle": "고객서비스",
+	"slideItem": [
+		{
+			"title": "구매내역",
+			"imageS": "/assets/images/myBtv/ic-pay.png",
+			"imageB": "/assets/images/myBtv/ic-pay-active.png",
+			"link": ""
+		},
+		{
+			"title": "공지/알림/이벤트",
+			"imageS": "/assets/images/myBtv/ic-bell.png",
+			"imageB": "/assets/images/myBtv/ic-bell-active.png",
+			"link": ""
+		},
+		{
+			"title": "이용가이드",
+			"imageS": "/assets/images/myBtv/ic-guide.png",
+			"imageB": "/assets/images/myBtv/ic-guide-active.png",
+			"link": ""
+		},
+		{
+			"title": "콘텐츠 요청",
+			"imageS": "/assets/images/myBtv/ic-contents.png",
+			"imageB": "/assets/images/myBtv/ic-contents-active.png",
+			"link": ""
+		}
+	]
+}

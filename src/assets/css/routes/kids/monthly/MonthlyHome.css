@@ -1,0 +1,34 @@
+/* MonthlyHome.css */
+.kidsMonthlyHome{width:1920px;height:1080px;}
+.kidsMonthlyHome .kidsMonthlyHomeWrap{height:100%;background:url('/assets/images/kids/monthly/bg-monthly.png') no-repeat;}
+
+:root{
+	--page:0;
+}
+.kidsMonthlySlide .slideWrapper{transform:translate3d(calc(var(--page) * -340px),0,0);}
+.kidsMonthlySlide {padding-top:95px;}
+.kidsMonthlySlide .slideWrap{position:relative;z-index:1;}
+.kidsMonthlySlide .title{transform:translate(0,0);font-size:36px;line-height:40px;letter-spacing:-1px;font-weight:400;color:#1a1a1a;}
+.kidsMonthlySlide .slideWrap .slideCon{margin:-44px 90px -40px;padding:60px 20px 40px;overflow:hidden;}
+.kidsMonthlySlide .slideWrapper{display:flex;justify-content:space-between;}
+.kidsMonthlySlide .slideWrapper .slide{padding:0;text-align:center;}
+.kidsMonthlySlide .slideWrapper .csFocus{display:block;width:340px;height:637px;position:relative;z-index:1;background:url("/assets/images/common/default/kids_monthly_foc_default.png") no-repeat 50% 50%;background-size:88% 88%}
+.kidsMonthlySlide .slideWrapper .csFocus img{display:block;position:absolute;top:0;left:0;width:100%;height:100%;}
+.kidsMonthlySlide .slideWrapper .csFocus .nor{z-index:10; opacity:1;}
+.kidsMonthlySlide .slideWrapper .csFocus .foc{z-index:5; opacity:0; transform:scale(0.88);}
+.kidsMonthlySlide .slideWrapper .csFocus.focusOn{background-size:100% 100%;}
+.kidsMonthlySlide .slideWrapper .csFocus.focusOn .nor{opacity:0;}
+.kidsMonthlySlide .slideWrapper .csFocus.focusOn .foc{opacity:1; transform:scale(1);}
+.kidsMonthlySlide .leftArrow,
+.kidsMonthlySlide .rightArrow{position:absolute;top:50%;left:40px;z-index:10;transform:translate(0,-70%);width:72px;height:100px;background:url("/assets/images/kids/button/arrow-left.png") no-repeat 0 0;opacity:0;}
+.kidsMonthlySlide .rightArrow{left:auto;right:40px;background:url("/assets/images/kids/button/arrow-right.png") no-repeat 0 0;}
+.kidsMonthlySlide .activeSlide.leftActive .leftArrow,
+.kidsMonthlySlide .activeSlide.rightActive .rightArrow{opacity:1;}
+.kidsMonthlySlide .slideWrapper .csFocus .joined {display:block; width:110px; height:110px; position:absolute; top:37px; left:30px; z-index:10; background:url("/assets/images/kids/monthly/img-tag-join-foc-text.png") no-repeat center center; background-size:110px;}
+.kidsMonthlySlide .slideWrapper .csFocus.focusOn .joined {top:0; left:10px;}
+
+
+
+
+
+

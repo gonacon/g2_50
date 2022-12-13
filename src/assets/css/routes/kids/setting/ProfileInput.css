@@ -1,0 +1,15 @@
+/* ProfileInput.css */
+.settingRegistWrap.profileInput {padding-left:449px; padding-right:392px;}
+.settingRegistWrap.profileInput .registerForm {padding-top:44px;}
+.settingRegistWrap.profileInput .contentBox:after {display:block; clear:both; content:"";}
+.settingRegistWrap.profileInput .contentBox .innerWrap:first-child {width:512px;}
+.settingRegistWrap.profileInput .contentBox .innerWrap + .innerWrap {padding-left:118px;}
+.settingRegistWrap.profileInput .contentBox .gridWrap + .alarmRadio {margin-top:48px;}
+.settingRegistWrap.profileInput .contentBox .alarmRadio .optionWrap {display:flex; justify-content:space-between;}
+.settingRegistWrap.profileInput .contentBox .alarmRadio .optionWrap .radioStyle {width:224px;}
+.settingRegistWrap.profileInput .contentBox .buttonKey {margin-top:50px;}
+
+.settingRegistWrap.profileInput .agreeWrap {margin-top:48px; padding-top:6px; width:448px; border-top:2px solid rgba(255, 255, 255, 0.12);}
+.settingRegistWrap.profileInput .agreeWrap .agreeDesc {font-size:24px; line-height:1.42; letter-spacing:normal; text-align:left; color:rgba(255, 255, 255, 0.2);}
+.settingRegistWrap.profileInput .buttonWrap {bottom:88px;}
+

@@ -1,0 +1,47 @@
+/* SlideTypeBC.css */
+:root{
+    --page:0;
+}
+.slideTypeBC .slideWrapper{transform:translate3d(calc(var(--page) * -434px),0,0);}
+
+.slideTypeBC .slideWrapper{display:flex;justify-content:space-between;}
+.slideTypeBC{padding-top:87px;}
+.genreMenuBlock .slideTypeBC{padding-bottom:20px;}
+.slideTypeBC .slideWrap{position:relative;z-index:1;transform:translate(0,0);}
+/*.activeSlide .slideTypeBC .title {padding-bottom:0;}*/
+.slideTypeBC .title {font-size:36px; line-height:1.11; letter-spacing:-0.8px; color:#1a1a1a; opacity:0.8;}
+.slideTypeBC .slideWrap .slideCon {overflow:hidden; margin:-20px -38px -80px; padding:24px 15px 80px; font-size:0;}
+.genreMenuAll .slideTypeBC .slideWrap .slideCon {padding-bottom:100px;}
+.slideTypeBC .slideWrap .slideWrapper .slide {display:inline-block; margin:0 25px;}
+.slideTypeBC .slideWrap .slideWrapper .slide.csFocus {/*overflow:hidden;*/ position:relative; z-index:1;display:block;width:384px;box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.2);}
+.slideTypeBC .slideWrap .slideWrapper .slide.csFocus.focusOn {transform:scale(1.15,1.15);box-shadow: 0 14px 14px 0 rgba(0, 0, 0, 0.35);}
+/*.slideTypeBC .slideWrap .slideWrapper .slide.csFocus .imgWrap > img{box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.15);}*/
+/*.slideTypeBC .slideWrap .slideWrapper .slide.csFocus.focusOn .imgWrap > img{box-shadow:0 24px 16px 0 rgba(0, 0, 0, 0.35);}*/
+.slideTypeBC .slideWrap .slideWrapper .slide.csFocus .slideTitle {opacity:0;padding:12px 0; position:absolute; bottom:-57px; left:50%; z-index:10; transform:translate(-50%,0); font-size:27px; line-height:1.15; text-align:center; color:rgba(0,0,0,1); font-weight:700;white-space:nowrap;}
+.slideTypeBC .slideWrap .slideWrapper .slide.csFocus.focusOn .slideTitle{opacity:1; background-color:transparent;}
+.slideTypeBC .leftArrow,
+.slideTypeBC .rightArrow{position:absolute;top:50%;left:-85px;z-index:10;transform:translate(0,-70%);width:72px;height:100px;background:url("/assets/images/kids/button/arrow-left.png") no-repeat 0 0;opacity:0;}
+.slideTypeBC .rightArrow{left:auto;right:-85px;background:url("/assets/images/kids/button/arrow-right.png") no-repeat 0 0;}
+.slideTypeBC .activeSlide.leftActive .leftArrow,
+.slideTypeBC .activeSlide.rightActive .rightArrow{opacity:1;}
+
+.contentGroup.activeSlide .slideTypeBC .title{transform:translate(0,-24px);}
+
+.slideTypeBC .activeSlide .slideCount{opacity:1;}
+.slideTypeBC .slideCount{opacity:0;position:absolute;top:-5px;right:0;z-index:10;font-size:23px;line-height:1;letter-spacing:normal;color:#6a6a6a;transform:translate(0,0);}
+.slideTypeBC .slideCount .current{font-weight:700;}
+.slideTypeBC .activeSlide.leftActive.lastActive .slideCount{transform:translate(0,-24px);}
+
+.slideTypeBC .slideWrapper .csFocus .imgWrap{position:relative;z-index:1;display:block;width:384px;height:250px;border-radius:4px;background:url('/assets/images/common/default/thumbnail_default_land.png') no-repeat 0 0;background-size:100% 100%;}
+.slideTypeBC .slideWrapper .csFocus .imgWrap .flagWrap{position:absolute;right:0;bottom:0;z-index:10;}
+.slideTypeBC .slideWrapper .csFocus .imgWrap .flagWrap img{opacity:1;position:absolute;right:-10px;bottom:0;z-index:10;display:inline-block;width:auto;border-radius:0;box-shadow:none;}
+.slideTypeBC .slideWrapper .csFocus .imgWrap .flagWrap img.flagImg{right:0;}
+.slideTypeBC .slideWrapper .csFocus .imgWrap .flagWrap img:not(.flagImg){z-index:15;}
+.slideTypeBC .slideWrapper .csFocus.focusOn .imgWrap .flagWrap img.flagImg,
+.slideTypeBC .slideWrapper .csFocus.focusOn .imgWrap .flagWrap img:only-child{opacity:1;}
+.slideTypeBC .slideWrapper .slide:first-child.csFocus.textOver .slideTitle{left:0;transform:translate(0);}
+.slideTypeBC .slideWrapper .slide:last-child.csFocus.textOver .slideTitle{right:0;left:auto;transform:translate(0);}
+.slideTypeBC .slideWrapper .slide:only-child.csFocus.textOver .slideTitle{left:0;right:auto;transform:translate(0);}
+
+.slideTypeBC .slideWrapper .csFocus:before{position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;content:"";display:block;border-radius:2px;overflow:hidden;box-shadow:0 0 0 5px #f4f4f4;opacity:0;}
+.slideTypeBC .slideWrapper .csFocus.focusOn:before{box-shadow:0 0 0 5px #f4f4f4;opacity:1;}

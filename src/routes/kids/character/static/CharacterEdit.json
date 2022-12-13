@@ -1,0 +1,166 @@
+{
+	"pageType": "CharacterListType",
+	"pageTitle": "캐릭터 전체보기",
+	"slideItem": [
+		[
+			{
+				"title": "1콩순이",
+				"tag" : "new",
+				"imageN": "/assets/images/tmp/kids/img-kids-kongsun-nor.png"
+			},
+			{
+				"title": "미이라",
+				"tag" : "event",
+				"imageN": "/assets/images/tmp/kids/img-kids-kongsun-nor.png"
+			},
+			{
+				"title": "리얼",
+				"tag" : "btv",
+				"imageN": "/assets/images/tmp/kids/img-kids-kongsun-nor.png"
+			},
+			{
+				"title": "보스베이비",
+				"tag" : "update",
+				"imageN": "/assets/images/tmp/kids/img-kids-kongsun-nor.png"
+			},
+			{
+				"title": "원더우먼",
+				"imageN": "/assets/images/tmp/kids/img-kids-kongsun-nor.png"
+			},
+			{
+				"title": "악녀",
+				"imageN": "/assets/images/tmp/kids/img-kids-kongsun-nor.png"
+			},
+			{
+				"title": "악녀",
+				"imageN": "/assets/images/tmp/kids/img-kids-kongsun-nor.png"
+			}
+		],
+		[
+			{
+				"title": "2콩순이",
+				"imageN": "/assets/images/tmp/kids/img-kids-kongsun-nor.png"
+			},
+			{
+				"title": "미이라",
+				"imageN": "/assets/images/tmp/kids/img-kids-kongsun-nor.png"
+			},
+			{
+				"title": "리얼",
+				"imageN": "/assets/images/tmp/kids/img-kids-kongsun-nor.png"
+			},
+			{
+				"title": "보스베이비",
+				"imageN": "/assets/images/tmp/kids/img-kids-kongsun-nor.png"
+			},
+			{
+				"title": "원더우먼",
+				"imageN": "/assets/images/tmp/kids/img-kids-kongsun-nor.png"
+			},
+			{
+				"title": "악녀",
+				"imageN": "/assets/images/tmp/kids/img-kids-kongsun-nor.png"
+			},
+			{
+				"title": "악녀",
+				"imageN": "/assets/images/tmp/kids/img-kids-kongsun-nor.png"
+			}
+		],
+		[
+			{
+				"title": "3콩순이",
+				"imageN": "/assets/images/tmp/kids/img-kids-kongsun-nor.png"
+			},
+			{
+				"title": "미이라",
+				"imageN": "/assets/images/tmp/kids/img-kids-kongsun-nor.png"
+			},
+			{
+				"title": "리얼",
+				"imageN": "/assets/images/tmp/kids/img-kids-kongsun-nor.png"
+			},
+			{
+				"title": "보스베이비",
+				"imageN": "/assets/images/tmp/kids/img-kids-kongsun-nor.png"
+			},
+			{
+				"title": "원더우먼",
+				"imageN": "/assets/images/tmp/kids/img-kids-kongsun-nor.png"
+			},
+			{
+				"title": "악녀",
+				"imageN": "/assets/images/tmp/kids/img-kids-kongsun-nor.png"
+			},
+			{
+				"title": "악녀",
+				"imageN": "/assets/images/tmp/kids/img-kids-kongsun-nor.png"
+			}
+		],
+		[
+			{
+				"title": "4콩순이",
+				"imageN": "/assets/images/tmp/kids/img-kids-kongsun-nor.png"
+			},
+			{
+				"title": "미이라",
+				"imageN": "/assets/images/tmp/kids/img-kids-kongsun-nor.png"
+			},
+			{
+				"title": "리얼",
+				"imageN": "/assets/images/tmp/kids/img-kids-kongsun-nor.png"
+			},
+			{
+				"title": "보스베이비",
+				"imageN": "/assets/images/tmp/kids/img-kids-kongsun-nor.png"
+			},
+			{
+				"title": "원더우먼",
+				"imageN": "/assets/images/tmp/kids/img-kids-kongsun-nor.png"
+			},
+			{
+				"title": "악녀",
+				"imageN": "/assets/images/tmp/kids/img-kids-kongsun-nor.png"
+			},
+			{
+				"title": "악녀",
+				"imageN": "/assets/images/tmp/kids/img-kids-kongsun-nor.png"
+			}
+		],
+		[
+			{
+				"title": "악녀",
+				"imageN": "/assets/images/tmp/kids/img-kids-kongsun-nor.png"
+			},
+			{
+				"title": "악녀",
+				"imageN": "/assets/images/tmp/kids/img-kids-kongsun-nor.png"
+			},
+			{
+				"title": "악녀",
+				"imageN": "/assets/images/tmp/kids/img-kids-kongsun-nor.png"
+			},
+			{
+				"title": "대립군",
+				"hidden" : true,
+				"imageN": "/assets/images/tmp/kids/img-kids-kongsun-nor.png"
+			},
+			{
+				"title": "에일리언",
+				"hidden" : true,
+				"imageN": "/assets/images/tmp/kids/img-kids-kongsun-nor.png"
+			},
+			{
+				"title": "스파이더맨",
+				"hidden" : true,
+				"imageN": "/assets/images/tmp/kids/img-kids-kongsun-nor.png"
+			},
+			{
+				"title": "겟아웃",
+				"hidden" : true,
+				"imageN": "/assets/images/tmp/kids/img-kids-kongsun-nor.png"
+			}
+		]
+
+	]
+
+}

@@ -1,0 +1,24 @@
+{
+	"if": "IF-SCS-PRODUCT-UI5-003",
+	"ver": "1.0",
+	"svc_name": "product",
+	"result": "0000",
+	"reason": "success",
+	"STB_ID": "{0F9ECCFF-4279-11E6-8DD3-9B39E4396C7E}",
+	"CID": "{D0707F34-D493-11E1-B5A0-9DFFCD036A88}",
+	"PID": "2743192",
+	"TARGET_DISCOUNT": "01,02,03,04",
+	"TMS_INFO": {"TMS_SAVED_CARD_YN": "Y"},
+	"BPOINT_INFO": {"VAL_BPOINT": "0"},
+	"TVPOINT_INFO": {"VAL_TVPOINT": "0"},
+	"COUPON_INFO": {
+		"COUPON_COUNT": "1",
+		"COUPON_LIST": [
+			{"NO_COUPON": "3000"},
+			{"NM_COUPON": "VIP할인"},
+			{"AMT_DISCOUNT": "2500"}
+		]
+	},
+	"VERF_RES_DATA": "",
+	"CUR_TIME": ""
+}

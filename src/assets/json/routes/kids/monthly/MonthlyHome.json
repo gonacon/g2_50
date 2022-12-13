@@ -1,0 +1,35 @@
+[
+	{
+		"joined" : true,
+		"norImage" : "/assets/images/kids/monthly/img-super-nor.png",
+		"focImage" : "/assets/images/kids/monthly/img-super-foc.png"
+	},
+	{
+		"norImage" : "/assets/images/kids/monthly/img-superplus-nor.png",
+		"focImage" : "/assets/images/kids/monthly/img-superplus-foc.png"
+	},
+	{
+		"norImage" : "/assets/images/kids/monthly/img-club-nor.png",
+		"focImage" : "/assets/images/kids/monthly/img-club-foc.png"
+	},
+	{
+		"norImage" : "/assets/images/kids/monthly/img-ebs-nor.png",
+		"focImage" : "/assets/images/kids/monthly/img-ebs-foc.png"
+	},
+	{
+		"norImage" : "/assets/images/kids/monthly/img-jini-nor.png",
+		"focImage" : "/assets/images/kids/monthly/img-jini-foc.png"
+	},
+	{
+		"norImage" : "/assets/images/kids/monthly/img-super-nor.png",
+		"focImage" : "/assets/images/kids/monthly/img-super-foc.png"
+	},
+	{
+		"norImage" : "/assets/images/kids/monthly/img-superplus-nor.png",
+		"focImage" : "/assets/images/kids/monthly/img-superplus-foc.png"
+	},
+	{
+		"norImage" : "/assets/images/kids/monthly/img-club-nor.png",
+		"focImage" : "/assets/images/kids/monthly/img-club-foc.png"
+	}
+]

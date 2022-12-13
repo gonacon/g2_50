@@ -1,0 +1,22 @@
+/* CommerceProductClausePop.css */
+/* contentPop */
+.contentPop.CommerceProduct{display:block;position:fixed;top:1080px;left:0;right:0;bottom:0;z-index:10000;width:1920px;height:1080px;font-size:36px;color:#fff;line-height:48px;background:#000;}
+.contentPop.CommerceProduct .mainBg{top:1080px;}
+.contentPop.CommerceProduct .mainBg .bgColor{display:block;position:absolute;top:0px;left:0;right:0;bottom:0;background-color: rgba(41,58,80,1);}
+.innerContentPop{display:block;position:relative;height:740px;margin:180px 274px 0;}
+/*.innerContentPop .contentInfo::-webkit-scrollbar-track {border-radius:16px;background-color:rgba(0,0,0,0.3);}*/
+/*.innerContentPop .contentInfo::-webkit-scrollbar-thumb {border-radius:16px;width:32px;height:200px;background:#000 url('/assets/images/tmp/scroll_pop.png') no-repeat;}*/
+.innerContentPop .innerContentInfo{display:block;overflow-y:auto;height:100%;margin:0 auto;scroll-behavior:smooth;}
+.innerContentPop .innerContentInfo::-webkit-scrollbar {width:0;}
+.innerContentPop .contentInfo{display:block;width:1100px;margin:0 auto;}
+.innerContentPop .title{display:block;padding-bottom:64px;font-size:56px;text-align:center;line-height:76px;}
+.innerContentPop .contentText{display:block;font-size:34px;text-align:left;line-height:62px;}
+/*pop scroll*/
+.innerContentPop .scrollBarBox{display:block;position:absolute;top:0;bottom:0;right:14px;z-index:1005;width:32px;height:100%;}
+.innerContentPop .innerScrollBarBox{display:block;position:absolute;top:0;bottom:0;right:14px;z-index:1005;width:32px;height:100%;}
+/*.innerContentPop .innerScrollBarBox .scrollBar{display:block;position:absolute;top:0;left:0;right:0;border-radius:16px;width:32px;height:200px;background:url('/assets/images/synopsis/img-scroll-pop.png') no-repeat;box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.5);transition:transform ease-in-out 200ms, top ease-in-out 200ms;}*/
+.innerContentPop .innerScrollBarBox .scrollBar{display:block;position:absolute;top:0;left:0;right:0;border-radius:16px;width:32px;height:200px;background:#f4f4f4;box-shadow:0 24px 16px 0 rgba(0, 0, 0, 0.35);}
+.innerContentPop .innerScrollBarBox .scrollBar:before,
+.innerContentPop .innerScrollBarBox .scrollBar:after{position:absolute;top:0;left:0;z-index:10;display:block;width:32px;height:30px;content:"";background:url('/assets/images/common/icon/img-scroll-pop-up-foc.png') 0 0 no-repeat;}
+.innerContentPop .innerScrollBarBox .scrollBar:after{top:auto;bottom:0;background-image:url('/assets/images/common/icon/img-scroll-pop-down-foc.png');}
+.innerContentPop .innerScrollBarBox .scrollBarBG{display:block;width:16px;height:100%;margin:0 auto;border-radius:16px;background:rgba(0,0,0,0.3);}

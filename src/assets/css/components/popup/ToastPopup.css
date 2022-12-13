@@ -1,0 +1,30 @@
+/* ToastPopup.css */
+.toastPopupWrap {position:fixed; bottom:-150px; left:0; z-index:99999; width:100%; text-align:center;}
+.toastPopupWrap .toastCon {position:relative;bottom:0;display:table; padding:0 115px; width:100%; height:150px;background-image: linear-gradient(to bottom, rgba(38, 35, 52, 0.9), rgb(38, 35, 52));}
+.toastPopupWrap .toastCon .innerText {display:table-cell; width:100%; vertical-align:middle;}
+.toastPopupWrap .toastCon .guideText {font-size:28px; font-weight:700; line-height:1.43; color:#f4f4f4;}
+.toastPopupWrap .toastCon .errorCode {padding-top:10px; font-size:28px; line-height:1.43; color:#d4d4d4;}
+
+.toastPopupWrap.toastUp{-webkit-animation:toastOn 0.3s ease-out 0s forwards;}
+.toastPopupWrap.toastDown{-webkit-animation:toastOut 0.3s ease-out 0s forwards;}
+.toastPopupWrap.aniNone.toastUp{bottom:0;}
+.toastPopupWrap.aniNone.toastDown{bottom:-150px;}
+.toastPopupWrap.aniNone{-webkit-animation:none !important;}
+
+@-webkit-keyframes toastOn{
+	0%{
+		bottom:-150px;
+	}
+	100%{
+		bottom:0;
+	}
+}
+
+@-webkit-keyframes toastOut{
+	0%{
+		bottom:0;
+	}
+	100%{
+		bottom:-150px;
+	}
+}

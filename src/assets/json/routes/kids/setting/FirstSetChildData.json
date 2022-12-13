@@ -1,0 +1,19 @@
+{
+	"mainBg" : "/assets/images/kids/setting/bg-firstsetlimit-01.png",
+	"profileItem" : [{
+		"type" : "girl",
+		"name" : "이미소",
+		"birth" : "2017.8",
+		"age" : "만 2세"
+	},{
+		"type" : "boy",
+		"name" : "이찬우",
+		"birth" : "2016.8",
+		"age" : "만 3세"
+	},{
+		"type" : "nonData",
+		"name" : "",
+		"birth" : "",
+		"age" : ""
+	}]
+}

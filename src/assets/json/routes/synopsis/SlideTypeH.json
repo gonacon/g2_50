@@ -1,0 +1,41 @@
+{	"slideType" : "SlideTypeH",
+	"slideTitle": "이 콘텐츠를 감상한 다른 고객들의 선택",
+	"slideItem" : [
+		{
+			"movieName" : "효리네민박",
+			"image" : "/assets/images/tmp/synopsis/img-ep-tvshow-01.png",
+			"link" : ""
+		},
+		{
+			"movieName" : "알쓸신잡",
+			"image" : "/assets/images/tmp/synopsis/img-ep-tvshow-01.png",
+			"link" : ""
+		},
+		{
+			"movieName" : "비정상회담",
+			"image" : "/assets/images/tmp/synopsis/img-ep-tvshow-01.png",
+			"link" : ""
+		},
+		{
+			"movieName" : "효리네민박",
+			"image" : "/assets/images/tmp/synopsis/img-ep-tvshow-01.png",
+			"link" : ""
+		},
+		{
+			"movieName" : "알쓸신잡",
+			"image" : "/assets/images/tmp/synopsis/img-ep-tvshow-01.png",
+			"link" : ""
+		},
+		{
+			"movieName" : "효리네민박",
+			"image" : "/assets/images/tmp/synopsis/img-ep-tvshow-01.png",
+			"link" : ""
+		},
+		{
+			"movieName" : "알쓸신잡",
+			"image" : "/assets/images/tmp/synopsis/img-ep-tvshow-01.png",
+			"link" : ""
+		}
+	]
+
+}

@@ -1,0 +1,50 @@
+{
+	"slideType": "CHARACTER_BLOCK",
+	"slideTitle": "캐릭터별 VOD",
+	"slideItem": [
+		{
+			"title": "겟아웃",
+			"image": "/assets/images/tmp/kids/img-normal1-foc.png"
+		},
+		{
+			"title": "스파이더맨",
+			"image": "/assets/images/tmp/kids/img-normal2.png"
+		},
+		{
+			"title": "에일리언",
+			"image": "/assets/images/tmp/kids/img-normal4.png"
+		},
+		{
+			"title": "대립군",
+			"image": "/assets/images/tmp/kids/img-normal5.png"
+		},
+		{
+			"title": "하루",
+			"image": "/assets/images/tmp/kids/img-sub-character01.png"
+		},
+		{
+			"title": "악녀",
+			"image": "/assets/images/tmp/kids/img-normal1.png"
+		},
+		{
+			"title": "원더우먼",
+			"image": "/assets/images/tmp/home_B_01.png"
+		},
+		{
+			"title": "보스베이비",
+			"image": "/assets/images/tmp/home_B_01.png"
+		},
+		{
+			"title": "리얼",
+			"image": "/assets/images/tmp/home_B_01.png"
+		},
+		{
+			"title": "미이라",
+			"image": "/assets/images/tmp/home_B_01.png"
+		},
+		{
+			"title": "노무현입니다",
+			"image": "/assets/images/tmp/home_B_01.png"
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"slideType": "RecommendVOD",
+	"slideTitle": "인기 VOD TOP 3",
+	"slideItem": [
+		{
+			"title": "노무현입니다",
+			"image": "/assets/images/tmp/home_A_01.png",
+			"link": "/home/genre/Type1"
+		},
+		{
+			"title": "미이라",
+			"image": "/assets/images/tmp/home_A_01.png",
+			"link": "/home/genre/Type2"
+		},
+		{
+			"title": "리얼",
+			"image": "/assets/images/tmp/home_A_01.png",
+			"link": "/home/genre/Type3"
+		}
+	]
+}

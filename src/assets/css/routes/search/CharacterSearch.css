@@ -1,0 +1,36 @@
+:root{
+	--page:0;
+}
+.slideTypePerson .slideWrapper{transform:translate3d(calc(var(--page) * -288px),0,0);}
+
+.slideTypePerson .slideWrapper{display:flex;justify-content:space-between;}
+.slideTypePerson{padding-top:80px;}
+.slideTypePerson .slideWrap{position:relative;z-index:1;transform:translate(0,0);}
+/*.activeSlide .slideTypePerson .title {padding-bottom:0;}*/
+.slideTypePerson .title {font-size:36px; line-height:1.11; letter-spacing:-0.8px; color:#1a1a1a; opacity:0.8;}
+.slideTypePerson .slideWrap .slideCon {overflow:hidden; margin:-20px -38px -40px; padding:30px 20px 40px; font-size:0;}
+.slideTypePerson .slideWrap .slideWrapper .slide {display:inline-block; margin:0 20px;}
+.slideTypePerson .slideWrap .slideWrapper .slide .csFocus {overflow:hidden; position:relative; z-index:1; width:248px;height:287px; border-radius:4px; background-color:rgba(255,255,255,0.17); box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15); text-align:center;}
+.slideTypePerson .slideWrap .slideWrapper .slide .csFocus.focusOn {transform:scale(1.2,1.2); -webkit-transform:scale(1.2,1.2);background:#fff;}
+.slideTypePerson .slideWrap .slideWrapper .slide .csFocus span{display:block;}
+.slideTypePerson .slideWrap .slideWrapper .slide .csFocus .personVertical{display:inline-block;position:absolute;top:50%;left:0;right:0;transform:translate(0,-80%);}
+.slideTypePerson .slideWrap .slideWrapper .slide .csFocus .personName{display:-webkit-box;font-size:34px;font-weight:700;color:#fff;line-height:46px;overflow:hidden;text-overflow:ellipsis;-webkit-line-clamp:2;box-orient:vertical;-webkit-box-orient:vertical;}
+.slideTypePerson .slideWrap .slideWrapper .slide .csFocus .personJob{margin-top:12px;font-size:22px;color:#d4d4d4;line-height:26px;}
+.slideTypePerson .slideWrap .slideWrapper .slide .csFocus .personBirth{position:absolute;bottom:24px;left:0;z-index:10;width:100%;font-size:24px;color:#d4d4d4;line-height:25px;}
+.slideTypePerson .slideWrap .slideWrapper .slide .csFocus.focusOn .personName,
+.slideTypePerson .slideWrap .slideWrapper .slide .csFocus.focusOn .personJob{color:#f5513f;}
+.slideTypePerson .slideWrap .slideWrapper .slide .csFocus.focusOn .personBirth{color:#1a1a1a;}
+.slideTypePerson .leftArrow,
+.slideTypePerson .rightArrow{position:absolute;top:50%;left:-70px;z-index:10;transform:translate(0,-70%);width:23px;height:58px;background:url("/assets/images/common/icon/arrow-left.png") no-repeat 0 0;opacity:0;}
+.slideTypePerson .rightArrow{left:auto;right:-70px;background:url("/assets/images/common/icon/arrow-right.png") no-repeat 0 0;}
+.slideTypePerson .activeSlide.leftActive .leftArrow,
+.slideTypePerson .activeSlide.rightActive .rightArrow{opacity:1;}
+
+.contentGroup.activeSlide .slideTypePerson .title{transform:translate(0,-29px);}
+
+.slideTypePerson .activeSlide .slideCount{opacity:1;}
+.slideTypePerson .slideCount{opacity:0;position:absolute;top:-2px;right:0;z-index:10;font-size:23px;line-height:1;letter-spacing:normal;color:#6a6a6a;transform:translate(0,0);}
+.slideTypePerson .slideCount .current{font-weight:700;}
+.slideTypePerson .activeSlide.lastActive .slideCount{transform:translate(0,-29px);}
+
+.dark .slideTypePerson .slideCount{color: #d4d4d4;}

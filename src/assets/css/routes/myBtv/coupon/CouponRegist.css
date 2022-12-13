@@ -1,0 +1,12 @@
+/* CouponRegist.css */
+.registWrap.coupon {padding-top:102px;}
+.registWrap.coupon .contentBox {padding:0 35px;}
+.registWrap.coupon .contentBox.radioWrap {padding:0; margin-top:148px;}
+.registWrap.coupon .contentBox .optionWrap {margin-top:0;}
+.registWrap.coupon .contentBox.radioWrap .radioStyle {width:100%; letter-spacing:-1.2px; background:rgba(0,0,0,0.15);}
+.registWrap.coupon .radioContentWrapper {margin-top:40px;}
+.registWrap.coupon .radioContentWrapper .contentBox {display:none;}
+.registWrap.coupon .radioContentWrapper .contentBox.select {display:block;}
+.registWrap.coupon .contentBox.gift {padding:0 140px;}
+
+

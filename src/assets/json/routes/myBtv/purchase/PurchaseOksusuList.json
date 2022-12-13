@@ -1,0 +1,159 @@
+{
+	"pageType": "PurchaseOksusuList",
+	"pageTitle": "구매내역 - oksusu",
+	"oksusuConnect" : true,
+	"autoUse" : true,
+	"slideItem" :[
+		{
+			"image" : "/assets/images/tmp/home_A_01.png",
+			"itemTitleFull" : "11도깨비",
+			"priceInfo" : "11,200원에 구매 (부가세 포함)",
+			"itemType" : {
+				"title":"단편",
+				"imageQuality" : "UHD/HDR",
+				"language" : "한글자막"
+			},
+			"price" : "45000",
+			"purchaseDate" : "2017.05.03",
+			"usePeriod" : "만료임박",
+			"expiryDate" : "2017.05.07 18:23 까지",
+			"state" : "바로재생"
+		},
+		{
+			"image" : "/assets/images/tmp/home_A_01.png",
+			"itemTitleFull" : "22도깨비",
+			"priceInfo" : "11,200원에 구매 (부가세 포함)",
+			"itemType" : {
+				"title":"패키지",
+				"imageQuality" : "UHD/HDR"
+			},
+			"price" : "45000",
+			"purchaseDate" : "17.05.03",
+			"usePeriod" : "기간만료",
+			"expiryDate" : "2017.05.07 18:23 까지",
+			"state" : "재구매"
+		},
+		{
+			"image": "/assets/images/tmp/home_A_01.png",
+			"itemTitleFull": "33스타워즈 로그원 개봉 기념",
+			"priceInfo" : "11,200원에 구매 (부가세 포함)",
+			"itemType" : {
+				"title":"단편",
+				"imageQuality" : "UHD/HDR",
+				"language" : "한글자막"
+			},
+			"price": "45000",
+			"purchaseDate": "17.05.03",
+			"usePeriod": "만료 5일전",
+			"expiryDate": "2017.05.07 18:23 까지",
+			"state" : "상품정보"
+		},
+		{
+			"image" : "/assets/images/tmp/home_A_01.png",
+			"itemTitleFull" : "44스타워즈 로그원<br/> 개봉 기념",
+			"priceInfo" : "11,200원에 구매 (부가세 포함)",
+			"itemType" : {
+				"title":"패키지",
+				"imageQuality" : "UHD/HDR",
+				"language" : "한글자막"
+			},
+			"price" : "45000",
+			"purchaseDate" : "17.05.03",
+			"usePeriod" : "기간만료",
+			"expiryDate" : "2017.05.07 18:23 까지",
+			"state" : "상품정보"
+		},
+		{
+			"image" : "/assets/images/tmp/home_A_01.png",
+			"itemTitleFull" : "55스타워즈 로그원<br/> 개봉",
+			"priceInfo" : "11,200원에 구매 (부가세 포함)",
+			"itemType" : {
+				"title":"패키지",
+				"imageQuality" : "UHD/HDR",
+				"language" : "한글자막"
+			},
+			"price" : "45000",
+			"purchaseDate" : "17.05.03",
+			"usePeriod" : "기간만료",
+			"expiryDate" : "2017.05.07 18:23 까지",
+			"state" : "상품정보"
+		},
+		{
+			"image" : "/assets/images/tmp/home_A_01.png",
+			"itemTitleFull" : "66스타워즈 로그원 <br/>개봉",
+			"priceInfo" : "11,200원에 구매 (부가세 포함)",
+			"itemType" : {
+				"title":"패키지",
+				"imageQuality" : "UHD/HDR",
+				"language" : "한글자막"
+			},
+			"price" : "45000",
+			"purchaseDate" : "17.05.03",
+			"usePeriod" : "기간만료",
+			"expiryDate" : "2017.05.07 18:23 까지",
+			"state" : "상품정보"
+		},
+		{
+			"image" : "/assets/images/tmp/home_A_01.png",
+			"itemTitleFull" : "77스타워즈 로그원<br/> 개봉",
+			"priceInfo" : "11,200원에 구매 (부가세 포함)",
+			"itemType" : {
+				"title":"패키지",
+				"imageQuality" : "UHD/HDR",
+				"language" : "한글자막"
+			},
+			"price" : "45000",
+			"purchaseDate" : "17.05.03",
+			"usePeriod" : "기간만료",
+			"expiryDate" : "2017.05.07 18:23 까지",
+			"state" : "상품정보"
+		},
+		{
+			"image" : "/assets/images/tmp/home_A_01.png",
+			"itemTitleFull" : "88스타워즈 로그원<br/>개봉",
+			"priceInfo" : "11,200원에 구매 (부가세 포함)",
+			"itemType" : {
+				"title":"패키지",
+				"imageQuality" : "UHD/HDR",
+				"language" : "한글자막"
+			},
+			"price" : "45000",
+			"purchaseDate" : "17.05.03",
+			"usePeriod" : "기간만료",
+			"expiryDate" : "2017.05.07 18:23 까지",
+			"state" : "상품정보"
+		},
+		{
+			"image" : "/assets/images/tmp/home_A_01.png",
+			"itemTitleFull" : "99스타워즈 로그원<br/>개봉",
+			"priceInfo" : "11,200원에 구매 (부가세 포함)",
+			"itemType" : {
+				"title":"패키지",
+				"imageQuality" : "UHD/HDR",
+				"language" : "한글자막"
+			},
+			"price" : "45000",
+			"purchaseDate" : "17.05.03",
+			"usePeriod" : "기간만료",
+			"expiryDate" : "2017.05.07 18:23 까지",
+			"state" : "상품정보"
+		},
+		{
+			"image" : "/assets/images/tmp/home_A_01.png",
+			"itemTitleFull" : "10스타워즈 로그원<br/>개봉",
+			"priceInfo" : "11,200원에 구매 (부가세 포함)",
+			"itemType" : {
+				"title":"패키지",
+				"imageQuality" : "UHD/HDR",
+				"language" : "한글자막"
+			},
+			"price" : "45000",
+			"purchaseDate" : "17.05.03",
+			"usePeriod" : "기간만료",
+			"expiryDate" : "2017.05.07 18:23 까지",
+			"state" : "상품정보"
+		}
+	],
+	"defaultInfo" : "oksusu 구매내역은 구매일로부터 90일까지만 제공해 드립니다.",
+	"defaultSub" : "셋톱박스와 연결된 1개의 oksusu 계정으로만 콘텐츠 시청이 가능하며, 연결된 oksusu 계정을 해제 후 다른 계정으로 재연결 시<br />기존 계정의 ‘oksusu 구매내역 열람’ 및 ‘B tv소장용 VOD 영구 시청 권한 동의’ 설정값은 자동 초기화됩니다.<br />(연결중인 스마트 기기가 교체된 경우 셋톱박스와 oksusu를 다시 연결해 주세요.)"
+}

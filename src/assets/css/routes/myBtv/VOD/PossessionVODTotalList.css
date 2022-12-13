@@ -1,0 +1,62 @@
+/* PossessionVODTotalList.css */
+.possessionTotalList {position:relative; z-index:1; width:1920px; height:1080px; padding:77px 115px 83px 68px;}
+.possessionTotalList .title {position:relative; z-index:20; padding-left:47px; font-size:48px; line-height:1.08; letter-spacing:normal; color:rgba(136,136,136,1);}
+
+
+.possessionTotalList .vodImg {position:fixed; top:0; left:0; z-index:0; width:1920px; height:1080px; opacity:0.25;}
+
+.possessionTotalList .possessionListWrap {position:relative; z-index:1;transform:translate(0,0);}
+.possessionTotalList .listWrap {position:relative; z-index:1; padding-top:124px; width:1084px;}
+.possessionTotalList .listWrap .listTotalWrapper {padding:0 139px 26px; position:relative; z-index:1; height:313px; transform:translate(0,0);}
+.possessionTotalList .listWrap .listTotalWrapper:after {display:block; clear:both; content:"";}
+.possessionTotalList .listWrap .listTotalWrapper + .listTotalWrapper {margin-top:120px;}
+.possessionTotalList .listWrap .listTotalWrapper:after {content:"";  display:block; position:absolute; bottom:0; left:0; z-index:-1; width:100%; height:34px; background:url("/assets/images/myBtv/img-shelf-half.png") no-repeat left bottom;}
+.possessionTotalList .listWrap .listTotalWrapper .list {float:left; position:relative; z-index:1; width:197px; height:287px;}
+.possessionTotalList .listWrap .listTotalWrapper .list + .list {margin-left:99px;}
+.possessionTotalList .listWrap .listTotalWrapper .list img {}
+.possessionTotalList .listWrap .listTotalWrapper .list .csFocus {display:block; position:relative;}
+.possessionTotalList .listWrap .listTotalWrapper .list .csFocus img {display:block; width:100%; border-radius:4px;}
+.possessionTotalList .listWrap .listTotalWrapper .list .csFocus .imgWrap {display:block; position:relative; z-index:1; width:196px; height:287px; border-radius:5px;background:url('/assets/images/common/default/thumbnail_default_port.png') no-repeat 0 0;background-size:100% 100%;box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.2);}
+.possessionTotalList .listWrap .listTotalWrapper .list .csFocus .imgWrap:before {content:""; display:block; position:absolute; top:0; left:0; right:0; bottom:0; z-index:3; width:100%; height:100%; border-radius:4px; background:url("/assets/images/myBtv/img-recommend-cover.png") no-repeat;}
+.possessionTotalList .listWrap .listTotalWrapper .list .csFocus.focusOn .imgWrap:before {background:url("/assets/images/myBtv/img-recommend-cover-foc.png") no-repeat;}
+.possessionTotalList .listWrap .listTotalWrapper .list .csFocus.focusOn img {border-radius:5px;}
+.possessionTotalList .listWrap .listTotalWrapper .list .csFocus .slideTitle {display:block; margin-top:48px; opacity:0; line-height:30px; font-size:26px; color:#fff; font-weight:700; letter-spacing:-1px;}
+.possessionTotalList .listWrap .listTotalWrapper .list .csFocus {transform:scale(1,1); transform-origin:bottom;}
+.possessionTotalList .listWrap .listTotalWrapper .list .csFocus.focusOn {transform:scale(1.35,1.35);}
+
+.possessionTotalList .listWrap .listTotalWrapper .list .csFocus.focusOn +.imgS {display:block; position:absolute; z-index:-1; bottom:-58px; left:50%; width:400px; height:598px; background:url("/assets/images/myBtv/img-recommend-back-effect.png") no-repeat top left; background-size:400px 598px; transform:translate(-50%, 0);}
+.possessionTotalList .listWrap .listTotalWrapper + .listTotalWrapper .list .csFocus + .imgS {bottom:-22px; width:484px; height:427px; background-image:url("/assets/images/myBtv/img-recommend-back-effect-bottom.png"); background-size:484px 427px;}
+
+.possessionTotalList .listWrap .listTotalWrapper .list.addition .csFocus .imgWrap:before {background-image:url("/assets/images/myBtv/img-recommend-case-nor.png");}
+.possessionTotalList .listWrap .listTotalWrapper .list.addition .csFocus.focusOn .imgWrap:before {background-image:url("/assets/images/myBtv/img-recommend-case-foc.png");}
+.possessionTotalList .listWrap .listTotalWrapper .list.addition .csFocus .imgWrap:after {content:""; display:block; position:absolute; top:50%; left:50%; z-index:10; transform:translate(-50%, -50%); -webkit-transform:translate(-50%, -50%); width:70px; height:70px; background:url("/assets/images/myBtv/ic-plus-nor.png") no-repeat center center; }
+.possessionTotalList .listWrap .listTotalWrapper .list.addition .csFocus.focusOn .imgWrap:after {background-image:url("/assets/images/myBtv/ic-plus-foc.png");}
+.possessionTotalList .listWrap .arrow {display:none; position:absolute; top:76px; left:50%; z-index:10; margin-left:-22px; width:44px; height:16px; background:url("/assets/images/myBtv/arrow-menu-vod-up.png") no-repeat center center;}
+.possessionTotalList .listWrap.ArrowTopActive .arrow {display:block;}
+.possessionTotalList .listWrap.ArrowDownActive .arrow.down {display:block; top:auto; bottom:-43px; background:url("/assets/images/myBtv/arrow-menu-vod-down.png") no-repeat center center;}
+
+.possessionTotalList .listWrap .slideCount{opacity:1;position:absolute;top:95px;right:159px;z-index:10;font-size:23px;line-height:1;letter-spacing:normal;color:#6a6a6a;transform:translate(0,0);}
+.possessionTotalList .listWrap.lastActive .slideCount {transform:translate(0, -101px);}
+.possessionTotalList .listWrap .slideCount .current{font-weight:700;}
+
+.dark .possessionTotalList .listWrap .slideCount {color:#d4d4d4;}
+
+.possessionTotalList .possessionInfo {padding:0 0 0 32px; position:absolute; bottom:0; left:1084px; z-index:10;}
+.possessionTotalList .possessionInfo .vodTitle {font-size:74px; line-height:1.08; letter-spacing:normal; color:#f4f4f4;}
+.possessionTotalList .possessionInfo .vodInfo {padding-top:36px;}
+.possessionTotalList .possessionInfo .vodInfo span {display:inline-block; font-size:20px; line-height:1; letter-spacing:normal; text-align:center; color:rgba(170,170,170,1);}
+.possessionTotalList .possessionInfo .vodInfo span + span:after {content:""; display:inline-block; margin:0 12px; width:2px; height:22px; background:rgba(255, 255, 255, 0.2); vertical-align:middle;}
+.possessionTotalList .possessionInfo .vodInfo span:first-child{margin-right:10px;}
+.possessionTotalList .possessionInfo .vodInfo span:last-child:after{display:none;}
+/*.possessionTotalList .possessionInfo .vodInfo .age {display:inline-block; padding:7px 0; width:34px; height:34px; border-radius:34px; border:2px solid rgba(255, 255, 255, 0.6); text-align:center;}*/
+.possessionTotalList .possessionInfo .vodInfo .age {display:inline-block;}
+.possessionTotalList .possessionInfo .vodInfo .age .iconAge{margin-right:0;}
+.possessionTotalList .possessionInfo .personInfo {padding-top:12px;}
+.possessionTotalList .possessionInfo .personInfo:after {display:block; clear:both; content:"";}
+.possessionTotalList .possessionInfo .personInfo dt {float:left; width:50px; vertical-align:top; font-size:26px; line-height:1.46; letter-spacing:normal; color:rgba(74,74,74,1);}
+.possessionTotalList .possessionInfo .personInfo dd {margin-left:50px; padding-left:10px; font-size:26px; line-height:1.46; letter-spacing:normal; color:rgba(170,170,170,1);}
+.possessionTotalList .possessionInfo .personInfo dd:last-child{display:-webkit-box;overflow:hidden;text-overflow:ellipsis;white-space:normal;-webkit-line-clamp:2;-webkit-box-orient:vertical;height:78px;}
+
+.possessionTotalList .recommendCon {position:absolute; bottom:48px; left:1132px; z-index:10;}
+.possessionTotalList .recommendCon .recommendTitle {padding-bottom:32px; font-size:74px; line-height:1; color:#f4f4f4;}
+.possessionTotalList .recommendCon .recommendInfo {font-size:26px; line-height:1.46; color:#aaa;}

@@ -1,0 +1,52 @@
+{
+	"if": "IF-SCS-PRODUCT-UI5-001",
+	"ver": "1.0",
+	"svc_name": "product",
+	"result": "0000",
+	"reason": "success",
+	"STB_ID": "{0F9ECCFF-4279-11E6-8DD3-9B39E4396C7E}",
+	"epsd_id": "CE0000631969",
+	"sris_id": "CS0000027630",
+	"PREPAID": "0",
+	"PURCHASE_TIME": "",
+	"CHARGE_PERIOD": "5",
+	"CUR_TIME": "",
+	"POPUP": "5",
+	"CTS_INFO": [{
+		"CID": "{B4B100E1-CE60-11E6-B904-FB5CAA30EA15}",
+		"CNT_URL": "tvsrtsp://files.hanafostv.com:554/adult/10100/A330511_1_161230.ts.pac",
+		"FGQUALITY": "20",
+		"SAMPLING": "1",
+		"REQ_DRM": "3",
+		"REQ_MV": "1",
+		"YN_WATER_MARK": "N",
+		"EXTENSION": "WM_RATE|0^WM_INTERVAL|0^WM_REPEAT|0",
+		"WM_MODE": "0",
+		"NSCREEN": "1",
+		"YN_BIND": "",
+		"VOC_LAG": "",
+		"QUALITY_MEDIA": ""
+	}],
+	"PROD_INFO": [
+		{
+			"PTYPE": "10",
+			"PTYPE_STR": "일반[HD]",
+			"TARGET_PAYMENT": "90,2",
+			"PROD_DTL": 
+				{
+					"PID": "4979116",
+					"PNAME": "상품명",
+					"ID_MCHDSE": "111111",
+					"PROD_DESC": "",
+					"PRICE": "1000",
+					"V_PRICE": "1100",
+					"DUETIME": "48",
+					"DUETIME_PERIOD": "2일",
+					"DUETIME_STR": "2017년 02월 04일 01시 까지",
+					"CLTYN": "N",
+					"IFTYN": "N"
+				}
+		}
+	],
+	"VERF_RES_DATA": ""
+}

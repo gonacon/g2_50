@@ -1,0 +1,23 @@
+/* FirstSetAlarm.css */
+.alarmListWrap{height:637px;padding-top:86px;}
+.alarmListWrap .alarmList {display:flex; justify-content:center;padding-top:0;}
+.alarmListWrap .alarmList li{text-align:center;}
+.alarmListWrap .alarmList li .item {display:block;}
+.alarmListWrap .alarmList li .item .inner {display:block; padding:33px; width:376px; height:376px; background:url("/assets/images/kids/setting/img-alarm-nor.png") no-repeat center center; text-align:center;}
+.alarmListWrap .alarmList li .item .text {display:block; padding-top:166px; background:url("/assets/images/kids/setting/ic-school.png") no-repeat center top; background-size:156px; font-size:32px; font-weight:700; line-height:normal; letter-spacing:normal; text-align:center; color:rgb(0, 0, 0);}
+.alarmListWrap .alarmList li.meal .item .text {background-image:url("/assets/images/kids/setting/ic-fork.png");}
+.alarmListWrap .alarmList li.rest .item .text {background-image:url("/assets/images/kids/setting/ic-rest.png");}
+.alarmListWrap .alarmList li.sleep .item .text {background-image:url("/assets/images/kids/setting/ic-sleep.png");}
+.alarmListWrap .alarmList li.nonData .item .inner{background:url("/assets/images/kids/setting/img-alarm-add-nor.png") no-repeat center center;}
+.alarmListWrap .alarmList li.nonData .item .text{padding-top:183px;background:url("/assets/images/kids/setting/ic-timeslot-add-nor.png") no-repeat center top 92px;background-size:65px;font-weight:500;}
+.alarmListWrap .alarmList li.nonData .item.focusOn .inner{background:url("/assets/images/kids/setting/img-alarm-foc.png") no-repeat center center;}
+.alarmListWrap .alarmList li.nonData .item.focusOn .text{padding-top:183px;background:url("/assets/images/kids/setting/ic-timeslot-add-foc.png") no-repeat center top 92px;background-size:65px;font-weight:700;}
+
+.alarmListWrap .detailAlarm {display:block; padding-top:20px;}
+.alarmListWrap .detailAlarm span {font-size:23px; font-weight:700; line-height:normal; letter-spacing:normal; color:rgba(0, 0, 0, 0.6);}
+.alarmListWrap .detailAlarm .time {}
+.alarmListWrap .detailAlarm .count:before {display:inline-block; margin:3px 10px; width:2px; height:19px; background-color:rgba(0, 0, 0, 0.3); vertical-align:top; content:"";}
+.alarmListWrap .detailAlarm .day {display:block; margin-top:10px;}
+
+.alarmList li .item + .alarmDel {display:none;margin-top:36px;}
+.alarmList li.focus .alarmDel {display:inline-block;}

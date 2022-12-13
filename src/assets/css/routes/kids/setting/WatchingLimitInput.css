@@ -1,0 +1,7 @@
+/* WatchingLimitInput.css */
+.settingRegistWrap.watchTime {}
+.settingRegistWrap.watchTime .registerForm {padding-top:204px;}
+.settingRegistWrap.watchTime .contentBox:after {display:block; clear:both; content:"";}
+.settingRegistWrap.watchTime .gridWrap {float:left;}
+.settingRegistWrap.watchTime .gridWrap + .gridWrap {position:relative; z-index:1; padding-left:169px;}
+.settingRegistWrap.watchTime .gridWrap + .gridWrap:before {content:"~"; display:block; position:absolute; top:50%; left:50px; z-index:10; margin-top:-30px; font-size: 70px; font-weight: 700; line-height: 0.86; letter-spacing: normal; text-align: center; color: rgba(244, 244, 244, 0.8);}

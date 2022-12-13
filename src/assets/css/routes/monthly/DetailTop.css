@@ -1,0 +1,53 @@
+/* DetailTop.css */
+.kidsMonthlyDetail{padding: 0 115px;}
+.detailWrapper {padding:0 115px;}
+.detailWrapper .contentBg {position:fixed; left:0; z-index:-1; width:1920px; height:580px;}
+
+.detailWrapper .contentBg + .contentGroup .slideTypeA {padding-top:48px;}
+
+.detailWrapper .btnTopWrap{padding:119px 0 169px;}
+
+.detailTop {padding:0;margin:0 -115px;}
+.detailTop .detailBg{height:400px;}
+.detailTop .detailBg img{display:block;width:100%;}
+/*.detailTop .logo {padding-bottom:25px;}*/
+/*.detailTop .logo .title {display:inline-block; padding-bottom:3px; font-size:58px; line-height:65px; color:rgba(255,255,255,1); font-weight:700; vertical-align:bottom;}*/
+.detailTop .subText {position:absolute;top:172px;right:115px;z-index:10;}
+/*.detailTop .subText .textDetail {font-size:30px; line-height:42px; color:rgba(255,255,255,1);}*/
+/*.detailTop .subText .subDetailInfo {display:inline-block; padding-top:24px; font-size:26px; line-height:44px; color:rgba(212,212,212,1);}*/
+
+.detailTop .subText .surtaxText{display:block;margin-top:36px;font-size:22px;color:rgba(212,212,212,1);line-height:24px;text-align:right;font-weight:700;}
+
+.listBtnType {display:flex;}
+.listBtnType .listItem {}
+.listBtnType .listItem .csFocus {padding:21px 26px 22px 24px; width:auto; height:120px; border-radius:4px; background-color:rgba(255, 255, 255, 0.17); box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.15);}
+.listBtnType .listItem .csFocus.focusOn {transform:scale(1.1); -webkit-transform:scale(1.1); background-color:rgba(244,244,244,1); box-shadow:0 17px 24px 0 rgba(0, 0, 0, 0.35);}
+.listBtnType .listItem .csFocus .price {font-size:24px; line-height:36px; color:rgba(212,212,212,1);}
+.listBtnType .listItem .csFocus .price strong {padding-right:8px; font-size:36px; line-height:52px; font-weight:normal;}
+.listBtnType .listItem .csFocus.focusOn .price,
+.listBtnType .listItem .csFocus.focusOn .selectType {color:rgba(245,81,63,1);}
+.listBtnType .listItem .csFocus .selectType {font-size:26px; font-weight:bold; line-height:38px; color:rgba(244,244,244,1);}
+
+.kidDetailAfterTopBanner{margin:0 -115px;padding:0 115px;}
+
+/* slide arrow,slidecount */
+.kidsMonthlyDetail .contentGroup .slideTypeB{padding-top:60px;}
+.kidsMonthlyDetail .contentGroup .slideTypeC{padding-top:104px;}
+.kidsMonthlyDetail .contentGroup .slideTypeB .slideWrap .slideCon {margin: -20px -38px -115px;padding: 20px 18px 115px;}
+.kidsMonthlyDetail .contentGroup .slideTypeB .leftArrow,
+.kidsMonthlyDetail .contentGroup .slideTypeB .rightArrow{position:absolute;top:50%;left:-85px;z-index:10;transform:translate(0,-50%);margin-top:-46px;width:72px;height:100px;background:url("/assets/images/kids/button/arrow-left.png") no-repeat 0 0;opacity:0;}
+.kidsMonthlyDetail .contentGroup .slideTypeB .rightArrow{left:auto;right:-85px;background:url("/assets/images/kids/button/arrow-right.png") no-repeat 0 0;}
+.kidsMonthlyDetail .contentGroup .slideTypeB .activeSlide:not(.firstActive) .leftArrow,
+.kidsMonthlyDetail .contentGroup .slideTypeB .activeSlide:not(.lastActive) .rightArrow{opacity:1;}
+.kidsMonthlyDetail .contentGroup .slideTypeB .activeSlide.lastActive .slideCount,
+.kidsMonthlyDetail .contentGroup .slideTypeC .activeSlide.lastActive .slideCount{transform:translate(0,-25px);}
+
+.kidsMonthlyDetail .contentGroup .slideTypeC .leftArrow,
+.kidsMonthlyDetail .contentGroup .slideTypeC .rightArrow{left:-85px;width:72px;height:100px;transform:translate(0,-65%);background:url("/assets/images/kids/button/arrow-left.png") no-repeat 0 0;}
+.kidsMonthlyDetail .contentGroup .slideTypeC .rightArrow{left:auto;right:-85px;background:url("/assets/images/kids/button/arrow-right.png") no-repeat 0 0;}
+
+.kidsMonthlyDetail .contentGroup .slideTypeB .activeSlide .slideCount{opacity:1;}
+.kidsMonthlyDetail .contentGroup .slideTypeB .slideCount{opacity:0;position:absolute;top:-16px;right:0;z-index:10;font-size:23px;line-height:36px;letter-spacing:normal;color:#6a6a6a;transform:translate(0,0);}
+.kidsMonthlyDetail .contentGroup .slideTypeB .slideCount .current{font-weight:700;}
+
+.kidsMonthlyDetail .btnTopWrap {padding:150px 0 60px}

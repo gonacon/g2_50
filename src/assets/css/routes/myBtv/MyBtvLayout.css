@@ -1,0 +1,39 @@
+/* MyBtvLayout.css */
+/* list layout */
+.myBtvLayout {position:relative; z-index:1; padding:78px 115px; height:1080px;}
+.myBtvLayout .pageTitle {padding-bottom:14px; font-size:46px; line-height:1.13; color:#1a1a1a;}
+.myBtvLayout .subInfo {font-size:34px; line-height:1.12; letter-spacing:-1px; color:#6a6a6a;}
+.myBtvLayout .subInfo .count {font-size:34px; font-weight:700; line-height:1.12; letter-spacing:normal; text-align:left; color:#000;}
+.myBtvLayout .cardDetail {position:absolute; bottom:94px; font-size:28px; line-height:1.43; letter-spacing:normal; color:#6a6a6a;}
+.myBtvLayout .cardDetail .dotList li {position:relative; z-index:1; padding-left:28px;}
+.myBtvLayout .cardDetail .dotList li:before {content:""; display:inline-block; position:absolute; top:50%; left:11px; z-index:5; margin-top:-3px; width:6px; height:6px; border-radius:6px; background:#6a6a6a;}
+
+/* regist layout */
+.registWrap {position:relative; z-index:1; padding:102px 530px 0; width:1920px; height:1080px; background:url("/assets/images/common/bg/bg_popup.png") no-repeat 0 0; text-align:center;}
+.registWrap .pageTitle {padding-bottom:20px; font-size:52px; line-height:1; color:#f4f4f4;}
+.registWrap .subInfo {font-size:30px; line-height:1.4; letter-spacing:normal; text-align:center; color:#aaa;}
+.registWrap {padding-top:148px;}
+.registWrap .buttonWrap {position:absolute; left:50%; bottom:128px; z-index:1; transform:translate(-50%, 0); -webkit-transform:translate(-50%, 0);}
+.registWrap .buttonWrap .btnStyle + .btnStyle {margin-left:26px;}
+.registWrap .contentBox +.contentBox.addition {margin-top:78px;}
+
+
+.gridStyle.card {width:160px;}
+.gridStyle.card:before {display:block; position:absolute; top:50%; left:-50px; z-index:1; margin-top:-8px; width:50px; text-align:center; color:rgba(244,244,244,0.4); content:"-";}
+.gridStyle.card:first-child:before {display:none;}
+.gridStyle.card .inputText {width:160px; text-align:center;}
+.gridStyle.card .inputText.focusOn {padding-left:9px; padding-right:9px; font-size:56px; text-align:left;}
+.gridStyle.card .inputText.focusOn + label {width:180px;}
+.gridStyle.card .inputText.focusOn::-webkit-input-placeholder {font-size:50px;}
+
+.password,
+.password .inputText {width:330px;}
+.password .inputText.focusOn + label {width:350px;}
+
+.gridStyle.password .errorText {display:none;}
+.gridStyle.password.error label {border:2px solid #a13021;}
+.gridStyle.password.error .inputText + label:after {display:block; position:absolute; top:50%; right:-60px; z-index:10; transform:translate(0,-50%); -webkit-transform:translate(0,-50%); width:40px; height:35px; background:url("/assets/images/icon/password-inaccuracy.png") no-repeat center center; content:"";}
+.gridStyle.password.error .errorText {display:block; position:absolute; top:104px; left:0; width:358px; line-height:1.54; font-size:26px; color:#c33e32; opacity:0.9; text-align:left;}
+.gridStyle.password.error .inputText.focusOn + label:after {right:-65px;}
+.gridStyle.password.error .inputText.focusOn + label + .errorText {top:110px;}
+.gridStyle.password.correct .inputText + label:after {display:block; position:absolute; top:50%; right:-58px; z-index:10; transform:translate(0,-50%); -webkit-transform:translate(0,-50%); width:38px; height:38px; background:url("/assets/images/icon/password-accuracy.png") no-repeat center center; content:"";}

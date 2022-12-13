@@ -1,0 +1,61 @@
+[{
+	"menuText" : "월정액",
+	"menuClass" : "monthlyMenu",
+	"menuIconNormal" : "",
+	"menuIconFocus" : "",
+	"menuIconSelect" : ""
+},{
+	"menuText" : "마이 B tv",
+	"menuClass" : "myBtvMenu",
+	"menuIconNormal" : "",
+	"menuIconFocus" : "",
+	"menuIconSelect" : ""
+},{
+	"menuText" : "",
+	"menuClass" : "homeMenu",
+	"menuIconNormal" : "/assets/images/common/icon/ic-home-nor.png",
+	"menuIconFocus" : "/assets/images/common/icon/ic-home-foc.png",
+	"menuIconSelect" : "/assets/images/common/icon/ic-home-sel.png"
+},{
+	"menuText" : "영화·시리즈",
+	"menuClass" : "movieMenu",
+	"menuIconNormal" : "",
+	"menuIconFocus" : "",
+	"menuIconSelect" : ""
+},{
+	"menuText" : "TV 다시보기",
+	"menuClass" : "tvMenu",
+	"menuIconNormal" : "",
+	"menuIconFocus" : "",
+	"menuIconSelect" : ""
+},{
+	"menuText" : "애니",
+	"menuClass" : "aniMenu",
+	"menuIconNormal" : "",
+	"menuIconFocus" : "",
+	"menuIconSelect" : ""
+},{
+	"menuText" : "키즈",
+	"menuClass" : "kidMenu",
+	"menuIconNormal" : "",
+	"menuIconFocus" : "",
+	"menuIconSelect" : ""
+},{
+	"menuText" : "다큐·라이프·교육",
+	"menuClass" : "docuMenu",
+	"menuIconNormal" : "",
+	"menuIconFocus" : "",
+	"menuIconSelect" : ""
+},{
+	"menuText" : "",
+	"menuClass" : "searchMenu",
+	"menuIconNormal" : "/assets/images/common/icon/ic-search-nor.png",
+	"menuIconFocus" : "/assets/images/common/icon/ic-search-foc.png",
+	"menuIconSelect" : ""
+},{
+	"menuText" : "",
+	"menuClass" : "allMenu",
+	"menuIconNormal" : "/assets/images/common/icon/ic-menu-nor.png",
+	"menuIconFocus" : "/assets/images/common/icon/ic-menu-foc.png",
+	"menuIconSelect" : ""
+}]

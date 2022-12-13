@@ -1,0 +1,97 @@
+{
+	"pageType": "BpointHistory",
+	"pageTitle": "B포인트 이용내역",
+	"remains": "30200",
+	"slideItem" :[
+		{
+			"date" : "2017.09.15",
+			"title" : "B tv 창립기념 5천점 무료 적립",
+			"expiryDate" : "사용완료",
+			"money": "5500"
+		},
+		{
+			"date" : "2017.09.15",
+			"title" : "B tv 창립기념 5천점 무료 적립",
+			"remains" : "5000",
+			"expiryDate" : "사용완료"
+		},
+		{
+			"date" : "2017.09.15",
+			"title" : "B tv 창립기념 5천점 무료 적립",
+			"remains" : "5000",
+			"money": "5500"
+		},
+		{
+			"date" : "2017.09.15",
+			"title" : "B tv 창립기념 5천점 무료 적립",
+			"remains" : "5000",
+			"expiryDate" : "사용완료",
+			"money": "5500"
+		},
+		{
+			"date" : "2017.09.15",
+			"title" : "B tv 창립기념 5천점 무료 적립",
+			"remains" : "5000",
+			"expiryDate" : "사용완료",
+			"money": "5500"
+		},
+		{
+			"date" : "2017.09.15",
+			"title" : "B tv 창립기념 5천점 무료 적립",
+			"remains" : "5000",
+			"expiryDate" : "사용완료",
+			"money": "5500"
+		},
+		{
+			"date" : "2017.09.15",
+			"title" : "B tv 창립기념 5천점 무료 적립",
+			"remains" : "5000",
+			"expiryDate" : "사용완료",
+			"money": "5500"
+		},
+		{
+			"date" : "2017.09.15",
+			"title" : "B tv 창립기념 5천점 무료 적립",
+			"remains" : "5000",
+			"expiryDate" : "사용완료",
+			"money": "5500"
+		},
+		{
+			"date" : "2017.09.15",
+			"title" : "B tv 창립기념 5천점 무료 적립",
+			"remains" : "5000",
+			"expiryDate" : "사용완료",
+			"money": "5500"
+		},
+		{
+			"date" : "2017.09.15",
+			"title" : "B tv 창립기념 5천점 무료 적립",
+			"remains" : "5000",
+			"expiryDate" : "사용완료",
+			"money": "5500"
+		},
+		{
+			"date" : "2017.09.15",
+			"title" : "B tv 창립기념 5천점 무료 적립",
+			"remains" : "5000",
+			"expiryDate" : "사용완료",
+			"money": "5500"
+		},
+		{
+			"date" : "2017.09.15",
+			"title" : "B tv 창립기념 5천점 무료 적립",
+			"remains" : "5000",
+			"expiryDate" : "사용완료",
+			"money": "5500"
+		},
+		{
+			"date" : "2017.09.15",
+			"title" : "B tv 창립기념 5천점 무료 적립",
+			"remains" : "5000",
+			"expiryDate" : "사용완료",
+			"money": "5500"
+		}
+	],
+	"caution": ""
+
+}

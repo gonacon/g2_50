@@ -1,0 +1,47 @@
+/* OkCashManage.css */
+.okCashManage .pageTitle {padding-bottom:16px; font-size:46px; line-height:1.13; letter-spacing:-1.4px; color:rgba(26,26,26,1);}
+.okCashManage .cardWrap {display:flex; justify-content:center; padding-top:108px; text-align:center;}
+.okCashManage .cardWrap .cardItemWrapper {padding:0 7px;}
+.okCashManage .cardWrap .card {display:block; position:relative; z-index:1; padding:110px 0 20px; width:540px; height:336px; background:url('/assets/images/myBtv/okcash.png'); border-radius:12px;}
+.okCashManage .cardWrap .card {transform:scale(0.83); -webkit-transform:scale(0.83);}
+.okCashManage .cardWrap .card .iconUse {position:absolute; top:15px; right:15px; z-index:10; padding:5px 12px 3px 29px; background:linear-gradient(284deg, #ff6e35, #ea304a); border-radius:100px; font-size:24px; line-height:1.25; letter-spacing:-0.5px; color:#f4f4f4;}
+.okCashManage .cardWrap .card .iconUse:before {content:""; display:block; position:absolute; left:9px; top:50%; z-index:20; margin-top:-6px; width:14px; height:12px; background:url('/assets/images/myBtv/ic-checked-major.png') no-repeat left center; background-size:14px 12px;}
+.okCashManage .cardWrap .card .pointWrap {position:relative; z-index:1;}
+.okCashManage .cardWrap .card .pointWrap .pointTitle {display:block; padding-bottom:12px; font-size:30px; font-weight:700; line-height:1; letter-spacing:normal; text-align:center; color:#4a4a4a;}
+.okCashManage .cardWrap .card .pointWrap .pointCheck {padding:5px 0 69px; font-weight:700; font-size:34px; line-height:1.41; color:rgba(0, 0, 0, 0.6);}
+.okCashManage .cardWrap .card .pointWrap .point {padding-bottom:56px; text-align:center;}
+.okCashManage .cardWrap .card .pointWrap .point .pointNumber {font-size:64px; font-weight:700; line-height:normal; letter-spacing:normal; color:#1a1a1a;}
+.okCashManage .cardWrap .card .pointWrap .point .pointUnit {font-size:48px; line-height:normal; letter-spacing:normal; color:#1a1a1a;}
+.okCashManage .cardWrap .card .cardNumber {font-size:30px; line-height:1; letter-spacing:normal; color:#6a6a6a;}
+.okCashManage .cardWrap .card .cardNumber span + span {margin-left:10px;}
+
+
+.okCashManage .cardWrap .cardItem.selected .card {background-image:url('/assets/images/myBtv/okcash-focus.png'); box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.15); transform:scale(1); -webkit-transform:scale(1);}
+.okCashManage .cardWrap .cardItem .card.focusOn {background-image:url('/assets/images/myBtv/okcash-focus.png'); box-shadow:0 24px 16px 0 rgba(0, 0, 0, 0.35); transform:scale(1.05); -webkit-transform:scale(1.05);}
+.okCashManage .cardWrap .card.focusOn .pointWrap .pointCheck {color:#f5513f; opacity:1;}
+.okCashManage .cardWrap .card.focusOn .pointWrap .point .pointNumber,
+.okCashManage .cardWrap .card.focusOn .pointWrap .point .pointUnit {color:#f5513f; opacity:1;}
+
+.okCashManage .buttonWrap {display:none;}
+.okCashManage .cardItem.selected .buttonWrap {display:block;}
+.okCashManage .buttonWrap {margin-top:58px; text-align:center;}
+.okCashManage .buttonWrap .checkStyle2 {display:inline-block; width:308px; height:64px; text-align:left;}
+.okCashManage .buttonWrap .checkStyle2 {border:none;}
+.okCashManage .buttonWrap .checkStyle2 .title {font-size:26px; font-weight:700; line-height:1.31; color:rgba(255, 255, 255, 0.9);}
+.okCashManage .buttonWrap .checkStyle2:before {opacity:1; background:rgba(15, 23, 72, 0.35);}
+.okCashManage .buttonWrap .checkStyle2.focusOn .title {color:#f5513f;}
+.okCashManage .buttonWrap .checkStyle2.focusOn:before {left:-8px; right:-8px; top:-8px; bottom:-8px; background:#f4f4f4;  box-shadow:0 24px 16px 0 rgba(0, 0, 0, 0.35);}
+.okCashManage .buttonWrap .checkStyle2 + .btnStyleLight3 {margin-left:26px; vertical-align:top;}
+.okCashManage .buttonWrap .checkStyle2 + .btnStyleLight3:before {background:rgba(15, 23, 72, 0.35);}
+.okCashManage .buttonWrap .checkStyle2 + .btnStyleLight3.focusOn:before {background:#f4f4f4;}
+
+.okCashManage .bottomWrap {position:absolute; bottom:0; left:0; z-index:100; width:100%; height:220px; background-color:rgba(237, 239, 243, 0.5);box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1);}
+.okCashManage .bottomWrap .defaultWrap {display:block; padding:41px 116px; text-align:center;}
+.okCashManage .bottomWrap .defaultWrap .infoText{font-size:32px; line-height:1.44; letter-spacing:normal; color:#6a6a6a;}
+
+/* none */
+.okCashManage .cardWrap .cardNone .card {position:relative; z-index:1; width:540px; height:336px; background:rgba(145, 147, 157, 0.2);}
+.okCashManage .cardWrap .cardNone .card .inner {display:block;}
+.okCashManage .cardWrap .cardNone .card .registText {display:inline-block; padding-top:100px; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); z-index:10; background:url('/assets/images/myBtv/card-regist-inactive.png') no-repeat top center; background-size:78px; font-size:36px; font-weight:700; line-height:1.09; text-align:center; color:#4a4a4a;}
+.okCashManage .cardNone .card.focusOn {transform:scale(1.05); -webkit-transform:scale(1.05); background:rgb(244, 244, 244); box-shadow:0 24px 16px 0 rgba(0, 0, 0, 0.35);}
+.okCashManage .cardNone .card.focusOn .registText {background-image:url('/assets/images/myBtv/card-regist-active.png'); color:#f5513f;}

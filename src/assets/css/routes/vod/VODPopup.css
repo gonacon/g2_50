@@ -1,0 +1,12 @@
+/* VODPopup.css */
+.popupWrap .popupCon.wide{padding: 95px 110px 88px;}
+.popupWrap .popupCon .popupVOD .subTitle{font-size:30px;color:rgba(74,74,74,1);line-height:42px;}
+
+.popupVOD .progressWrap{width:710px;margin-top:70px;}
+.popupVOD .progressWrap .ingTime{display: inline-block;margin-right: 14px;font-size: 26px;color: rgba(0,0,0,1);line-height: 36px;font-weight: 700;vertical-align: middle;}
+.popupVOD .progressWrap .endTime {display: inline-block;margin-left: 14px;font-size: 26px;color: rgba(0,0,0,0.55);line-height: 36px;vertical-align: middle;}
+
+.popupVOD .progressWrap .loadingBar {display: inline-block;position:relative;width:420px;height:8px;background:rgba(0,0,0,0.3);transform:translate3d(0,0,0);}
+.popupVOD .progressWrap .loadingBar .currentState {position:absolute;bottom:0;left:0;z-index:20;height:8px;background:linear-gradient(to right, #e5186f, #ff7422);}
+
+.popupWrap .popupCon .popupVOD .btnWrap{margin-top:70px;}

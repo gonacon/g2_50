@@ -1,0 +1,22 @@
+/* PopupDefault.css */
+.popupWrap{position:fixed;top:0;left:0;z-index:100;width:100%;height:1080px;background:rgba(0,0,0,0.7);}
+.popupWrap .popupCon{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);padding:95px 70px 88px;min-width:750px;text-align:center;border-radius:10px;background:#d2d5db;box-shadow:0 50px 60px 0 rgba(0, 0, 0, 0.5);}
+.popupWrap .popupCon .title{font-size:48px;line-height:54px;font-weight:700;color:#1a1a1a;}
+.popupWrap .popupCon .subTitle{margin-top:25px;font-size:30px;line-height:32px;color:#6a6a6a;}
+.popupWrap .popupCon .popupText{margin:60px 0;font-size:40px;line-height:48px;color:#4a4a4a;}
+.popupWrap .popupCon .btnWrap{margin-top:50px;}
+.btnWrap .focusOn .wrapBtnText{transform:scale(1.15,1.15);}
+/*.popupWrap .popupCon .btnWrap .csFocusPop{margin:0 13px;padding:22px 68px;font-size:28px;line-height:36px;font-weight:700;color:rgba(255,255,255,0.9);border-radius:4px;letter-spacing:0;background:rgba(91, 94, 112, 0.85);box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.15);}*/
+/*.popupWrap .popupCon .btnWrap .csFocusPop.focusOn{transform:scale(1.15);color:#f5513f;background:#fff;box-shadow:0 24px 16px 0 rgba(0, 0, 0, 0.35);}*/
+
+.fullPopup {position:relative; z-index:1; padding:250px 410px 0; width:1920px; height:1080px; background:url("/assets/images/common/bg/bg_popup.png") no-repeat 0 0; text-align:center;}
+.fullPopup .pageTitle {padding-bottom:20px; font-size:52px; line-height:1; color:#f4f4f4;}
+.fullPopup .pageText {position:absolute;top:300px;bottom:390px;left:410px;right:410px;z-index:10;}
+.fullPopup .pageText .textAll{position:absolute;top:50%;left:0;right:0;z-index:10;transform:translate(0,-50%);font-size:36px;line-height:52px;color:#d4d4d4;}
+.fullPopup .buttonWrap {position:absolute; left:50%; bottom:300px; z-index:1; transform:translate(-50%, 0); -webkit-transform:translate(-50%, 0);}
+.fullPopup .buttonWrap .btnStyle + .btnStyle {margin-left:26px;}
+
+
+
+
+

@@ -1,0 +1,54 @@
+/* SlideTypeJoined.css */
+:root{
+	--page:0;
+}
+.slideTypeJoined .slideWrapper{transform:translate3d(calc(var(--page) * -288px),0,0);}
+.slideTypeJoined .slideWrapper{display:flex;justify-content:space-between;}
+
+.slideTypeJoined{padding-top:80px;}
+.slideTypeJoined .title {padding-bottom:5px; font-size:36px; line-height:1.11; letter-spacing:-0.8px; color:#1a1a1a; opacity:0.8;}
+.slideTypeJoined .slideWrap {position:relative; z-index:1;transform:translate(0,0);}
+.slideTypeJoined .slideWrap .slideCon {overflow:hidden; margin:-20px -26px -40px; padding:24px 10px 40px; font-size:0;}
+.slideTypeJoined .slideWrap .slideWrapper .slide {display:inline-block; margin:0 21px;}
+.slideTypeJoined .slideWrap .slideWrapper .slide .csFocus {overflow:hidden; width:246px; height:161px; position:relative; z-index:1; border-radius:4px; box-shadow:0 4px 6px 0 rgba(0, 0, 0, 0.5); background:#000;}
+/*.slideTypeJoined .slideWrap .slideWrapper .slide.csFocus:before {display:block; width:100%; height:100%; position:absolute; top:0; left:0; z-index:5; background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), linear-gradient(149deg, #7c6aff, #6ab8ff); opacity:0.3; content:"";}*/
+.slideTypeJoined .slideWrap .slideWrapper .slide .csFocus > img {position:absolute; top:0; left:0; z-index:10;}
+.slideTypeJoined .slideWrap .slideWrapper .slide .csFocus .norImg {opacity:1;}
+.slideTypeJoined .slideWrap .slideWrapper .slide .csFocus .focImg {opacity:0;}
+.slideTypeJoined .slideWrap .slideWrapper .slide .csFocus.focusOn {transform:scale(1.12,1.12); -webkit-transform:scale(1.12,1.12); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.4);}
+.slideTypeJoined .slideWrap .slideWrapper .slide .csFocus.focusOn .norImg {opacity:0;}
+.slideTypeJoined .slideWrap .slideWrapper .slide .csFocus.focusOn .focImg {opacity:1;}
+/*.slideTypeJoined .slideWrap .slideWrapper .slide.csFocus .wrapImg {display:block; position:absolute; top:0; left:0; z-index:20; width:100%; height:100%;}*/
+/*.slideTypeJoined .slideWrap .slideWrapper .slide.csFocus .wrapImg:before {display:block; width:100%; height:100%; position:absolute; top:0; left:0; z-index:25; background: linear-gradient(130deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.09), #000000); opacity:0.3; content:"";}*/
+/*.slideTypeJoined .slideWrap .slideWrapper .slide.csFocus .wrapImg img{position:absolute; top:50%; left:50%; z-index:30; width:auto; transform:translate(-50%, -50%) scale(0.88,0.88); -webkit-transform:translate(-50%, -50%) scale(0.88,0.88);}*/
+/*.slideTypeJoined .slideWrap .slideWrapper .slide.csFocus .wrapImg .focusLogo {display:none;}*/
+.slideTypeJoined .slideWrap .slideWrapper .slide .csFocus.focusOn {background:transparent;}
+/*.slideTypeJoined .slideWrap .slideWrapper .slide.csFocus.focusOn .wrapImg {background:#f4f4f4;}*/
+/*.slideTypeJoined .slideWrap .slideWrapper .slide.csFocus.focusOn .wrapImg:before {display:none;}*/
+/*.slideTypeJoined .slideWrap .slideWrapper .slide.csFocus.focusOn .wrapImg .logo {display:none;}*/
+/*.slideTypeJoined .slideWrap .slideWrapper .slide.csFocus.focusOn .wrapImg .focusLogo {display:block;}*/
+.slideTypeJoined .slideWrap .slideWrapper .slide .csFocus .itemMore {padding:24px 0; background:linear-gradient(137deg, rgba(120, 122, 143, 0.8), rgba(144, 145, 164, 0.6));}
+.slideTypeJoined .slideWrap .slideWrapper .slide .itemMore .text {font-size:30px; font-weight:bold; line-height:1.37; letter-spacing:-1px; opacity:0.8; text-align:center; color:#fff;}
+
+.contentGroup.activeSlide .slideTypeJoined .title{transform:translate(0,-10px);}
+
+.slideTypeJoined .leftArrow,
+.slideTypeJoined .rightArrow{position:absolute;top:50%;left:-60px;z-index:10;transform:translate(0,-70%);width:23px;height:57px;background:url("/assets/images/common/icon/arrow-left.png") no-repeat 0 0;opacity:0;}
+.slideTypeJoined .rightArrow{left:auto;right:-60px;background:url("/assets/images/common/icon/arrow-right.png") no-repeat 0 0;}
+.slideTypeJoined .activeSlide.leftActive .leftArrow,
+.slideTypeJoined .activeSlide.rightActive .rightArrow{opacity:1;}
+
+.slideTypeJoined .slideCount {position: absolute;top: -13px;right: 0;z-index: 10;font-size: 23px;color: #666;line-height: 1.83;letter-spacing: normal;opacity: 0;}
+.slideTypeJoined .activeSlide .slideCount {opacity:1;}
+.slideTypeJoined .activeSlide .slideCount .current{font-weight:700;}
+.slideTypeJoined .activeSlide.lastActive .slideCount{transform:translate(0,-10px);}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+/* KidsMenu.css */
+:root{
+	--page:0;
+}
+.kidsMenu{position:relative;z-index:20;height:288px;text-align:center;background-image:linear-gradient(to bottom, rgb(230, 231, 235), rgb(217, 219, 222));box-shadow:0 10px 20px 0 rgba(0, 0, 0, 0.07);transform:translate(0,0);}
+.kidsMenu .gnbInfo{position:absolute;top:0;left:66px;z-index:10;padding:34px 26px 30px 72px;width:169px;height:100px;font-size:30px;font-weight:700;background:url("/assets/images/kids/menu/box.png") no-repeat 0 0;}
+.kidsMenu .gnbInfo:after{position:absolute;top:39px;left:36px;z-index:10;width:34px;height:20px;content:"";background:url("/assets/images/kids/menu/arrow.png") no-repeat 0 0;}
+.kidsMenu .kidsMenuWrap{padding:0 253px 0 223px;text-align:left;}
+.kidsMenu .kidsMenuWrap .kidsMenuCon{padding:0 11px;overflow:hidden;}
+.kidsMenu .kidsMenuWrap .leftArrow,
+.kidsMenu .kidsMenuWrap .rightArrow{opacity:0;position:absolute;top:53%;left:170px;z-index:10;transform:translate(0,-50%);width:59px;height:82px;background:url("/assets/images/kids/button/arrow-kids-block-l-s.png") no-repeat 0 0;}
+.kidsMenu .kidsMenuWrap .rightArrow{left:auto;right:200px;transform:translate(0,-50%);background-image:url("/assets/images/kids/button/arrow-kids-block-r-s.png");}
+.kidsMenu .kidsMenuWrap.leftActive .leftArrow,
+.kidsMenu .kidsMenuWrap.rightActive .rightArrow{opacity:1;}
+.kidsMenu ul{display:flex;padding-top:32px;justify-content:left;transform:translate3d(calc(var(--page) * -200px),0,0);}
+.kidsMenu ul li{margin:0 -11px;}
+.kidsMenu ul li .csFocusKids{display:block;position:relative;z-index:1;padding-top:169px;width:222px;height:250px;font-size:26px;font-weight:700;color:rgba(0,0,0,0.7);text-align:center;}
+.kidsMenu ul li .csFocusKids img,
+.kidsMenu ul li .csFocusKids.focusOn img,
+.kidsMenu ul li .csFocusKids.active.focusOn img.active,
+.kidsMenu ul li .csFocusKids.active img{position:absolute;top:0;left:0;z-index:-1;opacity:0;}
+.kidsMenu ul li .csFocusKids img.default,
+.kidsMenu ul li .csFocusKids.focusOn img.focus,
+.kidsMenu ul li .csFocusKids.active img.active{opacity:1;}
+.kidsMenu ul li .csFocusKids.focusOn{padding-top:156px;font-size:30px;color:#f5513f;z-index:10;}
+
+
+
+
+
+

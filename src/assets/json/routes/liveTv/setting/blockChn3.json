@@ -1,0 +1,33 @@
+{
+	"blockView": "true",
+	"totalFav" : "7",
+	"blockChn" : [{
+		"chnNum": "011",
+		"chnName": "BTV1",
+		"block": "true"
+	},{
+		"chnNum": "031",
+		"chnName": "BTV1",
+		"block": "true"
+	},{
+		"chnNum": "061",
+		"chnName": "BTV1",
+		"block": "true"
+	},{
+		"chnNum": "071",
+		"chnName": "BTV1",
+		"block": "true"
+	},{
+		"chnNum": "091",
+		"chnName": "BTV1",
+		"block": "true"
+	},{
+		"chnNum": "231",
+		"chnName": "BTV1",
+		"block": "true"
+	},{
+		"chnNum": "761",
+		"chnName": "BTV1",
+		"block": "true"
+	}]
+}

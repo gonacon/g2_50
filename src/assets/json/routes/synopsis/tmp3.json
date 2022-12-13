@@ -1,0 +1,56 @@
+{
+	"slideType": "specialMovie",
+	"slideTitle": "스페셜 영상",
+	"slideItem": [
+		{
+			"title": "스페셜영상01",
+			"image": "/assets/images/tmp/synopsis/img-ep-special-01.png",
+			"link": ""
+		},
+		{
+			"title": "스페셜영상02",
+			"image": "/assets/images/tmp/synopsis/img-ep-special-01.png",
+			"link": ""
+		},
+		{
+			"title": "스페셜영상03",
+			"image": "/assets/images/tmp/synopsis/img-ep-special-01.png",
+			"link": ""
+		},
+		{
+			"title": "스페셜영상04",
+			"image": "/assets/images/tmp/synopsis/img-ep-special-01.png",
+			"link": ""
+		},
+		{
+			"title": "스페셜영상05",
+			"image": "/assets/images/tmp/synopsis/img-ep-special-01.png",
+			"link": ""
+		},
+		{
+			"title": "스페셜영상06",
+			"image": "/assets/images/tmp/synopsis/img-ep-special-01.png",
+			"link": ""
+		},
+		{
+			"title": "스페셜영상07",
+			"image": "/assets/images/tmp/synopsis/img-ep-special-01.png",
+			"link": ""
+		},
+		{
+			"title": "스페셜영상08",
+			"image": "/assets/images/tmp/synopsis/img-ep-special-01.png",
+			"link": ""
+		},
+		{
+			"title": "스페셜영상09",
+			"image": "/assets/images/tmp/synopsis/img-ep-special-01.png",
+			"link": ""
+		},
+		{
+			"title": "스페셜영상10",
+			"image": "/assets/images/tmp/synopsis/img-ep-special-01.png",
+			"link": ""
+		}
+	]
+}

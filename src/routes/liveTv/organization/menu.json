@@ -1,0 +1,128 @@
+{
+    "IF":"IF-NXPG-017", "result":"0000", "reason":"Success" , "response_time" : "",
+    "channel" : [
+        {
+            "category_name" : "지상파/종편",
+            "category_id" : "0",
+            "channels" : [
+                {
+                    "channel_name" : "TBC",
+                    "service_id" : 21,
+                    "channel_no" : 5
+                }
+            ],
+            "total_count" : 57
+        },
+
+        {
+            "category_name" : "홈쇼핑",
+            "category_id" : "210",
+            "channels" : [
+                {
+                    "channel_name" : "TBC",
+                    "service_id" : 21,
+                    "channel_no" : 5
+                }
+            ],
+            "total_count" : 15
+        },
+        {
+            "category_name" : "영화",
+            "category_id" : "64",
+            "channels" : [
+                {
+                    "channel_name" : "TBC",
+                    "service_id" : 21,
+                    "channel_no" : 5
+                }
+            ],            
+            "total_count" : 11
+        },
+        {
+            "category_name" : "드라마/시리즈",
+            "category_id" : "160",
+            "channels" : [
+                {
+                    "channel_name" : "TBC",
+                    "service_id" : 21,
+                    "channel_no" : 5
+                }
+            ],
+            "total_count" : 57
+        },
+        {
+            "category_name" : "스포츠/레저",
+            "category_id" : "190",
+            "channels" : [
+                {
+                    "channel_name" : "TBC",
+                    "service_id" : 21,
+                    "channel_no" : 5
+                }
+            ],
+            "total_count" : 57
+        },
+        { 
+            "category_name" : "연예/오락",
+            "category_id" : "160",
+            "channels" : [
+                {
+                    "channel_name" : "TBC",
+                    "service_id" : 21,
+                    "channel_no" : 5
+                }
+            ],
+            "total_count" : 57
+        },
+        {
+            "category_name" : "애니/키즈",
+            "category_id" : "120",
+            "channels" : [
+                {
+                    "channel_name" : "TBC",
+                    "service_id" : 21,
+                    "channel_no" : 5
+                }
+            ],
+            "total_count" : 57
+        },
+        {
+            "category_name" : "뉴스/경제",
+            "category_id" : "110",
+            "channels" : [
+                {
+                    "channel_name" : "TBC",
+                    "service_id" : 21,
+                    "channel_no" : 5
+                }
+            ],
+            "total_count" : 57
+        },
+        {
+            "category_name" : "라이프/정보",
+            "category_id" : "170",
+            "channels" : [
+                {
+                    "channel_name" : "TBC",
+                    "service_id" : 21,
+                    "channel_no" : 5
+                }
+            ],
+            "total_count" : 57
+        },
+        {
+            "category_name" : "종교",
+            "category_id" : "240",
+            "channels" : [
+                {
+                    "channel_name" : "TBC",
+                    "service_id" : 21,
+                    "channel_no" : 5
+                }
+            ],
+            "total_count" : 57
+        }
+
+        
+    ]
+}

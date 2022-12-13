@@ -1,0 +1,28 @@
+{
+	"mainBg" : "/assets/images/kids/setting/bg-firstsetlimit-01.png",
+	"alarmItem" : [{
+		"type" : "sleep",
+		"text" : "잘 시간",
+		"time" : "오전10시",
+		"count" : "5분 간격",
+		"day" : ["매일"]
+	},{
+		"type" : "rest",
+		"text" : "휴식시간",
+		"time" : "오전10시",
+		"count" : "한번만",
+		"day" : ["화", "목"]
+	},{
+		"type" : "meal",
+		"text" : "식사시간",
+		"time" : "오전 9시 30분",
+		"count" : "5분 간격",
+		"day" : ["월", "화", "수", "목", "금"]
+	},{
+		"type" : "school",
+		"text" : "유치원 갈 시간",
+		"time" : "오전 10시",
+		"count" : "한번만",
+		"day" : ["월", "수", "금"]
+	}]
+}

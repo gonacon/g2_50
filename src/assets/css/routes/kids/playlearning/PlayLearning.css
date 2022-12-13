@@ -1,0 +1,52 @@
+/* PlayLearning.css */
+.playLearning{width:1920px;height:1080px;}
+.playLearning .playLearningListWrap{height:100%;background:url('/assets/images/kids/playlearning/bg-playlearning.png') no-repeat;}
+
+.playLearning .playLearningListWrap .mesPlayLearning{display:block;margin-top:28px;text-align:center;}
+.playLearning .playLearningListWrap .mesPlayLearning .mesInfo{display:inline-block;font-size:24px;color:rgba(74,94,90,0.6);line-height:33px;font-weight:700;}
+
+/* slide */
+:root{
+	--page:0;
+}
+
+.playLearningSlide .slideWrapper{transform:translate3d(calc(var(--page) * -410px),0,0);}
+
+.playLearningSlide{padding-top:95px;}
+.playLearningSlide .slideWrap{position:relative;z-index:1;}
+.playLearningSlide .title{transform:translate(0,0);font-size:36px;line-height:40px;letter-spacing:-1px;font-weight:400;color:#1a1a1a;}
+.playLearningSlide .slideWrap .slideCon{margin:-44px 120px -40px;padding:60px 20px 40px;overflow:hidden;}
+.playLearningSlide .slideWrapper{display:flex;justify-content:space-between;}
+.playLearningSlide .slideWrapper .slide{padding:0;text-align:center;}
+.playLearningSlide .slideWrapper .csFocus{display:block;width:410px;height:553px;position:relative;z-index:1;}
+.playLearningSlide .slideWrapper .csFocus img{display:block;position:absolute;top:0;left:0;width:100%;height:100%;}
+.playLearningSlide .slideWrapper .csFocus .nor{opacity:1;}
+.playLearningSlide .slideWrapper .csFocus .foc{opacity:0;}
+.playLearningSlide .slideWrapper .csFocus.focusOn .nor{opacity:0;}
+.playLearningSlide .slideWrapper .csFocus.focusOn .foc{opacity:1;}
+.playLearningSlide .slideWrapper .csFocus .slideTitle{opacity:0;line-height:30px;font-size:26px;color:#000;font-weight:700;letter-spacing:-1px;}
+.playLearningSlide .slideWrapper .csFocus{}
+.playLearningSlide .slideWrapper .csFocus.focusOn .slideTitle{opacity:1;}
+.playLearningSlide .leftArrow,
+.playLearningSlide .rightArrow{position:absolute;top:50%;left:70px;z-index:10;transform:translate(0,-70%);width:72px;height:100px;background:url("/assets/images/kids/button/arrow-left.png") no-repeat 0 0;opacity:0;}
+.playLearningSlide .rightArrow{left:auto;right:70px;background:url("/assets/images/kids/button/arrow-right.png") no-repeat 0 0;}
+.playLearningSlide .activeSlide.leftActive .leftArrow,
+.playLearningSlide .activeSlide.rightActive .rightArrow{opacity:1;}
+
+.contentGroup.activeSlide .playLearningSlide .title{transform:translate(0,-40px);}
+
+/* first allView */
+.playLearningSlide .slideWrapper .slide.first .csFocus {background:linear-gradient(151deg, rgba(120, 122, 143, 0.8), rgba(144, 145, 164, 0.7));;}
+.playLearningSlide .slideWrapper .slide.first .csFocus.focusOn {background:#f4f4f4;}
+.playLearningSlide .slideWrapper .slide.first .slideTitle {position:absolute; top:50%; left:50%; z-index:10; width:100%; transform:translate(-50%,-50%); -webkit-transform:translate(-50%,-50%); font-size:38px; font-weight:700; line-height:1.05; letter-spacing:normal; color:rgb(244, 244, 244); opacity:1;}
+.playLearningSlide .slideWrapper .slide.first .csFocus.focusOn .slideTitle {color:#f5513f;}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+:root{
+    --page:0;
+}
+.slideTypeB_C .slideWrapper{transform:translate3d(calc(var(--page) * -434px),0,0);}
+
+.slideTypeB_C .slideWrapper{display:flex;justify-content:space-between;}
+.slideTypeB_C{padding-top:87px;}
+.slideTypeB_C .slideWrap{position:relative;z-index:1;}
+/*.activeSlide .slideTypeB_C .title {padding-bottom:0;}*/
+.slideTypeB_C .title {padding-bottom:18px; font-size:36px; line-height:1.11; letter-spacing:-0.8px; color:#1a1a1a; opacity:0.8;}
+.slideTypeB_C .slideWrap .slideCon {overflow:hidden; margin:-20px -43px -40px; padding:24px 20px 40px; font-size:0;}
+.slideTypeB_C .slideWrap .slideWrapper .slide {display:inline-block; padding:0 25px;}
+.slideTypeB_C .slideWrap .slideWrapper .slide .csFocus {overflow:hidden; position:relative; z-index:1;  border-radius:4px; padding-bottom:50px;}
+.slideTypeB_C .slideWrap .slideWrapper .slide .csFocus.focusOn {transform:scale(1.15,1.15); -webkit-transform:scale(1.15,1.15);}
+.slideTypeB_C .slideWrap .slideWrapper .slide .csFocus .programTitle {display:none; padding:12px 0; position:absolute; bottom:-10px; left:0; z-index:10; width:100%; font-size:27px; line-height:1.15; letter-spacing:-0.8px; text-align:center; color:rgba(0,0,0,1); font-weight:700;}
+.slideTypeB_C .slideWrap .slideWrapper .slide .csFocus.focusOn .programTitle{display:block; bottom:-10px;background-color:transparent;}
+.slideTypeB_C .leftArrow,
+.slideTypeB_C .rightArrow{position:absolute;top:50%;left:-85px;z-index:10;transform:translate(0,-70%);width:72px;height:100px;background:url("/assets/images/kids/button/arrow-left.png") no-repeat 0 0;opacity:0;}
+.slideTypeB_C .rightArrow{left:auto;right:-85px;background:url("/assets/images/kids/button/arrow-right.png") no-repeat 0 0;}
+.slideTypeB_C .activeSlide .leftArrow,
+.slideTypeB_C .activeSlide .rightArrow{opacity:1;}
+
+.contentGroup.activeSlide .slideTypeB_C .title{transform:translate(0,-15px);}
+
+
+

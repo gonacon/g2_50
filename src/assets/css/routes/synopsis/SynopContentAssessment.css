@@ -1,0 +1,50 @@
+/* SynopContentAssessment.css */
+/* contentPop */
+.contentAssessment{display:block;overflow:hidden;position:fixed;top:1000px;left:0;right:0;bottom:0;width:1920px;height:1080px;z-index:10000;font-size:36px;color:#fff;line-height:48px;background:#000;}
+.contentAssessment .innerContents{display:block;overflow:hidden;position:relative;height:770px;margin:180px 274px 0;}
+
+.innerContents .assessmentTitle{display:block;font-size:56px;color:rgba(26,26,26,1);line-height:60px;text-align:center;font-weight:700;}
+.innerContents .btnArea{display:block;padding:135px 0 129px;text-align:center;}
+.innerContents .btnArea .csFocusPop{display:inline-block;position:relative;z-index:1;width:330px;height:330px;padding:20px 0;border-radius:4px;background-color:rgba(255, 255, 255, 0.05);border: solid 1px rgba(255, 255, 255, 0.2);}
+.innerContents .btnArea .csFocusPop .checkArea{display:none;position:absolute;top:25px;left:25px;z-index:10;width:47px;height:47px;background:url('/assets/images/synopsis/icon-check-my-assessment.png') no-repeat;}
+.innerContents .btnArea .csFocusPop .contsBox{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);}
+.innerContents .btnArea .csFocusPop .imgArea{display:table;margin:0 auto;width:228px;height:220px;}
+.innerContents .btnArea .csFocusPop .imgArea .iconWrap{display:table-cell;vertical-align:middle;text-align:center;}
+.innerContents .btnArea .csFocusPop .imgArea .iconWrap .iconLike{display:block;width:250px;height:250px;margin:0 auto;}
+.innerContents .btnArea .csFocusPop:first-child .imgArea .iconWrap .iconLike{background:url('/assets/images/synopsis/ic_like_bri_nor.png') no-repeat;}
+.innerContents .btnArea .csFocusPop:last-child .imgArea .iconWrap .iconLike{background:url('/assets/images/synopsis/ic_dislike_bri_nor.png') no-repeat;}
+.innerContents .btnArea .csFocusPop .imgArea .iconWrap .iconLike.on{display:none;}
+.innerContents .btnArea .csFocusPop .stateText{display:block;position:absolute;bottom:-5px;left:0;right:0;margin:0 auto;font-size:30px;color:rgba(255,255,255,0.4);}
+
+.innerContents .btnArea .csFocusPop + .csFocusPop{margin-left:80px;}
+.innerContents .btnArea .csFocusPop.focusOn:after{content:'';display:block;position:absolute;top:-33px;left:-33px;right:-33px;bottom:-33px;z-index:5;border-radius:4px;background-color:rgba(255,255,255,1);box-shadow:0 24px 16px 0 rgba(0, 0, 0, 0.35);}
+.innerContents .btnArea .csFocusPop.focusOn .contsBox{z-index:10;}
+.innerContents .btnArea .csFocusPop:first-child.focusOn .imgArea .iconWrap .iconLike{margin:0 auto;background:url('/assets/images/synopsis/ic_like_nor_foc.png') no-repeat;}
+.innerContents .btnArea .csFocusPop:last-child.focusOn .imgArea .iconWrap .iconLike{margin:0 auto;background:url('/assets/images/synopsis/ic_dislike_nor_foc.png') no-repeat;}
+.innerContents .btnArea .csFocusPop.focusOn .stateText{margin-top:30px;font-size:36px;color:rgba(245,81,63,1);font-weight:700;}
+.innerContents .btnArea .csFocusPop.sel .checkArea{display:block;}
+.innerContents .btnArea .csFocusPop.sel:first-child .imgArea .iconWrap .iconLike{margin:0 auto;background:url('/assets/images/synopsis/ic_like_bri_nor_sel.png') no-repeat;}
+.innerContents .btnArea .csFocusPop.sel:last-child .imgArea .iconWrap .iconLike{margin:0 auto;background:url('/assets/images/synopsis/ic_dislike_bri_nor_sel.png') no-repeat;}
+.innerContents .btnArea .csFocusPop.sel.focusOn .checkArea{width:56px;height:56px;top:-3px;left:-3px;background:url('/assets/images/synopsis/icon-check-my-assessment-on.png') no-repeat;}
+.innerContents .btnArea .csFocusPop.sel:first-child.focusOn .imgArea .iconWrap .iconLike{margin:0 auto;background:url('/assets/images/synopsis/ic_like_sel_foc.png') no-repeat;}
+.innerContents .btnArea .csFocusPop.sel:last-child.focusOn .imgArea .iconWrap .iconLike{margin:0 auto;background:url('/assets/images/synopsis/ic_dislike_sel_foc.png') no-repeat;}
+.innerContents .btnArea .csFocusPop.sel .stateText{display:none;}
+.innerContents .btnArea .csFocusPop.sel.focusOn .stateText{display:none;}
+
+.innerContents .mesAssessment{display:block;font-size:32px;color:rgba(74,74,74,1);line-height:44px;text-align:center;}
+
+/* theme */
+.dark .innerContents .assessmentTitle{color:rgba(255,255,255,1);}
+.dark .innerContents .btnArea .csFocusPop .imgArea .iconWrap .iconLike{display:block;width:250px;height:250px;margin:0 auto;}
+.dark .innerContents .btnArea .csFocusPop:first-child .imgArea .iconWrap .iconLike{background:url('/assets/images/synopsis/ic_like_dark_nor.png') no-repeat;}
+.dark .innerContents .btnArea .csFocusPop:last-child .imgArea .iconWrap .iconLike{background:url('/assets/images/synopsis/ic_dislike_dark_nor.png') no-repeat;}
+.dark .innerContents .btnArea .csFocusPop:first-child.focusOn .imgArea .iconWrap .iconLike{margin:0 auto;background:url('/assets/images/synopsis/ic_like_nor_foc.png') no-repeat;}
+.dark .innerContents .btnArea .csFocusPop:last-child.focusOn .imgArea .iconWrap .iconLike{margin:0 auto;background:url('/assets/images/synopsis/ic_dislike_nor_foc.png') no-repeat;}
+.dark .innerContents .btnArea .csFocusPop.sel:first-child .imgArea .iconWrap .iconLike{background:url('/assets/images/synopsis/ic_like_dark_nor_sel.png') no-repeat;}
+.dark .innerContents .btnArea .csFocusPop.sel:last-child .imgArea .iconWrap .iconLike{background:url('/assets/images/synopsis/ic_dislike_dark_nor_sel.png') no-repeat;}
+.dark .innerContents .btnArea .csFocusPop.sel:first-child.focusOn .imgArea .iconWrap .iconLike{margin:0 auto;background:url('/assets/images/synopsis/ic_like_sel_foc.png') no-repeat;}
+.dark .innerContents .btnArea .csFocusPop.sel:last-child.focusOn .imgArea .iconWrap .iconLike{margin:0 auto;background:url('/assets/images/synopsis/ic_dislike_sel_foc.png') no-repeat;}
+.dark .innerContents .btnArea .csFocusPop .stateText{color:rgba(106,106,106,1);}
+.dark .innerContents .mesAssessment{color:rgba(244,244,244,0.7);}
+
+

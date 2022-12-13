@@ -1,0 +1,222 @@
+{
+	"type": "dark",
+	"logo": "/assets/images/tmp/mybtv/bitmap.png",
+	"bg": "/assets/images/tmp/mybtv/img.png",
+	"text": " 분열은 시작되었다! 어벤져스와 관련된 사고로 부수적인 피해가 일어나자 <br/>정부는 어벤져스를 관리하고 감독하는 시스템인 일명 ‘슈퍼히어로 등록제’를 내놓는다. ",
+	"menu": [
+		{
+			"slideTitle": "스페셜영상",
+			"slideItem": [
+				{
+					"slideType" : "specialMovie",
+					"specialMovie": [
+						{
+							"title": "스페셜영상01스페셜영상01스페셜영상01스페셜영상01스페셜영상01",
+							"image": "/assets/images/tmp/synopsis/img-shortmovie-special-01.png",
+							"link": ""
+						},
+						{
+							"title": "스페셜영상02",
+							"image": "/assets/images/tmp/synopsis/img-shortmovie-special-02.png",
+							"link": ""
+						},
+						{
+							"title": "스페셜영상03",
+							"image": "/assets/images/tmp/synopsis/img-shortmovie-special-03.png",
+							"link": ""
+						},
+						{
+							"title": "스페셜영상04",
+							"image": "/assets/images/tmp/synopsis/img-shortmovie-special-04.png",
+							"link": ""
+						},
+						{
+							"title": "스페셜영상05",
+							"image": "/assets/images/tmp/synopsis/img-shortmovie-special-05.png",
+							"link": ""
+						},
+						{
+							"title": "스페셜영상06",
+							"image": "/assets/images/tmp/synopsis/img-shortmovie-special-01.png",
+							"link": ""
+						},
+						{
+							"title": "스페셜영상07",
+							"image": "/assets/images/tmp/synopsis/img-shortmovie-special-02.png",
+							"link": ""
+						},
+						{
+							"title": "스페셜영상08",
+							"image": "/assets/images/tmp/synopsis/img-shortmovie-special-03.png",
+							"link": ""
+						},
+						{
+							"title": "스페셜영상09",
+							"image": "/assets/images/tmp/synopsis/img-shortmovie-special-04.png",
+							"link": ""
+						},
+						{
+							"title": "스페셜영상10스페셜영상10스페셜영상10스페셜영상10스페셜영상10",
+							"image": "/assets/images/tmp/synopsis/img-shortmovie-special-05.png",
+							"link": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"slideTitle": "코너별영상",
+			"slideItem":[
+				{
+					"slideType" : "specialMovie",
+					"specialMovie": [
+						{
+							"title": "코너별영상01코너별영상01코너별영상01코너별영상01코너별영상01",
+							"image": "/assets/images/tmp/synopsis/img-shortmovie-special-01.png",
+							"link": ""
+						},
+						{
+							"title": "코너별영상02",
+							"image": "/assets/images/tmp/synopsis/img-shortmovie-special-02.png",
+							"link": ""
+						},
+						{
+							"title": "코너별영상03",
+							"image": "/assets/images/tmp/synopsis/img-shortmovie-special-03.png",
+							"link": ""
+						},
+						{
+							"title": "코너별영상04",
+							"image": "/assets/images/tmp/synopsis/img-shortmovie-special-04.png",
+							"link": ""
+						},
+						{
+							"title": "코너별영상05",
+							"image": "/assets/images/tmp/synopsis/img-shortmovie-special-05.png",
+							"link": ""
+						},
+						{
+							"title": "코너별영상06",
+							"image": "/assets/images/tmp/synopsis/img-shortmovie-special-01.png",
+							"link": ""
+						},
+						{
+							"title": "코너별영상07",
+							"image": "/assets/images/tmp/synopsis/img-shortmovie-special-02.png",
+							"link": ""
+						},
+						{
+							"title": "코너별영상08",
+							"image": "/assets/images/tmp/synopsis/img-shortmovie-special-03.png",
+							"link": ""
+						},
+						{
+							"title": "코너별영상09",
+							"image": "/assets/images/tmp/synopsis/img-shortmovie-special-04.png",
+							"link": ""
+						},
+						{
+							"title": "코너별영상10코너별영상10코너별영상10코너별영상10코너별영상10",
+							"image": "/assets/images/tmp/synopsis/img-shortmovie-special-05.png",
+							"link": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"slideTitle": "제작/출연진",
+			"slideItem": [
+				{
+					"slideType" : "appearance",
+					"appearance": [
+						{
+							"name": "빌 콘돈",
+							"part": "감독",
+							"image": "/assets/images/tmp/synopsis/img-shortmov-guest-001.png",
+							"link": "./SynopPersonalInformation"
+						},
+						{
+							"name": "엠마 왓슨",
+							"part": "주연",
+							"image": "/assets/images/tmp/synopsis/img-shortmov-guest-002.png",
+							"link": "./SynopPersonalInformation"
+						},
+						{
+							"name": "댄 스티븐스",
+							"part": "주연",
+							"image": "/assets/images/tmp/synopsis/img-shortmov-guest-003.png",
+							"link": "./SynopPersonalInformation"
+						},
+						{
+							"name": "루크 에반스",
+							"part": "주연",
+							"image": "/assets/images/tmp/synopsis/img-shortmov-guest-004.png",
+							"link": "./SynopPersonalInformation"
+						},
+						{
+							"name": "이완 맥그리거",
+							"part": "르미에르 역",
+							"image": "/assets/images/tmp/synopsis/img-shortmov-guest-005.png",
+							"link": "./SynopPersonalInformation"
+						},
+						{
+							"name": "이안 맥겔런",
+							"part": "콕스웍스 역",
+							"image": "/assets/images/tmp/synopsis/img-shortmov-guest-006.png",
+							"link": "./SynopPersonalInformation"
+						},
+						{
+							"name": "엠마 톰슨",
+							"part": "미세스 팟 역",
+							"image": "/assets/images/tmp/synopsis/img-shortmov-guest-007.png",
+							"link": "./SynopPersonalInformation"
+						},
+						{
+							"name": "빌 콘돈2",
+							"part": "감독",
+							"image": "/assets/images/tmp/synopsis/img-shortmov-guest-001.png",
+							"link": "./SynopPersonalInformation"
+						},
+						{
+							"name": "엠마 왓슨2",
+							"part": "주연",
+							"image": "/assets/images/tmp/synopsis/img-shortmov-guest-002.png",
+							"link": "./SynopPersonalInformation"
+						},
+						{
+							"name": "댄 스티븐스2",
+							"part": "주연",
+							"image": "/assets/images/tmp/synopsis/img-shortmov-guest-003.png",
+							"link": "./SynopPersonalInformation"
+						},
+						{
+							"name": "루크 에반스2",
+							"part": "주연",
+							"image": "/assets/images/tmp/synopsis/img-shortmov-guest-004.png",
+							"link": "./SynopPersonalInformation"
+						},
+						{
+							"name": "이완 맥그리거2",
+							"part": "르미에르 역",
+							"image": "/assets/images/tmp/synopsis/img-shortmov-guest-005.png",
+							"link": "./SynopPersonalInformation"
+						},
+						{
+							"name": "이안 맥겔런2",
+							"part": "콕스웍스 역",
+							"image": "/assets/images/tmp/synopsis/img-shortmov-guest-006.png",
+							"link": "./SynopPersonalInformation"
+						},
+						{
+							"name": "엠마 톰슨2",
+							"part": "미세스 팟 역",
+							"image": "/assets/images/tmp/synopsis/img-shortmov-guest-007.png",
+							"link": "./SynopPersonalInformation"
+						}
+					]
+				}
+			]
+		}
+	]
+}

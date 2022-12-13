@@ -1,0 +1,14 @@
+/* MyWishTotalDelete.css */
+:root{
+	--page:0;
+}
+.wishDeleteTotalWrap {position:relative; z-index:1; padding:72px 115px;}
+.wishDeleteTotalWrap .pageTitle {padding-bottom:16px; font-size:46px; line-height:1.13; letter-spacing:-1.4px; color:#000; opacity:0.7;}
+.wishDeleteTotalWrap .subInfo {font-size:34px; line-height:1.12; letter-spacing:-1px; color:rgba(0,0,0,0.5);}
+.wishDeleteTotalWrap .btnListWrap {position:absolute; top:88px; right:115px;}
+.wishDeleteTotalWrap .listItemType .contentGroup .slide {position:relative; z-index:1;}
+.wishDeleteTotalWrap .listItemType .contentGroup .slide .icDelete {display:block; position:absolute; top:50%; left:50%; z-index:10; transform:translate(-50%, -50%); margin-top:-18px; width:82px; height:82px;}
+.wishDeleteTotalWrap .listItemType .contentGroup .slide .icDelete:after {display:block; position:absolute; z-index:10; min-width:82px; min-height:82px; border-radius:82px; background-color:rgba(0, 0, 0, 0.7); background-image:url("/assets/images/myBtv/ic-movie-del.png"); background-repeat:no-repeat; background-position:center center; content:"";}
+.wishDeleteTotalWrap .listItemType .contentGroup .slide .csFocus.focusOn + .icDelete:after {top:-19px; right:-19px; bottom:-19px; left:-19px; background-color:#f4f4f4; background-image:url("/assets/images/myBtv/ic-movie-del-on.png"); box-shadow: 0 24px 12px 0 rgba(0, 0, 0, 0.35);}
+
+.wishDeleteTotalWrap .btnTopWrap {padding:119px 0 169px}

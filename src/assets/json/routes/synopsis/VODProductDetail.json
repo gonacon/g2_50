@@ -1,0 +1,15 @@
+{
+	"pageType" : "ProductSlide",
+	"title" : "뽀로로 사운드북",
+	"slideItem" : [
+		{
+			"image" : "/assets/images/tmp/mybtv/img-commerce-big.png"
+		},
+		{
+			"image" : "/assets/images/tmp/mybtv/img-commerce-big.png"
+		},
+		{
+			"image" : "/assets/images/tmp/mybtv/img-commerce-big.png"
+		}
+	]
+}

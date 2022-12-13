@@ -1,0 +1,376 @@
+{
+	"pageType": "PurchaseGeneralList",
+	"pageTitle": "구매내역 - 일반",
+	"slideItem" :[
+		{
+			"dDay": "만료임박",
+			"episode" : "12화",
+			"image" : "/assets/images/tmp/home_A_01.png",
+			"itemTitleFull" : "11도깨비",
+			"priceInfo" : "11,200원에 구매 (부가세 포함)",
+			"itemType" : {
+				"title":"시즌",
+				"imageQuality" : "UHD/HDR",
+				"language" : "한글자막"
+			},
+			"payment" : "청구서",
+			"price" : "45000",
+			"purchaseDate" : "2017.05.03",
+			"usePeriod" : "만료임박",
+			"expiryDate" : "2017.05.07 18:23 까지",
+			"state" : "바로재생",
+			"oksusuEnable" : true,
+			"discount" : [
+				{
+					"index" : "쿠폰",
+					"money" : "2000",
+					"ratio" : "15"
+				},
+				{
+					"index" : "B포인트",
+					"money" : "200",
+					"point" : "200"
+				},
+				{
+					"index" : "T멤버십",
+					"money" : "2000",
+					"point" : "2200"
+				},
+				{
+					"index" : "OK캐쉬백",
+					"money" : "200",
+					"point" : "200"
+				},
+				{
+					"index" : "TV포인트",
+					"money" : "200",
+					"point" : "200"
+				}
+			]
+		},
+		{
+			"dDay" : "D-5",
+			"episode" : "전편",
+			"image" : "/assets/images/tmp/home_A_01.png",
+			"itemTitleFull" : "22도깨비",
+			"priceInfo" : "11,200원에 구매 (부가세 포함)",
+			"itemType" : {
+				"title":"패키지",
+				"imageQuality" : "UHD/HDR"
+			},
+			"payment" : "신용카드",
+			"price" : "45000",
+			"purchaseDate" : "17.05.03",
+			"usePeriod" : "기간만료",
+			"expiryDate" : "2017.05.07 18:23 까지",
+			"state" : "바로재생"
+		},
+		{
+			"dDay": "D-2",
+			"episode" : "우리말",
+			"image": "/assets/images/tmp/home_A_01.png",
+			"link": "/",
+			"itemTitleFull": "33스타워즈 로그원 개봉 기념",
+			"priceInfo" : "11,200원에 구매 (부가세 포함)",
+			"itemType" : {
+				"title":"단편",
+				"imageQuality" : "UHD/HDR",
+				"language" : "한글자막"
+			},
+			"payment": "청구서 결제",
+			"price": "45000",
+			"purchaseDate": "17.05.03",
+			"usePeriod": "만료 5일전",
+			"expiryDate": "2017.05.07 18:23 까지",
+			"state" : "상품정보"
+		},
+		{
+			"dDay" : "만료",
+			"image" : "/assets/images/tmp/home_A_01.png",
+			"itemTitleFull" : "44스타워즈 로그원<br/> 개봉 기념",
+			"priceInfo" : "11,200원에 구매 (부가세 포함)",
+			"itemType" : {
+				"title":"패키지",
+				"imageQuality" : "UHD/HDR",
+				"language" : "한글자막"
+			},
+			"payment" : "청구서 결제",
+			"price" : "45000",
+			"purchaseDate" : "17.05.03",
+			"usePeriod" : "기간만료",
+			"expiryDate" : "2017.05.07 18:23 까지",
+			"state" : "상품정보",
+			"discount" : [
+				{
+					"index" : "쿠폰",
+					"money" : "2000",
+					"ratio" : "15"
+				}
+			]
+		},
+		{
+			"dDay" : "D-7",
+			"episode " : "전편",
+			"image" : "/assets/images/tmp/home_A_01.png",
+			"itemTitleFull" : "55스타워즈 로그원<br/> 개봉",
+			"priceInfo" : "11,200원에 구매 (부가세 포함)",
+			"itemType" : {
+				"title":"패키지",
+				"imageQuality" : "UHD/HDR",
+				"language" : "한글자막"
+			},
+			"payment" : "청구서 결제",
+			"price" : "45000",
+			"purchaseDate" : "17.05.03",
+			"usePeriod" : "기간만료",
+			"expiryDate" : "2017.05.07 18:23 까지",
+			"state" : "상품정보",
+			"discount" : [
+				{
+					"index" : "쿠폰",
+					"money" : "2000",
+					"ratio" : "15"
+				},
+				{
+					"index" : "T멤버십",
+					"money" : "2000",
+					"point" : "2200"
+				}
+			]
+		},
+		{
+			"image" : "/assets/images/tmp/home_A_01.png",
+			"itemTitleFull" : "66스타워즈 로그원 <br/>개봉",
+			"priceInfo" : "11,200원에 구매 (부가세 포함)",
+			"itemType" : {
+				"title":"패키지",
+				"imageQuality" : "UHD/HDR",
+				"language" : "한글자막"
+			},
+			"payment" : "청구서 결제",
+			"price" : "45000",
+			"purchaseDate" : "17.05.03",
+			"usePeriod" : "기간만료",
+			"expiryDate" : "2017.05.07 18:23 까지",
+			"state" : "상품정보",
+			"discount" : [
+				{
+					"index" : "쿠폰",
+					"money" : "2000",
+					"ratio" : "15"
+				},
+				{
+					"index" : "T멤버십",
+					"money" : "2000",
+					"point" : "2200"
+				},
+				{
+					"index" : "OK캐쉬백",
+					"money" : "200",
+					"point" : "200"
+				},
+				{
+					"index" : "TV포인트",
+					"money" : "200",
+					"point" : "200"
+				}
+			]
+		},
+		{
+			"image" : "/assets/images/tmp/home_A_01.png",
+			"itemTitleFull" : "77스타워즈 로그원<br/> 개봉",
+			"priceInfo" : "11,200원에 구매 (부가세 포함)",
+			"itemType" : {
+				"title":"패키지",
+				"imageQuality" : "UHD/HDR",
+				"language" : "한글자막"
+			},
+			"payment" : "청구서 결제",
+			"price" : "45000",
+			"purchaseDate" : "17.05.03",
+			"usePeriod" : "기간만료",
+			"expiryDate" : "2017.05.07 18:23 까지",
+			"state" : "상품정보",
+			"discount" : [
+				{
+					"index" : "쿠폰",
+					"money" : "2000",
+					"ratio" : "15"
+				},
+				{
+					"index" : "B포인트",
+					"money" : "200",
+					"point" : "200"
+				},
+				{
+					"index" : "T멤버십",
+					"money" : "2000",
+					"point" : "2200"
+				},
+				{
+					"index" : "OK캐쉬백",
+					"money" : "200",
+					"point" : "200"
+				},
+				{
+					"index" : "TV포인트",
+					"money" : "200",
+					"point" : "200"
+				}
+			]
+		},
+		{
+			"dDay" : "D-1",
+			"image" : "/assets/images/tmp/home_A_01.png",
+			"itemTitleFull" : "88스타워즈 로그원<br/>개봉",
+			"priceInfo" : "11,200원에 구매 (부가세 포함)",
+			"itemType" : {
+				"title":"패키지",
+				"imageQuality" : "UHD/HDR",
+				"language" : "한글자막"
+			},
+			"payment" : "청구서 결제",
+			"price" : "45000",
+			"purchaseDate" : "17.05.03",
+			"usePeriod" : "기간만료",
+			"expiryDate" : "2017.05.07 18:23 까지",
+			"state" : "상품정보",
+			"discount" : [
+				{
+					"index" : "쿠폰",
+					"money" : "2000",
+					"ratio" : "15"
+				}
+			]
+		},
+		{
+			"dDay" : "만료",
+			"image" : "/assets/images/tmp/home_A_01.png",
+			"itemTitleFull" : "99스타워즈 로그원<br/>개봉",
+			"priceInfo" : "11,200원에 구매 (부가세 포함)",
+			"itemType" : {
+				"title":"패키지",
+				"imageQuality" : "UHD/HDR",
+				"language" : "한글자막"
+			},
+			"payment" : "청구서 결제",
+			"price" : "45000",
+			"purchaseDate" : "17.05.03",
+			"usePeriod" : "기간만료",
+			"expiryDate" : "2017.05.07 18:23 까지",
+			"state" : "상품정보",
+			"discount" : [
+				{
+					"index" : "쿠폰",
+					"money" : "2000"
+				},
+				{
+					"index" : "B포인트",
+					"money" : "200",
+					"point" : "200"
+				}
+			]
+		},
+		{
+			"episode " : "전편",
+			"image" : "/assets/images/tmp/home_A_01.png",
+			"itemTitleFull" : "10스타워즈 로그원<br/>개봉",
+			"priceInfo" : "11,200원에 구매 (부가세 포함)",
+			"itemType" : {
+				"title":"패키지",
+				"imageQuality" : "UHD/HDR",
+				"language" : "한글자막"
+			},
+			"payment" : "청구서 결제",
+			"price" : "45000",
+			"purchaseDate" : "17.05.03",
+			"usePeriod" : "기간만료",
+			"expiryDate" : "2017.05.07 18:23 까지",
+			"state" : "상품정보",
+			"discount" : [
+				{
+					"index" : "쿠폰",
+					"money" : "2000"
+				},
+				{
+					"index" : "B포인트",
+					"money" : "200",
+					"point" : "200"
+				},
+				{
+					"index" : "T멤버십",
+					"money" : "2000",
+					"point" : "2200"
+				}
+			]
+		},
+		{
+			"image" : "/assets/images/tmp/home_A_01.png",
+			"itemTitleFull" : "77스타워즈 로그원<br/> 개봉",
+			"priceInfo" : "11,200원에 구매 (부가세 포함)",
+			"itemType" : {
+				"title":"패키지",
+				"imageQuality" : "UHD/HDR",
+				"language" : "한글자막"
+			},
+			"payment" : "청구서 결제",
+			"price" : "45000",
+			"purchaseDate" : "17.05.03",
+			"usePeriod" : "기간만료",
+			"expiryDate" : "2017.05.07 18:23 까지",
+			"state" : "상품정보",
+			"discount" : [
+				{
+					"index" : "쿠폰",
+					"money" : "2000",
+					"ratio" : "15"
+				},
+				{
+					"index" : "B포인트",
+					"money" : "200",
+					"point" : "200"
+				},
+				{
+					"index" : "T멤버십",
+					"money" : "2000",
+					"point" : "2200"
+				},
+				{
+					"index" : "OK캐쉬백",
+					"money" : "200",
+					"point" : "200"
+				},
+				{
+					"index" : "TV포인트",
+					"money" : "200",
+					"point" : "200"
+				}
+			]
+		},
+		{
+			"dDay" : "D-1",
+			"image" : "/assets/images/tmp/home_A_01.png",
+			"itemTitleFull" : "88스타워즈 로그원<br/>개봉",
+			"priceInfo" : "11,200원에 구매 (부가세 포함)",
+			"itemType" : {
+				"title":"패키지",
+				"imageQuality" : "UHD/HDR",
+				"language" : "한글자막"
+			},
+			"payment" : "청구서 결제",
+			"price" : "45000",
+			"purchaseDate" : "17.05.03",
+			"usePeriod" : "기간만료",
+			"expiryDate" : "2017.05.07 18:23 까지",
+			"state" : "상품정보",
+			"discount" : [
+				{
+					"index" : "쿠폰",
+					"money" : "2000",
+					"ratio" : "15"
+				}
+			]
+		}
+	],
+	"defaultSub" : "일반 VOD 구매내역은 구매일로부터 90일까지만 제공해 드립니다."
+}

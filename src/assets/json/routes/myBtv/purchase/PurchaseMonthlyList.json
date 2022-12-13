@@ -1,0 +1,262 @@
+{
+	"pageType": "PurchaseMonthlyList",
+	"pageTitle": "구매내역 - 월정액",
+	"slideItem" :[
+		{
+			"thumbImage": "/assets/images/tmp/monthly/M01_A_premiere.png",
+			"channelImage": "/assets/images/tmp/monthly/M01_A_LOGO_premiere.png",
+			"payPrice": "11000",
+			"itemTitleFull" : "11프리미어 월정액",
+			"priceInfo" : "11,200원에 구매 (부가세 포함)",
+			"itemType" : {
+				"title":"일반 월정액",
+				"imageQuality" : "UHD/HDR"
+			},
+			"payment" : "카드 결제",
+			"price" : "45000",
+			"purchaseDate" : "17.05.03",
+			"usePeriod" : "해지 전까지",
+			"expiryDate" : "2017.05.07 18:23 까지",
+			"state" : "가입해지",
+			"oksusuEnable" : true,
+			"discount" : [
+				{
+					"index" : "쿠폰",
+					"title" : "프리미어 50% 첫달 쿠폰"
+				},
+				{
+					"index" : "T멤버십",
+					"title" : "첫달 50% 할인"
+				}
+			]
+		},
+		{
+			"dDay" : "해지",
+			"thumbImage": "/assets/images/tmp/monthly/M01_A_premiere.png",
+			"channelImage": "/assets/images/tmp/monthly/M01_A_LOGO_premiere.png",
+			"payPrice": "11000",
+			"itemTitleFull" : "22도깨비",
+			"priceInfo" : "11,200원에 구매 (부가세 포함)",
+			"itemType" : {
+				"title":"일반 월정액",
+				"imageQuality" : "UHD/HDR"
+			},
+			"payment" : "청구서 결제",
+			"price" : "45000",
+			"purchaseDate" : "17.05.03",
+			"usePeriod" : "기간만료",
+			"expiryDate" : "2017.05.07 18:23 까지",
+			"state" : "재가입",
+			"discount" : [
+				{
+					"index" : "쿠폰",
+					"title" : "프리미어 50% 첫달 쿠폰"
+				},
+				{
+					"index" : "T멤버십",
+					"title" : "첫달 50% 할인"
+				}
+			]
+		},
+		{
+			"dDay": "해지",
+			"thumbImage": "/assets/images/tmp/monthly/M01_A_premiere.png",
+			"channelImage": "/assets/images/tmp/monthly/M01_A_LOGO_premiere.png",
+			"payPrice": "11000",
+			"link": "/",
+
+			"itemTitleFull": "33스타워즈 로그원 개봉 기념<br/>스타워즈 패키지 1",
+			"priceInfo" : "11,200원에 구매 (부가세 포함)",
+			"itemType" : {
+				"title":"일반 월정액",
+				"imageQuality" : "UHD/HDR"
+			},
+			"payment": "청구서 결제",
+			"price": "45000",
+			"purchaseDate": "17.05.03",
+			"usePeriod": "만료 5일전",
+			"expiryDate": "(7.05.07 18:23 까지",
+			"state" : "재가입"
+		},
+		{
+			"thumbImage": "/assets/images/tmp/monthly/M01_A_premiere.png",
+			"channelImage": "/assets/images/tmp/monthly/M01_A_LOGO_premiere.png",
+			"payPrice": "11000",
+			"itemTitleFull" : "44스타워즈 로그원 개봉 기념<br/>스타워즈 패키지 1",
+			"priceInfo" : "11,200원에 구매 (부가세 포함)",
+			"itemType" : {
+				"title":"일반 월정액",
+				"imageQuality" : "UHD/HDR"
+			},
+			"payment" : "청구서 결제",
+			"price" : "45000",
+			"purchaseDate" : "17.05.03",
+			"usePeriod" : "기간만료",
+			"expiryDate" : "2017.05.07 18:23 까지",
+			"state" : "재가입",
+			"discount" : [
+				{
+					"index" : "쿠폰",
+					"title" : "프리미어 50% 첫달 쿠폰"
+				}
+			]
+		},
+		{
+			"thumbImage": "/assets/images/tmp/monthly/M01_A_premiere.png",
+			"channelImage": "/assets/images/tmp/monthly/M01_A_LOGO_premiere.png",
+			"payPrice": "11000",
+			"itemTitleFull" : "55스타워즈 로그원 개봉 기념<br/>스타워즈 패키지 1",
+			"priceInfo" : "11,200원에 구매 (부가세 포함)",
+			"itemType" : {
+				"title":"일반 월정액",
+				"imageQuality" : "UHD/HDR"
+			},
+			"payment" : "청구서 결제",
+			"price" : "45000",
+			"purchaseDate" : "17.05.03",
+			"usePeriod" : "기간만료",
+			"expiryDate" : "2017.05.07 18:23 까지",
+			"state" : "재가입",
+			"discount" : [
+				{
+					"index" : "쿠폰",
+					"title" : "프리미어 50% 첫달 쿠폰"
+				},
+				{
+					"index" : "T멤버십",
+					"title" : "첫달 50% 할인"
+				}
+			]
+		},
+		{
+			"thumbImage": "/assets/images/tmp/monthly/M01_A_premiere.png",
+			"channelImage": "/assets/images/tmp/monthly/M01_A_LOGO_premiere.png",
+			"payPrice": "11000",
+			"itemTitleFull" : "66스타워즈 로그원 개봉 기념<br/>스타워즈 패키지 1",
+			"priceInfo" : "11,200원에 구매 (부가세 포함)",
+			"itemType" : {
+				"title":"일반 월정액",
+				"imageQuality" : "UHD/HDR"
+			},
+			"payment" : "청구서 결제",
+			"price" : "45000",
+			"purchaseDate" : "17.05.03",
+			"usePeriod" : "기간만료",
+			"expiryDate" : "2017.05.07 18:23 까지",
+			"state" : "재가입",
+			"discount" : [
+				{
+					"index" : "쿠폰",
+					"title" : "프리미어 50% 첫달 쿠폰"
+				},
+				{
+					"index" : "T멤버십",
+					"title" : "첫달 50% 할인"
+				}
+			]
+		},
+		{
+			"thumbImage": "/assets/images/tmp/monthly/M01_A_premiere.png",
+			"channelImage": "/assets/images/tmp/monthly/M01_A_LOGO_premiere.png",
+			"payPrice": "11000",
+			"itemTitleFull" : "77스타워즈 로그원 개봉 기념<br/>스타워즈 패키지 1",
+			"priceInfo" : "11,200원에 구매 (부가세 포함)",
+			"itemType" : {
+				"title":"일반 월정액",
+				"imageQuality" : "UHD/HDR"
+			},
+			"payment" : "청구서 결제",
+			"price" : "45000",
+			"purchaseDate" : "17.05.03",
+			"usePeriod" : "기간만료",
+			"expiryDate" : "2017.05.07 18:23 까지",
+			"state" : "재가입",
+			"discount" : [
+				{
+					"index" : "쿠폰",
+					"title" : "프리미어 50% 첫달 쿠폰"
+				},
+				{
+					"index" : "T멤버십",
+					"title" : "첫달 50% 할인"
+				}
+			]
+		},
+		{
+			"thumbImage": "/assets/images/tmp/monthly/M01_A_premiere.png",
+			"channelImage": "/assets/images/tmp/monthly/M01_A_LOGO_premiere.png",
+			"payPrice": "11000",
+			"itemTitleFull" : "88스타워즈 로그원 개봉 기념<br/>스타워즈 패키지 1",
+			"priceInfo" : "11,200원에 구매 (부가세 포함)",
+			"itemType" : {
+				"title":"일반 월정액",
+				"imageQuality" : "UHD/HDR"
+			},
+			"payment" : "청구서 결제",
+			"price" : "45000",
+			"purchaseDate" : "17.05.03",
+			"usePeriod" : "기간만료",
+			"expiryDate" : "2017.05.07 18:23 까지",
+			"state" : "재가입",
+			"discount" : [
+				{
+					"index" : "쿠폰",
+					"title" : "프리미어 50% 첫달 쿠폰"
+				}
+			]
+		},
+		{
+			"thumbImage": "/assets/images/tmp/monthly/M01_A_premiere.png",
+			"channelImage": "/assets/images/tmp/monthly/M01_A_LOGO_premiere.png",
+			"payPrice": "11000",
+			"itemTitleFull" : "99스타워즈 로그원 개봉 기념<br/>스타워즈 패키지 1",
+			"priceInfo" : "11,200원에 구매 (부가세 포함)",
+			"itemType" : {
+				"title":"일반 월정액",
+				"imageQuality" : "UHD/HDR"
+			},
+			"payment" : "청구서 결제",
+			"price" : "45000",
+			"purchaseDate" : "17.05.03",
+			"usePeriod" : "기간만료",
+			"expiryDate" : "2017.05.07 18:23 까지",
+			"state" : "재가입",
+			"discount" : [
+				{
+					"index" : "쿠폰",
+					"title" : "프리미어 50% 첫달 쿠폰"
+				}
+			]
+		},
+		{
+			"thumbImage": "/assets/images/tmp/monthly/M01_A_premiere.png",
+			"channelImage": "/assets/images/tmp/monthly/M01_A_LOGO_premiere.png",
+			"payPrice": "11000",
+			"itemTitleFull" : "10스타워즈 로그원 개봉 기념<br/>스타워즈 패키지 1",
+			"priceInfo" : "11,200원에 구매 (부가세 포함)",
+			"itemType" : {
+				"title":"일반 월정액",
+				"imageQuality" : "UHD/HDR"
+			},
+			"payment" : "청구서 결제",
+			"price" : "45000",
+			"purchaseDate" : "17.05.03",
+			"usePeriod" : "기간만료",
+			"expiryDate" : "2017.05.07 18:23 까지",
+			"state" : "재가입",
+			"discount" : [
+				{
+					"index" : "쿠폰",
+					"title" : "프리미어 50% 첫달 쿠폰"
+				},
+				{
+					"index" : "T멤버십",
+					"title" : "첫달 50% 할인"
+				}
+			]
+		}
+	],
+	"caution" : "쿠폰이나 T멤버십을 이용해 월정액을 가입하신 경우 청구서/홈페이지를 통해 상세 할인 내역을 확인해 주세요.",
+	"defaultInfo" : "월정액 구매내역은 전월 1일부터 당일까지의 내역을 제공하고 있습니다.",
+	"defaultSub": "일부 월정액의 경우 가입 첫 달에만 T멤버십 50% 할인 혜택이 적용됩니다.<br/>(교육장르, 성인장르, 부가서비스 상품 및 일부 제휴 월정액 상품은 할인 대상에서 제외)"
+}

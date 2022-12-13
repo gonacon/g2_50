@@ -1,0 +1,58 @@
+/* SetMultiView.css */
+.setMultiViewWrap{width:1920px;height:1080px;padding:0 155px;background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), linear-gradient(241deg, rgb(46, 50, 78), rgb(61, 62, 90) 16%, rgb(69, 64, 83) 37%, rgb(78, 66, 80) 61%, rgb(38, 37, 47));}
+
+.setMultiViewWrap .setMultiViewConts{display:block;}
+.setMultiViewWrap .setMultiViewConts .setMultiTitle{display:block;padding-top:128px;text-align:center;}
+.setMultiViewWrap .setMultiViewConts .setMultiTitle p{font-size:56px;color:rgba(244,244,244,0.9);line-height:56px;}
+.setMultiViewWrap .setMultiViewConts .setMultiTitle span{display:block;margin-top:26px;font-size:32px;color:rgba(244,244,244,0.5);line-height:32px;}
+
+.setMultiViewWrap .setMultiViewConts .multiViewContents{margin-top:107px;}
+.setMultiViewWrap .setMultiViewConts .multiViewContents:after{content:'';display:block;clear:both;}
+.setMultiViewWrap .setMultiViewConts .multiViewContents .slideMultiView{position:relative;float:left;width:930px;}
+.setMultiViewWrap .setMultiViewConts .multiViewContents .slideMultiView ul{position:relative;height:599px;border-top:2px solid rgba(244,244,244,0.1);border-bottom:2px solid rgba(244,244,244,0.1);}
+.setMultiViewWrap .setMultiViewConts .multiViewContents .slideMultiView ul li{border-bottom:1px solid rgba(244,244,244,0.1);}
+.setMultiViewWrap .setMultiViewConts .multiViewContents .slideMultiView ul li a{display:block;position:relative;z-index:1;}
+.setMultiViewWrap .setMultiViewConts .multiViewContents .slideMultiView ul li a .textConts{display:table;}
+.setMultiViewWrap .setMultiViewConts .multiViewContents .slideMultiView ul li a .textConts span{display:table-cell;font-size:30px;color:rgba(244,244,244,0.9);line-height:84px;vertical-align:middle;}
+.setMultiViewWrap .setMultiViewConts .multiViewContents .slideMultiView ul li a .textChn{width:165px;text-align:center;}
+.setMultiViewWrap .setMultiViewConts .multiViewContents .slideMultiView ul li a .textName{width:352px;padding:0 44px;text-align:left;}
+.setMultiViewWrap .setMultiViewConts .multiViewContents .slideMultiView ul li a .textProgram{width:413px;padding:0 44px;text-align:left;}
+.setMultiViewWrap .setMultiViewConts .multiViewContents .slideMultiView ul li a:focus:before{content:'';position:absolute;top:-10px;left:-10px;right:-10px;bottom:-10px;z-index:-1;border-radius:4px;background-color:rgba(244,244,244,1);}
+.setMultiViewWrap .setMultiViewConts .multiViewContents .slideMultiView ul li a:focus .textConts span{font-size:34px;color:#ec5638;font-weight:700;padding:0 34px;}
+.setMultiViewWrap .setMultiViewConts .multiViewContents .slideMultiView ul li a.sel .textChn:before{content: "";display:block;position:absolute;top:50%;left:10px;width:23px;height:21px;background:url('/assets/images/liveTv/multiview-check-sel.png') no-repeat;transform:translate(0,-50%);-webkit-transform:translate(0,-50%);}
+.setMultiViewWrap .setMultiViewConts .multiViewContents .slideMultiView ul li a.sel:focus .textChn:before{content: "";display:block;position:absolute;top:50%;left:10px;width:27px;height:24px;background:url('/assets/images/liveTv/multiview-check-sel-foc.png') no-repeat;transform:translate(0,-50%);-webkit-transform:translate(0,-50%);}
+.setMultiViewWrap .setMultiViewConts .multiViewContents .slideMultiView .arrowTop{display:block;position:absolute;top:-49px;left:50%;width:43px;height:15px;background:url('/assets/images/liveTv/arrow-multiview-up.png') no-repeat;transform:translateX(-50%);-webkit-transform:translateX(-50%);}
+.setMultiViewWrap .setMultiViewConts .multiViewContents .slideMultiView .arrowBottom{display:block;position:absolute;bottom:-49px;left:50%;width:43px;height:15px;background:url('/assets/images/liveTv/arrow-multiview-down.png') no-repeat;transform:translateX(-50%);-webkit-transform:translateX(-50%);}
+
+.setMultiViewWrap .setMultiViewConts .multiViewContents .setMultiView{float:right;width:553px;}
+.setMultiViewWrap .setMultiViewConts .multiViewContents .setMultiView .chnMultiView{display:block;height:343px;margin:-10px;}
+.setMultiViewWrap .setMultiViewConts .multiViewContents .setMultiView .chnMultiView ul{overflow:hidden;position:relative;padding:10px;}
+.setMultiViewWrap .setMultiViewConts .multiViewContents .setMultiView .chnMultiView ul li{float:left;width:264px;height:149px;}
+.setMultiViewWrap .setMultiViewConts .multiViewContents .setMultiView .chnMultiView ul li:nth-child(2n){margin-left:25px;}
+.setMultiViewWrap .setMultiViewConts .multiViewContents .setMultiView .chnMultiView ul li:nth-child(3),
+.setMultiViewWrap .setMultiViewConts .multiViewContents .setMultiView .chnMultiView ul li:nth-child(4){margin-top:25px;}
+.setMultiViewWrap .setMultiViewConts .multiViewContents .setMultiView .chnMultiView ul li button{display:block;position:relative;z-index:1;width:100%;height:100%;border-radius:2px;background:url('/assets/images/liveTv/multiview-chn-bg.png') no-repeat;text-align:center;}
+.setMultiViewWrap .setMultiViewConts .multiViewContents .setMultiView .chnMultiView ul li button .nor{display:block;font-size:52px;color:rgba(255,255,255,1);line-height:149px;vertical-align:middle;text-align:center;}
+.setMultiViewWrap .setMultiViewConts .multiViewContents .setMultiView .chnMultiView ul li button .sel{display:none;}
+.setMultiViewWrap .setMultiViewConts .multiViewContents .setMultiView .chnMultiView ul li button .sel .chnNum{display:block;padding-top:30px;font-size:26px;color:rgba(244,244,244,0.4);line-height:40px;font-weight:700;}
+.setMultiViewWrap .setMultiViewConts .multiViewContents .setMultiView .chnMultiView ul li button .sel .chnLogo{display:block;margin-top:-20px;}
+.setMultiViewWrap .setMultiViewConts .multiViewContents .setMultiView .chnMultiView ul li button .sel .chnLogo img{width:212px;height:88px;margin:0 auto;}
+.setMultiViewWrap .setMultiViewConts .multiViewContents .setMultiView .chnMultiView ul li button .sel .chnLogo img.on{display:none;}
+.setMultiViewWrap .setMultiViewConts .multiViewContents .setMultiView .chnMultiView ul li button.sel{background:radial-gradient(circle at 52% -5%, rgba(11, 16, 39, 0.65), rgba(20, 29, 73, 0.5) 38%, rgba(12, 19, 68, 0.32)), url('/assets/images/liveTv/multiview-chn-bg-sel.png') no-repeat;background-blend-mode:multiply;}
+.setMultiViewWrap .setMultiViewConts .multiViewContents .setMultiView .chnMultiView ul li button.sel .nor{display:none;}
+.setMultiViewWrap .setMultiViewConts .multiViewContents .setMultiView .chnMultiView ul li button.sel .sel{display:block;}
+.setMultiViewWrap .setMultiViewConts .multiViewContents .setMultiView .chnMultiView ul li button.sel:focus .sel{transform:scale(1.15);}
+.setMultiViewWrap .setMultiViewConts .multiViewContents .setMultiView .chnMultiView ul li button.sel:focus .sel .chnNum{color:#ec5638;}
+.setMultiViewWrap .setMultiViewConts .multiViewContents .setMultiView .chnMultiView ul li button.sel:focus .sel .chnLogo img{display:none;}
+.setMultiViewWrap .setMultiViewConts .multiViewContents .setMultiView .chnMultiView ul li button.sel:focus .sel .chnLogo img.on{display:block;}
+.setMultiViewWrap .setMultiViewConts .multiViewContents .setMultiView .chnMultiView ul li button.sel:focus:before{content:'';position:absolute;top:-10px;left:-10px;right:-10px;bottom:-10px;z-index:-1;border-radius:2px;background-color:rgba(255,255,255,1);}
+.setMultiViewWrap .setMultiViewConts .multiViewContents .setMultiView .btnArea{margin-top:66px;}
+.setMultiViewWrap .setMultiViewConts .multiViewContents .setMultiView .btnArea button{display:block; width:100%;}
+.setMultiViewWrap .setMultiViewConts .multiViewContents .setMultiView .btnArea button + button{margin-left:0;margin-top:25px;}
+
+
+
+
+
+
+

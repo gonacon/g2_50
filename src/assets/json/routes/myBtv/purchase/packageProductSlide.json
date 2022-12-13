@@ -1,0 +1,62 @@
+{
+	"packageName" : "스타워즈 로그원 개봉 기념 스타워즈 패키지 1",
+	"packageUsingDate1" : "만료 5일전",
+	"packageUsingDate2" : "2017.06.19 오전 10:52 까지",
+	"slideItem": [
+		{
+			"title": "노무현입니다",
+			"image": "/assets/images/tmp/myBtv/img-starwars-01.png",
+			"lang" : "자막"
+		},
+		{
+			"title": "미이라",
+			"image": "/assets/images/tmp/myBtv/img-starwars-01.png",
+			"lang" : "통합"
+		},
+		{
+			"title": "리얼",
+			"image": "/assets/images/tmp/myBtv/img-starwars-01.png",
+			"lang" : "우리말"
+		},
+		{
+			"title": "보스베이비",
+			"image": "/assets/images/tmp/myBtv/img-starwars-01.png",
+			"lang" : "자막"
+		},
+		{
+			"title": "원더우먼",
+			"image": "/assets/images/tmp/myBtv/img-starwars-01.png",
+			"lang" : "통합"
+		},
+		{
+			"title": "악녀",
+			"image": "/assets/images/tmp/myBtv/img-starwars-01.png",
+			"lang" : "통합"
+		},
+		{
+			"title": "하루",
+			"image": "/assets/images/tmp/myBtv/img-starwars-01.png",
+			"lang" : "우리말"
+		},
+		{
+			"title": "대립군",
+			"image": "/assets/images/tmp/myBtv/img-starwars-01.png",
+			"lang" : "자막"
+		},
+		{
+			"title": "에일리언",
+			"image": "/assets/images/tmp/myBtv/img-starwars-01.png",
+			"lang" : "우리말"
+		},
+		{
+			"title": "스파이더맨",
+			"image": "/assets/images/tmp/myBtv/img-starwars-01.png",
+			"lang" : "통합"
+		},
+		{
+			"title": "겟아웃",
+			"image": "/assets/images/tmp/myBtv/img-starwars-01.png",
+			"lang" : "자막"
+		}
+	]
+}

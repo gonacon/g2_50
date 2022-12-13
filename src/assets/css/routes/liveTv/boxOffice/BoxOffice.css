@@ -1,0 +1,72 @@
+:root{
+	--page:0;
+}
+
+.orgWrap.boxOffice{background:url("/assets/images/liveTv/bg-popup.png") no-repeat 0 0;}
+.orgWrap.boxOffice.active{background:url("/assets/images/liveTv/bg-boxoffice.png") no-repeat 0 0;}
+/* .boxOffice.cover{content:'';display:block;position:absolute;top:0;left:0;z-index:1;width:1920px;height:1080px;background:url("/assets/images/liveTv/bg-popup.png") no-repeat 0 0;} */
+.boxOffice.cover:before{content:'';display:block;position:absolute;top:0;left:0;z-index:1;width:1920px;height:1080px;background:url("/assets/images/liveTv/bg-popup.png") no-repeat 0 0;}
+.boxOfficeWrap{position:relative;z-index:1;padding:100px 0 100px;height:100%;}
+.boxOfficeWrap .boxOfficeHidden{padding:0 56px 0 25px;height:100%;overflow:hidden;}
+.boxOfficeWrap .boxOfficeCon{display:inline-block;margin:50px 55px 23px;width:306px;text-align:center;}
+.boxOfficeWrap .boxOfficeCon .topCon{position:relative;width:306px;height:172px; z-index:1;/*border-radius:4px;overflow:hidden;*/box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.15);}
+
+.boxOfficeWrap .boxOfficeCon .topCon:before{display:block;content:"";width:364px;height:205px;position:absolute;z-index:-1;top:50%;left:50%;transform:scale(1,1) translate(-50%,-54%);background:url("/assets/images/liveTv/bg-topchannel-mask-1.png") no-repeat 0 0;background-size:100%;}
+
+.boxOfficeWrap .boxOfficeCon:nth-child(1) .topCon:before,
+.boxOfficeWrap .contentGroup:first-child .boxOfficeCon:nth-child(1) .topCon:before{background:url("/assets/images/liveTv/bg-topchannel-mask-1.png") no-repeat 0 0;background-size:100%;}
+.boxOfficeWrap .boxOfficeCon:nth-child(2) .topCon:before,
+.boxOfficeWrap .contentGroup:first-child .boxOfficeCon:nth-child(2) .topCon:before{background:url("/assets/images/liveTv/bg-topchannel-mask-2.png") no-repeat 0 0;background-size:100%;}
+.boxOfficeWrap .boxOfficeCon:nth-child(3) .topCon:before,
+.boxOfficeWrap .contentGroup:first-child .boxOfficeCon:nth-child(3) .topCon:before{background:url("/assets/images/liveTv/bg-topchannel-mask-3.png") no-repeat 0 0;background-size:100%;}
+.boxOfficeWrap .boxOfficeCon:nth-child(4) .topCon:before,
+.boxOfficeWrap .contentGroup:first-child .boxOfficeCon:nth-child(4) .topCon:before{background:url("/assets/images/liveTv/bg-topchannel-mask-4.png") no-repeat 0 0;background-size:100%;}
+.boxOfficeWrap .contentGroup.active + .contentGroup .boxOfficeCon:nth-child(1) .topCon:before,
+.boxOfficeWrap .contentGroup:last-child .boxOfficeCon:nth-child(1) .topCon:before{background:url("/assets/images/liveTv/bg-topchannel-mask-5.png") no-repeat 0 0;background-size:100%;}
+.boxOfficeWrap .contentGroup.active + .contentGroup .boxOfficeCon:nth-child(2) .topCon:before,
+.boxOfficeWrap .contentGroup:last-child .boxOfficeCon:nth-child(2) .topCon:before{background:url("/assets/images/liveTv/bg-topchannel-mask-6.png") no-repeat 0 0;background-size:100%;}
+.boxOfficeWrap .contentGroup.active + .contentGroup .boxOfficeCon:nth-child(3) .topCon:before,
+.boxOfficeWrap .contentGroup:last-child .boxOfficeCon:nth-child(3) .topCon:before{background:url("/assets/images/liveTv/bg-topchannel-mask-7.png") no-repeat 0 0;background-size:100%;}
+.boxOfficeWrap .contentGroup.active + .contentGroup .boxOfficeCon:nth-child(4) .topCon:before,
+.boxOfficeWrap .contentGroup:last-child .boxOfficeCon:nth-child(4) .topCon:before{background:url("/assets/images/liveTv/bg-topchannel-mask-8.png") no-repeat 0 0;background-size:100%;}
+
+.boxOfficeWrap .boxOfficeCon .topCon img{height:174px;border-radius:4px;}
+.boxOfficeWrap .boxOfficeCon .topCon .lank,
+.boxOfficeWrap .boxOfficeCon .topCon .timeLine{position:absolute;top:0;left:0;z-index:10;}
+.boxOfficeWrap .boxOfficeCon .topCon .timeLine{opacity:0;top:auto;bottom:-2px;left:0;right:0;z-index:10;width:100%;height:8px;border-radius:0 0 4px 4px;overflow:hidden;background:rgba(0,0,0,0.3);}
+.boxOfficeWrap .boxOfficeCon .topCon .timeLine span{display:block;height:100%;background:linear-gradient(to right, rgb(229, 24, 111), rgb(255, 116, 34));}
+.boxOfficeWrap .boxOfficeCon .topCon .lank{padding:8px 15px;margin-left:10px;border-radius:0 0 4px 4px;font-size:24px;color:#d4d4d4;font-weight:bold;background:rgba(26,26,26,0.95);}
+.boxOfficeWrap .boxOfficeCon .topCon .lank.top3{padding:0;width:50px;background:none;text-align: center;}
+.boxOfficeWrap .boxOfficeCon .topCon .lank.top3:before{content:'';display:block;position:absolute;z-index:-1;top:-8px;left:0;width:56px;height:52px;background:url('/assets/images/liveTv/flag-fav-channel-n.png') 0 0 no-repeat;}
+.boxOfficeWrap .boxOfficeCon .topCon > *{position:relative;z-index:-1;display:block;}
+.boxOfficeWrap .boxOfficeCon .botCon{margin-top:20px;font-size:36px;color:#888;}
+.boxOfficeWrap .boxOfficeCon .botCon .channelNum{position:relative;z-index:1; margin-right:10px;padding-right:10px;text-align:center}
+.boxOfficeWrap .boxOfficeCon .botCon .channelNum:after{position:absolute;top:50%;right:0;z-index:10;transform:translate(0,-55%);display:block;width:1px;height:30px;content:"";background:#6a6a6a;}
+.boxOfficeWrap .boxOfficeCon .botCon .channelNum .fav{position:absolute;top:50%;left:-39px;z-index:10;transform:translate(0,-55%);display:block;width:34px;height:34px;content:"";background:url("/assets/images/liveTv/flag-ch-favorite-gray.png") no-repeat 0 0;}
+.boxOfficeWrap .boxOfficeCon .botCon .channelName{display:inline-block;font-size:0;vertical-align:middle;height:63px;}
+.boxOfficeWrap .boxOfficeCon .botCon .channelName img{width:99px;height:63px;}
+.boxOfficeWrap .boxOfficeCon .botCon .programName{display:inline-block;width:100%;margin-top:8px;font-size:26px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.boxOfficeWrap .arrowTopIcon,
+.boxOfficeWrap .arrowBottomIcon{position:absolute;top:30px;left:50%;z-index:10;transform:translate(-50%,0);width:43px;height:15px;background:url("/assets/images/liveTv/arrow-bri-scroll-up.png") no-repeat 0 0;opacity:1;}
+.boxOfficeWrap .arrowBottomIcon{top:auto;bottom:30px;background-image:url("/assets/images/liveTv/arrow-bri-scroll-down.png");}
+.boxOfficeWrap .boxOfficeCon.focusOn{transform:scale(1.17);}
+.boxOfficeWrap .boxOfficeCon.focusOn .topCon{box-shadow:0 24px 16px 0 rgba(0, 0, 0, 0.35);}
+/* .boxOfficeWrap .boxOfficeCon.focusOn .topCon:before{transform:scale(0.85) translate(-59%,-59%);} */
+/*.boxOfficeWrap .boxOfficeCon.focusOn .topCon img:not(.protection),*/
+/*.boxOfficeWrap .boxOfficeCon.focusOn .topCon:before{opacity:0;}*/
+.boxOfficeWrap .boxOfficeCon.focusOn .topCon img:not(.protection){opacity:0;}
+.boxOfficeWrap .boxOfficeCon.focusOn.bgCover .topCon:before{opacity:0;}
+.boxOfficeWrap .boxOfficeCon.focusOn .lank{/*color:#f5513f;*/}
+.boxOfficeWrap .boxOfficeCon.focusOn .lank.top3:before{}
+.boxOfficeWrap .boxOfficeCon.focusOn .timeLine{opacity:1;}
+.boxOfficeWrap .boxOfficeCon.focusOn .botCon{color:#f4f4f4;}
+.boxOfficeWrap .boxOfficeCon.focusOn .programName{color:#aaa;}
+.boxOfficeWrap .boxOfficeCon.focusOn .botCon .channelNum .fav{background-image:url("/assets/images/liveTv/flag-ch-favorite-nor.png");}
+.boxOfficeWrap.first .arrowTopIcon,
+.boxOfficeWrap.last .arrowBottomIcon{opacity:0;}
+
+.boxOfficeWrap .boxOfficeCon .topCon:after{position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;content:"";display:block;border-radius:2px;overflow:hidden;box-shadow:0 0 0 5px #f4f4f4;opacity:0;}
+.boxOfficeWrap .boxOfficeCon.focusOn .topCon:after{box-shadow:0 0 0 5px #f4f4f4;opacity:1;}
+
+
+

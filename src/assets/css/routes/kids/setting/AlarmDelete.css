@@ -1,0 +1,16 @@
+/* AlarmDelete.css */
+.settingRegistWrap.alarmDelete {padding-left:187px; padding-right:187px;}
+
+.alarmDelete .alarmList {display:flex; justify-content:center; padding-top:103px;}
+.alarmDelete .alarmList li .item {display:block;}
+.alarmDelete .alarmList li .item .inner {display:block; padding:33px; width:376px; height:376px; background:url("/assets/images/kids/setting/img-alarm-nor.png") no-repeat center center; text-align:center;}
+.alarmDelete .alarmList li .item .text {display:block; padding-top:166px; background:url("/assets/images/kids/setting/ic-school.png") no-repeat center top; background-size:156px; font-size:32px; font-weight:700; line-height:normal; letter-spacing:normal; text-align:center; color:rgb(0, 0, 0);}
+.alarmDelete .alarmList li.meal .item .text {background-image:url("/assets/images/kids/setting/ic-fork.png");}
+.alarmDelete .alarmList li.rest .item .text {background-image:url("/assets/images/kids/setting/ic-rest.png");}
+.alarmDelete .alarmList li.sleep .item .text {background-image:url("/assets/images/kids/setting/ic-sleep.png");}
+
+.alarmDelete .detailAlarm {display:block; padding-top:20px;}
+.alarmDelete .detailAlarm span {font-size:23px; font-weight:700; line-height:normal; letter-spacing:normal; color:rgba(0, 0, 0, 0.6);}
+.alarmDelete .detailAlarm .time {}
+.alarmDelete .detailAlarm .count:before {display:inline-block; margin:3px 10px; width:2px; height:19px; background-color:rgba(0, 0, 0, 0.3); vertical-align:top; content:"";}
+.alarmDelete .detailAlarm .day {display:block; margin-top:10px;}

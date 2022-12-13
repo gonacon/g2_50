@@ -1,0 +1,40 @@
+/* ToolGuide.css */
+:root{
+	--aniTime:0;
+	--delayTime:0;
+}
+
+.toolGuideWrap{position:absolute;z-index:10;opacity:0;}
+.toolGuideWrap:after{content:'';display:block;position:absolute;z-index:10;bottom:-18px;left:50%;width:28px;height:22px;background:url('/assets/images/common/bg/bg-tooptip-down-arr.png') 0 0 no-repeat;transform:translateX(-50%);}
+.toolGuideWrap.left:after{left:20%;}
+.toolGuideWrap.leftleft:after{left:10%;}
+.toolGuideWrap.right:after{left:80%;}
+.toolGuideWrap.rightright:after{left:90%;}
+.toolGuideWrap.up:after{bottom:auto;top:-18px;background:url('/assets/images/common/bg/bg-tooptip-up-arr.png') 0 0 no-repeat;}
+.toolGuideWrap.none:after{display:none;}
+.toolGuideWrap .toolguide{display:block;padding:0 40px;}
+.toolGuideWrap .toolguide:before,
+.toolGuideWrap .toolguide:after{content:'';position:absolute;top:0;width:40px;height:74px;}
+.toolGuideWrap .toolguide:before{left:0;background:url('/assets/images/common/bg/bg-tooptip-l.png') 0 0 repeat-x;}
+.toolGuideWrap .toolguide:after{right:0;background:url('/assets/images/common/bg/bg-tooptip-r.png') 0 0 repeat-x;}
+.toolGuideWrap .toolguide .text{display:block;height:74px;font-size:28px;color:rgba(255,255,255,1);line-height:74px;background:url('/assets/images/common/bg/bg-tooptip-c.png') 0 0 repeat-x;}
+
+.toolGuideWrap{animation:opacityOut calc(var(--aniTime) * 1s) ease-out calc(var(--delayTime) * 1s) forwards;}
+.toolGuideWrap.aniNone,
+.possessionVOD .toolGuideWrap{animation:none !important;}
+
+
+@-webkit-keyframes opacityOut{
+	0%{
+		opacity:0;
+	}
+	20%{
+		opacity:1;
+	}
+	80%{
+		opacity:1;
+	}
+	100%{
+		opacity:0;
+	}
+}

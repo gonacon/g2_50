@@ -1,0 +1,34 @@
+{
+	"slideType": "ListVoucher",
+	"slideTitle" : "지상파 월정액",
+	"slideItem": [
+		{
+			"thumbImage": "/assets/images/tmp/monthly/M01_B_public_jtbc.png",
+			"channelImage": "/assets/images/tmp/monthly/M01_B_LOGO_public_jtbc.png",
+			"voucherImage": "/assets/images/tmp/monthly/M01_B_LOGO_public_jtbc_1.png",
+			"voucherText": "한편 가격으로 최신 개봉영화를<br/>마음껏 즐기세요!",
+			"price": "22,000"
+		},
+		{
+			"thumbImage": "/assets/images/tmp/monthly/M01_B_public_cj.png",
+			"channelImage": "/assets/images/tmp/monthly/M01_B_LOGO_public_cj.png",
+			"voucherImage": "/assets/images/tmp/monthly/M01_B_LOGO_public_cj_1.png",
+			"voucherText": "한편 가격으로 최신 개봉영화를<br/>마음껏 즐기세요!",
+			"price": "33,000"
+		},
+		{
+			"thumbImage": "/assets/images/tmp/monthly/M01_B_public_drama.png",
+			"channelImage": "/assets/images/tmp/monthly/M01_B_LOGO_public_drama.png",
+			"voucherImage": "/assets/images/tmp/monthly/M01_B_LOGO_public_drama_1.png",
+			"voucherText": "한편 가격으로 최신 개봉영화를<br/>마음껏 즐기세요!",
+			"price": "11,000"
+		},
+		{
+			"thumbImage": "/assets/images/tmp/monthly/M01_B_public.png",
+			"channelImage": "/assets/images/tmp/monthly/M01_B_LOGO_public.png",
+			"voucherImage": "/assets/images/tmp/monthly/M01_B_LOGO_public_1.png",
+			"voucherText": "한편 가격으로 최신 개봉영화를<br/>마음껏 즐기세요!",
+			"price": "22,000"
+		}
+	]
+}

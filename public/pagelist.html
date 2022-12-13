@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title data-role="ui-title"></title>
+<style type="text/css">
+*{box-sizing:border-box}
+*:before,*:after{box-sizing:border-box}
+*{margin:0;padding:0}
+html{height:100%;margin:0;padding:0;font-family:'맑은 고딕','Malgun Gothic',sans-serif;letter-spacing:-1px}
+body{margin:0;padding:0;height:100%;font-size:12px;color:#666;line-height:1.2;word-break:keep-all;-moz-text-size-adjust:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none}
+label{vertical-align:middle}
+address,em{font-style:normal}
+strong,b,th{font-weight:500}
+fieldset,img{border:0;vertical-align:middle}
+caption,legend{width:1px;text-align:left;font-size:0;line-height:0;text-indent:-999em}
+ul,ol,dl,dt,dd,li{list-style:none}
+h1,h2,h3,h4,h5,h6{font-weight:bold;font-size:100%}
+input,textarea,select{color:#666;letter-spacing:-1px;vertical-align:middle;-webkit-appearance:none;border-radius:0;border:0}
+article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{display:block}
+div,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,p,form,iframe,fieldset,input,table,tr,th,td,button,textarea,select,thead,tbody,tfoot,pre,option{margin:0;padding:0;color:#666;letter-spacing:-1px}
+textarea{resize:none}
+table{width:100%;border-spacing:0}
+table th{border-collapse:collapse;*border-collapse:collapse}
+table td{border-collapse:collapse}
+button{border:none;background:none;cursor:pointer}
+input,button,select,textarea{font-family:'맑은 고딕','Malgun Gothic',sans-serif;letter-spacing:-1px}
+figcaption{position:absolute;overflow:hidden;width:0;height:0;font-size:0;line-height:0}
+legend{visibility:hidden;overflow:hidden;width:0;height:0;font-size:0;line-height:0}
+a{color:#666;text-decoration:none}
+#g_header h1{height:60px;line-height:60px;padding-left:28px;margin-top:0;color:#fff;background:#0149a1;font-size:28px;font-weight:500}
+#container{padding:0 30px 80px}
+#container .contents{overflow:hidden;*zoom:1}
+#container .contents:after{content:"";clear:both;display:block}
+#container .contents .guide_list{float:left;width:20%}
+#container .contents .guide_list ul > li{padding:5px;margin-bottom:1px;background:#666}
+#container .contents .guide_list ul > li a{display:block;color:#fff;text-decoration:none}
+#container .contents .guide_cont{float:left;padding:0 10px;width:75%;text-align:left}
+#container .contents .guide_cont > h3{margin-bottom:10px;color:black;font-size:20px;font-weight:bold;line-height:20px}
+#container .contents .guide_cont > h4{padding:5px 10px;margin:30px 0 10px;background:#488fc3;color:#fff;font-size:14px}
+#container .contents .guide_cont > textarea{overflow-y:scroll;padding:5px;width:98%;height:150px;border:1px solid #666}
+#g_footer{padding:30px;text-align:center;font-size:11px}
+.guide-example{}
+.guide-example th{padding:10px 0;border:1px solid #666;color:#333; text-align:center}
+.guide-example td{padding:10px 0;border:1px solid #666;text-align:center}
+.guide_summary{margin-bottom:30px}
+.guide_summary h3{margin:30px 0 10px;padding-bottom:5px;font-size:18px;border-bottom:1px solid #000}
+.guide_summary h4{margin:20px 0 10px;font-size:14px}
+.guide_summary ul + ul{margin-top:20px}
+.guide_summary ul li{line-height:22px}
+.guide_summary p{line-height:22px}
+.guide-table{width:100%;border:1px solid #dadada}
+.guide-table thead th{background:#f1f1f1;border-bottom:1px solid #999;padding:10px 0;border-left:1px solid #dadada;font-size:14px;font-weight:bold}
+.guide-table tbody td{padding:5px;border-left:1px solid #dadada;font-size:14px;text-align:center}
+.guide-table tbody tr + tr td{border-top:1px solid #dadada}
+.guide-table tbody td.no{text-align:center}
+.guide-table tbody td.left{text-align:left}
+.guide-table tbody td.filelink{text-align:left}
+.guide-table tbody td.filelink a{text-decoration:none;color:#0177bd}
+tr.native{background:#aaa;}
+tr.browser{background:#bbb;}
+tr.ing{background:#fffac0;}
+tr.complete{background:#c0ffee;}
+.ing_progress {color:transparent}
+</style>
+</head>
+<body>
+<div id="g_header">
+	<h1 data-role="ui-title"></h1>
+</div>
+<div id="container">
+	<div class="contents">
+		<div class="guide_summary">
+			<h3>브라우저 지원 범위 및 퍼블리싱 참고사항</h3>
+			<ul>
+				<li><strong>Chrome 기준 (크로미움 엔진)</strong></li>
+				<li>React.js 기술을 기반으로 한 SPA방식의 Front-End 개발</li>
+				<li>해상도 1920 * 1080 FHD 기준으로 제작</li>
+			</ul>
+
+			<h4>문서타입 및 인코딩</h4>
+			<p class="box_code">&lt;!DOCTYPE html&gt;<br>&lt;meta charset="utf-8"&gt;</p>
+			
+			<h4>진행율</h4>
+			<p class="progress">
+				총 <strong class="total_num"></strong>P <br>
+				퍼블리싱 <strong class="pub_num"></strong>P 중 <strong class="now_num"></strong>P 완료, 진행율 <strong class="progress_num"></strong>%<br>
+				(ing = <span class="ing_num"></span>P) <span class="ing_progress"></span><br>
+				(native + browser =<strong class="native_num"></strong>P)
+			</p>
+		</div>
+		<div class="this-list-view">
+			<form name="work" action="">
+				<table class="guide-table">
+					<caption></caption>
+					<colgroup>
+						<col style="width: 3%;">
+						<col style="width: 10%;">
+						<col style="width: 10%;">
+						<col style="width: 10%;">
+						<col style="width: 10%;">
+						<col style="width: 10%;">
+						<col style="width: 15%;">
+						<col style="width: 7%;">
+						<col style="">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">INDEX</th>
+							<th scope="col">1Depth</th>
+							<th scope="col">2Depth</th>
+							<th scope="col">3Depth</th>
+							<th scope="col">4Depth</th>
+							<th scope="col">5Depth</th>
+							<th scope="col">File Name</th>
+							<th scope="col">완료여부</th>
+							<th scope="col">작업내용 / 참고내용</th>
+						</tr>
+					</thead>
+					<tbody data-role="ui-list">
+					</tbody>
+				</table>
+			</form>
+		</div>
+	</div>
+</div>
+
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+	
+	var data = {};
+	data.title = "SKB '18년향 B TV UI 5.0";
+	data.list = [
+		{ depth1: '1. 홈', depth2: '', depth3: '', depth4: '', depth5: '', url: '/', complete: false, etc: '재작업 예정' },
+		{ depth1: '', depth2: '1.1 전체 홈', depth3: '', depth4: '', depth5: '', url: '/home', complete: false, etc: '재작업 예정' },
+		{ depth1: '', depth2: '', depth3: '1.1.1 빅배너 포커스시', depth4: '', depth5: '', url: '/home', complete: false, etc: '배너 포커스시' },
+		{ depth1: '', depth2: '', depth3: '1.1.2 빅배너 확장시 : 이미지형', depth4: '', depth5: '', url: '/home', complete: false, etc: '배너 1, 3번째 슬라이드 포커스 5초후' },
+		{ depth1: '', depth2: '', depth3: '1.1.3 빅배너 확장시 : 영상형', depth4: '', depth5: '', url: '/home', complete: false, etc: '배너 2, 4번째 슬라이드 포커스 5초후' },
+		{ depth1: '', depth2: '', depth3: '1.1.4 빅배너 확장시 : 하프형', depth4: '', depth5: '', url: '/homeOAP', complete: false, etc: '배너 1, 3번째 슬라이드 포커스 5초후' },
+		{ depth1: '', depth2: '', depth3: '1.1.5 화면 하단 : 맨 위로 이동', depth4: '', depth5: '', url: '/home', complete: false, etc: '포커스를 최하단으로 이동 하여 확인 가능.' },
+		{ depth1: '', depth2: '', depth3: '1.1.6 화면 하단 : 검색필드', depth4: '', depth5: '', url: '/home', complete: false, etc: '포커스를 최하단으로 이동 하여 확인 가능.' },
+		{ depth1: '', depth2: '', depth3: '1.1.7 전체 홈(1depth) - OAP', depth4: '', depth5: '', url: '/homeOAP', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '1.1.8 빅배너 : 영상 전체 화면 재생', depth4: '', depth5: '', url: '/homeOAP', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '1.2 장르 홈', depth3: '', depth4: '', depth5: '', url: '/homeGenre', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '1.2.1 장르 홈 : 빅배너 미제공', depth4: '', depth5: '', url: '/homeGenreTitle', complete: false, etc: '' },
+		{ depth1: '', depth2: '1.3 세부 장르 홈', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+//		{ depth1: '', depth2: '', depth3: '1.3.1 배너가 있는 경우', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+//		{ depth1: '', depth2: '', depth3: '1.3.2 배너가 없는 경우', depth4: '', depth5: '', url: '/homeGenreTitle', complete: false, etc: '' },
+//		{ depth1: '', depth2: '', depth3: '1.3.3 이미지형 배너인 경우', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '1.4 GNB', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '1.5 IoT', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+
+		{ depth1: '2. 전체메뉴', depth2: '', depth3: '', depth4: '', depth5: '', url: '/allMenu', complete: false, etc: '재작업 예정' },
+		{ depth1: '', depth2: '2.1 전체메뉴', depth3: '', depth4: '', depth5: '', url: '/allMenu/allMenu', complete: false, etc: '재작업 예정' },
+		
+		{ depth1: '3. 시놉시스', depth2: '3.1 단편 시놉시스 메인', depth3: '', depth4: '', depth5: '', url: '/synopsis/synopShort', complete: false, etc: '' },
+		{ depth1: '', depth2: '3.2 단편 시놉시스 서브', depth3: '', depth4: '', depth5: '', url: '/synopsis/synopShort', complete: false, etc: '같은 페이지 하단에 있음' },
+		{ depth1: '', depth2: '', depth3: '3.2.1 스틸컷 상세', depth4: '', depth5: '', url: '/synopsis/SynopShortSteel', complete: false, etc: '스틸컷 부분에 연결되어있음' },
+		{ depth1: '', depth2: '3.3 시즌 시놉시스 메인', depth3: '', depth4: '', depth5: '', url: '/synopsis/synopSeries', complete: false, etc: '재작업 예정' },
+		{ depth1: '', depth2: '3.4 시즌 시놉시스 에피소드', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '3.5 게이트웨이', depth3: '', depth4: '', depth5: '', url: '/synopsis/SynopGateWay', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '3.5.1 재생할 콘텐츠 선택', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '3.6 VOD+관련상품 시놉 메인', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '3.6.1 상품정보/교환환불 안내', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '3.7 VOD+관련상품 상세', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '3.8 인물정보', depth3: '', depth4: '', depth5: '', url: '/synopsis/SynopPersonalInformation', complete: false, etc: '' },
+		{ depth1: '', depth2: '3.9 평점&리뷰 상세', depth3: '', depth4: '', depth5: '', url: '/synopsis/synopShort', complete: false, etc: '평점&리뷰 선택시 뜨는 팝업창 확인' },
+		{ depth1: '', depth2: '', depth3: '3.9.1 평점 상세보기 - 시네21', depth4: '', depth5: '', url: '/synopsis/synopShort', complete: false, etc: '평점&리뷰 선택시 뜨는 팝업창 확인' },
+		{ depth1: '', depth2: '', depth3: '3.9.2 평점 상세보기 - 왓챠', depth4: '', depth5: '', url: '/synopsis/synopShort', complete: false, etc: '평점&리뷰 선택시 뜨는 팝업창 확인' },
+		{ depth1: '', depth2: '', depth3: '3.9.3 리뷰 상세보기', depth4: '', depth5: '', url: '/synopsis/synopShort', complete: false, etc: '평점&리뷰 선택시 뜨는 팝업창 확인' },
+		{ depth1: '', depth2: '3.10 Btv 평가 상세보기', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '3.11 평가하기', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '3.12 수상내역 상세', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '3.13 줄거리 전체보기', depth3: '', depth4: '', depth5: '', url: '/synopsis/synopShort', complete: false, etc: '줄거리 더보기 선택시 뜨는 팝업창 확인' },
+		{ depth1: '', depth2: '3.14 코너별 보기 선택', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '3.15 재생영상 유형 선택', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+
+		{ depth1: '4. VOD', depth2: '', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '4.1 VOD 로딩', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '4.2 앞 부분 건너뛰기', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '4.3 재생 컨트롤 모드', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '4.3.1 배속만 표시', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '4.4 장면탐색 모드', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '4.4.1 코너별보기 / 코너모아보기 코너탐색', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '4.5 시청옵션 모드 : 회차변경', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '4.5.1 자막설정', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '4.5.2 음성/음향 설정', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '4.6 엔딩 시놉시스', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '4.7 다음 화 바로보기', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '4.8 기본 자막표시', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '4.9 이어보기 확인 팝업', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '4.10 키즈 플레이어', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '4.11 구간반복목록', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '4.11.1 구간반복목록 삭제', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '4.11.2 저장한 목록이 없는 경우', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '4.11.3 구간반복 녹화', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '4.11.4 구간반복 재생 모드', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '4.12 구간반복 전체 목록', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '4.12.1 구간반복 전체목록 없는 경우', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '4.12.2 구간반복 전체 목록 삭제', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '4.13 반복재생 옵션', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+
+		{ depth1: '5. 월정액', depth2: '5.1 월정액 홈 (가입 전)', depth3: '', depth4: '', depth5: '', url: '/monthly/HomeJoinBefore', complete: false, etc: '디자인재수정' },
+		{ depth1: '', depth2: '', depth3: '5.1.1 월정액 상세 (가입전)', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '5.1.2 빅배너 - 세부 상품이 있는 경우', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '5.2 월정액 홈 (가입 후)', depth3: '', depth4: '', depth5: '', url: '/monthly/HomeJoinAfter', complete: false, etc: '디자인재수정' },
+		{ depth1: '', depth2: '', depth3: '5.2.1 월정액 상세 (가입 후)', depth4: '', depth5: '', url: '/monthly/MonthlyDetail', complete: false, etc: '디자인재수정' },
+		{ depth1: '', depth2: '', depth3: '5.2.2 월정액 내 장르 홈 : 블록유형', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '5.2.3 월정액 내 장르 홈 : 목록유형', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+
+		{ depth1: '6. 마이 Btv', depth2: '', depth3: '', depth4: '', depth5: '', url: '/myBtv', complete: false, etc: '' },
+		{ depth1: '', depth2: '6.1 마이 Btv', depth3: '', depth4: '', depth5: '', url: '/myBtv/my/MyBtvHome', complete: false, etc: 'new 뱃지 디자인없음.' },
+		{ depth1: '', depth2: '', depth3: '6.1.1 마이 Btv : 정보 없는 경우', depth4: '', depth5: '', url: '/myBtv/my/MyBtvHomeNone', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '6.1.2 최근 시청 VOD : 편집모드', depth4: '', depth5: '', url: '/myBtv/my/RecentVodEdit', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '6.1.2.1 최근 시청 VOD 전체 삭제', depth5: '', url: '/myBtv/my/RecentVodAllDel', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '6.1.5 VOD 찜 전체목록', depth4: '', depth5: '', url: '/myBtv/my/MyWishTotalList', complete: false, etc: '기획서업데이트후작업.' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '6.1.5.1 VOD 찜 전체목록 : 편집모드', depth5: '', url: '/myBtv/my/MyWishTotalDelete', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '6.1.6 VOD 찜 목록 : 편집모드', depth4: '', depth5: '', url: '/myBtv/my/MyWishEdit', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '6.1.6.1 VOD 찜 목록 전체삭제', depth5: '', url: '/myBtv/my/MyWishAllDel', complete: true, etc: '' },
+		{ depth1: '', depth2: '6.2 상품 안내', depth3: '', depth4: '', depth5: '', url: '/myBtv/product/BtvProductInfo', complete: true, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.2.2 Btv 상품상세', depth4: '', depth5: '', url: '/myBtv/product/BtvProductDetail', complete: true, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '6.2.2.1 상품변경신청', depth5: '', url: '/myBtv/product/BtvProductChangeApplication', complete: true, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '6.2.2.2 상품변경완료', depth5: '', url: '/myBtv/product/BtvProductChangeEnd', complete: true, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.2.3 B tv 상품상세 : Btv 서라운드', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '6.2.3.1 Btv 상품상세 : Btv 서라운드 상담신청', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.2.4 B tv 상품상세 : Giga 인터넷', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '6.2.4.1 Btv 상품상세 : Giga 인터넷 상담신청', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.2.5 B tv 상품상세 : 추가가입', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '6.2.5.1 Btv 상품상세 : 추가가입 상담신청', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.2.6 상담신청 완료', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+        { depth1: '', depth2: '6.3 쿠폰함', depth3: '', depth4: '', depth5: '', url: '/myBtv/coupon/CouponDetail', complete: true, etc: '' },
+        { depth1: '', depth2: '', depth3: '6.3.1 쿠폰함 : 쿠폰없는 경우', depth4: '', depth5: '', url: '/myBtv/coupon/CouponDetailNone', complete: true, etc: '' },
+        { depth1: '', depth2: '', depth3: '6.3.2 쿠폰 등록하기', depth4: '', depth5: '', url: '/myBtv/coupon/CouponRegist', complete: true, etc: '' },
+        { depth1: '', depth2: '6.4 B 포인트 이용내역', depth3: '', depth4: '', depth5: '', url: '/myBtv/bPoint/BpointHistory', complete: true, etc: '' },
+        { depth1: '', depth2: '', depth3: '6.4.1 B포인트 이용내역 : Empty', depth4: '', depth5: '', url: '/myBtv/bPoint/BpointHistoryNone', complete: true, etc: '' },
+        { depth1: '', depth2: '', depth3: '6.4.2 B포인트 충전소', depth4: '', depth5: '', url: '/myBtv/bPoint/BpointDetail', complete: true, etc: '' },
+        { depth1: '', depth2: '', depth3: '6.4.3 B포인트 선물하기', depth4: '', depth5: '', url: '/myBtv/bPoint/BpointGift', complete: true, etc: '' },
+        { depth1: '', depth2: '', depth3: '6.4.4 B포인트 선물하기 : 정보입력', depth4: '', depth5: '', url: '/myBtv/bPoint/BpointGiftInfo', complete: true, etc: '' },
+        { depth1: '', depth2: '', depth3: '6.4.5 B포인트 보내는 사람 이름 수정', depth4: '', depth5: '', url: '/myBtv/bPoint/CorrectSender', complete: true, etc: '' },
+        { depth1: '', depth2: '', depth3: '6.4.6 B포인트 등록하기', depth4: '', depth5: '', url: '/myBtv/bPoint/BpointRegist', complete: true, etc: '' },
+        { depth1: '', depth2: '6.5 T 멤버십', depth3: '', depth4: '', depth5: '', url: '/myBtv/tmembership/Tmembership', complete: true, etc: '' },
+        { depth1: '', depth2: '', depth3: '6.5.1 T 멤버십 : 등록된 카드가 없는 경우', depth4: '', depth5: '', url: '/myBtv/tmembership/TmembershipNone', complete: true, etc: '' },
+        { depth1: '', depth2: '', depth3: '6.5.2 T 멤버십 카드 등록', depth4: '', depth5: '', url: '/myBtv/tmembership/TmembershipRegist', complete: true, etc: '' },
+        { depth1: '', depth2: '', depth3: '6.5.3 T 멤버십 카드 변경', depth4: '', depth5: '', url: '/myBtv/tmembership/TmembershipChange', complete: true, etc: '' },
+        { depth1: '', depth2: '', depth3: '6.5.4 T 멤버십 카드 삭제', depth4: '', depth5: '', url: '/myBtv/tmembership/TmembershipDelete', complete: true, etc: '' },
+        { depth1: '', depth2: '6.6 OK 캐쉬백', depth3: '', depth4: '', depth5: '', url: '/myBtv/okcash/OkCashManage', complete: true, etc: 'checkbox 이미지 없음. 디자인 재수정.' },
+        { depth1: '', depth2: '', depth3: '6.6.1 OK 캐쉬백 : 등록된 카드가 없는 경우', depth4: '', depth5: '', url: '/myBtv/okcash/OkCashManageNone', complete: true, etc: '' },
+        { depth1: '', depth2: '', depth3: '6.6.2 OK 캐쉬백 카드 등록', depth4: '', depth5: '', url: '/myBtv/okcash/OkCashRegist', complete: true, etc: '' },
+        { depth1: '', depth2: '', depth3: '6.6.3 OK 캐쉬백 비밀번호 입력', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+        { depth1: '', depth2: '', depth3: '6.6.4 OK 캐쉬백 카드 삭제', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '6.8 소장용 VOD 전체 목록', depth3: '', depth4: '', depth5: '', url: '/myBtv/VOD/PossessionVODTotalList', complete: true, etc: '' },
+		{ depth1: '', depth2: '6.9 소장용 VOD 상세 (단편)', depth3: '', depth4: '', depth5: '', url: '/myBtv/VOD/PossessionVODDetail', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '6.9.1 소장용 VOD 상세 (단편) : 스페셜 영상', depth4: '', depth5: '', url: '/myBtv/VOD/PossessionVODSpecial', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '6.9.1.1 소장용 VOD 상세 (단편) : 코너별 영상', depth5: '', url: '/myBtv/VOD/PossessionVODCorner', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '6.9.1.2 소장용 VOD 상세 (단편) : 제작/출연진', depth5: '', url: '/myBtv/VOD/PossessionVODAppearance', complete: true, etc: '/myBtv/VOD/PossessionVODAppearanceBlock' },
+		{ depth1: '', depth2: '', depth3: '6.9.2 소장용 VOD 상세 (시즌)', depth4: '', depth5: '', url: '/myBtv/VOD/PossessionVODSeriesDetail', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '6.9.2.1 소장용 VOD 상세 (시즌) : 회차목록', depth5: '', url: '/myBtv/VOD/PossessionVODSeriesList', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '6.9.2.2 소장용 VOD 상세 (시즌) : 스페셜 영상', depth5: '', url: '/myBtv/VOD/PossessionVODSeriesSpecial', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '6.9.2.3 소장용 VOD 상세 (시즌) : 코너별 영상', depth5: '', url: '/myBtv/VOD/PossessionVODSeriesCorner', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '6.9.2.4 소장용 VOD 상세 (시즌) : 제작/출연진', depth5: '', url: '/myBtv/VOD/PossessionVODSeriesAppearance', complete: true, etc: '영화 외 장르 인물경로. /myBtv/VOD/PossessionVODSeriesAppearanceBlock' },
+		{ depth1: '', depth2: '', depth3: '6.9.3 소장용 VOD 추천목록', depth4: '', depth5: '', url: '/myBtv/VOD/OwnVODRecommendList', complete: true, etc: '' },
+		{ depth1: '', depth2: '6.10 구매내역 : 일반 VOD', depth3: '', depth4: '', depth5: '', url: '/myBtv/purchase/PurchaseGeneralList', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '6.10.1 구매내역 : 일반 VOD 구매내역이 없는 경우', depth4: '', depth5: '', url: '/myBtv/purchase/PurchaseGeneralNone', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '6.10.1.1 패키지 상품 보기', depth5: '', url: '/myBtv/purchase/PackageProduct', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '6.10.1.2 커머스 상품보기', depth5: '', url: '/myBtv/purchase/CommerceProduct', complete: false, etc: '이용기간 디자인 없음 / 하단 레이어 bg??' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '', depth5: '이미지상세', url: '/myBtv/purchase/CommerceSlide', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '6.10.2 구매내역 : 소장용 VOD', depth4: '', depth5: '', url: '/myBtv/purchase/PurchaseVodList', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '6.10.3 구매내역 : 소장용 VOD 구매내역이 없는 경우', depth4: '', depth5: '', url: '/myBtv/purchase/PurchaseVodNone', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '6.10.4 구매내역 : 월정액', depth4: '', depth5: '', url: '/myBtv/purchase/PurchaseMonthlyList', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '6.10.4.1 월정액 가입해지', depth5: '', url: '/myBtv/purchase/PurchaseMonthlyAmountCancel', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '6.10.5 구매내역 : 월정액 구매내역이 없는 경우', depth4: '', depth5: '', url: '/myBtv/purchase/PurchaseMonthlyNone', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '6.10.6 구매내역 : oksusu 로그인', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '6.10.6.1 구매내역 : oksusu 로그인 인증번호 발급', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '6.10.6.1 구매내역 : oksusu 로그인 연동계정 없는 경우', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '6.10.7 구매내역 : oksusu', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '6.10.8 구매내역 : oksusu 구매내역이 없는 경우', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '6.11 공지/알림/이벤트', depth3: '', depth4: '', depth5: '', url: '/myBtv/notice/NoticeList', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '6.11.1 공지사항 : 목록이 없는 경우', depth4: '', depth5: '', url: '/myBtv/notice/NoticeListNone', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '6.11.2 공지사항 상세', depth4: '', depth5: '', url: '/myBtv/notice/ListTextDetail', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '6.11.3 알림 보관함', depth4: '', depth5: '', url: '/myBtv/notice/NoticeBoxList', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '6.11.4 알림 보관함 : 목록이 없는 경우', depth4: '', depth5: '', url: '/myBtv/notice/NoticeBoxListNone', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '6.11.5 알림 상세', depth4: '', depth5: '', url: '/myBtv/notice/BoxListTextDetail', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '6.11.6 알림 상세 : 부분팝업', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '6.12 이벤트', depth3: '', depth4: '', depth5: '', url: '/myBtv/notice/EventList', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '6.12.1 이벤트 : 목록이 없는 경우', depth4: '', depth5: '', url: '/myBtv/notice/EventListNone', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '6.12.2 이벤트 상세', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '6.13 이용가이드 : 도움말', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '6.13.1 이용가이드 : 도움말 목록이 없는 경우', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+//		{ depth1: '', depth2: '', depth3: '6.13.2 도움말 상세', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+//		{ depth1: '', depth2: '', depth3: '6.13.3 이용가이드 : FAQ', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+//		{ depth1: '', depth2: '', depth3: '6.13.4 이용가이드 : FAQ 목록이 없는 경우', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+//		{ depth1: '', depth2: '', depth3: '6.13.5 FAQ 상세', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+//		{ depth1: '', depth2: '', depth3: '6.13.6 이용가이드 : 동영상 가이드', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+//		{ depth1: '', depth2: '', depth3: '6.13.7 이용가이드 : 동영상 가이드 목록이 없는 경우', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+//		{ depth1: '', depth2: '', depth3: '6.13.8 동영상 가이드 상세', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '6.14 콘텐츠 요청', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '6.14.1 콘텐츠 요청 : 콘텐츠명 입력', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '6.14.2 콘텐츠 요청 : 요청완료', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '6.14.3 콘텐츠 요청 목록', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '6.14.4 콘텐츠 요청 목록 : Empty', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '6.14.5 콘텐츠 요청 상세', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '6.14.6 콘텐츠 요청 상세 : 답변없는 경우', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '6.15 스마트폰 연결 관리 : oksusu', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.15.1 스마트폰 연결 관리 : oksusu 미연결시', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.15.2 oksusu 앱 연결하기', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.15.3 oksusu 앱 다운로드 링크 보내기', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.15.4 스마트폰 연결 관리 : Btv Plus', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.15.5 스마트폰 연결 관리 : Btv Plus 미연결 시', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.15.6 Btv Plus 앱 연결하기', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.15.7 Btv Plus 앱 다운로드 링크 보내기', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '6.16 블루투스 연결관리', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+//		{ depth1: '', depth2: '', depth3: '6.16.1 블루투스 연결관리 : 미연결시', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+//		{ depth1: '', depth2: '', depth3: '6.16.2 블루투스 검색 : 검색중', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+//		{ depth1: '', depth2: '', depth3: '6.16.3 블루투스 검색 : 검색완료', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+//		{ depth1: '', depth2: '', depth3: '6.16.4 블루투스 검색 : 검색결과 없음', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '6.17 NUGU 연결관리 : 연결됨', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.17.1 NUGU 연결관리 : 연결 안됨', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.17.2 NUGU 연결하기', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '6.18 인증번호 설정 : 성인 인증번호', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.18.1 성인 인증번호 변경', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.18.3 인증번호 설정 : 시청시간 제한 인증번호', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.18.4 시청제한시간 인증번호', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.18.6 인증번호 설정 : 구매 인증번호', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.18.7 구매 인증번호 변경', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '6.19 자녀안심 설정 : 시청연령 제한', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.19.1 자녀안심 설정 : 시청시간 제한', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '6.19.1.1 자녀안심 설정 : 시청시간 제한 미설정 시', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '6.19.1.2 시청시간 제한 : 시간으로 제한', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '6.19.1.3 시청시간 제한 : 편수로 제한', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '6.19.1.4 시청시간 제한 : 시간대로 제한', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.19.2 자녀안심 설정 : 성인메뉴로 표시', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '6.20 사용자 맞춤 설정 : 시작화면', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.20.1 사용자 맞춤 설정 : 자동 홈 모드', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.20.2 사용자 맞춤 설정 : 해설&자막방송', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.20.3 사용자 맞춤 설정 : 자동 취침모드', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.20.4 사용자 맞춤 설정 : 맞춤형 광고보기', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '6.20.4.1 맞춤형 광고 새로받기', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '6.20.4.2 정보수집 약관보기', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '6.21 키즈존 설정 : 키즈존 잠금설정', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.21.1 키즈존 설정 : 우리아이 프로필', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+//		{ depth1: '', depth2: '', depth3: '', depth4: '6.21.1.1 우리아이 프로필 입력 팝업', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '6.21.1.2 키즈존 설정 : 시청가이드 캐릭터', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '6.21.1.3 키즈존 설정 : 알림시간 설정', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '6.21.1.4 키즈존 설정 : 시력보호 설정', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '6.22 화면/사운드 설정 : 화면 해상도', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.22.1 화면/사운드 설정 : 화면 해상도 레거시 STB', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.22.2 화면/사운드 설정 : 화면비율', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.22.3 화면/사운드 설정 : 화면색상', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.22.3 화면/사운드 설정 : 사운드', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '6.23 시스템 설정 : 리모컨 키패드', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.23.1 시스템 설정 : 콘텐츠 정보 새로받기', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.23.2 시스템 설정 : 소프트웨어 업그레이드', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.23.3 소프트웨어 업그레이드 실행', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.23.4 시스템 설정 : 셋톱박스 최적화', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.23.5 셋톱박스 최적화 실행', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.23.6 시스템 설정 : 설정값 초기화', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.23.7 설정값 초기화 실행', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.23.8 시스템 설정 : 기기정보', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.23.9 IP 설정 변경', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.23.10 인터넷 속도 검사', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.23.11 셋톱박스 자가진단', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.23.12 셋톱박스 자가진단 : 진단중', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.23.13 셋톱박스 자가진단 : 진단 완료', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.23.14 셋톱박스 자가진단(행복기사)', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.23.15 셋톱박스 자가진단(행복기사) : 진단중', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '6.23.16 셋톱박스 자가진단(행복기사) : 진단완료', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+
+		{ depth1: '7. 실시간', depth2: '7.1 전체 편성표', depth3: '', depth4: '', depth5: '', url: '/liveTv/organization', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '7.1.1 프로그램 표현 : 성인채널', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '7.1.1.1 프로그램 표현 : 가상채널', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '7.1.1.2 프로그램 표현 : Btv 기본채널 (001번)', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '7.1.1.3 프로그램 표현 : 프로그램 정보가 없는 경우', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '7.1.1.4 프로그램 표현 : 미포커스 상태', depth5: '', url: '/liveTv/organization', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '7.1.1.5 프로그램 표현 : 포커스 상태', depth5: '', url: '/liveTv/organization', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '7.1.1.6 프로그램 툴팁', depth5: '', url: '/liveTv/organization', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '7.1.2 편성표 메뉴', depth4: '', depth5: '', url: '/liveTv/organization', complete: false, etc: '' },
+		{ depth1: '', depth2: '7.2 인기채널', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '7.3 선호채널', depth3: '', depth4: '', depth5: '', url: '/liveTv/organization/fav', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '7.3.1 선호채널 : 미등록시', depth4: '', depth5: '', url: '/liveTv/organization/PreferenceNone', complete: false, etc: 'json만 변경.' },
+		{ depth1: '', depth2: '', depth3: '7.3.2 장르 편성표', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '7.3.3 장르 편성표 : 채널이 없는 경우', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '7.4 멀티뷰', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.4.1 멀티뷰 : 주/부 분할', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '7.4.1.1 VOD형 멀티뷰 (화면1)', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '7.4.1.2 시청제한 멀티뷰', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.4.2 멀티뷰 메뉴', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '7.5 멀티뷰 설정 : 화면 분할 설정', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.5.1 멀티뷰 설정 : 마이 멀티뷰', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.5.2 멀티뷰 설정 : 마이 멀티뷰 미등록시', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.5.3 마이 멀티뷰 설정', depth4: '', depth5: '', url: '/liveTv/setting/SetMultiView', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '7.6 채널 설정 : 선호채널', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.6.1 선호채널 관리 : 미등록시', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.6.2 선호채널 설정', depth4: '', depth5: '', url: '/liveTv/setting/SetFavorChn', complete: true, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '7.6.2.1 선호채널 설정 : 선호채널 보기', depth5: '', url: '/liveTv/setting/SetFavorChnFavor', complete: true, etc: 'native' },
+//		{ depth1: '', depth2: '', depth3: '7.6.3 선호채널 설정 : 미등록시', depth4: '', depth5: '', url: '/liveTv/setting/SetFavorChnNone', complete: true, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.6.4 차단채널 관리', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.6.5 차단채널 관리 : 미등록시', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.6.6 차단채널 설정', depth4: '', depth5: '', url: '/liveTv/setting/SetBlockChn', complete: true, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '7.6.6.1 차단채널 설정 : 차단채널 보기', depth5: '', url: '/liveTv/setting/SetBlockChnBlock', complete: true, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.6.7 차단채널 설정 : 미등록시', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '7.7 미니 EPG', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.7.1 미니 EPG : 미래 프로그램', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.7.2 미니 EPG : 가상채널', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.7.3 미니 EPG : 키즈채널', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.7.4 음성/자막 설정', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.7.5 VOD로 보기 : 단편', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.7.6 VOD로 보기 : 시즌', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '7.8 Micro EPG', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.8.1 Micro EPG : 가상채널', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '7.9 DCA', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.9.1 DCA : 결과 없는 경우', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.9.2 DCA : 차단한 채널인 경우', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.9.3 DCA : 앱 채널인 경우', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '7.10 앱 가이드 채널', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.10.1 앱 채널 : 로딩중', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.10.2 앱 채널 : 업데이트중', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.10.3 TV앱 삭제', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '7.11 VOD 채널', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.11.1 VOD 채널 : 예고편 재생', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.11.2 VOD 채널 : 목록보기 (세로 포스터)', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.11.3 VOD 채널 : 목록보기 (시즌, 시리즈)', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.11.4 VOD 채널 : 목록보기 (회차별)', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '7.12 월정액 채널(미가입) 세로 포스터', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.12.1 월정액 채널(미가입) : 가로 포스터', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.12.2 월정액 채널(상품가입)', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.12.3 월정액 채널(상품가입) : 예고편 재생', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.12.4 월정액 채널(상품가입) : 목록보기(세로 포스터)', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.12.5 월정액 채널(상품가입) : 목록보기(시즌, 시리즈)', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.12.6 월정액 채널(상품가입) : 목록보기(회차별)', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '7.13 오디오 채널', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.13.1 오디오 채널 : Btv 음악채널', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.13.2 오디오 채널 : 이 주의 전문가 선곡', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.13.3 오디오 채널 : 화면 보호기', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '7.14 공연실황중계 채널', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.14.1 공연실황중계 채널 : 공연 홍보 영상 (전체크기)', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.14.2 공연실황중계 채널 : 공연 예매 후', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.14.3 공연실황중계 채널 : 공연 시작 전 알림', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.14.4 공연실황중계 채널 : 공연 중계', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.14.5 공연실황중계 채널 : 공연 종료', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.14.6 공연실황중계 채널 : 편성된 공연 없음', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '7.15 채널 플러스 진입', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.15.1 채널 플러스 : 야구', depth4: '', depth5: '', url: '/liveTv/channelplus/ChannelPlus', complete: false, etc: '리스트에 JSON DATA에 따라 야구, 홈쇼핑 리스트가 뿌려짐' },
+		{ depth1: '', depth2: '', depth3: '7.15.2 채널 플러스 : 홈쇼핑', depth4: '', depth5: '', url: '/liveTv/channelplus/ChannelPlus', complete: false, etc: '리스트에 JSON DATA에 따라 야구, 홈쇼핑 리스트가 뿌려짐' },
+		{ depth1: '', depth2: '7.16 시청예약 진행', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.16.1 시청예약 알림', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '7.17 1분 미리보기 고지', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '7.17.1 음성다중 고지', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+
+		{ depth1: '8. 키즈존', depth2: '', depth3: '', depth4: '', depth5: '', url: '/kids/character/home', complete: true, etc: '' },
+		{ depth1: '', depth2: '8.1 캐릭터 홈', depth3: '', depth4: '', depth5: '', url: '/kids/character/home', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '8.1.1 캐릭터 홈 : 캐릭터 포커스', depth4: '', depth5: '', url: '/kids/character/home', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '8.1.2 캐릭터 홈 : 프로모션 없는 경우', depth4: '', depth5: '', url: '/kids/character/home', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '8.1.3 포커스 아웃 시 플래그 표시', depth4: '', depth5: '', url: '/kids/character/home', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '8.1.4 포커스 시 플래그 표시', depth4: '', depth5: '', url: '/kids/character/home', complete: true, etc: '' },
+		{ depth1: '', depth2: '8.2 캐릭터 전체보기', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '8.2.1 캐릭터 전체보기 - 순서바꾸기 팝업', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '8.2.2 캐릭터 전체보기 - 캐릭터 숨기기', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '8.3 키즈존 캐릭터 서브', depth3: '', depth4: '', depth5: '', url: '/kids/character/SubCharacter', complete: false, etc: '키즈엔터 디자인 전달 후 수정.' },
+		{ depth1: '', depth2: '', depth3: '8.3.1 캐릭터 서브 - 이벤트 있는 경우', depth4: '', depth5: '', url: '/kids/character/SubCharacterEvent', complete: false, etc: '키즈엔터 디자인 전달 후 수정.' },
+		{ depth1: '', depth2: '', depth3: '8.3.2 캐릭터 서브 - 앱이 있는 경우', depth4: '', depth5: '', url: '/kids/character/SubCharacterApp', complete: false, etc: 'SubCharacter.js json변경 / 키즈엔터 디자인 전달 후 수정.' },
+		{ depth1: '', depth2: '8.4 장르메뉴 전체', depth3: '', depth4: '', depth5: '', url: '/kids/genremenu/GenreMenuAll', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '8.4.1 장르메뉴 전체 2depth - 블록유형', depth4: '', depth5: '', url: '/kids/genremenu/GenreMenuBlock', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '8.4.2 장르메뉴 전체 2depth - 목록유형', depth4: '', depth5: '', url: '/kids/genremenu/GenreMenuList', complete: false, etc: '포커스 룰이 정해지지 않았음' },
+		{ depth1: '', depth2: '8.5 놀이학습', depth3: '', depth4: '', depth5: '', url: '/kids/playlearning/PlayLearning', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '8.5.1 놀이학습 2depth : 블록유형', depth4: '', depth5: '', url: '/kids/play/PlayBlock', complete: false, etc: '' },
+		{ depth1: '', depth2: '8.6 키즈 채널', depth3: '', depth4: '', depth5: '', url: '/kids/channel/ChannelHome', complete: true, etc: '' },
+		{ depth1: '', depth2: '8.7 키즈 월정액', depth3: '', depth4: '', depth5: '', url: '/kids/monthly/MonthlyHome', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '8.7.1 월정액 상세 (가입 전)', depth4: '', depth5: '', url: '/kids/monthly/KidsMonthlyDetail', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '8.7.2 월정액 상세 (가입 후)', depth4: '', depth5: '', url: '/kids/monthly/KidsMonthlyDetailAfter', complete: false, etc: '' },
+		{ depth1: '', depth2: '8.8 키즈 단편 시놉시스 메인', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '8.8.1 키즈 단편 시놉시스 서브', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '8.8.2 키즈 시즌 시놉시스 메인', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '8.8.3 키즈 시즌 시놉시스 서브', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '8.9 최초 진입 설정 : 가이드 캐릭터 설정', depth3: '', depth4: '', depth5: '', url: '/kids/setting/FirstSetCharacter', complete: true, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '8.9.1 최초 진입 설정 : 설정시작 안내', depth4: '', depth5: '', url: '/kids/setting/FirstSetGuideStart', complete: true, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '8.9.2 최초 진입 설정 : 이름/생일 설정', depth4: '', depth5: '', url: '/kids/setting/FirstSetChildNone', complete: true, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '8.9.2 최초 진입 설정 : 이름/생일 설정 완료 후', depth5: '', url: '/kids/setting/FirstSetChild', complete: true, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '8.9.3 우리아이 프로필 입력 팝업', depth4: '', depth5: '', url: '/kids/setting/ProfileInput', complete: true, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '8.9.4 우리아이 프로필 삭제 팝업', depth4: '', depth5: '', url: '/kids/setting/ProfileDelete', complete: true, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '8.9.5 최초 진입 설정 : 알림 시간 설정', depth4: '', depth5: '', url: '/kids/setting/FirstSetAlarmNone', complete: true, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '8.9.5.1 최초 진입 설정 : 알림 시간 설정 완료 후', depth5: '', url: '/kids/setting/FirstSetAlarm', complete: true, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '8.9.6 알림 시간 설정 : 알림 종류 선택', depth4: '', depth5: '', url: '/kids/setting/AlarmType', complete: false, etc: 'native, arrow 이미지 없음.' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '8.9.6.1 알림 시간 설정 : 시간/요일 지정', depth5: '', url: '/kids/setting/AlarmSetting', complete: true, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '8.9.7 알림 삭제 팝업', depth4: '', depth5: '', url: '/kids/setting/AlarmDelete', complete: true, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '8.9.8 최초 진입 설정 : 시청 시간 설정', depth4: '', depth5: '', url: '/kids/setting/FirstSetLimit', complete: true, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '8.9.8.1 시청 시간 직접 입력', depth5: '', url: '/kids/setting/FirstSetLimitNone', complete: true, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '8.9.9 최초 진입 설정 : 시청 편수 설정', depth4: '', depth5: '', url: '/kids/setting/FirstSetLimitPiece', complete: true, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '8.9.9.1 시청 편수 설정 직접입력', depth5: '', url: '/kids/setting/FirstSetLimitPieceNone', complete: true, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '8.9.10 최초 진입 설정 : 시청 제한 시간대 설정', depth4: '', depth5: '', url: '/kids/setting/FirstSetLimitTimeslot', complete: true, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '8.9.10.1 시청 제한 시간 직접 입력', depth5: '', url: '/kids/setting/WatchingLimitInput', complete: true, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '8.9.11 최초 진입 설정 : 설정 완료 가이드', depth4: '', depth5: '', url: '/kids/setting/FirstSetGuideEnd', complete: true, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '', depth4: '8.9.11.1 최초 진입 설정 : 설정 단계 미완료 가이드', depth5: '', url: '/kids/setting/FirstSetGuideIncomplete', complete: true, etc: 'native' },
+		{ depth1: '', depth2: '8.10 재생 가이드 : 시청거리', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '8.10.1 재생 가이드 : 시청 제한', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '8.10.2 재생 가이드 : 시청 제한 만료', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '8.10.3 키즈존 종료 가이드', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '8.11 키즈존 위젯 기본 : 기본 - 시청시간 제한', depth3: '', depth4: '', depth5: '', url: '/kids/widget/sampleDefault', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '8.11.1 키즈존 위젯 : 기본 - 시청편수 제한', depth4: '', depth5: '', url: '/kids/widget/sampleEpisode', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '8.11.2 키즈존 위젯 : 시청제한 미설정 시', depth4: '', depth5: '', url: '/kids/widget/sampleNoSetting', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '8.11.3 키즈존 위젯 : 시청제한 만료임박', depth4: '', depth5: '', url: '/kids/widget/sampleEnd', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '8.11.4 키즈존 위젯 : 캐릭터 노출 시', depth4: '', depth5: '', url: '/kids/widget/sampleCharacter', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '8.11.5 키즈존 위젯 : 문구 노출', depth4: '', depth5: '', url: '/kids/widget/sampleBalloon', complete: true, etc: '' },
+		{ depth1: '', depth2: '8.12 키즈존 종료 인증', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+
+		{ depth1: '9. 검색', depth2: '', depth3: '', depth4: '', depth5: '', url: '/search', complete: false, etc: '' },
+		{ depth1: '', depth2: '9.1 검색 메인', depth3: '', depth4: '', depth5: '', url: '/search/SearchMain', complete: false, etc: '' },
+		{ depth1: '', depth2: '9.2 검색 결과', depth3: '', depth4: '', depth5: '', url: '/search/SearchResult', complete: false, etc: '' },
+		{ depth1: '', depth2: '9.3 검색 결과 : 결과 없는 경우', depth3: '', depth4: '', depth5: '', url: '/search/SearchResultNone', complete: false, etc: '' },
+
+		{ depth1: '10. 음성검색', depth2: '', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '10.1 음성 인식 대기 상태', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '10.1.1 음성 인식 중', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '10.1.2 사용자 발화문 처리', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '10.2 음성 검색 결과 : Half', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '10.2.1 음성 검색 결과 : Half - NUGU 연결시', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '10.3 음성 검색 결과 : Full', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '10.3.1 음성 검색 결과 : Full - NUGU 연결시', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '10.4 음성 검색 : 결과 없는 경우', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '10.4.1 사용자 발화문 미인식', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '10.4.2 미지원 발화문 발화시', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+
+		{ depth1: '11. 구매', depth2: '11.1 구매 옵션', depth3: '', depth4: '', depth5: '', url: '/buy/BuyShort', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '11.1.1 월정액 구매옵션', depth4: '', depth5: '', url: '/buy/BuyMonthly', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '11.1.2 채널 구매옵션', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '11.2 청구서 결제', depth3: '', depth4: '', depth5: '', url: '/buy/BuyBill', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '11.2.1 신용카드 결제', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '11.2.2 휴대폰 결제', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '11.2.3 월정액 결제', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '11.2.4 할인불가 결제', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '11.3 결제팝업 - 쿠폰변경', depth3: '', depth4: '', depth5: '', url: '/buy/BillCoupon', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '11.3.1 OK캐쉬백 할인적용', depth4: '', depth5: '', url: '/buy/BuyBill/okCashBag', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '11.3.2 카드 선택', depth4: '', depth5: '', url: '', complete: false, etc: 'browser : 결제 모듈쪽' },
+		{ depth1: '', depth2: '', depth3: '11.3.3 카드등록 1단계 : 약관동의', depth4: '', depth5: '', url: '', complete: false, etc: 'browser : 결제 모듈쪽' },
+		{ depth1: '', depth2: '', depth3: '11.3.4 카드등록 2단계 : 카드정보 입력', depth4: '', depth5: '', url: '', complete: false, etc: 'browser : 결제 모듈쪽' },
+		{ depth1: '', depth2: '', depth3: '11.3.5 카드등록 3단계 : 휴대폰 본인 인증', depth4: '', depth5: '', url: '', complete: false, etc: 'browser : 결제 모듈쪽' },
+		{ depth1: '', depth2: '', depth3: '11.3.6 카드등록 4단계 : 비밀번호 설정', depth4: '', depth5: '', url: '', complete: false, etc: 'browser : 결제 모듈쪽' },
+		{ depth1: '', depth2: '', depth3: '11.3.7 제휴카드 발급신청', depth4: '', depth5: '', url: '', complete: false, etc: 'browser : 결제 모듈쪽' },
+		{ depth1: '', depth2: '', depth3: '11.3.8 휴대폰 결제 본인인증', depth4: '', depth5: '', url: '/buy/BillPhoneCertify', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '11.3.9 배송용 휴대폰 번호 입력', depth4: '', depth5: '', url: '/buy/BillDeliveryPhone', complete: true, etc: '' },
+		{ depth1: '', depth2: '11.4 약관동의', depth3: '', depth4: '', depth5: '', url: '/buy/BillCertify', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '11.4.1 약관 1개인 경우', depth4: '', depth5: '', url: '/buy/BillCertifyOne', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '11.4.2 약관상세', depth4: '', depth5: '', url: '/buy/BillCertify', complete: true, etc: '/buy/BillCertify의 팝업.' },
+		{ depth1: '', depth2: '11.4 채널구매 유도 스크램블', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '11.6 구매완료', depth3: '', depth4: '', depth5: '', url: '/buy/BuyBill/PriceEnd', complete: true, etc: '' },
+
+		{ depth1: '12. Light Home', depth2: '', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '12.1 기본 Light 홈', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '12.2 키즈용 Light 홈', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+
+		{ depth1: '13. 광고', depth2: '', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '13.1 홈 OAP 광고', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '13.2 Pre-Roll, Clip-Roll 광고', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '13.3 Post-Roll 광고', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+
+		{ depth1: '14. 인증', depth2: '', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '14.1 셋톱박스 초기 인증', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '14.1.1 셋톱박스 초기 인증 - 고객정보 확인', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '14.1.2 인증정보 전송 실패', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '14.2 성인인증', depth3: '', depth4: '', depth5: '', url: '/certification/AdultCertification', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '14.2.1 성인인증 - 입력오류 5회 초과', depth4: '', depth5: '', url: '/certification/AdultCertificationError', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '14.2.2 성인인증 - 청소년 보호', depth4: '', depth5: '', url: '/certification/JuvenileProtection', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '14.2.3 성인인증 - 인증번호 설정', depth4: '', depth5: '', url: '/certification/AdultCertificationnNumberSetting', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '14.2.4 성인인증 - 자녀안심 설정', depth4: '', depth5: '', url: '/certification/AdultCertificationChildSafety', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '14.2.5 성인인증 - 키즈존 설정', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '14.3 성인인증 : 성인전용 콘텐츠', depth3: '', depth4: '', depth5: '', url: '/certification/AdultCertificationAdultOnly', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '14.3.1 연령제한 인증 : 7세', depth4: '', depth5: '', url: '/certification/AdultCertificationAge7', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '14.3.2 연령제한 인증 : 12세', depth4: '', depth5: '', url: '/certification/AdultCertificationAge12', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '14.3.3 연령제한 인증 : 15세', depth4: '', depth5: '', url: '/certification/AdultCertificationAge15', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '14.3.4 연령제한 인증 : 19세', depth4: '', depth5: '', url: '/certification/AdultCertificationAge19', complete: true, etc: '' },
+		{ depth1: '', depth2: '14.4 시청 제한 인증', depth3: '', depth4: '', depth5: '', url: '/certification/WatchLimitChild', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '14.4.1 시청 제한 인증 : 입력오류 5회 초과', depth4: '', depth5: '', url: '/certification/WatchLimitChildError', complete: true, etc: '' },
+		{ depth1: '', depth2: '14.5 구매인증', depth3: '', depth4: '', depth5: '', url: '/certification/PurchaseCertification', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '14.5.1 구매인증 - 입력오류 5회 초과', depth4: '', depth5: '', url: '/certification/PurchaseCertificationError', complete: true, etc: '' },
+		{ depth1: '', depth2: '14.6 휴대폰 본인인증', depth3: '', depth4: '', depth5: '', url: '/certification/PhoneCertification', complete: true, etc: 'native' },
+//		{ depth1: '', depth2: '', depth3: '14.6.1 휴대폰 본인인증 - 인증번호 입력', depth4: '', depth5: '', url: '/certification/PhoneCertificationInput', complete: true, etc: '' },
+		{ depth1: '', depth2: '', depth3: '14.6.2 초기화 완료 - 성인인증번호', depth4: '', depth5: '', url: '/certification/InitializationCompletionAdultCertification', complete: true, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '14.6.3 초기화 완료 - 시청 제한 인증번호', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '14.6.4 초기화 완료 - 구매인증번호', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '14.6.5 인증번호 초기화 불가 : 미성년자', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+
+		{ depth1: '15. 부팅', depth2: '', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '15.1 Btv BI 이미지', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '15.2 Btv ID영상', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '15.3 프로모션 / 광고', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+
+		{ depth1: '16. 장애', depth2: '', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '16.1 서비스 장애/인터넷 장애/네트워크 오류', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '16.2 네트워크 오류', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '16.3 방송 수신 장애', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '16.4 일반 장애', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '16.5 다시 시작 안내', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '16.6 긴급 복구', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+
+		{ depth1: '17. 패치', depth2: '', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '17.1 수동 업그레이드 안내', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '17.2 자동 업그레이드 안내 - 이용 중 진행', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '17.2.1 자동 업그레이드 안내 - 자세히보기', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '17.3 자동 업그레이드 안내 : 종료 시 진행', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '17.4 다운로드', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '17.4.1 다운로드 완료 안내', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '17.5 업그레이드', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '17.5.1 업그레이드 완료 안내', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '17.5.1 업그레이드 완료 : Full Patch 종료시 진행', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '17.5.1 업그레이드 완료 : Partial Patch 종료시 진행', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '17.5.1 업그레이드 완료 항목 안내', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+
+		{ depth1: '18. 스마트 알림', depth2: '', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '18.1 텍스트형', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '18.2 이미지 혼합형', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '18.3 배너형', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '18.4 전체 팝업', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '18.5 배터리 알림', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		
+		{ depth1: '19. 웰컴 킷', depth2: '', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '19.1 최초 가이드', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '19.1.1 최초가이드 - 전체홈', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '19.1.2 최초가이드 - 월정액 (TBD)', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '19.1.3 최초가이드 - VOD 상품안내 (TBD)', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '19.2 툴팁 가이드 - 구매 (결제 방식 안내)', depth3: '', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '19.2.1 툴팁 가이드 - 구매 (할인 방식 안내)', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '19.2.2 툴팁 가이드 - 전체 편성표', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '19.2.3 툴팁 가이드 - 멀티뷰', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '19.2.4 툴팁 가이드 - 시놉시스', depth4: '', depth5: '', url: '', complete: false, etc: '' },
+		{ depth1: '', depth2: '', depth3: '19.2.5 툴팁 가이드 - 채널 플러스', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '19.2.6 툴팁 가이드 - 가상 채널', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '19.2.7 툴팁 가이드 - 키즈 채널', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+		{ depth1: '', depth2: '', depth3: '19.2.8 툴팁 가이드 - Mini EPG', depth4: '', depth5: '', url: '', complete: false, etc: 'native' },
+
+	];
+	
+	function App() {
+		var _this = self;
+		var baseURL = "";
+		
+		_this.env = {
+			eleTitle: $('*[data-role=ui-title]'),
+			eleList: $('*[data-role=ui-list]')
+		};
+		
+		_this.setTitle = function() {
+			_this.env.eleTitle.text(data.title);
+		};
+		
+		_this.setList = function() {
+			var depth1Cnt = {};
+			var depth2Cnt = {};
+			var depth3Cnt = {};
+			var depth4Cnt = {};
+			var depth5Cnt = {};
+			var html = '';
+			
+			$.each(data.list, function(i, v) {
+				// console.log(v.etc, v.etc.indexOf('native'))
+				if(v.etc.indexOf('native') != -1){
+					html += '<tr class="native" data-depth1="' + v.depth1 + '" data-depth2="' + v.depth2 + '" data-depth3="' + v.depth3 + '" data-depth4="' + v.depth4 + '">';
+				} else if (v.etc.indexOf('browser') != -1) {
+					html += '<tr class="browser" data-depth1="' + v.depth1 + '" data-depth2="' + v.depth2 + '" data-depth3="' + v.depth3 + '" data-depth4="' + v.depth4 + '">';
+				} else if (v.complete == true) {
+					html += '<tr class="complete" data-depth1="' + v.depth1 + '" data-depth2="' + v.depth2 + '" data-depth3="' + v.depth3 + '" data-depth4="' + v.depth4 + '">';
+				} else if (v.url != "") {
+					html += '<tr class="ing" data-depth1="' + v.depth1 + '" data-depth2="' + v.depth2 + '" data-depth3="' + v.depth3 + '" data-depth4="' + v.depth4 + '">';
+				} else {
+					html += '<tr data-depth1="' + v.depth1 + '" data-depth2="' + v.depth2 + '" data-depth3="' + v.depth3 + '" data-depth4="' + v.depth4 + '">';
+				}
+
+				html += '	<td>' + (i+1) +'</td>';
+				html += '	<td data-role="depth1">' + v.depth1 +'</td>';
+				html += '	<td data-role="depth2">' + v.depth2 +'</td>';
+				html += '	<td data-role="depth3">' + v.depth3 +'</td>';
+				html += '	<td data-role="depth4">' + v.depth4 +'</td>';
+				html += '	<td data-role="depth5">' + v.depth5 +'</td>';
+				html += '	<td class="left"><a href="' + baseURL + v.url + '" target="_blank">' + v.url +'</a></td>';
+				html += '	<td>' + (v.complete ? '완료' : '') + '</td>';
+				html += '	<td style="text-align:left">' + v.etc + '</td>';
+				html += '</tr>';
+			});
+			
+			_this.env.eleList.append(html);
+			
+			_this.env.eleList.find('tr').each(function() {
+				var eleRow = $(this);
+				var d1 = eleRow.data('depth1');
+				var d2 = eleRow.data('depth2');
+				var d3 = eleRow.data('depth3');
+				var d4 = eleRow.data('depth4');
+				var d5 = eleRow.data('depth5');
+
+				depth1Cnt[d1] = (typeof depth1Cnt[d1] == 'undefined') ? 1 : depth1Cnt[d1] + 1;
+				depth2Cnt[d2] = (typeof depth2Cnt[d2] == 'undefined') ? 1 : depth2Cnt[d2] + 1;
+				depth3Cnt[d3] = (typeof depth3Cnt[d3] == 'undefined') ? 1 : depth3Cnt[d3] + 1;
+				depth4Cnt[d4] = (typeof depth4Cnt[d4] == 'undefined') ? 1 : depth4Cnt[d4] + 1;
+				depth5Cnt[d5] = (typeof depth5Cnt[d5] == 'undefined') ? 1 : depth5Cnt[d5] + 1;
+			});
+			
+			//_this.setRowSpan(depth1Cnt, 'depth1');
+			//_this.setRowSpan(depth2Cnt, 'depth2');
+			//_this.setRowSpan(depth3Cnt, 'depth3');
+			//_this.setRowSpan(depth4Cnt, 'depth4');
+
+			_this.env.eleList.show();
+		};
+		
+		_this.setRowSpan = function(depthCnt, selector) {
+			$.each(depthCnt, function(key, objVal) {
+				_this.env.eleList.find('*[data-' + selector + '="' + key + '"]').each(function(idx, arrVal) {
+					var eleRow = $(this);
+					
+					if (idx == 0) {
+						if (objVal > 1) {
+							eleRow.find('*[data-role=' + selector + ']').attr('rowspan', objVal);
+						}
+					} else {
+						eleRow.find('*[data-role=' + selector + ']').remove();
+					}
+				});
+			});
+		};
+		
+		_this.eventBind = function() {
+			var _total_num = $('.guide-table tbody tr').length;
+			var _now_num = 0, _native_num = 0, _ing_num = 0, _ing_progress_num = 0;
+			var _progress_num;
+			var _target = $('.progress');
+
+			$.each(data.list, function(i, v) {
+			    if(v.complete != '' && v.etc.indexOf('native') == -1) _now_num++;
+				if(v.url != "" && v.etc.indexOf('native') == -1 && v.etc.indexOf('browser') == -1 && v.complete == '') _ing_num++;
+				if(v.etc.indexOf('native') != -1 || v.etc.indexOf('browser') != -1) _native_num++;
+			});
+
+			var _pub_num = _total_num - _native_num;
+
+			_progress_num = _now_num / _pub_num * 100;
+			_ing_progress_num = (_ing_num + _now_num) / _pub_num * 100;
+
+			_target.find('.total_num').text(_total_num);
+			_target.find('.pub_num').text(_pub_num);
+			_target.find('.now_num').text(_now_num);
+			_target.find('.progress_num').text(_progress_num.toFixed(2));
+			_target.find('.native_num').text(parseInt(_native_num));
+			_target.find('.ing_num').text(parseInt(_ing_num));
+			_target.find('.ing_progress').text("완료 + 진행중 : " + _ing_progress_num.toFixed(2) + "% / " + (_pub_num - _now_num - _ing_num) );
+		};
+		
+		_this.init = function() {
+			_this.setTitle();
+			_this.setList();
+			_this.eventBind();
+		}();
+	}
+	
+	var app = new App();
+</script>
+</body>
+</html>

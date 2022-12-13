@@ -1,0 +1,16 @@
+/* CouponDetailNone.css */
+.CouponWrap.none .CouponItemWrap {padding:90px 0 130px; text-align:center;}
+.CouponWrap.none .CouponItemWrap .CouponItem {text-align:center; padding:40px 0; margin:-40px 0;}
+.CouponWrap.none .CouponItemWrap .CouponItem .csFocus .registText {display:inline-block; padding-top:83px; position:absolute; top:100px; left:50%; transform:translate(-50%,0); z-index:10; background:url('/assets/images/tmp/mybtv/ic_item_regist_off.png') no-repeat top center; text-align:center; font-size:31px; color:rgba(0,0,0,0.8);}
+.CouponWrap.none .CouponItemWrap .CouponItem .csFocus.focusOn .registText,
+.CouponWrap.none .CouponItemWrap .CouponItem .csFocus.loadFocus .registText {transform:translate(-50%,0);font-weight:700; line-height:1.09; color:#f5513f; background-image:url('/assets/images/myBtv/coupon-plus-active.png'); background-size:65px;}
+
+.CouponWrap.none .bottomWrap {position:absolute; bottom:0; left:0; z-index:100; width:100%; height:396px; background-color:rgba(237, 239, 243, 0.5);}
+.CouponWrap.none .bottomWrap .defaultWrap {display:block; padding:115px 199px 116px 201px; text-align:center;}
+.CouponWrap.none .bottomWrap .defaultWrap .eventDesc,
+.CouponWrap.none .bottomWrap .defaultWrap .eventDescSub {font-size:32px; line-height:1.5; letter-spacing:normal; color:#6a6a6a;}
+
+.CouponWrap.none .CouponItemWrap .CouponItem .csFocus {display:inline-block; position:relative; width:424px; height:310px; background:url('/assets/images/myBtv/coupon-active.png') no-repeat center center; background-size:416px 279px;}
+.CouponWrap.none .CouponItemWrap .CouponItem .csFocus.focusOn,
+.CouponWrap.none .CouponItemWrap .CouponItem .csFocus.loadFocus {transform:scale(1.18);}
+

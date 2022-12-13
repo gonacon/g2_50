@@ -1,0 +1,11 @@
+/* SynopGateWay.css */
+.synopGateWayContent{padding:420px 259px 0;}
+.synopGateWayContent .titleArea{display:block; text-align:center;}
+.synopGateWayContent .slideTypeAB {padding-top:42px;}
+.synopGateWayContent.payout {padding-top:409px;}
+.synopGateWayContent .btnStyle2,
+.synopGateWayContent .btnStyle2:before {min-width:400px;}
+.synopGateWayContent .btnStyle2.focusOn:before {left:-24px;right:-24px;}
+.synopGateWayContent .btnStyle2 .wrapBtnText span {vertical-align:top;}
+
+.synopGateWayContent .slideTypeAB .slideWrapper{margin:0 auto;}

@@ -1,0 +1,31 @@
+/* SlideTypeRelation.css */
+:root{
+	--page:0;
+}
+.slideTypeRelation .slideWrapper{transform:translate3d(calc(var(--page) * -288px),0,0);}
+
+.slideTypeRelation .slideWrapper{display:flex;justify-content:space-between;}
+.slideTypeRelation{padding-top:80px;}
+.slideTypeRelation .slideWrap{position:relative;z-index:1;}
+/*.activeSlide .slideTypeRelation .title {padding-bottom:0;}*/
+.slideTypeRelation .title {padding-bottom:18px; font-size:36px; line-height:1.11; letter-spacing:-0.8px; color:#1a1a1a; opacity:0.8;}
+.slideTypeRelation .slideWrap .slideCon {overflow:hidden; margin:-20px -30px -40px; padding:24px 15px 40px; font-size:0;}
+.slideTypeRelation .slideWrap .slideWrapper .slide {display:inline-block; padding:0 21px;}
+.slideTypeRelation .slideWrap .slideWrapper .slide .csFocus {display:table; overflow:hidden; position:relative; z-index:1; width:246px; height:140px; border-radius:4px; background-color:rgba(255,255,255,0.17); box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15); text-align:center;}
+.slideTypeRelation .slideWrap .slideWrapper .slide .csFocus.focusOn {transform:scale(1.2,1.2); -webkit-transform:scale(1.2,1.2);}
+.slideTypeRelation .slideWrap .slideWrapper .slide .csFocus span{display:table-cell; vertical-align:middle;}
+.slideTypeRelation .slideWrap .slideWrapper .slide .csFocus .relatedSearch{font-size:30px;color:#f4f4f4;line-height:34px;font-weight:700;}
+.slideTypeRelation .leftArrow,
+.slideTypeRelation .rightArrow{position:absolute;top:50%;left:-70px;z-index:10;transform:translate(0,-70%);width:23px;height:58px;background:url("/assets/images/common/icon/arrow-left.png") no-repeat 0 0;opacity:0;}
+.slideTypeRelation .rightArrow{left:auto;right:-70px;background:url("/assets/images/common/icon/arrow-right.png") no-repeat 0 0;}
+.slideTypeRelation .activeSlide.leftActive .leftArrow,
+.slideTypeRelation .activeSlide.rightActive .rightArrow{opacity:1;}
+
+.contentGroup.activeSlide .slideTypeRelation .title{transform:translate(0,-18px);}
+
+.slideTypeRelation .activeSlide .slideCount{opacity:1;}
+.slideTypeRelation .slideCount{opacity:0;position:absolute;top:-15px;right:0;z-index:10;font-size:23px;line-height:1;letter-spacing:normal;color:#6a6a6a;transform:translate(0,0);}
+.slideTypeRelation .slideCount .current{font-weight:700;}
+.slideTypeRelation .activeSlide.lastActive .slideCount{transform:translate(0,-30px);}
+
+.dark .slideTypeRelation .slideCount{color: #d4d4d4;}

@@ -1,0 +1,27 @@
+{
+	"slideType": "SlideTypeSetting",
+	"slideTitle": "기기연결",
+	"slideItem": [
+		{
+			"title": "스마트폰 연결",
+			"connect" : false,
+			"imageS": "/assets/images/myBtv/ic-smartphone.png",
+			"imageB": "/assets/images/myBtv/ic-smartphone-active.png",
+			"link": "/"
+		},
+		{
+			"title": "블루투스 연결",
+			"connect" : 1,
+			"imageS": "/assets/images/myBtv/ic-bluetooth.png",
+			"imageB": "/assets/images/myBtv/ic-bluetooth-active.png",
+			"link": "/"
+		},
+		{
+			"title": "NUGU 연결",
+			"connect" : true,
+			"imageS": "/assets/images/myBtv/ic-nugu.png",
+			"imageB": "/assets/images/myBtv/ic-nugu-active.png",
+			"link": "/"
+		}
+	]
+}

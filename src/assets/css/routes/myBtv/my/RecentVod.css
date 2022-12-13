@@ -1,0 +1,12 @@
+/* RecentVod.css */
+.registWrap.vod{padding:102px 115px 0;}
+.registWrap.vod .pageTitle{font-size:52px;}
+.registWrap.vod .registerForm{margin-top:214px;}
+.registWrap.vod .registerWishSlide{margin-top:120px;}
+
+.registWrap.vodPop{padding:250px 0 300px;}
+.registWrap.vodPop .pageTitle{padding-bottom:0;font-size:52px;}
+.registWrap.vodPop .registerForm{margin-top:214px;}
+.registWrap.vodPop .registerAllDel{margin-top:136px;display:block;text-align:center;}
+.registWrap.vodPop .registerAllDel .textAllDel{font-size:36px;color:#d4d4d4;line-height:52px;}
+.registWrap.vodPop .buttonWrap {bottom:300px;}

@@ -1,0 +1,27 @@
+/* SK Btv 웹 폰트 적용시 */
+@font-face {
+	font-family: 'SK Btv';
+	font-weight: 700;
+	src: local('SK Btv Bold'),
+	local('SKBtvBold'),
+	url('/font/SKBtv_bold.eot') format('eot'),
+	url('/font/SKBtv_bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'SK Btv';
+	font-weight: 400;
+	src: local('SK Btv Medium'),
+	local('SKBtvMedium'),
+	url('/font/SKBtv_Medium.eot') format('eot'),
+	url('/font/SKBtv_Medium.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'SK Btv';
+	font-weight: 300;
+	src: local('SK Btv Light'),
+	local('SKBtvLight'),
+	url('/font/SKBtv_Light.eot') format('eot'),
+	url('/font/SKBtv_Light.woff') format('woff');
+}

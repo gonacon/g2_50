@@ -1,0 +1,9 @@
+{
+	"mainBg" : "/assets/images/kids/setting/bg-firstsetlimit-01.png",
+	"profileItem" : [{
+		"type" : "nonData",
+		"name" : "",
+		"birth" : "",
+		"age" : ""
+	}]
+}

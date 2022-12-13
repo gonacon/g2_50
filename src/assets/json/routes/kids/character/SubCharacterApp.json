@@ -1,0 +1,137 @@
+{
+	"pageType": "SubCharacter",
+	"slideTitle": "키즈존 캐릭터 서브",
+	"charaterImg" : "/assets/images/tmp/kids/img-banner-pororo.png",
+	"backgroundImg" : "/assets/images/tmp/kids/bg-kids-character-pororo.png",
+	"logoImg" : "/assets/images/tmp/kids/img-character-logo-pororo-big.png",
+	"continue" : {
+		"videoTime" : "70%",
+		"episode" : "16화",
+		"subTitle": "빨간모자 패티",
+		"title": "뽀롱뽀롱 뽀로로 시즌3",
+		"image": "/assets/images/tmp/kids/img-sub-character01.png",
+		"link": ""
+	},
+	"data" : [
+		{
+			"type": "season",
+			"name" : "시즌별",
+			"listItem": [
+				{
+					"title": "뽀롱뽀롱 뽀로로 (우리말) 시즌 3",
+					"image": "/assets/images/tmp/kids/img-sub-character01.png",
+					"link": "",
+					"detailLink" : ""
+				},
+				{
+					"title": "뽀롱뽀롱 뽀로로 (우리말) 시즌 4",
+					"image": "/assets/images/tmp/kids/img-sub-character01.png",
+					"link": "",
+					"detailLink" : ""
+				},
+				{
+					"title": "뽀롱뽀롱 뽀로로 (우리말) 시즌 5",
+					"image": "/assets/images/tmp/kids/img-sub-character01.png",
+					"link": "",
+					"detailLink" : ""
+				}
+			]
+		},
+		{
+			"type": "song",
+			"name" : "동요",
+			"listItem": [
+				{
+					"title": "뽀롱뽀롱 뽀로로 (우리말) 시즌 3",
+					"image": "/assets/images/tmp/kids/img-sub-character01.png",
+					"link": "",
+					"detailLink" : ""
+				},
+				{
+					"title": "뽀롱뽀롱 뽀로로 (우리말) 시즌 4",
+					"image": "/assets/images/tmp/kids/img-sub-character01.png",
+					"link": "",
+					"detailLink" : ""
+				},
+				{
+					"title": "뽀롱뽀롱 뽀로로 (우리말) 시즌 5",
+					"image": "/assets/images/tmp/kids/img-sub-character01.png",
+					"link": "",
+					"detailLink" : ""
+				},
+				{
+					"title": "뽀롱뽀롱 뽀로로 (우리말) 시즌 3",
+					"image": "/assets/images/tmp/kids/img-sub-character01.png",
+					"link": "",
+					"detailLink" : ""
+				}
+			]
+		},
+		{
+			"type": "movie",
+			"name" : "영화",
+			"listItem": [
+				{
+					"title": "뽀롱뽀롱 뽀로로 (우리말) 시즌 3",
+					"image": "/assets/images/tmp/kids/img-sub-character01.png",
+					"link": "",
+					"detailLink" : ""
+				},
+				{
+					"title": "뽀롱뽀롱 뽀로로 (우리말) 시즌 4",
+					"image": "/assets/images/tmp/kids/img-sub-character01.png",
+					"link": "",
+					"detailLink" : ""
+				},
+				{
+					"title": "뽀롱뽀롱 뽀로로 (우리말) 시즌 5",
+					"image": "/assets/images/tmp/kids/img-sub-character01.png",
+					"link": "",
+					"detailLink" : ""
+				},
+				{
+					"title": "뽀롱뽀롱 뽀로로 (우리말) 시즌 3",
+					"image": "/assets/images/tmp/kids/img-sub-character01.png",
+					"link": "",
+					"detailLink" : ""
+				}
+			]
+		},
+		{
+			"type": "app",
+			"name" : "앱",
+			"appImage" : "/assets/images/tmp/kids/img-sub-character01.png",
+			"desc" : "모바일에서 보던 뽀로로 TV앱을<br/>이제 B tv 키즈존에서도 만날 수 있어요."
+		},
+		{
+			"type": "entertain",
+			"name" : "영화",
+			"listItem": [
+				{
+					"title": "뽀롱뽀롱 뽀로로 (우리말) 시즌 3",
+					"image": "/assets/images/tmp/kids/img-sub-character01.png",
+					"link": "",
+					"detailLink" : ""
+				},
+				{
+					"title": "뽀롱뽀롱 뽀로로 (우리말) 시즌 4",
+					"image": "/assets/images/tmp/kids/img-sub-character01.png",
+					"link": "",
+					"detailLink" : ""
+				},
+				{
+					"title": "뽀롱뽀롱 뽀로로 (우리말) 시즌 5",
+					"image": "/assets/images/tmp/kids/img-sub-character01.png",
+					"link": "",
+					"detailLink" : ""
+				},
+				{
+					"title": "뽀롱뽀롱 뽀로로 (우리말) 시즌 3",
+					"image": "/assets/images/tmp/kids/img-sub-character01.png",
+					"link": "",
+					"detailLink" : ""
+				}
+			]
+		}
+	]
+}

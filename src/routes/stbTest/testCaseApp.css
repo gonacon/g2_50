@@ -1,0 +1,124 @@
+/*//////////////////////
+17.06.21 testCaseApp
+//////////////////////*/
+body{
+    overflow: hidden;
+}
+/*--------------------------------*/
+/* 메인                           */
+/*--------------------------------*/
+/*search*/
+.wrap_body{
+    width:1920px;
+    height:1080px;
+    position:absolute;
+    overflow: hidden;
+    left: 0;
+}
+
+/*topMenu*/
+.wrap_menu{
+    height: 140px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: aliceblue;
+}
+
+.wrap_menu:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.wrap_list {
+    font-size: 20px;
+    float: left;
+    height: 930px;
+    color: #e2e2e2;
+    padding: 0 10px;
+    background-color: #1d2933;
+}
+
+.wrap_api {
+    width: 100%;
+    border-radius : 10px 10px 10px 10px;
+    margin: 25px 0;
+}
+
+.wrap_api .list_title {
+    padding-left: 10px;
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: #ffffff solid 4px;
+}
+
+.blue  {
+    background-color: #326694;
+}
+
+.purple  {
+    background-color: #4e3f72;
+}
+
+.green  {
+    background-color: #206871;
+}
+
+.wrap_api .list_api li {
+    position: relative;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 20px;
+    padding: 0 10px;
+    border-bottom: #ffffff solid 1px;
+}
+
+.wrap_api .list_api li.on {
+    background-color: #379e3b;
+}
+
+.wrap_api .list_api li.focusOn {
+    background-color: #d83e41;
+}
+
+.wrap_api .list_api li:last-child {
+    border-bottom: none;
+}
+
+.wrap_api .set_value {
+    position: absolute;
+    text-align: center;
+    width: 120px;
+    right: 10px;
+}
+
+.wrap_content {
+    float: left;
+    width: 1400px;
+    height: 930px;
+    background-color : #f3f4f5;
+}
+
+.content_view {
+    width: 1400px;
+    height: 400px;
+    border : 20px solid #f3f4f5;
+}
+
+.content_view .title {
+    padding: 10px;
+    font-size: 30px;
+    height: 50px;
+    font-weight: bold;
+    border-bottom : 5px solid #326694;
+}
+
+.content_view .txt {
+    width: 1360px;
+    height: 320px;
+    padding: 10px;
+    font-size: 20px;
+    line-height: 26px;
+    word-wrap: break-word;
+}

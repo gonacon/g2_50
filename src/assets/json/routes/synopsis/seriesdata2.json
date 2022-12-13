@@ -1,0 +1,73 @@
+{
+	"slideType" : "top",
+	"synopContents":
+	{
+		"title": "청춘시대",
+		"titlement": "“스크린에 재탄생한 세기의 걸작!\n전 세계가 기다려온 가장 아름다운 이야기!”",
+		"logo": "/assets/images/tmp/synopsis/img-logo-synopseries.png",
+		"age": "12",
+		"resolution":"UHD",
+		"sound":"DOLBY",
+		"language":"다국어",
+		"support":"모바일",
+		"noticement" : "현재 극장 동시상영 중인 영화로 특별편성 영화입니다",
+		"content":"외모부터 성격,전공,남자 취향,연애 스타일까지 모두 다른 5명의 매력적인 여대생이 셰어하우스에 모여 살며 벌어지는 유쾌하고 발랄한 청춘 동거 드라마",
+		"contentFull":"외모부터 성격,전공,남자 취향,연애 스타일까지 모두 다른 5명의 매력적인 여대생이 셰어하우스에 모여 살며 벌어지는 유쾌하고 발랄한 청춘 동거 드라마, 외모부터 성격,전공,남자 취향,연애 스타일까지 모두 다른 5명의 매력적인 여대생이 셰어하우스에 모여 살며 벌어지는 유쾌하고 발랄한 청춘 동거 드라마, 외모부터 성격,전공,남자 취향,연애 스타일까지 모두 다른 5명의 매력적인 여대생이 셰어하우스에 모여 살며 벌어지는 유쾌하고 발랄한 청춘 동거 드라마, 외모부터 성격,전공,남자 취향,연애 스타일까지 모두 다른 5명의 매력적인 여대생이 셰어하우스에 모여 살며 벌어지는 유쾌하고 발랄한 청춘 동거 드라마, 외모부터 성격,전공,남자 취향,연애 스타일까지 모두 다른 5명의 매력적인 여대생이 셰어하우스에 모여 살며 벌어지는 유쾌하고 발랄한 청춘 동거 드라마, 외모부터 성격,전공,남자 취향,연애 스타일까지 모두 다른 5명의 매력적인 여대생이 셰어하우스에 모여 살며 벌어지는 유쾌하고 발랄한 청춘 동거 드라마, 외모부터 성격,전공,남자 취향,연애 스타일까지 모두 다른 5명의 매력적인 여대생이 셰어하우스에 모여 살며 벌어지는 유쾌하고 발랄한 청춘 동거 드라마, 외모부터 성격,전공,남자 취향,연애 스타일까지 모두 다른 5명의 매력적인 여대생이 셰어하우스에 모여 살며 벌어지는 유쾌하고 발랄한 청춘 동거 드라마, 외모부터 성격,전공,남자 취향,연애 스타일까지 모두 다른 5명의 매력적인 여대생이 셰어하우스에 모여 살며 벌어지는 유쾌하고 발랄한 청춘 동거 드라마, 외모부터 성격,전공,남자 취향,연애 스타일까지 모두 다른 5명의 매력적인 여대생이 셰어하우스에 모여 살며 벌어지는 유쾌하고 발랄한 청춘 동거 드라마…",
+		"popBg" : "/assets/images/tmp/synopsis/bg-synopseries.png"
+	},
+	"payment" : {
+		"purchaseState" : false,
+		"free" : false,
+		"trailer" : true,
+		"payment1" : {
+			"price" : "10,000",
+			"dcpreviousprice" : "",
+			"overlapprice" : false,
+			"surtax" : "부가세 포함가",
+			"productType" : "전편 한글자막",
+			"infoType" : "콘텐츠 종료일",
+			"productDate" : "2018.09.29"
+		},
+		"payment2" : {
+			"price" : "16,900",
+			"dcpreviousprice" : "",
+			"overlapprice" : false,
+			"surtax" : "부가세 포함가22222222",
+			"productType" : "전편 한글자막2222222",
+			"infoType" : "콘텐츠 종료일2222222",
+			"productDate" : "2018.09.29"
+		},
+		"monthlyfixedamount" : true,
+		"jjim" : true
+	},
+	"seasonSeries" : [{
+		"season" : "시즌 1",
+		"age": "12",
+		"resolution":"UHD",
+		"sound":"DOLBY",
+		"language":"다국어",
+		"support":"oksusu",
+		"supervisor":"이태곤",
+		"leadrole":"한예리, 한승연, 박은빈, 류화영, 박혜수 외"
+	},
+	{
+		"season" : "시즌 2",
+		"age": "22",
+		"resolution":"UHD",
+		"sound":"DOLBY",
+		"language":"다국어",
+		"support":"모바일",
+		"supervisor":"이태곤",
+		"leadrole":"한예리, 한승연, 박은빈, 류화영, 박혜수 외"
+	},
+	{
+		"season" : "시즌 3",
+		"age": "32",
+		"resolution":"UHD",
+		"sound":"DOLBY",
+		"language":"다국어",
+		"support":"oksusu",
+		"supervisor":"이태곤",
+		"leadrole":"한예리, 한승연, 박은빈, 류화영, 박혜수 외"
+	}]
+}

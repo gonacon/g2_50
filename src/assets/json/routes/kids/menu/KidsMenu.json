@@ -1,0 +1,51 @@
+[
+	{
+		"menu": "monthly",
+		"menuName": "월정액",
+		"menuDefault": "/assets/images/kids/menu/ic-menu-monthly-nor.png",
+		"menuFocus": "/assets/images/kids/menu/ic-menu-monthly-foc.png",
+		"menuActive": "/assets/images/kids/menu/ic-menu-monthly-sel.png"
+	},
+	{
+		"menu": "genre",
+		"menuName": "전체장르",
+		"menuDefault": "/assets/images/kids/menu/ic-menu-menu-nor.png",
+		"menuFocus": "/assets/images/kids/menu/ic-menu-menu-foc.png",
+		"menuActive": "/assets/images/kids/menu/ic-menu-menu-sel.png"
+	},
+	{
+		"menu": "character",
+		"menuName": "캐릭터 홈",
+		"menuDefault": "/assets/images/kids/menu/ic-menu-character-nor.png",
+		"menuFocus": "/assets/images/kids/menu/ic-menu-character-foc.png",
+		"menuActive": "/assets/images/kids/menu/ic-menu-character-sel.png"
+	},
+	{
+		"menu": "play",
+		"menuName": "놀이학습",
+		"menuDefault": "/assets/images/kids/menu/ic-menu-play-nor.png",
+		"menuFocus": "/assets/images/kids/menu/ic-menu-play-foc.png",
+		"menuActive": "/assets/images/kids/menu/ic-menu-play-sel.png"
+	},
+	{
+		"menu": "fairytale",
+		"menuName": "살아있는동화",
+		"menuDefault": "/assets/images/kids/menu/ic-menu-fairytale-nor.png",
+		"menuFocus": "/assets/images/kids/menu/ic-menu-fairytale-foc.png",
+		"menuActive": "/assets/images/kids/menu/iic-menu-fairytale-sel.png"
+	},
+	{
+		"menu": "channel",
+		"menuName": "채널",
+		"menuDefault": "/assets/images/kids/menu/ic-menu-channel-nor.png",
+		"menuFocus": "/assets/images/kids/menu/ic-menu-channel-foc.png",
+		"menuActive": "/assets/images/kids/menu/ic-menu-channel-sel.png"
+	},
+	{
+		"menu": "habit",
+		"menuName": "시청습관",
+		"menuDefault": "/assets/images/kids/menu/ic-menu-timer-nor.png",
+		"menuFocus": "/assets/images/kids/menu/ic-menu-timer-foc.png",
+		"menuActive": "/assets/images/kids/menu/ic-menu-timer-sel.png"
+	}
+]

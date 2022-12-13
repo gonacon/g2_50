@@ -1,0 +1,60 @@
+/* AllMenu.css */
+:root{
+	--page:0;
+}
+
+.allMenuWrap{position:relative;z-index:1;width:100%;height:1080px;background:rgba(0,0,0,0.75);}
+.allMenuWrap .allMenuLeft{margin-top:calc(var(--page) * -780px);}
+.allMenuWrap .allMenuCon{padding:40px 0;width:610px;height:1080px;background:url("/assets/images/allMenu/menu-bg-left.png") no-repeat 0 0;box-shadow:0 0 70px rgba(0,0,0,0.7);}
+.allMenuWrap .allMenuCon .allMenuNav{position:relative;z-index:1;margin-top:5px;padding:40px 92px 0;height:144px;font-size:42px;font-weight:700;color:rgb(244,244,244);word-break:break-all;display: -webkit-box;overflow: hidden;text-overflow: ellipsis;white-space: normal;-webkit-line-clamp: 2;-webkit-box-orient: vertical;line-height:52px;}
+.allMenuWrap .allMenuCon .allMenuNav .allMenuDepth{position:absolute;top:10px;left:92px;z-index:10;display:flex;flex-wrap:nowrap;flex-direction:row;margin-bottom:5px;width:426px;height:30px;font-size:24px;font-weight:400;color:rgb(170,170,170);line-height:30px;}
+.allMenuWrap .allMenuCon .allMenuNav .allMenuDepth .allMenuDepthEllipsis{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.allMenuWrap .allMenuCon .allMenuNav .allMenuDepth .allMenuDepthEllipsis span{padding-right:5px;}
+.allMenuWrap .allMenuCon .allMenuNav .allMenuDepth .allMenuDepthTitle {flex:0 0 auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.allMenuWrap .allMenuCon .allMenuLeftWrap{margin-top:49px;padding:0 68px 0 92px;height:calc(100% - 200px);overflow:hidden;}
+.allMenuWrap .allMenuCon .allMenuLeftWrap > ul{padding-bottom:20px;}
+.allMenuWrap .allMenuCon ul li .csFocusMenu{position:relative;z-index:1;display:block;padding:23px 0;font-size:32px;height:78px;font-weight:400;color:rgb(244,244,244);}
+.allMenuWrap .allMenuCon ul li .csFocusMenu .menuName{white-space:nowrap;width:390px;}
+/* .allMenuWrap .allMenuCon ul li .csFocusMenu .menuName span{display:inline-block;} */
+.allMenuWrap .allMenuCon ul li .csFocusMenu.focusOn{color:#ec5638;font-weight:700;}
+.allMenuWrap .allMenuCon ul li .csFocusMenu.focusOn .menuName{display:inline-block;overflow:hidden;text-overflow:clip;}
+.allMenuWrap .allMenuCon ul li .csFocusMenu.slideAni .menuName{display:inline-block;width:390px;overflow:hidden;}
+.allMenuWrap .allMenuCon ul li .csFocusMenu.focusOn:before{position:absolute;top:0;left:-32px;right:-28px;bottom:0;z-index:-1;display:block;content:"";border-radius:4px;background:#fff;box-shadow:0 14px 8px 0 rgba(0, 0, 0, 0.35);}
+.allMenuWrap .allMenuCon ul li .csFocusMenu.okIcon.focusOn:before{/*right:28px;*/}
+.allMenuWrap .allMenuCon ul li .csFocusMenu.focusOn:after{position:absolute;top:50%;right:-4px;z-index:-1;transform:translate(0,-50%);display:block;content:"";width:13px;height:35px;background:url("/assets/images/common/icon/arrow-right-foc.png") no-repeat 0 0;}
+.allMenuWrap .allMenuCon ul ul{display:none;position:absolute;top:0;left:610px;z-index:10;padding:238px 120px 64px 50px;width:620px;height:1080px;}
+.allMenuWrap .allMenuCon ul li .csFocusMenu.focusOn + ul{display:block;}
+.allMenuWrap .allMenuCon ul ul:before{display:block;position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;content:"";width:100%;height:100%;background:url("/assets/images/allMenu/menu-bg-right2.png") no-repeat 0 0;}
+/*.allMenuWrap .allMenuCon ul ul:after{display:block;position:absolute;top:0;right:0;bottom:0;z-index:-2;content:"";width:70px;height:100%;box-shadow:0 0 70px rgba(0,0,0,0.7);}*/
+.allMenuWrap .allMenuCon ul ul li{padding:/*18*/23px 0;font-size:32px;font-weight:400;color:rgb(212,212,212);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.allMenuWrap .allMenuCon ul li .csFocusMenu.okIcon.focusOn:after{right:-4px;width:54px;height:30px;background:url("/assets/images/common/icon/ic-key-ok-light.png") no-repeat 0 0;}
+/*.allMenuWrap .allMenuCon ul li .csFocusMenu:not(.focusOn){overflow:hidden;text-overflow:ellipsis;}*/
+
+/* .allMenuWrap .allMenuCon ul li .csFocusMenu.ellip{overflow:hidden;text-overflow:ellipsis;}
+.allMenuWrap .allMenuCon ul li .csFocusMenu.ellip.focusOn{overflow:visible;}
+.allMenuWrap .allMenuCon ul li .csFocusMenu.ellip .menuName span{padding-right:50px;} */
+
+.allMenuWrap .allMenuCon ul li .csFocusMenu .menuName.ellip{overflow:hidden;text-overflow:ellipsis;}
+.allMenuWrap .allMenuCon ul li .csFocusMenu .menuName.ellip.focusOn{overflow:visible;}
+.allMenuWrap .allMenuCon ul li .csFocusMenu.ellip .menuName span{padding-right:50px;}
+
+.allMenuWrap .allMenuCon .arrowCon span{position:absolute;top:202px;left:92px;z-index:10;width:45px;height:17px;background:url("/assets/images/common/icon/arrow-menu-up.png") no-repeat 0 0;opacity:0;}
+.allMenuWrap .allMenuCon .arrowCon .arrowDown{top:auto;bottom:38px;background:url("/assets/images/common/icon/arrow-menu.png") no-repeat 0 0;}
+.allMenuWrap:not(.firstActive) .arrowCon .arrowUp,
+.allMenuWrap:not(.lastActive) .arrowCon .arrowDown{opacity:1;}
+
+.allMenuWrap .allMenuCon ul li .csFocusMenu.slideAni.focusOn .menuName span{display:inline-block;position:relative;z-index:1;-webkit-animation:csFocusMenuAni 5s linear 3s infinite forwards;}
+.allMenuWrap .allMenuCon ul li .csFocusMenu.slideAni.focusOn .menuName span:after{position:absolute;top:0;left:calc(100% + 200px);z-index:10;content:attr(data-text);display:block;}
+@-webkit-keyframes csFocusMenuAni{
+	0%{
+		transform:translate(0,0);
+	}
+	100%{
+		transform:translate(calc((100% + 200px) * -1),0);
+	}
+}
+
+
+
+
+

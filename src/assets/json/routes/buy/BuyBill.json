@@ -1,0 +1,46 @@
+{
+	"type": "일반구매",
+	"product": "미녀와 야수",
+	"videoOption": "일반 / HD / 한글자막",
+	"videoTerm": "2일 / 2017.08.01 오후 12:34 까지",
+	"allPrice": "40000",
+	"options": [
+		{
+			"title": "쿠폰",
+			"btnText": "변경",
+			"discount": "300",
+			"check": "true",
+			"disabled": "false",
+			"detail": "VIP라운지 특별할인"
+		},{
+			"title": "T 멤버십",
+			"btnText": "설정",
+			"discount": "0",
+			"check": "false",
+			"disabled": "false",
+			"detail": "등록된 카드 없음"
+		},{
+			"title": "OK 캐쉬백",
+			"btnText": "변경",
+			"discount": "8900",
+			"check": "true",
+			"disabled": "false",
+			"detail": "선택하여 할인율 조회하기"
+		},{
+			"title": "B 포인트",
+			"btnText": "등록",
+			"discount": "12900",
+			"check": "false",
+			"disabled": "true",
+			"detail": "보유 포인트가 없습니다."
+		},{
+			"title": "TV포인트",
+			"btnText": "변경",
+			"discount": "12900",
+			"check": "true",
+			"disabled": "false",
+			"detail": "-300P / 3,000P"
+		}
+	],
+	"paymentType": ["청구서","신용카드","휴대폰"]
+}

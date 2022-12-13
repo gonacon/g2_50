@@ -1,0 +1,17 @@
+/* AlarmSetting.css */
+.settingRegistWrap.alarmSetting {padding-left:392px; padding-right:392px;}
+.settingRegistWrap.alarmSetting .registerForm {padding-top:94px;}
+.settingRegistWrap.alarmSetting .contentBox + .contentBox {margin-top:20px;}
+.settingRegistWrap.alarmSetting .contentBox:after {display:block; clear:both; content:"";}
+.settingRegistWrap.alarmSetting .contentBox .innerWrap + .innerWrap {margin-left:70px;}
+
+.settingRegistWrap.alarmSetting .alarmRadio {width:501px;}
+.settingRegistWrap.alarmSetting .alarmRadio .optionWrap {display:flex; justify-content: space-between;}
+.settingRegistWrap.alarmSetting .alarmRadio .radioStyle {width:251px;}
+
+.settingRegistWrap.alarmSetting .checkWrap {display:none; margin-top:40px; border:1px solid rgba(0, 0, 0, 0.15); border-radius:4px;}
+.settingRegistWrap.alarmSetting .checkWrap .checkStyle2 {width:161px;}
+.settingRegistWrap.alarmSetting .checkWrap .checkStyle2 + .checkStyle2 {border-left:1px solid rgba(0, 0, 0, 0.15);}
+.settingRegistWrap.alarmSetting .checkWrap .checkStyle2.focusOn + .checkStyle2 {border-left:1px solid transparent;}
+.settingRegistWrap.alarmSetting .checkWrap.active {display:block;}
+

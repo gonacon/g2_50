@@ -1,0 +1,6 @@
+{
+	"pageType": "PurchaseGeneralNone",
+	"pageTitle": "구매내역 - 일반",
+	"noneText" : "일반 VOD 구매내역이 없습니다.",
+	"defaultSub" : "일반 VOD 구매내역은 구매일로부터 90일까지만 제공해 드립니다."
+}

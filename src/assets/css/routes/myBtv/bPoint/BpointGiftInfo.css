@@ -1,0 +1,31 @@
+/* BpointGiftInfo.css */
+.BpointGiftInfo {position:relative; z-index:1;}
+.BpointGiftInfo .voucher {display:inline-block; padding-top:202px; text-align:center;}
+.BpointGiftInfo .voucher .selectCard {display:block; position:relative; z-index:1; width:456px; height:293px;}
+.BpointGiftInfo .voucher .selectCard.select {transform:scale(1.3); -webkit-transform:scale(1.3);}
+.BpointGiftInfo .voucher .selectCard .wrapImg {display:block; position:absolute; left:0; right:0; top:0; bottom:0; z-index:-1;}
+.BpointGiftInfo .voucher .selectCard .wrapImg img:first-child {display:none;}
+.BpointGiftInfo .voucher .selectCard .wrapImg img:last-child {display:block;}
+.BpointGiftInfo .voucher .selectCard .point {display:block; padding-top:106px; font-size:46px; line-height:normal; letter-spacing:normal; color:rgba(244, 244, 244, 1);}
+.BpointGiftInfo .voucher .selectCard .text {display:block; font-size:26px; line-height:1.35; letter-spacing:normal; color:rgba(244, 244, 244, 0.8);}
+.BpointGiftInfo .voucher .selectCard .price {display:block; padding-top:49px;}
+.BpointGiftInfo .voucher .selectCard .price span {vertical-align:middle;}
+.BpointGiftInfo .voucher .selectCard .price .number { font-size:32px; line-height:1.13; letter-spacing:-1px; color:rgba(0, 0, 0, 0.9); vertical-align:middle;}
+.BpointGiftInfo .voucher .selectCard .price .value {font-size:24px; line-height:normal; letter-spacing:normal; color:rgba(0, 0, 0, 0.9); vertical-align:middle;}
+
+.BpointGiftInfo .left {padding-left:54px;}
+.BpointGiftInfo .right {position:fixed; top:0; right:0; z-index:10; padding:214px 172px 0 150px; width:1060px; height:1080px; margin-left:860px; background-color: rgb(237, 239, 243); box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1);}
+.BpointGiftInfo .right .inner + .inner {margin-top:40px;}
+/*.BpointGiftInfo .right .inner .inputTitle {padding-bottom:16px; font-size:28px; font-weight:700; line-height:1.43; letter-spacing:normal; color:rgba(0, 0, 0, 0.7);}*/
+.BpointGiftInfo .right .inner .inputTitle .text {font-weight:400; font-size:24px; line-height:1.58; letter-spacing:-0.5px; color:rgba(74, 74, 74, 0.6); }
+.BpointGiftInfo .right .inner .btnRequire,
+.BpointGiftInfo .right .inner .btnRequire:before {min-width:160px;}
+.BpointGiftInfo .right .inner .gridStyle + .btnRequire {margin-left:26px;}
+.BpointGiftInfo .right .bPointCount {padding-top:94px;}
+.BpointGiftInfo .right .bPointCount:after {display:block; clear:both; content:"";}
+.BpointGiftInfo .right .bPointCount dt {float:left; padding:9px 0 10px; width:60%; font-size:40px; line-height:1.5; letter-spacing:normal; color:rgba(0, 0, 0, 0.7);}
+.BpointGiftInfo .right .bPointCount dd {float:left; width:40%; font-size:54px; font-weight:700; line-height:1.48; letter-spacing:-0.4px; text-align:right; color:#3a4373;}
+.BpointGiftInfo .right .bPointCount dd .value {font-size:34px; font-weight:700; line-height:1.59; letter-spacing:normal; color:#3a4373; vertical-align:middle;}
+.BpointGiftInfo .right .buttonWrap {padding-top:18px;}
+.BpointGiftInfo .right .buttonWrap .btnGift {width:486px;}
+.BpointGiftInfo .right .caution {padding-top:28px; font-size:24px; line-height:1.33; letter-spacing:normal; color:rgba(0, 0, 0, 0.3);}

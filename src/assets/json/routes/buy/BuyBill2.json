@@ -1,0 +1,10 @@
+{
+	"type": "일반구매",
+	"product": "미녀와 야수",
+	"videoOption": "일반 / HD / 한글자막",
+	"videoTerm": "2일 / 2017.08.01 오후 12:34 까지",
+	"allPrice": "40000",
+	"options": [
+	],
+	"paymentType": ["청구서","신용카드","휴대폰"]
+}

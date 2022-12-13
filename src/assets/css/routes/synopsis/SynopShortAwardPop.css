@@ -1,0 +1,34 @@
+/* SynopShortAwardPop.css */
+/* contentPop */
+.contentPop.award{display:block;position:fixed;top:1000px;left:0;right:0;bottom:0;z-index:10000;width:1920px;height:1080px;font-size:36px;color:#fff;line-height:48px;background:#000;}
+.contentPop.award .mainBg{top:1000px;}
+.contentPop.award .innerContentPop{display:block;position:relative;height:740px;margin:180px 274px 0;}
+/*.innerContentPop .contentInfo::-webkit-scrollbar-track {border-radius:16px;background-color:rgba(0,0,0,0.3);}*/
+/*.innerContentPop .contentInfo::-webkit-scrollbar-thumb {border-radius:16px;width:32px;height:200px;background:#000 url('/assets/images/tmp/scroll_pop.png') no-repeat;}*/
+.contentPop.award .innerContentPop .innerContentInfo{display:block;overflow-y:auto;height:100%;margin:0 auto;}
+.contentPop.award .innerContentPop .innerContentInfo::-webkit-scrollbar {width:0;}
+.contentPop.award .innerContentPop .contentInfo{display:block;width:1100px;margin:0 auto;}
+.contentPop.award .innerContentPop .title{display:block;padding-bottom:0;font-size:56px;text-align:center;line-height:76px;color:rgba(26,26,26,1);font-weight:700;}
+.contentPop.award .innerContentPop .contentText{display:block;font-size:34px;text-align:left;}
+.contentPop.award .innerContentPop .contentText .awardList{margin-top:91px;}
+.contentPop.award .innerContentPop .contentText .awardList + .awardList{margin-top:93px;}
+.contentPop.award .innerContentPop .contentText .awardList .awardTitle{display:block;font-size:34px;color:rgba(26,26,26,1);line-height:48px;font-weight:700;text-align:center;}
+.contentPop.award .innerContentPop .contentText .awardList .awardInfo{display:block;margin-top:7px;font-size:30px;color:rgba(74,74,74,1);line-height:52px;text-align:center;}
+
+
+/*pop scroll*/
+.innerContentPop .scrollBarBox{display:block;position:absolute;top:0;bottom:0;right:14px;z-index:1005;width:32px;height:100%;}
+.innerContentPop .innerScrollBarBox{display:block;position:absolute;top:0;bottom:0;right:14px;z-index:1005;width:32px;height:100%;}
+.innerContentPop .innerScrollBarBox .scrollBar{display:block;position:absolute;top:0;left:0;right:0;border-radius:16px;width:32px;height:200px;background:#f4f4f4;box-shadow:0 24px 16px 0 rgba(0, 0, 0, 0.35);}
+.innerContentPop .innerScrollBarBox .scrollBar:before,
+.innerContentPop .innerScrollBarBox .scrollBar:after{position:absolute;top:0;left:0;z-index:10;display:block;width:32px;height:30px;content:"";background:url('/assets/images/common/icon/img-scroll-pop-up-foc.png') 0 0 no-repeat;}
+.innerContentPop .innerScrollBarBox .scrollBar:after{top:auto;bottom:0;background-image:url('/assets/images/common/icon/img-scroll-pop-down-foc.png');}
+.innerContentPop .innerScrollBarBox .scrollBarBG{display:block;width:16px;height:100%;margin:0 auto;border-radius:16px;background:rgba(0,0,0,0.3);}
+
+/* theme */
+.dark .innerContentPop.award .title{color:rgba(255,255,255,1);}
+.dark .innerContentPop.award .contentText .awardList .awardTitle{color:rgba(244,244,244,0.9);}
+.dark .innerContentPop.award .contentText .awardList .awardInfo{color:rgba(244,244,244,0.8);}
+
+
+

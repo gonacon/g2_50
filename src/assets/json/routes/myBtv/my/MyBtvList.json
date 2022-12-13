@@ -1,0 +1,39 @@
+{
+	"slideType": "MyBtvHome",
+	"slideTitle": "마이btv",
+	"ProductName": "B tv 프라임캐치온 지상파",
+	"ListDetail" :[
+		{
+			"type" : "coupon",
+			"text" : "쿠폰함",
+			"image" : "/assets/images/myBtv/item-coupon.png",
+			"new" : true,
+			"number" : "5"
+		},
+		{
+			"type" : "bPoint",
+			"text" : "포인트",
+			"image" : "/assets/images/myBtv/item-bpoint.png",
+			"new" : true,
+			"number" : "3200"
+		},
+		{
+			"type" : "tMembership",
+			"text" : "t멤버십",
+			"image" : "/assets/images/myBtv/item-tmembership.png",
+			"number" : "2444123412341234"
+		},
+		{
+			"type" : "okCash",
+			"text" : "okcashbag",
+			"image" : "/assets/images/myBtv/item-okcashbag.png",
+			"state" : "카드 등록하기"
+		},
+		{
+			"type" : "tvPoint",
+			"text" : "tv포인트",
+			"image" : "/assets/images/myBtv/item-tvpoint.png",
+			"state" : "조회하기"
+		}
+	]
+}

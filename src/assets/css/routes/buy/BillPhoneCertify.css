@@ -1,0 +1,19 @@
+/* BillPhoneCertify.css */
+.popWrap.phoneCertify .billCon {padding-top:82px; padding-bottom:80px;}
+.popWrap.phoneCertify .billCon .optionWrap {margin-top:0;}
+.popWrap.phoneCertify .billCon .gridWrap {align-items:flex-end;}
+.popWrap.phoneCertify .billCon .gridWrap + .gridWrap {margin-top:34px;}
+.popWrap.phoneCertify .billCon .gridWrap + .inner.valid {margin-top:48px;}
+.popWrap.phoneCertify .billCon .gridWrap .btnRequire {vertical-align:bottom;}
+
+/*.popWrap.phoneCertify .billCon .inner.disabled .inputTitle {opacity:0.2;}*/
+.popWrap.phoneCertify .btnStyle.disable {opacity:0.4;}
+.popWrap.phoneCertify .gender {width:401px; font-size:0;}
+.popWrap.phoneCertify .birth {width:363px;}
+.popWrap.phoneCertify .agency {width:240px;}
+.popWrap.phoneCertify .tel {width:378px;}
+.popWrap.phoneCertify .valid {position:relative;z-index:1;width:400px;}
+.valid.disable .validTime {opacity:0;}
+.valid .validTime {opacity:1; position:absolute; top:50%; right:-110px; z-index:10; transform:translate(0,20%); font-size:26px; line-height:1.46; color:#c33e32;}
+.popWrap.phoneCertify .gender .radioStyle {display:inline-block; min-width:200px; text-align:left;}
+

@@ -1,0 +1,21 @@
+/* SetFavorChn.css */
+.innerChnMultiView{padding:10px;}
+.innerChnMultiView button{display:block; width:100%;}
+.innerChnMultiView button span img{display:inline-block;margin-right:15px;vertical-align:middle;}
+.innerChnMultiView button span em{vertical-align:middle;}
+.innerChnMultiView .registrationText{display:block;margin-top:27px;font-size:26px;color:rgba(244,244,244,0.9);text-align:right;}
+.innerChnMultiView .registrationText .num{font-size:26px;color:rgba(244,244,244,0.9);vertical-align:baseline;}
+
+.slideMultiView ul li.noneData{display:block;position:absolute;top:50%;left:50%;border:none !important;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);text-align:center;}
+.slideMultiView ul li.noneData .noneDataText{display:block;font-size:34px;color:rgba(244,244,244,0.9);line-height:52px;text-align:center;}
+.slideMultiView.line2 ul{display:flex;flex-direction:column;flex-wrap:wrap;}
+.slideMultiView.line2 ul li{display:inline-block;width:50%;}
+.slideMultiView.line2 ul li .textConts .textChn{padding-left:15px;}
+.slideMultiView.line2 ul li .textConts span{letter-spacing:0;}
+.slideMultiView.line2 ul li .textConts.favor span,
+.slideMultiView.line2 ul li .textConts.block span{font-weight:700;}
+.setMultiViewWrap .setMultiViewConts .multiViewContents .slideMultiView.line2 ul li .textConts.block span{color:rgba(244, 244, 244, 0.4);}
+.setMultiViewWrap .setMultiViewConts .multiViewContents .slideMultiView.line2 ul li a:focus .textConts.block span{color:#ec5638;}
+.slideMultiView.line2 ul li .textConts.favor .textChn:after,
+.slideMultiView.line2 ul li .textConts.block .textChn:after{position:absolute;top:50%;left:15px;z-index:10;transform:translate(0,-50%);display:block;width:29px;height:27px;content:"";background:url("/assets/images/liveTv/ic-star.png") no-repeat 0 0;}
+.slideMultiView.line2 ul li .textConts.block .textChn:after{left:10px;width:32px;height:32px;background:url("/assets/images/liveTv/ic-block.png") no-repeat 0 0;}

@@ -1,0 +1,15 @@
+/* AlarmType.css */
+.settingRegistWrap.alarmType {padding-left:187px; padding-right:187px;}
+.settingRegistWrap.alarmType {}
+
+.alarmList {display:flex; justify-content:space-between; padding-top:131px;}
+.alarmList li .item {display:block;}
+.alarmList li .item .inner {display:block; padding:33px; width:376px; height:376px; background:url("/assets/images/kids/setting/img-alarm-nor.png") no-repeat center center; text-align:center;}
+.alarmList li .item:focus {transform:scale(1.19); -webkit-transform:scale(1.19);}
+.alarmList li .item:focus .inner {background-image:url("/assets/images/kids/setting/img-alarm-foc.png");}
+.alarmList li .item:focus .text {color:#f5513f;}
+.alarmList li .item .text {display:block; padding-top:203px; background:url("/assets/images/kids/setting/ic-school.png") no-repeat center 30px; background-size:156px; font-size:32px; font-weight:700; line-height:normal; letter-spacing:normal; text-align:center; color:rgb(0, 0, 0);}
+.alarmList li.meal .item .text {background-image:url("/assets/images/kids/setting/ic-fork.png");}
+.alarmList li.rest .item .text {background-image:url("/assets/images/kids/setting/ic-rest.png");}
+.alarmList li.sleep .item .text {background-image:url("/assets/images/kids/setting/ic-sleep.png");}
+.alarmList li .item .alarmState {margin-top:-5px; padding-left:40px; background:url("/assets/images/kids/setting/arrow-current.png") no-repeat left center; font-size:30px; line-height:normal; letter-spacing:normal; text-align:center; color:#f4f4f4;}

@@ -1,0 +1,8 @@
+/* EventFreeDetail.css */
+.EventFreeDetail {padding-top:6px; text-align:center;}
+.EventFreeDetail .wrapGiftImg {display:block; padding-bottom:39px;}
+.EventFreeDetail .pageTitle {padding-bottom:20px; font-size:52px; font-weight:700; line-height:1; letter-spacing:normal;}
+.EventFreeDetail .subInfo {font-size:30px; line-height:1.4; letter-spacing:normal; color:#6a6a6a;}
+.EventFreeDetail .gridWrap{margin:58px auto 0;width:500px;}
+.EventFreeDetail .bottomWrap {position:absolute; left:0; right:0; bottom:0; z-index:0; padding-top:40px; height:342px;}
+.EventFreeDetail .bottomWrap .textDesc {padding-top:44px;font-size:28px; line-height:1.43; letter-spacing:normal; text-align:center; color:rgba(106,106,106,1); }

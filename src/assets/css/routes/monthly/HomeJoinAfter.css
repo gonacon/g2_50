@@ -1,0 +1,17 @@
+/* HomeJoinAfter.css */
+.monthlyAfter.scrollWrap {padding:0 115px;}
+
+.monthlyAfter .btnTopWrap,
+.monthlyAfterNoneBanner .btnTopWrap {padding:150px 0 60px;transform:translate(0,0);}
+
+.monthlyAfterNoneBanner{padding:141px 115px 0;}
+.monthlyAfterNoneBanner .preMenu{font-size:24px;color:rgba(106,106,106,1);line-height:36px;}
+.monthlyAfterNoneBanner .currentMenu{margin-top:7px;font-size:42px;color:rgba(26,26,26,1);line-height:48px;font-weight:700;}
+
+.monthlyAfter .contentGroup:nth-of-type(2) > .slideTypeJoined{padding-top:40px;}
+/*.monthlyAfter .contentGroup + .contentGroup{margin-top:40px;}*/
+.monthlyAfterNoneBanner > .contentGroup + .contentGroup{margin-top:30px;}
+
+
+
+

@@ -1,0 +1,478 @@
+{
+    "result": "0000",
+    "reason": "성공",
+    "request_time": "201805011523392339",
+    "total_count": "20",
+    "rating": [
+        {
+            "order": "1",
+            "previous_order": "4",
+            "channel_no": "9",
+            "channel_name": "KBS1",
+            "percentage": "6.8%",
+            "service_id_count": "20",
+            "service_id_list": [
+                {
+                    "service_id": "11",
+                    "cd_area": "41"
+                },
+                {
+                    "service_id": "16",
+                    "cd_area": "42"
+                },
+                {
+                    "service_id": "19",
+                    "cd_area": "43"
+                },
+                {
+                    "service_id": "22",
+                    "cd_area": "46"
+                },
+                {
+                    "service_id": "25",
+                    "cd_area": "44"
+                },
+                {
+                    "service_id": "28",
+                    "cd_area": "45"
+                },
+                {
+                    "service_id": "31",
+                    "cd_area": "47"
+                },
+                {
+                    "service_id": "34",
+                    "cd_area": "48"
+                },
+                {
+                    "service_id": "37",
+                    "cd_area": "50"
+                },
+                {
+                    "service_id": "39",
+                    "cd_area": "49"
+                },
+                {
+                    "service_id": "42",
+                    "cd_area": "31"
+                },
+                {
+                    "service_id": "45",
+                    "cd_area": "32"
+                },
+                {
+                    "service_id": "47",
+                    "cd_area": "56"
+                },
+                {
+                    "service_id": "49",
+                    "cd_area": "55"
+                },
+                {
+                    "service_id": "51",
+                    "cd_area": "54"
+                },
+                {
+                    "service_id": "53",
+                    "cd_area": "51"
+                },
+                {
+                    "service_id": "55",
+                    "cd_area": "33"
+                },
+                {
+                    "service_id": "57",
+                    "cd_area": "57"
+                },
+                {
+                    "service_id": "59",
+                    "cd_area": "52"
+                },
+                {
+                    "service_id": "60",
+                    "cd_area": "53"
+                }
+            ]
+        },
+        {
+            "order": "2",
+            "previous_order": "2",
+            "channel_no": "947",
+            "channel_name": "Audio",
+            "percentage": "6.8%",
+            "service_id_count": "1",
+            "service_id_list": [
+                {
+                    "service_id": "950",
+                    "cd_area": "0"
+                }
+            ]
+        },
+        {
+            "order": "3",
+            "previous_order": "3",
+            "channel_no": "15",
+            "channel_name": "JTBC",
+            "percentage": "6.6%",
+            "service_id_count": "1",
+            "service_id_list": [
+                {
+                    "service_id": "240",
+                    "cd_area": "0"
+                }
+            ]
+        },
+        {
+            "order": "4",
+            "previous_order": "5",
+            "channel_no": "311",
+            "channel_name": "Audio 2",
+            "percentage": "5.5%",
+            "service_id_count": "1",
+            "service_id_list": [
+                {
+                    "service_id": "105",
+                    "cd_area": "0"
+                }
+            ]
+        },
+        {
+            "order": "5",
+            "previous_order": "6",
+            "channel_no": "5",
+            "channel_name": "SBS",
+            "percentage": "3.8%",
+            "service_id_count": "10",
+            "service_id_list": [
+                {
+                    "service_id": "14",
+                    "cd_area": "61"
+                },
+                {
+                    "service_id": "18",
+                    "cd_area": "62"
+                },
+                {
+                    "service_id": "21",
+                    "cd_area": "63"
+                },
+                {
+                    "service_id": "24",
+                    "cd_area": "66"
+                },
+                {
+                    "service_id": "27",
+                    "cd_area": "64"
+                },
+                {
+                    "service_id": "30",
+                    "cd_area": "65"
+                },
+                {
+                    "service_id": "33",
+                    "cd_area": "67"
+                },
+                {
+                    "service_id": "36",
+                    "cd_area": "68"
+                },
+                {
+                    "service_id": "44",
+                    "cd_area": "69"
+                },
+                {
+                    "service_id": "62",
+                    "cd_area": "70"
+                }
+            ]
+        },
+        {
+            "order": "6",
+            "previous_order": "13",
+            "channel_no": "16",
+            "channel_name": "MBN",
+            "percentage": "3.2%",
+            "service_id_count": "1",
+            "service_id_list": [
+                {
+                    "service_id": "241",
+                    "cd_area": "0"
+                }
+            ]
+        },
+        {
+            "order": "7",
+            "previous_order": "7",
+            "channel_no": "11",
+            "channel_name": "MBC",
+            "percentage": "3.1%",
+            "service_id_count": "20",
+            "service_id_list": [
+                {
+                    "service_id": "13",
+                    "cd_area": "1"
+                },
+                {
+                    "service_id": "17",
+                    "cd_area": "2"
+                },
+                {
+                    "service_id": "20",
+                    "cd_area": "3"
+                },
+                {
+                    "service_id": "23",
+                    "cd_area": "6"
+                },
+                {
+                    "service_id": "26",
+                    "cd_area": "4"
+                },
+                {
+                    "service_id": "29",
+                    "cd_area": "5"
+                },
+                {
+                    "service_id": "32",
+                    "cd_area": "7"
+                },
+                {
+                    "service_id": "35",
+                    "cd_area": "8"
+                },
+                {
+                    "service_id": "38",
+                    "cd_area": "10"
+                },
+                {
+                    "service_id": "40",
+                    "cd_area": "9"
+                },
+                {
+                    "service_id": "41",
+                    "cd_area": "19"
+                },
+                {
+                    "service_id": "43",
+                    "cd_area": "18"
+                },
+                {
+                    "service_id": "46",
+                    "cd_area": "11"
+                },
+                {
+                    "service_id": "48",
+                    "cd_area": "15"
+                },
+                {
+                    "service_id": "50",
+                    "cd_area": "14"
+                },
+                {
+                    "service_id": "52",
+                    "cd_area": "13"
+                },
+                {
+                    "service_id": "54",
+                    "cd_area": "12"
+                },
+                {
+                    "service_id": "56",
+                    "cd_area": "16"
+                },
+                {
+                    "service_id": "58",
+                    "cd_area": "17"
+                },
+                {
+                    "service_id": "61",
+                    "cd_area": "20"
+                }
+            ]
+        },
+        {
+            "order": "8",
+            "previous_order": "8",
+            "channel_no": "2",
+            "channel_name": "SBS 플러스",
+            "percentage": "3.0%",
+            "service_id_count": "1",
+            "service_id_list": [
+                {
+                    "service_id": "901",
+                    "cd_area": "0"
+                }
+            ]
+        },
+        {
+            "order": "9",
+            "previous_order": "10",
+            "channel_no": "17",
+            "channel_name": "tvN",
+            "percentage": "2.9%",
+            "service_id_count": "1",
+            "service_id_list": [
+                {
+                    "service_id": "872",
+                    "cd_area": "0"
+                }
+            ]
+        },
+        {
+            "order": "10",
+            "previous_order": "9",
+            "channel_no": "30",
+            "channel_name": "KBS 드라마",
+            "percentage": "2.9%",
+            "service_id_count": "1",
+            "service_id_list": [
+                {
+                    "service_id": "902",
+                    "cd_area": "0"
+                }
+            ]
+        },
+        {
+            "order": "11",
+            "previous_order": "12",
+            "channel_no": "7",
+            "channel_name": "KBS2",
+            "percentage": "2.8%",
+            "service_id_count": "1",
+            "service_id_list": [
+                {
+                    "service_id": "12",
+                    "cd_area": "0"
+                }
+            ]
+        },
+        {
+            "order": "12",
+            "previous_order": "15",
+            "channel_no": "24",
+            "channel_name": "YTN",
+            "percentage": "2.5%",
+            "service_id_count": "1",
+            "service_id_list": [
+                {
+                    "service_id": "570",
+                    "cd_area": "0"
+                }
+            ]
+        },
+        {
+            "order": "13",
+            "previous_order": "11",
+            "channel_no": "13",
+            "channel_name": "EBS",
+            "percentage": "2.3%",
+            "service_id_count": "1",
+            "service_id_list": [
+                {
+                    "service_id": "15",
+                    "cd_area": "0"
+                }
+            ]
+        },
+        {
+            "order": "14",
+            "previous_order": "14",
+            "channel_no": "80",
+            "channel_name": "KBS joy",
+            "percentage": "1.9%",
+            "service_id_count": "1",
+            "service_id_list": [
+                {
+                    "service_id": "880",
+                    "cd_area": "0"
+                }
+            ]
+        },
+        {
+            "order": "15",
+            "previous_order": "19",
+            "channel_no": "32",
+            "channel_name": "MBC 드라마",
+            "percentage": "1.8%",
+            "service_id_count": "1",
+            "service_id_list": [
+                {
+                    "service_id": "900",
+                    "cd_area": "0"
+                }
+            ]
+        },
+        {
+            "order": "16",
+            "previous_order": "18",
+            "channel_no": "53",
+            "channel_name": "Ch CGV",
+            "percentage": "1.7%",
+            "service_id_count": "1",
+            "service_id_list": [
+                {
+                    "service_id": "187",
+                    "cd_area": "0"
+                }
+            ]
+        },
+        {
+            "order": "17",
+            "previous_order": "17",
+            "channel_no": "18",
+            "channel_name": "채널A",
+            "percentage": "1.6%",
+            "service_id_count": "1",
+            "service_id_list": [
+                {
+                    "service_id": "242",
+                    "cd_area": "0"
+                }
+            ]
+        },
+        {
+            "order": "18",
+            "previous_order": "21",
+            "channel_no": "19",
+            "channel_name": "TV조선",
+            "percentage": "1.6%",
+            "service_id_count": "1",
+            "service_id_list": [
+                {
+                    "service_id": "243",
+                    "cd_area": "0"
+                }
+            ]
+        },
+        {
+            "order": "19",
+            "previous_order": "16",
+            "channel_no": "23",
+            "channel_name": "연합뉴스TV",
+            "percentage": "1.5%",
+            "service_id_count": "1",
+            "service_id_list": [
+                {
+                    "service_id": "571",
+                    "cd_area": "0"
+                }
+            ]
+        },
+        {
+            "order": "20",
+            "previous_order": "25",
+            "channel_no": "54",
+            "channel_name": "OCN",
+            "percentage": "1.4%",
+            "service_id_count": "1",
+            "service_id_list": [
+                {
+                    "service_id": "178",
+                    "cd_area": "0"
+                }
+            ]
+        }
+    ],
+    "response_time": "201805011523392339",
+    "IF": "IF-NXPG-018"
+}

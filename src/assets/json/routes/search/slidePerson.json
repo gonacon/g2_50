@@ -1,0 +1,60 @@
+{
+	"slideType": "SlideTypePerson",
+	"slideTitle": "인물",
+	"slideItem": [
+		{
+			"name": "유재석유재석유재석유재석유재석유재석유재석유재석유재석유재석유재석",
+			"job": "MC,개그맨",
+			"birth": "1972.08.14",
+			"link": ""
+		},
+		{
+			"personName": "김종국",
+			"personJob": "가수",
+			"personBirth": "1985.09.19",
+			"link": ""
+		},
+		{
+			"personName": "하하",
+			"personJob": "가수",
+			"personBirth": "1979.08.20",
+			"link": ""
+		},
+		{
+			"personName": "송지효",
+			"personJob": "영화배우,탤런트",
+			"personBirth": "1985.09.19",
+			"link": ""
+		},
+		{
+			"personName": "유재석",
+			"personJob": "MC,개그맨",
+			"personBirth": "1972.08.14",
+			"link": ""
+		},
+		{
+			"personName": "지석진",
+			"personJob": "MC,개그맨",
+			"personBirth": "1985.09.19",
+			"link": ""
+		},
+		{
+			"personName": "김종국",
+			"personJob": "가수",
+			"personBirth": "1985.09.19",
+			"link": ""
+		},
+		{
+			"personName": "하하",
+			"personJob": "가수",
+			"personBirth": "1979.08.20",
+			"link": ""
+		},
+		{
+			"personName": "송지효",
+			"personJob": "영화배우,탤런트",
+			"personBirth": "1985.09.19",
+			"link": ""
+		}
+	]
+}

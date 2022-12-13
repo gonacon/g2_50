@@ -1,0 +1,30 @@
+/* CommerceSlide.css */
+/* CommerceProduct */
+:root{
+	--page:0;
+}
+
+.commercePop {position:fixed; top:0; left:0; z-index:1000; width:1920px; height:1080px;}
+.commerceProductBg {position:fixed; top:0; left:0; z-index:-1; width:1920px; height:1080px; background:url("/assets/images/common/bg/bg_popup.png") no-repeat 0 0;}
+.commerceProductWrap {position:relative; z-index:200;}
+.commerceSlide {position:relative; z-index:1; padding:114px 303px 0; height:1080px;}
+.commerceSlide .title {font-size:40px; font-weight:700; line-height:1; letter-spacing:normal; text-align:center; color:#f8f8f8;}
+.commerceSlide .slideWrap {position:relative; z-index:1; padding:61px 0 64px;}
+.commerceSlide .slideWrap .slideCon{overflow:hidden; padding:0 5px 32px; margin:0 -5px -32px;}
+.commerceSlide .slideWrap .slideWrapper {transform:translate3d(calc(var(--page) * -1325px),0,0);}
+.commerceSlide .slideWrap .slideWrapper {display:flex; justify-content:space-between;}
+.commerceSlide .slideWrap .slideWrapper:after {display:block; clear:both; content:"";}
+.commerceSlide .slideWrap .slideWrapper .slide .csFocus {display:block; text-align:center;}
+.commerceSlide .slideWrap .slideWrapper .slide img {display:block; width:100%; border-radius:8px; box-shadow: 0 24px 8px 0 rgba(0, 0, 0, 0.35);}
+.commerceSlide .slideWrap .slideWrapper .slide p {font-size:20px; color:#fff;}
+.commerceSlide .slideWrap .leftArrow,
+.commerceSlide .slideWrap .rightArrow{position:absolute;top:50%;left:-70px;z-index:10;transform:translate(0,-50%);width:22px;height:57px;background:url("/assets/images/common/icon/arrow-left-w.png") no-repeat 0 0;}
+.commerceSlide .slideWrap .rightArrow{left:auto;right:-70px;background:url("/assets/images/common/icon/arrow-right-w.png") no-repeat 0 0;}
+
+.commerceWrap .slidePage {position:absolute; bottom:0; left:50%; z-index:10; transform:translate(-50%, 0); margin-top:50px; font-size:0; text-align:center;}
+.commerceWrap .slidePage span {display:inline-block; width:14px; height:14px; border-radius:14px; background-color:rgba(244, 244, 244, 0.5);}
+.commerceWrap .slidePage span + span {margin-left:10px;}
+.commerceWrap .slidePage span.on {background-color:#f4f4f4;}
+
+
+

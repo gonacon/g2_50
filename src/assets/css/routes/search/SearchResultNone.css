@@ -1,0 +1,33 @@
+/* SearchResultNone.css */
+.searchResultNoneWrap{width:1920px;height:1080px;padding:98px 200px 160px;}
+
+.searchResultNoneWrap .resultNoneTitleArea{text-align:center;}
+.searchResultNoneWrap .resultNoneTitleArea .resultTitle{font-size:52px;color:#aaa;font-weight:700;line-height:60px;}
+.searchResultNoneWrap .resultNoneTitleArea .resultTitle strong{color:#fff;line-height:60px;font-weight:700;}
+.searchResultNoneWrap .resultNoneTitleArea .resultSubText{display:block;margin-top:20px;font-size:30px;color:#888;line-height:40px;}
+.searchResultNoneWrap .resultNoneTitleArea .resultBtnArea{display:block;margin-top:96px;text-align:center;}
+
+.searchResultNoneWrap .resultNoneTitleArea + .searchRecommendContent{margin-top:106px;}
+
+.searchResultNoneWrap .searchRecommendContent p{padding:44px 0 27px;font-size:36px;color:#d4d4d4;text-align:center;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

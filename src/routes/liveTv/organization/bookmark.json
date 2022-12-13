@@ -1,0 +1,38 @@
+{
+    "IF" : "IF-ME-011",
+    "ver" : "5.0",
+    "svc_name" : "METV-BOOKMARK",
+    "result" : "0000",
+    "reason" : "OK",
+    "stb_id" : "{00000000-0000-0000-0000-000000000000}",
+    "page_tot" : "1",
+    "page_no" : "1",
+    "bookmark_tot" : "111",
+    "bookmark_no" : "111",
+    "group" : "IPTV",
+    "ch_type" : "1",
+    "bookmarkList" : [
+    {
+        "svc_id" : "322",
+        "title" : "NS홈쇼핑",
+        "ch_no" : "14",
+        "yn_kzone" : "N",
+        "reg_date" : "13.12.21"
+    },
+    {
+        "svc_id" : "872",
+        "title" : "tvN",
+        "ch_no" : "17",
+        "yn_kzone" : "N",
+        "reg_date" : "13.12.21"
+    },
+    {
+        "svc_id" : "183",
+        "title" : "플레이보이TV",
+        "ch_no" : "320",
+        "yn_kzone" : "N",
+        "reg_date" : "13.12.21"
+    }
+    ]
+}
+

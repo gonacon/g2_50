@@ -1,0 +1,51 @@
+/* SlideVoucher.css */
+:root{
+	--page:0;
+}
+
+.SlideVoucher .slideWrapper{transform:translate3d(calc(var(--page) * -438px),0,0);}
+.SlideVoucher {padding:56px 0 0; margin:0 -31px;}
+.SlideVoucher .slideTitle {padding:0 0 0 33px; font-size:36px; line-height:1.11; letter-spacing:-0.8px; color:#1a1a1a; opacity:0.8;}
+.SlideVoucher .slideCon {margin:-20px -30px -30px; padding:4px 30px 30px; overflow:hidden;}
+.SlideVoucher .slideWrap {position:relative; z-index:1;transform:translate(0,0);}
+.SlideVoucher .slideWrapper {display:flex; flex-wrap:wrap;}
+.SlideVoucher .slide .csFocus {overflow:hidden; display:inline-block; position:relative; z-index:1; width:438px; height:285px; border-radius:4px; transform:scale(0.85); -webkit-transform:scale(0.85); background:#000;box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);}
+.SlideVoucher .slide .csFocus:before {display:block; width:100%; height:100%; position:absolute; top:0; left:0; z-index:5; background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), linear-gradient(149deg, #7c6aff, #6ab8ff); opacity:0.3; content:"";}
+.SlideVoucher .slide .csFocus > img {width:100%; height:100%; position:absolute; top:0; left:0; z-index:10;}
+.SlideVoucher .slide .csFocus .norImg{opacity:1;}
+.SlideVoucher .slide .csFocus .focImg{opacity:0;}
+.SlideVoucher .slide .csFocus.focusOn {transform:scale(1); -webkit-transform:scale(1); box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.35);}
+.SlideVoucher .slide .csFocus.focusOn .norImg{opacity:0;}
+.SlideVoucher .slide .csFocus.focusOn .focImg{opacity:1;}
+/*.SlideVoucher .slide.csFocus .wrapImg {display:block; position:absolute; top:0; left:0; z-index:20; width:100%; height:100%;}*/
+/*.SlideVoucher .slide.csFocus .wrapImg:before {display:block; width:100%; height:100%; position:absolute; top:0; left:0; z-index:25; background: linear-gradient(130deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.09), #000000); opacity:0.3; content:"";}*/
+/*.SlideVoucher .slide.csFocus .wrapImg img,*/
+/*.SlideVoucher .slide.csFocus .detailInfo img {margin:0 auto;}*/
+/*.SlideVoucher .slide.csFocus .wrapImg img {position:relative; z-index:1;}*/
+/*.SlideVoucher .slide.csFocus .wrapImg img {position:absolute; top:50%; left:50%; z-index:10; transform:translate(-50%,-50%); -webkit-transform:translate(-50%,-50%);}*/
+
+/*.SlideVoucher .slide.csFocus .detailText {font-size:26px; line-height:1.31; letter-spacing:-1px; text-align: center; color:#000; opacity:0.6;}*/
+/*.SlideVoucher .slide.csFocus .price {font-size:26px; line-height:1.62; color:#000; text-align:center;}*/
+/*.SlideVoucher .slide.csFocus .price span {display:inline-block; margin-right:6px; font-size:40px;}*/
+/*.SlideVoucher .slide.csFocus .detailInfo {display:none; position:absolute; top:0; left:0; z-index:10; padding:35px 0 40px; width:100%; height:100%; background-color:#fff;}*/
+
+.SlideVoucher .slide .csFocus.focusOn {background:transparent;}
+/*.SlideVoucher .slide.csFocus.focusOn .wrapImg {display:none;}*/
+/*.SlideVoucher .slide.csFocus.focusOn .detailInfo {display:block;}*/
+/*.SlideVoucher .slide.csFocus.focusOn .price {color:rgba(245,81,63,1);}*/
+
+.contentGroup.activeSlide .SlideVoucher .slideTitle{transform:translate(0,-21px);}
+.SlideVoucher .leftArrow,
+.SlideVoucher .rightArrow{position:absolute;top:50%;left:-45px;z-index:10;transform:translate(0,-80%);width:23px;height:57px;background:url("/assets/images/common/icon/arrow-left.png") no-repeat 0 0;opacity:0;}
+.SlideVoucher .rightArrow{left:auto;right:-45px;background:url("/assets/images/common/icon/arrow-right.png") no-repeat 0 0;}
+.SlideVoucher .activeSlide.leftActive .leftArrow,
+.SlideVoucher .activeSlide.rightActive .rightArrow{opacity:1;}
+
+.SlideVoucher .slideCount {position: absolute;top: -12px;right: 35px;z-index: 10;font-size: 23px;color: #666;line-height: 1.83;letter-spacing: normal;opacity: 0;}
+.SlideVoucher .activeSlide .slideCount {opacity:1;}
+.SlideVoucher .activeSlide .slideCount .current{font-weight:700;}
+.SlideVoucher .activeSlide.lastActive .slideCount{transform:translate(0,-21px);}
+
+.monthly.monthlyAfter {padding-top:66px;}
+.monthly.monthlyAfter .SlideVoucher .slideCon {padding-bottom:60px;}
+#blocks_0 .SlideVoucher{padding-top:87px;}

@@ -1,0 +1,331 @@
+/* KidsSynopSeries.css */
+/* synopseries */
+.kidsSynopSeriesContent .slideTypeG .slideWrapper{transform:translate3d(calc(var(--page) * -288px),0,0);}
+.kidsSynopSeriesContent .slideTypeH .slideWrapper{transform:translate3d(calc(var(--page) * -288px),0,0);}
+
+.kidsSynopSeriesContent .slideTypeG .slideWrap .slideWrapper .slide.csFocus.focusOn,
+.kidsSynopSeriesContent .slideTypeH .slideWrap .slideWrapper .slide.csFocus.focusOn {transform:scale(1.19); -webkit-transform:scale(1.19);}
+.kidsSynopSeriesContent .slideTypeG .slideWrap .slideWrapper .slide.csFocus.focusOn{transform-origin:bottom;}
+.kidsSynopSeriesContent .slideTypeG.noneType .slideWrap .slideWrapper .slide.csFocus.focusOn{transform-origin:center;}
+
+.kidsSynopSeriesContent .slideTypeH .slide{margin:0 20px;}
+.kidsSynopSeriesContent .slideTypeH .slideCon{margin:-20px -38px -30px;padding:20px 18px 30px;overflow:hidden;}
+.kidsSynopSeriesContent .slideTypeG .slideCon{margin:-20px -36px 0;padding:20px 16px 50px;overflow:hidden;}
+
+.kidsSynopSeriesContent .slideTypeG .slideWrapper,
+.kidsSynopSeriesContent .slideTypeH .slideWrapper{display: flex;justify-content: space-between;}
+
+.kidsSynopSeriesContent .slideTypeG{padding-top:68px;}
+.kidsSynopSeriesContent .slideTypeG .slideCon.type3{padding-top:90px;}
+.kidsSynopSeriesContent .slideTypeG .slideCon.type3 .slide{display: flex;margin:0 20px}
+
+.kidsSynopSeriesContent .synopBot .contentGroup + .contentGroup{margin-top:30px;}
+
+/* bul */
+.kidsSynopSeriesContent .bar{display:inline-block;margin:0 10px 0 5px;width:2px;height:22px;background:rgba(26,26,26,0.2);vertical-align:middle;}
+
+/* title */
+.kidsSynopSeriesContent .titleStyle1{position:relative;top:0;left:0;z-index:1;margin-bottom:8px;font-size:36px;font-weight:500;color:rgba(48,48,48,1);transform:translate(0,0);}
+.kidsSynopSeriesContent .activeSlide .titleStyle1{transform:translate(0,-14px);}
+.kidsSynopSeriesContent .titleStyle2{position:relative;top:0;left:0;z-index:1;margin-bottom:30px;font-size:36px;color:rgba(48,48,48,1);}
+.kidsSynopSeriesContent .titleStyle2 .bar{margin-left:15px;}
+.kidsSynopSeriesContent .titleStyle2 .subText{font-size:26px;font-weight:400;color:rgba(26,26,26,0.5);}
+
+.kidsSynopSeriesContent{position:relative;z-index:10;}
+.kidsSynopSeriesContent .synopTop {position:relative;padding:44px 115px 0 115px;height:1080px;}
+.kidsSynopSeriesContent .synopTop .logo{display:flex;align-items:flex-end;margin-top:0;padding-bottom:0;width:1100px;height:150px;}
+.kidsSynopSeriesContent .synopTop .logo img{display:block;}
+.kidsSynopSeriesContent .synopTop .logo .logoText{display:-webkit-box;overflow:hidden;text-overflow:ellipsis;white-space:normal;-webkit-line-clamp:2;-webkit-box-orient:vertical;font-size:72px;color:rgba(48,48,48,1);line-height:88px;font-weight:700;vertical-align:middle;}
+.kidsSynopSeriesContent .synopTop .logo .logoText.long{font-size:48px;line-height:60px;}
+
+.kidsSynopSeriesContent .synopTop .subText{margin-top:13px;}
+.kidsSynopSeriesContent .synopTop .subText .synopInfo{display:flex;padding:0;}
+.kidsSynopSeriesContent .synopTop .subText .synopInfo li{padding-left:5px;color:rgba(74,74,74,1);font-size:26px;opacity: 0.75;}
+.kidsSynopSeriesContent .synopTop .subText .synopInfo li .boxStyle1{margin-left:0;}
+.kidsSynopSeriesContent .synopTop .subText + .contentGroup{padding-top: 47px;}
+
+.kidsSynopSeriesContent .synopTop .pageArr {margin:0 auto;position:absolute;bottom:40px;left:0;right:0;z-index: 1;width: 43px;height: 15px;background:url('/assets/images/synopsis/arrow-shorttop.png') no-repeat;}
+.kidsSynopSeriesContent .synopTop .pageArr.on {bottom:-40px;transform:rotate(-180deg);}
+.kidsSynopSeriesContent .synopTop .pageArr.off {display:none;}
+
+.kidsSynopSeriesContent .synopTop .subText .commont{display:block;width:1117px;height:67px;/*overflow:hidden;*/margin-top:28px;font-size:26px;line-height:36px;}
+.kidsSynopSeriesContent .synopTop .subText .commont .noticeMent{display:block;padding-bottom:6px;font-size:26px;color:rgba(26,26,26,0.9);font-weight:700;line-height:28px;}
+.kidsSynopSeriesContent .synopTop .subText .commont .linkSynopcomment{display:inline-block;position:relative;z-index:2;font-size:26px;color:rgba(48,48,48,1);line-height:38px;font-weight:700;}
+.kidsSynopSeriesContent .synopTop .subText .commont .linkSynopcomment > div {display:inline;}
+.kidsSynopSeriesContent .synopTop .subText .commont .linkSynopcomment.focusOn{opacity:1;color:#000;}
+.kidsSynopSeriesContent .synopTop .subText .commont .linkSynopcomment.focusOn:after{content:'';position:absolute;top:-20px;left:-24px;right:-24px;bottom:-20px;z-index:-1;width:100%;height:100%;padding:20px 24px;border-radius:4px;background:rgba(244,244,244,1);box-shadow:0 24px 16px 0 rgba(0, 0, 0, 0.35);}
+.kidsSynopSeriesContent .synopTop .subText .commont .linkSynopcomment .commentMore {display:inline-block;position:relative;margin-left:10px;padding-left:22px;text-decoration:underline;font-size:24px;color:rgba(106,106,106,1);font-weight:700;}
+.kidsSynopSeriesContent .synopTop .subText .commont .linkSynopcomment.focusOn .commentMore {color:#f5513f;}
+.kidsSynopSeriesContent .synopTop .subText .commont .linkSynopcomment .commentMore:before{content:'+';position:absolute;top:0;left:0;font-size:24px;line-height:42px;color:rgba(26,26,26,0.5);font-weight:700;}
+.kidsSynopSeriesContent .synopTop .subText .commont .linkSynopcomment.focusOn .commentMore:before{color:#f5513f;}
+.kidsSynopSeriesContent .synopTop .subText + .contentGroup{padding-top:22px;}
+.kidsSynopSeriesContent .contentPop .btnBeforeArea .btnBefore{color:#000;}
+
+.kidsSynopSeriesContent .synopBot{padding:80px 115px 60px;}
+
+.kidsSynopSeriesContent .synopBtn{position:relative;}
+.kidsSynopSeriesContent .synopBtn ul{display:flex;}
+.kidsSynopSeriesContent .synopBtn > ul > li{margin-left:30px;}
+.kidsSynopSeriesContent .synopBtn > ul > li:first-child{margin-left:0;}
+.kidsSynopSeriesContent .synopBtn ul li .csFocus{display:block;padding:15px 24px 20px;min-width:128px;height:120px;border-radius:4px;font-size:24px;text-align:center;color:rgba(244,244,244,1);}
+.kidsSynopSeriesContent .synopBtn ul li .csFocus.priceBtn{padding:24px 30px 20px 24px;}
+.kidsSynopSeriesContent .synopBtn ul li .csFocus span[class*="icon"]{margin:0 auto;display:block;position:relative;z-index:1;width:50px;height:50px;}
+.kidsSynopSeriesContent .synopBtn ul li .csFocus span[class*="icon"] img{position:absolute;top:50%;left:50%;z-index:10;transform:translate(-50%,-50%);opacity:1;}
+.kidsSynopSeriesContent .synopBtn ul li .csFocus span[class*="icon"] .on,
+.kidsSynopSeriesContent .synopBtn ul li .on .csFocus span[class*="icon"] img:first-child{opacity:0;}
+.kidsSynopSeriesContent .synopBtn ul li .csFocus.focusOn span[class*="icon"] .on{opacity:1;}
+.kidsSynopSeriesContent .synopBtn ul li .csFocus.focusOn span[class*="icon"]{height:40px;}
+
+.kidsSynopSeriesContent .synopBtn ul li .csFocus .onlyText{display:block;font-size:30px;line-height:90px;font-weight:700;}
+.kidsSynopSeriesContent .synopBtn ul li .csFocus .text{display:block;margin-top:9px;font-size:26px;font-weight:700;}
+.kidsSynopSeriesContent .synopBtn ul li .csFocus.priceBtn .text{margin-top:0;text-align:left;}
+.kidsSynopSeriesContent .synopBtn ul li .csFocus .text .titleSub{font-size:20px;color:rgba(212,212,212,1)}
+.kidsSynopSeriesContent .synopBtn ul li .csFocus .price{display:block;}
+.kidsSynopSeriesContent .synopBtn ul li .csFocus .price .presentPrice{font-size:36px;color:rgba(212,212,212,1);}
+.kidsSynopSeriesContent .synopBtn ul li .csFocus .price .presentPrice span{font-size:24px;vertical-align:middle;}
+.kidsSynopSeriesContent .synopBtn ul li .csFocus .price .dcPrice{display:inline-block;position:relative;font-size:24px;color:rgba(212,212,212,1);}
+.kidsSynopSeriesContent .synopBtn ul li .csFocus .price .dcPrice:before{content:'';display:block;position:absolute;top:50%;left:0;right:22px;height:1px;background-color:rgba(212,212,212,1);}
+.kidsSynopSeriesContent .synopBtn ul li .csFocus .price .dcPrice span{font-size:22px;}
+.kidsSynopSeriesContent .synopBtn ul li .csFocus .price .presentPrice + .dcPrice{margin-left:10px;}
+.kidsSynopSeriesContent .synopBtn ul li .csFocus .text ~ .price{margin-top:14px;text-align:left;}
+
+.kidsSynopSeriesContent .synopBtn ul li .csFocus.focusOn{color:#f5513f;}
+.kidsSynopSeriesContent .synopBtn ul li .csFocus.focusOn > span{transform:scale(1.2);}
+.kidsSynopSeriesContent .synopBtn ul li .csFocus.focusOn .text{margin-top:19px;font-weight:bold;}
+.kidsSynopSeriesContent .synopBtn ul li .csFocus.priceBtn.focusOn .text{margin-top:0;}
+.kidsSynopSeriesContent .synopBtn ul li .csFocus.focusOn .text.per{color:#a742ff;}
+.kidsSynopSeriesContent .synopBtn ul li .csFocus.focusOn .text .titleSub{color:rgba(136,136,136,1);}
+.kidsSynopSeriesContent .synopBtn ul li .csFocus.focusOn .text ~ .price{margin-top:22px;}
+.kidsSynopSeriesContent .synopBtn ul li .csFocus.focusOn .price span{color:rgba(245,81,63,1);}
+.kidsSynopSeriesContent .synopBtn ul li .csFocus.focusOn .price .dcPrice{color:rgba(0,0,0,0.5);}
+.kidsSynopSeriesContent .synopBtn ul li .csFocus.focusOn .price .dcPrice:before{background-color:rgba(0,0,0,0.5);}
+.kidsSynopSeriesContent .synopBtn ul li .csFocus.focusOn .price .dcPrice span{color:rgba(0,0,0,0.5);}
+
+.kidsSynopSeriesContent .synopBtn ul li .csFocus:before{content:'';position:absolute;top:0;left:0;right:0;padding:0 24px;bottom:0;z-index:-1;border-radius:4px;background:rgba(26,26,26,0.35);box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.15);}
+.kidsSynopSeriesContent .synopBtn ul li .csFocus.focusOn:before{content:'';position:absolute;top:-8px;left:-12px;right:-12px;bottom:-8px;z-index:-1;border-radius:4px;background:rgba(255, 255, 255, 1);box-shadow: 0 24px 16px 0 rgba(0, 0, 0, 0.35);}
+
+.kidsSynopSeriesContent .slideTypeG .slideWrap{position:relative;z-index:1;transform:translate(0,0);}
+.kidsSynopSeriesContent .slideTypeG .slideCon{position:relative;}
+.kidsSynopSeriesContent .slideTypeG .slideCon .csFocus{width:248px;transform-origin:bottom;}
+.kidsSynopSeriesContent .slideTypeG .slideCon .csFocus img {display:block; width: 100%;border-radius: 5px;box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);}
+.kidsSynopSeriesContent .slideTypeG .slideCon .csFocus.focusOn img {box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);}
+.kidsSynopSeriesContent .slideTypeG .slideCon .slide.csFocus .programTitle {display:block; padding:8px 0; position:absolute; bottom:0; left:0; z-index:15; width:100%; height:48px; border-radius: 0 0 4px 4px; background-color: rgba(8, 12, 35, 0.5); font-size:26px; line-height:1.15; text-align:center; color:#fff; opacity:1;}
+.kidsSynopSeriesContent .slideTypeG .slideCon .csFocus .programTitle .numText{display:block;position:relative;z-index:20;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;padding: 0 10px;}
+.kidsSynopSeriesContent .slideTypeG .slideCon .csFocus.focusOn .programTitle{padding:0;height:8px;}
+.kidsSynopSeriesContent .slideTypeG .slideCon .csFocus.focusOn .programTitle .numText{display:none;}
+.kidsSynopSeriesContent .slideTypeG .slide.csFocus .innerFocus{display:block;position:relative;width:248px;height:140px;border-radius:4px;background:url('/assets/images/common/default/stillcut_default.png') 0 0 no-repeat;background-size:100% 100%;}
+.kidsSynopSeriesContent .slideTypeG .innerFocus .progessBar{display:block;overflow:hidden;width:100%;height:48px;position:absolute;left:0;bottom:0;z-index:15;/*background:rgba(0,0,0,0.3);*/border-radius:0 0 4px 4px;opacity:1;}
+.kidsSynopSeriesContent .slideTypeG .innerFocus .progessBar .proceed{display:block;width:100%;height:48px;background:-webkit-linear-gradient(left, rgba(229,24,111,1) 0%,rgba(255,116,34,1) 100%);background:linear-gradient(to right, rgba(229,24,111,1) 0%,rgba(255,116,34,1) 100%);}
+.kidsSynopSeriesContent .slideTypeG .csFocus.focusOn .innerFocus .progessBar{height:8px;opacity:1;}
+.kidsSynopSeriesContent .slideTypeG .csFocus.focusOn .innerFocus .progessBar .proceed{height:8px;}
+
+.kidsSynopSeriesContent .slideTypeG .slideCon .activeText{position:absolute;left:0;right:0;bottom:0;z-index:10;height:48px;font-size:22px;font-weight:700;line-height:48px;color:#fff;opacity:0;}
+.kidsSynopSeriesContent .slideTypeG .slideCon .activeText:after{display:block;content:"";clear:both;}
+.kidsSynopSeriesContent .slideTypeG .slideCon .csFocus.focusOn .activeText{opacity:1;}
+.kidsSynopSeriesContent .slideTypeG .slideCon .activeText .onlyText{display:block;text-align:center;}
+.kidsSynopSeriesContent .slideTypeG .slideCon .activeText .buyText{float:left;padding-left:15px;width:100px;display: inline-block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.kidsSynopSeriesContent .slideTypeG .slideCon .activeText .buyCost{float:right;padding-right:20px;font-size:26px;font-weight:400;}
+.kidsSynopSeriesContent .slideTypeG .slideCon .activeText .buyCost span{margin-left:4px;font-size:22px;font-weight:400;vertical-align:middle;}
+.kidsSynopSeriesContent .slideTypeG .slideCon .csFocus.focusOn .activeText:before{content:'';position:absolute;left:0;right:0;bottom:0;z-index: -1;height: 70px;border-radius: 0 0 4px 4px;background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 70%, rgba(0, 0, 0, 0.8)100%);}
+
+.kidsSynopSeriesContent .slideTypeG.noneType{margin: 0 -115px;padding-top:42px;}
+.kidsSynopSeriesContent .slideTypeG.noneType .slideWrap{position:relative;transform:translate(0,0);}
+.kidsSynopSeriesContent .slideTypeG.noneType .slideWrap:before{content:'';display:block;position:absolute;top:25px;left:0;right:0;height:94px;background-color:rgba(0,0,0,0.4);}
+.kidsSynopSeriesContent .slideTypeG.noneType .slideCon{margin: 0 120px 25px 119px;padding: 25px 0 55px 1px;}
+.kidsSynopSeriesContent .slideTypeG.noneType .activeSlide.firstActive .slideCon{margin: 0 120px 25px 90px;padding: 25px 0 55px 30px;}
+.kidsSynopSeriesContent .slideTypeG.noneType .activeSlide.lastActive .slideCon{margin: 0 90px 25px 119px;padding: 25px 30px 55px 1px;}
+.kidsSynopSeriesContent .slideTypeG.noneType .slideWrapper{transform:translate3d(calc(var(--page) * -168px),0,0);}
+.kidsSynopSeriesContent .slideTypeG.noneType .slideWrapper .slide{margin:0;}
+.kidsSynopSeriesContent .slideTypeG.noneType .slideWrapper .slide.csFocus{width:168px;height:94px;border-right:1px solid rgba(255,255,255,0.4);}
+.kidsSynopSeriesContent .slideTypeG.noneType .slideWrapper .slide:first-child.csFocus{border-left:1px solid rgba(255,255,255,0.4);}
+.kidsSynopSeriesContent .slideTypeG.noneType .slideWrapper .csFocus{position:relative;z-index:10;transform-origin:center;}
+.kidsSynopSeriesContent .slideTypeG.noneType .slideWrapper .csFocus:before{content:'';position:absolute;top:0;bottom:0;left:0;right:0;border-radius:4px;background-color:transparent;box-shadow:none;opacity:0;}
+.kidsSynopSeriesContent .slideTypeG.noneType .slideWrapper .csFocus .innerFocus{width:100%;height:100%;background:none;}
+.kidsSynopSeriesContent .slideTypeG.noneType .slideWrapper .csFocus .programTitle{ bottom:auto; height:100%; padding:0; background-color: transparent;}
+.kidsSynopSeriesContent .slideTypeG.noneType .slideWrapper .csFocus .programTitle .numText{top: 50%;transform: translateY(-50%);height:auto;font-size:26px;color:rgba(244,244,244,1);line-height:34px;word-break:keep-all;word-wrap: break-word;display: -webkit-box;white-space: normal;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+.kidsSynopSeriesContent .slideTypeG.noneType .slideWrapper .csFocus.focusOn .programTitle .numText{display:none;}
+.kidsSynopSeriesContent .slideTypeG.noneType .slideWrapper .csFocus .progessBar{height:100%;border-radius:0;background: rgba(0,0,0,0.3);}
+.kidsSynopSeriesContent .slideTypeG.noneType .slideWrapper .csFocus .progessBar .proceed{height:100%;}
+.kidsSynopSeriesContent .slideTypeG.noneType .slideWrapper .csFocus.focusOn{border-left:0;border-right:0;z-index:15;}
+.kidsSynopSeriesContent .slideTypeG.noneType .slideWrapper .csFocus.focusOn:before{content:'';position:absolute;top:0;bottom:0;left:0;right:0;border-radius:4px;background-color:rgba(244,244,244,1);box-shadow: 0 24px 16px 0 rgba(0, 0, 0, 0.35);opacity:1;}
+.kidsSynopSeriesContent .slideTypeG.noneType .slideWrapper .csFocus.focusOn .progessBar{    left:0;right:0;bottom:0;width:auto;height:8px;border-radius:0 0 4px 4px;opacity:1;}
+.kidsSynopSeriesContent .slideTypeG.noneType .slideCon .csFocus .activeText{overflow: hidden;top: 50%;bottom:auto;transform: translateY(-50%);height:auto;font-size:22px;color:rgba(245, 81, 63,1);text-align:center;background-image:none;}
+.kidsSynopSeriesContent .slideTypeG.noneType .slideCon .csFocus .activeText .onlyText{display:block;text-align:center;font-size:30px;line-height:42px;}
+.kidsSynopSeriesContent .slideTypeG.noneType .slideCon .csFocus .activeText .numText{display:block;padding:0 10px;font-size:22px;line-height:1.46;}
+.kidsSynopSeriesContent .slideTypeG.noneType .slideCon .activeText .buyText{display:block;float:none;padding:0 10px;width:auto;line-height:38px;}
+.kidsSynopSeriesContent .slideTypeG.noneType .slideCon .activeText .buyCost{display:block;float:none;padding:0;font-size:27px;line-height:34px;}
+.kidsSynopSeriesContent .slideTypeG.noneType .slideCon .activeText .buyCost span{font-size:19px;}
+.kidsSynopSeriesContent .slideTypeG.noneType .slideCon .csFocus.focusOn .activeText:before{display:none;}
+
+.kidsSynopSeriesContent .slideTypeG .slideCon .csFocus .iconFlag{position:absolute;top:0;right:8px;z-index:25;width:28px;height:52px;background:url('/assets/images/synopsis/flag.png') 0 0 no-repeat;}
+.kidsSynopSeriesContent .slideTypeG.noneType .slideCon .csFocus.focusOn .iconFlag{position:absolute;top:-8px;right:0;z-index:25;width:28px;height:52px;background:url('/assets/images/synopsis/flag.png') 0 0 no-repeat;}
+
+.kidsSynopSeriesContent .slideTypeG .slideLeft,
+.kidsSynopSeriesContent .slideTypeG .slideRight{position:absolute;top:50%;left:-70px;z-index:10;transform:translate(0,-17%);width:23px;height:58px;background:url("/assets/images/common/icon/arrow-left.png") no-repeat 0 0;opacity:0;}
+.kidsSynopSeriesContent .slideTypeG .slideRight{left:auto;right:-70px;background:url("/assets/images/common/icon/arrow-right.png") no-repeat 0 0;}
+.kidsSynopSeriesContent .slideTypeG.noneType .slideLeft,
+.kidsSynopSeriesContent .slideTypeG.noneType .slideRight{position:absolute;top:50%;left:60px;z-index:10;transform:translate(0,-95%);width:13px;height:33px;background:url("/assets/images/common/icon/arrow-imgnone-left.png") no-repeat 0 0;opacity:0;}
+.kidsSynopSeriesContent .slideTypeG.noneType .slideRight{left:auto;right:60px;background:url("/assets/images/common/icon/arrow-imgnone-right.png") no-repeat 0 0;}
+.kidsSynopSeriesContent .slideTypeG .activeSlide.leftActive .slideLeft,
+.kidsSynopSeriesContent .slideTypeG .activeSlide.rightActive .slideRight,
+.kidsSynopSeriesContent .slideTypeG.noneType .activeSlide.leftActive .slideLeft,
+.kidsSynopSeriesContent .slideTypeG.noneType .activeSlide.rightActive .slideRight{opacity:1;}
+
+.kidsSynopSeriesContent .paymentPriceInfoWrap{position:absolute;top:142px;left:0;}
+.kidsSynopSeriesContent .paymentPriceInfoWrap .paymentPriceInfo{display:none;font-size:24px;color:rgba(74,74,74,1);line-height:36px;}
+.kidsSynopSeriesContent .contentPriceInfo{display:none;position:absolute;top:245px;left:35px;font-size:24px;color:rgba(74,74,74,1);line-height:36px;}
+.kidsSynopSeriesContent .contentPriceInfo .bar{margin:0 10px;}
+.kidsSynopSeriesContent .slideTypeG.noneType .contentPriceInfo{top:140px;left:0;}
+.kidsSynopSeriesContent .slideTypeG.noneType .activeSlide.firstActive .contentPriceInfo{left:29px;}
+
+.kidsSynopSeriesContent .seasonInfoWrap{height:316px;padding-top:20px;}
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents:after{content:'';display:block;clear:both;}
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents > .left{float:left;widtH:540px;}
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents > .left.cancel{width:100%;}
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents > .right{float:right;width:1117px;}
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents > .right.cancel{width:0%;}
+
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents .left .innerInfo{}
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents .left .innerInfo li{}
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents .left .innerInfo li span{font-size:26px;color:rgba(26,26,26,1);line-height:38px;font-weight:700;vertical-align:middle;}
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents .left .innerInfo li .seriesNum{display: inline-block;max-width: 250px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents .left .innerInfo li .bar{margin:7px 10px 0 10px;background:rgba(26,26,26,1);vertical-align:top;opacity:1;}
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents .left .innerInfo li .subTitle{display: -webkit-box;overflow: hidden;text-overflow: ellipsis;white-space: normal;word-break:  keep-all;-webkit-line-clamp: 2;-webkit-box-orient: vertical;max-height: 84px;font-size:30px;line-height:42px;}
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents .left .innerInfo li .cancelMes{font-size:28px;color:rgba(48,48,48,1);line-height:40px;font-weight:700;}
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents .left .innerInfo .subText{font-size:24px;color:rgba(26,26,26,0.7);line-height:36px;font-weight:400;}
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents .left .commonSeasonInfo{margin-top:20px;}
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents .left .commonSeasonInfo ul{}
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents .left .commonSeasonInfo li + li{margin-top:3px;white-space: normal;overflow: hidden;text-overflow: ellipsis;-webkit-line-clamp: 4;-webkit-box-orient: vertical;display: -webkit-box;}
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents .left .commonSeasonInfo li{font-size:22px;color:rgba(48,48,48,1);line-height:32px;font-weight:700;}
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents .left .commonSeasonInfo li .iconAge{position:relative;top:-3px;z-index:1;}
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents .left .commonSeasonInfo li .iconAge + .bar,
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents .left .commonSeasonInfo li .iconAge + span .bar{display:none;}
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents .left .commonSeasonInfo li .bar{height:18px;margin:0 10px;}
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents .left .commonSeasonInfo li .boxStyle1{width:32px;height:32px;}
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents .left .commonSeasonInfo li img{vertical-align:middle;}
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents .left .commonSeasonInfo li .title{margin-right:5px;color:rgba(74,74,74,1);}
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents .left .seriesEventContents{}
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents .left .seriesEventContents .eventText{font-size:32px;color:rgba(26,26,26,1);line-height:52px;font-weight:700;}
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents .left .seriesEventContents .eventSubTitle{margin-top:6px;font-size:28px;color:rgba(48,48,48,1);line-height:40px;font-weight:700;}
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents .left .seriesEventContents .eventInfo{margin-top:30px;}
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents .left .seriesEventContents .eventInfo div span{vertical-align:middle;}
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents .left .seriesEventContents .eventInfo div span + span{margin-left:22px;}
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents .left .seriesEventContents .eventInfo .title{font-size:28px;color:rgba(26,26,26,1);line-height:40px;font-weight:700;}
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents .left .seriesEventContents .eventInfo .content{font-size:28px;color:rgba(48,48,48,1);line-height:40px;font-weight:700;}
+
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents .right .seriesComment{font-size:28px;color:rgba(106, 83, 150,1);line-height:40px;font-weight:700;}
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents .right .seriesComment + .seriesText{margin-top:18px;}
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents .right .seriesComment,
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents .right .seriesText{font-size:28px;color:rgba(26,26,26,0.9);line-height:40px;word-break: keep-all;font-weight:700;}
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents .right .csFocus.seriesText.focusOn{opacity:1;color:rgba(26,26,26,1);}
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents .right .csFocus.seriesText.focusOn:after{content:'';position:absolute;top:-14px;left:-24px;right:-24px;bottom:-14px;z-index:-1;border-radius:4px;background:rgba(244,244,244,1);box-shadow:0 24px 16px 0 rgba(0, 0, 0, 0.35);}
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents .right .seriesText > div {display:inline;}
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents .right .seriesText .guest{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents .right .seriesText .commentMore {display:inline-block;position:relative;margin-left:10px;padding-left:22px;text-decoration:underline;font-size:24px;color:rgba(106,106,106,1);font-weight:700;}
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents .right .seriesText.focusOn .commentMore {color:#f5513f;}
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents .right .seriesText .commentMore:before{content:'+';position:absolute;top:0;left:0;font-size:24px;color:rgba(106,106,106,1);line-height:42px;}
+.kidsSynopSeriesContent .seasonInfoWrap .infoContents .right .seriesText.focusOn .commentMore:before{color:#f5513f;}
+.synopTop .subText + .contentGroup{padding-top:55px;}
+
+.kidsSynopSeriesContent .synopTop .pageArr:before,
+.kidsSynopSeriesContent .synopTop .pageArr:after {background: #000;}
+
+.kidsSynopSeriesContent .synopSeriesLayout .synopSeriesCon{display:flex;opacity:0;}
+.kidsSynopSeriesContent .synopSeriesLayout .synopSeriesCon:first-child ~ .synop_series_con{position:absolute;top:0;left:0;right:0;z-index:-1;}
+.kidsSynopSeriesContent .synopSeriesLayout .synopSeriesCon.on{opacity:1;padding-bottom:120px;}
+.kidsSynopSeriesContent .synopSeriesLayout .synopSeriesCon.none{display:none;}
+
+.kidsSynopSeriesContent .synopSeriesLayout .synopSeriesCon > .left{position:relative;width:288px;}
+.kidsSynopSeriesContent .synopSeriesLayout .synopSeriesCon > .left .innerMove{position:absolute;top:0;left:0;transform:translate(0,0);}
+.kidsSynopSeriesContent .synopSeriesLayout .synopSeriesCon > .left .seriesNum{font-size:44px;color:rgba(26,26,26,1);display: -webkit-box;overflow: hidden;text-overflow: ellipsis;white-space: normal;-webkit-line-clamp: 2;-webkit-box-orient: vertical;line-height: 56px;width:200px;font-weight:700;}
+.kidsSynopSeriesContent .synopSeriesLayout .synopSeriesCon > .left .seriesNum span{font-size:44px;}
+.kidsSynopSeriesContent .synopSeriesLayout .synopSeriesCon > .left .seriesDate{margin-top:20px;opacity:0.6;font-size:26px;line-height:42px;color:#fff;}
+.kidsSynopSeriesContent .synopSeriesLayout .synopSeriesCon > .right{width:calc(100% - 288px);}
+.kidsSynopSeriesContent .synopSeriesLayout .synopSeriesCon > .right .seriesTitle{font-size:36px;font-weight:700;line-height:42px;color:#4367ce;}
+.kidsSynopSeriesContent .synopSeriesLayout .synopSeriesCon > .right .seriesText{margin-top:20px;font-size:34px;line-height:52px;color:#000;}
+.kidsSynopSeriesContent .synopSeriesLayout .synopSeriesCon > .right .contentGroup:first-child .slideSpecialMovie{padding-top:21px;}
+.kidsSynopSeriesContent .synopSeriesLayout .synopSeriesCon > .right .contentGroup .slideTypeH{padding-top:21px;}
+/*.kidsSynopSeriesContent .synopSeriesLayout .synopSeriesCon > .right .content_group{padding-top:66px;}*/
+
+
+.kidsSynopSeriesContent .synopSeriesLayout .btnTopWrap{padding-bottom:40px;}
+
+
+
+/* seasonBtn */
+.kidsSynopSeriesContent .synopBtn .seasonBtn{border-radius:4px;box-shadow:0 4px 6px 0 rgba(0, 0, 0, 0.15);}
+.kidsSynopSeriesContent .synopBtn .seasonBtn:after{content:'';display:block;clear:both;}
+.kidsSynopSeriesContent .synopBtn .seasonBtn li{display:table;margin-left:0;}
+.kidsSynopSeriesContent .synopBtn .seasonBtn li a,
+.kidsSynopSeriesContent .synopBtn .seasonBtn li div{position:relative;z-index:1;display:table-cell;vertical-align:middle;}
+.kidsSynopSeriesContent .synopBtn .seasonBtn li .csFocus.leftBtn,
+.kidsSynopSeriesContent .synopBtn .seasonBtn li .csFocus.rightBtn{position:relative;min-width:48px !important;padding:0;}
+.kidsSynopSeriesContent .synopBtn .seasonBtn li .csFocus.leftBtn{border-radius:4px 0 0 4px;}
+.kidsSynopSeriesContent .synopBtn .seasonBtn li .csFocus.rightBtn{border-radius:0 4px 4px 0;}
+.kidsSynopSeriesContent .synopBtn .seasonBtn li .csFocus.leftBtn span[class*="icon"],
+.kidsSynopSeriesContent .synopBtn .seasonBtn li .csFocus.rightBtn span[class*="icon"],
+.kidsSynopSeriesContent .synopBtn .seasonBtn li .csFocus.focusOn span[class*="icon"]{height:100%;}
+
+.kidsSynopSeriesContent .synopBtn .seasonBtn li .centerBtn{width:160px;height:120px;padding:20px;border-radius:0;border-top:0;border-bottom:0;text-align:center;}
+.kidsSynopSeriesContent .synopBtn .seasonBtn li .centerBtn:before{content: '';position: absolute;top: 0;left: 0;right: 0;padding: 0 24px;bottom: 0;z-index:-1;background: rgba(26,26,26,0.35);}
+.kidsSynopSeriesContent .synopBtn .seasonBtn li .centerBtn .text{margin-top:0;font-size:30px;color:rgba(244,244,244,1);font-weight:700;line-height:42px;}
+.kidsSynopSeriesContent .synopBtn .seasonBtn li .csFocus:before{border-radius:0;box-shadow:none;}
+.kidsSynopSeriesContent .synopBtn .seasonBtn li .csFocus.leftBtn:before{z-index:-1;border-radius:4px 0 0 4px;box-shadow:none;}
+.kidsSynopSeriesContent .synopBtn .seasonBtn li .csFocus.rightBtn:before{z-index:-1;border-radius:0 4px 4px 0;box-shadow:none;}
+.kidsSynopSeriesContent .synopBtn .seasonBtn li .csFocus.leftBtn:after,
+.kidsSynopSeriesContent .synopBtn .seasonBtn li .csFocus.rightBtn:after{content:'';position:absolute;top:0;z-index:5;width:2px;height:100%;background:rgba(244,244,244,0.15);}
+.kidsSynopSeriesContent .synopBtn .seasonBtn li .csFocus.leftBtn:after{right:0;}
+.kidsSynopSeriesContent .synopBtn .seasonBtn li .csFocus.rightBtn:after{left:0;}
+.kidsSynopSeriesContent .synopBtn .seasonBtn li .csFocus.focusOn{z-index:10;}
+.kidsSynopSeriesContent .synopBtn .seasonBtn li .csFocus.focusOn:before{border-radius:4px;box-shadow:0 24px 16px 0 rgba(0, 0, 0, 0.35);}
+.kidsSynopSeriesContent .synopBtn .seasonBtn li .csFocus.focusOn .text{margin-top:0;}
+
+/*keyWrap*/
+.mainBg.synopSeries .keyWrap{position:absolute;top:512px;right:120px;opacity:1;}
+.mainBg.synopSeries .keyWrap [class^="btnKey"]{color:#4a4a4a;}
+.mainBg.synopSeries.imageNone .keyWrap{top:618px;opacity:1;}
+.mainBg.synopSeries.full .keyWrap{top:-50px;opacity:0;}
+
+
+/* icon age */
+.iconAge{display:inline-block;width:36px;height:36px;margin-right:10px;background:url('/assets/images/synopsis/flag-dar-2-age-all.png') no-repeat;vertical-align:middle;}
+.iconAge.age7{background:url('/assets/images/synopsis/flag-dar-2-age-7.png') no-repeat;}
+.iconAge.age12{background:url('/assets/images/synopsis/flag-dar-2-age-12.png') no-repeat;}
+.iconAge.age15{background:url('/assets/images/synopsis/flag-dar-2-age-15.png') no-repeat;}
+.iconAge.age18{background:url('/assets/images/synopsis/flag-dar-2-age-18.png') no-repeat;}
+.iconAge.age19{background:url('/assets/images/synopsis/flag-dar-2-age-19.png') no-repeat;}
+
+.dark .kidsSynopSeriesContent .seasonInfoWrap .infoContents .left .commonSeasonInfo li .iconAge{background:url('/assets/images/synopsis/flag-dar-2-age-all.png') no-repeat;}
+.dark .kidsSynopSeriesContent .seasonInfoWrap .infoContents .left .commonSeasonInfo li .iconAge.age7{background:url('/assets/images/synopsis/flag-dar-2-age-7.png') no-repeat;}
+.dark .kidsSynopSeriesContent .seasonInfoWrap .infoContents .left .commonSeasonInfo li .iconAge.age12{background:url('/assets/images/synopsis/flag-dar-2-age-12.png') no-repeat;}
+.dark .kidsSynopSeriesContent .seasonInfoWrap .infoContents .left .commonSeasonInfo li .iconAge.age15{background:url('/assets/images/synopsis/flag-dar-2-age-15.png') no-repeat;}
+.dark .kidsSynopSeriesContent .seasonInfoWrap .infoContents .left .commonSeasonInfo li .iconAge.age18{background:url('/assets/images/synopsis/flag-dar-2-age-18.png') no-repeat;}
+.dark .kidsSynopSeriesContent .seasonInfoWrap .infoContents .left .commonSeasonInfo li .iconAge.age19{background:url('/assets/images/synopsis/flag-dar-2-age-19.png') no-repeat;}
+
+/* theme */
+.dark .kidsSynopSeriesContent .synopTop .pageArr{background:url('/assets/images/synopsis/arrow-shorttop-dark.png') no-repeat;}
+
+.dark .kidsSynopSeriesContent .titleStyle1,
+.dark .kidsSynopSeriesContent .titleStyle2{color:rgba(48,48,48,1);}
+
+.dark .kidsSynopSeriesContent .paymentPriceInfoWrap .paymentPriceInfo{color:rgba(170,170,170,1);}
+.dark .kidsSynopSeriesContent .synopTop .logo .logoText{color:rgba(244,244,244,1);}
+.dark .kidsSynopSeriesContent .synopTop .subText .commont .noticeMent{color:rgba(244,244,244,0.9);}
+.dark .kidsSynopSeriesContent .synopTop .subText .commont .linkSynopcomment{color:rgba(244,244,244,1);}
+.dark .kidsSynopSeriesContent .synopTop .subText .commont .linkSynopcomment.focusOn{color:rgba(26,26,26,1);}
+.dark .kidsSynopSeriesContent .synopTop .subText .commont .linkSynopcomment .commentMore {color:rgba(244,244,244,0.5);}
+.dark .kidsSynopSeriesContent .synopTop .subText .commont .linkSynopcomment.focusOn .commentMore {color:#f5513f;}
+.dark .kidsSynopSeriesContent .synopTop .subText .commont .linkSynopcomment .commentMore:before{color:rgba(244,244,244,0.5);}
+.dark .kidsSynopSeriesContent .synopTop .subText .commont .linkSynopcomment.focusOn .commentMore:before{color:#f5513f;}
+.dark .kidsSynopSeriesContent .seasonBtn li .centerBtn:before{background:rgba(255, 255, 255, 0.17);}
+
+.dark .kidsSynopSeriesContent .synopBtn ul li .csFocus{color:rgba(244,244,244,1);}
+.dark .kidsSynopSeriesContent .synopBtn ul li .csFocus:before{background:rgba(255, 255, 255, 0.17);}
+.dark .kidsSynopSeriesContent .synopBtn ul li .csFocus.focusOn{color:#f5513f;}
+.dark .kidsSynopSeriesContent .synopBtn ul li .csFocus.focusOn:before{background:rgba(244,244,244,1);}
+.dark .kidsSynopSeriesContent .synopBtn ul li .csFocus .price .dcPrice{color:rgba(170,170,170,1);}
+.dark .kidsSynopSeriesContent .synopBtn ul li .csFocus.focusOn .price .dcPrice{color:rgba(136,136,136,1);}
+
+.dark .kidsSynopSeriesContent *[class*="listStyle"] .csFocus.focusOn .videoText{color:rgba(244,244,244,0.9);}
+
+.dark .kidsSynopSeriesContent .btnTopWrap .btnTop{background:rgba(26, 26, 26, 0.35);}

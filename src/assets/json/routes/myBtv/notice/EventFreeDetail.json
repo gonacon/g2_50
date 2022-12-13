@@ -1,0 +1,36 @@
+{
+	"pageType": "EventFreeDetail",
+	"pageTitle": "oksusu 이벤트",
+	"titleText": "B tv 고객이시라면 oksusu 월정액이 무료!",
+	"subText": "휴대폰 번호 입력 후 쿠폰받기 버튼을 선택하시면,<br/>oksusu 월정액 3,000원 무료 이용권 다운로드 링크를 문자로 전송해 드립니다.",
+	"imageBg" : "/assets/images/myBtv/bPoint-bg.png",
+	"img" : "/assets/images/myBtv/img-oksusu-event-gift.png",
+	"slideItem" :[
+		{
+			"point" : "10000",
+			"imageS": "/assets/images/myBtv/bPoint-card-02.png",
+			"imageB": "/assets/images/myBtv/bPoint-card-02-f.png"
+		},
+		{
+			"point" : "5000",
+			"imageS": "/assets/images/myBtv/bPoint-card-03.png",
+			"imageB": "/assets/images/myBtv/bPoint-card-03-f.png"
+		},
+		{
+			"point" : "3000",
+			"imageS": "/assets/images/myBtv/bPoint-card-04.png",
+			"imageB": "/assets/images/myBtv/bPoint-card-04-f.png"
+		},
+		{
+			"point" : "1000",
+			"imageS": "/assets/images/myBtv/bPoint-card-05.png",
+			"imageB": "/assets/images/myBtv/bPoint-card-05-f.png"
+		},
+		{
+			"point" : "20000",
+			"imageS": "/assets/images/myBtv/bPoint-card-01.png",
+			"imageB": "/assets/images/myBtv/bPoint-card-01-f.png"
+		}
+	],
+	"caution": "oksusu 계정 별로 1개의 쿠폰만 등록하여 사용할 수 있습니다.<br/>해당 이벤트는 B tv 베이직 이상(스마트/프라임 등) 상품 고객만 참여가 가능합니다."
+}

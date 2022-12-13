@@ -1,0 +1,39 @@
+/* SynopPersonalInformation.css */
+.personInformationWrap{position:relative;width:1920px;height:1080px;}
+.personInformationWrap .innerContents{display:block;position:relative;padding:0 115px;}
+
+.innerContents .personInfoTextWrap{display:block;padding:80px 0 0;text-align:center;}
+.personInfoTextWrap .personName{display:block;font-size:56px;color:rgba(26,26,26,1);line-height:60px;font-weight:700;}
+.personInfoTextWrap .personJob{display:block;margin-top:16px;font-size:32px;color:rgba(48,48,48,1);line-height:42px;}
+.personInfoTextWrap .detailInfo{display:block;position:relative;overflow:hidden;margin-top:26px;}
+.personInfoTextWrap .detailInfo:after{content:'';display:block;position:absolute;top:3px;bottom:5px;left:50%;width:1px;height:auto;background-color:rgba(244,244,244,0.2);}
+.personInfoTextWrap .detailInfo li{float:left;width:50%;padding:0 52px;}
+.personInfoTextWrap .detailInfo li .detailTextWrap{display:inline-block;}
+.personInfoTextWrap .detailInfo li:nth-child(even) .detailTextWrap{float:left;min-width:293px;text-align:left;}
+.personInfoTextWrap .detailInfo li:nth-child(odd) .detailTextWrap{float:right;min-width:307px;text-align:left;}
+.personInfoTextWrap .detailInfo li .detailTextWrap span{display:inline-block;font-size:28px;line-height:44px;}
+.personInfoTextWrap .detailInfo li .detailTextWrap .detailtInfoTitle{margin-right:27px;color:rgba(106,106,106,1);}
+.personInfoTextWrap .detailInfo li .detailTextWrap .personBirth,
+.personInfoTextWrap .detailInfo li .detailTextWrap .personDebut,
+.personInfoTextWrap .detailInfo li .detailTextWrap .personBodyHeight,
+.personInfoTextWrap .detailInfo li .detailTextWrap .personBloodType{color:rgba(48,48,48,1);font-weight:700;}
+.personInfoTextWrap .detailInfo.single:after{display:none;}
+.personInfoTextWrap .detailInfo.single li{float:none;width:100%;}
+.personInfoTextWrap .detailInfo.single li .detailTextWrap{float:none;text-align:center;}
+
+.slideFilmographyWrap{position:relative;padding-top:70px;}
+.slideFilmographyWrap:before {content: '';position: absolute;top: 114px;left: 0;right: 0;width: auto;height: 2px;background-image: linear-gradient(to right, rgb(106,106,106), rgba(216, 216, 216, 0));opacity:0.3;}
+
+/* theme */
+.dark .slideFilmographyWrap:before{background-image: linear-gradient(to right, rgb(216, 216, 216), rgba(216, 216, 216, 0));opacity:0.3;}
+
+.dark .personInfoTextWrap .personName{color:rgba(255,255,255,1);}
+.dark .personInfoTextWrap .personJob{color:rgba(212,212,212,1);}
+.dark .personInfoTextWrap .detailInfo li .detailTextWrap .detailtInfoTitle{color:rgba(136,136,136,1);}
+.dark .personInfoTextWrap .detailInfo li .detailTextWrap .personBirth,
+.dark .personInfoTextWrap .detailInfo li .detailTextWrap .personDebut,
+.dark .personInfoTextWrap .detailInfo li .detailTextWrap .personBodyHeight,
+.dark .personInfoTextWrap .detailInfo li .detailTextWrap .personBloodType{color:rgba(212,212,212,1);}
+
+
+

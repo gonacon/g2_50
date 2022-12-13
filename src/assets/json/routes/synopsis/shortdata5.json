@@ -1,0 +1,94 @@
+{	"slideType" : "appearance",
+	"appearance": [
+		{
+			"name": "빌 콘돈",
+			"cast" : "연출",
+			"part": "감독",
+			"image": "/assets/images/tmp/synopsis/img-shortmov-guest-001.png"
+		},
+		{
+			"name": "엠마 왓슨",
+			"cast" : "벨 역",
+			"part": "주연",
+			"image": "/assets/images/tmp/synopsis/img-shortmov-guest-002.png"
+		},
+		{
+			"name": "댄 스티븐스",
+			"cast" : "비스트 역",
+			"part": "주연",
+			"image": "/assets/images/tmp/synopsis/img-shortmov-guest-003.png"
+		},
+		{
+			"name": "루크 에반스",
+			"cast" : "개스톤 역",
+			"part": "주연",
+			"image": "/assets/images/tmp/synopsis/img-shortmov-guest-004.png"
+		},
+		{
+			"name": "이완 맥그리거",
+			"cast" : "르미에르 역",
+			"part": "조연",
+			"image": "/assets/images/tmp/synopsis/img-shortmov-guest-005.png"
+		},
+		{
+			"name": "이안 맥겔런",
+			"cast" : "콕스웍스 역",
+			"part": "조연",
+			"image": "/assets/images/tmp/synopsis/img-shortmov-guest-006.png"
+		},
+		{
+			"name": "엠마 톰슨",
+			"cast" : "미세스 팟 역",
+			"part": "조연",
+			"image": "/assets/images/tmp/synopsis/img-shortmov-guest-007.png"
+		},
+		{
+			"name": "빌 콘돈2",
+			"cast" : "연출",
+			"part": "감독",
+			"image": "/assets/images/tmp/synopsis/img-shortmov-guest-001.png"
+		},
+		{
+			"name": "엠마 왓슨2",
+			"cast" : "벨 역",
+			"part": "주연",
+			"image": "/assets/images/tmp/synopsis/img-shortmov-guest-002.png"
+		},
+		{
+			"name": "댄 스티븐스2",
+			"cast" : "비스트 역",
+			"part": "주연",
+			"image": "/assets/images/tmp/synopsis/img-shortmov-guest-003.png"
+		},
+		{
+			"name": "루크 에반스2",
+			"cast" : "개스톤 역",
+			"part": "주연",
+			"image": "/assets/images/tmp/synopsis/img-shortmov-guest-004.png"
+		},
+		{
+			"name": "이완 맥그리거2",
+			"cast" : "르미에르 역",
+			"part": "조연",
+			"image": "/assets/images/tmp/synopsis/img-shortmov-guest-005.png"
+		},
+		{
+			"name": "이안 맥겔런2",
+			"cast" : "콕스웍스 역",
+			"part": "조연",
+			"image": "/assets/images/tmp/synopsis/img-shortmov-guest-006.png"
+		},
+		{
+			"name": "엠마 톰슨2",
+			"cast" : "미세스 팟 역",
+			"part": "조연",
+			"image": "/assets/images/tmp/synopsis/img-shortmov-guest-007.png"
+		},
+		{
+			"name": "로버트 다우니 주니어",
+			"cast" : "긴 텍스트의 경우 역",
+			"part": "조연",
+			"image": "/assets/images/tmp/synopsis/img-shortmov-guest-007.png"
+		}
+	]
+}

@@ -1,0 +1,11 @@
+{
+	"noticeMenuListData": [{
+		"title": "공지 사항",
+		"new": false,
+		"call_url": "btv005"
+	},{
+		"title": "진행 중인 이벤트",
+		"new": true,
+		"call_url": "btv006"
+	}]
+}

@@ -1,0 +1,51 @@
+/* BtvProductSlide.css */
+:root{
+	--page:0;
+}
+.contentGroup.activeSlide .btvProductSlide .title {transform:translate(0); -webkit-transform:translate(0);}
+.btvProductSlide {padding:40px 115px 0;}
+.btvProductSlide .slideWrapper{display:flex; justify-content:space-between; transform:translate3d(calc(var(--page) * -438px),0,0); margin-left:-32px; padding:0 32px;}
+.btvProductSlide .title {font-size:36px; line-height:normal; letter-spacing:-1.1px; color:#1a1a1a;}
+.btvProductSlide .slideWrap {position:relative;z-index:1;}
+.btvProductSlide .slideWrap .slideCon {overflow:hidden; margin:-44px -56px -40px; padding:60px 32px 40px;}
+.btvProductSlide .slideWrap .slide {position:relative; z-index:1;}
+.btvProductSlide .slideWrap .slide .csFocus {overflow:hidden; border-radius:4px;}
+.btvProductSlide .slideWrap .slide .csFocus > img {width:100%;}
+.btvProductSlide .slideWrap .slide .wrapProductItem {display:flex; flex-direction:column; justify-content:center; width:calc(100% - 28px); height:calc(100% - 28px);  position:absolute; top:50%; left:50%; z-index:30; border:2px solid rgba(255, 255, 255, 0.3);  transform:translate(-50%, -50%); -webkit-transform:translate(-50%, -50%); text-align:center;}
+.btvProductSlide .slideWrap .slide .wrapProductItem img {margin:0 auto;}
+.btvProductSlide .slideWrap .slide .wrapProductItem .productTitle {display:inline-block; margin-top:12px; font-size:34px; font-weight:700; line-height:1.41; color:#f4f4f4; text-shadow:0 0 50px #000;}
+.btvProductSlide .slideWrap .slide .csFocus:after {display:block; width:100%; height:100%; position:absolute; top:0; left:0; z-index:20; background:rgba(0, 0, 0, 0.35); content:"";}
+.btvProductSlide .slideWrap .slide .csFocus:before {display:block; width:100%; height:100%; position:absolute; top:0; left:0; z-index:10; opacity:0.7; content:"";}
+.btvProductSlide .slideWrap .slide:nth-child(4n-1) .csFocus:before {background:linear-gradient(149deg, rgba(255, 125, 106, 0.7), rgba(106, 184, 255, 0.7));}
+.btvProductSlide .slideWrap .slide:nth-child(4n-2) .csFocus:before {background:linear-gradient(149deg, rgba(102, 147, 93, 0.7), rgba(192, 106, 255, 0.7));}
+.btvProductSlide .slideWrap .slide:nth-child(4n-3) .csFocus:before {background:linear-gradient(149deg, rgba(124, 106, 255, 0.7), rgba(106, 184, 255, 0.7));}
+.btvProductSlide .slideWrap .slide:nth-child(4n) .csFocus:before {background:linear-gradient(329deg, rgba(168, 153, 91, 0.7), rgba(106, 184, 255, 0.7));}
+.btvProductSlide .slideWrap .slide .innerCon {display:none; padding:0 40px; width:100%; position:absolute; top:50%; left:0; z-index:50; transform:translate(0,-50%); -webkit-transform:translate(0,-50%); text-align:center;}
+.btvProductSlide .slideWrap .slide .innerCon .logo img {margin:0 auto;}
+.btvProductSlide .slideWrap .slide .innerCon .innerTitle {margin-top:10px; font-size:40px; font-weight:700; line-height:1.5; color:#1a1a1a;}
+.btvProductSlide .slideWrap .slide .innerCon .innerText {margin-top:10px; font-size:26px; line-height:1.46; letter-spacing:normal; color:#6a6a6a;}
+
+.btvProductSlide .slideWrap .slide .csFocus {width:449px; height:293px; transform:scale(0.83); -webkit-transform:scale(0.83);}
+.btvProductSlide .slideWrap .slide .csFocus.focusOn {transform:scale(1); -webkit-transform:scale(1);}
+.btvProductSlide .slideWrap .slide .csFocus.focusOn .wrapProductItem,
+.btvProductSlide .slideWrap .slide .csFocus.focusOn:before {display:none;}
+.btvProductSlide .slideWrap .slide .csFocus.focusOn:after {background:#f4f4f4; box-shadow:0 24px 16px 0 #00000059; opacity:1;}
+.btvProductSlide .slideWrap .slide .csFocus.focusOn .innerCon {display:inline-block;}
+
+.btvProductSlide .leftArrow,
+.btvProductSlide .rightArrow{position:absolute;top:50%;left:-64px;z-index:10;transform:translate(0,-50%);width:23px;height:57px;background:url("/assets/images/common/icon/arrow-left.png") no-repeat 0 0;opacity:0;}
+.btvProductSlide .rightArrow{left:auto;right:-64px;background:url("/assets/images/common/icon/arrow-right.png") no-repeat 0 0;}
+.btvProductSlide .activeSlide:not(.firstActive) .leftArrow,
+.btvProductSlide .activeSlide:not(.lastActive) .rightArrow{opacity:1;}
+
+
+/*
+ *2018.01.18
+ *flex안쓰고 float
+ */
+
+.btvProductSlide .slideWrapper {display:block; transform:translate3d(calc(var(--page) * -434px),0,0); margin-left:-32px; padding:0 32px;}
+.btvProductSlide .slideWrapper:after {display:block; clear:both; content:"";}
+.btvProductSlide .slideWrap .slide {float:left; margin-left:-15px;}
+.btvProductSlide .slideWrap .slide .csFocus {width:449px; height:293px; transform:scale(0.85); -webkit-transform:scale(0.85);}
+.btvProductSlide .slideWrap .slideCon {overflow:hidden; margin:-44px -48px -40px; padding:60px 32px 40px;}

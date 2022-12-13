@@ -1,0 +1,9 @@
+{
+	"type" : "homeData",
+	"bPoint" : "3200",
+	"coupon" : {
+		"new" : true,
+		"count" : "5"
+	}
+
+}

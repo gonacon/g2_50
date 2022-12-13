@@ -1,0 +1,8 @@
+.connerSelectWrap {position: relative;z-index: 1;padding: 248px 530px 0;width: 1920px;height: 1080px;background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), linear-gradient(241deg, #2e324e, #3d3e5a 16%, #453f53 37%, #4e4250 61%, #26252f);text-align: center;}
+
+.connerSelectWrap .connerTitle{display:block;font-size:52px;color:rgba(244,244,244,1);line-height:56px;}
+.connerSelectWrap .connerSubTitle{display:block;margin-top:18px;font-size:30px;color:rgba(170,170,170,1);line-height:40px;}
+.connerSelectWrap .connerSelectBtnWrap{margin-top:128px;}
+.connerSelectWrap .connerSelectBtnWrap .selectBtnInfo{margin-top:58px;font-size:36px;color:rgba(212,212,212,1);line-height:52px;}
+
+

@@ -1,0 +1,10 @@
+{
+	"default": "fade",
+	"motion": "",
+	"setting": true,
+	"timeText": "남은시간",
+	"timeLimit": "3600",
+	"episodeLimit": "",
+	"character": "pororo",
+	"widgetText": "다빈, 다솔 친구야,<br />유치원 갈 시간이야~"
+}

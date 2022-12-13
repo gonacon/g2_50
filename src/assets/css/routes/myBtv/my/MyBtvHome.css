@@ -1,0 +1,66 @@
+/* MyBtvHome.css */
+:root{
+	--page:0;
+}
+.remoteController {position:absolute; top:170px; right:115px; z-index:10; padding-right:65px; font-size:28px; line-height:1.43; letter-spacing:normal; color:rgba(74, 74, 74, 1);}
+.remoteController.batteryError {background:url("/assets/images/common/icon/ic-battery-error.png") no-repeat right center;}
+.remoteController.batteryEmpty {background:url("/assets/images/common/icon/ic-battery-empty.png") no-repeat right center;}
+.remoteController.batteryLow {background:url("/assets/images/common/icon/ic-battery-low.png") no-repeat right center;}
+.remoteController.batteryNormal {background:url("/assets/images/common/icon/ic-battery-normal.png") no-repeat right center;}
+
+.MyBtvHome {position:relative; z-index:1; padding:166px 115px 60px;}
+.MyBtvHome .changeItem {display:inline-block; position:relative; z-index:1; font-size:32px; line-height:1.31; letter-spacing:normal; color:rgba(48,48,48,1);}
+.MyBtvHome .changeItem.focusOn:after {position:absolute; top:-18px; left:-24px; z-index:-1; padding:18px 24px; background:rgba(255, 255, 255, 1); box-shadow:0 24px 16px 0 rgba(0, 0, 0, 0.35);}
+.MyBtvHome .changeItem:after {content:""; display:block; position:absolute; top:0; left:0; z-index:10; padding:0; width:100%; height:40px; background:transparent; border-radius:4px; box-shadow:none;}
+/*.MyBtvHome .changeItem strong {font-weight:400;}*/
+/*.MyBtvHome .changeItem .info {display:inline-block; margin-left:20px; padding-right:15px; background:url("/assets/images/myBtv/ic-text-arr.png") no-repeat right center; font-size:24px; font-weight:700; line-height:1.17; letter-spacing:normal; color:rgba(136,136,136,1); text-decoration:underline;}*/
+.MyBtvHome .changeItem.focusOn .info {background-image:url("/assets/images/myBtv/ic-text-arr-active.png"); color:#f5513f;}
+
+.MyBtvHome .myBtvList {position:relative;z-index:1; padding:43px 0 50px; border-bottom:1px solid rgba(74,74,74,0.5);transform:translate(0,0);}
+.MyBtvHome .myBtvList .myBtvListWrap{margin:-30px -35px -50px;padding:30px 15px 50px;overflow:hidden;}
+.MyBtvHome .myBtvList .listWrapper {display:flex; justify-content:space-between; transform: translate3d(calc(var(--page) * -346px),0,0);}
+.MyBtvHome .myBtvList .listWrapper li{padding:0 20px;}
+.MyBtvHome .myBtvList .listWrapper li .csFocus {display:block; padding:19px 26px; width:306px; height:129px; border-radius:4px; background:rgba(244, 244, 244, 0.4); box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.2);}
+.MyBtvHome .myBtvList .listWrapper li .csFocus.focusOn {background:#f4f4f4; box-shadow:0 14px 14px rgba(0,0,0,0.35); transform:scale(1.15); -webkit-transform:scale(1.15);}
+.MyBtvHome .myBtvList .listWrapper li .csFocus .title {font-size:26px; letter-spacing:normal; color:#595869; transform: translate(0,0);}
+.MyBtvHome .myBtvList .listWrapper li.okCash .csFocus .text,
+.MyBtvHome .myBtvList .listWrapper li.tvPoint .csFocus .text,
+.MyBtvHome .myBtvList .listWrapper li.tMembership .csFocus .text {position:absolute; top:-9999px; left:-9999px; z-index:-9999; width:0.1%; height:0.1%; text-indent:-99999px;}
+.MyBtvHome .myBtvList .listWrapper li.okCash .csFocus .title img {margin-top:-7px;}
+.MyBtvHome .myBtvList .listWrapper li .csFocus.focusOn .title .text {color:#f5513f;}
+.MyBtvHome .myBtvList .listWrapper li .csFocus.focusOn .title .new {background:#f5513f; color:#fff;}
+.MyBtvHome .myBtvList .listWrapper li .csFocus.focusOn .detail .number,
+.MyBtvHome .myBtvList .listWrapper li .csFocus.focusOn .detail .check {color:#f5513f;}
+
+.MyBtvHome .myBtvList .listWrapper li .csFocus .title span {vertical-align:middle;}
+.MyBtvHome .myBtvList .listWrapper li .csFocus .title img {display:inline-block; vertical-align:middle;}
+.MyBtvHome .myBtvList .listWrapper li .csFocus .title .text {margin-left:8px; font-size:26px; color:#595869;}
+.MyBtvHome .myBtvList .listWrapper li .csFocus .title .new {display:inline-block; margin-left:8px; width:34px; height:34px; border-radius:34px; background:rgba(142,141,151,0.7); font-weight:700; line-height:34px; letter-spacing:normal; font-size:22px; color:rgba(255,255,255,0.8); text-align:center;}
+.MyBtvHome .myBtvList .listWrapper li .csFocus .detail {padding-top:16px; text-align:right;}
+.MyBtvHome .myBtvList .listWrapper li .csFocus .detail .number {font-size:40px; line-height:1; letter-spacing:normal; color:#4a4a4a;}
+.MyBtvHome .myBtvList .listWrapper li.coupon .csFocus .detail .number:after {content:"개"; font-size:26px; line-height:1.54;}
+.MyBtvHome .myBtvList .listWrapper li.bPoint .csFocus .detail .number:after {content:"P"; font-size:32px; line-height:1.25;}
+.MyBtvHome .myBtvList .listWrapper li.okCash .csFocus .detail .number:before,
+.MyBtvHome .myBtvList .listWrapper li.tMembership .csFocus .detail .number:before {content:"카드 앞자리"; margin-right:11px; font-size:26px;}
+.MyBtvHome .myBtvList .listWrapper li .csFocus .detail .check {font-size:36px; line-height:1.11; letter-spacing:normal; color:#4a4a4a;}
+
+.MyBtvHome .myBtvList .leftArrow,
+.MyBtvHome .myBtvList .rightArrow{position:absolute;top:50%;left:-64px;z-index:10;transform:translate(0,-50%);width:24px;height:58px;background:url("/assets/images/common/icon/arrow-left.png") no-repeat 0 0;opacity:0;}
+.MyBtvHome .myBtvList .rightArrow{left:auto;right:-64px;background:url("/assets/images/common/icon/arrow-right.png") no-repeat 0 0;}
+.MyBtvHome .myBtvList.activeSlide.leftActive .leftArrow,
+.MyBtvHome .myBtvList.activeSlide.rightActive .rightArrow{opacity:1;}
+
+.MyBtvHome .btnTopWrap {padding:119px 0 169px}
+
+.MyBtvHome .slideTypeBD {padding-top:58px;}
+.MyBtvHome .slideTypeA {padding-top:109px;}
+.MyBtvHome .slideTypeAE {padding-top:100px;}
+
+
+
+
+
+
+
+
+

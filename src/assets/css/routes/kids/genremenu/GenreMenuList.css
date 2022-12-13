@@ -1,0 +1,15 @@
+/* GenreMenuList.css */
+:root{
+	--page:0;
+}
+.menuBlockTitle{display:block;position:relative;padding:44px 0 0;}
+.genreMenuListWrap{position:relative; z-index:1; padding:0 115px;}
+.genreMenuListWrap .GenreListItemType{padding:104px 0 0;margin:0;}
+.genreMenuListWrap .menuBlockList{margin:0; padding:0;}
+.genreMenuListWrap .menuBlockTitle{display:block;position:relative;}
+.genreMenuListWrap .menuBlockTitle .highRankTitle{display:block;font-size:24px;color:rgba(26,26,26,0.6);line-height:30px;}
+.genreMenuListWrap .menuBlockTitle .title{display:block;margin-top:7px;font-size:42px;color:rgba(26,26,26,0.9);line-height:54px;font-weight:700;}
+.genreMenuListWrap .contentGroup .GenreListItemType .item.slide:first-child {margin-left:0;}
+
+.genreMenuListWrap .btnTopWrap {padding:150px 0 60px}
+.menuBlockList + .btnTopWrap{padding-top:100px;}

@@ -1,0 +1,328 @@
+/* SynopSeries.css */
+/* synopseries */
+.synopSeriesContent .slideTypeG .slideWrapper{transform:translate3d(calc(var(--page) * -288px),0,0);}
+.synopSeriesContent .slideTypeH .slideWrapper{transform:translate3d(calc(var(--page) * -288px),0,0);}
+
+.synopSeriesContent .slideTypeG .slideWrap .slideWrapper .slide .csFocus.focusOn,
+.synopSeriesContent .slideTypeH .slideWrap .slideWrapper .slide .csFocus.focusOn {transform:scale(1.12,1.15); -webkit-transform:scale(1.12,1.15);}
+.synopSeriesContent .slideTypeG .slideWrap .slideWrapper .slide .csFocus.focusOn{transform-origin:bottom;}
+.synopSeriesContent .slideTypeG.noneType .slideWrap .slideWrapper .slide .csFocus.focusOn{transform-origin:center;}
+
+.synopSeriesContent .slideTypeH .slide{padding:0 20px;}
+.synopSeriesContent .slideTypeH .slideCon{margin:-20px -38px -30px;padding:20px 18px 30px;overflow:hidden;}
+.synopSeriesContent .slideTypeG .slideCon{margin:-20px -36px 0;padding:20px 17px 50px;overflow:hidden;}
+
+.synopSeriesContent .slideTypeG .slideWrapper,
+.synopSeriesContent .slideTypeH .slideWrapper{display: flex;justify-content: space-between;}
+
+.synopSeriesContent .slideTypeG{padding-top:68px;}
+.synopSeriesContent .slideTypeG .slideCon.type3{padding-top:100px;}
+.synopSeriesContent .slideTypeG .slideCon.type3 .slide {display: flex;padding:0 20px}
+
+.synopSeriesContent .synopBot .contentGroup + .contentGroup{margin-top:30px;}
+
+/* bul */
+.synopSeriesContent .bar{display:inline-block;margin:0 10px;width:2px;height:22px;background:rgba(26,26,26,0.2);vertical-align:middle;}
+.dark .synopSeriesContent .paymentPriceInfoWrap .bar{display:inline-block;margin:0 10px;width:2px;height:22px;background:rgba(255,255,255,0.2);vertical-align:middle;}
+
+/* title */
+.synopSeriesContent .titleStyle1{position:relative;top:0;left:0;z-index:1;margin-bottom:8px;font-size:36px;font-weight:500;color:rgba(48,48,48,1);transform:translate(0,0);}
+.synopSeriesContent .activeSlide .titleStyle1{transform:translate(0,-20px);}
+.synopSeriesContent .titleStyle2{position:relative;top:0;left:0;z-index:1;margin-bottom:30px;font-size:36px;color:rgba(48,48,48,1);}
+.synopSeriesContent .titleStyle2 .bar{margin-left:15px;}
+.synopSeriesContent .titleStyle2 .subText{font-size:26px;font-weight:400;color:rgba(26,26,26,0.5);}
+
+.synopSeriesContent{position:relative;z-index:10;}
+.synopSeriesContent .synopTop {position:relative;padding:44px 115px 0 115px;height:1080px;}
+.synopSeriesContent .synopTop .logo{display:flex;align-items:flex-end;margin-top:0;padding-bottom:0;width:1100px;height:150px;}
+.synopSeriesContent .synopTop .logo img{display:block;}
+.synopSeriesContent .synopTop .logo .logoText{display:-webkit-box;overflow:hidden;text-overflow:ellipsis;white-space:normal;-webkit-line-clamp:2;-webkit-box-orient:vertical;font-size:72px;color:rgba(48,48,48,1);line-height:88px;font-weight:700;vertical-align:middle;}
+.synopSeriesContent .synopTop .logo .logoText.long{font-size:48px;line-height:60px;}
+
+.synopSeriesContent .synopTop .subText{margin-top:13px;}
+.synopSeriesContent .synopTop .subText .synopInfo{display:flex;padding:0;}
+.synopSeriesContent .synopTop .subText .synopInfo li{padding-left:5px;color:rgba(74,74,74,1);font-size:26px;opacity: 0.75;}
+.synopSeriesContent .synopTop .subText .synopInfo li .boxStyle1{margin-left:0;}
+.synopSeriesContent .synopTop .subText + .contentGroup{padding-top: 47px;}
+
+.synopSeriesContent .synopTop .pageArr {margin:0 auto;position:absolute;bottom:40px;left:0;right:0;z-index: 1;width: 43px;height: 15px;background:url('/assets/images/synopsis/arrow-shorttop.png') no-repeat;}
+.synopSeriesContent .synopTop .pageArr.on {bottom:-40px;transform:rotate(-180deg);}
+.synopSeriesContent .synopTop .pageArr.off {display:none;}
+
+.synopSeriesContent .synopTop .subText .commont{display:block;width:1117px;height:67px;/*overflow:hidden;*/margin-top:28px;font-size:26px;line-height:36px;}
+.synopSeriesContent .synopTop .subText .commont .noticeMent{display:block;padding-bottom:6px;font-size:26px;color:rgba(26,26,26,0.9);font-weight:700;line-height:28px;}
+.synopSeriesContent .synopTop .subText .commont .linkSynopcomment{display:inline-block;position:relative;z-index:2;font-size:26px;color:rgba(48,48,48,1);line-height:38px;font-weight:700;}
+.synopSeriesContent .synopTop .subText .commont .linkSynopcomment > div {display:inline;}
+.synopSeriesContent .synopTop .subText .commont .linkSynopcomment.focusOn{opacity:1;color:#000;}
+.synopSeriesContent .synopTop .subText .commont .linkSynopcomment.focusOn:after{content:'';position:absolute;top:-20px;left:-24px;right:-24px;bottom:-20px;z-index:-1;width:100%;height:100%;padding:20px 24px;border-radius:4px;background:rgba(244,244,244,1);box-shadow:0 24px 16px 0 rgba(0, 0, 0, 0.35);}
+.synopSeriesContent .synopTop .subText .commont .linkSynopcomment .commentMore {display:inline-block;position:relative;margin-left:10px;padding-left:22px;text-decoration:underline;font-size:24px;color:rgba(106,106,106,1);font-weight:700;}
+.synopSeriesContent .synopTop .subText .commont .linkSynopcomment.focusOn .commentMore {color:#f5513f;}
+.synopSeriesContent .synopTop .subText .commont .linkSynopcomment .commentMore:before{content:'+';position:absolute;top:0;left:0;font-size:24px;line-height:42px;color:rgba(26,26,26,0.5);font-weight:700;}
+.synopSeriesContent .synopTop .subText .commont .linkSynopcomment.focusOn .commentMore:before{color:#f5513f;}
+.synopSeriesContent .synopTop .subText + .contentGroup{padding-top:22px;}
+.synopSeriesContent .contentPop .btnBeforeArea .btnBefore{color:#000;}
+
+.synopSeriesContent .synopBot{padding:80px 115px 60px;}
+.synopSeriesContent .synopBtn{position:relative;}
+.synopSeriesContent .synopBtn ul{display:flex;}
+.synopSeriesContent .synopBtn > ul > li{margin-left:30px;}
+.synopSeriesContent .synopBtn > ul > li:first-child{margin-left:0;}
+.synopSeriesContent .synopBtn ul li .csFocus{display:block;position:relative;z-index:1;padding:15px 24px 20px;min-width:128px;height:120px;border-radius:4px;font-size:24px;text-align:center;color:rgba(244,244,244,1);}
+.synopSeriesContent .synopBtn ul li .csFocus.priceBtn{padding:24px 30px 20px 24px;}
+.synopSeriesContent .synopBtn ul li .csFocus span[class*="icon"]{margin:0 auto;display:block;position:relative;z-index:1;width:50px;height:50px;}
+.synopSeriesContent .synopBtn ul li .csFocus span[class*="icon"] img{position:absolute;top:50%;left:50%;z-index:10;transform:translate(-50%,-50%);opacity:1;}
+.synopSeriesContent .synopBtn ul li .csFocus span[class*="icon"] .on,
+.synopSeriesContent .synopBtn ul li .on .csFocus span[class*="icon"] img:first-child{opacity:0;}
+.synopSeriesContent .synopBtn ul li .csFocus.focusOn span[class*="icon"] .on{opacity:1;}
+.synopSeriesContent .synopBtn ul li .csFocus.focusOn span[class*="icon"]{height:40px;}
+
+.synopSeriesContent .synopBtn ul li .csFocus .onlyText{display:block;font-size:30px;line-height:90px;}
+.synopSeriesContent .synopBtn ul li .csFocus .text{display:block;margin-top:9px;font-size:26px;font-weight:700;}
+.synopSeriesContent .synopBtn ul li .csFocus.priceBtn .text{margin-top:0;text-align:left;}
+.synopSeriesContent .synopBtn ul li .csFocus .text .titleSub{font-size:20px;color:rgba(212,212,212,1)}
+.synopSeriesContent .synopBtn ul li .csFocus .price{display:block;}
+.synopSeriesContent .synopBtn ul li .csFocus .price .presentPrice{font-size:36px;color:rgba(212,212,212,1);}
+.synopSeriesContent .synopBtn ul li .csFocus .price .presentPrice span{font-size:24px;}
+.synopSeriesContent .synopBtn ul li .csFocus .price .dcPrice{display:inline-block;position:relative;font-size:24px;color:rgba(212,212,212,1);}
+.synopSeriesContent .synopBtn ul li .csFocus .price .dcPrice:before{content:'';display:block;position:absolute;top:50%;left:0;right:22px;height:1px;background-color:rgba(212,212,212,1);}
+.synopSeriesContent .synopBtn ul li .csFocus .price .dcPrice span{font-size:22px;}
+.synopSeriesContent .synopBtn ul li .csFocus .price .presentPrice + .dcPrice{margin-left:10px;}
+.synopSeriesContent .synopBtn ul li .csFocus .text ~ .price{margin-top:14px;text-align:left;}
+
+.synopSeriesContent .synopBtn ul li .csFocus.focusOn{color:#f5513f;}
+.synopSeriesContent .synopBtn ul li .csFocus.focusOn > span{transform:scale(1.2);}
+.synopSeriesContent .synopBtn ul li .csFocus.focusOn .text{margin-top:19px;font-weight:bold;}
+.synopSeriesContent .synopBtn ul li .csFocus.priceBtn.focusOn .text{margin-top:0;}
+.synopSeriesContent .synopBtn ul li .csFocus.focusOn .text.per{color:#a742ff;}
+.synopSeriesContent .synopBtn ul li .csFocus.focusOn .text .titleSub{color:rgba(136,136,136,1);}
+.synopSeriesContent .synopBtn ul li .csFocus.focusOn .text ~ .price{margin-top:22px;}
+.synopSeriesContent .synopBtn ul li .csFocus.focusOn .price span{color:rgba(245,81,63,1);}
+.synopSeriesContent .synopBtn ul li .csFocus.focusOn .price .dcPrice{color:rgba(0,0,0,0.5);}
+.synopSeriesContent .synopBtn ul li .csFocus.focusOn .price .dcPrice:before{background-color:rgba(0,0,0,0.5);}
+.synopSeriesContent .synopBtn ul li .csFocus.focusOn .price .dcPrice span{color:rgba(0,0,0,0.5);}
+
+.synopSeriesContent .synopBtn ul li .csFocus:before{content:'';position:absolute;top:0;left:0;right:0;padding:0 24px;bottom:0;z-index:-1;border-radius:4px;background:rgba(26,26,26,0.35);box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.15);}
+.synopSeriesContent .synopBtn ul li .csFocus.focusOn:before{content:'';position:absolute;top:-8px;left:-12px;right:-12px;bottom:-8px;z-index:-1;border-radius:4px;background:rgba(255, 255, 255, 1);box-shadow: 0 24px 16px 0 rgba(0, 0, 0, 0.35);}
+
+.synopSeriesContent .slideTypeG .slideWrap{position:relative;z-index:1;transform:translate(0,0);}
+.synopSeriesContent .slideTypeG .slideCon{position:relative;}
+.synopSeriesContent .slideTypeG .slideCon .csFocus{width:248px;transform-origin:bottom;box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);}
+.synopSeriesContent .slideTypeG .slideCon .csFocus img {display:block; width: 100%;border-radius: 5px;}
+.synopSeriesContent .slideTypeG .slideCon .csFocus.focusOn{box-shadow: 0 14px 14px 0 rgba(0, 0, 0, 0.35);}
+.synopSeriesContent .slideTypeG .slideCon .slide .csFocus .programTitle {display:block; padding:8px 0; position:absolute; bottom:0; left:0; z-index:15; width:100%; height:48px; border-radius: 0 0 4px 4px; background-color: rgba(8, 12, 35, 0.5); font-size:26px; line-height:1.15; text-align:center; color:#fff; opacity:1;}
+.synopSeriesContent .slideTypeG .slideCon .csFocus .programTitle .numText{display:block;position:relative;z-index:20;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;padding: 0 10px;}
+.synopSeriesContent .slideTypeG .slideCon .csFocus.focusOn .programTitle{padding:0;height:8px;}
+.synopSeriesContent .slideTypeG .slideCon .csFocus.focusOn .programTitle .numText{display:none;}
+.synopSeriesContent .slideTypeG .slide .csFocus .innerFocus{display:block;position:relative;width:248px;height:140px;border-radius:4px;background:url('/assets/images/common/default/stillcut_default.png') 0 0 no-repeat;background-size:100% 100%;}
+.synopSeriesContent .slideTypeG .innerFocus .progessBar{display:block;overflow:hidden;width:100%;height:48px;position:absolute;left:0;bottom:0;z-index:15;/*background:rgba(0,0,0,0.3);*/border-radius:0 0 4px 4px;opacity:1;}
+.synopSeriesContent .slideTypeG .innerFocus .progessBar .proceed{display:block;width:100%;height:48px;background:-webkit-linear-gradient(left, rgba(229,24,111,1) 0%,rgba(255,116,34,1) 100%);background:linear-gradient(to right, rgba(229,24,111,1) 0%,rgba(255,116,34,1) 100%);}
+.synopSeriesContent .slideTypeG .csFocus.focusOn .innerFocus .progessBar{height:8px;opacity:1;}
+.synopSeriesContent .slideTypeG .csFocus.focusOn .innerFocus .progessBar .proceed{height:8px;}
+
+.synopSeriesContent .slideTypeG .slideCon .csFocus:before{position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;content:"";display:block;border-radius:2px;overflow:hidden;box-shadow:0 0 0 5px #f4f4f4;opacity:0;}
+.synopSeriesContent .slideTypeG .slideCon .csFocus.focusOn:before{box-shadow:0 0 0 5px #f4f4f4;opacity:1;}
+
+.synopSeriesContent .slideTypeG .slideCon .activeText{position:absolute;left:0;right:0;bottom:0;z-index:10;height:48px;font-size:22px;font-weight:700;line-height:48px;color:#fff;opacity:0;}
+.synopSeriesContent .slideTypeG .slideCon .activeText:after{display:block;content:"";clear:both;}
+.synopSeriesContent .slideTypeG .slideCon .csFocus.focusOn .activeText{opacity:1;}
+.synopSeriesContent .slideTypeG .slideCon .activeText .onlyText{display:block;text-align:center;}
+.synopSeriesContent .slideTypeG .slideCon .activeText .buyText{float:left;padding-left:15px;width:100px;display: inline-block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.synopSeriesContent .slideTypeG .slideCon .activeText .buyCost{float:right;padding-right:15px;font-size:26px;font-weight:400;}
+.synopSeriesContent .slideTypeG .slideCon .activeText .buyCost span{margin-left:4px;font-size:22px;font-weight:400;vertical-align:middle;}
+.synopSeriesContent .slideTypeG .slideCon .csFocus.focusOn .activeText:before{content:'';position:absolute;left:0;right:0;bottom:0;z-index: -1;height: 70px;border-radius: 0 0 4px 4px;background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 70%, rgba(0, 0, 0, 0.8)100%);}
+
+.synopSeriesContent .slideTypeG.noneType{margin: 0 -115px;padding-top:42px;}
+.synopSeriesContent .slideTypeG.noneType .slideWrap{position:relative;}
+.synopSeriesContent .slideTypeG.noneType .slideWrap:before{content:'';display:block;position:absolute;top:25px;left:0;right:0;height:94px;background-color:rgba(0,0,0,0.4);}
+.synopSeriesContent .slideTypeG.noneType .slideCon{margin: 0 120px 25px 119px;padding: 25px 0 55px 1px;}
+.synopSeriesContent .slideTypeG.noneType .activeSlide.firstActive .slideCon{margin: 0 120px 25px 90px;padding: 25px 0 55px 30px;}
+.synopSeriesContent .slideTypeG.noneType .activeSlide.lastActive .slideCon{margin: 0 90px 25px 119px;padding: 25px 30px 55px 1px;}
+.synopSeriesContent .slideTypeG.noneType .slideWrapper{transform:translate3d(calc(var(--page) * -168px),0,0);}
+.synopSeriesContent .slideTypeG.noneType .slideWrapper .slide{padding:0;}
+.synopSeriesContent .slideTypeG.noneType .slideWrapper .slide .csFocus{width:168px;height:94px;border-right:1px solid rgba(255,255,255,0.4);}
+.synopSeriesContent .slideTypeG.noneType .slideWrapper .slide:first-child .csFocus{border-left:1px solid rgba(255,255,255,0.4);}
+.synopSeriesContent .slideTypeG.noneType .slideWrapper .csFocus{position:relative;z-index:10;}
+.synopSeriesContent .slideTypeG.noneType .slideWrapper .csFocus .innerFocus{width:100%;height:100%;background:none;}
+.synopSeriesContent .slideTypeG.noneType .slideWrapper .csFocus .programTitle{ bottom:auto; height:100%; padding:0; background-color: transparent;}
+.synopSeriesContent .slideTypeG.noneType .slideWrapper .csFocus .programTitle .numText{top: 50%;transform: translateY(-50%);height:auto;font-size:26px;color:rgba(244,244,244,1);line-height:34px;word-break:keep-all;word-wrap: break-word;display: -webkit-box;white-space: normal;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+.synopSeriesContent .slideTypeG.noneType .slideWrapper .csFocus.focusOn .programTitle .numText{display:none;}
+.synopSeriesContent .slideTypeG.noneType .slideWrapper .csFocus .progessBar{height:100%;border-radius:0;background: rgba(0,0,0,0.3);}
+.synopSeriesContent .slideTypeG.noneType .slideWrapper .csFocus .progessBar .proceed{height:100%;}
+.synopSeriesContent .slideTypeG.noneType .slideWrapper .csFocus.focusOn{border-left:0;z-index:15;}
+.synopSeriesContent .slideTypeG.noneType .slideWrapper .csFocus.focusOn:before{content:'';position:absolute;top:-8px;bottom:-8px;left:-10px;right:-10px;border-radius:4px;background-color:rgba(244,244,244,1);box-shadow: 0 24px 16px 0 rgba(0, 0, 0, 0.35);}
+.synopSeriesContent .slideTypeG.noneType .slideWrapper .csFocus.focusOn .progessBar{    left: -10px;right: -10px;bottom: -8px;width:auto;height:8px;border-radius:0 0 4px 4px;opacity:1;}
+.synopSeriesContent .slideTypeG.noneType .slideCon .csFocus .activeText{overflow: hidden;top: 50%;bottom:auto;transform: translateY(-50%);height:auto;font-size:26px;color:rgba(245, 81, 63,1);text-align:center;background-image:none;}
+.synopSeriesContent .slideTypeG.noneType .slideCon .csFocus .activeText .onlyText{display:block;text-align:center;font-size:32px;}
+.synopSeriesContent .slideTypeG.noneType .slideCon .activeText .buyText{display:block;float:none;padding:0;}
+.synopSeriesContent .slideTypeG.noneType .slideCon .activeText .buyCost{display:block;float:none;padding:0;font-size:32px;line-height:34px;}
+.synopSeriesContent .slideTypeG.noneType .slideCon .activeText .buyCost span{font-size:22px;}
+.synopSeriesContent .slideTypeG.noneType .slideCon .csFocus.focusOn .activeText:before{display:none;}
+
+.synopSeriesContent .slideTypeG .slideCon .csFocus .iconFlag{position:absolute;top:0;right:8px;z-index:25;width:28px;height:52px;background:url('/assets/images/synopsis/flag.png') 0 0 no-repeat;}
+.synopSeriesContent .slideTypeG.noneType .slideCon .csFocus.focusOn .iconFlag{position:absolute;top:-8px;right:0;z-index:25;width:28px;height:52px;background:url('/assets/images/synopsis/flag.png') 0 0 no-repeat;}
+
+.synopSeriesContent .slideTypeG .slideLeft,
+.synopSeriesContent .slideTypeG .slideRight{position:absolute;top:50%;left:-70px;z-index:10;transform:translate(0,-10%);width:23px;height:58px;background:url("/assets/images/common/icon/arrow-left.png") no-repeat 0 0;opacity:0;}
+.synopSeriesContent .slideTypeG .slideRight{left:auto;right:-70px;background:url("/assets/images/common/icon/arrow-right.png") no-repeat 0 0;}
+.synopSeriesContent .slideTypeG.noneType .slideLeft,
+.synopSeriesContent .slideTypeG.noneType .slideRight{position:absolute;top:50%;left:60px;z-index:10;transform:translate(0,-95%);width:13px;height:33px;background:url("/assets/images/common/icon/arrow-imgnone-left.png") no-repeat 0 0;opacity:0;}
+.synopSeriesContent .slideTypeG.noneType .slideRight{left:auto;right:60px;background:url("/assets/images/common/icon/arrow-imgnone-right.png") no-repeat 0 0;}
+.synopSeriesContent .slideTypeG .activeSlide.leftActive .slideLeft,
+.synopSeriesContent .slideTypeG .activeSlide.rightActive .slideRight,
+.synopSeriesContent .slideTypeG.noneType .activeSlide.leftActive .slideLeft,
+.synopSeriesContent .slideTypeG.noneType .activeSlide.rightActive .slideRight{opacity:1;}
+
+.synopSeriesContent .paymentPriceInfoWrap{position:absolute;top:142px;left:0;}
+.synopSeriesContent .paymentPriceInfoWrap .paymentPriceInfo{display:none;font-size:24px;color:rgba(74,74,74,1);line-height:36px;}
+.synopSeriesContent .contentPriceInfo{display:block;position:absolute;top:255px;left:35px;font-size:24px;color:rgba(74,74,74,1);line-height:36px;}
+.synopSeriesContent .slideTypeG.noneType .contentPriceInfo{top:140px;left:0;}
+.synopSeriesContent .slideTypeG.noneType .activeSlide.firstActive .contentPriceInfo{left:29px;}
+
+.synopSeriesContent .seasonInfoWrap{height:316px;padding-top:10px;}
+.synopSeriesContent .seasonInfoWrap .infoContents:after{content:'';display:block;clear:both;}
+.synopSeriesContent .seasonInfoWrap .infoContents > .left{float:left;widtH:540px;}
+.synopSeriesContent .seasonInfoWrap .infoContents > .left.cancel{width:100%;}
+.synopSeriesContent .seasonInfoWrap .infoContents > .right{float:right;width:1117px;}
+.synopSeriesContent .seasonInfoWrap .infoContents > .right.cancel{width:0%;}
+
+.synopSeriesContent .seasonInfoWrap .infoContents .left .innerInfo{}
+.synopSeriesContent .seasonInfoWrap .infoContents .left .innerInfo li:first-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.synopSeriesContent .seasonInfoWrap .infoContents .left .innerInfo li span{font-size:26px;color:rgba(26,26,26,1);line-height:38px;font-weight:700;vertical-align:middle;}
+.synopSeriesContent .seasonInfoWrap .infoContents .left .innerInfo li .seriesNum{display: inline-block;max-width: 250px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.synopSeriesContent .seasonInfoWrap .infoContents .left .innerInfo li .bar{margin:7px 10px 0 10px;background:rgba(26,26,26,1);vertical-align:top;opacity:1;}
+.synopSeriesContent .seasonInfoWrap .infoContents .left .innerInfo li .subTitle{display: -webkit-box;overflow: hidden;text-overflow: ellipsis;white-space: normal;word-break:  keep-all;-webkit-line-clamp: 2;-webkit-box-orient: vertical;max-height: 84px;font-size:30px;line-height:42px;}
+.synopSeriesContent .seasonInfoWrap .infoContents .left .innerInfo li .cancelMes{font-size:28px;color:rgba(48,48,48,1);line-height:40px;font-weight:700;}
+.synopSeriesContent .seasonInfoWrap .infoContents .left .innerInfo .subText{font-size:24px;color:rgba(26,26,26,0.7);line-height:36px;font-weight:400;}
+.synopSeriesContent .seasonInfoWrap .infoContents .left .commonSeasonInfo{margin-top:20px;}
+.synopSeriesContent .seasonInfoWrap .infoContents .left .commonSeasonInfo ul{}
+.synopSeriesContent .seasonInfoWrap .infoContents .left .commonSeasonInfo li + li{margin-top:3px;white-space: normal;overflow: hidden;text-overflow: ellipsis;-webkit-line-clamp: 3;-webkit-box-orient: vertical;display: -webkit-box;}
+.synopSeriesContent .seasonInfoWrap .infoContents .left .commonSeasonInfo li{font-size:22px;color:rgba(48,48,48,1);line-height:32px;font-weight:700;}
+.synopSeriesContent .seasonInfoWrap .infoContents .left .commonSeasonInfo li .iconAge{position:relative;top:-3px;z-index:1;}
+.synopSeriesContent .seasonInfoWrap .infoContents .left .commonSeasonInfo li .iconAge + .bar,
+.synopSeriesContent .seasonInfoWrap .infoContents .left .commonSeasonInfo li .iconAge + span .bar{display:none;}
+.synopSeriesContent .seasonInfoWrap .infoContents .left .commonSeasonInfo li .bar{height:18px;margin:0 10px;}
+.synopSeriesContent .seasonInfoWrap .infoContents .left .commonSeasonInfo li .boxStyle1{width:32px;height:32px;}
+.synopSeriesContent .seasonInfoWrap .infoContents .left .commonSeasonInfo li img{vertical-align:middle;}
+.synopSeriesContent .seasonInfoWrap .infoContents .left .commonSeasonInfo li .title{margin-right:5px;color:rgba(74,74,74,1);}
+.synopSeriesContent .seasonInfoWrap .infoContents .left .seriesEventContents{}
+.synopSeriesContent .seasonInfoWrap .infoContents .left .seriesEventContents .eventText{font-size:32px;color:rgba(26,26,26,1);line-height:52px;font-weight:700;}
+.synopSeriesContent .seasonInfoWrap .infoContents .left .seriesEventContents .eventSubTitle{margin-top:6px;font-size:28px;color:rgba(48,48,48,1);line-height:40px;}
+.synopSeriesContent .seasonInfoWrap .infoContents .left .seriesEventContents .eventInfo{margin-top:30px;}
+.synopSeriesContent .seasonInfoWrap .infoContents .left .seriesEventContents .eventInfo div span{vertical-align:middle;}
+.synopSeriesContent .seasonInfoWrap .infoContents .left .seriesEventContents .eventInfo div span + span{margin-left:22px;}
+.synopSeriesContent .seasonInfoWrap .infoContents .left .seriesEventContents .eventInfo .title{font-size:28px;color:rgba(26,26,26,1);line-height:40px;font-weight:700;}
+.synopSeriesContent .seasonInfoWrap .infoContents .left .seriesEventContents .eventInfo .content{font-size:28px;color:rgba(48,48,48,1);line-height:40px;font-weight:500;}
+
+.synopSeriesContent .seasonInfoWrap .infoContents .right .seriesComment{font-size:28px;color:rgba(106, 83, 150,1);line-height:40px;font-weight:700;}
+.synopSeriesContent .seasonInfoWrap .infoContents .right .seriesComment + .seriesText{margin-top:18px;}
+.synopSeriesContent .seasonInfoWrap .infoContents .right .seriesComment,
+.synopSeriesContent .seasonInfoWrap .infoContents .right .seriesText{position:relative;z-index:1;font-size:28px;color:rgba(26,26,26,0.9);line-height:40px;word-break: keep-all;font-weight:700;}
+.synopSeriesContent .seasonInfoWrap .infoContents .right .csFocus.seriesText.focusOn{opacity:1;color:rgba(26,26,26,1);}
+.synopSeriesContent .seasonInfoWrap .infoContents .right .csFocus.seriesText.focusOn:after{content:'';position:absolute;top:-14px;left:-24px;right:-24px;bottom:-14px;z-index:-1;border-radius:4px;background:rgba(244,244,244,1);box-shadow:0 24px 16px 0 rgba(0, 0, 0, 0.35);}
+.synopSeriesContent .seasonInfoWrap .infoContents .right .seriesText > div {display:inline;}
+.synopSeriesContent .seasonInfoWrap .infoContents .right .seriesText .guest{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.synopSeriesContent .seasonInfoWrap .infoContents .right .seriesText .commentMore {display:inline-block;position:relative;margin-left:10px;padding-left:22px;text-decoration:underline;font-size:24px;color:rgba(106,106,106,1);font-weight:700;}
+.synopSeriesContent .seasonInfoWrap .infoContents .right .seriesText.focusOn .commentMore {color:#f5513f;}
+.synopSeriesContent .seasonInfoWrap .infoContents .right .seriesText .commentMore:before{content:'+';position:absolute;top:0;left:0;font-size:24px;color:rgba(106,106,106,1);line-height:42px;}
+.synopSeriesContent .seasonInfoWrap .infoContents .right .seriesText.focusOn .commentMore:before{color:#f5513f;}
+.synopTop .subText + .contentGroup{padding-top:55px;}
+
+.synopSeriesContent .synopTop .pageArr:before,
+.synopSeriesContent .synopTop .pageArr:after {background: #000;}
+
+.synopSeriesContent .synopSeriesLayout .synopSeriesCon{display:flex;opacity:0;}
+.synopSeriesContent .synopSeriesLayout .synopSeriesCon:first-child ~ .synop_series_con{position:absolute;top:0;left:0;right:0;z-index:-1;}
+.synopSeriesContent .synopSeriesLayout .synopSeriesCon.on{opacity:1;padding-bottom:120px;}
+.synopSeriesContent .synopSeriesLayout .synopSeriesCon.none{display:none;}
+
+.synopSeriesContent .synopSeriesLayout .synopSeriesCon > .left{position:relative;width:288px;}
+.synopSeriesContent .synopSeriesLayout .synopSeriesCon > .left .innerMove{position:absolute;top:0;left:0;transform:translate(0,0);}
+.synopSeriesContent .synopSeriesLayout .synopSeriesCon > .left .seriesNum{font-size:44px;color:rgba(26,26,26,1);display: -webkit-box;overflow: hidden;text-overflow: ellipsis;white-space: normal;-webkit-line-clamp: 2;-webkit-box-orient: vertical;line-height: 70px;width: 230px;font-weight:700;}
+.synopSeriesContent .synopSeriesLayout .synopSeriesCon > .left .seriesNum span{font-size:36px;}
+.synopSeriesContent .synopSeriesLayout .synopSeriesCon > .left .seriesDate{margin-top:20px;opacity:0.6;font-size:26px;line-height:42px;color:#fff;}
+.synopSeriesContent .synopSeriesLayout .synopSeriesCon > .right{width:calc(100% - 288px);}
+.synopSeriesContent .synopSeriesLayout .synopSeriesCon > .right .seriesTitle{font-size:36px;font-weight:700;line-height:42px;color:#4367ce;}
+.synopSeriesContent .synopSeriesLayout .synopSeriesCon > .right .seriesText{margin-top:20px;font-size:34px;line-height:52px;color:#000;}
+.synopSeriesContent .synopSeriesLayout .synopSeriesCon > .right .content_group{padding-top:66px;}
+
+.synopSeriesContent .synopSeriesLayout .btnTopWrap{padding-bottom:40px;}
+
+
+
+/* seasonBtn */
+.synopSeriesContent .synopBtn .seasonBtn{border-radius:4px;box-shadow:0 4px 6px 0 rgba(0, 0, 0, 0.15);}
+.synopSeriesContent .synopBtn .seasonBtn:after{content:'';display:block;clear:both;}
+.synopSeriesContent .synopBtn .seasonBtn li{display:table;margin-left:0;}
+.synopSeriesContent .synopBtn .seasonBtn li a,
+.synopSeriesContent .synopBtn .seasonBtn li div{position:relative;z-index:1;display:table-cell;vertical-align:middle;}
+.synopSeriesContent .synopBtn .seasonBtn li .csFocus.leftBtn,
+.synopSeriesContent .synopBtn .seasonBtn li .csFocus.rightBtn{position:relative;min-width:48px !important;padding:0;}
+.synopSeriesContent .synopBtn .seasonBtn li .csFocus.leftBtn{border-radius:4px 0 0 4px;}
+.synopSeriesContent .synopBtn .seasonBtn li .csFocus.rightBtn{border-radius:0 4px 4px 0;}
+.synopSeriesContent .synopBtn .seasonBtn li .csFocus.leftBtn span[class*="icon"],
+.synopSeriesContent .synopBtn .seasonBtn li .csFocus.rightBtn span[class*="icon"],
+.synopSeriesContent .synopBtn .seasonBtn li .csFocus.focusOn span[class*="icon"]{height:100%;}
+
+.synopSeriesContent .synopBtn .seasonBtn li .centerBtn{width:160px;height:120px;padding:20px;border-radius:0;border-top:0;border-bottom:0;text-align:center;}
+.synopSeriesContent .synopBtn .seasonBtn li .centerBtn:before{content: '';position: absolute;top: 0;left: 0;right: 0;padding: 0 24px;bottom: 0;z-index:-1;background: rgba(26,26,26,0.35);}
+.synopSeriesContent .synopBtn .seasonBtn li .centerBtn .text{margin-top:0;font-size:30px;color:rgba(244,244,244,1);font-weight:700;line-height:42px;}
+.synopSeriesContent .synopBtn .seasonBtn li .csFocus:before{border-radius:0;box-shadow:none;}
+.synopSeriesContent .synopBtn .seasonBtn li .csFocus.leftBtn:before{z-index:-1;border-radius:4px 0 0 4px;box-shadow:none;}
+.synopSeriesContent .synopBtn .seasonBtn li .csFocus.rightBtn:before{z-index:-1;border-radius:0 4px 4px 0;box-shadow:none;}
+.synopSeriesContent .synopBtn .seasonBtn li .csFocus.leftBtn:after,
+.synopSeriesContent .synopBtn .seasonBtn li .csFocus.rightBtn:after{content:'';position:absolute;top:0;z-index:5;width:2px;height:100%;background:rgba(244,244,244,0.15);}
+.synopSeriesContent .synopBtn .seasonBtn li .csFocus.leftBtn:after{right:0;}
+.synopSeriesContent .synopBtn .seasonBtn li .csFocus.rightBtn:after{left:0;}
+.synopSeriesContent .synopBtn .seasonBtn li .csFocus.focusOn{z-index:10;}
+.synopSeriesContent .synopBtn .seasonBtn li .csFocus.focusOn:before{border-radius:4px;box-shadow:0 24px 16px 0 rgba(0, 0, 0, 0.35);}
+.synopSeriesContent .synopBtn .seasonBtn li .csFocus.focusOn .text{margin-top:0;}
+
+/*keyWrap*/
+.mainBg.synopSeries .keyWrap{position:absolute;top:512px;right:120px;opacity:1;}
+.mainBg.synopSeries .keyWrap [class^="btnKey"]{color:#4a4a4a;}
+.mainBg.synopSeries.imageNone .keyWrap{top:618px;opacity:1;}
+.mainBg.synopSeries.full .keyWrap{top:-50px;opacity:0;}
+
+
+/* icon age */
+.iconAge{display:inline-block;width:36px;height:36px;margin-right:10px;background:url('/assets/images/synopsis/flag-dar-2-age-all.png') no-repeat;vertical-align:middle;}
+.iconAge.age7{background:url('/assets/images/synopsis/flag-dar-2-age-7.png') no-repeat;}
+.iconAge.age12{background:url('/assets/images/synopsis/flag-dar-2-age-12.png') no-repeat;}
+.iconAge.age15{background:url('/assets/images/synopsis/flag-dar-2-age-15.png') no-repeat;}
+.iconAge.age18{background:url('/assets/images/synopsis/flag-dar-2-age-18.png') no-repeat;}
+.iconAge.age19{background:url('/assets/images/synopsis/flag-dar-2-age-19.png') no-repeat;}
+
+.dark .synopSeriesContent .seasonInfoWrap .infoContents .left .commonSeasonInfo li .iconAge{background:url('/assets/images/synopsis/flag-dar-2-age-all.png') no-repeat;}
+.dark .synopSeriesContent .seasonInfoWrap .infoContents .left .commonSeasonInfo li .iconAge.age7{background:url('/assets/images/synopsis/flag-dar-2-age-7.png') no-repeat;}
+.dark .synopSeriesContent .seasonInfoWrap .infoContents .left .commonSeasonInfo li .iconAge.age12{background:url('/assets/images/synopsis/flag-dar-2-age-12.png') no-repeat;}
+.dark .synopSeriesContent .seasonInfoWrap .infoContents .left .commonSeasonInfo li .iconAge.age15{background:url('/assets/images/synopsis/flag-dar-2-age-15.png') no-repeat;}
+.dark .synopSeriesContent .seasonInfoWrap .infoContents .left .commonSeasonInfo li .iconAge.age18{background:url('/assets/images/synopsis/flag-dar-2-age-18.png') no-repeat;}
+.dark .synopSeriesContent .seasonInfoWrap .infoContents .left .commonSeasonInfo li .iconAge.age19{background:url('/assets/images/synopsis/flag-dar-2-age-19.png') no-repeat;}
+
+/* theme */
+.dark .synopSeriesContent .synopTop .pageArr{background:url('/assets/images/synopsis/arrow-shorttop-dark.png') no-repeat;}
+
+.dark .synopSeriesContent .titleStyle1,
+.dark .synopSeriesContent .titleStyle2{color:rgba(48,48,48,1);}
+
+.dark .synopSeriesContent .paymentPriceInfoWrap .paymentPriceInfo{color:rgba(170,170,170,1);}
+.dark .synopSeriesContent .synopTop .logo .logoText{color:rgba(244,244,244,1);}
+.dark .synopSeriesContent .synopTop .subText .commont .noticeMent{color:rgba(244,244,244,0.9);}
+.dark .synopSeriesContent .synopTop .subText .commont .linkSynopcomment{color:rgba(244,244,244,1);}
+.dark .synopSeriesContent .synopTop .subText .commont .linkSynopcomment.focusOn{color:rgba(26,26,26,1);}
+.dark .synopSeriesContent .synopTop .subText .commont .linkSynopcomment .commentMore {color:rgba(244,244,244,0.5);}
+.dark .synopSeriesContent .synopTop .subText .commont .linkSynopcomment.focusOn .commentMore {color:#f5513f;}
+.dark .synopSeriesContent .synopTop .subText .commont .linkSynopcomment .commentMore:before{color:rgba(244,244,244,0.5);}
+.dark .synopSeriesContent .synopTop .subText .commont .linkSynopcomment.focusOn .commentMore:before{color:#f5513f;}
+.dark .synopSeriesContent .seasonBtn li .centerBtn:before{background:rgba(255, 255, 255, 0.17);}
+
+.dark .synopSeriesContent .synopBtn ul li .csFocus{color:rgba(244,244,244,1);}
+.dark .synopSeriesContent .synopBtn ul li .csFocus:before{background:rgba(255, 255, 255, 0.17);}
+.dark .synopSeriesContent .synopBtn ul li .csFocus.focusOn{color:#f5513f;}
+.dark .synopSeriesContent .synopBtn ul li .csFocus.focusOn:before{background:rgba(244,244,244,1);}
+.dark .synopSeriesContent .synopBtn ul li .csFocus .price .dcPrice{color:rgba(170,170,170,1);}
+.dark .synopSeriesContent .synopBtn ul li .csFocus.focusOn .price .dcPrice{color:rgba(136,136,136,1);}
+
+.dark .synopSeriesContent *[class*="listStyle"] .csFocus.focusOn .videoText{color:rgba(244,244,244,0.9);}
+
+.dark .synopSeriesContent .btnTopWrap .btnTop{background:rgba(26, 26, 26, 0.35);}

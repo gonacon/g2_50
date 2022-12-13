@@ -1,0 +1,35 @@
+{
+	"mainBg" : "/assets/images/kids/setting/bg-firstsetlimit-01.png",
+	"slideItem" : [
+		{
+			"norImage" : "/assets/images/tmp/kids/img-normal1.png",
+			"selImage" : "/assets/images/tmp/kids/img-normal1-sel.png",
+			"focImage" : "/assets/images/tmp/kids/img-normal1-foc.png",
+			"name" : "캐리"
+		},
+		{
+			"norImage" : "/assets/images/tmp/kids/img-normal2.png",
+			"selImage" : "/assets/images/tmp/kids/img-normal2-sel.png",
+			"focImage" : "/assets/images/tmp/kids/img-normal2-foc.png",
+			"name" : "핑크퐁"
+		},
+		{
+			"norImage" : "/assets/images/tmp/kids/img-normal3.png",
+			"selImage" : "/assets/images/tmp/kids/img-normal3-sel.png",
+			"focImage" : "/assets/images/tmp/kids/img-normal3-foc.png",
+			"name" : "뽀로로"
+		},
+		{
+			"norImage" : "/assets/images/tmp/kids/img-normal4.png",
+			"selImage" : "/assets/images/tmp/kids/img-normal4-sel.png",
+			"focImage" : "/assets/images/tmp/kids/img-normal4-foc.png",
+			"name" : "옥토넛"
+		},
+		{
+			"norImage" : "/assets/images/tmp/kids/img-normal5.png",
+			"selImage" : "/assets/images/tmp/kids/img-normal5-sel.png",
+			"focImage" : "/assets/images/tmp/kids/img-normal5-foc.png",
+			"name" : "콩순이"
+		}
+	]
+}

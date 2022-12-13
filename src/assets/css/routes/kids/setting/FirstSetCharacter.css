@@ -1,0 +1,56 @@
+/* FirstSetCharacter.css */
+/* FirstSetCharacter */
+.firstSetLimitWrap .characterListWrap{padding:150px 190px;}
+
+:root{
+	--page:0;
+}
+
+.characterListSlide .slideWrapper{transform:translate3d(calc(var(--page) * -285px),0,0); padding-left:578px;}
+.characterListSlide{position:relative;padding-top:80px;}
+.characterListSlide .slideWrap{position:relative;z-index:1;}
+.characterListSlide .title{transform:translate(0,0);font-size:36px;line-height:40px;letter-spacing:-1px;font-weight:400;color:#1a1a1a;}
+.characterListSlide .slideWrap .slideCon{margin:-140px 50px -110px;padding:140px 0 110px;overflow:hidden;}
+.characterListSlide.focus .slideWrap .slideCon{margin:-140px -50px -110px;padding:140px 100px 110px;}
+.characterListSlide .slideWrapper{display:flex;justify-content:space-between;}
+.characterListSlide .slideWrapper .slide{position:relative;z-index:50;padding:0 6px;text-align:center;}
+.characterListSlide .slideWrapper .csFocusCenter{display:block;position:relative;z-index:1;width:273px;height:285px;}
+.characterListSlide .slideWrapper .csFocusCenter .norImage{opacity:1;position:absolute;top:0;left:0;z-index:1;transform:translate(0,0);}
+.characterListSlide .slideWrapper .csFocusCenter .selImage{opacity:0;position:absolute;top:50%;left:50%;z-index:5;transform:translate(-50%,-50%);}
+.characterListSlide .slideWrapper .csFocusCenter .focImage{opacity:0;position:absolute;top:50%;left:50%;z-index:10;transform:translate(-50%,-50%);}
+.characterListSlide .slideWrapper .slide.left,
+.characterListSlide .slideWrapper .slide.right{z-index:5;}
+.characterListSlide .slideWrapper.active .slide.left .csFocusCenter{left:0;transform:translateX(-40%);}
+.characterListSlide .slideWrapper.active .slide.right .csFocusCenter{left:0;transform:translateX(40%);}
+.characterListSlide .slideWrapper .csFocusCenter .norImage{width:273px;height:285px;opacity:1;z-index:1;}
+.characterListSlide .slideWrapper .csFocusCenter .selImage{opacity:0;}
+.characterListSlide .slideWrapper .csFocusCenter .focImage{opacity:0;}
+.characterListSlide .slideWrapper .csFocusCenter.defaultFocus .norImage{opacity:0;}
+.characterListSlide .slideWrapper .csFocusCenter.defaultFocus .selImage{width:400px;height:450px;opacity:1;}
+.characterListSlide .slideWrapper .csFocusCenter.defaultFocus .focImage{opacity:0;}
+.characterListSlide .slideWrapper .active .csFocusCenter .norImage{opacity:0;}
+.characterListSlide .slideWrapper .active .csFocusCenter .selImage{opacity:0;}
+.characterListSlide .slideWrapper .active .csFocusCenter .focImage{width:424px;height:530px;opacity:1;}
+.characterListSlide .slideWrapper .csFocusCenter .slideTitle{opacity:0;line-height:30px;font-size:26px;color:#000;font-weight:700;letter-spacing:-1px;}
+.characterListSlide .slideWrapper .csFocusCenter{transform:scale(1,1);}
+.characterListSlide .slideWrapper .csFocusCenter.focusOn .slideTitle{opacity:1;}
+.characterListSlide .slideWrapper .comeon{display:none;position:absolute;top:-120px;right:-285px;z-index:15;width:347px;height:277px;background:url('/assets/images/tmp/kids/img-comeon.png') no-repeat;}
+.characterListSlide .slideWrapper .active .comeon{display:block;}
+
+.characterListSlide .leftArrow,
+.characterListSlide .rightArrow{position:absolute;top:50%;left:50%;z-index:110;transform:translate(-380%,-30%);width:72px;height:100px;background:url("/assets/images/kids/button/arrow-left.png") no-repeat 0 0;opacity:0;}
+.characterListSlide .rightArrow{left:auto;right:50%;background:url("/assets/images/kids/button/arrow-right.png") no-repeat 0 0;transform:translate(380%,-30%);}
+.characterListSlide.focus .leftArrow,
+.characterListSlide.focus .rightArrow{opacity:1;}
+
+.contentGroup.activeSlide .characterListSlide .title{transform:translate(0,-40px);}
+
+
+
+
+
+
+
+
+
+

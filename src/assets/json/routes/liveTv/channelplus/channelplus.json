@@ -1,0 +1,67 @@
+{
+	"channelplusMainBg" : "/assets/images/tmp/livetv/channelplus-screen-bg.png",
+	"channelplusConts" : [
+		{
+			"watching" : true,
+			"channelNum" : "102",
+			"broadcasterLogo" : "/assets/images/tmp/livetv/img-broadcaster-logo.png",
+			"live" : true,
+			"airTime" : "18:00 ~ 20:00",
+			"baseball" : {
+				"start": true,
+				"teamLogo1": "/assets/images/tmp/livetv/img-baseball-logo-01.png",
+				"teamLogo2": "/assets/images/tmp/livetv/img-baseball-logo-02.png",
+				"teamName1": "한화",
+				"teamName2": "두산",
+				"teamScore1": "2",
+				"teamScore2": "4",
+				"ing": "6회 초"
+			}
+		},
+		{
+			"watching" : false,
+			"channelNum" : "103",
+			"broadcasterLogo" : "/assets/images/tmp/livetv/img-broadcaster-logo.png",
+			"live" : false,
+			"airTime" : "18:00 ~ 20:00",
+			"baseball" : {
+				"start": false,
+				"teamLogo1": "/assets/images/tmp/livetv/img-baseball-logo-03.png",
+				"teamLogo2": "/assets/images/tmp/livetv/img-baseball-logo-04.png",
+				"teamName1": "KT",
+				"teamName2": "넥센",
+				"teamScore1": "",
+				"teamScore2": "",
+				"ing": "3회 초"
+			}
+		},
+		{
+			"watching" : true,
+			"channelNum" : "104",
+			"broadcasterLogo" : "/assets/images/tmp/livetv/img-homeshopping-logo.png",
+			"live" : true,
+			"airTime" : "18:00 ~ 20:00",
+			"homeshopping" : {
+				"productImg": "/assets/images/tmp/livetv/img-homeshopping-01.png",
+				"productTitle": "VT 브이티 리얼 콜라겐 팩트 ",
+				"productCostMonth": "",
+				"productCost": "69,900",
+				"state": "무3"
+			}
+		},
+		{
+			"watching" : false,
+			"channelNum" : "105",
+			"broadcasterLogo" : "/assets/images/tmp/livetv/img-homeshopping-logo.png",
+			"live" : false,
+			"airTime" : "18:00 ~ 20:00",
+			"homeshopping" : {
+				"productImg": "/assets/images/tmp/livetv/img-homeshopping-01.png",
+				"productTitle": "코스텔 냉장고 대형/중형 글자가 길어질 경우",
+				"productCostMonth": "월",
+				"productCost": "12,900",
+				"state": "중형"
+			}
+		}
+	]
+}

@@ -1,0 +1,105 @@
+/* SubCharacter.css */
+.subCharacter .subCharacterWrap {position:relative; z-index:1; width:1920px; height:1080px; background:url('/assets/images/common/default/kids_character_sub_default.png') no-repeat;}
+.subCharacter .subCharacterWrap .characterArea {display:inline-block; position:relative; z-index:1; width:674px; height:100%; vertical-align:top;}
+.subCharacter .subCharacterWrap .characterArea .characterTop {display:block; position:absolute; top:206px; left:0; z-index:10;width:100%;}
+.subCharacter .subCharacterWrap .characterArea .btnPlay {display:block; position:relative; z-index:1; margin:0 auto; width:249px; height:146px; background:url("/assets/images/kids/character/btn-allplay-nor.png") no-repeat center center; text-align:center;}
+.subCharacter .subCharacterWrap .characterArea .btnPlay.focusOn {transform:scale(1.2); background-image:url("/assets/images/kids/character/btn-allplay-foc.png");}
+.subCharacter .subCharacterWrap .characterArea .btnPlay span {display:inline-block; padding:22px 0 35px; font-size:28px; font-weight:700; line-height:88px; letter-spacing:normal; text-align:center; color:#fff;}
+.subCharacter .subCharacterWrap .characterArea .btnPlay span:before {content:""; display:inline-block; width:32px; height:32px; background:url("/assets/images/kids/character/ic-allplay-nor.png") no-repeat center center; vertical-align:middle;}
+.subCharacter .subCharacterWrap .characterArea .btnPlay.focusOn span:before {transform:scale(1); background:url("/assets/images/kids/character/ic-allplay-foc.png");}
+.subCharacter .subCharacterWrap .characterArea .btnPlay.focusOn span {color:#f5513f;}
+.subCharacter .subCharacterWrap .characterArea .btnDetail.csFocus {display:block; position:absolute; left:50%; bottom:20px; z-index:10; margin-left:-88px; width:176px; height:130px; background:url("/assets/images/kids/character/btn-event-detail-nor.png") no-repeat center center; text-align:center;}
+.subCharacter .subCharacterWrap .characterArea .btnDetail.csFocus.focusOn {transform:scale(1.2); background:url("/assets/images/kids/character/btn-detail-foc.png");}
+.subCharacter .subCharacterWrap .characterArea .btnDetail.csFocus span {display:inline-block; padding:19px 0 33px; font-size:28px; font-weight:700; line-height:78px; letter-spacing:normal; text-align:center; color:rgba(255, 255, 255, 0.7);}
+.subCharacter .subCharacterWrap .characterArea .btnDetail.csFocus.focusOn span {color:#f5513f;}
+	/* 우선 스크롤만 되도록 하라고 하심. */
+.subCharacter .subCharacterWrap .videoArea {overflow-y:auto; height:auto; scroll-behavior:smooth;}
+.subCharacter .subCharacterWrap .videoArea {display:inline-block; position:relative; z-index:10; margin-left:-30px; padding:96px 288px 132px 128px; width:calc(100% - 644px); background-repeat:no-repeat; background-position:left top;}
+.subCharacter .subCharacterWrap .videoArea .subListWrapper:first-child {padding-top:0; border:none;}
+.subCharacter .subCharacterWrap .videoArea .continueWrap {padding-bottom:57px;}
+.subCharacter .subCharacterWrap .videoArea .subListWrapper {padding-top:50px; border-top:1px solid rgba(255, 255, 255, 0.35);}
+.subCharacter .subCharacterWrap .videoArea .subListWrapper + .subListWrapper {margin-top:50px;}
+.subCharacter .subCharacterWrap .videoArea .subListWrapper .wrapperTitle {padding-bottom:28px; font-size:36px; line-height:normal; letter-spacing:normal; color:rgba(255, 255, 255, 0.9);}
+
+.continueWrap .videoImg {position:relative; z-index:1;}
+.continueWrap .videoImg:after {content:""; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); -webkit-transform:translate(-50%, -50%); z-index:10; width:164px; height:164px; background:url("/assets/images/kids/character/ic-play-nor.png") no-repeat center center;}
+.continueWrap .videoImg.focusOn:after {background:url("/assets/images/kids/character/ic-play-foc.png") no-repeat center center;}
+.continueWrap .videoImg .loadingBar {display:block; overflow:hidden; position:absolute; bottom:0; left:0; z-index:20; width:100%; height:12px; border-radius:0 0 4px 4px; background:rgba(51, 51, 51, 0.75); transform:translate3d(0,0,0);}
+.continueWrap .videoImg .loadingBar .currentState {position:absolute; bottom:0; left:0; z-index:20; height:12px; background:linear-gradient(to right, #ff7422, #e5186f);}
+.continueWrap .videoDetail .continue {display:inline-block; margin-bottom:24px; padding:10px 16px 9px 15px; background-color:rgba(0, 0, 0, 0.3); border-radius:100px; font-size:26px; line-height:normal; letter-spacing:normal; color:#fff;}
+.continueWrap .videoDetail .text {padding-bottom:12px;}
+.continueWrap .videoDetail .text span {display:inline-block;font-size:44px; font-weight:700; line-height:normal; letter-spacing:normal; color:#f4f4f4;}
+.continueWrap .videoDetail .text .title:before {content:""; display:inline-block; margin:0 12px; width:1px; height:36px; background:rgba(244, 244, 244, 0.4);}
+.continueWrap .videoDetail .text .title:first-child:before {display:none;}
+.continueWrap .videoDetail .subTitle {font-size:30px; line-height:normal; letter-spacing:normal; color:#d4d4d4;}
+
+.videoArea .continueWrap .inner,
+.videoArea .subListWrapper .listSeason li {display:table;font-size:0;}
+.videoArea .continueWrap .videoImg,
+.videoArea .subListWrapper .listSeason li .videoImg {position:relative;z-index:1;display:inline-block; vertical-align:top; width:306px;height:172px;border-radius:4px;background:url('/assets/images/common/default/thumbnail_default_land.png') no-repeat 0 0;background-size:100% 100%;box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.2);}
+.videoArea .continueWrap .videoImg.focusOn,
+.videoArea .subListWrapper .listSeason li .videoImg.focusOn {transform:scale(1.2);border-radius:4px; box-shadow: 0 14px 14px 0 rgba(0, 0, 0, 0.35);}
+.videoArea .continueWrap .videoImg img,
+.videoArea .subListWrapper .listSeason li .videoImg img{border-radius:4px;}
+	/* 이미지 리소스가 없어서 임의로 가로세로를 강제로 줌. */
+	.videoArea img {width:306px; height:172px;}
+.videoArea .continueWrap .videoDetail,
+.videoArea .subListWrapper .listSeason li .videoDetail {display:inline-block; width:calc(100% - 306px); padding-left:50px;}
+.videoArea .continueWrap .videoDetail .text{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.videoArea .continueWrap .videoDetail , .videoArea .subListWrapper .listSeason li {height:172px;}
+
+.videoArea .subListWrapper .listSeason li + li {margin-top:19px;}
+.videoArea .subListWrapper .listSeason li .videoDetail {display:table-cell;height:211px;padding-top:0;vertical-align:middle;}
+.videoArea .subListWrapper .listSeason li .videoDetail .title {padding-bottom:3px; font-size:34px; font-weight:700; line-height:normal; letter-spacing:normal; text-align:left; color:#d4d4d4;display: -webkit-box;overflow: hidden;text-overflow: ellipsis;white-space: normal;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+.videoArea .subListWrapper .listSeason li .videoDetail .csFocus {display:inline-block; position:relative; z-index:1; margin-left:-13px; width:176px; height:130px; background:url("/assets/images/kids/character/btn-detail-nor.png") no-repeat center center; text-align:center;}
+.videoArea .subListWrapper .listSeason li .videoDetail .csFocus.focusOn {transform:scale(1.2); background:url("/assets/images/kids/character/btn-detail-foc.png");}
+.videoArea .subListWrapper .listSeason li .videoDetail .csFocus span {display:inline-block; padding:19px 0 33px; font-size:28px; font-weight:700; line-height:78px; letter-spacing:normal; text-align:center; color:#e4e4e4;}
+.videoArea .subListWrapper .listSeason li .videoDetail .csFocus.focusOn span {color:#f5513f;}
+
+.videoArea .subListWrapper .appContent {font-size:0;}
+.videoArea .subListWrapper .appContent .csFocus{position:relative;z-index:1;display:inline-block;width:200px;height:200px;}
+.videoArea .subListWrapper .appContent .csFocus.focusOn{transform:scale(1.2);}
+.videoArea .subListWrapper .appContent .wrapImg {overflow:hidden; display:inline-block; width:200px; height:200px; border-radius:12px; box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.15);}
+.videoArea .subListWrapper .appContent .desc {display:inline-block; padding-left:50px; width:calc(100% - 200px); height:200px; font-size: 34px; font-weight: 700; line-height: 1.41; letter-spacing: -1px; color: rgba(244, 244, 244, 0.8); vertical-align:top;}
+.videoArea .subListWrapper .appContent .desc span {display:table-cell; height:200px; vertical-align:middle;}
+
+.navigator {position:fixed; top:312px; right:32px; z-index:100; width:176px; padding:21px 0; background-size:148px auto; background-position:center center; background-repeat:no-repeat;}
+.navigator.num2 {height:250px; background-image:url("/assets/images/kids/character/img-kids-tabbg-two.png");}
+.navigator.num3 {height:354px; background-image:url("/assets/images/kids/character/img-kids-tabbg-three.png");}
+.navigator.num4 {height:458px; background-image:url("/assets/images/kids/character/img-kids-tabbg-four.png");}
+.navigator.num5 {height:562px; background-image:url("/assets/images/kids/character/img-kids-tabbg-five.png");}
+.navigator .naviItem {position:relative; z-index:1;}
+.navigator .naviItem + .naviItem:before {content:""; display:block; position:absolute; top:0; left:50%; z-index:10; transform:translate(-50%, 0);width:54px; height:1px; background: rgba(255, 255, 255, 0.2);}
+.navigator .naviItem .csFocus {display:block; position:relative; z-index:1; width:176px; height:104px;}
+.navigator .naviItem .csFocus.focusOn {z-index:10; transform:scale(1.2);}
+/*.navigator .naviItem .csFocus.focusOn:before {content:""; display:block; position:absolute; top:0; left:0; z-index:10; width:176px; height:130px; background:url("/update/ic-kids-tab-season-foc.png"); background-size:176px 130px;}*/
+.navigator .naviItem .csFocus span {position:absolute; top:0; left:0; z-index:10; display:block; width:176px; height:104px;}
+
+.navigator .naviItem .icon {opacity:1; display:block;}
+/*.navigator .naviItem.sel .icon{background-image:url("/update/ic-kids-tab-season-sel.png");}*/
+/*.navigator .naviItem.song .icon{background-image:url("/update/ic-kids-tab-music-nor.png");}*/
+/*.navigator .naviItem.song .csFocus.focusOn:before{background-image:url("/update/ic-kids-tab-music-foc.png");}*/
+/*.navigator .naviItem.song.sel .icon{background-image:url("/update/ic-kids-tab-music-sel.png");}*/
+/*.navigator .naviItem.movie .icon{background-image:url("/update/ic-kids-tab-movie-nor.png");}*/
+/*.navigator .naviItem.movie .csFocus.focusOn:before{background-image:url("/update/ic-kids-tab-movie-foc.png");}*/
+/*.navigator .naviItem.movie.sel .icon{background-image:url("/update/ic-kids-tab-movie-sel.png");}*/
+/*.navigator .naviItem.app .icon{background-image:url("/update/ic-kids-tab-app-nor.png");}*/
+/*.navigator .naviItem.app .csFocus.focusOn:before{background-image:url("/update/ic-kids-tab-app-foc.png");}*/
+/*.navigator .naviItem.app.sel .icon{background-image:url("/update/ic-kids-tab-app-sel.png");}*/
+/*.navigator .naviItem.entertain .icon{background-image:url("/update/ic-kids-tab-entertain-nor.png");}*/
+/*.navigator .naviItem.entertain .csFocus.focusOn:before{background-image:url("/update/ic-kids-tab-entertain-foc.png");}*/
+/*.navigator .naviItem.entertain.sel .icon{background-image:url("/update/ic-kids-tab-entertain-sel.png");}*/
+/*.navigator .naviItem .csFocus.focusOn .icon {opacity:0;}*/
+
+.navigator .naviItem .csFocus .text {opacity:0; padding:19px 0 33px; font-size:30px; font-weight:700; line-height:78px; letter-spacing:normal; color:#fff; text-align:center;}
+/*.navigator .naviItem.sel .csFocus .text {opacity:1; color:#fff;}*/
+/*.navigator .naviItem.sel .csFocus .icon {opacity:0;}*/
+.navigator .naviItem .csFocus.focusOn .text {opacity:1; color:#f5513f;}
+
+.videoArea .continueWrap .videoImg:before,
+.videoArea .subListWrapper .listSeason li .videoImg:before,
+.videoArea .subListWrapper .appContent .csFocus:before{position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;content:"";display:block;border-radius:2px;overflow:hidden;box-shadow:0 0 0 5px #f4f4f4;opacity:0;}
+.videoArea .subListWrapper .appContent .csFocus:before{border-radius:14px;}
+.videoArea .continueWrap .videoImg.focusOn:before,
+.videoArea .subListWrapper .listSeason li .videoImg.focusOn:before,
+.videoArea .subListWrapper .appContent .csFocus.focusOn:before{box-shadow:0 0 0 5px #f4f4f4;opacity:1;}

@@ -1,0 +1,14 @@
+{
+	"type" : "DetailTop",
+	"bg" : "/assets/images/tmp/kids/bg-kids-montly-kidsclub.png",
+	"detailContent": {
+		"title" : "키즈 클럽 플러스",
+		"InfoText": "[키즈클럽] 콘텐츠는 물론, 핑크퐁, 뽀로로, 캐리 등을 아이들이 마음껏<br/> 시청하실 수 있는 월정액 서비스입니다.",
+		"priceInfo" : "부가세 포함 / 3년약정 기준"
+	},
+	"listBtnItem" : {
+		"price" : "4400",
+		"type" : "월정액 가입"
+	}
+
+}

@@ -1,0 +1,23 @@
+{
+	"purchaseImg": "/assets/images/tmp/mybtv/bg-purchase-cancel.png",
+	"purchaseState": "/assets/images/mybtv/logo-premier-purchase-cancel.png",
+	"purchaseInfo": {
+		"type" : "일반월정액",
+		"itemPrice" : {
+			"price": "15000",
+			"value" : "원/월",
+			"point" : "500"
+		},
+		"payment" : "청구서",
+		"applyDate" : "2017.05.03",
+		"usePeriod" : "해지 후 이용 불가"
+	},
+	"purchaseNotice": [
+		"상기 결제금액은 해지 시점에 따라 실제 결제금액과 상이할 수 있습니다.",
+		"가입 첫 달 이용 중 해지하시면 1개월 이용 후 월정액 요금 전액이 청구됩니다.",
+		"1개월 이상 이용 중 해지하시면 해당 월 이용요금이 일할 계산되어 다음달에 청구됩니다.",
+		"기타 상품관련 문의사항은 B tv 고객센터(국번없이 106)로 문의해주세요."
+
+	]
+
+}

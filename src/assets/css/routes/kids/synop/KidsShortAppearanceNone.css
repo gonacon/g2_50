@@ -1,0 +1,46 @@
+/* KidsShortAppearanceNone.css */
+:root{
+	--page:0;
+}
+
+.slideShortAppearanceNone{position:relative;z-index:1;padding-top:21px;}
+.slideShortAppearanceNone .slideWrap{position:relative;z-index:1;transform:translate(0,0);}
+.slideShortAppearanceNone .title{transform:translate(0,0);font-size:36px;line-height:40px;letter-spacing:-1px;font-weight:400;color:rgba(48,48,48,1);}
+.slideShortAppearanceNone .slideWrap .slideCon{margin:-44px -30px 0;padding:48px 10px 60px;overflow:hidden;}
+.slideShortAppearanceNone .slideWrapper{display:flex;justify-content:space-between;transform:translate3d(calc(var(--page) * -288px),0,0);}
+.slideShortAppearanceNone .slideWrapper .slide{margin:0 20px;text-align:center;}
+.slideShortAppearanceNone .slideWrapper .csFocus{display:block;width:248px;height:178px;padding:14px 0;border-radius:4px;background-color:rgba(255,255,255,0.17);box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.2);transform:scale(1,1);}
+.slideShortAppearanceNone .slideWrapper .csFocus.focusOn{background-color:rgba(244,244,244,1);box-shadow:0 10px 10px 0 rgba(0, 0, 0, 0.3), 0 0 10px 0 rgba(0, 0, 0, 0.1);transform:scale(1.19,1.19);}
+
+.slideShortAppearanceNone .slideWrapper .csFocus .personInfo{display:table;width:100%;}
+.slideShortAppearanceNone .slideWrapper .csFocus .personInfo .infoArea{display:table-cell;height:122px;padding:0 10px;vertical-align:middle;}
+/*.slideShortAppearanceNone .slideWrapper .csFocus .personInfo .infoArea .infoName,*/
+/*.slideShortAppearanceNone .slideWrapper .csFocus .personInfo .infoArea .infoCast{display:block;}*/
+.slideShortAppearanceNone .slideWrapper .csFocus .personInfo .infoArea .infoName{font-size:28px;color:rgba(26,26,26,1);line-height:30px;font-weight:700;word-break:keep-all;word-wrap: break-word;display: -webkit-box;overflow: hidden;text-overflow: ellipsis;white-space: normal;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+.slideShortAppearanceNone .slideWrapper .csFocus .personInfo .infoArea .infoCast{display:block;margin-top:10px;font-size:22px;color:rgba(48,48,48,1);line-height:24px;font-weight:500;word-break:keep-all;}
+.slideShortAppearanceNone .slideWrapper .csFocus .personInfo .infoArea .infoCast span{display:inline-block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:200px;vertical-align:middle;}
+.slideShortAppearanceNone .slideWrapper .csFocus .partArea{display:block;font-size:24px;color:rgba(106,106,106,1);line-height:28px;text-align:center;}
+.slideShortAppearanceNone .slideWrapper .csFocus.focusOn .personInfo .infoArea .infoName{color:rgba(245, 81, 63,1);}
+.slideShortAppearanceNone .slideWrapper .csFocus.focusOn .personInfo .infoArea .infoCast{color:rgba(245, 81, 63,0.8);}
+
+.contentGroup.activeSlide .slideShortAppearanceNone .title{transform:translate(0,-17px);}
+
+.slideShortAppearanceNone .slideLeft,
+.slideShortAppearanceNone .slideRight{position:absolute;top:50%;left:-70px;z-index:10;transform:translate(0,-50%);width:24px;height:58px;background:url("/assets/images/common/icon/arrow-left.png") no-repeat 0 0;opacity:0;}
+.slideShortAppearanceNone .slideRight{left:auto;right:-70px;background:url("/assets/images/common/icon/arrow-right.png") no-repeat 0 0;}
+.slideShortAppearanceNone .activeSlide.leftActive .slideLeft,
+.slideShortAppearanceNone .activeSlide.rightActive .slideRight{opacity:1;}
+
+.slideShortAppearanceNone .slideCount {position: absolute;top: 10px;right: 0;z-index: 10;font-size: 23px;color: #666;line-height: 1.83;letter-spacing: normal;opacity: 0;transform:translate(0,0);}
+.slideShortAppearanceNone .slideWrap.lastActive .slideCount{transform:translate(0,-17px);}
+.slideShortAppearanceNone .activeSlide .slideCount {opacity:1;}
+
+.dark .slideShortAppearanceNone .title{color:rgba(244,244,244,1);}
+.dark .slideShortAppearanceNone .slideWrapper .csFocus .personInfo .infoArea .infoName{color:rgba(244,244,244,1);}
+.dark .slideShortAppearanceNone .slideWrapper .csFocus .personInfo .infoArea .infoCast{color:rgba(244,244,244,0.8);}
+.dark .slideShortAppearanceNone .slideWrapper .csFocus .partArea{color:rgba(244,244,244,0.8);}
+.dark .slideShortAppearanceNone .slideWrapper .csFocus.focusOn .personInfo .infoArea .infoName{color:rgba(245, 81, 63,1);}
+.dark .slideShortAppearanceNone .slideWrapper .csFocus.focusOn .personInfo .infoArea .infoCast{color:rgba(245, 81, 63,0.8);}
+.dark .slideShortAppearanceNone .slideWrapper .csFocus.focusOn .partArea{color:rgba(26,26,26,0.8);}
+
+.dark .slideShortAppearanceNone .slideCount {color: rgba(212,212,212,1);}

@@ -1,0 +1,31 @@
+{
+	"slideType" : "MainSlide",
+	"slideItem": [
+		{
+			"title" : "11라라랜드 시청하고<br/>여행상품권 받으세요!",
+			"bgColor" : "#272729",
+			"imageS": "/assets/images/video/moana_video.mov",
+			"videoF": "/assets/images/video/moana_video.mov",
+			"link": "/"
+		},
+		{
+			"imageS": "/assets/images/video/moana_video.mov",
+			"videoH": "/assets/images/video/moana_video.mov",
+			"videoF": "/assets/images/video/moana_video.mov",
+			"link": "/allMenu/allMenu"
+		},
+		{
+			"title" : "22라라랜드 시청하고<br/>여행상품권 받으세요!",
+			"bgColor" : "#272729",
+			"imageS": "/assets/images/video/moana_video.mov",
+			"videoF": "/assets/images/video/moana_video.mov",
+			"link": "/"
+		},
+		{
+			"imageS": "/assets/images/video/moana_video.mov",
+			"videoH": "/assets/images/video/moana_video.mov",
+			"videoF": "/assets/images/video/moana_video.mov",
+			"link": "/allMenu/allMenu"
+		}
+	]
+}

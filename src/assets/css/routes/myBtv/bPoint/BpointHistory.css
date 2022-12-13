@@ -1,0 +1,57 @@
+/* BpointHistory.css */
+.BpointHistory {}
+.BpointHistory .wrapper {padding-top:72px; }
+.BpointHistory .wrapper {font-size:0;}
+.BpointHistory .left {display:inline-block;}
+.BpointHistory .right {display:inline-block; padding-left:83px; vertical-align:top;}
+.BpointHistory .right .btnBlock + .btnBlock {margin-top:36px;}
+.BpointHistory .right .csFocus {display:block; width:100%; text-align:center;}
+.BpointHistory .right .csFocus,
+.BpointHistory .right .csFocus:before {min-width:340px;}
+.BpointHistory .subInfo strong {margin:0 8px; font-weight:700; font-size:34px; line-height:1.12; letter-spacing:normal; color:#1a1a1a;}
+.BpointHistory .bottomWrap {position:absolute; bottom:0; left:0; z-index:10; width:100%; padding:45px 115px 0; height:194px; background-color:rgba(237, 239, 243, 0.5); box-shadow:0 0 50px 0 rgba(0, 0, 0, 0.1);}
+.BpointHistory .bottomWrap:after {display:block; clear:both; content:"";}
+.BpointHistory .bottomWrap .textWrap {display:inline-block;}
+.BpointHistory .bottomWrap .textWrap .textInfo {font-size:32px; line-height:46px; letter-spacing:normal; text-align:left; color:#4a4a4a;}
+.BpointHistory .bottomWrap .textWrap .subDesc {padding-top:5px; font-size:26px; line-height:38px; letter-spacing:normal; color:#6a6a6a;}
+.BpointHistory .bottomWrap .optionWrap {float:right; margin-top:0;}
+
+
+.tableWrap {width:1262px;}
+.tableWrap .innerContentPop {margin:0; width:1262px; height:475px; /*border-bottom:1px solid rgba(0, 0, 0, 0.4);*/}
+.tableWrap table {text-align:center;}
+.tableWrap .tableHead thead tr th {border-top:1px solid rgba(0, 0, 0, 0.4); border-bottom:1px solid rgba(0, 0, 0, 0.4); padding:16px 0 14px; background:rgba(83, 88, 105, 0.12); font-size:26px; font-weight:700; line-height:1.15; letter-spacing:normal; color:#303030;}
+.tableWrap .tableHead thead tr th + th {border-left:1px solid rgba(0, 0, 0, 0.1);}
+.tableWrap .innerContentPop {position:relative; z-index:1;}
+.tableWrap .innerContentPop .innerContentInfo {display:block; overflow-y:auto; height:100%; margin:0 auto;scroll-behavior:smooth;}
+.tableWrap .innerContentPop .innerContentInfo::-webkit-scrollbar {width:0;}
+.tableWrap .innerContentPop .innerContentInfo .contentInfo {display:block; margin:0; width:1262px;}
+.tableWrap .innerContentPop .innerContentInfo.csFocus .contentInfo {display:block; margin:0; width:1244px;}
+.tableWrap .innerContentPop .contentInfo tbody tr:first-child td {border-top:none;}
+.tableWrap .innerContentPop .contentInfo tbody tr:last-child td {border-bottom:1px solid rgba(0, 0, 0, 0.4);}
+.tableWrap .innerContentPop .contentInfo tbody tr.rowSpan {height:474px;}
+.tableWrap .innerContentPop .contentInfo tbody tr.rowSpan td {padding:0; vertical-align:middle;}
+.tableWrap .innerContentPop .contentInfo tbody tr td {padding:27px 0 22px; height:79px; border-top:1px solid rgba(0, 0, 0, 0.4); font-size:26px; line-height:1.15; letter-spacing:-1px; color:#6a6a6a; background-color: rgba(244, 244, 244, 0.2);}
+.tableWrap .innerContentPop .contentInfo tbody tr td + td {border-left:1px solid rgba(0, 0, 0, 0.1);}
+.tableWrap .innerContentPop .contentInfo tbody tr td.alignL {padding-left:30px; text-align:left;}
+.tableWrap .innerContentPop .contentInfo tbody tr td.alignR {padding-right:14px; text-align:right;}
+.tableWrap .innerContentPop .contentInfo tbody tr td.important {font-weight:bold; color:#262626;}
+.tableWrap .innerContentPop .contentInfo tbody tr td.point {padding:27px 30px 22px; text-align:right;}
+.tableWrap .innerContentPop .contentInfo tbody tr td.none {background:rgba(244, 244, 244, 0.2); font-size:40px; color:#4a4a4a;}
+.tableWrap .innerContentPop .scrollBarBox {display:block; position:absolute; top:0; bottom:0; right:14px; z-index:1005; width:28px; height:100%;}
+.tableWrap .innerContentPop .scrollBarBox.type02,
+.tableWrap .innerContentPop .scrollBarBox.type02 .innerScrollBarBox {display:block; position:absolute; top:0; bottom:0; right:-3px; z-index:1005; width:28px; height:100%;}
+.tableWrap .innerContentPop .scrollBarBox.type02 .innerScrollBarBox .scrollBar {display:block; position:absolute; top:0; left:0; right:0; border-radius:16px; height:200px; width:28px; background:#676b7b; box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.15);}
+.tableWrap .innerContentPop .scrollBarBox.type02 .scrollBarBG {display:block; width:16px; height:100%; margin:0 auto; background:rgba(0, 0, 0, 0.2); border-radius:16px 16px 0 0;}
+
+.tableWrap .innerContentPop .innerContentInfo + .scrollBarBox {display:none;}
+.tableWrap .innerContentPop .innerContentInfo.csFocus + .scrollBarBox {display:block;}
+.tableWrap .innerContentPop .innerContentInfo .scrollBarBox.type02 .scrollBarBG {display:block; width:16px; height:100%; margin:0 auto; background:rgba(0, 0, 0, 0.2); border-radius:16px 16px 0 0;}
+.tableWrap .innerContentPop .innerScrollBarBox .scrollBar:before,
+.tableWrap .innerContentPop .innerScrollBarBox .scrollBar:after {position:absolute; top:0; left:0; z-index:10; display:block; width:28px; height:30px; content:""; background:url(/assets/images/common/icon/img-scroll-g-pop-up.png) 0 0 no-repeat;}
+.tableWrap .innerContentPop .innerScrollBarBox .scrollBar:after{top:auto; bottom:0; background-image:url(/assets/images/common/icon/img-scroll-g-pop-down.png);}
+
+.tableWrap .innerContentPop .innerContentInfo.focusOn + .scrollBarBox.type02 .innerScrollBarBox .scrollBar {left:-2px; width:32px; background:#f4f4f4; box-shadow:0 24px 16px 0 rgba(0, 0, 0, 0.35);}
+.tableWrap .innerContentPop .innerContentInfo.focusOn + .scrollBarBox .innerScrollBarBox .scrollBar:before,
+.tableWrap .innerContentPop .innerContentInfo.focusOn + .scrollBarBox .innerScrollBarBox .scrollBar:after {width:32px; height:30px; content:""; background:url(/assets/images/common/icon/img-scroll-pop-up-foc.png) 0 0 no-repeat;}
+.tableWrap .innerContentPop .innerContentInfo.focusOn + .scrollBarBox .innerScrollBarBox .scrollBar:after {background-image:url(/assets/images/common/icon/img-scroll-pop-down-foc.png);}

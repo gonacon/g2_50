@@ -1,0 +1,10 @@
+{
+	"pageType" : "AlarmDelete",
+	"alarmItem" : [{
+		"type" : "rest",
+		"text" : "휴식시간",
+		"time" : "오전10시",
+		"count" : "한번만",
+		"day" : ["월", "수", "금"]
+	}]
+}

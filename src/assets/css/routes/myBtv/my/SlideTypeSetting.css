@@ -1,0 +1,39 @@
+/* SlideTypeSetting.css */
+:root {
+	--page:0; 
+}
+
+.slideTypeSetting .slideWrapper {transform:translate3d(calc(var(--page) * -348px),0,0);}
+
+.slideTypeSetting {padding-top:80px;}
+.slideTypeSetting .slideWrap {position:relative; z-index:1;}
+.slideTypeSetting .title {transform:translate(0,0); font-size:36px; line-height:40px; letter-spacing:-1px; font-weight:400; color:#1a1a1a;}
+.slideTypeSetting .slideWrap .slideCon {margin:-44px -41px -50px; padding:60px 16px 80px; overflow:hidden;}
+.slideTypeSetting .slideWrapper {display:flex; justify-content:space-between;}
+.slideTypeSetting .slideWrapper .slide {padding:0 25px; height:284px;}
+.slideTypeSetting .slideWrapper .csFocus {padding:40px 0 0; width:298px; height:284px; border-radius:4px; text-align:center; background:linear-gradient(152deg, rgba(120, 122, 143, 0.8), rgba(144, 145, 164, 0.7)); box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);}
+.slideTypeSetting .slideWrapper .csFocus.focusOn {transform:scale(1.2,1.2); background:rgb(244, 244, 244); box-shadow:0 24px 16px 0 rgba(0, 0, 0, 0.35);}
+.slideTypeSetting .slideWrapper .csFocus .wrapImg {display:flex; height:120px; align-items:center; justify-content:center;}
+.slideTypeSetting .slideWrapper .csFocus .wrapImg img {height:auto;}
+.slideTypeSetting .slideWrapper .csFocus .wrapImg img:last-child,
+.slideTypeSetting .slideWrapper .csFocus.focusOn .wrapImg img:first-child {display:none;}
+.slideTypeSetting .slideWrapper .csFocus.focusOn .wrapImg img:last-child {display:block;}
+.slideTypeSetting .slideWrapper .csFocus .slideTitle {padding-top:9px; text-align:center; vertical-align:middle;}
+.slideTypeSetting .slideWrapper .csFocus .slideTitle .text {font-size:30px; font-weight:700; line-height:1.33; letter-spacing:normal; color:#f4f4f4;}
+.slideTypeSetting .slideWrapper .csFocus.focusOn .slideTitle .text {color:#f5513f;}
+.slideTypeSetting .slideWrapper .csFocus .icConnect{display:block;position:absolute;top:32px;right:84px;width:40px;height:40px;background:url('/assets/images/mybtv/ic-pairing.png') no-repeat 0 0;}
+/*.slideTypeSetting .slideWrapper .csFocus.focusOn .icConnect{display:block;position:absolute;top:24px;right:84px;width:48px;height:48px;background:url('/assets/images/mybtv/ic-pairing-foc.png') no-repeat 0 0;}*/
+.slideTypeSetting .slideWrapper .csFocus .slideTitle .option {margin-top:9px; font-size:26px; line-height:1.54; letter-spacing:normal; color:rgba(212,212,212,1);}
+.slideTypeSetting .slideWrapper .csFocus .slideTitle .option.connect {overflow:hidden; display:inline-block; padding:1px 20px; max-width:236px; border-radius:100px; background-image:linear-gradient(rgb(132, 133, 153), rgb(132, 133, 153)); line-height:1.46; letter-spacing:normal; color:#fff; text-overflow: ellipsis; white-space: nowrap;}
+.slideTypeSetting .slideWrapper .csFocus.focusOn .slideTitle .option {color:rgba(0, 0, 0, 0.8);}
+.slideTypeSetting .slideWrapper .csFocus.focusOn .slideTitle .option.connect {background:linear-gradient(289deg, rgba(255, 110, 53, 0.85), rgba(234, 48, 74, 0.85)); color:#fff;}
+
+.slideTypeSetting.setting .slideWrapper .csFocus .slideTitle {padding-top:24px;}
+
+.slideTypeSetting .leftArrow,
+.slideTypeSetting .rightArrow {position:absolute; top:50%; left:-70px; z-index:10; transform:translate(0,-50%); margin-top:-10px; width:23px; height:58px; background:url("/assets/images/common/icon/arrow-left.png") no-repeat 0 0; opacity:0;}
+.slideTypeSetting .rightArrow {left:auto; right:-70px; background:url("/assets/images/common/icon/arrow-right.png") no-repeat 0 0;}
+.slideTypeSetting .activeSlide.leftActive .leftArrow,
+.slideTypeSetting .activeSlide.rightActive .rightArrow{opacity:1;}
+
+.contentGroup.activeSlide .title {transform:translate(0,-40px);}

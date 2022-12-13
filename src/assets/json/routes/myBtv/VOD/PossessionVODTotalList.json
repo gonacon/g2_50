@@ -1,0 +1,66 @@
+{
+	"pageType": "PossessionVODTotalList",
+	"bg" : "/assets/images/myBtv/bg-own-vod-02.png",
+	"slideItem": [
+		{
+			"imageS" : "/assets/images/tmp/mybtv/img-recommend-dvd-01.png",
+			"title" : "캡틴아메리카<br/>시빌워",
+			"age" : "11",
+			"resolution":"UHD",
+			"year":"2016",
+			"time":"147",
+			"sound":"DOLBY",
+			"language":"다국어",
+			"supervisor" : "안소니 루소",
+			"actor" : ["크리스 에반스", "로버트 다우니 주니어", "스칼렛 요한슨"]
+		},
+		{
+			"imageS" : "/assets/images/tmp/mybtv/img-recommend-dvd-01.png",
+			"title" : "나우 유 씨미<br/>마술사기단",
+			"age" : "12",
+			"resolution":"UHD",
+			"year":"2016",
+			"time":"147",
+			"sound":"DOLBY",
+			"language":"다국어",
+			"supervisor" : "안소니 루소",
+			"actor" : ["크리스 에반스", "로버트 다우니 주니어", "스칼렛 요한슨"]
+		},
+		{
+			"imageS" : "/assets/images/tmp/mybtv/img-recommend-dvd-01.png",
+			"title" : "캡틴아메리카시빌워",
+			"age" : "13",
+			"resolution":"UHD",
+			"year":"2016",
+			"time":"147",
+			"sound":"DOLBY",
+			"language":"다국어",
+			"supervisor" : "안소니 루소",
+			"actor" : ["크리스 에반스", "로버트 다우니 주니어", "스칼렛 요한슨"]
+		},
+		{
+			"imageS" : "/assets/images/tmp/mybtv/img-recommend-dvd-01.png",
+			"title" : "캡틴아메리카<br/>시빌워",
+			"age" : "14",
+			"resolution":"UHD",
+			"year":"2016",
+			"time":"147",
+			"sound":"DOLBY",
+			"language":"다국어",
+			"supervisor" : "안소니 루소",
+			"actor" : ["크리스 에반스", "로버트 다우니 주니어", "스칼렛 요한슨"]
+		},
+		{
+			"imageS" : "/assets/images/tmp/mybtv/img-recommend-dvd-01.png",
+			"title" : "캡틴아메리카<br/>시빌워",
+			"age" : "15",
+			"resolution":"UHD",
+			"year":"2016",
+			"time":"147",
+			"sound":"DOLBY",
+			"language":"다국어",
+			"supervisor" : "안소니 루소",
+			"actor" : ["크리스 에반스", "로버트 다우니 주니어", "스칼렛 요한슨"]
+		}
+	]
+}

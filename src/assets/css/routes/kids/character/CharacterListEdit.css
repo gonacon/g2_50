@@ -1,0 +1,41 @@
+/* CharacterListEdit.css */
+.characterListEdit {padding-top:134px;}
+.characterListEdit .contentGroup + .contentGroup {padding-top:78px;}
+
+.characterListEdit .slideWrap .slideCon:after {display:block; clear:both; content:"";}
+.characterListEdit .slideWrap .slideCon .item {float:left; display:block;}
+.characterListEdit .slideWrap .slideCon .item + .item {margin-left:71px;}
+
+.characterListEdit .slideWrap .slideCon .item .checkStyleList {position:relative; z-index:1; padding:0;}
+.characterListEdit .slideWrap .slideCon .item .checkStyleList:before {display:none;}
+.characterListEdit .slideWrap .slideCon .item .checkStyleList .norImg,
+.characterListEdit .slideWrap .slideCon .item .checkStyleList .disImg {position:relative;z-index:1; display:block; width:180px; height:180px; border-radius:180px; box-shadow:0 4px 4px 0 rgba(53, 58, 66, 0.3);}
+.characterListEdit .slideWrap .slideCon .item .checkStyleList .norImg img,
+.characterListEdit .slideWrap .slideCon .item .checkStyleList .disImg img{border-radius:180px;}
+.characterListEdit .slideWrap .slideCon .item .checkStyleList.focusOn {transform:scale(1.25);}
+.characterListEdit .slideWrap .slideCon .item .checkStyleList:after {position:absolute; top:auto; left:auto; bottom:41px; right:-10px; z-index:10; width:80px; height:80px; border-radius:80px; background-size:80px; background:none;}
+/*.characterListEdit .slideWrap .slideCon .item.dis .checkStyleList:after {background:url("/assets/images/kids/character/ic-kids-off-nor.png") no-repeat center center;}*/
+.characterListEdit .slideWrap .slideCon .item .checkStyleList.focusOn:after {background:url("/assets/images/kids/character/ic-kids-on-foc.png") no-repeat center center;}
+/*.characterListEdit .slideWrap .slideCon .item.dis .checkStyleList.focusOn:after,*/
+.characterListEdit .slideWrap .slideCon .item .checkStyleList.focusOn[select="true"]:after {background:url("/assets/images/kids/character/ic-kids-off-foc.png") no-repeat center center;}
+
+/*.characterListEdit .slideWrap .slideCon .item .checkStyleList.focusOn .norImg,*/
+/*.characterListEdit .slideWrap .slideCon .item .checkStyleList.focusOn .disImg {box-shadow:0 30px 60px 0 rgba(0, 0, 0, 0.5);}*/
+.characterListEdit .slideWrap .slideCon .item .checkStyleList.focusOn .norImg{box-shadow:0 14px 14px 0 rgba(0, 0, 0, 0.35);}
+.characterListEdit .slideWrap .slideCon .item .checkStyleList .itemTitle {opacity:0; display:block; margin-top:13px; font-size:24px; font-weight:700; line-height:1.22; letter-spacing:normal; text-align:center; color:#ffffff;}
+.characterListEdit .slideWrap .slideCon .item .checkStyleList.focusOn .itemTitle {opacity:1;}
+
+/*.characterListEdit .slideWrap .slideCon .item .checkStyleList .norImg,*/
+.characterListEdit .slideWrap .slideCon .item .checkStyleList[select="false"] .norImg {display:block;}
+/*.characterListEdit .slideWrap .slideCon .item .checkStyleList .disImg,*/
+/*.characterListEdit .slideWrap .slideCon .item .checkStyleList[select="false"] .disImg {display:none;}*/
+/*.characterListEdit .slideWrap .slideCon .item.dis .checkStyleList .norImg,*/
+.characterListEdit .slideWrap .slideCon .item .checkStyleList[select="true"] .norImg {display:block;}
+.characterListEdit .slideWrap .slideCon .item .checkStyleList[select="true"] .norImg:before{content:'';display:block;position:absolute;z-index:5;top:0;left:0;right:0;bottom:0;border-radius:100%;background-color:rgba(0,0,0,0.6);}
+/*.characterListEdit .slideWrap .slideCon .item.dis .checkStyleList .disImg,*/
+/*.characterListEdit .slideWrap .slideCon .item .checkStyleList[select="true"] .disImg {display:block;}*/
+.characterListEdit .slideWrap .slideCon .item .checkStyleList[select="true"]:after {background:url("/assets/images/kids/character/ic-kids-off-nor.png") no-repeat center center;}
+
+
+.characterListEdit .slideWrap .slideCon .item .checkStyleList .norImg:after{position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;content:"";display:block;border-radius:180px;overflow:hidden;box-shadow:0 0 0 5px #f4f4f4;opacity:0;}
+.characterListEdit .slideWrap .slideCon .item .checkStyleList.focusOn .norImg:after{box-shadow:0 0 0 5px #f4f4f4;opacity:1;}

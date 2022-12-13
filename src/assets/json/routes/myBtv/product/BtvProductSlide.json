@@ -1,0 +1,46 @@
+{
+	"slideType": "btvProductSlide",
+	"slideTitle" : "B tv 추천상품",
+	"slideItem": [
+		{
+			"thumbImage": "/assets/images/tmp/mybtv/recommend-img-01.png",
+			"productTitle": "프라임캐치온 지상파",
+			"productText": "B tv 전채널, 캐치온디맨드, 지상파 다시보기를 할인된 가격으로!"
+		},
+		{
+			"thumbImage": "/assets/images/tmp/mybtv/recommend-img-02.png",
+			"productTitle": "스마트 Plus 지상파",
+			"productText": "B tv 전채널, 캐치온디맨드, 지상파 다시보기를 할인된 가격으로!"
+		},
+		{
+			"thumbImage": "/assets/images/tmp/mybtv/recommend-img-03.png",
+			"productTitle": "프라임캐치온",
+			"productText": "B tv 전채널, 캐치온디맨드, 지상파 다시보기를 할인된 가격으로!"
+		},
+		{
+			"thumbImage": "/assets/images/tmp/mybtv/recommend-img-04.png",
+			"productTitle": "프라임 지상파",
+			"productText": "B tv 전채널, 캐치온디맨드, 지상파 다시보기를 할인된 가격으로!"
+		},
+		{
+			"thumbImage": "/assets/images/tmp/mybtv/recommend-img-01.png",
+			"productTitle": "프라임캐치온 지상파",
+			"productText": "B tv 전채널, 캐치온디맨드, 지상파 다시보기를 할인된 가격으로!"
+		},
+		{
+			"thumbImage": "/assets/images/tmp/mybtv/recommend-img-02.png",
+			"productTitle": "스마트 Plus 지상파",
+			"productText": "B tv 전채널, 캐치온디맨드, 지상파 다시보기를 할인된 가격으로!"
+		},
+		{
+			"thumbImage": "/assets/images/tmp/mybtv/recommend-img-03.png",
+			"productTitle": "프라임캐치온",
+			"productText": "B tv 전채널, 캐치온디맨드, 지상파 다시보기를 할인된 가격으로!"
+		},
+		{
+			"thumbImage": "/assets/images/tmp/mybtv/recommend-img-04.png",
+			"productTitle": "프라임 지상파",
+			"productText": "B tv 전채널, 캐치온디맨드, 지상파 다시보기를 할인된 가격으로!"
+		}
+	]
+}

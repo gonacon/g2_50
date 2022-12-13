@@ -1,0 +1,60 @@
+{
+	"slideType": "SlideTypeSetting",
+	"slideTitle": "설정",
+	"slideItem": [
+		{
+			"title": "인증번호 설정",
+			"imageS": "/assets/images/myBtv/ic-verification.png",
+			"imageB": "/assets/images/myBtv/ic-verification-active.png",
+			"link": "/"
+		},
+		{
+			"title": "자녀안심 설정",
+			"imageS": "/assets/images/myBtv/ic-safety-settings.png",
+			"imageB": "/assets/images/myBtv/ic-safety-settings-active.png",
+			"link": "/"
+		},
+		{
+			"title": "사용자 맞춤 설정",
+			"imageS": "/assets/images/myBtv/ic-service-settings.png",
+			"imageB": "/assets/images/myBtv/ic-service-settings-active.png",
+			"link": "/"
+		},
+		{
+			"title": "키즈존 설정",
+			"imageS": "/assets/images/myBtv/ic-kids.png",
+			"imageB": "/assets/images/myBtv/ic-kids-active.png",
+			"link": "/"
+		},
+		{
+			"title": "실시간 채널 설정",
+			"imageS": "/assets/images/myBtv/ic-channel.png",
+			"imageB": "/assets/images/myBtv/ic-channel-active.png",
+			"link": "/"
+		},
+		{
+			"title": "화면/사운드 설정",
+			"imageS": "/assets/images/myBtv/ic-sound.png",
+			"imageB": "/assets/images/myBtv/ic-sound-active.png",
+			"link": "/"
+		},
+		{
+			"title": "멀티뷰 설정",
+			"imageS": "/assets/images/myBtv/ic-multiview.png",
+			"imageB": "/assets/images/myBtv/ic-multiview-active.png",
+			"link": "/"
+		},
+		{
+			"title": "시스템 설정",
+			"imageS": "/assets/images/myBtv/ic-system-settings.png",
+			"imageB": "/assets/images/myBtv/ic-system-settings-active.png",
+			"link": "/"
+		},
+		{
+			"title": "셋톱박스 자가진단",
+			"imageS": "/assets/images/myBtv/ic-settop.png",
+			"imageB": "/assets/images/myBtv/ic-settop-active.png",
+			"link": "/"
+		}
+	]
+}

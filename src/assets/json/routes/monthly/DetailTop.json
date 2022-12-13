@@ -1,0 +1,13 @@
+{
+	"type" : "DetailTop",
+	"bg" : "/assets/images/tmp/monthly/premier_banner_big.png",
+	"listBtnItem" : [
+		{
+			"price" : "13,000",
+			"type" : "월정액 가입",
+			"surtax" : "부가세 포함"
+		}
+	]
+
+
+}

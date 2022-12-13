@@ -1,0 +1,19 @@
+/* BuyMonthly.css */
+.buyContent.buyMonthly {padding-top:68px;}
+.buyContent.buyMonthly .taxInfo {margin-left:20px;font-weight:400;line-height:1.5;font-size:24px;color:#888;}
+.buyContent .left .optionWrap{width:810px;}
+.buyContent .left .optionWrap > .title{padding-bottom:16px;}
+.buyContent .left .optionWrap .radioStyle2.select {font-weight:400;}
+.buyContent .optionView .imgWrap{position:relative;z-index:1;width:384px;height:250px;margin:0 auto;text-align:center;border-radius:4px;overflow:hidden;background:url("/assets/images/common/default/thumbnail_default_land.png") no-repeat 0 0;background-size:100% auto;box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.15);}
+.buyContent .optionView .imgWrap:before,
+.buyContent .optionView .imgWrap:after{/*position:absolute;top:0;left:0;right:0;bottom:0;z-index:10;display:block;content:"";*/}
+.buyContent .optionView .imgWrap:before{/*background-image:linear-gradient(149deg, #7c6aff, #6ab8ff);opacity:0.3;*/}
+.buyContent .optionView .imgWrap:after{/*z-index:15;background-image:linear-gradient(130deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.09), #000000);opacity:0.3;*/}
+.buyContent .optionView .imgWrap span{position:absolute;top:50%;left:0;z-index:20;transform:translate(0,-50%);width:100%;font-size:38px;font-weight:700;color:#fff;letter-spacing:0;text-shadow:0 2px 50px rgba(0, 0, 0, 0.8);}
+.buyContent .optionView span.useGuideText{display:block;margin-top:30px;font-size:24px;color:rgba(106,106,106,1);line-height:28px;text-align:center;}
+.buyContent .optionView span.useGuideText .logoOksusu{display:inline-block;width:116px;height:34px;background:url('/assets/images/buy/logo.png') 0 0 no-repeat;vertical-align:bottom;}
+.buyContent .optionView p.priceDetail{margin-top:30px;padding-top:30px;border-top:1px solid rgba(0, 0, 0, 0.2);font-size:24px;line-height:1.5;color:rgba(106,106,106,1);letter-spacing:0;}
+.buyContent.buyMonthly .optionView{min-height:567px;}
+
+
+

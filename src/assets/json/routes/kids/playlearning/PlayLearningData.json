@@ -1,0 +1,28 @@
+{
+	"result": "0000",
+	"reason": "",
+	"request_time": "20180416024136",
+	"blocks": [
+		{
+			"norImage": "/assets/images/kids/playlearning/img-edu-live-nor.png",
+			"focImage": "/assets/images/kids/playlearning/img-edu-live-foc.png"
+		},
+		{
+			"norImage": "/assets/images/kids/playlearning/img-edu-dance-nor.png",
+			"focImage": "/assets/images/kids/playlearning/img-edu-dance-foc.png"
+		},
+		{
+			"norImage": "/assets/images/kids/playlearning/img-edu-eng-nor.png",
+			"focImage": "/assets/images/kids/playlearning/img-edu-eng-foc.png"
+		},
+		{
+			"norImage": "/assets/images/kids/playlearning/img-edu-kids-nor.png",
+			"focImage": "/assets/images/kids/playlearning/img-edu-kids-foc.png"
+		}
+	],
+	"response_time": "20180416024136",
+		"block_count": "0",
+		"banner_count": "0",
+		"IF": "IF-NXPG-003",
+		"banners": null
+	}

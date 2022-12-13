@@ -1,0 +1,8 @@
+{
+	"payState" : false,
+	"mainBg" : "/assets/images/tmp/synopsis/img-gateway-bg.png",
+	"procurementBehavior" : "일반구매",
+	"productionCost" : "35,000",
+	"dcCost" : "25,000"
+
+}

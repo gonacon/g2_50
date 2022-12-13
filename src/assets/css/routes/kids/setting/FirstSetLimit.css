@@ -1,0 +1,81 @@
+/* FirstSetLimit.css */
+/* FirstSetLimit */
+
+/* common btn */
+.btnStyleKids1{display:inline-block; position:relative; min-width:196px; height:94px; padding:0 42px;  font-size:30px; color:rgba(244,244,244,0.9); font-weight:bold; line-height:94px; text-align:center; vertical-align:middle;}
+.btnStyleKids1:before{content:''; position:absolute; top:0; left:0; right:0; z-index:-1; min-width:196px; height:94px; border-radius: 4px; background-color: rgba(0,0,0,0.5); box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);}
+.btnStyleKids1.focusOn{color:#f5513f;}
+.btnStyleKids1.focusOn:before{content:''; position:absolute; top:-8px; left:-10px; right:-10px; z-index:-1; min-width:216px; height:110px; border-radius: 4px; background-color: rgba(244, 244, 244, 1); box-shadow: 0 24px 16px 0 rgba(0, 0, 0, 0.35);}
+.btnStyleKids1.focusOn .wrapBtnText{transform:scale(1.15,1.15);}
+.btnStyleKids1 + .btnStyleKids1{margin-left:26px;}
+.btnStyleKids1:disabled{color:rgba(244,244,244,0.2);}
+.btnStyleKids1:disabled:before{background-color: rgba(255, 255, 255, 0.05);}
+
+/* contents style */
+.firstSetLimitWrap{position:relative;padding:103px 0 0;}
+
+.firstSetLimitWrap .setStep{position:absolute;top:38px;right:72px;}
+.firstSetLimitWrap .setLimitTitleWrap,
+.firstSetLimitWrap .btnBottomWrap{display:block;text-align:center;}
+
+.firstSetLimitWrap .setStep ul{overflow:hidden;}
+.firstSetLimitWrap .setStep ul li{float:left;position:relative;width:38px;border-radius:19px;border:2px solid rgba(0,0,0,0.3);background-color:rgba(244,244,244,0.2);font-size:24px;color:rgba(0,0,0,0.4);line-height:34px;text-align:center;}
+.firstSetLimitWrap .setStep ul li + li{margin-left:38px;}
+.firstSetLimitWrap .setStep ul li + li:before{content:'';display:block;position:absolute;top:3px;left:-27px;width:13px;height:28px;background:url('/assets/images/kids/setting/ic-firstsetlimit-step-arrow.png') no-repeat;}
+.firstSetLimitWrap .setStep ul li.on{border:none;background-color:rgba(0,0,0,0.35);color:rgba(244,244,244,0.8);line-height:38px;}
+
+.setLimitTitleWrap .title{font-size:52px;color:rgba(0,0,0,0.8);line-height:60px;}
+.setLimitTitleWrap .subTitle{margin-top:14px;font-size:30px;color:rgba(0,0,0,0.6);line-height:40px;}
+.setLimitTitleWrap .subTitle strong{font-weight:700;}
+
+.radioWrap .optionWrap{display:block;margin-top:71px;text-align:center;}
+.radioWrap .optionWrap .radioStyle{width:330px;text-align:left;}
+.radioWrap .optionWrap .radioStyle:first-child{border-radius:4px 0 0 4px;}
+.radioWrap .optionWrap .radioStyle:last-child{border-radius:0 4px 4px 0;}
+.radioWrap.kids .optionWrap [class*="radioStyle"] {color:rgba(0, 0, 0, 0.7);}
+.radioWrap.kids .optionWrap [class*="radioStyle"]:before{background:url("/assets/images/common/icon/radio-nor-kids.png") no-repeat 0 0;}
+.radioWrap.kids .optionWrap [class*="radioStyle"].focusOn {color:#f5513f;}
+.radioWrap.kids .optionWrap [class*="radioStyle"].focusOn:before {background:url("/assets/images/common/icon/radio-nor-foc.png") no-repeat 0 0;}
+.radioWrap.kids .optionWrap [class*="radioStyle"].select:before{background:url("/assets/images/common/icon/radio-nor-sel-kids.png") no-repeat 0 0;}
+.radioWrap.kids .optionWrap [class*="radioStyle"].select.focusOn:before {background:url("/assets/images/common/icon/radio-sel-foc.png") no-repeat 0 0;}
+.radioWrap.kids .optionWrap [class*="radioStyle"][disabled="true"],
+.radioWrap.kids .optionWrap [class*="radioStyle"].disable{color:rgba(0, 0, 0, 0.3);}
+.radioWrap.kids .optionWrap [class*="radioStyle"][disabled="true"]:before,
+.radioWrap.kids .optionWrap [class*="radioStyle"].disable:before {background:url("/assets/images/common/icon/radio-dis-kids.png") no-repeat 0 0;}
+
+.radioContentWrap{}
+.radioContentWrap .limitItem{display:none;text-align:center;}
+.radioContentWrap .limitItem.active{display:block;}
+.radioContentWrap .limitItem.timeLimit,
+.radioContentWrap .limitItem.pieceLimit{padding:74px 0 117px;}
+.radioContentWrap .limitItem.timeslotLimit{padding:57px 0 98px;}
+.radioContentWrap .limitItem ul{display:inline-block;}
+.radioContentWrap .limitItem ul:after{content:'';display:block;clear:both;}
+.radioContentWrap .limitItem ul li{display:table;float:left;width:280px;height:280px;}
+.radioContentWrap .limitItem ul li .csFocus{position:relative;display:table-cell;background:url('/assets/images/kids/setting/img-firstsetlimit-list-nor.png') no-repeat center center;vertical-align:middle;}
+.radioContentWrap .limitItem ul li .csFocus span{display:block;font-size:35px;color:rgba(0,0,0,1);font-weight:700;vertical-align:middle;}
+.radioContentWrap .limitItem ul li.directInput .csFocus{background:url('/assets/images/kids/setting/img-firstsetlimit-list-add-nor.png') no-repeat center center;}
+.radioContentWrap .limitItem ul li.directInput .csFocus span{padding-top:66px;background:url('/assets/images/kids/setting/ic-firstsetlimit-list-add-nor.png') no-repeat center top;font-weight:500;}
+.radioContentWrap .limitItem ul li.timeslotInput{width:550px;height:316px;}
+.radioContentWrap .limitItem ul li.timeslotInput .csFocus{background:url('/assets/images/kids/setting/img-timeslot-add-nor.png') no-repeat center center;}
+.radioContentWrap .limitItem ul li.timeslotInput .csFocus span{padding-top:92px;background:url('/assets/images/kids/setting/ic-timeslot-add-nor.png') no-repeat center top;font-size:32px;font-weight:500;}
+.radioContentWrap .limitItem ul li .csFocus.focusOn{transform:scale(1.2);background:url('/assets/images/kids/setting/img-firstsetlimit-list-foc.png') no-repeat center center;}
+.radioContentWrap .limitItem ul li .csFocus.focusOn span{color:rgba(245,81,63,1);}
+.radioContentWrap .limitItem ul li.directInput .csFocus.focusOn span{padding-top:66px;background:url('/assets/images/kids/setting/ic-firstsetlimit-list-add-foc.png') no-repeat center top;font-weight:700;}
+.radioContentWrap .limitItem ul li.timeslotInput .csFocus.focusOn{background:url('/assets/images/kids/setting/img-timeslot-add-foc.png') no-repeat center center;}
+.radioContentWrap .limitItem ul li.timeslotInput .csFocus.focusOn span{padding-top:92px;background:url('/assets/images/kids/setting/ic-timeslot-add-foc.png') no-repeat center top;font-weight:500;}
+
+.radioContentWrap .limitItem ul li .csFocus.inData{background:url('/assets/images/kids/setting/img-firstsetlimit-list-nor.png') no-repeat center center;}
+.radioContentWrap .limitItem ul li .csFocus.inData span{position:relative;padding-top:0;background:none;font-weight:700;}
+.radioContentWrap .limitItem ul li .csFocus.inData span:after{content:"(직접입력)";display:block;position:absolute;top:45px;left:0;right:0;font-size:22px;color:rgba(0,0,0,0.4);font-weight:700;text-align:center;}
+.radioContentWrap .limitItem ul li .csFocus.inData.focusOn span{position:relative;padding-top:0;background:none;font-weight:700;}
+
+.radioContentWrap .limitItem ul li .csFocus.inData2{background:url('/assets/images/kids/setting/img-timeslot-nor.png') no-repeat center center;}
+.radioContentWrap .limitItem ul li .csFocus.inData2 span{padding-top:0;background:none;font-size:36px;font-weight:700;line-height:48px;}
+.radioContentWrap .limitItem ul li .csFocus.inData2 span.dataTitle{padding-bottom:15px;font-size:28px;color:rgba(0,0,0,0.6);font-weight:500;}
+.radioContentWrap .limitItem ul li .csFocus.inData2.focusOn span{position:relative;padding-top:0;background:none;font-weight:700;}
+.radioContentWrap .limitItem ul li .csFocus.inData2 span.dataTitle{color:rgba(0,0,0,0.8);font-weight:700;}
+
+.radioContentWrap .limitItem ul li .csFocus.active:before{content:'';position:absolute;top:64px;left:42px;width:34px;height:34px;background:url('/assets/images/kids/setting/ic-firstsetlimit-list-nor-sel.png') no-repeat;}
+.radioContentWrap .limitItem ul li .csFocus.active.focusOn:before{content:'';width:42px;height:42px;background:url('/assets/images/kids/setting/ic-firstsetlimit-list-foc-sel.png') no-repeat;}
+

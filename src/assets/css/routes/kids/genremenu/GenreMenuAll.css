@@ -1,0 +1,14 @@
+/* GenreMenuAll.css */
+.genreMenuAll{width:1920px;height:100%;overflow:hidden;background:url('/assets/images/kids/genremenu/bg-genremenu-all.png') no-repeat 0 0;}
+
+.genreMenuAll .genreMenuAllWrap .genreMenuAllList{display:block;padding:0 115px 100px;}
+.genreMenuAll .genreMenuAllWrap .genreMenuAllList .slideTypeBC{padding-top:53px;}
+.genreMenuAll .genreMenuAllWrap .genreMenuAllList .slideTypeCircle{padding-top:104px;}
+
+.genreMenuAll .btnTopWrap{padding:150px 0 60px;}
+
+
+
+
+
+

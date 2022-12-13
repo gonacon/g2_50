@@ -1,0 +1,8 @@
+---
+applications:
+- buildpack: staticfile_buildpack
+  path: ./build
+  host: ui50-web-dev
+  name: ui50-web
+  memory: 1024M
+  instances: 1

@@ -1,0 +1,13 @@
+{
+	"pageType": "TmembershipDelte",
+	"pageTitle": "T 멤버십 할인카드 삭제",
+	"pageDescription": "",
+	"cardDetail" :[
+		{
+			"cardType" : "/assets/images/myBtv/card-tmem.png",
+			"point" : "70,000",
+			"cardNumber" : "244488391234****"
+		}
+	]
+
+}

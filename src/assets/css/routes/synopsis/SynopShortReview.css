@@ -1,0 +1,138 @@
+/* SynopShortReview.css */
+:root{
+	--page:0;
+}
+
+.shortReviewSlide .slideWrapper{transform:translate3d(calc(var(--page) * -360px),0,0);}
+
+.shortReviewSlide .slideWrap{position:relative;z-index:1;}
+.shortReviewSlide .slideWrap .slideCon {overflow:hidden; margin:-50px -30px -50px; padding:50px 10px 50px; font-size:0;}
+.shortReviewSlide .slideWrapper{display:flex;justify-content:space-between;}
+.shortReviewSlide .slideWrapper .slide{display:inline-block; padding:0 17px; width:auto;}
+.shortReviewSlide .slideWrapper .slide:first-child{margin-left:0;}
+.shortReviewSlide .slideWrapper .slide .csFocus{display:block;position:relative;z-index:1;padding:20px 30px;height:120px;border-radius:4px;font-size:24px;letter-spacing:-0.7px;text-align:center;color:rgba(212,212,212,1);background:rgba(255,255,255,0.17);box-shadow:0 4px 6px 0 rgba(0, 0, 0, 0.15);}
+.shortReviewSlide .slideWrapper .slide .csFocus.focusOn{background:transparent;}
+.shortReviewSlide .slideWrapper .slide .csFocus:before{content:'';position:absolute;opacity:0;top:0;left:0;right:0;bottom:0;z-index:-1;border-radius:4px;}
+.shortReviewSlide .slideWrapper .slide .csFocus.focusOn:before{top:-16px;left:-12px;right:-12px;bottom:-16px;background:rgba(255, 255, 255, 1);box-shadow: 0 24px 16px 0 rgba(0, 0, 0, 0.35);opacity:1;}
+.shortReviewSlide .slideWrapper .slide .csFocus.focusOn .reviewBox{max-width:590px !important;margin: 0 auto;transform:scale(1.15); -webkit-transform:scale(1.15);}
+.shortReviewSlide .slideWrapper .slide .csFocus span[class*="icon"]{margin:0 auto;position:relative;z-index:1;width:50px;height:40px;}
+.shortReviewSlide .slideWrapper .slide .csFocus span[class*="icon"] img{position:absolute;top:50%;left:50%;z-index:10;transform:translate(-50%,-50%);opacity:1;}
+.shortReviewSlide .slideWrapper .slide .csFocus.starLocation span[class*="iconStar"] img{transform:translate(-50%,-30%);}
+.shortReviewSlide .slideWrapper .slide .csFocus.myAppraisal span[class*="iconStar"] img{transform:translate(-50%,-50%);}
+.shortReviewSlide .slideWrapper .slide .csFocus span[class*="icon"] .dark{opacity:0;}
+.shortReviewSlide .slideWrapper .slide .csFocus span[class*="icon"] .light{opacity:1;}
+.shortReviewSlide .slideWrapper .slide .csFocus.focusOn span[class*="icon"] .light{opacity:0;}
+.shortReviewSlide .slideWrapper .slide .csFocus span[class*="icon"] .on{opacity:0;}
+.shortReviewSlide .slideWrapper .slide .csFocus.focusOn span[class*="icon"] .on{opacity:1;}
+.shortReviewSlide .slideWrapper .slide .csFocus .text{display:block;}
+.shortReviewSlide .slideWrapper .slide .csFocus{min-width:218px;height:220px;padding:25px 18px 20px;}
+.shortReviewSlide .slideWrapper .slide .csFocus.myAward{width:326px;padding:25px 30px 20px;}
+.shortReviewSlide .slideWrapper .slide .csFocus.commentBox{width:686px;;padding:25px 30px 20px;}
+.shortReviewSlide .slideWrapper .slide .csFocus.commentBox.award{width:326px;}
+.shortReviewSlide .slideWrapper .slide .csFocus .reviewLogoArea{display:table;width:100%;height:40px;}
+.shortReviewSlide .slideWrapper .slide .csFocus.focusOn .reviewLogoArea{color:#f5513f;transform:scale(1.15); -webkit-transform:scale(1.15);}
+.shortReviewSlide .slideWrapper .slide .csFocus .reviewLogoArea .myAwardText,
+.shortReviewSlide .slideWrapper .slide .csFocus .reviewLogoArea .myAppraisalText{color:rgba(74,74,74,1);line-height:40px;vertical-align:middle;font-weight:700;}
+.shortReviewSlide .slideWrapper .slide .csFocus.focusOn .reviewLogoArea .myAwardText,
+.shortReviewSlide .slideWrapper .slide .csFocus.focusOn .reviewLogoArea .myAppraisalText{color:rgba(245, 81, 63,1);}
+.shortReviewSlide .slideWrapper .slide .csFocus .reviewLogoArea .iconLogo{display:table-cell;}
+.shortReviewSlide .slideWrapper .slide .csFocus .reviewLogoArea .iconLogo img{display:inline-block;margin:0 auto;vertical-align:middle;}
+
+.shortReviewSlide .slideWrapper .slide .csFocus .iconStar{display:inline-block;width:42px;height:40px;vertical-align:baseline;}
+.shortReviewSlide .slideWrapper .slide .csFocus.starLocation .topText,
+.shortReviewSlide .slideWrapper .slide .csFocus.myAppraisal .topText{margin-top:25px;}
+.shortReviewSlide .slideWrapper .slide .csFocus .topText .scoreNum{font-size:54px;color:rgba(26,26,26,1);font-weight:400;}
+.shortReviewSlide .slideWrapper .slide .csFocus.focusOn .topText .scoreNum{color:rgba(245, 81, 63,1);}
+.shortReviewSlide .slideWrapper .slide .csFocus .topText .scoreNum .scoreSmall{font-size:28px;color:rgba(48,48,48,1);}
+.shortReviewSlide .slideWrapper .slide .csFocus.focusOn .topText .scoreNum .scoreSmall{color:rgba(245, 81, 63,1);}
+.shortReviewSlide .slideWrapper .slide .csFocus .topText .percent{font-size:28px;color:rgba(48,48,48,1);}
+.shortReviewSlide .slideWrapper .slide .csFocus.focusOn .topText .percent{color:rgba(245, 81, 63,1);}
+.shortReviewSlide .slideWrapper .slide .csFocus .topText p{margin-top:15px;font-size:30px;font-weight:400;line-height:42px;color:rgba(255,255,255,0.9);}
+.shortReviewSlide .slideWrapper .slide .csFocus.myAward .topText{display:block;width:100%;height:84px;margin-top:8px;text-align:center;position:relative;}
+.shortReviewSlide .slideWrapper .slide .csFocus.commentBox .topText{display:block;width:100%;height:84px;margin-top:12px;text-align:center;position:relative;}
+.shortReviewSlide .slideWrapper .slide .csFocus.myAward .topText .reviewTextWrap,
+.shortReviewSlide .slideWrapper .slide .csFocus.commentBox .topText .reviewTextWrap{display:block;position:relative;height:84px;}
+.shortReviewSlide .slideWrapper .slide .csFocus.myAward .topText .reviewTextWrap p,
+.shortReviewSlide .slideWrapper .slide .csFocus.commentBox .topText .reviewTextWrap p{display:-webkit-box;position:absolute;top:50%;left:50%;width:100%;max-height:84px;margin-top:0;overflow:hidden;text-overflow:ellipsis;word-break:keep-all;word-wrap:break-word;font-size:30px;color:rgba(26,26,26,1);line-height:42px;vertical-align:middle;-webkit-line-clamp:2;-webkit-box-orient:vertical;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);}
+.shortReviewSlide .slideWrapper .slide .csFocus.myAward.focusOn .topText p,
+.shortReviewSlide .slideWrapper .slide .csFocus.commentBox.focusOn .topText p{color:rgba(26,26,26,1);}
+.shortReviewSlide .slideWrapper .slide .csFocus .botText{font-size:24px;font-weight:700;text-align:center;}
+.shortReviewSlide .slideWrapper .slide .csFocus.myAward .topText .reviewTextWrap p .icAward{display:inline-block;width:34px;height:34px;margin-top:3px;margin-right:10px;background:url('/assets/images/synopsis/icon-award-light.png') no-repeat;vertical-align:top;}
+.shortReviewSlide .slideWrapper .slide .csFocus.myAward.focusOn .topText .reviewTextWrap p .icAward{background:url('/assets/images/synopsis/icon-award-on.png') no-repeat;}
+.shortReviewSlide .slideWrapper .slide .csFocus.starLocation .botText{margin-top:30px;}
+.shortReviewSlide .slideWrapper .slide .csFocus.commentBox .botText{margin-top:7px;}
+.shortReviewSlide .slideWrapper .slide .csFocus.myAppraisal .botText{margin-top:35px;}
+/*.synopBtn.score .swiper-slide.on .cs_focus.comment_box .bot_text{opacity:1;}*/
+.shortReviewSlide .slideWrapper .slide .csFocus .botText .subText{margin-top:10px;font-size:24px;color:rgba(74,74,74,1);font-weight:normal;}
+.shortReviewSlide .slideWrapper .slide .csFocus.commentBox .botText .iconLogo{display:block;}
+.shortReviewSlide .slideWrapper .slide .csFocus.commentBox .botText .iconLogo .dark{opacity:0;}
+.shortReviewSlide .slideWrapper .slide .csFocus.commentBox .botText .iconLogo .light{opacity:1;}
+.shortReviewSlide .slideWrapper .slide .csFocus.focusOn .botText{opacity:1;}
+.shortReviewSlide .slideWrapper .slide .csFocus.focusOn .botText .iconLogo .dark{opacity:0;}
+.shortReviewSlide .slideWrapper .slide .csFocus.focusOn .botText .iconLogo .light{opacity:0;}
+.shortReviewSlide .slideWrapper .slide .csFocus.focusOn .botText .subText{color:rgba(136,136,136,1);}
+.shortReviewSlide .slideWrapper .slide .csFocus.myAppraisal.focusOn .botText .subText{color:rgba(245, 81, 63,1);}
+.shortReviewSlide .slideWrapper .slide .csFocus .botText .iconStarSmall{display:inline-block;width:22px;height:21px;vertical-align:bottom;}
+.shortReviewSlide .slideWrapper .slide .csFocus .commentUserArea span{color:rgba(48,48,48,1);line-height:40px;vertical-align:top;margin-top:7px;}
+.shortReviewSlide .slideWrapper .slide .csFocus .commentUserArea .bar{background:rgba(255,255,255,0.2);}
+.shortReviewSlide .slideWrapper .slide .csFocus .commentUserArea span[class*="icon_"]{display:inline-block;margin-right:10px;width:auto;height:30px;transform:translate(-50%,20%);}
+.shortReviewSlide .slideWrapper .slide .csFocus.focusOn .commentUserArea .bar{background:rgba(26,26,26,0.2);}
+.shortReviewSlide .slideWrapper .slide .csFocus .commentUserArea .cmtUser{margin-right:10px;font-size:26px;font-weight:700;}
+.shortReviewSlide .slideWrapper .slide .csFocus.focusOn .commentUserArea .cmtUser{color:rgba(26,26,26,1);font-weight:700;}
+.shortReviewSlide .slideWrapper .slide .csFocus .commentUserArea .scoreNum2{vertical-align:baseline;}
+.shortReviewSlide .slideWrapper .slide .csFocus .commentUserArea .scoreNum2 span[class*="icon"]{display:inline-block;width:22px;height:21px;margin-right:12px;}
+.shortReviewSlide .slideWrapper .slide .csFocus.focusOn .commentUserArea .scoreNum2{color:rgba(136,136,136,1);}
+
+.shortReviewSlide .leftArrow,
+.shortReviewSlide .rightArrow{position:absolute;top:50%;left:-70px;z-index:10;transform:translate(0,-70%);width:23px;height:58px;background:url("/assets/images/common/icon/arrow-left.png") no-repeat 0 0;opacity:0;}
+.shortReviewSlide .rightArrow{left:auto;right:-70px;background:url("/assets/images/common/icon/arrow-right.png") no-repeat 0 0;}
+
+.shortReviewSlide .activeSlide.leftActive .leftArrow,
+.shortReviewSlide .activeSlide.rightActive .rightArrow{opacity:1;}
+
+.shortReviewSlide.arrowNone .activeSlide .slideLeft,
+.shortReviewSlide.arrowNone .activeSlide .slideRight{opacity:0;}
+
+.shortReviewSlide .slideCount{position: absolute;top: -10px;right: 0;z-index: 10;font-size: 23px;color: #666;line-height: 1.83;letter-spacing: normal;opacity: 0;}
+.shortReviewSlide .activeSlide .slideCount{opacity:1;}
+.shortReviewSlide .activeSlide.lastActive .slideCount{transform:translate(0,-16px);}
+
+.contentGroup.activeSlide .shortReviewSlide .titleStyle2{transform:translate(0,-16px);}
+.contentGroup.activeSlide .slideTypeE .titleStyle2{transform:translate(0,-13px);}
+
+/* theme */
+.dark .shortReviewSlide .slideWrapper .slide .csFocus{background:rgba(255, 255, 255, 0.17);}
+.dark .shortReviewSlide .slideWrapper .slide .csFocus .subText,
+.dark .shortReviewSlide .slideWrapper .slide .csFocus .topText .percent,
+.dark .shortReviewSlide .slideWrapper .slide .csFocus .topText .scoreNum .scoreSmall{color:rgba(170,170,170,1)}
+
+.dark .shortReviewSlide .slideCount {color:rgba(212,212,212,1);}
+
+.dark .shortReviewSlide .slideWrapper .slide .csFocus span[class*="icon"] .dark{opacity:1;}
+.dark .shortReviewSlide .slideWrapper .slide .csFocus span[class*="icon"] .light{opacity:0;}
+.dark .shortReviewSlide .slideWrapper .slide .csFocus.focusOn span[class*="icon"] .dark{opacity:0;}
+.dark .shortReviewSlide .slideWrapper .slide .csFocus .reviewLogoArea .myAwardText,
+.dark .shortReviewSlide .slideWrapper .slide .csFocus .reviewLogoArea .myAppraisalText{color:rgba(212,212,212,1);}
+.dark .shortReviewSlide .slideWrapper .slide .csFocus.focusOn .reviewLogoArea .myAwardText,
+.dark .shortReviewSlide .slideWrapper .slide .csFocus.focusOn .reviewLogoArea .myAppraisalText{color:rgba(245,81,63,1);}
+.dark .shortReviewSlide .slideWrapper .slide .csFocus .botText .subText{color:rgba(170,170,170,1);}
+.dark .shortReviewSlide .slideWrapper .slide .csFocus.myAward .topText .reviewTextWrap p,
+.dark .shortReviewSlide .slideWrapper .slide .csFocus.commentBox .topText .reviewTextWrap p{color:rgba(244,244,244,1);}
+.dark .shortReviewSlide .slideWrapper .slide .csFocus.myAward.focusOn .topText .reviewTextWrap p,
+.dark .shortReviewSlide .slideWrapper .slide .csFocus.commentBox.focusOn .topText .reviewTextWrap p{color:rgba(26,26,26,1);}
+.dark .shortReviewSlide .slideWrapper .slide .csFocus.myAward .topText .reviewTextWrap p .icAward{display:inline-block;width:34px;height:34px;margin-top:3px;margin-right:10px;background:url('/assets/images/synopsis/icon-award.png') no-repeat;vertical-align:top;}
+.dark .shortReviewSlide .slideWrapper .slide .csFocus.myAward.focusOn .topText .reviewTextWrap p .icAward{background:url('/assets/images/synopsis/icon-award-on.png') no-repeat;}
+
+.dark .shortReviewSlide .slideWrapper .slide .csFocus .topText .scoreNum{color:rgba(244,244,244,1);}
+.dark .shortReviewSlide .slideWrapper .slide .csFocus .topText .scoreNum .scoreSmall{color:rgba(170,170,170,1);}
+.dark .shortReviewSlide .slideWrapper .slide .csFocus .topText .percent{color:rgba(170,170,170,1);}
+.dark .shortReviewSlide .slideWrapper .slide .csFocus.focusOn .topText .scoreNum{color:rgba(245,81,63,1);}
+.dark .shortReviewSlide .slideWrapper .slide .csFocus.focusOn .topText .scoreNum .scoreSmall{color:rgba(245,81,63,1);}
+.dark .shortReviewSlide .slideWrapper .slide .csFocus.focusOn .topText .percent{color:rgba(245,81,63,1);}
+
+.dark .shortReviewSlide .slideWrapper .slide .csFocus.commentBox .botText .iconLogo .dark{opacity:1;}
+.dark .shortReviewSlide .slideWrapper .slide .csFocus.commentBox .botText .iconLogo .light{opacity:0;}
+.dark .shortReviewSlide .slideWrapper .slide .csFocus.focusOn .botText .iconLogo .dark{opacity:0;}
+.dark .shortReviewSlide .slideWrapper .slide .csFocus.focusOn .botText .iconLogo .light{opacity:0;}
+
+.dark .shortReviewSlide .slideWrapper .slide .csFocus .commentUserArea span{color:rgba(212,212,212,1);}

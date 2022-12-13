@@ -1,0 +1,61 @@
+{	"slideType" : "SlideTypeCircle",
+	"slideTitle": "우리아이 추천 VOD",
+	"items": [
+		{
+			"name": "빌 콘돈",
+			"image": "/assets/images/tmp/synopsis/img-shortmov-guest-001.png"
+		},
+		{
+			"name": "엠마 왓슨",
+			"image": "/assets/images/tmp/synopsis/img-shortmov-guest-002.png"
+		},
+		{
+			"name": "댄 스티븐스",
+			"image": "/assets/images/tmp/synopsis/img-shortmov-guest-003.png"
+		},
+		{
+			"name": "루크 에반스",
+			"image": "/assets/images/tmp/synopsis/img-shortmov-guest-004.png"
+		},
+		{
+			"name": "이완 맥그리거",
+			"image": "/assets/images/tmp/synopsis/img-shortmov-guest-005.png"
+		},
+		{
+			"name": "이안 맥겔런",
+			"image": "/assets/images/tmp/synopsis/img-shortmov-guest-006.png"
+		},
+		{
+			"name": "엠마 톰슨",
+			"image": "/assets/images/tmp/synopsis/img-shortmov-guest-007.png"
+		},
+		{
+			"name": "빌 콘돈2",
+			"image": "/assets/images/tmp/synopsis/img-shortmov-guest-001.png"
+		},
+		{
+			"name": "엠마 왓슨2",
+			"image": "/assets/images/tmp/synopsis/img-shortmov-guest-002.png"
+		},
+		{
+			"name": "댄 스티븐스2",
+			"image": "/assets/images/tmp/synopsis/img-shortmov-guest-003.png"
+		},
+		{
+			"name": "루크 에반스2",
+			"image": "/assets/images/tmp/synopsis/img-shortmov-guest-004.png"
+		},
+		{
+			"name": "이완 맥그리거2",
+			"image": "/assets/images/tmp/synopsis/img-shortmov-guest-005.png"
+		},
+		{
+			"name": "이안 맥겔런2",
+			"image": "/assets/images/tmp/synopsis/img-shortmov-guest-006.png"
+		},
+		{
+			"name": "엠마 톰슨2",
+			"image": "/assets/images/tmp/synopsis/img-shortmov-guest-007.png"
+		}
+	]
+}

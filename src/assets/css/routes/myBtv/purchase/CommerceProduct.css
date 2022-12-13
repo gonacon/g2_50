@@ -1,0 +1,66 @@
+/* CommerceProduct.css */
+/* CommerceProduct */
+.commerceProductBg {position:fixed; top:0; left:0; z-index:-1; width:1920px; height:1080px; background:url("/assets/images/common/bg/bg_popup.png") no-repeat 0 0;}
+.commerceProductWrap {width:1920px; height:1080px; text-align:center;}
+.commerceProductWrap .title {display:block; padding-bottom:25px; font-size:52px; color:rgba(244,244,244,1); line-height:60px; text-align:center;}
+.commerceProductWrap .subInfo {font-size:30px;color:rgba(170,170,170,1);line-height:42px;text-align:center;font-weight:700;}
+.commerceProductWrap .subInfo .expiry {color:rgba(244,244,244,1);}
+.commerceProductWrap .subInfo .date {display:block;margin-top:4px;font-weight:500;}
+.commerceProductWrap .btnBottomWrap {display:block; padding-top:184px;}
+.commerceProductWrap .pagerWrap {margin-top:-97px; text-align:center;}
+.commerceProductWrap .pagerWrap .infoTitle,
+.commerceProductWrap .pagerWrap .productTitle {padding-bottom:11px; font-size:26px; font-weight:700; line-height:1.15; letter-spacing:normal; color:rgba(170,170,170,1);}
+.commerceProductWrap .pagerWrap .productTitle {display:none; padding-bottom:0; padding-top:13px;}
+.commerceProductWrap .pagerWrap.down {margin-top:40px; padding-top:40px;}
+.commerceProductWrap .pagerWrap.down .infoTitle {display:none;}
+.commerceProductWrap .pagerWrap.down .productTitle {display:block;}
+.commerceProductWrap .pagerWrap .pageArr {display:block; margin:10px auto 0; width:45px; height:17px; background:url("/assets/images/common/icon/arrow-menu.png") no-repeat center center; background-size:45px 17px;}
+.commerceProductWrap .pagerWrap.down .pageArr {transform:rotate(180deg); -webkit-transform:rotate(180deg);}
+
+.commerceProductWrap .itemWrap {position:relative; z-index:1; padding:103px 370px 0; margin-bottom:322px; height:758px; background:rgba(0, 0, 0, 0.25); text-align:center;}
+.commerceProductWrap .itemWrap .itemDetail {display:inline-block; padding-top:87px;}
+.commerceProductWrap .itemWrap .itemDetail:after {display:block; clear:both; content:"";}
+.commerceProductWrap .itemWrap .itemDetail .csFocus {position:relative;z-index:1;float:left;width:570px;box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.2);}
+.commerceProductWrap .itemWrap .itemDetail .itemPresent{width:570px;height:268px;border-radius:4px;background:url('/assets/images/common/default/vod_product_image_default.png') no-repeat 0 0;background-size:100% 100%;box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.2);}
+.commerceProductWrap .itemWrap .itemDetail .item {display:block; width:188px; height:271px; border-radius:4px;background:url('/assets/images/common/default/thumbnail_default_port.png') no-repeat 0 0;background-size:100% 100%;box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.2);}
+/*.commerceProductWrap .itemWrap .itemDetail .itemPresent.focusOn,*/
+/*.commerceProductWrap .itemWrap .itemDetail .item.focusOn{background-size:99% 99%;}*/
+.commerceProductWrap .itemDetail .csFocus.focusOn {transform:scale(1.2,1.2);box-shadow: 0 14px 14px 0 rgba(0, 0, 0, 0.35);}
+.commerceProductWrap .itemWrap .itemDetail .csFocus img {display:block;width:100%;border-radius:4px;}
+.commerceProductWrap .itemWrap .itemDetail .csFocus.focusOn .itemTitle {opacity:1;}
+.commerceProductWrap .itemWrap .itemDetail .csFocus .itemTitle {position:absolute;bottom:-44px;left:50%;z-index:10;transform:translate(-50%,0);opacity:0; font-size:26px; font-weight:700; line-height:1.37; letter-spacing:normal; text-align:center; color:#fff;white-space:nowrap;}
+.commerceProductWrap .itemWrap .itemPresent {margin-left:78px;}
+.commerceProductWrap .itemWrap .itemDetail .itemPresent .itemTitle{bottom:-44px;}
+
+.commerceProductWrap .tabStyle {display:inline-block; padding-top:82px; text-align:center;}
+.commerceProductWrap .tabContWrap {padding:48px 370px 0;}
+.commerceProductWrap .tabContWrap .tabCont {opacity:0;}
+.commerceProductWrap .tabContWrap .tabCont.select {opacity:1;}
+.commerceProductWrap .productTable {border-top:1px solid rgba(244, 244, 244, 0.16);}
+.commerceProductWrap .productTable tbody tr th,
+.commerceProductWrap .productTable tbody tr td {padding-left:30px; border-bottom:1px solid rgba(244, 244, 244, 0.16); font-size:24px; line-height:2.08; letter-spacing:normal; text-align:left;}
+.commerceProductWrap .productTable tbody tr th {background-color:rgba(0, 0, 0, 0.15); font-weight:700; color:#f4f4f4;}
+.commerceProductWrap .productTable tbody tr td {background-color:rgba(204, 204, 215, 0.1); color:rgba(212,212,212,1);}
+.commerceProductWrap .productInfo {padding-top:20px; font-size:24px; line-height:1.58; letter-spacing:normal; color:rgba(136,136,136,1); text-align:left;}
+.commerceProductWrap .productInfo:before {display:inline-block; margin-top:-2px; margin-right:8px; width:4px; height:4px; border-radius:4px; background-color:rgba(244, 244, 244, 0.4); vertical-align:middle; content:"";}
+
+
+.commerceProductWrap .listCircle {}
+.commerceProductWrap .listCircle li {position:relative; z-index:1; padding-left:20px; font-size:28px; line-height:1.57; letter-spacing:normal; color:rgba(212,212,212,1); text-align:left;}
+.commerceProductWrap .listCircle li:before {display:block; position:absolute; top:19px; left:0; z-index:10; width:6px; height:6px; border-radius:6px; background-color:rgba(255, 255, 255, 0.5); content:"";}
+
+.commerceProductWrap .tabStyle li .tabItem{position:relative;}
+
+.commerceProductWrap .tabWrap .csFocusTab.defaultFocus:after{content:'';display:block;position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;border-radius:4px;background-color:rgba(0,0,0,0.15);}
+.commerceProductWrap .tabWrap .csFocusTab.defaultFocus.focusOn:after{display:none;}
+
+.commerceProductWrap .clauseBox{display:-webkit-box;overflow:hidden;text-overflow:ellipsis;white-space:normal;-webkit-line-clamp:14;-webkit-box-orient:vertical;font-size:28px;line-height:1.57;text-align:center;color:#fff;text-align:left;}
+
+.commerceProductWrap  .tabCont{position:absolute;width:1160px;height:600px;}
+.commerceProductWrap .tabCont .scrollBoxWrap{display:block;position:relative;height:100%;/*overflow-y:auto;*/ overflow:hidden;}
+.commerceProductWrap .tabCont .btnWrap{display:none;margin-top:40px;}
+.commerceProductWrap .tabCont.select .btnWrap{display:block;}
+
+.commerceProductWrap .itemDetail .csFocus:before{position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;content:"";display:block;border-radius:4px;overflow:hidden;box-shadow:0 0 0 5px #f4f4f4;opacity:0;}
+.commerceProductWrap .itemDetail .csFocus.focusOn:before{box-shadow:0 0 0 5px #f4f4f4;opacity:1;}
+

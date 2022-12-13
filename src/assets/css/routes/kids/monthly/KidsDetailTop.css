@@ -1,0 +1,27 @@
+/* KidsDetailTop.css */
+.kidDetailTop {padding:98px 0 0; height:400px;}
+.kidDetailTop .detailBg{position:absolute;top:0;left:0;right:0;z-index:-1;}
+.kidDetailTop .header .arr {display:block; padding-bottom:8px; font-size:24px; line-height:1.25; letter-spacing:normal; color:rgba(255, 255, 255, 0.6);}
+.kidDetailTop .header .title {padding-bottom:30px; font-size:58px; font-weight:700; line-height:normal; letter-spacing:normal; color:#fff;}
+/*.kidDetailTop .subText .textWrap {min-height:248px; padding-bottom:73px;}*/
+/*.kidDetailTop .subText .textWrap .textDetail {padding-bottom:12px; font-size:30px; font-weight:700; line-height:1.4; letter-spacing:normal; color:#fff;}*/
+/*.kidDetailTop .subText .textWrap .caution {position:relative; z-index:1; font-size:24px; line-height:1.58; letter-spacing:normal; color:rgba(255, 255, 255, 0.6);}*/
+/*.kidDetailTop .subText .textWrap .caution:before {display:inline-block; margin-right:8px; width:4px; height:4px; border-radius:4px; background:rgba(255, 255, 255, 0.4); vertical-align:middle; content:"";}*/
+.kidDetailTop .subText{position:absolute;top:172px;right:115px;z-index:10;}
+.kidDetailTop .subText .surtaxText{display:block;margin-top:36px;font-size:22px;color:rgba(212,212,212,1);line-height:24px;text-align:right;font-weight:700;}
+/*.kidDetailTop .subText .subDetailInfo {display:block; padding:22px 0 18px; font-size:24px; line-height:1.75; letter-spacing:-0.5px; color:#fff; opacity:0.5;}*/
+
+.kidDetailTop .btnjoinWrap .csFocus {padding:21px 26px 22px 24px; width:auto; height:120px; border-radius:4px; background-color:rgba(255, 255, 255, 0.17); box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.15);}
+.kidDetailTop .btnjoinWrap .csFocus.focusOn {transform:scale(1.1); -webkit-transform:scale(1.1); background-color:rgba(244,244,244,1); box-shadow:0 17px 24px 0 rgba(0, 0, 0, 0.35);}
+.kidDetailTop .btnjoinWrap .csFocus .price {font-size:24px; line-height:36px; color:rgba(212,212,212,1);}
+.kidDetailTop .btnjoinWrap .csFocus .price strong {padding-right:8px; font-size:36px; line-height:52px; font-weight:normal;}
+.kidDetailTop .btnjoinWrap .csFocus.focusOn .price,
+.kidDetailTop .btnjoinWrap .csFocus.focusOn .selectType {color:rgba(245,81,63,1);}
+.kidDetailTop .btnjoinWrap .csFocus .selectType {font-size:26px; font-weight:bold; line-height:38px; color:rgba(244,244,244,1);}
+
+/* kidDetailAfterTop */
+.kidDetailAfterTop{}
+.kidDetailAfterTop .header{padding:44px 0 0;}
+.kidDetailAfterTop .header span{display:block;}
+.kidDetailAfterTop .title{font-size:24px;color:rgba(102,102,102,1);line-height:30px;}
+.kidDetailAfterTop .current{font-size:42px;color:rgba(48,48,48,1);line-height:54px;}

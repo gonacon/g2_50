@@ -1,0 +1,128 @@
+/* SlideGenreBlock.css */
+:root{
+	--page:0;
+}
+.slideGenreBlock .slideWrapper{transform:translate3d(calc(var(--page) * -346px),0,0);}
+.slideGenreBlock{padding-top:90px;}
+.monthly .slideGenreBlock{padding-top:60px;}
+.genreMenuBlock .slideGenreBlock{padding-bottom:30px;}
+.slideGenreBlock .slideWrap{position:relative;z-index:1;transform:translate(0,0);}
+.slideGenreBlock .title{transform:translate(0,-4px);min-height:30px;font-size:36px; font-style:normal; font-stretch:normal; line-height:1.44; letter-spacing:normal;}
+.slideGenreBlock .slideWrap .slideCon{margin:-44px -35px -70px;padding:38px 15px 50px;overflow:hidden;}
+.monthly.monthlyAfter .slideGenreBlock .slideWrap .slideCon{margin-bottom:20px;}
+.slideGenreBlock .slideWrapper{display:flex;justify-content:space-between;}
+.slideGenreBlock .slideWrapper .slide{margin:0 20px;text-align:center;flex-shrink:0;}
+
+.slideGenreBlock .slideWrapper .slide.csFocus{display:table;position:relative; z-index:1; border-radius:4px; width:306px; height:172px; box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);}
+.slideGenreBlock .slideWrapper .slide.csFocus .genreBlockTitle {display:table-cell;padding:0 20px; vertical-align:middle; font-size: 34px; font-weight: 700; font-style: normal; font-stretch: normal; line-height: 1.41; letter-spacing: normal; text-align: center; color:#f4f4f4;}
+.slideGenreBlock .slideWrapper .slide.csFocus .genreBlockTitle span{display:-webkit-box;overflow:hidden;text-overflow:ellipsis;white-space:normal;-webkit-line-clamp:2;word-wrap:break-word;}
+.slideGenreBlock .slideWrapper .csFocus{transform:scale(1,1);}
+.slideGenreBlock .slideWrapper .csFocus.focusOn{transform:scale(1.15,1.15);box-shadow: 0 14px 14px 0 rgba(0, 0, 0, 0.35);}
+
+.slideGenreBlock .slideWrapper .slide.csFocus .imgWrap {position:absolute; top:0; left:0; bottom:0; right:0; z-index:-1; border-radius:4px; overflow:hidden;}
+.slideGenreBlock .slideWrapper .slide.csFocus .imgWrap img {position:absolute; top:0; left:0; bottom:0; right:0; z-index:-1;}
+.slideGenreBlock .slideWrapper .slide.csFocus .imgWrap .onImage,
+.slideGenreBlock .slideWrapper .slide.csFocus.focusOn .imgWrap .offImage{opacity:0;}
+.slideGenreBlock .slideWrapper .slide.csFocus .imgWrap .offImage,
+.slideGenreBlock .slideWrapper .slide.csFocus.focusOn .imgWrap .onImage {opacity:1;}
+/*.slideGenreBlock .slideWrapper .slide.csFocus .imgWrap:after {content:""; display:block; position:absolute; top:0; left:0; bottom:0; right:0; z-index:0; background:rgba(0, 0, 0, 0.65);}*/
+
+.slideGenreBlock .slideWrapper .csFocus:after{position:absolute;top:1px;left:1px;right:1px;bottom:1px;z-index:-1;content:"";display:block;border-radius:2px;overflow:hidden;box-shadow:0 0 0 6px #f4f4f4;opacity:0;}
+.slideGenreBlock .slideWrapper .csFocus.focusOn:after{box-shadow:0 0 0 6px #f4f4f4;opacity:1;}
+
+/* 영화 */
+.tvGenre .slideGenreBlock .slideWrapper .slide.csFocus:before,
+.tvGenre .slideGenreBlock .slideWrapper .slide.csFocus:before,
+.homeGenre .slideGenreBlock .slideWrapper .slide.csFocus:before,
+.kidsGenre .slideGenreBlock .slideWrapper .slide.csFocus:before,
+.lifeGenre .slideGenreBlock .slideWrapper .slide.csFocus:before,
+.movieGenre .slideGenreBlock .slideWrapper .slide.csFocus:before,
+.goldZoneGenre .slideGenreBlock .slideWrapper .slide.csFocus:before,
+.animationGenre .slideGenreBlock .slideWrapper .slide.csFocus:before {content:""; display:block; position:absolute; top:0; left:0; bottom:0; right:0; z-index:-1; border-radius:4px; opacity:0.75;}
+.movieGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-7).csFocus:before,
+.goldZoneGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-7).csFocus:before {background:#3d2469;}
+.movieGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-6).csFocus:before,
+.goldZoneGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-6).csFocus:before {background:#4c3693;}
+.movieGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-5).csFocus:before,
+.goldZoneGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-5).csFocus:before {background:#4a4fb0;}
+.movieGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-4).csFocus:before,
+.goldZoneGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-4).csFocus:before {background:#4566b5;}
+.movieGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-3).csFocus:before,
+.goldZoneGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-3).csFocus:before {background:#467bc2;}
+.movieGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-2).csFocus:before,
+.goldZoneGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-2).csFocus:before {background:#4566b5;}
+.movieGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-1).csFocus:before,
+.goldZoneGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-1).csFocus:before {background:#4a4fb0;}
+.movieGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n).csFocus:before,
+.goldZoneGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n).csFocus:before {background:#4c3693;}
+
+/* tv다시보기 */
+.tvGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-7).csFocus:before {background:#142170;}
+.tvGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-6).csFocus:before {background:#2c3d8d;}
+.tvGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-5).csFocus:before {background:#325da6;}
+.tvGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-4).csFocus:before {background:#4379b0;}
+.tvGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-3).csFocus:before {background:#408eb5;}
+.tvGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-2).csFocus:before {background:#4379b0;}
+.tvGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-1).csFocus:before {background:#325da6;}
+.tvGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n).csFocus:before {background:#2c3d8d;}
+
+/* 애니 */
+.animationGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-7).csFocus:before {background:#0b406b;}
+.animationGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-6).csFocus:before {background:#18536e;}
+.animationGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-5).csFocus:before {background:#326570;}
+.animationGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-4).csFocus:before {background:#4b8486;}
+.animationGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-3).csFocus:before {background:#6a928b;}
+.animationGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-2).csFocus:before {background:#4b8486;}
+.animationGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-1).csFocus:before {background:#326570;}
+.animationGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n).csFocus:before {background:#18536e;}
+
+/* 키즈 */
+.kidsGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-7).csFocus:before {background:#155928;}
+.kidsGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-6).csFocus:before {background:#326e2b;}
+.kidsGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-5).csFocus:before {background:#4d7d45;}
+.kidsGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-4).csFocus:before {background:#628938;}
+.kidsGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-3).csFocus:before {background:#88932e;}
+.kidsGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-2).csFocus:before {background:#628938;}
+.kidsGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-1).csFocus:before {background:#4d7d45;}
+.kidsGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n).csFocus:before {background:#326e2b;}
+
+/* 다큐 라이프 */
+.lifeGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-7).csFocus:before {background:#683506;}
+.lifeGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-6).csFocus:before {background:#6d490f;}
+.lifeGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-5).csFocus:before {background:#986512;}
+.lifeGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-4).csFocus:before {background:#a47b0c;}
+.lifeGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-3).csFocus:before {background:#ab8f0a;}
+.lifeGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-2).csFocus:before {background:#a47b0c;}
+.lifeGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-1).csFocus:before {background:#986512;}
+.lifeGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n).csFocus:before {background:#6d490f;}
+
+/* Home */
+.homeGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-7).csFocus:before {background:#871b0f;}
+.homeGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-6).csFocus:before {background:#ad291a;}
+.homeGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-5).csFocus:before {background:#d14232;}
+.homeGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-4).csFocus:before {background:#de5849;}
+.homeGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-3).csFocus:before {background:#e67467;}
+.homeGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-2).csFocus:before {background:#de5849;}
+.homeGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n-1).csFocus:before {background:#d14232;}
+.homeGenre .slideGenreBlock .slideWrapper .slide:nth-child(8n).csFocus:before {background:#ad291a;}
+
+.slideGenreBlock .slideWrapper .slide.csFocus.focusOn:before {opacity:1;}
+
+.slideGenreBlock .leftArrow,
+.slideGenreBlock .rightArrow{position:absolute;top:50%;left:-64px;z-index:10;transform:translate(0,-60%);width:24px;height:58px;background:url("/assets/images/common/icon/arrow-left.png") no-repeat 0 0;opacity:0;}
+.slideGenreBlock .rightArrow{left:auto;right:-64px;background:url("/assets/images/common/icon/arrow-right.png") no-repeat 0 0;}
+.contentGroup.activeSlide .slideGenreBlock .title{transform:translate(0,-23px);}
+.slideGenreBlock .activeSlide.leftActive .leftArrow,
+.slideGenreBlock .activeSlide.rightActive .rightArrow{opacity:1;}
+
+/*.contentGroup.activeSlide .slideGenreBlock .title{transform:translate(0,-40px);}*/
+.slideGenreBlock .activeSlide.lastActive .slideCount{transform:translate(0,-19px);}
+
+.slideGenreBlock .activeSlide .slideCount{opacity:1;}
+.slideGenreBlock .slideCount{opacity:0;position:absolute;top:9px;right:0;z-index:10;font-size:23px;line-height:1;letter-spacing:normal;color:#6a6a6a;transform:translate(0,0);}
+.slideGenreBlock .slideCount .current{font-weight:700;}
+
+.genreMenuBlock .slideGenreBlock .leftArrow,
+.genreMenuBlock .slideGenreBlock .rightArrow{position:absolute;top:50%;left:-85px;z-index:10;transform:translate(0,-40%);width:72px;height:100px;background:url("/assets/images/kids/button/arrow-left.png") no-repeat 0 0;opacity:0;}
+.genreMenuBlock .slideGenreBlock .rightArrow{left:auto;right:-85px;background:url("/assets/images/kids/button/arrow-right.png") no-repeat 0 0;}
+

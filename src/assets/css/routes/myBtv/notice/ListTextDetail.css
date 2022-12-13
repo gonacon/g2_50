@@ -1,0 +1,31 @@
+/* ListTextDetail.css */
+/* contentPop */
+.listTextDetail .contentPop{display:block;position:fixed;top:0;left:0;right:0;bottom:0;z-index:10000;width:1920px; height:1080px;font-size:36px;color:#fff;line-height:48px;background:#000;}
+.listTextDetail .innerContentPop{display:table;position:relative;margin:0;padding:82px 235px 130px 310px;width:1920px;height:1080px;}
+.listTextDetail .innerContentPop .detailTitleWrap{display:table-row;height:152px;}
+.listTextDetail .innerContentPop .date {display:block;font-size:34px;color:rgba(0,0,0,0.5);line-height:38px;text-align:center;}
+.listTextDetail .innerContentPop .detailTitle {display:table-cell;padding-right:75px;vertical-align:middle;}
+.listTextDetail .innerContentPop .detailTitle span{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:1295px;margin:0 auto;font-size:56px;color:rgba(0,0,0,1);line-height:76px;text-align:center;font-weight:700;}
+.listTextDetail .innerContentPop .innerContentInfo{display:block;overflow-y:auto;height:100%;margin:0 auto;background:rgba(0,0,0,0.08);border-radius:7px;scroll-behavior:smooth;}
+.listTextDetail .innerContentPop .innerContentInfo::-webkit-scrollbar {width:0;}
+
+.listTextDetail .innerContentPop .contentInfo{display:block;margin:0;width:100%;padding:65px 60px;}
+.listTextDetail .innerContentPop .contentInfo .text {color:#000;}
+.listTextDetail .innerContentPop .contentText{display:block;font-size:30px;line-height:62px;font-weight:700;text-align:left;}
+
+.listTextDetail .innerContentPop .scrollBarBox{display:block;position:absolute;top:0;bottom:0;right:14px;z-index:1005;width:32px;height:100%;}
+.listTextDetail .innerContentPop .innerScrollBarBox{display:block;position:absolute;top:0;bottom:30px;left:0;right:0;width:32px;height:auto;margin:0;padding:0;}
+.listTextDetail .innerContentPop .innerScrollBarBox .scrollBar{display:block;position:absolute;top:0;left:0;right:0;border-radius:16px;width:32px;height:200px;background:#f4f4f4;box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.5);}
+.listTextDetail .innerContentPop .innerScrollBarBox .scrollBar:before,
+.listTextDetail .innerContentPop .innerScrollBarBox .scrollBar:after{position:absolute;top:0;left:0;z-index:10;display:block;width:32px;height:30px;content:"";background:url('/assets/images/common/icon/img-scroll-pop-up-foc.png') 0 0 no-repeat;}
+.listTextDetail .innerContentPop .innerScrollBarBox .scrollBar:after{top:auto;bottom:0;background-image:url('/assets/images/common/icon/img-scroll-pop-down-foc.png');}
+.listTextDetail .innerContentPop .innerScrollBarBox .scrollBarBG{display:block;width:16px;height:100%;margin:0 auto;border-radius:16px;background:rgba(0,0,0,0.3);}
+
+.listTextDetail .popupScrollWrap{display:table-row;height:100%;}
+.listTextDetail .popupScrollWrap .contScrollWrap{position:relative;z-index:1;height:770px;padding-bottom:30px;margin-top:16px;padding-right:75px;}
+.listTextDetail.box .popupScrollWrap .contScrollWrap {height:auto;}
+.listTextDetail .popupScrollWrap .contScrollWrap::-webkit-scrollbar {width:0;}
+
+.listTextDetail .btnKeyPrev{bottom:98px;z-index:10001;}
+
+.listTextDetail .btnWrap{margin-top:60px;text-align:center;}

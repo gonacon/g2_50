@@ -1,0 +1,7 @@
+/* PlayGuideWatchEnd.css */
+.watchEndWrap {position:relative; z-index:1; padding:250px 410px 0; width:1920px; height:1080px; background:url("/assets/images/common/bg/bg_popup.png") no-repeat 0 0; text-align:center;}
+.watchEndWrap .pageTitle {padding-bottom:20px; font-size:52px; line-height:1; color:#f4f4f4;}
+.watchEndWrap .mesTextWrap {position:absolute;top:300px;bottom:390px;left:410px;right:410px;z-index:10;}
+.watchEndWrap .mesTextWrap .mesText{position:absolute;top:50%;left:0;right:0;z-index:10;transform:translate(0,-50%);font-size:36px;line-height:52px;color:#d4d4d4;}
+.watchEndWrap .buttonWrap {position:absolute; left:50%; bottom:300px; z-index:1; transform:translate(-50%, 0); -webkit-transform:translate(-50%, 0);}
+.watchEndWrap .buttonWrap .btnStyle + .btnStyle {margin-left:26px;}

@@ -1,0 +1,104 @@
+/* NoticeList.css */
+/* NoticeList */
+.noticeListWrap {position:relative; z-index:1; height:1080px;}
+
+.noticeListWrap .contsArea{overflow:hidden;height:100%;}
+.noticeListWrap .contsArea > div{height:100%;}
+.noticeListWrap .contsArea .menuArea{float:left;width:540px;padding:78px 57px 0 87px;}
+.noticeListWrap .contsArea .listArea{position:relative;float:right;width:1380px;padding:225px 70px 0 95px;background-color:rgba(237, 239, 243, 0.5);box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1);}
+
+.noticeListWrap .menuArea .pageTitle{display:block;font-size:46px;color:rgba(48,48,48,1);line-height:52px;}
+.noticeListWrap .menuArea .menuListWrap{display:block;overflow:hidden;height:838px;margin:50px -20px -40px;padding:40px 20px 40px;}
+.noticeListWrap .menuArea .tabStyle2{transform:translate3d(0,calc(var(--page) * -777px),0);}
+.noticeListWrap .menuArea .tabStyle2 li .csFocus{display:inline-block;width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.noticeListWrap .menuArea .tabStyle2 li .csFocus .new{display:inline-block;width:34px;height:34px;margin-top:27px;border-radius:18px;background-color:rgba(89, 88, 105, 0.7);font-size:22px;color:rgba(244,244,244,0.8);line-height:35px;vertical-align:top;text-align:center;font-weight:700;}
+.noticeListWrap .menuArea .tabStyle2 li .csFocus.active {font-weight:700;color:#1a1a1a;background-color:rgba(26, 26, 26, 0.1);border-radius: 4px;}
+.noticeListWrap .menuArea .tabStyle2 li .csFocus.active span{margin-top:27px;vertical-align:top;}
+.noticeListWrap .menuArea .tabStyle2 li .csFocus.active.focusOn{color:#f5513f;}
+
+.noticeListWrap .listArea:before{content:'';display:block;position:absolute;top:233px;left:115px;right:115px;z-index:0;height:2px;background-color:rgba(0,0,0,0.4);}
+/*.noticeListWrap .listArea:after{content:'';display:block;position:absolute;top:914px;left:115px;right:115px;z-index:-1;height:1px;background-color:rgba(0,0,0,0.2);}*/
+.noticeListWrap .listArea .listScrollWrap{overflow:hidden;/*height:710px;padding:10px 45px 0 20px;*/height:730px;padding:10px 45px 40px 20px;}
+.noticeListWrap .listArea ul.useGuideInfo{position:absolute;top:80px;left:145px;}
+.noticeListWrap .listArea ul.useGuideInfo li{font-size:26px;color:rgba(106,106,106,1);line-height:38px;}
+.noticeListWrap .listArea ul.useGuideInfo li:before{content:"";display:inline-block;width:4px;height:4px;margin-left:5px;margin-right:10px;background-color:rgba(106,106,106,1);line-height:38px;vertical-align:middle;}
+.noticeListWrap .listArea ul.useGuideInfo li strong{font-weight:700;}
+
+.noticeListWrap .listArea ul.textList{transform:translate3d(0,calc(var(--page) * -680px),0);}
+.noticeListWrap .listArea ul.textList li{border-bottom:1px solid rgba(0,0,0,0.2);}
+.noticeListWrap .listArea ul.textList li .csFocus{display:block;position:relative;z-index:1;/*width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;*/}
+.noticeListWrap .listArea ul.textList li .csFocus.focusOn:before{content:'';display:block;position:absolute;top:-8px;left:-10px;right:-4px;bottom:-8px;z-index:-1;border-radius:4px;background-color:rgba(255,255,255,1);box-shadow:0 24px 16px 0 rgba(0, 0, 0, 0.35);}
+.noticeListWrap .listArea ul.textList li .csFocus .listItemWrap{display:table;width:100%;table-layout:fixed;}
+.noticeListWrap .listArea ul.textList li .csFocus .listItemWrap > span{display:table-cell;vertical-align:middle;}
+.noticeListWrap .listArea ul.textList li .csFocus .listItemWrap .num{width:100px;text-align:center;}
+.noticeListWrap .listArea ul.textList li .csFocus .listItemWrap .title{width:815px;text-align:left;}
+.noticeListWrap .listArea ul.textList li .csFocus .listItemWrap .title.bell .txt{position:relative;z-index:1;padding-left:80px;font-weight:700;}
+.noticeListWrap .listArea ul.textList li .csFocus .listItemWrap .title.bell .txt:before{position:absolute;top:50%;left:30px;z-index:10;transform:translate(0,-50%);width:31px;height:34px;z-index:10;content:"";background:url("/assets/images/myBtv/ic-bell-notice-nor.png") no-repeat 0 0;}
+.noticeListWrap .listArea ul.textList li .csFocus.focusOn .listItemWrap .title.bell .txt:before{width:35px;height:39px;background-image:url("/assets/images/myBtv/ic-bell-notice-foc.png");}
+.noticeListWrap .listArea ul.textList li .csFocus .listItemWrap .date{width:235px;padding-right:34px;text-align:right;}
+.noticeListWrap .listArea ul.textList li .csFocus .listItemWrap > span > .txt{display:block;font-size:30px;line-height:84px;}
+.noticeListWrap .listArea ul.textList li .csFocus .listItemWrap .num .txt,
+.noticeListWrap .listArea ul.textList li .csFocus .listItemWrap .date .txt{color:rgba(0,0,0,0.6);}
+.noticeListWrap .listArea ul.textList li .csFocus .listItemWrap .title .txt{display:block;padding-left:30px;text-overflow:ellipsis;-o-text-overflow:ellipsis;overflow:hidden;white-space:nowrap;word-wrap:normal !important;color:rgba(26,26,26,1);font-weight:400;}
+.noticeListWrap .listArea ul.textList li .csFocus.focusOn:before{content:'';display:block;position:absolute;top:-8px;left:-10px;right:-4px;bottom:-8px;z-index:-1;border-radius:4px;background-color:rgba(255,255,255,1);box-shadow:0 24px 16px 0 rgba(0, 0, 0, 0.35);}
+.noticeListWrap .listArea ul.textList li .csFocus.focusOn .listItemWrap > span > span{font-size:34px;}
+.noticeListWrap .listArea ul.textList li .csFocus.focusOn .listItemWrap .title span{color:rgba(245,81,63,1);}
+
+.noticeListWrap .listArea.none:before{display:none;}
+.noticeListWrap .listArea.none:after{display:none;}
+.noticeListWrap .listArea.none .noticeNone{display:inline-block;position:absolute;top:50%;left:50%;font-size:40px;color:rgba(74,74,74,1);line-height:48px;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);}
+
+/* scroll */
+.listArea .listScrollWrap::-webkit-scrollbar-track{margin-top:10px;margin-bottom:40px;border-radius:10px;background-color:transparent;}
+.listArea .listScrollWrap::-webkit-scrollbar{width:12px;background-color:transparent;}
+.listArea .listScrollWrap::-webkit-scrollbar-thumb{border-radius:10px;background-color:rgba(0,0,0,0.2);}
+
+/* NoticeBoxList */
+.noticeListWrap .listArea ul.textList li.new{}
+.noticeListWrap .listArea ul.textList li.new .csFocus .title{display:flex;}
+.noticeListWrap .listArea ul.textList li.new .csFocus .title .new{display:inline-block;width:34px;height:34px;margin:24px 0 0 10px;padding:0 9px;border-radius:18px;background-color:rgba(89, 88, 105,0.7);font-size:22px;color:rgba(255,255,255,0.8);line-height:36px;vertical-align:middle;text-align:center;}
+.noticeListWrap .listArea ul.textList li.new .csFocus.focusOn .title .new{width:40px;height:40px;margin-top:21px;padding:0 11px;border-radius:20px;background-color:#f5513f;font-size:25px;color:#fff;line-height:40px;}
+
+/* EventList */
+.noticeListWrap .listArea.img{width:1380px;padding:190px 70px 0 100px;}
+.noticeListWrap .listArea.img:before{display:none;}
+.noticeListWrap .listArea.img:after{display:none;}
+.noticeListWrap .listArea.img .listScrollWrap{height:878px;padding:10px 46px 20px 30px;}
+.noticeListWrap .listArea.img ul.imgList{}
+.noticeListWrap .listArea.img ul.imgList:after{content:'';display:block;clear:both;}
+.noticeListWrap .listArea ul.imgList li{float:left;width:50%;margin-top:64px;font-size:0;}
+.noticeListWrap .listArea ul.imgList li:nth-child(1),
+.noticeListWrap .listArea ul.imgList li:nth-child(2){margin-top:0;}
+.noticeListWrap .listArea ul.imgList li:nth-child(even){display:block;text-align:right;}
+.noticeListWrap .listArea ul.imgList li .csFocus{display:inline-block;width:532px;height:164px;border-radius:4px;background-color:rgba(0,0,0,0.5);box-shadow:0 4px 4px 0 rgba(0,0,0,0.25);}
+.noticeListWrap .listArea ul.imgList li .csFocus.focusOn{transform:scale(1.1);}
+
+/* scroll */
+.listArea.img .listScrollWrap::-webkit-scrollbar-track{margin-top:10px;margin-bottom:10px;border-radius:10px;background-color:transparent;}
+.listArea.img .listScrollWrap::-webkit-scrollbar{width:12px;background-color:transparent;}
+.listArea.img .listScrollWrap::-webkit-scrollbar-thumb{border-radius:10px;background-color:rgba(0,0,0,0.2);}
+
+/* arrow */
+.menuListWrap,
+.listArea{position:relative;}
+.menuListWrap .topArrow,
+.menuListWrap .bottomArrow{position:absolute;top:0;left:210px;z-index:10;transform:translate(-50%,0);width:43px;height:15px;background:url("/assets/images/common/icon/arrow-top.png") no-repeat 0 0;opacity:0;}
+.menuListWrap .bottomArrow{top:auto;bottom:0;background:url("/assets/images/common/icon/arrow-bottom.png") no-repeat 0 0;}
+.menuListWrap.activeSlide.leftActive .topArrow,
+.menuListWrap.activeSlide.rightActive .bottomArrow{opacity:1;}
+
+.listArea{position:relative;}
+.listArea .topArrow,
+.listArea .bottomArrow{position:absolute;top:190px;left:690px;z-index:10;transform:translate(-50%,0);width:43px;height:15px;background:url("/assets/images/common/icon/arrow-top.png") no-repeat 0 0;opacity:0;}
+.listArea .bottomArrow{top:auto;bottom:120px;background:url("/assets/images/common/icon/arrow-bottom.png") no-repeat 0 0;}
+.listArea.activeSlide.leftActive .topArrow,
+.listArea.activeSlide.rightActive .bottomArrow{opacity:1;}
+
+/* arrow */
+.menuListWrap,
+.listArea{position:relative;}
+.menuListWrap .topArrow,
+.menuListWrap .bottomArrow{position:absolute;top:0;left:210px;z-index:10;transform:translate(-50%,0);width:43px;height:15px;background:url("/assets/images/common/icon/arrow-top.png") no-repeat 0 0;opacity:0;}
+.menuListWrap .bottomArrow{top:auto;bottom:0;background:url("/assets/images/common/icon/arrow-bottom.png") no-repeat 0 0;}
+.menuListWrap.activeSlide.leftActive .topArrow,
+.menuListWrap.activeSlide.rightActive .bottomArrow{opacity:1;}

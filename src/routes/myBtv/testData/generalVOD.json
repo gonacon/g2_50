@@ -1,0 +1,34 @@
+[
+    {
+        "dDay" : "D-5",
+        "episode" : "전편",
+        "image" : "/assets/images/tmp/home_A_01.png",
+        "titleFull" : "[일반VOD] 패키지 상품정보 테스트",
+        "priceInfo" : "11,200원에 구매 (부가세 포함)",
+        "itemType" : "패키지(UHD/HDR)",
+        "payment" : "신용카드",
+        "price" : "45000",
+        "purchaseDate" : "17.05.03",
+        "usePeriod" : "기간만료",
+        "expiryDate" : "2017.05.07 18:23 까지",
+        "state" : "상품정보",
+        "prodTypeCode": "41",
+        "discount": []
+    },
+    {
+        "dDay" : "D-5",
+        "episode" : "전편",
+        "image" : "/assets/images/tmp/home_A_01.png",
+        "titleFull" : "[일반VOD] VOD관련 상품정보 테스트",
+        "priceInfo" : "11,200원에 구매 (부가세 포함)",
+        "itemType" : "VOD관련상품 (UHD/HDR)",
+        "payment" : "신용카드",
+        "price" : "45000",
+        "purchaseDate" : "17.05.03",
+        "usePeriod" : "기간만료",
+        "expiryDate" : "2017.05.07 18:23 까지",
+        "state" : "상품정보",
+        "prodTypeCode": "100",
+        "discount": []
+    }
+]

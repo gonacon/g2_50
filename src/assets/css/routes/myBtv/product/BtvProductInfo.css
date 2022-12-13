@@ -1,0 +1,32 @@
+/* BtvProductInfo.css */
+:root{
+	--page:0;
+}
+
+.btvProductInfo {padding:98px 115px 84px; height:638px; background:url("/assets/images/common/bg/layered-bg.png") no-repeat top left;}
+.ProductInfoCon {position:relative; z-index:1;}
+.btvProductInfo .topBg {position:fixed; top:0; left:0; z-index:-1; height:638px}
+.btvProductInfo .productTitleWrap {font-size:0;}
+.btvProductInfo .productTitleWrap .productTitle {display:inline-block; font-size:58px; font-weight:700; line-height:normal; letter-spacing:-0.5px; color:#1a1a1a;}
+.btvProductInfo .productTitleWrap .mark {display:inline-block; margin:5px 0 0 10px; padding:2px 13px; border-radius:113px; background:linear-gradient(280deg, #ff6e35, #ea304a); font-size:22px; font-weight:700; line-height:1.42; letter-spacing:-0.5px; text-align:center; color:rgba(255,255,255,0.9); vertical-align:top;}
+.btvProductInfo .productInfo {margin-top:32px; font-weight:700; font-size:30px; line-height:1.4; letter-spacing:-0.5px; color:#1a1a1a;}
+.btvProductInfo .conLeft {margin-top:12px;}
+.btvProductInfo .conRight {position:absolute; top:0; right:0; z-index:-1; padding-left:928px;}
+
+.btvProductInfo .costPrice {margin-top:54px; font-size:28px; font-weight:500; line-height:1.29; letter-spacing:normal; color: #1a1a1a;}
+.btvProductInfo .costPrice span .number {font-size:42px; font-weight:700; line-height:1.19; letter-spacing:normal; color:#1a1a1a;}
+.btvProductInfo .costPrice span + span .number:before {content:""; display:inline-block; margin:0 24px; width:3px; height:32px; background-color:#5b5c5d; opacity:0.45; vertical-align:middle;}
+.btvProductInfo .costInfo {font-size:26px; line-height:1.69; letter-spacing:-1px; color:#1a1a1a; opacity:0.8;}
+
+/*.btvProductInfo .productLogoList {display:flex; justify-content:space-between; flex-wrap:wrap;}*/
+/*.btvProductInfo .productLogoList li {margin-bottom:24px; width:130px; height:130px;}*/
+.btvProductInfo .productLogoList:after {display:block; clear:both; content:"";}
+.btvProductInfo .productLogoList {margin-left:-28px;}
+.btvProductInfo .productLogoList li {float:left; margin-left:28px; margin-bottom:24px; width:130px; height:130px;}
+
+.btvProductInfo .productLogoList li .imgLogo {display:block; border-radius:130px; min-height:130px; background-color:rgba(237, 239, 243, 0.5);}
+.btvProductInfo .detailCaution {}
+.btvProductInfo .detailCaution li {position:relative; z-index:1; padding-left:12px; font-size:24px; line-height:1.58; letter-spacing:-0.5px; color:rgba(26,26,26,0.6);}
+.btvProductInfo .detailCaution li:before {display:inline-block; margin:16px 8px 0 0; position:absolute; top:0; left:0; z-index:1; width:4px; height:4px; border-radius:4px; opacity:0.4; background-color:#1a1a1a; vertical-align:top; content:"";}
+
+

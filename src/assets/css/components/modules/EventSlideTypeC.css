@@ -1,0 +1,28 @@
+/* EventSlideTypeC.css */
+:root{
+	--page:0;
+}
+.eventSlideTypeC {padding-top:80px;}
+.eventSlideTypeC .slideWrap {position:relative; z-index:1;transform:translate(0,0);}
+.eventSlideTypeC .slideWrap .slideCon {overflow:hidden; margin:-40px -70px -45px; padding:40px 30px 45px;}
+.eventSlideTypeC .slideWrap .slideCon .slideWrapper{transform:translate3d(calc(var(--page) * -1770px),0,0);height:220px;}
+.eventSlideTypeC .slideWrap .slideCon .slideWrapper {display:flex; align-items:center; justify-content:space-between;}
+.eventSlideTypeC .slideWrap .slideCon .slideWrapper .slide {display:block; margin:0 40px;}
+.eventSlideTypeC .slideWrap .slideCon .slideWrapper .slide.csFocus {position:relative;z-index:1;width:1690px; height:172px; box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);}
+.eventSlideTypeC .slideWrap .slideCon .slideWrapper .slide.csFocus .imgWrapper {overflow:hidden; display:block; position:relative; z-index:1; width:1690px; height:100%;border-radius:4px;overflow:hidden;background:url("/assets/images/common/default/event_block_1set_default.png") no-repeat 0 50%;}
+.eventSlideTypeC .slideWrap .slideCon .slideWrapper .slide.csFocus .imgWrapper img {position:absolute; top:50%; left:0; transform:translate(0,-50%); z-index:10;}
+.eventSlideTypeC .slideWrap .slideCon .slideWrapper .slide.csFocus.focusOn {height:220px;transform:scale(1.05); padding:0;box-shadow: 0 14px 14px 0 rgba(0, 0, 0, 0.35)}
+
+.eventSlideTypeC .leftArrow,
+.eventSlideTypeC .rightArrow{position:absolute;top:50%;left:-85px;z-index:10;transform:translate(0,-50%);width:24px;height:58px;background:url("/assets/images/common/icon/arrow-left.png") no-repeat 0 0;opacity:0;}
+.eventSlideTypeC .rightArrow{left:auto;right:-85px;background:url("/assets/images/common/icon/arrow-right.png") no-repeat 0 0;}
+.eventSlideTypeC .activeSlide.leftActive .leftArrow,
+.eventSlideTypeC .activeSlide.rightActive .rightArrow{opacity:1;}
+
+/*.eventSlideTypeC .activeSlide.lastActive .slideCount{transform:translate(0,-30px);}*/
+.eventSlideTypeC .activeSlide .slideCount{opacity:1;}
+.eventSlideTypeC .slideCount{opacity:0;position:absolute;top:35px;right:0;z-index:10;font-size:23px;line-height:1;letter-spacing:normal;color:#6a6a6a;transform:translate(0,-34px);}
+.eventSlideTypeC .slideCount .current{font-weight:700;}
+
+.eventSlideTypeC .slideWrapper .csFocus:before{position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;content:"";display:block;border-radius:2px;overflow:hidden;box-shadow:0 0 0 5px #f4f4f4;opacity:0;}
+.eventSlideTypeC .slideWrapper .csFocus.focusOn:before{box-shadow:0 0 0 5px #f4f4f4;opacity:1;}

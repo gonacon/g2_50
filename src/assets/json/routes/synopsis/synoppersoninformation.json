@@ -1,0 +1,113 @@
+{
+	"personinformation":
+	{
+		"popBg" : "/assets/images/tmp/synopsis/bg-synopshort-pop.png",
+		"name": "엠마 왓슨",
+		"job": "영화배우",
+		"birth" : "1990년 4월 15일",
+		"debut" : "해리 포터와 마법사의 돌 (2001)",
+		"bodyHeight" : "165cm",
+		"bloodType" : "A형",
+		"belongTo" : "Creative Artists Agency",
+		"filmography": [
+			{
+				"year": "2017",
+				"content":[
+					{
+						"image": "/assets/images/tmp/synopsis/img-personinfo-slide-01.png",
+						"imageTitle": "미녀와 야수",
+						"part": "주연",
+						"prize": "2017년 26회 MTV영화제 최고의 배우상"
+					},
+					{
+						"image": "/assets/images/tmp/synopsis/img-personinfo-slide-02.png",
+						"imageTitle": "콜로니아",
+						"part": "주연",
+						"prize": ""
+					},
+					{
+						"image": "/assets/images/tmp/synopsis/img-personinfo-slide-03.png",
+						"imageTitle": "리그레션",
+						"part": "주연",
+						"prize": "2017년 26회 MTV영화제 최고의 배우상"
+					}
+				]
+			},
+			{
+				"year": "2015",
+				"content":[
+					{
+						"image": "/assets/images/tmp/synopsis/img-personinfo-slide-04.png",
+						"imageTitle": "노아",
+						"part": "주연",
+						"prize": "2017년 26회 MTV영화제 최고의 배우상"
+					},
+					{
+						"image": "/assets/images/tmp/synopsis/img-personinfo-slide-05.png",
+						"imageTitle": "THIS IS THE END",
+						"part": "주연",
+						"prize": ""
+					}
+				]
+			},
+			{
+				"year": "2013",
+				"content":[
+					{
+						"image": "/assets/images/tmp/synopsis/img-personinfo-slide-06.png",
+						"imageTitle": "블링 링",
+						"part": "주연",
+						"prize": "2017년 26회 MTV영화제 최고의 배우상"
+					},
+					{
+						"image": "/assets/images/tmp/synopsis/img-personinfo-slide-01.png",
+						"imageTitle": "미녀와 야수",
+						"part": "주연",
+						"prize": ""
+					},
+					{
+						"image": "/assets/images/tmp/synopsis/img-personinfo-slide-02.png",
+						"imageTitle": "콜로니아",
+						"part": "주연",
+						"prize": ""
+					}
+				]
+			},
+			{
+				"year": "2012",
+				"content":[
+					{
+						"image": "/assets/images/tmp/synopsis/img-personinfo-slide-03.png",
+						"imageTitle": "리그레션",
+						"part": "주연",
+						"prize": ""
+					},
+					{
+						"image": "/assets/images/tmp/synopsis/img-personinfo-slide-04.png",
+						"imageTitle": "노아",
+						"part": "주연",
+						"prize": "2017년 26회 MTV영화제 최고의 배우상"
+					}
+				]
+			},
+			{
+				"year": "2011",
+				"content":[
+					{
+						"image": "/assets/images/tmp/synopsis/img-personinfo-slide-05.png",
+						"imageTitle": "THIS IS THE END",
+						"part": "주연",
+						"prize": "2017년 26회 MTV영화제 최고의 배우상"
+					},
+					{
+						"year": "2011",
+						"image": "/assets/images/tmp/synopsis/img-personinfo-slide-06.png",
+						"imageTitle": "블링 링",
+						"part": "주연",
+						"prize": ""
+					}
+				]
+			}
+		]
+	}
+}

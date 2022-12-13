@@ -1,0 +1,77 @@
+/* ChannelPlus.css */
+.wrap .mainBg {overflow:hidden;position:fixed;top:0;left:0;z-index:-1;width:1920px;height:1080px;}
+
+.channelPlusWrap{display:block;position:relative;width:1920px;height:1080px;}
+.channelPlusWrap .channelPlusArea{display:block;position:absolute;bottom:0;left:0;right:0;height:400px;}
+.channelPlusWrap .channelPlusArea .btnChannelPlus{display:block;position:absolute;bottom:25px;left:50%;font-size:26px;color:rgba(255,255,255,1);line-height:50px;transform:translateX(-50%);-webkit-transform:translateX(-50%);}
+.channelPlusWrap .channelPlusArea .btnChannelPlus:after{content:'';display:inline-block;width:50px;height:50px;margin-left:12px;background:url('/assets/images/livetv/icon-channelplus-open.png') no-repeat;vertical-align:middle;}
+.channelPlusWrap .channelPlusArea.on .btnChannelPlus{color:rgba(0,0,0,0.4);}
+.channelPlusWrap .channelPlusArea.on .btnChannelPlus:after{background:url('/assets/images/livetv/icon-channelplus-colse.png') no-repeat;}
+
+.channelPlusWrap .channelPlusArea .channelPlusConts{display:none;height:100%;background:url('/assets/images/livetv/img-channelplus-slide-bg.png') no-repeat;}
+.channelPlusWrap .channelPlusArea.on .channelPlusConts{display:block;padding:0 148px;}
+
+/* slide */
+:root{
+    --page:0;
+}
+.channelPlusSlide .slideWrapper{transform:translate3d(calc(var(--page) * -560px),0,0);}
+
+.channelPlusSlide .slideWrapper{display:flex;justify-content:space-between;}
+.channelPlusSlide{padding-top:32px;}
+.channelPlusSlide .slideWrap{position:relative;z-index:1;}
+/*.activeSlide .channelPlusSlide .title {padding-bottom:0;}*/
+.channelPlusSlide .title {padding-bottom:18px; font-size:36px; line-height:1.11; letter-spacing:-0.8px; color:#1a1a1a; opacity:0.8;}
+.channelPlusSlide .slideWrap .slideCon {overflow:hidden; margin:-20px -42px -40px; padding:24px 14px 40px; font-size:0;}
+.channelPlusSlide .slideWrap .slideWrapper .slide {display:inline-block; position:relative; padding:0 28px;}
+.channelPlusSlide .slideWrap .slideWrapper .slide .csFocus {display:block;overflow:hidden; position:relative; z-index:1;  border-radius:10px; width:504px; height:274px;}
+.channelPlusSlide .slideWrap .slideWrapper .slide:after{content:'';display:block;position:absolute;top:0;bottom:0;right:0;width:1px;height:auto;background-color:rgba(151,151,151,1);}
+.channelPlusSlide .slideWrap .slideWrapper .slide:last-child:after{display:none;}
+.channelPlusSlide .slideWrap .slideWrapper .slide .csFocus.focusOn {background-color:#fff;box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.4);}
+.channelPlusSlide .slideWrap .slideWrapper .slide .csFocus .programTitle {display:block; padding:12px 0; position:absolute; bottom:0; left:0; z-index:10; width:100%; height:56px; background-color: rgba(8, 12, 35, 0.5); font-size:27px; line-height:1.15; letter-spacing:-0.8px; text-align:center; color:#fff;}
+.channelPlusSlide .leftArrow,
+.channelPlusSlide .rightArrow{position:absolute;top:50%;left:-70px;z-index:10;transform:translate(0,-70%);width:23px;height:58px;background:url("/assets/images/common/icon/slide-left1.png") no-repeat 0 0;opacity:0;}
+.channelPlusSlide .rightArrow{left:auto;right:-70px;background:url("/assets/images/common/icon/slide-right1.png") no-repeat 0 0;}
+.channelPlusSlide .activeSlide .leftArrow,
+.channelPlusSlide .activeSlide .rightArrow{opacity:1;}
+
+.channelPlusSlide .slideWrap .slideWrapper .slide .csFocus{padding:12px;}
+.channelPlusSlide .slide .csFocus .channelTitleArea{display:block;position:relative;margin-top:4px;margin-left:17px;}
+.channelPlusSlide .slide .csFocus .channelTitleArea .channelInfo{display:block;position:relative;}
+.channelPlusSlide .slide .csFocus .channelTitleArea .channelInfo .watching{display:inline-block;position:absolute;top:4px;right:10px;padding:0 11px;border-radius:24px;border:2px solid rgba(236,58,34,0.7);font-size:23px;color:#ec3a22;line-height:42px;}
+.channelPlusSlide .slide .csFocus .channelTitleArea .channelInfo .channelNum{display:inline-block;margin-right:10px;font-size:36px;color:rgba(0,0,0,0.8);line-height:46px;vertical-align:top;}
+.channelPlusSlide .slide .csFocus .channelTitleArea .channelInfo .broadcasterLogo{display:inline-block;height:46px;}
+.channelPlusSlide .slide .csFocus .channelTitleArea .channelInfo .broadcasterLogo .logoWrap{display:table;height:100%;}
+.channelPlusSlide .slide .csFocus .channelTitleArea .channelInfo .broadcasterLogo .logoImg{display:table-cell;vertical-align:middle;}
+.channelPlusSlide .slide .csFocus .channelTitleArea .channelInfo .broadcasterLogo img{display:block;}
+.channelPlusSlide .slide .csFocus .channelTitleArea .timeInfo{display:block;margin-top:2px;}
+.channelPlusSlide .slide .csFocus .channelTitleArea .timeInfo .live{display:inline-block;margin-right:12px;padding:0 7px;border-radius:2px;background-color:rgba(236,58,34,1);font-size:21px;color:rgba(244,244,244,1);line-height:26px;vertical-align:top;}
+.channelPlusSlide .slide .csFocus .channelTitleArea .timeInfo .airTime{font-size:28px;color:rgba(74,74,74,1);}
+
+.channelPlusSlide .slide .csFocus .broadcastInfoArea{display:block;height:155px;margin-top:14px;border-radius:4px;background-color:rgba(89,88,105,0.1);}
+
+.channelPlusSlide .slide .csFocus .broadcastInfoArea .baseballScoreInfo{display:table;padding:0 36px;}
+.channelPlusSlide .slide .csFocus .broadcastInfoArea .baseballScoreInfo > span{display:table-cell;width:126px;height:100%;vertical-align:middle;}
+.channelPlusSlide .slide .csFocus .broadcastInfoArea .baseballScoreInfo > span.scoreInfo{width:156px;text-align:center;vertical-align:bottom;}
+.channelPlusSlide .slide .csFocus .broadcastInfoArea .baseballScoreInfo .teamInfo .logoImg{display:flex;height:99px;justify-content:center;align-items:center;}
+.channelPlusSlide .slide .csFocus .broadcastInfoArea .baseballScoreInfo .teamInfo .logoImg img{display:block;}
+.channelPlusSlide .slide .csFocus .broadcastInfoArea .baseballScoreInfo .teamInfo .teamName{display:block;font-size:24px;color:rgba(0,0,0,1);line-height:34px;text-align:center;}
+.channelPlusSlide .slide .csFocus .broadcastInfoArea .baseballScoreInfo .scoreInfo .score{display:block;text-align:center;}
+.channelPlusSlide .slide .csFocus .broadcastInfoArea .baseballScoreInfo .scoreInfo .score.vs{height:85px;}
+.channelPlusSlide .slide .csFocus .broadcastInfoArea .baseballScoreInfo .scoreInfo .score span{font-size:50px;color:rgba(0,0,0,1);line-height:70px;}
+.channelPlusSlide .slide .csFocus .broadcastInfoArea .baseballScoreInfo .scoreInfo .score span.teamScore1,
+.channelPlusSlide .slide .csFocus .broadcastInfoArea .baseballScoreInfo .scoreInfo .score span.teamScore2{padding:0 7px;}
+.channelPlusSlide .slide .csFocus .broadcastInfoArea .baseballScoreInfo .scoreInfo .ing{display:inline-block;padding:0 25px;border-radius:17px;background-color:rgba(89,88,105,0.15);font-size:26px;color:rgba(74,74,74,1);line-height:34px;}
+
+.channelPlusSlide .slide .csFocus .broadcastInfoArea .homeshoppingInfo{}
+.channelPlusSlide .slide .csFocus .broadcastInfoArea .homeshoppingInfo .productImg{display:inline-block;float:left;width:155px;height:155px;}
+.channelPlusSlide .slide .csFocus .broadcastInfoArea .homeshoppingInfo .productImg img{display:block;}
+.channelPlusSlide .slide .csFocus .broadcastInfoArea .homeshoppingInfo .productInfo{float:left;width:calc(100% - 155px);padding:46px 38px 0 20px;}
+.channelPlusSlide .slide .csFocus .broadcastInfoArea .homeshoppingInfo .productInfo .productTitle{display:block;text-overflow:ellipsis;-o-text-overflow:ellipsis;overflow:hidden;white-space:nowrap;word-wrap:normal !important;font-size:24px;color:rgba(0,0,0,1);}
+.channelPlusSlide .slide .csFocus .broadcastInfoArea .homeshoppingInfo .productInfo .costInfo{display:block;margin-top:14px;}
+.channelPlusSlide .slide .csFocus .broadcastInfoArea .homeshoppingInfo .productInfo .costInfo .productCost{font-size:30px;color:rgba(0,0,0,1);font-weight:700;}
+.channelPlusSlide .slide .csFocus .broadcastInfoArea .homeshoppingInfo .productInfo .costInfo .productCost .num{margin:0 7px 0 9px;font-size:34px;color:rgba(0,0,0,1);font-weight:700;}
+.channelPlusSlide .slide .csFocus .broadcastInfoArea .homeshoppingInfo .productInfo .costInfo .state{display:inline-block;width:78px;margin-left:9px;border-radius:17px;background-color:rgba(89,88,105,0.15);font-size:26px;color:rgba(74,74,74,1);line-height:34px;text-align:center;}
+
+
+
